@@ -1,13 +1,23 @@
 "use client";
 
 import Link from "next/link";
-import { X } from "lucide-react";
+import { MessageCircle, X } from "lucide-react";
 import { useCart } from "@/components/cart/CartProvider";
 import { formatCop } from "@/lib/currency";
+import { buildCartAssistMessage, buildWhatsappUrl } from "@/lib/whatsapp";
 
 export function CartDrawer() {
   const { drawerOpen, closeDrawer, items, totals, removeItem, updateQuantity, clearCart } = useCart();
   const checkoutChannel = items.some((item) => item.channel === "wholesale") ? "wholesale" : "retail";
+  const checkoutItems = items.filter((item) => item.channel === checkoutChannel);
+  const checkoutSubtotalCop = checkoutItems.reduce((sum, item) => sum + item.unitPriceCop * item.quantity, 0);
+  const drawerWhatsappUrl = buildWhatsappUrl(
+    buildCartAssistMessage({
+      items: checkoutItems,
+      subtotalCop: checkoutSubtotalCop,
+      channel: checkoutChannel,
+    }),
+  );
 
   return (
     <>
@@ -65,10 +75,27 @@ export function CartDrawer() {
               <span>Subtotal</span>
               <strong>{formatCop(totals.subtotalCop)}</strong>
             </div>
+            <div className="drawer-confidence">
+              <strong>Listo para cerrar</strong>
+              <p>
+                Si ya elegiste, puedes ir a checkout o enviar este pedido por WhatsApp con el resumen armado para
+                confirmar disponibilidad y pago.
+              </p>
+            </div>
             <div className="drawer-actions">
               <Link href={`/checkout?channel=${checkoutChannel}`} className="primary-button full" onClick={closeDrawer}>
                 Continuar al pago
               </Link>
+              <a
+                href={drawerWhatsappUrl}
+                className="secondary-button full"
+                target="_blank"
+                rel="noreferrer"
+                onClick={closeDrawer}
+              >
+                <MessageCircle size={18} />
+                Cerrar por WhatsApp
+              </a>
               <button type="button" className="ghost-button full" onClick={clearCart}>
                 Vaciar carrito
               </button>

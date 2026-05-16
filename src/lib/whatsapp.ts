@@ -83,6 +83,29 @@ export function buildProductAssistMessage({
   ].join("\n");
 }
 
+export function buildCartAssistMessage({
+  items,
+  subtotalCop,
+  channel,
+}: {
+  items: CartItem[];
+  subtotalCop: number;
+  channel: "retail" | "wholesale";
+}) {
+  return [
+    `Hola Empire Essence. Quiero cerrar este pedido ${channel === "wholesale" ? "mayorista" : "retail"} por WhatsApp.`,
+    "",
+    "Productos:",
+    ...items.map(
+      (item) =>
+        `- ${item.productName} ${item.sizeMl}ml x${item.quantity} - ${formatCop(item.unitPriceCop * item.quantity)}`,
+    ),
+    "",
+    `Subtotal estimado: ${formatCop(subtotalCop)}`,
+    "Quiero confirmar disponibilidad, forma de pago y siguiente paso para cerrar hoy.",
+  ].join("\n");
+}
+
 export function buildOrderMessage({
   reference,
   customer,
