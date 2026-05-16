@@ -28,6 +28,8 @@ export function AddToCart({ product, channel = "retail", defaultQuantity = 1 }: 
 
   const unitPrice =
     channel === "wholesale" ? getWholesaleUnitPrice(selected.sizeMl, Math.max(quantity, 10)) : selected.retailPriceCop;
+  const selectedSizeGuide = getSizeGuide(selected.sizeMl);
+  const pricePerMl = Math.round(unitPrice / selected.sizeMl);
 
   return (
     <div className="buy-box">
@@ -53,6 +55,16 @@ export function AddToCart({ product, channel = "retail", defaultQuantity = 1 }: 
           );
         })}
       </div>
+
+      {channel === "retail" ? (
+        <div className="size-guide-card">
+          <div className="size-guide-copy">
+            <strong>{selectedSizeGuide.title}</strong>
+            <p>{selectedSizeGuide.description}</p>
+          </div>
+          <span>{selected.sizeMl} ml · aprox. {formatCop(pricePerMl)}/ml</span>
+        </div>
+      ) : null}
 
       <div className="quantity-row">
         <span>Cantidad</span>
@@ -88,4 +100,24 @@ export function AddToCart({ product, channel = "retail", defaultQuantity = 1 }: 
       </button>
     </div>
   );
+}
+
+function getSizeGuide(sizeMl: Product["variants"][number]["sizeMl"]) {
+  switch (sizeMl) {
+    case 30:
+      return {
+        title: "30 ml para probar sin pensarlo demasiado",
+        description: "Ideal si es tu primera compra, quieres regalar o prefieres validar el aroma antes de subir.",
+      };
+    case 50:
+      return {
+        title: "50 ml para el punto mas facil de recomendar",
+        description: "Suele ser la mejor relacion entre inversion, duracion y confianza para uso frecuente.",
+      };
+    case 100:
+      return {
+        title: "100 ml para quien ya sabe que este perfil es suyo",
+        description: "Conviene mas si ya conoces este tipo de aroma o quieres resolver por mas tiempo con una sola compra.",
+      };
+  }
 }

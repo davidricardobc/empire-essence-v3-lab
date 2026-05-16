@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
@@ -7,10 +8,39 @@ import { ProductCard } from "@/components/catalog/ProductCard";
 import { categoryLabels } from "@/data/products";
 import { formatCop } from "@/lib/currency";
 import { getAllProducts, getProductBySlug, getRelatedProducts } from "@/lib/products";
+import { createBreadcrumbJsonLd, createProductJsonLd, defaultOgImage } from "@/lib/seo";
 import { buildWhatsappUrl } from "@/lib/whatsapp";
 
 export function generateStaticParams() {
   return getAllProducts().map((product) => ({ slug: product.slug }));
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
+  const product = getProductBySlug(slug);
+
+  if (!product) {
+    return {
+      title: "Producto no encontrado | Empire Essence",
+    };
+  }
+
+  return {
+    title: product.publicName,
+    description:
+      `${product.shortDescription} Perfume inspirado en ${product.inspirationReference} con ${product.concentration}, ${product.duration} y compra directa o por WhatsApp en Colombia.`,
+    alternates: {
+      canonical: `/producto/${product.slug}`,
+    },
+    openGraph: {
+      title: `${product.publicName} | Perfume inspirado Empire Essence`,
+      description:
+        `${product.shortDescription} Inspirado en ${product.inspirationReference}. Compra online o recibe asesoria por WhatsApp.`,
+      url: `/producto/${product.slug}`,
+      type: "website",
+      images: [defaultOgImage],
+    },
+  };
 }
 
 export default async function ProductPage({ params }: { params: Promise<{ slug: string }> }) {
@@ -19,9 +49,17 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
   if (!product) notFound();
 
   const related = getRelatedProducts(product, 3);
+  const productJsonLd = createProductJsonLd(product);
+  const breadcrumbJsonLd = createBreadcrumbJsonLd([
+    { name: "Inicio", path: "/" },
+    { name: "Catalogo", path: "/catalogo" },
+    { name: product.publicName, path: `/producto/${product.slug}` },
+  ]);
 
   return (
     <main className="page-main">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(productJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <section className="shell product-layout">
         <div className="product-story panel">
           <Link href="/catalogo" className="ghost-link back-link">
@@ -40,6 +78,11 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
           <h1>{product.publicName}</h1>
           <p className="inspired">Inspirado en {product.inspirationReference}</p>
           <p className="lead">{product.longDescription}</p>
+          <p className="lead">
+            Perfume inspirado para {categoryLabels[product.category].toLowerCase()} ideal para {product.occasions.join(
+              ", ",
+            )}.
+          </p>
 
           <div className="product-proof-row">
             <span>
@@ -48,6 +91,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
             </span>
             <span>{product.duration}</span>
             <span>Intensidad {product.intensity}</span>
+            <span>{product.sillage}</span>
           </div>
 
           <div className="notes-grid">
@@ -67,9 +111,32 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
           <span className="eyebrow">Compra directa</span>
           <h2>{product.shortDescription}</h2>
           <p>{product.bestFor}</p>
+          <div className="decision-summary">
+            <div>
+              <span>Huele a</span>
+              <strong>{product.inspirationReference}</strong>
+            </div>
+            <div>
+              <span>Se recomienda para</span>
+              <strong>{product.occasions.join(", ")}</strong>
+            </div>
+            <div>
+              <span>Se siente</span>
+              <strong>{product.moods.slice(0, 3).join(", ")}</strong>
+            </div>
+          </div>
           <AddToCart product={product} />
           <div className="price-hint">
             Desde {formatCop(product.variants[0].retailPriceCop)} - envio gratis desde {formatCop(140000)}
+          </div>
+          <div className="buyer-confidence">
+            <strong>Antes de pagar ya sabes esto:</strong>
+            <ul>
+              <li>Perfume inspirado en {product.inspirationReference} con {product.concentration}.</li>
+              <li>Duracion estimada de {product.duration.toLowerCase()} e intensidad {product.intensity}.</li>
+              <li>Entrega nacional estimada de 3 a 5 dias habiles.</li>
+              <li>Si dudas entre tamanos o perfiles, Alex te responde por WhatsApp.</li>
+            </ul>
           </div>
           <a
             className="secondary-button full"

@@ -1,12 +1,41 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, Droplet, MessageCircle, ShieldCheck, Sparkles, Truck } from "lucide-react";
+import {
+  ArrowRight,
+  BadgeCheck,
+  Clock3,
+  Droplet,
+  Instagram,
+  MessageCircle,
+  ShieldCheck,
+  Sparkles,
+  Truck,
+  Youtube,
+} from "lucide-react";
 import { BlogPostCard } from "@/components/blog/BlogPostCard";
 import { ProductCard } from "@/components/catalog/ProductCard";
 import { HomeQuickBuy } from "@/components/home/HomeQuickBuy";
 import { getFeaturedBlogPosts } from "@/data/blog";
 import { getTopSellers } from "@/lib/products";
 import { formatCop } from "@/lib/currency";
+import { defaultOgImage } from "@/lib/seo";
+
+export const metadata: Metadata = {
+  title: "Perfumes inspirados en Colombia",
+  description:
+    "Compra perfumes inspirados para mujer, hombre y unisex con alta concentracion, top ventas, asesoria por WhatsApp y opcion mayorista desde Colombia.",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: "Perfumes inspirados en Colombia | Empire Essence",
+    description:
+      "Fragancias premium inspiradas con compra directa, catalogo curado y asesoria por WhatsApp para retail y mayoristas.",
+    url: "/",
+    images: [defaultOgImage],
+  },
+};
 
 const topSellers = getTopSellers(6);
 const heroProducts = topSellers.slice(0, 3);
@@ -24,9 +53,12 @@ export default function HomePage() {
             <h1>
               Tu esencia.
               <br />
-              Tu imperio.
+              Tu imperio en perfumes inspirados.
             </h1>
-            <p>Fragancias inspiradas con 60% de concentracion. Lujo accesible. Calidad que se siente.</p>
+            <p>
+              Perfumes inspirados para mujer, hombre y unisex con 60% de concentracion, envio en Colombia y asesoria
+              por WhatsApp para elegir mejor.
+            </p>
             <div className="hero-actions">
               <Link href="/catalogo" className="primary-button">
                 Comprar ahora
@@ -123,6 +155,71 @@ export default function HomePage() {
               <ArrowRight size={16} />
             </Link>
           ))}
+        </div>
+      </section>
+
+      <section className="section shell">
+        <div className="section-heading split">
+          <div>
+            <span className="eyebrow">Compra con mas criterio</span>
+            <h2>Menos adivinar, mas elegir con seguridad.</h2>
+          </div>
+          <p>
+            Empire Essence no te deja solo frente al catalogo: cada eleccion aterriza referencia inspirada, duracion,
+            intensidad y una salida humana por WhatsApp si quieres confirmar antes de pagar.
+          </p>
+        </div>
+        <div className="decision-grid">
+          <article className="decision-card">
+            <BadgeCheck size={18} />
+            <strong>Referencia inspirada visible</strong>
+            <p>En cada producto ves en que perfume esta inspirado para comparar mejor el perfil que buscas.</p>
+          </article>
+          <article className="decision-card">
+            <Clock3 size={18} />
+            <strong>Duracion e intensidad claras</strong>
+            <p>Antes de comprar sabes si es una salida fresca de diario o una fragancia con mas estela para la noche.</p>
+          </article>
+          <article className="decision-card">
+            <MessageCircle size={18} />
+            <strong>WhatsApp antes o despues del checkout</strong>
+            <p>Puedes cerrar online o resolver dudas con Alex sin romper el proceso comercial.</p>
+          </article>
+        </div>
+      </section>
+
+      <section className="section shell">
+        <div className="brand-proof-band">
+          <div className="brand-proof-copy">
+            <span className="eyebrow">Marca con rostro real</span>
+            <h2>Natalia ya le pone voz y presencia a Empire Essence.</h2>
+            <p>
+              El contenido oficial de la marca ya vive en YouTube e Instagram. No es una tienda sin cara: hay una
+              socia visible explicando, mostrando y conectando con la audiencia desde adentro del proyecto.
+            </p>
+          </div>
+          <div className="brand-proof-links">
+            <a
+              href="https://www.youtube.com/@EmpireEssencePerfumeria"
+              target="_blank"
+              rel="noreferrer"
+              className="brand-proof-card"
+            >
+              <Youtube size={18} />
+              <strong>YouTube oficial</strong>
+              <span>@EmpireEssencePerfumeria</span>
+            </a>
+            <a
+              href="https://www.instagram.com/EmpireEssence.co"
+              target="_blank"
+              rel="noreferrer"
+              className="brand-proof-card"
+            >
+              <Instagram size={18} />
+              <strong>Instagram oficial</strong>
+              <span>@EmpireEssence.co</span>
+            </a>
+          </div>
         </div>
       </section>
 

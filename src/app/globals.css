@@ -450,6 +450,12 @@ h3 {
   gap: 14px;
 }
 
+.decision-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
 .intent-card {
   display: grid;
   min-height: 184px;
@@ -462,6 +468,96 @@ h3 {
 .product-card:hover {
   border-color: rgba(200, 168, 106, 0.42);
   transform: translateY(-2px);
+}
+
+.decision-card {
+  display: grid;
+  gap: 14px;
+  min-height: 100%;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.04);
+  padding: 22px;
+}
+
+.decision-card svg {
+  color: var(--gold-2);
+}
+
+.decision-card strong,
+.decision-summary strong,
+.buyer-confidence strong {
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+}
+
+.decision-card p,
+.decision-summary span,
+.buyer-confidence li {
+  color: rgba(247, 240, 230, 0.7);
+}
+
+.brand-proof-band {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(300px, 0.82fr);
+  gap: 16px;
+  align-items: stretch;
+}
+
+.brand-proof-copy,
+.brand-proof-card {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.brand-proof-copy {
+  padding: 28px;
+}
+
+.brand-proof-copy h2 {
+  margin-top: 12px;
+  font-size: 3.7rem;
+}
+
+.brand-proof-copy p {
+  max-width: 62ch;
+  color: rgba(247, 240, 230, 0.74);
+  font-size: 1.06rem;
+  line-height: 1.75;
+}
+
+.brand-proof-links {
+  display: grid;
+  gap: 14px;
+}
+
+.brand-proof-card {
+  display: grid;
+  align-content: end;
+  gap: 8px;
+  min-height: 176px;
+  padding: 22px;
+  transition: border-color 180ms ease, transform 180ms ease;
+}
+
+.brand-proof-card:hover {
+  border-color: rgba(200, 168, 106, 0.42);
+  transform: translateY(-2px);
+}
+
+.brand-proof-card svg {
+  color: var(--gold-2);
+}
+
+.brand-proof-card strong {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.brand-proof-card span {
+  color: rgba(247, 240, 230, 0.68);
 }
 
 .intent-card strong {
@@ -617,6 +713,34 @@ h3 {
 }
 
 .variant-pill strong {
+  font-size: 13px;
+}
+
+.size-guide-card {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 14px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.03);
+  padding: 14px 16px;
+}
+
+.size-guide-copy {
+  display: grid;
+  gap: 4px;
+}
+
+.size-guide-card strong {
+  font-family: var(--font-serif);
+  font-size: 1.24rem;
+  line-height: 1.05;
+}
+
+.size-guide-card p,
+.size-guide-card span {
+  margin: 0;
+  color: rgba(247, 240, 230, 0.68);
   font-size: 13px;
 }
 
@@ -883,13 +1007,25 @@ h3 {
 }
 
 .product-buy p,
-.product-buy .variant-pill span {
+.product-buy .variant-pill span,
+.product-buy .decision-summary span,
+.product-buy .buyer-confidence li {
   color: rgba(11, 10, 10, 0.68);
 }
 
 .product-buy .variant-pill {
   border-color: rgba(11, 10, 10, 0.12);
   background: rgba(11, 10, 10, 0.04);
+}
+
+.product-buy .size-guide-card {
+  border-color: rgba(11, 10, 10, 0.12);
+  background: rgba(11, 10, 10, 0.03);
+}
+
+.product-buy .size-guide-card p,
+.product-buy .size-guide-card span {
+  color: rgba(11, 10, 10, 0.68);
 }
 
 .product-buy .variant-pill.is-active {
@@ -905,6 +1041,42 @@ h3 {
 .product-buy .secondary-button {
   border-color: rgba(11, 10, 10, 0.16);
   color: var(--ink);
+}
+
+.decision-summary,
+.buyer-confidence {
+  display: grid;
+  gap: 12px;
+  border: 1px solid rgba(11, 10, 10, 0.12);
+  background: rgba(11, 10, 10, 0.03);
+  padding: 16px;
+}
+
+.decision-summary div {
+  display: grid;
+  gap: 4px;
+}
+
+.decision-summary span {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.decision-summary strong {
+  font-size: 1.15rem;
+  line-height: 1.2;
+}
+
+.buyer-confidence ul {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding-left: 18px;
+}
+
+.buyer-confidence li {
+  line-height: 1.5;
 }
 
 .price-hint {
@@ -1370,7 +1542,8 @@ h3 {
   .checkout-grid,
   .wholesale-builder,
   .proof-section,
-  .wholesale-home-grid {
+  .wholesale-home-grid,
+  .brand-proof-band {
     grid-template-columns: 1fr;
   }
 
@@ -1390,6 +1563,7 @@ h3 {
   .featured-grid,
   .product-grid,
   .intent-grid,
+  .decision-grid,
   .proof-grid,
   .filter-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1479,6 +1653,7 @@ h3 {
   }
 
   .intent-grid,
+  .decision-grid,
   .proof-grid,
   .featured-grid,
   .product-grid,
@@ -1494,6 +1669,11 @@ h3 {
   .variant-grid {
     grid-template-columns: repeat(3, minmax(84px, 1fr));
     overflow-x: auto;
+  }
+
+  .size-guide-card {
+    align-items: start;
+    flex-direction: column;
   }
 
   .summary-item,

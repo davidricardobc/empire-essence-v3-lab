@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Mail, MessageCircle } from "lucide-react";
+import { Instagram, Mail, MessageCircle, Youtube } from "lucide-react";
 import { buildWhatsappUrl } from "@/lib/whatsapp";
 
 export function SiteFooter() {
@@ -17,6 +17,7 @@ export function SiteFooter() {
         <div className="footer-links">
           <Link href="/catalogo">Comprar retail</Link>
           <Link href="/mayoristas">Pedido mayorista</Link>
+          <Link href="/blog">Blog de perfumes</Link>
           <Link href="/checkout">Ir a checkout</Link>
           <a href="mailto:EmpireEssence.oficial@gmail.com">
             <Mail size={16} />
@@ -25,6 +26,14 @@ export function SiteFooter() {
           <a href={buildWhatsappUrl("Hola Empire Essence. Quiero asesoria para elegir fragancias.")} target="_blank">
             <MessageCircle size={16} />
             WhatsApp
+          </a>
+          <a href="https://www.instagram.com/EmpireEssence.co" target="_blank" rel="noreferrer">
+            <Instagram size={16} />
+            Instagram
+          </a>
+          <a href="https://www.youtube.com/@EmpireEssencePerfumeria" target="_blank" rel="noreferrer">
+            <Youtube size={16} />
+            YouTube
           </a>
         </div>
       </div>
