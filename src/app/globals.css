@@ -945,6 +945,38 @@ h3 {
   white-space: nowrap;
 }
 
+.catalog-intent-bar {
+  display: grid;
+  gap: 14px;
+  border: 1px solid rgba(200, 168, 106, 0.16);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(111, 47, 60, 0.08));
+  padding: 18px;
+}
+
+.catalog-intent-bar strong {
+  color: var(--ivory);
+}
+
+.catalog-intent-bar p {
+  margin: 6px 0 0;
+  color: rgba(247, 240, 230, 0.66);
+}
+
+.active-filter-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.active-filter-chip {
+  border: 1px solid rgba(200, 168, 106, 0.24);
+  background: rgba(255, 255, 255, 0.04);
+  padding: 8px 12px;
+  color: var(--gold-2);
+  font-size: 13px;
+}
+
 .empty-state {
   border: 1px dashed var(--line);
   border-radius: 8px;

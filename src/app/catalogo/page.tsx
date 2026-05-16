@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { CatalogExplorer } from "@/components/catalog/CatalogExplorer";
-import { products } from "@/data/products";
+import { allFamilies, allMoods, allOccasions, products } from "@/data/products";
 import { defaultOgImage } from "@/lib/seo";
+import type { Category, Intensity } from "@/types/product";
 
 export const metadata: Metadata = {
   title: "Catalogo de perfumes inspirados",
@@ -19,7 +20,24 @@ export const metadata: Metadata = {
   },
 };
 
-export default function CatalogPage() {
+const categories: Array<Category | "all"> = ["all", "femenina", "masculina", "unisex"];
+const intensities: Array<Intensity | "all"> = ["all", "suave", "media", "alta"];
+
+export default async function CatalogPage({
+  searchParams,
+}: {
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
+}) {
+  const params = (await searchParams) ?? {};
+  const initialFilters = {
+    query: getParam(params.q),
+    category: parseParam(getParam(params.category), categories),
+    family: parseParam(getParam(params.family), ["all", ...allFamilies]),
+    mood: parseParam(getParam(params.mood), ["all", ...allMoods]),
+    occasion: parseParam(getParam(params.occasion), ["all", ...allOccasions]),
+    intensity: parseParam(getParam(params.intensity), intensities),
+  };
+
   return (
     <main className="page-main">
       <section className="shell page-hero compact-hero">
@@ -36,8 +54,16 @@ export default function CatalogPage() {
         </div>
       </section>
       <div className="shell">
-        <CatalogExplorer />
+        <CatalogExplorer initialFilters={initialFilters} />
       </div>
     </main>
   );
+}
+
+function getParam(value: string | string[] | undefined) {
+  return Array.isArray(value) ? value[0] ?? "" : value ?? "";
+}
+
+function parseParam<T extends string>(value: string, allowed: readonly T[]) {
+  return allowed.includes(value as T) ? (value as T) : "all";
 }

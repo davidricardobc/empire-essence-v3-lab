@@ -10,13 +10,24 @@ import type { Category, Intensity } from "@/types/product";
 const categories: Array<Category | "all"> = ["all", "femenina", "masculina", "unisex"];
 const intensities: Array<Intensity | "all"> = ["all", "suave", "media", "alta"];
 
-export function CatalogExplorer() {
-  const [query, setQuery] = useState("");
-  const [category, setCategory] = useState<Category | "all">("all");
-  const [family, setFamily] = useState("all");
-  const [mood, setMood] = useState("all");
-  const [occasion, setOccasion] = useState("all");
-  const [intensity, setIntensity] = useState<Intensity | "all">("all");
+type CatalogExplorerProps = {
+  initialFilters?: {
+    query?: string;
+    category?: Category | "all";
+    family?: string;
+    mood?: string;
+    occasion?: string;
+    intensity?: Intensity | "all";
+  };
+};
+
+export function CatalogExplorer({ initialFilters }: CatalogExplorerProps) {
+  const [query, setQuery] = useState(initialFilters?.query ?? "");
+  const [category, setCategory] = useState<Category | "all">(initialFilters?.category ?? "all");
+  const [family, setFamily] = useState(initialFilters?.family ?? "all");
+  const [mood, setMood] = useState(initialFilters?.mood ?? "all");
+  const [occasion, setOccasion] = useState(initialFilters?.occasion ?? "all");
+  const [intensity, setIntensity] = useState<Intensity | "all">(initialFilters?.intensity ?? "all");
 
   const filtered = useMemo(() => {
     const term = query.trim().toLowerCase();
@@ -47,6 +58,24 @@ export function CatalogExplorer() {
     });
   }, [category, family, intensity, mood, occasion, query]);
 
+  const activeFilters = [
+    category !== "all" ? { key: "category", label: `Categoria: ${categoryLabels[category]}`, clear: () => setCategory("all") } : null,
+    family !== "all" ? { key: "family", label: `Familia: ${family}`, clear: () => setFamily("all") } : null,
+    mood !== "all" ? { key: "mood", label: `Mood: ${mood}`, clear: () => setMood("all") } : null,
+    occasion !== "all" ? { key: "occasion", label: `Ocasion: ${occasion}`, clear: () => setOccasion("all") } : null,
+    intensity !== "all" ? { key: "intensity", label: `Intensidad: ${intensity}`, clear: () => setIntensity("all") } : null,
+    query.trim() ? { key: "q", label: `Busqueda: ${query.trim()}`, clear: () => setQuery("") } : null,
+  ].filter(Boolean) as Array<{ key: string; label: string; clear: () => void }>;
+
+  function clearAllFilters() {
+    setQuery("");
+    setCategory("all");
+    setFamily("all");
+    setMood("all");
+    setOccasion("all");
+    setIntensity("all");
+  }
+
   return (
     <section className="catalog-shell">
       <div className="catalog-toolbar">
@@ -63,6 +92,25 @@ export function CatalogExplorer() {
           {filtered.length} de {products.length} referencias visibles
         </div>
       </div>
+
+      {activeFilters.length ? (
+        <div className="catalog-intent-bar">
+          <div>
+            <strong>Vista guiada activa</strong>
+            <p>Estas viendo una seleccion filtrada segun tu intencion de compra. Puedes limpiar o afinar sin perder contexto.</p>
+          </div>
+          <div className="active-filter-list">
+            {activeFilters.map((filter) => (
+              <button key={filter.key} type="button" className="active-filter-chip" onClick={filter.clear}>
+                {filter.label} ×
+              </button>
+            ))}
+            <button type="button" className="text-button" onClick={clearAllFilters}>
+              Limpiar todo
+            </button>
+          </div>
+        </div>
+      ) : null}
 
       <div className="filter-grid">
         <FilterSelect label="Categoria" value={category} onChange={(value) => setCategory(value as Category | "all")}>
