@@ -9,6 +9,7 @@ import { getBlogPostBySlug, getBlogPosts, getRelatedBlogPosts } from "@/data/blo
 import { formatCop } from "@/lib/currency";
 import { getProductBySlug } from "@/lib/products";
 import { getWholesaleUnitPrice, WHOLESALE_MIN_UNITS } from "@/lib/pricing";
+import { createBlogPostingJsonLd, createBreadcrumbJsonLd } from "@/lib/seo";
 import { buildWhatsappUrl } from "@/lib/whatsapp";
 import type { Product } from "@/types/product";
 
@@ -21,18 +22,16 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const post = getBlogPostBySlug(slug);
   if (!post) return {};
 
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
-
   return {
-    title: `${post.title} | Empire Essence`,
+    title: post.title,
     description: post.excerpt,
     alternates: {
-      canonical: `${siteUrl}/blog/${post.slug}`,
+      canonical: `/blog/${post.slug}`,
     },
     openGraph: {
       title: post.title,
       description: post.excerpt,
-      url: `${siteUrl}/blog/${post.slug}`,
+      url: `/blog/${post.slug}`,
       type: "article",
       images: [post.heroImage],
     },
@@ -56,9 +55,17 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
   );
   const related = getRelatedBlogPosts(post.slug);
   const publishedAt = articleDateFormatter.format(new Date(post.publishedAt));
+  const articleJsonLd = createBlogPostingJsonLd(post);
+  const breadcrumbJsonLd = createBreadcrumbJsonLd([
+    { name: "Inicio", path: "/" },
+    { name: "Blog", path: "/blog" },
+    { name: post.title, path: `/blog/${post.slug}` },
+  ]);
 
   return (
     <main className="page-main blog-post-page">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <section className="shell blog-post-hero">
         <Link href="/blog" className="ghost-link back-link">
           <ArrowLeft size={16} />
@@ -84,6 +91,10 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
       <section className="shell blog-post-layout">
         <article className="blog-article">
+          <section>
+            <h2>{isWholesale ? "Que vas a resolver en esta guia" : "Como te ayuda esta guia a elegir perfume"}</h2>
+            <p>{post.excerpt}</p>
+          </section>
           {post.sections.map((section) => (
             <section key={section.heading}>
               <h2>{section.heading}</h2>

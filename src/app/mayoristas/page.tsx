@@ -1,5 +1,23 @@
+import type { Metadata } from "next";
 import { ArrowRight, BadgeDollarSign, PackageCheck, TrendingUp } from "lucide-react";
 import { WholesaleBuilder } from "@/components/wholesale/WholesaleBuilder";
+import { defaultOgImage } from "@/lib/seo";
+
+export const metadata: Metadata = {
+  title: "Perfumes al por mayor en Colombia",
+  description:
+    "Compra perfumes al por mayor en Colombia desde 10 unidades mixtas. Calcula inversion, margen estimado y arma tu pedido mayorista con Empire Essence.",
+  alternates: {
+    canonical: "/mayoristas",
+  },
+  openGraph: {
+    title: "Perfumes al por mayor en Colombia | Empire Essence",
+    description:
+      "Ruta mayorista para emprendedores: kits, margen estimado y apoyo comercial para vender perfumes.",
+    url: "/mayoristas",
+    images: [defaultOgImage],
+  },
+};
 
 export default function WholesalePage() {
   return (
@@ -7,7 +25,7 @@ export default function WholesalePage() {
       <section className="shell page-hero wholesale-hero">
         <div>
           <span className="eyebrow">Mayoristas y emprendedores</span>
-          <h1>Empieza a vender perfumes con margen.</h1>
+          <h1>Perfumes al por mayor en Colombia para empezar con margen.</h1>
           <p>
             Pedido minimo de 10 unidades mixtas, precios por volumen y asesoria para elegir referencias faciles de
             recomendar.

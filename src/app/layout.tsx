@@ -4,22 +4,70 @@ import { CartDrawer } from "@/components/cart/CartDrawer";
 import { CartProvider } from "@/components/cart/CartProvider";
 import { SiteFooter } from "@/components/layout/SiteFooter";
 import { SiteHeader } from "@/components/layout/SiteHeader";
+import { absoluteUrl, createOrganizationJsonLd, createWebsiteJsonLd, defaultOgImage } from "@/lib/seo";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"),
-  title: "Empire Essence | Fragancias premium e inspiradas",
+  metadataBase: new URL(absoluteUrl("/")),
+  title: {
+    default: "Empire Essence | Perfumes inspirados y fragancias premium",
+    template: "%s | Empire Essence",
+  },
   description:
-    "Fragancias inspiradas con alta concentracion, catalogo curado, compra directa, asesoria por WhatsApp y ruta mayorista para emprendedores.",
+    "Perfumes inspirados para mujer, hombre y unisex con alta concentracion, catalogo curado, compra directa y asesoria por WhatsApp en Colombia.",
+  alternates: {
+    canonical: "/",
+  },
+  keywords: [
+    "perfumes inspirados",
+    "fragancias premium",
+    "perfumes para mujer",
+    "perfumes para hombre",
+    "perfumeria en Colombia",
+    "perfumes al por mayor",
+  ],
+  openGraph: {
+    title: "Empire Essence | Perfumes inspirados y fragancias premium",
+    description:
+      "Perfumes inspirados para mujer, hombre y unisex con compra directa, asesoria por WhatsApp y opcion mayorista en Colombia.",
+    url: "/",
+    type: "website",
+    locale: "es_CO",
+    siteName: "Empire Essence",
+    images: [
+      {
+        url: defaultOgImage,
+        width: 1200,
+        height: 630,
+        alt: "Empire Essence - perfumes inspirados y fragancias premium",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Empire Essence | Perfumes inspirados y fragancias premium",
+    description:
+      "Perfumes inspirados para mujer, hombre y unisex con compra directa y asesoria por WhatsApp en Colombia.",
+    images: [defaultOgImage],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
   icons: {
     icon: "/icon.svg",
   },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+  const organizationJsonLd = createOrganizationJsonLd();
+  const websiteJsonLd = createWebsiteJsonLd();
+
   return (
     <html lang="es" data-scroll-behavior="smooth">
       <body>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }} />
         <CartProvider>
           <SiteHeader />
           {children}

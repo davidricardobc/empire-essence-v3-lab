@@ -1,8 +1,26 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight, BadgeCheck, CreditCard, MessageCircle, Store } from "lucide-react";
 import { BlogPostCard } from "@/components/blog/BlogPostCard";
 import { getBlogPosts, getFeaturedBlogPosts, getPublishedBlogPosts } from "@/data/blog";
+import { defaultOgImage } from "@/lib/seo";
 import { buildWhatsappUrl } from "@/lib/whatsapp";
+
+export const metadata: Metadata = {
+  title: "Blog de perfumes y ventas",
+  description:
+    "Guias para elegir perfumes, comprar con mas seguridad y empezar a vender como mayorista con criterios claros y accionables.",
+  alternates: {
+    canonical: "/blog",
+  },
+  openGraph: {
+    title: "Blog de perfumes y ventas | Empire Essence",
+    description:
+      "Consejos para comprar mejor, vender con margen y entender perfumes sin enredarte.",
+    url: "/blog",
+    images: [defaultOgImage],
+  },
+};
 
 const featuredPosts = getFeaturedBlogPosts(1);
 const posts = getBlogPosts();
@@ -17,7 +35,7 @@ export default function BlogPage() {
       <section className="shell blog-hero">
         <div>
           <span className="eyebrow">Guias Empire Essence</span>
-          <h1>Elige mejor, vende con mas seguridad.</h1>
+          <h1>Blog de perfumes: elige mejor y vende con mas seguridad.</h1>
           <p>
             Consejos claros para comprar tu fragancia, armar un primer pedido mayorista o resolver dudas antes de pagar.
           </p>
