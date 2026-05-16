@@ -53,6 +53,36 @@ export function buildAssistedCheckoutMessage({
   return lines.join("\n");
 }
 
+export function buildProductAssistMessage({
+  productName,
+  inspirationReference,
+  sizeMl,
+  quantity,
+  unitPriceCop,
+  channel,
+}: {
+  productName: string;
+  inspirationReference: string;
+  sizeMl: number;
+  quantity: number;
+  unitPriceCop: number;
+  channel: "retail" | "wholesale";
+}) {
+  const totalCop = unitPriceCop * quantity;
+
+  return [
+    `Hola Empire Essence. Quiero cerrar este pedido ${channel === "wholesale" ? "mayorista" : "retail"} por WhatsApp.`,
+    "",
+    `Producto: ${productName}`,
+    `Inspirado en: ${inspirationReference}`,
+    `Tamano: ${sizeMl}ml`,
+    `Cantidad: ${quantity}`,
+    `Valor estimado: ${formatCop(totalCop)}`,
+    "",
+    "Quiero confirmar disponibilidad y siguiente paso para cerrar hoy.",
+  ].join("\n");
+}
+
 export function buildOrderMessage({
   reference,
   customer,

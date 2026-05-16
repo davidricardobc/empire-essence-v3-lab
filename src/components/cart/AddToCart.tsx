@@ -1,10 +1,11 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { ShoppingBag } from "lucide-react";
+import { MessageCircle, ShoppingBag } from "lucide-react";
 import { useCart } from "@/components/cart/CartProvider";
 import { formatCop } from "@/lib/currency";
 import { getWholesaleUnitPrice } from "@/lib/pricing";
+import { buildProductAssistMessage, buildWhatsappUrl } from "@/lib/whatsapp";
 import type { SalesChannel } from "@/types/cart";
 import type { Product } from "@/types/product";
 
@@ -12,9 +13,15 @@ type AddToCartProps = {
   product: Product;
   channel?: SalesChannel;
   defaultQuantity?: number;
+  showDirectWhatsapp?: boolean;
 };
 
-export function AddToCart({ product, channel = "retail", defaultQuantity = 1 }: AddToCartProps) {
+export function AddToCart({
+  product,
+  channel = "retail",
+  defaultQuantity = 1,
+  showDirectWhatsapp = false,
+}: AddToCartProps) {
   const { addItem } = useCart();
   const [selectedSku, setSelectedSku] = useState(product.variants[0]?.sku ?? "");
   const [quantity, setQuantity] = useState(defaultQuantity);
@@ -30,6 +37,16 @@ export function AddToCart({ product, channel = "retail", defaultQuantity = 1 }: 
     channel === "wholesale" ? getWholesaleUnitPrice(selected.sizeMl, Math.max(quantity, 10)) : selected.retailPriceCop;
   const selectedSizeGuide = getSizeGuide(selected.sizeMl);
   const pricePerMl = Math.round(unitPrice / selected.sizeMl);
+  const directWhatsappUrl = buildWhatsappUrl(
+    buildProductAssistMessage({
+      productName: product.publicName,
+      inspirationReference: product.inspirationReference,
+      sizeMl: selected.sizeMl,
+      quantity,
+      unitPriceCop: unitPrice,
+      channel,
+    }),
+  );
 
   return (
     <div className="buy-box">
@@ -79,25 +96,39 @@ export function AddToCart({ product, channel = "retail", defaultQuantity = 1 }: 
         </div>
       </div>
 
-      <button
-        type="button"
-        className="primary-button full"
-        onClick={() =>
-          addItem({
-            productId: product.id,
-            productSlug: product.slug,
-            productName: product.publicName,
-            sizeMl: selected.sizeMl,
-            sku: selected.sku,
-            quantity,
-            unitPriceCop: unitPrice,
-            channel,
-          })
-        }
-      >
-        <ShoppingBag size={18} />
-        {channel === "wholesale" ? "Agregar a pedido mayorista" : "Agregar y comprar"}
-      </button>
+      <div className="buy-box-actions">
+        <button
+          type="button"
+          className="primary-button full"
+          onClick={() =>
+            addItem({
+              productId: product.id,
+              productSlug: product.slug,
+              productName: product.publicName,
+              sizeMl: selected.sizeMl,
+              sku: selected.sku,
+              quantity,
+              unitPriceCop: unitPrice,
+              channel,
+            })
+          }
+        >
+          <ShoppingBag size={18} />
+          {channel === "wholesale" ? "Agregar a pedido mayorista" : "Agregar y comprar"}
+        </button>
+
+        {showDirectWhatsapp ? (
+          <>
+            <a href={directWhatsappUrl} className="secondary-button full" target="_blank" rel="noreferrer">
+              <MessageCircle size={18} />
+              {channel === "wholesale" ? "Cerrar este pedido por WhatsApp" : "Quiero este por WhatsApp"}
+            </a>
+            <p className="buy-box-note">
+              WhatsApp sale con este tamano, cantidad y valor estimado ya listos para cerrar mas rapido.
+            </p>
+          </>
+        ) : null}
+      </div>
     </div>
   );
 }

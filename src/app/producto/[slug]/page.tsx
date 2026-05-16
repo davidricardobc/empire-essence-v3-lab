@@ -2,14 +2,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
-import { ArrowLeft, BadgeCheck, MessageCircle, Sparkles } from "lucide-react";
+import { ArrowLeft, BadgeCheck, Sparkles } from "lucide-react";
 import { AddToCart } from "@/components/cart/AddToCart";
 import { ProductCard } from "@/components/catalog/ProductCard";
 import { categoryLabels } from "@/data/products";
 import { formatCop } from "@/lib/currency";
 import { getAllProducts, getProductBySlug, getRelatedProducts } from "@/lib/products";
 import { createBreadcrumbJsonLd, createProductJsonLd, defaultOgImage } from "@/lib/seo";
-import { buildWhatsappUrl } from "@/lib/whatsapp";
 
 export function generateStaticParams() {
   return getAllProducts().map((product) => ({ slug: product.slug }));
@@ -125,7 +124,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
               <strong>{product.moods.slice(0, 3).join(", ")}</strong>
             </div>
           </div>
-          <AddToCart product={product} />
+          <AddToCart product={product} showDirectWhatsapp />
           <div className="price-hint">
             Desde {formatCop(product.variants[0].retailPriceCop)} - envio gratis desde {formatCop(140000)}
           </div>
@@ -138,14 +137,6 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
               <li>Si dudas entre tamanos o perfiles, Alex te responde por WhatsApp.</li>
             </ul>
           </div>
-          <a
-            className="secondary-button full"
-            href={buildWhatsappUrl(`Hola Alex. Quiero asesoria sobre ${product.publicName}.`)}
-            target="_blank"
-          >
-            <MessageCircle size={18} />
-            Preguntar antes de comprar
-          </a>
         </aside>
       </section>
 

@@ -687,6 +687,18 @@ h3 {
   margin-top: 16px;
 }
 
+.buy-box-actions {
+  display: grid;
+  gap: 10px;
+}
+
+.buy-box-note {
+  margin: 0;
+  color: rgba(247, 240, 230, 0.66);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
 .variant-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1041,6 +1053,10 @@ h3 {
 .product-buy .secondary-button {
   border-color: rgba(11, 10, 10, 0.16);
   color: var(--ink);
+}
+
+.product-buy .buy-box-note {
+  color: rgba(11, 10, 10, 0.68);
 }
 
 .decision-summary,
