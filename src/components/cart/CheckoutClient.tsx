@@ -6,6 +6,7 @@ import { MessageCircle, ShieldCheck } from "lucide-react";
 import { useCart } from "@/components/cart/CartProvider";
 import { formatCop } from "@/lib/currency";
 import { getShipping } from "@/lib/pricing";
+import { buildAssistedCheckoutMessage, buildWhatsappUrl } from "@/lib/whatsapp";
 import type { CheckoutApiResponse } from "@/types/checkout";
 import type { SalesChannel } from "@/types/cart";
 
@@ -29,6 +30,17 @@ export function CheckoutClient({ channel }: { channel: SalesChannel }) {
   const shipping = getShipping(form.city, subtotalCop);
   const totalCop = subtotalCop + shipping.shippingCop;
   const canSubmit = checkoutItems.length > 0 && !loading;
+  const assistedWhatsappUrl = buildWhatsappUrl(
+    buildAssistedCheckoutMessage({
+      customer: form,
+      items: checkoutItems,
+      subtotalCop,
+      shippingCop: shipping.shippingCop,
+      totalCop,
+      freeShipping: shipping.freeShipping,
+      channel,
+    }),
+  );
 
   async function submit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -94,8 +106,22 @@ export function CheckoutClient({ channel }: { channel: SalesChannel }) {
 
         {response?.message ? <p className={`form-message ${response.ok ? "success" : "error"}`}>{response.message}</p> : null}
 
+        {checkoutItems.length ? (
+          <div className="checkout-assist">
+            <strong>Prefieres cerrar con ayuda humana?</strong>
+            <p>
+              Envia tu pedido por WhatsApp con el resumen ya armado y confirma disponibilidad, pago y entrega sin
+              volver a explicar todo.
+            </p>
+            <a href={assistedWhatsappUrl} className="secondary-button full" target="_blank" rel="noreferrer">
+              <MessageCircle size={18} />
+              Cerrar por WhatsApp
+            </a>
+          </div>
+        ) : null}
+
         {response?.ok && response.whatsappUrl ? (
-          <a href={response.whatsappUrl} className="secondary-button full" target="_blank">
+          <a href={response.whatsappUrl} className="secondary-button full" target="_blank" rel="noreferrer">
             <MessageCircle size={18} />
             Confirmar por WhatsApp
           </a>
@@ -163,6 +189,16 @@ export function CheckoutClient({ channel }: { channel: SalesChannel }) {
             : `Te faltan ${formatCop(shipping.amountToFreeShippingCop)} para envio gratis.`}
         </p>
         <p className="microcopy">Carrito total actual: {formatCop(totals.subtotalCop)}</p>
+        {checkoutItems.length ? (
+          <div className="checkout-steps">
+            <strong>Que pasa despues</strong>
+            <ul>
+              <li>Si pagas online, te redirigimos a Wompi para pago seguro.</li>
+              <li>Si prefieres WhatsApp, el asesor recibe tu pedido listo para cerrar.</li>
+              <li>La entrega estimada sigue en 3 a 5 dias habiles en Colombia.</li>
+            </ul>
+          </div>
+        ) : null}
       </aside>
     </div>
   );

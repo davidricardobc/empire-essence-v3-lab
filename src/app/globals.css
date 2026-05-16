@@ -1115,6 +1115,31 @@ h3 {
   color: var(--danger);
 }
 
+.checkout-assist,
+.checkout-steps {
+  display: grid;
+  gap: 10px;
+  border: 1px solid rgba(215, 185, 132, 0.14);
+  background: rgba(255, 255, 255, 0.025);
+  padding: 16px;
+}
+
+.checkout-assist strong,
+.checkout-steps strong {
+  color: var(--ivory);
+}
+
+.checkout-steps ul {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding-left: 18px;
+}
+
+.checkout-steps li {
+  color: rgba(247, 240, 230, 0.66);
+}
+
 .summary-list,
 .drawer-items,
 .wholesale-lines,
