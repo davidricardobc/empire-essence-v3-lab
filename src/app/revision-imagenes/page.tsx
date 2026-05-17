@@ -12,6 +12,21 @@ export const metadata: Metadata = {
 
 const reviewImages = [
   {
+    title: "Sprint 2 - Femenina Floral Elegante",
+    file: "/revision-images/empire-femenina-floral-elegante-v1.png",
+    note: "Primera ancla del nuevo sistema de variantes para producto femenino premium.",
+  },
+  {
+    title: "Sprint 2 - Masculina Amaderada Seria",
+    file: "/revision-images/empire-masculina-amaderada-seria-v1.png",
+    note: "Ancla masculina sobria para catalogo, quick-buy y PDP de autoridad.",
+  },
+  {
+    title: "Sprint 2 - Unisex Minimal Limpia",
+    file: "/revision-images/empire-unisex-minimal-limpia-v1.png",
+    note: "Ruta unisex limpia y balanceada para validar el sistema de intencion visual.",
+  },
+  {
     title: "Home Hero",
     file: "/revision-images/empire-home-hero-v1.png",
     note: "Direccion premium para hero principal con espacio visual util para copy.",
@@ -45,6 +60,36 @@ const reviewImages = [
     title: "Catalogo Unisex",
     file: "/revision-images/empire-catalog-unisex-v1.png",
     note: "Ruta mas sobria para productos unisex y nicho.",
+  },
+  {
+    title: "Blog Wholesale Starter",
+    file: "/revision-images/empire-blog-wholesale-starter-v1.png",
+    note: "Hero especifico para la guia de compra mayorista inicial.",
+  },
+  {
+    title: "Blog Reseller Mistakes",
+    file: "/revision-images/empire-blog-reseller-mistakes-v1.png",
+    note: "Hero editorial para errores comunes al empezar a revender fragancias.",
+  },
+  {
+    title: "Blog Wholesale Signals",
+    file: "/revision-images/empire-blog-wholesale-signals-v1.png",
+    note: "Hero para la pieza sobre senales de estar listo para vender perfumes.",
+  },
+  {
+    title: "Blog Provider Trust",
+    file: "/revision-images/empire-blog-provider-trust-v1.png",
+    note: "Hero pensado para proveedor confiable, margen y recompra.",
+  },
+  {
+    title: "Blog Masculina 2026",
+    file: "/revision-images/empire-blog-mens-rotation-v1.png",
+    note: "Hero mas oscuro para la guia de masculinos de alta rotacion.",
+  },
+  {
+    title: "Blog Duracion Ligera",
+    file: "/revision-images/empire-blog-lasting-scent-v1.png",
+    note: "Hero claro para la guia de perfumes duraderos sin sensacion pesada.",
   },
   {
     title: "Blog Atmosfera",
