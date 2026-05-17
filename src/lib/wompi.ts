@@ -1,11 +1,26 @@
 import crypto from "node:crypto";
 
-export function hasWompiConfig() {
+const WOMPI_CHECKOUT_URL = process.env.WOMPI_CHECKOUT_URL ?? "https://checkout.wompi.co/p/";
+
+export const wompiConfig = {
+  checkoutUrl: WOMPI_CHECKOUT_URL,
+  publicKey: process.env.NEXT_PUBLIC_WOMPI_PUBLIC_KEY ?? "",
+  privateKey: process.env.WOMPI_PRIVATE_KEY ?? "",
+  eventsSecret: process.env.WOMPI_EVENTS_SECRET ?? "",
+  integritySecret: process.env.WOMPI_INTEGRITY_SECRET ?? "",
+  currency: "COP",
+};
+
+export function hasWompiPublicConfig() {
   return Boolean(process.env.NEXT_PUBLIC_WOMPI_PUBLIC_KEY && process.env.WOMPI_INTEGRITY_SECRET);
 }
 
 export function hasWompiEventsConfig() {
   return Boolean(process.env.WOMPI_EVENTS_SECRET);
+}
+
+export function hasWompiPrivateConfig() {
+  return Boolean(process.env.WOMPI_PRIVATE_KEY && process.env.WOMPI_EVENTS_SECRET);
 }
 
 export function buildWompiCheckoutUrl({
@@ -17,12 +32,12 @@ export function buildWompiCheckoutUrl({
   amountCop: number;
   customerEmail: string;
 }) {
-  const publicKey = process.env.NEXT_PUBLIC_WOMPI_PUBLIC_KEY;
-  const integritySecret = process.env.WOMPI_INTEGRITY_SECRET;
+  const publicKey = wompiConfig.publicKey;
+  const integritySecret = wompiConfig.integritySecret;
   if (!publicKey || !integritySecret) return null;
 
   const amountInCents = amountCop * 100;
-  const currency = "COP";
+  const currency = wompiConfig.currency;
   const redirectUrl = `${process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"}/gracias?ref=${reference}`;
   const signature = crypto
     .createHash("sha256")
@@ -36,10 +51,11 @@ export function buildWompiCheckoutUrl({
     reference,
     "customer-data:email": customerEmail,
     "redirect-url": redirectUrl,
+    "payment-method-type": "CARD",
     "signature:integrity": signature,
   });
 
-  return `https://checkout.wompi.co/p/?${params.toString()}`;
+  return `${wompiConfig.checkoutUrl}?${params.toString()}`;
 }
 
 type WompiSignature = {
@@ -84,4 +100,17 @@ export function verifyWompiEventChecksum(payload: WompiEventPayload, eventsSecre
   const computedBuffer = Buffer.from(computed, "hex");
 
   return expectedBuffer.length === computedBuffer.length && crypto.timingSafeEqual(expectedBuffer, computedBuffer);
+}
+
+export function mapWompiTransactionStatus(status: string) {
+  switch (status.toUpperCase()) {
+    case "APPROVED":
+      return { paymentStatus: "paid" as const, orderStatus: "confirmed" as const };
+    case "DECLINED":
+    case "ERROR":
+    case "VOIDED":
+      return { paymentStatus: "failed" as const, orderStatus: "pending" as const };
+    default:
+      return { paymentStatus: "pending" as const, orderStatus: "pending" as const };
+  }
 }

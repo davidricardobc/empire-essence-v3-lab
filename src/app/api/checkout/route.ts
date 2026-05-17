@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { buildWhatsappUrl, buildOrderMessage } from "@/lib/whatsapp";
 import { buildWompiCheckoutUrl } from "@/lib/wompi";
 import { checkoutSchema, createOrderReference, getCheckoutTotals, normalizeCartItems } from "@/lib/checkout";
+import { saveOrder } from "@/lib/order-store";
 import { WHOLESALE_MIN_UNITS } from "@/lib/pricing";
 
 export async function POST(request: Request) {
@@ -57,11 +58,41 @@ export async function POST(request: Request) {
         channel: parsed.data.channel,
       }),
     );
+    const paymentProvider = checkoutUrl ? "wompi" : "manual";
+    const paymentStatus = checkoutUrl ? "initiated" : "pending";
+    const orderStatus = "pending";
+
+    await saveOrder({
+      reference,
+      channel: parsed.data.channel,
+      customer: {
+        name: parsed.data.name,
+        phone: parsed.data.phone,
+        email: parsed.data.email,
+        city: parsed.data.city,
+        address: parsed.data.address,
+        notes: parsed.data.notes,
+      },
+      items,
+      subtotalCop: totals.subtotalCop,
+      shippingCop: totals.shippingCop,
+      totalCop: totals.totalCop,
+      freeShipping: totals.freeShipping,
+      shippingZone: totals.shippingZone,
+      paymentProvider,
+      paymentStatus,
+      orderStatus,
+      wompiCheckoutUrl: checkoutUrl,
+      createdAt: new Date().toISOString(),
+      updatedAt: new Date().toISOString(),
+    });
 
     return NextResponse.json({
       ok: true,
       reference,
-      paymentProvider: checkoutUrl ? "wompi" : "manual",
+      paymentProvider,
+      paymentStatus,
+      orderStatus,
       checkoutUrl,
       whatsappUrl,
       message: checkoutUrl

@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
-import { verifyWompiEventChecksum } from "@/lib/wompi";
+import { updateOrderPayment } from "@/lib/order-store";
+import { mapWompiTransactionStatus, verifyWompiEventChecksum } from "@/lib/wompi";
 
 type WompiTransaction = {
   id?: string;
@@ -44,17 +45,31 @@ export async function POST(request: Request) {
   }
 
   const transaction = payload.data?.transaction;
+  const reference = transaction?.reference;
+  const mapped = mapWompiTransactionStatus(transaction?.status ?? "PENDING");
 
-  // Persisting payment state needs a database/order store. For now this endpoint validates
-  // the event and returns the normalized transaction fields expected by that future store.
+  if (!reference) {
+    return NextResponse.json({ ok: false, message: "Missing transaction reference." }, { status: 400 });
+  }
+
+  const order = await updateOrderPayment(reference, {
+    ...mapped,
+    wompiTransactionId: transaction?.id ?? null,
+    wompiStatus: transaction?.status ?? "PENDING",
+  });
+
   return NextResponse.json({
     ok: true,
     event: payload.event,
+    reference,
+    orderFound: Boolean(order),
     transaction: {
       id: transaction?.id,
-      reference: transaction?.reference,
+      reference,
       status: transaction?.status,
       amountInCents: transaction?.amount_in_cents,
     },
+    paymentStatus: mapped.paymentStatus,
+    orderStatus: mapped.orderStatus,
   });
 }

@@ -27,7 +27,7 @@ export function getShipping(city: string, subtotalCop: number) {
     .toLowerCase()
     .normalize("NFD")
     .replace(/[\u0300-\u036f]/g, "");
-  const shippingZone = normalizedCity.includes("bogota") ? "bogota" : "national";
+  const shippingZone: "bogota" | "national" = normalizedCity.includes("bogota") ? "bogota" : "national";
   const baseShipping = shippingZone === "bogota" ? SHIPPING.bogotaCop : SHIPPING.nationalCop;
   const freeShipping = subtotalCop >= SHIPPING.freeThresholdCop;
 
