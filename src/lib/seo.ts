@@ -5,7 +5,7 @@ const FALLBACK_SITE_URL = "https://empireessence.co";
 
 export const siteName = "Empire Essence";
 export const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || FALLBACK_SITE_URL;
-export const defaultOgImage = "/assets/empire-hero-scene.png";
+export const defaultOgImage = "/revision-images/empire-home-hero-v1.png";
 
 export function absoluteUrl(path = "/") {
   return new URL(path, siteUrl).toString();

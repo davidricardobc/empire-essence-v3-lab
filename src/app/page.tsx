@@ -108,16 +108,16 @@ export default function HomePage() {
           </div>
           <div className="collection-lineup">
             <Image
-              src="/assets/empire-collection-lineup.png"
-              alt="Linea de fragancias Empire Essence"
+              src="/revision-images/empire-retail-lifestyle-v1.png"
+              alt="Editorial retail de Empire Essence"
               width={900}
               height={506}
             />
           </div>
           <div className="wholesale-teaser-card">
             <Image
-              src="/assets/empire-wholesale-banner.png"
-              alt=""
+              src="/revision-images/empire-wholesale-editorial-v1.png"
+              alt="Escena editorial mayorista de Empire Essence"
               fill
               sizes="(max-width: 900px) 100vw, 44vw"
             />

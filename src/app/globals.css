@@ -1970,7 +1970,7 @@ h3 {
 }
 
 .concept-hero-photo {
-  background: url("/assets/empire-hero-scene.png") center bottom / cover no-repeat;
+  background: url("/revision-images/empire-home-hero-v1.png") center center / cover no-repeat;
 }
 
 .concept-hero-shade {
@@ -2467,7 +2467,7 @@ h3 {
   z-index: -1;
   background:
     linear-gradient(90deg, rgba(13, 7, 7, 0.96), rgba(13, 7, 7, 0.62), rgba(13, 7, 7, 0.3)),
-    url("/assets/empire-wholesale-banner.png") right center / cover no-repeat;
+    url("/revision-images/empire-wholesale-editorial-v1.png") right center / cover no-repeat;
 }
 
 .alex-trigger {
