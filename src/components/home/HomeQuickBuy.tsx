@@ -5,6 +5,7 @@ import Link from "next/link";
 import { MessageCircle, Plus } from "lucide-react";
 import { useCart } from "@/components/cart/CartProvider";
 import { formatCop } from "@/lib/currency";
+import { getProductVisual } from "@/lib/product-visuals";
 import { buildWhatsappUrl } from "@/lib/whatsapp";
 import type { Product } from "@/types/product";
 
@@ -26,7 +27,7 @@ export function HomeQuickBuy({ products }: { products: Product[] }) {
             <article key={product.id} className="quick-buy-item">
               <Link href={`/producto/${product.slug}`} className="quick-buy-media" aria-label={`Ver ${product.publicName}`}>
                 <Image
-                  src="/assets/empire-collection-lineup.png"
+                  src={getProductVisual(product.category)}
                   alt=""
                   fill
                   sizes="96px"

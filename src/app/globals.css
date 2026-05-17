@@ -3158,7 +3158,7 @@ h3 {
   border-block: 1px solid rgba(215, 185, 132, 0.12);
   background:
     linear-gradient(90deg, rgba(74, 31, 40, 0.24), rgba(11, 10, 10, 0.96)),
-    url("/assets/empire-hero-scene.png") center / cover fixed;
+    url("/revision-images/empire-blog-band-v2.png") center / cover fixed;
 }
 
 .blog-home-action {
@@ -3173,7 +3173,7 @@ h3 {
   border-radius: 8px;
   background:
     linear-gradient(90deg, rgba(74, 31, 40, 0.74), rgba(11, 10, 10, 0.94)),
-    url("/assets/empire-wholesale-banner.png") right center / cover;
+    url("/revision-images/empire-blog-wholesale-strip-v2.png") right center / cover;
   box-shadow: 0 24px 80px rgba(0, 0, 0, 0.28);
 }
 

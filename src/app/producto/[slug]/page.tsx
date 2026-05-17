@@ -8,6 +8,7 @@ import { ProductCard } from "@/components/catalog/ProductCard";
 import { categoryLabels } from "@/data/products";
 import { formatCop } from "@/lib/currency";
 import { getAllProducts, getProductBySlug, getRelatedProducts } from "@/lib/products";
+import { getProductVisual } from "@/lib/product-visuals";
 import { createBreadcrumbJsonLd, createProductJsonLd, defaultOgImage } from "@/lib/seo";
 
 export function generateStaticParams() {
@@ -67,7 +68,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
           </Link>
           <div className="product-visual">
             <Image
-              src="/assets/empire-collection-lineup.png"
+              src={getProductVisual(product.category)}
               alt={`Fragancia ${product.publicName}`}
               fill
               sizes="(max-width: 900px) 100vw, 52vw"

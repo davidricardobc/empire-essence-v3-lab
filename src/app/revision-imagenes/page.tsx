@@ -31,6 +31,31 @@ const reviewImages = [
     file: "/revision-images/empire-blog-editorial-v1.png",
     note: "Preview para heroes de blog y contenido educativo con mejor presencia.",
   },
+  {
+    title: "Catalogo Masculina",
+    file: "/revision-images/empire-catalog-masculina-v1.png",
+    note: "Visual editorial para cards, quick-buy y PDP masculinos.",
+  },
+  {
+    title: "Catalogo Femenina",
+    file: "/revision-images/empire-catalog-femenina-v1.png",
+    note: "Visual premium para cards y PDP femeninos.",
+  },
+  {
+    title: "Catalogo Unisex",
+    file: "/revision-images/empire-catalog-unisex-v1.png",
+    note: "Ruta mas sobria para productos unisex y nicho.",
+  },
+  {
+    title: "Blog Atmosfera",
+    file: "/revision-images/empire-blog-band-v2.png",
+    note: "Fondo editorial para la banda de blog en home.",
+  },
+  {
+    title: "Wholesale Banner V2",
+    file: "/revision-images/empire-blog-wholesale-strip-v2.png",
+    note: "Nuevo fondo para CTA mayorista dentro del blog.",
+  },
 ];
 
 export default function RevisionImagenesPage() {

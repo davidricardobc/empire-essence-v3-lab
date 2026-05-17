@@ -4,6 +4,7 @@ import { ArrowRight, Flame } from "lucide-react";
 import { AddToCart } from "@/components/cart/AddToCart";
 import { categoryLabels } from "@/data/products";
 import { formatCop } from "@/lib/currency";
+import { getProductVisual } from "@/lib/product-visuals";
 import type { Product } from "@/types/product";
 
 export function ProductCard({ product, compact = false }: { product: Product; compact?: boolean }) {
@@ -12,7 +13,7 @@ export function ProductCard({ product, compact = false }: { product: Product; co
   return (
     <article className={`product-card ${compact ? "compact-card" : ""}`}>
       <Link href={`/producto/${product.slug}`} className="product-card-media" aria-label={`Ver ${product.publicName}`}>
-        <Image src="/assets/empire-collection-lineup.png" alt="" fill sizes="(max-width: 720px) 100vw, 280px" />
+        <Image src={getProductVisual(product.category)} alt="" fill sizes="(max-width: 720px) 100vw, 280px" />
       </Link>
       <div className="product-card-top">
         <span>{categoryLabels[product.category]}</span>
