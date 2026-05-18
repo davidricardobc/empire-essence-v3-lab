@@ -13,3 +13,5 @@ pnpm-debug.log*
 *.log
 *.tsbuildinfo
 data/orders.json
+.vercel
+.vercel
