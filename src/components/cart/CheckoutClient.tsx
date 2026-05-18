@@ -19,7 +19,7 @@ const initialForm = {
   notes: "",
 };
 
-export function CheckoutClient({ channel }: { channel: SalesChannel }) {
+export function CheckoutClient({ channel, wompiEnabled }: { channel: SalesChannel; wompiEnabled: boolean }) {
   const { items, totals, updateQuantity, removeItem, clearCart } = useCart();
   const [form, setForm] = useState(initialForm);
   const [loading, setLoading] = useState(false);
@@ -60,6 +60,11 @@ export function CheckoutClient({ channel }: { channel: SalesChannel }) {
         window.location.href = data.checkoutUrl;
         return;
       }
+      if (data.ok && data.whatsappUrl) {
+        clearCart();
+        window.location.href = data.whatsappUrl;
+        return;
+      }
       if (data.ok) clearCart();
     } catch {
       setResponse({ ok: false, message: "No se pudo conectar con el checkout. Intenta por WhatsApp." });
@@ -73,7 +78,11 @@ export function CheckoutClient({ channel }: { channel: SalesChannel }) {
       <form className="checkout-form panel" onSubmit={submit}>
         <span className="eyebrow">{channel === "wholesale" ? "Checkout mayorista" : "Checkout retail"}</span>
         <h2>Datos para cerrar tu pedido</h2>
-        <p>Paga con seguridad o confirma tu pedido por WhatsApp si prefieres recibir ayuda antes de finalizar.</p>
+        <p>
+          {wompiEnabled
+            ? "Paga con seguridad o confirma tu pedido por WhatsApp si prefieres recibir ayuda antes de finalizar."
+            : "Wompi no esta activo todavia. Completa tus datos y te enviamos directo a WhatsApp con tu pedido listo para cerrar."}
+        </p>
 
         <div className="form-grid">
           <Input label="Nombre" value={form.name} onChange={(name) => setForm((current) => ({ ...current, name }))} />
@@ -129,7 +138,7 @@ export function CheckoutClient({ channel }: { channel: SalesChannel }) {
 
         <button type="submit" className="primary-button full" disabled={!canSubmit}>
           <ShieldCheck size={18} />
-          {loading ? "Creando pedido..." : "Continuar al pago seguro"}
+          {loading ? "Creando pedido..." : wompiEnabled ? "Continuar al pago seguro" : "Continuar por WhatsApp"}
         </button>
       </form>
 
@@ -193,7 +202,11 @@ export function CheckoutClient({ channel }: { channel: SalesChannel }) {
           <div className="checkout-steps">
             <strong>Que pasa despues</strong>
             <ul>
-              <li>Si pagas online, te redirigimos a Wompi para pago seguro.</li>
+              <li>
+                {wompiEnabled
+                  ? "Si pagas online, te redirigimos a Wompi para pago seguro."
+                  : "Te llevamos directo a WhatsApp con el pedido armado para cerrar contigo."}
+              </li>
               <li>Si prefieres WhatsApp, el asesor recibe tu pedido listo para cerrar.</li>
               <li>La entrega estimada sigue en 3 a 5 dias habiles en Colombia.</li>
             </ul>

@@ -90,6 +90,7 @@ export async function POST(request: Request) {
     return NextResponse.json({
       ok: true,
       reference,
+      nextAction: checkoutUrl ? "wompi" : "whatsapp",
       paymentProvider,
       paymentStatus,
       orderStatus,
@@ -97,7 +98,7 @@ export async function POST(request: Request) {
       whatsappUrl,
       message: checkoutUrl
         ? "Pedido listo. Redirige a Wompi para pago seguro."
-        : "Pedido listo. Wompi no esta configurado, usa WhatsApp como fallback.",
+        : "Pedido listo. Te llevamos a WhatsApp para confirmar disponibilidad y forma de pago.",
       pricing: {
         subtotalCop: totals.subtotalCop,
         shippingCop: totals.shippingCop,

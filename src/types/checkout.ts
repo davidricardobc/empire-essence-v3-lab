@@ -19,6 +19,7 @@ export type CheckoutApiResponse = {
   reference?: string;
   checkoutUrl?: string | null;
   whatsappUrl?: string;
+  nextAction?: "wompi" | "whatsapp";
   paymentProvider?: "wompi" | "manual";
   paymentStatus?: "initiated" | "pending" | "paid" | "failed";
   orderStatus?: "pending" | "confirmed";
