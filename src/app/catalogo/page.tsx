@@ -50,7 +50,7 @@ export default async function CatalogPage({
         <div className="catalog-stats">
           <span>{products.length} referencias base</span>
           <span>Tamaños 30, 50 y 100 ml</span>
-          <span>Pago por carrito o WhatsApp</span>
+          <span>Compra por carrito o WhatsApp</span>
         </div>
       </section>
       <div className="shell">

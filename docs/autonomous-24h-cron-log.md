@@ -82,3 +82,13 @@ Cada ejecucion debe escoger un foco segun lo que aprenda de la anterior. Temas a
 - Validacion: `npm run lint` OK; `npm run typecheck` OK; `npm run build` OK.
 - Commit: `fix: polish spanish copy on home and catalog`.
 - Siguiente hipotesis: Revisar contraste y legibilidad de texto sobre fotografia oscura en mobile, especialmente en hero y tarjetas de catalogo.
+
+### Job 02 - 2026-07-19 18:26
+- Foco: Pulir acentos, `ñ` y microcopy visible en header y explorador de catalogo.
+- Por que tome este camino: La inspeccion del catalogo encontro errores de espanol todavia visibles en navegacion, filtros, estados vacios y ayuda de compra; era una mejora pequena y segura antes de tocar contraste o layout.
+- Que estudie: `docs/autonomous-24h-cron-log.md`, `src/components/layout/SiteHeader.tsx`, `src/components/catalog/CatalogExplorer.tsx` y `src/app/catalogo/page.tsx`.
+- Hallazgos: Persistian textos como `Coleccion`, `menu`, `Categoria`, `Ocasion`, `Busqueda`, `tamano` y `combinacion`; tambien habia una frase mejorable con `card` en ingles dentro de la ayuda de compra.
+- Cambios: Correccion de tildes y `ñ` en header y catalogo; ajuste de dos frases para que suenen mas naturales en espanol sin cambiar comportamiento ni estructura visual.
+- Validacion: `npm run lint` OK; `npm run typecheck` OK; `npm run build` OK.
+- Commit: `fix: polish catalog and header spanish accents`.
+- Siguiente hipotesis: Revisar contraste real y densidad del toolbar/filtros del catalogo en mobile para reducir fatiga visual y scroll antes de las cards.

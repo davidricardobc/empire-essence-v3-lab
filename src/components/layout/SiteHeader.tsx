@@ -8,7 +8,7 @@ import { CartButton } from "@/components/cart/CartButton";
 
 const links = [
   { href: "/", label: "Inicio" },
-  { href: "/catalogo", label: "Coleccion" },
+  { href: "/catalogo", label: "Colección" },
   { href: "/blog", label: "Blog" },
   { href: "/mayoristas", label: "Mayoristas" },
 ];
@@ -56,7 +56,7 @@ export function SiteHeader() {
             type="button"
             className="menu-button"
             onClick={() => setOpen((value) => !value)}
-            aria-label={open ? "Cerrar menu" : "Abrir menu"}
+            aria-label={open ? "Cerrar menú" : "Abrir menú"}
             aria-expanded={open}
             aria-controls={mobileNavId}
           >

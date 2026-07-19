@@ -59,12 +59,12 @@ export function CatalogExplorer({ initialFilters }: CatalogExplorerProps) {
   }, [category, family, intensity, mood, occasion, query]);
 
   const activeFilters = [
-    category !== "all" ? { key: "category", label: `Categoria: ${categoryLabels[category]}`, clear: () => setCategory("all") } : null,
+    category !== "all" ? { key: "category", label: `Categoría: ${categoryLabels[category]}`, clear: () => setCategory("all") } : null,
     family !== "all" ? { key: "family", label: `Familia: ${family}`, clear: () => setFamily("all") } : null,
     mood !== "all" ? { key: "mood", label: `Mood: ${mood}`, clear: () => setMood("all") } : null,
-    occasion !== "all" ? { key: "occasion", label: `Ocasion: ${occasion}`, clear: () => setOccasion("all") } : null,
+    occasion !== "all" ? { key: "occasion", label: `Ocasión: ${occasion}`, clear: () => setOccasion("all") } : null,
     intensity !== "all" ? { key: "intensity", label: `Intensidad: ${intensity}`, clear: () => setIntensity("all") } : null,
-    query.trim() ? { key: "q", label: `Busqueda: ${query.trim()}`, clear: () => setQuery("") } : null,
+    query.trim() ? { key: "q", label: `Búsqueda: ${query.trim()}`, clear: () => setQuery("") } : null,
   ].filter(Boolean) as Array<{ key: string; label: string; clear: () => void }>;
 
   function clearAllFilters() {
@@ -84,7 +84,7 @@ export function CatalogExplorer({ initialFilters }: CatalogExplorerProps) {
           <input
             value={query}
             onChange={(event) => setQuery(event.target.value)}
-            placeholder="Busca por aroma, ocasion, inspiracion o mood"
+            placeholder="Busca por aroma, ocasión, inspiración o mood"
           />
         </label>
         <div className="result-count">
@@ -97,7 +97,7 @@ export function CatalogExplorer({ initialFilters }: CatalogExplorerProps) {
         <div className="catalog-intent-bar">
           <div>
             <strong>Vista guiada activa</strong>
-            <p>Estas viendo una seleccion filtrada. Puedes limpiar o afinar estos filtros cuando quieras.</p>
+            <p>Estás viendo una selección filtrada. Puedes limpiar o afinar estos filtros cuando quieras.</p>
           </div>
           <div className="active-filter-list">
             {activeFilters.map((filter) => (
@@ -112,19 +112,19 @@ export function CatalogExplorer({ initialFilters }: CatalogExplorerProps) {
         </div>
       ) : null}
 
-      <div className="catalog-guidance" aria-label="Ayuda para comprar mas rapido">
+      <div className="catalog-guidance" aria-label="Ayuda para comprar más rápido">
         <div>
-          <strong>Compra mas facil</strong>
-          <p>Elige tamano y agrega desde la card. Entra a la ficha solo si quieres confirmar notas o confianza extra.</p>
+          <strong>Compra más fácil</strong>
+          <p>Elige tamaño y agrega desde la ficha. Entra al detalle solo si quieres confirmar notas o confianza extra.</p>
         </div>
         <div>
-          <strong>Senales rapidas</strong>
-          <p>Tamanos, sensacion, precio y familias quedan visibles para decidir sin friccion.</p>
+          <strong>Señales rápidas</strong>
+          <p>Tamaños, sensación, precio y familias quedan visibles para decidir sin fricción.</p>
         </div>
       </div>
 
       <div className="filter-grid">
-        <FilterSelect label="Categoria" value={category} onChange={(value) => setCategory(value as Category | "all")}>
+        <FilterSelect label="Categoría" value={category} onChange={(value) => setCategory(value as Category | "all")}>
           {categories.map((item) => (
             <option key={item} value={item}>
               {item === "all" ? "Todas" : categoryLabels[item]}
@@ -147,7 +147,7 @@ export function CatalogExplorer({ initialFilters }: CatalogExplorerProps) {
             </option>
           ))}
         </FilterSelect>
-        <FilterSelect label="Ocasion" value={occasion} onChange={setOccasion}>
+        <FilterSelect label="Ocasión" value={occasion} onChange={setOccasion}>
           <option value="all">Todas</option>
           {allOccasions.map((item) => (
             <option key={item} value={item}>
@@ -172,8 +172,8 @@ export function CatalogExplorer({ initialFilters }: CatalogExplorerProps) {
 
       {!filtered.length ? (
         <div className="empty-state">
-          <h3>No encontramos esa combinacion.</h3>
-          <p>Prueba una busqueda mas amplia o escribe por WhatsApp para que te digamos por donde empezar.</p>
+          <h3>No encontramos esa combinación.</h3>
+          <p>Prueba una búsqueda más amplia o escribe por WhatsApp para que te digamos por dónde empezar.</p>
         </div>
       ) : null}
     </section>
