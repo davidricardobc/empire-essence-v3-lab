@@ -58,6 +58,7 @@ export function AlexAdvisor() {
     () => recommendFromText(userTranscript.join(" "), profile.channel === "wholesale"),
     [profile.channel, userTranscript],
   );
+  const panelId = "alex-panel";
 
   async function send(text: string) {
     const clean = text.trim();
@@ -127,12 +128,23 @@ export function AlexAdvisor() {
       id="alex"
       className={`alex-root ${drawerOpen ? "is-drawer-open" : ""} ${compactRoute ? "is-compact-route" : ""}`}
     >
-      <button type="button" className="alex-trigger" onClick={() => setOpen((value) => !value)}>
+      <button
+        type="button"
+        className="alex-trigger"
+        onClick={() => setOpen((value) => !value)}
+        aria-controls={panelId}
+        aria-expanded={open}
+      >
         {open ? <X size={20} /> : <Sparkles size={20} />}
         <span>Alex</span>
       </button>
 
-      <section className={`alex-panel ${open ? "is-open" : ""}`} aria-hidden={!open}>
+      <section
+        id={panelId}
+        className={`alex-panel ${open ? "is-open" : ""}`}
+        aria-hidden={!open}
+        aria-label="Asesor Alex"
+      >
         <div className="alex-head">
           <div>
             <span className="eyebrow">Asesor de fragancias</span>

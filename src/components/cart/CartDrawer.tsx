@@ -22,7 +22,13 @@ export function CartDrawer() {
   return (
     <>
       <div className={`drawer-scrim ${drawerOpen ? "is-open" : ""}`} onClick={closeDrawer} />
-      <aside className={`cart-drawer ${drawerOpen ? "is-open" : ""}`} aria-hidden={!drawerOpen}>
+      <aside
+        id="cart-drawer"
+        className={`cart-drawer ${drawerOpen ? "is-open" : ""}`}
+        aria-hidden={!drawerOpen}
+        aria-modal={drawerOpen}
+        role="dialog"
+      >
         <div className="drawer-head">
           <div>
             <span className="eyebrow">Seleccion actual</span>

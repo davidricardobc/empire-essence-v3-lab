@@ -16,6 +16,7 @@ const links = [
 export function SiteHeader() {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
+  const mobileNavId = "site-mobile-nav";
 
   const isActive = (href: string) => (href === "/" ? pathname === href : pathname.startsWith(href));
 
@@ -52,13 +53,14 @@ export function SiteHeader() {
             onClick={() => setOpen((value) => !value)}
             aria-label={open ? "Cerrar menu" : "Abrir menu"}
             aria-expanded={open}
+            aria-controls={mobileNavId}
           >
             {open ? <X size={20} /> : <Menu size={20} />}
           </button>
         </div>
       </div>
 
-      <div className={`mobile-nav ${open ? "is-open" : ""}`}>
+      <div id={mobileNavId} className={`mobile-nav ${open ? "is-open" : ""}`}>
         {links.map((link) => (
           <Link
             key={link.href}
