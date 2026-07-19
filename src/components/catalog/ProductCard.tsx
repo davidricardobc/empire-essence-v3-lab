@@ -44,9 +44,12 @@ export function ProductCard({ product, compact = false }: { product: Product; co
         <strong>{formatCop(price)}</strong>
       </div>
       {compact ? (
-        <Link href={`/producto/${product.slug}`} className="ghost-link">
-          Ver perfil <ArrowRight size={14} />
-        </Link>
+        <div className="product-card-actions">
+          <AddToCart product={product} compact />
+          <Link href={`/producto/${product.slug}`} className="ghost-link">
+            Ver detalles <ArrowRight size={14} />
+          </Link>
+        </div>
       ) : (
         <AddToCart product={product} />
       )}

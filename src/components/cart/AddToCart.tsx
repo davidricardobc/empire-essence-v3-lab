@@ -14,6 +14,7 @@ type AddToCartProps = {
   channel?: SalesChannel;
   defaultQuantity?: number;
   showDirectWhatsapp?: boolean;
+  compact?: boolean;
 };
 
 export function AddToCart({
@@ -21,6 +22,7 @@ export function AddToCart({
   channel = "retail",
   defaultQuantity = 1,
   showDirectWhatsapp = false,
+  compact = false,
 }: AddToCartProps) {
   const { addItem } = useCart();
   const [selectedSku, setSelectedSku] = useState(product.variants[0]?.sku ?? "");
@@ -49,7 +51,7 @@ export function AddToCart({
   );
 
   return (
-    <div className="buy-box">
+    <div className={`buy-box ${compact ? "compact-buy-box" : ""}`}>
       <div className="variant-grid" role="radiogroup" aria-label="Seleccionar tamano">
         {product.variants.map((variant) => {
           const active = variant.sku === selected.sku;
@@ -73,7 +75,7 @@ export function AddToCart({
         })}
       </div>
 
-      {channel === "retail" ? (
+      {channel === "retail" && !compact ? (
         <div className="size-guide-card">
           <div className="size-guide-copy">
             <strong>{selectedSizeGuide.title}</strong>
@@ -83,18 +85,20 @@ export function AddToCart({
         </div>
       ) : null}
 
-      <div className="quantity-row">
-        <span>Cantidad</span>
-        <div className="stepper">
-          <button type="button" onClick={() => setQuantity((value) => Math.max(1, value - 1))} aria-label="Restar">
-            -
-          </button>
-          <strong>{quantity}</strong>
-          <button type="button" onClick={() => setQuantity((value) => value + 1)} aria-label="Sumar">
-            +
-          </button>
+      {!compact ? (
+        <div className="quantity-row">
+          <span>Cantidad</span>
+          <div className="stepper">
+            <button type="button" onClick={() => setQuantity((value) => Math.max(1, value - 1))} aria-label="Restar">
+              -
+            </button>
+            <strong>{quantity}</strong>
+            <button type="button" onClick={() => setQuantity((value) => value + 1)} aria-label="Sumar">
+              +
+            </button>
+          </div>
         </div>
-      </div>
+      ) : null}
 
       <div className="buy-box-actions">
         <button
@@ -114,7 +118,7 @@ export function AddToCart({
           }
         >
           <ShoppingBag size={18} />
-          {channel === "wholesale" ? "Agregar kit al carrito" : "Agregar al carrito"}
+          {compact ? "Agregar" : channel === "wholesale" ? "Agregar kit al carrito" : "Agregar al carrito"}
         </button>
 
         {showDirectWhatsapp ? (

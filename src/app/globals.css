@@ -2553,7 +2553,9 @@ h3 {
 .product-card-media::after {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, transparent, rgba(8, 7, 7, 0.22));
+  background:
+    linear-gradient(180deg, rgba(8, 7, 7, 0.08), rgba(8, 7, 7, 0.48)),
+    linear-gradient(90deg, rgba(8, 7, 7, 0.42), transparent 58%);
   content: "";
   transition: opacity 220ms var(--ease-swift);
 }
@@ -2616,6 +2618,47 @@ h3 {
 
 .product-card h3 {
   font-size: 2.05rem;
+}
+
+.product-card-actions {
+  display: grid;
+  gap: 11px;
+  margin-top: 16px;
+}
+
+.compact-buy-box {
+  gap: 10px;
+  margin-top: 0;
+}
+
+.compact-buy-box .variant-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.compact-buy-box .variant-pill {
+  min-height: 54px;
+  padding: 9px 8px;
+  background: rgba(255, 255, 255, 0.055);
+}
+
+.compact-buy-box .variant-pill span {
+  color: rgba(247, 240, 230, 0.82);
+}
+
+.compact-buy-box .variant-pill strong {
+  color: var(--ivory);
+  font-size: 0.78rem;
+}
+
+.compact-buy-box .primary-button.full {
+  min-height: 46px;
+  justify-content: center;
+}
+
+.product-card-actions .ghost-link {
+  justify-content: center;
+  min-height: 38px;
+  color: rgba(247, 240, 230, 0.86);
 }
 
 .product-card-proof {
@@ -3232,6 +3275,20 @@ body[data-motion="ready"] .concept-hero[data-motion-visible="true"] .hero-kicker
 
   .product-card-media {
     height: 210px;
+  }
+
+  .compact-buy-box .variant-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .compact-buy-box .variant-pill {
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    min-height: 44px;
+  }
+
+  .compact-buy-box .variant-pill strong {
+    text-align: right;
   }
 }
 

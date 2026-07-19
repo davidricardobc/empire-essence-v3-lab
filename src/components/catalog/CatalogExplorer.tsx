@@ -115,11 +115,11 @@ export function CatalogExplorer({ initialFilters }: CatalogExplorerProps) {
       <div className="catalog-guidance" aria-label="Ayuda para comprar mas rapido">
         <div>
           <strong>Compra mas facil</strong>
-          <p>Abre la ficha para revisar notas, tamanos y duracion antes de agregar al carrito.</p>
+          <p>Elige tamano y agrega desde la card. La ficha queda para quien quiera revisar mas.</p>
         </div>
         <div>
           <strong>Senales rapidas</strong>
-          <p>Las cards ahora muestran tamanos e intensidad para comparar sin entrar producto por producto.</p>
+          <p>Tamanos, intensidad, precio y familias quedan visibles para decidir sin friccion.</p>
         </div>
       </div>
 
