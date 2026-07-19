@@ -115,11 +115,11 @@ export function CatalogExplorer({ initialFilters }: CatalogExplorerProps) {
       <div className="catalog-guidance" aria-label="Ayuda para comprar mas rapido">
         <div>
           <strong>Compra mas facil</strong>
-          <p>Elige tamano y agrega desde la card. La ficha queda para quien quiera revisar mas.</p>
+          <p>Elige tamano y agrega desde la card. Entra a la ficha solo si quieres confirmar notas o confianza extra.</p>
         </div>
         <div>
           <strong>Senales rapidas</strong>
-          <p>Tamanos, intensidad, precio y familias quedan visibles para decidir sin friccion.</p>
+          <p>Tamanos, sensacion, precio y familias quedan visibles para decidir sin friccion.</p>
         </div>
       </div>
 
@@ -173,7 +173,7 @@ export function CatalogExplorer({ initialFilters }: CatalogExplorerProps) {
       {!filtered.length ? (
         <div className="empty-state">
           <h3>No encontramos esa combinacion.</h3>
-          <p>Prueba una busqueda mas amplia o abre Alex para una recomendacion guiada.</p>
+          <p>Prueba una busqueda mas amplia o escribe por WhatsApp para que te digamos por donde empezar.</p>
         </div>
       ) : null}
     </section>

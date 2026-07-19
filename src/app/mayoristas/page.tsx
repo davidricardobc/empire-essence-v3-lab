@@ -27,8 +27,8 @@ export default function WholesalePage() {
           <span className="eyebrow">Mayoristas y emprendedores</span>
           <h1>Perfumes al por mayor en Colombia para empezar con margen.</h1>
           <p>
-            Pedido minimo de 10 unidades mixtas, precios por volumen y asesoria para elegir referencias faciles de
-            recomendar.
+            Pedido minimo de 10 unidades mixtas, precios por volumen y ayuda para elegir referencias faciles de mover
+            desde el primer pedido.
           </p>
         </div>
         <div className="wholesale-proof">
@@ -55,8 +55,8 @@ export default function WholesalePage() {
       <section className="section shell b2b-steps">
         {[
           ["01", "Elige variedad", "Mezcla tamanos y fragancias top venta para probar demanda real."],
-          ["02", "Calcula margen", "Visualiza inversion, precio sugerido y ganancia estimada antes de comprar."],
-          ["03", "Compra o cotiza", "Paga kits fijos en checkout. Insumos y volumen avanzado pasan a asesoria."],
+          ["02", "Calcula margen", "Visualiza inversion, precio sugerido y ganancia estimada antes de pagar."],
+          ["03", "Compra o cotiza", "Cierra por checkout o por WhatsApp segun el tipo de pedido."],
         ].map(([step, title, copy]) => (
           <article key={step} className="panel step-card">
             <span>{step}</span>

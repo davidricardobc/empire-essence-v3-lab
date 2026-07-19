@@ -79,7 +79,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
           <p className="inspired">Inspirado en {product.inspirationReference}</p>
           <p className="lead">{product.longDescription}</p>
           <p className="lead">
-            Perfume inspirado para {categoryLabels[product.category].toLowerCase()} ideal para {product.occasions.join(
+            Para {categoryLabels[product.category].toLowerCase()} que buscan un perfil ideal para {product.occasions.join(
               ", ",
             )}.
           </p>
@@ -95,7 +95,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
           </div>
 
           <div className="product-decision-strip">
-            <span>Ideal para {product.occasions.slice(0, 2).join(" y ")}</span>
+            <span>Se siente {product.moods.slice(0, 2).join(" y ")}</span>
             <span>Disponible en {product.variants.map((variant) => `${variant.sizeMl} ml`).join(", ")}</span>
           </div>
 
@@ -118,11 +118,11 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
           <p>{product.bestFor}</p>
           <div className="decision-summary">
             <div>
-              <span>Huele a</span>
+              <span>Inspiracion</span>
               <strong>{product.inspirationReference}</strong>
             </div>
             <div>
-              <span>Se recomienda para</span>
+              <span>Para usar en</span>
               <strong>{product.occasions.join(", ")}</strong>
             </div>
             <div>
@@ -139,10 +139,11 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
             Desde {formatCop(product.variants[0].retailPriceCop)} - envio gratis desde {formatCop(140000)}
           </div>
           <div className="buyer-confidence">
-            <strong>Antes de pagar ya sabes esto:</strong>
+            <strong>Antes de pagar, revisa esto:</strong>
             <ul>
-              <li>Perfume inspirado en {product.inspirationReference} con {product.concentration}.</li>
+              <li>Huele en la linea de {product.inspirationReference} y tiene {product.concentration}.</li>
               <li>Duracion estimada de {product.duration.toLowerCase()} e intensidad {product.intensity}.</li>
+              <li>30 ml para probar, 50 ml para uso frecuente, 100 ml si ya sabes que es para ti.</li>
               <li>Entrega nacional estimada de 3 a 5 dias habiles.</li>
               <li>Si dudas entre tamanos o perfiles, Alex te responde por WhatsApp.</li>
             </ul>

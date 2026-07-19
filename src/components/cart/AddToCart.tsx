@@ -141,18 +141,18 @@ function getSizeGuide(sizeMl: Product["variants"][number]["sizeMl"]) {
   switch (sizeMl) {
     case 30:
       return {
-        title: "30 ml para probar sin pensarlo demasiado",
-        description: "Ideal si es tu primera compra, quieres regalar o prefieres validar el aroma antes de subir.",
+        title: "30 ml para probar primero",
+        description: "Ideal si es tu primera compra, si vas a regalar o si quieres conocer el perfil antes de subir.",
       };
     case 50:
       return {
-        title: "50 ml para el punto mas facil de recomendar",
-        description: "Suele ser la mejor relacion entre inversion, duracion y confianza para uso frecuente.",
+        title: "50 ml para uso frecuente",
+        description: "Suele ser el tamano mas facil de recomendar por equilibrio entre inversion, duracion y uso diario.",
       };
     case 100:
       return {
-        title: "100 ml para quien ya sabe que este perfil es suyo",
-        description: "Conviene mas si ya conoces este tipo de aroma o quieres resolver por mas tiempo con una sola compra.",
+        title: "100 ml para repetir con confianza",
+        description: "Conviene si ya conoces este perfil o si quieres resolver por mas tiempo con una sola compra.",
       };
   }
 }

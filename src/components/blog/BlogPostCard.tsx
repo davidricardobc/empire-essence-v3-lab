@@ -44,11 +44,11 @@ export function BlogPostCard({ post, featured = false }: { post: BlogPost; featu
         {post.audience === "mayorista" && post.wholesaleSignal ? (
           <div className="blog-commerce-hint is-wholesale">
             <Store size={15} />
-            <span>{post.wholesaleCtaLabel ?? "Pedido mayorista disponible"}</span>
+            <span>{post.wholesaleCtaLabel ?? "Pedido mayorista disponible"} desde 10 unidades mixtas</span>
           </div>
         ) : null}
         <Link href={`/blog/${post.slug}`} className="ghost-link">
-          Leer guia <ArrowRight size={16} />
+          Leer y decidir <ArrowRight size={16} />
         </Link>
       </div>
     </article>

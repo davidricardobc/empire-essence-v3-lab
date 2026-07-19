@@ -56,7 +56,7 @@ export default function HomePage() {
               Tu imperio.
             </h1>
             <p>
-              Fragancias de alta concentracion para elegir rapido, comprar seguro y recibir en Colombia.
+              Perfumes inspirados para diario, regalo o noche. Elige rapido, paga seguro y recibe en Colombia.
             </p>
             <div className="hero-actions">
               <Link href="/catalogo" className="primary-button">
@@ -77,7 +77,7 @@ export default function HomePage() {
             <Droplet size={30} />
             <strong>60%</strong>
             <span>Concentracion</span>
-            <small>Mayor duracion y proyeccion.</small>
+            <small>Presencia clara sin leer fichas eternas.</small>
           </div>
           <div>
             <Truck size={30} />
@@ -89,7 +89,7 @@ export default function HomePage() {
             <ShieldCheck size={30} />
             <strong>Pago seguro</strong>
             <span>Wompi + WhatsApp</span>
-            <small>Checkout directo con respaldo humano.</small>
+            <small>Carrito directo o cierre guiado por WhatsApp.</small>
           </div>
         </div>
       </section>
@@ -99,7 +99,7 @@ export default function HomePage() {
           <div className="collection-copy">
             <span className="eyebrow">Explora nuestro mundo</span>
             <h2>Aromas para cada version de ti</h2>
-            <p>Elige por energia, ocasion o intensidad.</p>
+            <p>Compra por estilo, momento de uso o nivel de intensidad.</p>
             <Link href="/catalogo" className="dark-button">
               Ver coleccion
               <ArrowRight size={16} />
@@ -123,7 +123,7 @@ export default function HomePage() {
             <div>
               <span className="eyebrow">Oportunidad mayorista</span>
               <h2>Emprende con Empire Essence</h2>
-              <p>Compra mixto desde 10 unidades y vende con margen claro.</p>
+              <p>Empieza con 10 unidades mixtas y un surtido facil de vender.</p>
               <Link href="/mayoristas" className="primary-button">
                 Quiero ser mayorista
                 <ArrowRight size={16} />
@@ -139,7 +139,7 @@ export default function HomePage() {
             <span className="eyebrow">Claridad para elegir</span>
             <h2>Que quieres provocar?</h2>
           </div>
-          <p>Compra por deseo, ocasion e intensidad antes de abrir todo el catalogo.</p>
+          <p>Encuentra rapido para quien es y como se siente antes de abrir todo el catalogo.</p>
         </div>
         <div className="intent-grid">
           {[
@@ -163,25 +163,23 @@ export default function HomePage() {
             <span className="eyebrow">Compra con mas criterio</span>
             <h2>Elige sin adivinar.</h2>
           </div>
-          <p>
-            Ves inspiracion, intensidad y salida por WhatsApp si quieres confirmar antes de pagar.
-          </p>
+          <p>Ve inspiracion, intensidad, tamanos y apoyo por WhatsApp antes de pagar.</p>
         </div>
         <div className="decision-grid">
           <article className="decision-card">
             <BadgeCheck size={18} />
-            <strong>Inspiracion visible</strong>
-            <p>Compara el perfil antes de comprar.</p>
+            <strong>Para quien funciona</strong>
+            <p>Ubica rapido si va contigo, para regalo o para vender.</p>
           </article>
           <article className="decision-card">
             <Clock3 size={18} />
-            <strong>Intensidad clara</strong>
-            <p>Diario fresco o noche con mas estela.</p>
+            <strong>Tamano mas facil</strong>
+            <p>30 ml para probar, 50 ml para diario, 100 ml para repetir.</p>
           </article>
           <article className="decision-card">
             <MessageCircle size={18} />
-            <strong>Alex te guia</strong>
-            <p>Resuelve dudas sin frenar la compra.</p>
+            <strong>Compra con confianza</strong>
+            <p>Pago seguro, envio nacional y ayuda real si dudas.</p>
           </article>
         </div>
       </section>
@@ -226,9 +224,7 @@ export default function HomePage() {
             <span className="eyebrow">Guias para elegir</span>
             <h2>Compra y vende perfumes con mas seguridad.</h2>
           </div>
-          <p>
-            Aprende a elegir por duracion, ocasion, regalo o pedido mayorista antes de cerrar tu compra.
-          </p>
+          <p>Lee solo lo necesario para elegir mejor, regalar bien o armar tu primer pedido mayorista.</p>
         </div>
         <div className="shell blog-grid">
           {featuredPosts.map((post) => (

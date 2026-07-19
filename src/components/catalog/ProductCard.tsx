@@ -32,7 +32,7 @@ export function ProductCard({ product, compact = false }: { product: Product; co
       <p className="product-description">{product.shortDescription}</p>
       <div className="product-card-proof">
         <span>{sizesLabel}</span>
-        <span>Intensidad {product.intensity}</span>
+        <span>{product.moods.slice(0, 2).join(" · ")}</span>
       </div>
       <div className="tag-row">
         {product.families.slice(0, 3).map((family) => (

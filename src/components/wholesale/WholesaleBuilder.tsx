@@ -125,7 +125,7 @@ export function WholesaleBuilder() {
         <span className="eyebrow">Kit mayorista</span>
         <h2>Arma variedad desde 10 unidades mezcladas.</h2>
         <p>
-          Precios fijos para fragancias listas para vender. Insumos por gramo, litro o volumen especial se cotizan
+          Precios claros para fragancias listas para vender. Insumos por gramo, litro o volumen especial se cotizan
           aparte.
         </p>
 
@@ -183,7 +183,7 @@ export function WholesaleBuilder() {
       <div className="panel quote-panel">
         <span className="eyebrow">Rentabilidad</span>
         <h2>{formatCop(subtotal)}</h2>
-        <p>Inversion estimada para {totalUnits} unidades.</p>
+        <p>Inversion estimada para {totalUnits} unidades antes de cerrar el pedido.</p>
 
         <div className="metric-grid">
           <div>
@@ -192,7 +192,7 @@ export function WholesaleBuilder() {
           </div>
           <div>
             <span>Estado</span>
-            <strong>{valid ? "Listo para checkout" : `Faltan ${WHOLESALE_MIN_UNITS - totalUnits}`}</strong>
+            <strong>{valid ? "Listo para comprar" : `Faltan ${WHOLESALE_MIN_UNITS - totalUnits}`}</strong>
           </div>
         </div>
 
@@ -224,7 +224,7 @@ export function WholesaleBuilder() {
 
         <div className="proof-line">
           <PackageCheck size={18} />
-          Entrega 3-5 dias habiles - envio nacional - frascos y tapa incluidos.
+          Entrega 3-5 dias habiles, envio nacional y frascos con tapa incluidos.
         </div>
       </div>
     </div>

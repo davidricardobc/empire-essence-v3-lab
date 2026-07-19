@@ -37,7 +37,7 @@ export default function BlogPage() {
           <span className="eyebrow">Guias Empire Essence</span>
           <h1>Blog de perfumes: elige mejor y vende con mas seguridad.</h1>
           <p>
-            Consejos claros para comprar tu fragancia, armar un primer pedido mayorista o resolver dudas antes de pagar.
+            Consejos cortos para comprar tu fragancia, elegir mejor un regalo o armar un primer pedido mayorista.
           </p>
           <div className="blog-hero-actions">
             <Link href="/catalogo" className="primary-button">
@@ -84,9 +84,7 @@ export default function BlogPage() {
             <span className="eyebrow">Mayoristas</span>
             <h2>Guias para comprar mejor al por mayor.</h2>
           </div>
-          <p>
-            Aprende a elegir proveedor, cuidar tu margen y armar un surtido que puedas vender con confianza.
-          </p>
+          <p>Aprende a elegir proveedor, cuidar tu margen y armar un surtido facil de recomendar.</p>
         </div>
         <div className="blog-grid">
           {publishedPosts.map((post) => (
@@ -126,7 +124,7 @@ export default function BlogPage() {
             <span className="eyebrow">Comprar mejor</span>
             <h2>Mas guias para elegir sin enredarte.</h2>
           </div>
-          <p>Duracion, regalo, familias olfativas y recomendaciones para decidir rapido.</p>
+          <p>Duracion, regalo, estilos y recomendaciones para decidir rapido.</p>
         </div>
         <div className="blog-grid">
           {posts
