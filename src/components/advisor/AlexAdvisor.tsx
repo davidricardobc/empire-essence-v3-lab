@@ -76,6 +76,11 @@ export function AlexAdvisor() {
 
     setInput("");
     setMessages(nextMessages);
+    if (localReply.questionKey) {
+      setAskedQuestions((current) =>
+        current.includes(localReply.questionKey as AdvisorQuestionKey) ? current : [...current, localReply.questionKey!],
+      );
+    }
     setLoading(true);
 
     const webhook = process.env.NEXT_PUBLIC_EE_CHAT_WEBHOOK;
@@ -105,12 +110,6 @@ export function AlexAdvisor() {
       } catch {
         // Fall through to local recommendation.
       }
-    }
-
-    if (localReply.questionKey) {
-      setAskedQuestions((current) =>
-        current.includes(localReply.questionKey as AdvisorQuestionKey) ? current : [...current, localReply.questionKey!],
-      );
     }
 
     setMessages((current) => [
