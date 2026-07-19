@@ -70,3 +70,8 @@ La redireccion a `/gracias` no confirma pago por si sola; la confirmacion confia
 ## Concepto Visual
 
 El concepto aceptado se conserva en `docs/accepted-home-concept.png`. La imagen final usada por la home vive en `public/assets/empire-hero-product.png`.
+
+## Continuidad
+
+- Estado actual y roadmap: `docs/current-status-and-roadmap.md`
+- Estrategia y racional V3: `docs/v3-strategy.md`
