@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { updateOrderPayment } from "@/lib/order-store";
+import { getOrder, updateOrderPayment } from "@/lib/order-store";
 import { mapWompiTransactionStatus, verifyWompiEventChecksum } from "@/lib/wompi";
 
 type WompiTransaction = {
@@ -50,6 +50,15 @@ export async function POST(request: Request) {
 
   if (!reference) {
     return NextResponse.json({ ok: false, message: "Missing transaction reference." }, { status: 400 });
+  }
+
+  const currentOrder = await getOrder(reference);
+  if (!currentOrder) {
+    return NextResponse.json({ ok: false, message: "Order reference was not found." }, { status: 404 });
+  }
+
+  if (transaction?.amount_in_cents !== currentOrder.totalCop * 100) {
+    return NextResponse.json({ ok: false, message: "Transaction amount does not match order total." }, { status: 409 });
   }
 
   const order = await updateOrderPayment(reference, {

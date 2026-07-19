@@ -74,4 +74,5 @@ El concepto aceptado se conserva en `docs/accepted-home-concept.png`. La imagen 
 ## Continuidad
 
 - Estado actual y roadmap: `docs/current-status-and-roadmap.md`
+- Checklist de seguridad Wompi: `docs/wompi-security-checklist.md`
 - Estrategia y racional V3: `docs/v3-strategy.md`
