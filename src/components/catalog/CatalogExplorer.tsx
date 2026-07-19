@@ -112,6 +112,17 @@ export function CatalogExplorer({ initialFilters }: CatalogExplorerProps) {
         </div>
       ) : null}
 
+      <div className="catalog-guidance" aria-label="Ayuda para comprar mas rapido">
+        <div>
+          <strong>Compra mas facil</strong>
+          <p>Abre la ficha para revisar notas, tamanos y duracion antes de agregar al carrito.</p>
+        </div>
+        <div>
+          <strong>Senales rapidas</strong>
+          <p>Las cards ahora muestran tamanos e intensidad para comparar sin entrar producto por producto.</p>
+        </div>
+      </div>
+
       <div className="filter-grid">
         <FilterSelect label="Categoria" value={category} onChange={(value) => setCategory(value as Category | "all")}>
           {categories.map((item) => (

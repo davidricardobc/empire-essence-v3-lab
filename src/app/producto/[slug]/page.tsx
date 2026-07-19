@@ -94,6 +94,11 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
             <span>{product.sillage}</span>
           </div>
 
+          <div className="product-decision-strip">
+            <span>Ideal para {product.occasions.slice(0, 2).join(" y ")}</span>
+            <span>Disponible en {product.variants.map((variant) => `${variant.sizeMl} ml`).join(", ")}</span>
+          </div>
+
           <div className="notes-grid">
             <NoteBlock label="Salida" notes={product.notes.top} />
             <NoteBlock label="Corazon" notes={product.notes.heart} />
@@ -124,6 +129,10 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
               <span>Se siente</span>
               <strong>{product.moods.slice(0, 3).join(", ")}</strong>
             </div>
+          </div>
+          <div className="buy-panel-trust">
+            <span>Entrega estimada 3 a 5 dias habiles en Colombia</span>
+            <span>Checkout directo o cierre asistido por WhatsApp</span>
           </div>
           <AddToCart product={product} showDirectWhatsapp />
           <div className="price-hint">

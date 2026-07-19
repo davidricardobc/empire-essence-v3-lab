@@ -9,6 +9,7 @@ import type { Product } from "@/types/product";
 
 export function ProductCard({ product, compact = false }: { product: Product; compact?: boolean }) {
   const price = product.variants[0]?.retailPriceCop ?? 0;
+  const sizesLabel = product.variants.map((variant) => `${variant.sizeMl} ml`).join(" / ");
 
   return (
     <article className={`product-card ${compact ? "compact-card" : ""}`}>
@@ -29,6 +30,10 @@ export function ProductCard({ product, compact = false }: { product: Product; co
         <p>Inspirado en {product.inspirationReference}</p>
       </Link>
       <p className="product-description">{product.shortDescription}</p>
+      <div className="product-card-proof">
+        <span>{sizesLabel}</span>
+        <span>Intensidad {product.intensity}</span>
+      </div>
       <div className="tag-row">
         {product.families.slice(0, 3).map((family) => (
           <span key={family}>{family}</span>

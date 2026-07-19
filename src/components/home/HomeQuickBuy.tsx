@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { MessageCircle, Plus } from "lucide-react";
+import { Flame, MessageCircle, Plus, ShieldCheck, Truck } from "lucide-react";
 import { useCart } from "@/components/cart/CartProvider";
 import { formatCop } from "@/lib/currency";
 import { getProductVisual } from "@/lib/product-visuals";
@@ -19,11 +19,27 @@ export function HomeQuickBuy({ products }: { products: Product[] }) {
       <div className="quick-buy-head">
         <span>Elige tu esencia</span>
         <p>Perfumes inspirados listos para compra retail. Agrega al carrito o abre la ficha para ver notas y tamanos.</p>
+        <div className="quick-buy-trust">
+          <span>
+            <Flame size={13} />
+            Top ventas
+          </span>
+          <span>
+            <Truck size={13} />
+            Entrega 3 a 5 dias
+          </span>
+          <span>
+            <ShieldCheck size={13} />
+            Pago seguro
+          </span>
+        </div>
       </div>
 
       <div className="quick-buy-list">
         {products.slice(0, 3).map((product, index) => {
           const variant = product.variants[0];
+          const sizeLabel = product.variants.map((item) => `${item.sizeMl} ml`).join(" / ");
+
           return (
             <article key={product.id} className="quick-buy-item">
               <Link href={`/producto/${product.slug}`} className="quick-buy-media" aria-label={`Ver ${product.publicName}`}>
@@ -40,6 +56,9 @@ export function HomeQuickBuy({ products }: { products: Product[] }) {
                   <strong>{product.publicName}</strong>
                 </Link>
                 <span>Inspirado en {product.inspirationReference}</span>
+                <small>
+                  {sizeLabel} · intensidad {product.intensity}
+                </small>
                 <p>{product.shortDescription}</p>
               </div>
               <div className="quick-buy-action">
@@ -60,7 +79,7 @@ export function HomeQuickBuy({ products }: { products: Product[] }) {
                   }
                 >
                   <Plus size={15} />
-                  Al carrito
+                  Agregar
                 </button>
               </div>
             </article>
