@@ -38,7 +38,8 @@ export function buildWompiCheckoutUrl({
 
   const amountInCents = amountCop * 100;
   const currency = wompiConfig.currency;
-  const redirectUrl = `${process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"}/gracias?ref=${reference}`;
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL;
+  const redirectUrl = siteUrl?.startsWith("https://") ? `${siteUrl}/gracias?ref=${reference}` : null;
   const signature = crypto
     .createHash("sha256")
     .update(`${reference}${amountInCents}${currency}${integritySecret}`)
@@ -50,10 +51,13 @@ export function buildWompiCheckoutUrl({
     "amount-in-cents": String(amountInCents),
     reference,
     "customer-data:email": customerEmail,
-    "redirect-url": redirectUrl,
     "payment-method-type": "CARD",
     "signature:integrity": signature,
   });
+
+  if (redirectUrl) {
+    params.set("redirect-url", redirectUrl);
+  }
 
   return `${wompiConfig.checkoutUrl}?${params.toString()}`;
 }
