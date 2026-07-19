@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     template: "%s | Empire Essence",
   },
   description:
-    "Perfumes inspirados para mujer, hombre y unisex con alta concentracion, catalogo curado, compra directa y asesoria por WhatsApp en Colombia.",
+    "Perfumes inspirados para mujer, hombre y unisex con alta concentración, catálogo curado, compra directa y asesoría por WhatsApp en Colombia.",
   alternates: {
     canonical: "/",
   },
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Empire Essence | Perfumes inspirados y fragancias premium",
     description:
-      "Perfumes inspirados para mujer, hombre y unisex con compra directa, asesoria por WhatsApp y opcion mayorista en Colombia.",
+      "Perfumes inspirados para mujer, hombre y unisex con compra directa, asesoría por WhatsApp y opción mayorista en Colombia.",
     url: "/",
     type: "website",
     locale: "es_CO",
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Empire Essence | Perfumes inspirados y fragancias premium",
     description:
-      "Perfumes inspirados para mujer, hombre y unisex con compra directa y asesoria por WhatsApp en Colombia.",
+      "Perfumes inspirados para mujer, hombre y unisex con compra directa y asesoría por WhatsApp en Colombia.",
     images: [defaultOgImage],
   },
   robots: {

@@ -24,14 +24,14 @@ import { defaultOgImage } from "@/lib/seo";
 export const metadata: Metadata = {
   title: "Perfumes inspirados en Colombia",
   description:
-    "Compra perfumes inspirados para mujer, hombre y unisex con alta concentracion, top ventas, asesoria por WhatsApp y opcion mayorista desde Colombia.",
+    "Compra perfumes inspirados para mujer, hombre y unisex con alta concentración, top ventas, asesoría por WhatsApp y opción mayorista desde Colombia.",
   alternates: {
     canonical: "/",
   },
   openGraph: {
     title: "Perfumes inspirados en Colombia | Empire Essence",
     description:
-      "Fragancias premium inspiradas con compra directa, catalogo curado y asesoria por WhatsApp para retail y mayoristas.",
+      "Fragancias premium inspiradas con compra directa, catálogo curado y asesoría por WhatsApp para retail y mayoristas.",
     url: "/",
     images: [defaultOgImage],
   },
@@ -56,7 +56,7 @@ export default function HomePage() {
               Tu imperio.
             </h1>
             <p>
-              Perfumes inspirados que se sienten premium y se compran facil. Elige por estilo, recibe asesoria real y
+              Perfumes inspirados que se sienten premium y se compran fácil. Elige por estilo, recibe asesoría real y
               compra en minutos desde Colombia.
             </p>
             <div className="hero-actions">
@@ -70,11 +70,11 @@ export default function HomePage() {
               </a>
             </div>
             <div className="hero-proof-pills" aria-label="Beneficios de compra">
-              <span>Entrega nacional 3 a 5 dias</span>
+              <span>Entrega nacional 3 a 5 días</span>
               <span>Pago seguro</span>
               <span>Ayuda por WhatsApp</span>
             </div>
-            <small className="hero-support-copy">Si compras para regalo o primera vez, te guiamos por mood y presupuesto.</small>
+            <small className="hero-support-copy">Si compras para regalo o por primera vez, te guiamos por mood y presupuesto.</small>
           </div>
 
           <HomeQuickBuy products={heroProducts} />
@@ -83,14 +83,14 @@ export default function HomePage() {
           <div>
             <Droplet size={30} />
             <strong>60%</strong>
-            <span>Concentracion</span>
+            <span>Concentración</span>
             <small>Presencia clara sin leer fichas eternas.</small>
           </div>
           <div>
             <Truck size={30} />
-            <strong>Envio nacional</strong>
+            <strong>Envío nacional</strong>
             <span>Colombia</span>
-            <small>Entrega estimada 3 a 5 dias habiles.</small>
+            <small>Entrega estimada de 3 a 5 días hábiles.</small>
           </div>
           <div>
             <ShieldCheck size={30} />
@@ -105,10 +105,10 @@ export default function HomePage() {
         <div className="shell collection-story-grid">
           <div className="collection-copy">
             <span className="eyebrow">Explora nuestro mundo</span>
-            <h2>Aromas para cada version de ti</h2>
+            <h2>Aromas para cada versión de ti</h2>
             <p>Compra por estilo, momento de uso o nivel de intensidad sin perder tiempo entre opciones.</p>
             <Link href="/catalogo" className="dark-button">
-              Ver coleccion
+              Ver colección
               <ArrowRight size={16} />
             </Link>
           </div>
@@ -130,7 +130,7 @@ export default function HomePage() {
             <div>
               <span className="eyebrow">Oportunidad mayorista</span>
               <h2>Emprende con Empire Essence</h2>
-              <p>Empieza con 10 unidades mixtas, referencias top ventas y surtido facil de mover.</p>
+              <p>Empieza con 10 unidades mixtas, referencias top ventas y surtido fácil de mover.</p>
               <Link href="/mayoristas" className="primary-button">
                 Quiero ser mayorista
                 <ArrowRight size={16} />
@@ -144,16 +144,16 @@ export default function HomePage() {
         <div className="section-heading split">
           <div>
             <span className="eyebrow">Claridad para elegir</span>
-            <h2>Que quieres provocar?</h2>
+            <h2>¿Qué quieres provocar?</h2>
           </div>
-          <p>Encuentra rapido para quien es y como se siente antes de abrir todo el catalogo.</p>
+          <p>Encuentra rápido para quién es y cómo se siente antes de abrir todo el catálogo.</p>
         </div>
         <div className="intent-grid">
           {[
             ["Poder femenino", "Dulce, floral, memorable.", "/catalogo?mood=poder"],
-            ["Fresco diario", "Limpio y facil de repetir.", "/catalogo?family=fresca"],
-            ["Noche sensual", "Mas estela para salir.", "/catalogo?occasion=noche"],
-            ["Regalo seguro", "Top ventas faciles de regalar.", "/catalogo?mood=elegancia"],
+            ["Fresco diario", "Limpio y fácil de repetir.", "/catalogo?family=fresca"],
+            ["Noche sensual", "Más estela para salir.", "/catalogo?occasion=noche"],
+            ["Regalo seguro", "Top ventas fáciles de regalar.", "/catalogo?mood=elegancia"],
           ].map(([title, copy, href]) => (
             <Link href={href} key={title} className="intent-card">
               <strong>{title}</strong>
@@ -167,26 +167,26 @@ export default function HomePage() {
       <section className="section shell">
         <div className="section-heading split">
           <div>
-            <span className="eyebrow">Compra con mas criterio</span>
+            <span className="eyebrow">Compra con más criterio</span>
             <h2>Elige sin adivinar.</h2>
           </div>
-          <p>Ve inspiracion, intensidad, tamanos y apoyo por WhatsApp antes de pagar para cerrar tu compra con mas calma.</p>
+          <p>Ve inspiración, intensidad, tamaños y apoyo por WhatsApp antes de pagar para cerrar tu compra con más calma.</p>
         </div>
         <div className="decision-grid">
           <article className="decision-card">
             <BadgeCheck size={18} />
-            <strong>Para quien funciona</strong>
-            <p>Ubica rapido si va contigo, para regalo o para vender.</p>
+            <strong>Para quién funciona</strong>
+            <p>Ubica rápido si va contigo, para regalo o para vender.</p>
           </article>
           <article className="decision-card">
             <Clock3 size={18} />
-            <strong>Tamano mas facil</strong>
+            <strong>Tamaño más fácil</strong>
             <p>30 ml para probar, 50 ml para diario, 100 ml para repetir.</p>
           </article>
           <article className="decision-card">
             <MessageCircle size={18} />
             <strong>Compra con confianza</strong>
-            <p>Pago seguro, envio nacional y ayuda real si dudas.</p>
+            <p>Pago seguro, envío nacional y ayuda real si dudas.</p>
           </article>
         </div>
       </section>
@@ -195,10 +195,8 @@ export default function HomePage() {
         <div className="brand-proof-band">
           <div className="brand-proof-copy">
             <span className="eyebrow">Marca con rostro real</span>
-            <h2>Contenido real para elegir con mas confianza.</h2>
-            <p>
-              Mira recomendaciones, ideas de uso y referencias destacadas en nuestros canales oficiales.
-            </p>
+            <h2>Contenido real para elegir con más confianza.</h2>
+            <p>Mira recomendaciones, ideas de uso y referencias destacadas en nuestros canales oficiales.</p>
           </div>
           <div className="brand-proof-links">
             <a
@@ -229,7 +227,7 @@ export default function HomePage() {
         <div className="shell section-heading split">
           <div>
             <span className="eyebrow">Guias para elegir</span>
-            <h2>Compra y vende perfumes con mas seguridad.</h2>
+            <h2>Compra y vende perfumes con más seguridad.</h2>
           </div>
           <p>Lee solo lo necesario para elegir mejor, regalar bien o armar tu primer pedido mayorista.</p>
         </div>
@@ -253,7 +251,7 @@ export default function HomePage() {
             <h2>Referencias favoritas para comprar o revender.</h2>
           </div>
           <Link href="/catalogo" className="ghost-link">
-            Ver catalogo completo <ArrowRight size={16} />
+            Ver catálogo completo <ArrowRight size={16} />
           </Link>
         </div>
         <div className="product-grid featured-grid">

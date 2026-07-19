@@ -5,16 +5,16 @@ import { defaultOgImage } from "@/lib/seo";
 import type { Category, Intensity } from "@/types/product";
 
 export const metadata: Metadata = {
-  title: "Catalogo de perfumes inspirados",
+  title: "Catálogo de perfumes inspirados",
   description:
-    "Explora el catalogo de Empire Essence: perfumes inspirados para mujer, hombre y unisex, top ventas, busqueda por mood, ocasion y notas, y compra directa con apoyo por WhatsApp.",
+    "Explora el catálogo de Empire Essence: perfumes inspirados para mujer, hombre y unisex, top ventas, búsqueda por mood, ocasión y notas, y compra directa con apoyo por WhatsApp.",
   alternates: {
     canonical: "/catalogo",
   },
   openGraph: {
-    title: "Catalogo de perfumes inspirados | Empire Essence",
+    title: "Catálogo de perfumes inspirados | Empire Essence",
     description:
-      "Perfumes inspirados con coleccion curada, top ventas y compra guiada por mood, ocasion y notas.",
+      "Perfumes inspirados con colección curada, top ventas y compra guiada por mood, ocasión y notas.",
     url: "/catalogo",
     images: [defaultOgImage],
   },
@@ -41,15 +41,15 @@ export default async function CatalogPage({
   return (
     <main className="page-main">
       <section className="shell page-hero compact-hero">
-        <span className="eyebrow">Catalogo curado + completo</span>
+        <span className="eyebrow">Catálogo curado + completo</span>
         <h1>Encuentra tu perfume sin perderte.</h1>
         <p>
-          Perfumes inspirados para mujer, hombre y unisex en 30, 50 y 100 ml. Filtra por estilo, revisa rapido para
-          quien va y compra por carrito o WhatsApp.
+          Perfumes inspirados para mujer, hombre y unisex en 30, 50 y 100 ml. Filtra por estilo, revisa rápido para
+          quién va y compra por carrito o WhatsApp.
         </p>
         <div className="catalog-stats">
           <span>{products.length} referencias base</span>
-          <span>Tamanos 30, 50 y 100 ml</span>
+          <span>Tamaños 30, 50 y 100 ml</span>
           <span>Pago por carrito o WhatsApp</span>
         </div>
       </section>

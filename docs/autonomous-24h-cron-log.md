@@ -72,3 +72,13 @@ Cada ejecucion debe escoger un foco segun lo que aprenda de la anterior. Temas a
 - Validacion: Pendiente despues de programar el cron recurrente.
 - Commit: Pendiente.
 - Siguiente hipotesis: El primer job debe auditar copy publico y caracteres rotos porque David ya detecto errores visibles.
+
+### Job 01 - 2026-07-19 18:07
+- Foco: Corregir espanol visible al cliente en home, metadata global y hero de catalogo.
+- Por que tome este camino: La bitacora inicial dejo como primera hipotesis revisar copy publico y caracteres rotos; era la mejora mas pequena con impacto inmediato en confianza y claridad.
+- Que estudie: `docs/autonomous-24h-cron-log.md`, `git status --short`, `src/app/page.tsx`, `src/app/layout.tsx` y `src/app/catalogo/page.tsx`.
+- Hallazgos: La home y el catalogo principal mostraban varias palabras sin tildes ni `ñ` en zonas de alta visibilidad; los cambios ajenos iniciales en `.learnings/ERRORS.md` y `tsconfig.json` seguian presentes y se respetaron.
+- Cambios: Ajuste de acentos y copy en hero, bloques de confianza, CTAs y metadata SEO para que el tono publico se vea mas cuidado y natural en espanol.
+- Validacion: `npm run lint` OK; `npm run typecheck` OK; `npm run build` OK.
+- Commit: `fix: polish spanish copy on home and catalog`.
+- Siguiente hipotesis: Revisar contraste y legibilidad de texto sobre fotografia oscura en mobile, especialmente en hero y tarjetas de catalogo.
