@@ -18,6 +18,7 @@ export function HomeQuickBuy({ products }: { products: Product[] }) {
     <aside className="home-quick-buy" aria-label="Elige tu esencia">
       <div className="quick-buy-head">
         <span>Elige tu esencia</span>
+        <p>Perfumes inspirados listos para compra retail. Agrega al carrito o abre la ficha para ver notas y tamanos.</p>
       </div>
 
       <div className="quick-buy-list">
@@ -59,7 +60,7 @@ export function HomeQuickBuy({ products }: { products: Product[] }) {
                   }
                 >
                   <Plus size={15} />
-                  Agregar
+                  Al carrito
                 </button>
               </div>
             </article>

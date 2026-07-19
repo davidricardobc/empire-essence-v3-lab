@@ -44,12 +44,13 @@ export default async function CatalogPage({
         <span className="eyebrow">Catalogo curado + completo</span>
         <h1>Encuentra tu perfume sin perderte.</h1>
         <p>
-          Filtra por estilo, ocasion e intensidad. Si tienes dudas, Alex te ayuda antes de comprar.
+          Vendemos perfumes inspirados para mujer, hombre y unisex en 30, 50 y 100 ml. Filtra por estilo, abre la
+          ficha y compra por carrito o por WhatsApp.
         </p>
         <div className="catalog-stats">
           <span>{products.length} referencias base</span>
           <span>Top ventas primero</span>
-          <span>Busqueda por mood, ocasion y notas</span>
+          <span>Compra por carrito o WhatsApp</span>
         </div>
       </section>
       <div className="shell">

@@ -83,6 +83,14 @@ export function CheckoutClient({ channel, wompiEnabled }: { channel: SalesChanne
             ? "Paga con seguridad o confirma tu pedido por WhatsApp si prefieres recibir ayuda antes de finalizar."
             : "Wompi no esta activo todavia. Completa tus datos y te enviamos directo a WhatsApp con tu pedido listo para cerrar."}
         </p>
+        <div className="checkout-flow-callout">
+          <strong>Como funciona</strong>
+          <ol>
+            <li>Completa tus datos de entrega.</li>
+            <li>Revisa el resumen y el costo de envio.</li>
+            <li>{wompiEnabled ? "Elige pago seguro o cierre por WhatsApp." : "Te llevamos a WhatsApp con el pedido armado."}</li>
+          </ol>
+        </div>
 
         <div className="form-grid">
           <Input label="Nombre" value={form.name} onChange={(name) => setForm((current) => ({ ...current, name }))} />
@@ -138,7 +146,7 @@ export function CheckoutClient({ channel, wompiEnabled }: { channel: SalesChanne
 
         <button type="submit" className="primary-button full" disabled={!canSubmit}>
           <ShieldCheck size={18} />
-          {loading ? "Creando pedido..." : wompiEnabled ? "Continuar al pago seguro" : "Continuar por WhatsApp"}
+          {loading ? "Creando pedido..." : wompiEnabled ? "Ir a pago seguro" : "Enviar pedido a WhatsApp"}
         </button>
       </form>
 

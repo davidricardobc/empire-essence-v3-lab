@@ -114,7 +114,7 @@ export function AddToCart({
           }
         >
           <ShoppingBag size={18} />
-          {channel === "wholesale" ? "Agregar a pedido mayorista" : "Agregar y comprar"}
+          {channel === "wholesale" ? "Agregar kit al carrito" : "Agregar al carrito"}
         </button>
 
         {showDirectWhatsapp ? (

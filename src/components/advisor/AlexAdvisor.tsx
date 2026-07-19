@@ -2,7 +2,9 @@
 
 import { useMemo, useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { MessageCircle, Send, Sparkles, X } from "lucide-react";
+import { useCart } from "@/components/cart/CartProvider";
 import { products } from "@/data/products";
 import { buildWhatsappUrl } from "@/lib/whatsapp";
 
@@ -22,10 +24,14 @@ const starterMessages: ChatMessage[] = [
 const quickOptions = ["Femenina poderosa", "Fresco diario", "Noche sensual", "Mayorista top ventas", "Regalo seguro"];
 
 export function AlexAdvisor() {
+  const pathname = usePathname();
+  const { drawerOpen } = useCart();
   const [open, setOpen] = useState(false);
   const [input, setInput] = useState("");
   const [messages, setMessages] = useState<ChatMessage[]>(starterMessages);
   const [loading, setLoading] = useState(false);
+  const compactRoute =
+    pathname.startsWith("/checkout") || pathname.startsWith("/mayoristas") || pathname.startsWith("/blog");
 
   const recommended = useMemo(() => recommendFromText(messages.map((message) => message.content).join(" ")), [messages]);
 
@@ -71,7 +77,10 @@ export function AlexAdvisor() {
   }
 
   return (
-    <div id="alex" className="alex-root">
+    <div
+      id="alex"
+      className={`alex-root ${drawerOpen ? "is-drawer-open" : ""} ${compactRoute ? "is-compact-route" : ""}`}
+    >
       <button type="button" className="alex-trigger" onClick={() => setOpen((value) => !value)}>
         {open ? <X size={20} /> : <Sparkles size={20} />}
         <span>Alex</span>

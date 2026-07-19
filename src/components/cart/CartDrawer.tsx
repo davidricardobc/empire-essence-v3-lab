@@ -76,15 +76,15 @@ export function CartDrawer() {
               <strong>{formatCop(totals.subtotalCop)}</strong>
             </div>
             <div className="drawer-confidence">
-              <strong>Listo para cerrar</strong>
+              <strong>Asi compras mas rapido</strong>
               <p>
-                Si ya elegiste, puedes ir a checkout o enviar este pedido por WhatsApp con el resumen armado para
-                confirmar disponibilidad y pago.
+                1. Revisa tus perfumes y cantidades. 2. Ve a checkout para pago seguro o 3. envialo por WhatsApp con
+                el resumen listo para confirmar disponibilidad y entrega.
               </p>
             </div>
             <div className="drawer-actions">
               <Link href={`/checkout?channel=${checkoutChannel}`} className="primary-button full" onClick={closeDrawer}>
-                Continuar al pago
+                Ir al checkout
               </Link>
               <a
                 href={drawerWhatsappUrl}
@@ -94,7 +94,7 @@ export function CartDrawer() {
                 onClick={closeDrawer}
               >
                 <MessageCircle size={18} />
-                Cerrar por WhatsApp
+                Pedir por WhatsApp
               </a>
               <button type="button" className="ghost-button full" onClick={clearCart}>
                 Vaciar carrito
@@ -103,7 +103,7 @@ export function CartDrawer() {
           </>
         ) : (
           <div className="empty-cart">
-            <p>Tu carrito esta listo para llenarse con fragancias elegidas para ti.</p>
+            <p>Agrega perfumes inspirados en 30, 50 o 100 ml y luego cierra tu pedido por checkout o WhatsApp.</p>
             <Link href="/catalogo" className="secondary-button" onClick={closeDrawer}>
               Explorar catalogo
             </Link>
