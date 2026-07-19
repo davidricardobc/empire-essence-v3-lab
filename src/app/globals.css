@@ -944,7 +944,7 @@ h3 {
   left: 14px;
   top: 50%;
   transform: translateY(-50%);
-  color: rgba(247, 240, 230, 0.44);
+  color: rgba(247, 240, 230, 0.68);
 }
 
 .search-field input,
@@ -977,7 +977,7 @@ h3 {
 
 .filter-select span,
 .field span {
-  color: rgba(247, 240, 230, 0.66);
+  color: rgba(247, 240, 230, 0.8);
   font-size: 13px;
 }
 
@@ -985,7 +985,7 @@ h3 {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  color: rgba(247, 240, 230, 0.68);
+  color: rgba(247, 240, 230, 0.8);
   font-size: 14px;
   white-space: nowrap;
 }
@@ -1004,7 +1004,7 @@ h3 {
 
 .catalog-intent-bar p {
   margin: 6px 0 0;
-  color: rgba(247, 240, 230, 0.66);
+  color: rgba(247, 240, 230, 0.82);
 }
 
 .catalog-guidance {
@@ -1026,7 +1026,7 @@ h3 {
 
 .catalog-guidance p {
   margin: 6px 0 0;
-  color: rgba(247, 240, 230, 0.66);
+  color: rgba(247, 240, 230, 0.82);
 }
 
 .active-filter-list {
@@ -1283,7 +1283,7 @@ h3 {
 }
 
 .checkout-flow-callout li {
-  color: rgba(247, 240, 230, 0.72);
+  color: rgba(247, 240, 230, 0.82);
   line-height: 1.5;
 }
 
@@ -1295,7 +1295,7 @@ h3 {
 }
 
 .checkout-steps li {
-  color: rgba(247, 240, 230, 0.66);
+  color: rgba(247, 240, 230, 0.82);
 }
 
 .summary-list,
@@ -1324,7 +1324,7 @@ h3 {
 .wholesale-line span,
 .wholesale-line small {
   display: block;
-  color: rgba(247, 240, 230, 0.62);
+  color: rgba(247, 240, 230, 0.8);
   font-size: 13px;
 }
 
@@ -1385,7 +1385,7 @@ h3 {
 
 .metric-grid span {
   display: block;
-  color: rgba(247, 240, 230, 0.6);
+  color: rgba(247, 240, 230, 0.78);
   font-size: 13px;
 }
 
@@ -1416,7 +1416,7 @@ h3 {
 }
 
 .step-card p {
-  color: rgba(247, 240, 230, 0.66);
+  color: rgba(247, 240, 230, 0.82);
 }
 
 .drawer-scrim {
@@ -2202,7 +2202,7 @@ h3 {
 .home-quick-buy {
   border: 1px solid rgba(215, 185, 132, 0.24);
   border-radius: 7px;
-  background: rgba(8, 7, 7, 0.54);
+  background: rgba(8, 7, 7, 0.68);
   box-shadow: 0 26px 78px rgba(0, 0, 0, 0.34);
   backdrop-filter: blur(10px);
   padding: 18px;
@@ -2313,7 +2313,7 @@ h3 {
 .quick-buy-copy span,
 .quick-buy-copy p,
 .quick-buy-alex small {
-  color: rgba(247, 240, 230, 0.7);
+  color: rgba(247, 240, 230, 0.82);
   font-size: 0.86rem;
 }
 
@@ -2511,7 +2511,7 @@ h3 {
   position: absolute;
   inset: 0;
   z-index: -1;
-  background: linear-gradient(90deg, rgba(45, 12, 18, 0.95), rgba(45, 12, 18, 0.44), rgba(8, 5, 5, 0.24));
+  background: linear-gradient(90deg, rgba(45, 12, 18, 0.98), rgba(45, 12, 18, 0.68), rgba(8, 5, 5, 0.4));
   content: "";
 }
 
@@ -2521,7 +2521,7 @@ h3 {
 
 .wholesale-teaser-card p {
   max-width: 360px;
-  color: rgba(247, 240, 230, 0.74);
+  color: rgba(247, 240, 230, 0.88);
 }
 
 .product-card {
@@ -2610,6 +2610,7 @@ h3 {
 
 .product-card-top {
   margin-top: 16px;
+  color: rgba(247, 240, 230, 0.74);
 }
 
 .product-card-title {
@@ -2852,7 +2853,7 @@ h3 {
   inset: 0;
   z-index: -1;
   background:
-    linear-gradient(90deg, rgba(13, 7, 7, 0.96), rgba(13, 7, 7, 0.62), rgba(13, 7, 7, 0.3)),
+    linear-gradient(90deg, rgba(13, 7, 7, 0.98), rgba(13, 7, 7, 0.76), rgba(13, 7, 7, 0.42)),
     url("/revision-images/empire-wholesale-editorial-v1.png") right center / cover no-repeat;
 }
 
@@ -3619,9 +3620,11 @@ body[data-motion="ready"] .concept-hero[data-motion-visible="true"] .hero-kicker
 
 .product-card-title p {
   line-height: 1.45;
+  color: rgba(247, 240, 230, 0.82);
 }
 
 .product-description {
+  color: rgba(247, 240, 230, 0.8);
   font-size: 1.02rem;
 }
 
