@@ -280,6 +280,7 @@ export default function HomePage() {
                 href="https://wa.me/573156753404?text=Hola%20Empire%20Essence.%20Quiero%20cotizar%20insumos%20por%20volumen."
                 className="secondary-button"
                 target="_blank"
+                rel="noreferrer"
               >
                 <MessageCircle size={18} />
                 Cotizar insumos

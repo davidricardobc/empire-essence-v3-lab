@@ -32,7 +32,12 @@ export function SiteHeader() {
 
         <nav className="desktop-nav" aria-label="Principal">
           {links.map((link) => (
-            <Link key={link.href} href={link.href} className={isActive(link.href) ? "is-active" : undefined}>
+            <Link
+              key={link.href}
+              href={link.href}
+              className={isActive(link.href) ? "is-active" : undefined}
+              aria-current={isActive(link.href) ? "page" : undefined}
+            >
               {link.label}
             </Link>
           ))}
@@ -66,6 +71,7 @@ export function SiteHeader() {
             key={link.href}
             href={link.href}
             className={isActive(link.href) ? "is-active" : undefined}
+            aria-current={isActive(link.href) ? "page" : undefined}
             onClick={() => setOpen(false)}
           >
             {link.label}

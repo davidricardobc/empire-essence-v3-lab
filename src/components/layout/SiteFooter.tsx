@@ -22,7 +22,11 @@ export function SiteFooter() {
             <Mail size={16} />
             Email
           </a>
-          <a href={buildWhatsappUrl("Hola Empire Essence. Quiero asesoria para elegir fragancias.")} target="_blank">
+          <a
+            href={buildWhatsappUrl("Hola Empire Essence. Quiero asesoria para elegir fragancias.")}
+            target="_blank"
+            rel="noreferrer"
+          >
             <MessageCircle size={16} />
             WhatsApp
           </a>

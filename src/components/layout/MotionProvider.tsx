@@ -34,6 +34,7 @@ export function MotionProvider() {
 
     const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
     const body = document.body;
+    let setupTimer = 0;
 
     const setupMotion = () => {
       const reduced = mediaQuery.matches;
@@ -86,27 +87,26 @@ export function MotionProvider() {
         observeElement(element, index);
       });
 
-      const mutationObserver = new MutationObserver(() => {
-        Array.from(document.querySelectorAll<HTMLElement>(REVEAL_SELECTOR)).forEach(observeElement);
-      });
-
-      mutationObserver.observe(document.body, { childList: true, subtree: true });
-
       return () => {
-        mutationObserver.disconnect();
         observer.disconnect();
       };
     };
 
-    let cleanup = setupMotion();
-    const handleChange = () => {
+    let cleanup: () => void = () => {};
+    const runSetup = () => {
       cleanup();
       cleanup = setupMotion();
     };
+    const handleChange = () => {
+      window.clearTimeout(setupTimer);
+      setupTimer = window.setTimeout(runSetup, 0);
+    };
 
+    setupTimer = window.setTimeout(runSetup, 0);
     mediaQuery.addEventListener("change", handleChange);
 
     return () => {
+      window.clearTimeout(setupTimer);
       mediaQuery.removeEventListener("change", handleChange);
       cleanup();
       delete body.dataset.motion;

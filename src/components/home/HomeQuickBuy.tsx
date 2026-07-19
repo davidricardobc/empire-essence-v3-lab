@@ -93,7 +93,11 @@ export function HomeQuickBuy({ products }: { products: Product[] }) {
           <span>Necesitas ayuda para elegir?</span>
           <small>Alex recomienda por ocasion, mood, presupuesto o regalo.</small>
         </div>
-        <a href={buildWhatsappUrl("Hola Alex. Quiero ayuda para elegir mi fragancia Empire Essence.")} target="_blank">
+        <a
+          href={buildWhatsappUrl("Hola Alex. Quiero ayuda para elegir mi fragancia Empire Essence.")}
+          target="_blank"
+          rel="noreferrer"
+        >
           Hablar con Alex
           <MessageCircle size={15} />
         </a>

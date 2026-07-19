@@ -48,6 +48,7 @@ export default function BlogPage() {
               href={buildWhatsappUrl("Hola Alex. Lei el blog y quiero que me recomiendes una fragancia para comprar.")}
               className="secondary-button"
               target="_blank"
+              rel="noreferrer"
             >
               <MessageCircle size={16} />
               Preguntar a Alex
@@ -111,6 +112,7 @@ export default function BlogPage() {
             href={buildWhatsappUrl("Hola Alex. Vengo del blog y quiero armar un pedido mayorista de perfumes.")}
             className="secondary-button"
             target="_blank"
+            rel="noreferrer"
           >
             <MessageCircle size={16} />
             Hablar de mi kit

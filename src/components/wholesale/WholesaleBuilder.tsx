@@ -215,7 +215,7 @@ export function WholesaleBuilder() {
             Agregar kit al checkout
           </button>
           {quoteUrl ? (
-            <a className="ghost-button full" href={quoteUrl} target="_blank">
+            <a className="ghost-button full" href={quoteUrl} target="_blank" rel="noreferrer">
               <MessageCircle size={18} />
               Hablar con un asesor
             </a>

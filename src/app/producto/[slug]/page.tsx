@@ -72,6 +72,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
               src={getProductVisual(product.category)}
               alt={`Fragancia ${product.publicName}`}
               fill
+              priority
               sizes="(max-width: 900px) 100vw, 52vw"
             />
           </div>

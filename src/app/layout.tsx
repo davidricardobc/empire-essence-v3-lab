@@ -71,8 +71,13 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }} />
         <CartProvider>
           <MotionProvider />
+          <a href="#site-content" className="skip-link">
+            Saltar al contenido
+          </a>
           <SiteHeader />
-          {children}
+          <div id="site-content" tabIndex={-1}>
+            {children}
+          </div>
           <SiteFooter />
           <CartDrawer />
           <AlexAdvisor />

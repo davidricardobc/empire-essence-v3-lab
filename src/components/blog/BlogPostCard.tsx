@@ -18,7 +18,13 @@ export function BlogPostCard({ post, featured = false }: { post: BlogPost; featu
   return (
     <article className={`blog-card ${featured ? "is-featured" : ""}`}>
       <Link href={`/blog/${post.slug}`} className="blog-card-media" aria-label={`Leer ${post.title}`}>
-        <Image src={post.heroImage} alt="" fill sizes={featured ? "50vw" : "(max-width: 720px) 100vw, 360px"} />
+        <Image
+          src={post.heroImage}
+          alt={`Imagen del articulo ${post.title}`}
+          fill
+          priority={featured}
+          sizes={featured ? "50vw" : "(max-width: 720px) 100vw, 360px"}
+        />
       </Link>
       <div className="blog-card-body">
         <div className="blog-meta">

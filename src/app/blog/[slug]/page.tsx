@@ -117,6 +117,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                   href={buildWhatsappUrl(`Hola Alex. Lei "${post.title}" y quiero armar un pedido mayorista.`)}
                   className="secondary-button"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <MessageCircle size={16} />
                   Hablar por WhatsApp
@@ -141,6 +142,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                 href={buildWhatsappUrl(`Hola Alex. Lei "${post.title}" y quiero comprar una fragancia.`)}
                 className="secondary-button"
                 target="_blank"
+                rel="noreferrer"
               >
                 <MessageCircle size={16} />
                 Pedir ayuda
@@ -185,6 +187,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
             href={buildWhatsappUrl(`Hola Alex. Quiero que me ayudes con las recomendaciones del articulo: ${post.title}.`)}
             className="ghost-button full"
             target="_blank"
+            rel="noreferrer"
           >
             Confirmar por WhatsApp
           </a>
