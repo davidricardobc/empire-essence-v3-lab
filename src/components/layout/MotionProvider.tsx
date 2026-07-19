@@ -68,16 +68,34 @@ export function MotionProvider() {
         },
       );
 
-      elements.forEach((element, index) => {
+      const trackedElements = new WeakSet<HTMLElement>();
+      const observeElement = (element: HTMLElement, index: number) => {
+        if (trackedElements.has(element)) return;
+        trackedElements.add(element);
+        element.style.setProperty("--motion-index", String(index % 6));
+
         if (index < 3) {
           element.dataset.motionVisible = "true";
           return;
         }
 
         observer.observe(element);
+      };
+
+      elements.forEach((element, index) => {
+        observeElement(element, index);
       });
 
-      return () => observer.disconnect();
+      const mutationObserver = new MutationObserver(() => {
+        Array.from(document.querySelectorAll<HTMLElement>(REVEAL_SELECTOR)).forEach(observeElement);
+      });
+
+      mutationObserver.observe(document.body, { childList: true, subtree: true });
+
+      return () => {
+        mutationObserver.disconnect();
+        observer.disconnect();
+      };
     };
 
     let cleanup = setupMotion();

@@ -2824,6 +2824,254 @@ body[data-motion="ready"] [data-motion-visible="true"] {
   filter: none;
 }
 
+body[data-motion="ready"] .concept-hero[data-motion-visible="true"] .concept-hero-photo {
+  animation: hero-drift 18s var(--ease-luxury) both;
+}
+
+body[data-motion="ready"] .concept-hero[data-motion-visible="true"] .concept-hero-copy > * {
+  animation: hero-copy-rise 760ms var(--ease-luxury) both;
+}
+
+body[data-motion="ready"] .concept-hero[data-motion-visible="true"] .concept-hero-copy > :nth-child(2) {
+  animation-delay: 90ms;
+}
+
+body[data-motion="ready"] .concept-hero[data-motion-visible="true"] .concept-hero-copy > :nth-child(3) {
+  animation-delay: 170ms;
+}
+
+body[data-motion="ready"] .concept-hero[data-motion-visible="true"] .concept-hero-copy > :nth-child(4) {
+  animation-delay: 250ms;
+}
+
+.primary-button,
+.secondary-button,
+.dark-button,
+.ghost-button,
+.cart-button,
+.intent-card,
+.decision-card,
+.brand-proof-card,
+.product-card,
+.home-quick-buy,
+.quick-buy-item,
+.wholesale-teaser-card,
+.catalog-intent-bar,
+.catalog-guidance > div,
+.builder-panel,
+.quote-panel,
+.product-buy,
+.product-story {
+  position: relative;
+}
+
+.primary-button::after,
+.secondary-button::after,
+.dark-button::after,
+.ghost-button::after,
+.cart-button::after,
+.intent-card::after,
+.decision-card::after,
+.brand-proof-card::after,
+.product-card::before,
+.home-quick-buy::before,
+.quick-buy-item::after,
+.wholesale-teaser-card::before,
+.catalog-intent-bar::before,
+.catalog-guidance > div::before,
+.builder-panel::before,
+.quote-panel::before,
+.product-buy::before,
+.product-story::before {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  content: "";
+}
+
+.primary-button,
+.secondary-button,
+.dark-button,
+.ghost-button,
+.cart-button {
+  overflow: hidden;
+}
+
+.primary-button::after,
+.secondary-button::after,
+.dark-button::after,
+.ghost-button::after,
+.cart-button::after {
+  background: linear-gradient(115deg, transparent 12%, rgba(255, 255, 255, 0.34) 46%, transparent 68%);
+  opacity: 0;
+  transform: translateX(-135%);
+  transition:
+    opacity 180ms var(--ease-swift),
+    transform 620ms var(--ease-luxury);
+}
+
+.primary-button:hover::after,
+.primary-button:focus-visible::after,
+.secondary-button:hover::after,
+.secondary-button:focus-visible::after,
+.dark-button:hover::after,
+.dark-button:focus-visible::after,
+.ghost-button:hover::after,
+.ghost-button:focus-visible::after,
+.cart-button:hover::after,
+.cart-button:focus-visible::after {
+  opacity: 1;
+  transform: translateX(135%);
+}
+
+.intent-card::after,
+.decision-card::after,
+.brand-proof-card::after,
+.quick-buy-item::after {
+  border: 1px solid rgba(227, 200, 145, 0);
+  opacity: 0;
+  transition:
+    border-color 220ms var(--ease-swift),
+    opacity 220ms var(--ease-swift);
+}
+
+.intent-card:hover::after,
+.intent-card:focus-visible::after,
+.decision-card:hover::after,
+.decision-card:focus-within::after,
+.brand-proof-card:hover::after,
+.brand-proof-card:focus-visible::after,
+.quick-buy-item:hover::after,
+.quick-buy-item:focus-within::after {
+  border-color: rgba(227, 200, 145, 0.28);
+  opacity: 1;
+}
+
+.product-card::before,
+.home-quick-buy::before,
+.wholesale-teaser-card::before,
+.catalog-intent-bar::before,
+.catalog-guidance > div::before,
+.builder-panel::before,
+.quote-panel::before,
+.product-buy::before,
+.product-story::before {
+  z-index: 0;
+  background:
+    linear-gradient(135deg, rgba(227, 200, 145, 0.14), transparent 34%),
+    radial-gradient(circle at 78% 0%, rgba(255, 255, 255, 0.12), transparent 30%);
+  opacity: 0;
+  transition: opacity 260ms var(--ease-swift);
+}
+
+.product-card > *,
+.home-quick-buy > *,
+.wholesale-teaser-card > *,
+.catalog-intent-bar > *,
+.catalog-guidance > div > *,
+.builder-panel > *,
+.quote-panel > *,
+.product-buy > *,
+.product-story > * {
+  position: relative;
+  z-index: 1;
+}
+
+.product-card:hover::before,
+.product-card:focus-within::before,
+.home-quick-buy:hover::before,
+.home-quick-buy:focus-within::before,
+.wholesale-teaser-card:hover::before,
+.wholesale-teaser-card:focus-within::before,
+.catalog-intent-bar:hover::before,
+.catalog-intent-bar:focus-within::before,
+.catalog-guidance > div:hover::before,
+.catalog-guidance > div:focus-within::before,
+.builder-panel:hover::before,
+.builder-panel:focus-within::before,
+.quote-panel:hover::before,
+.quote-panel:focus-within::before,
+.product-buy:hover::before,
+.product-buy:focus-within::before,
+.product-story:hover::before,
+.product-story:focus-within::before {
+  opacity: 1;
+}
+
+.hero-kicker::before {
+  transform-origin: left center;
+}
+
+body[data-motion="ready"] .concept-hero[data-motion-visible="true"] .hero-kicker::before {
+  animation: line-grow 620ms var(--ease-luxury) 140ms both;
+}
+
+.concept-trust-row > div {
+  transition:
+    transform 220ms var(--ease-luxury),
+    border-color 180ms var(--ease-swift),
+    background 180ms var(--ease-swift);
+}
+
+.concept-trust-row > div:hover {
+  transform: translateY(-2px);
+  border-color: rgba(227, 200, 145, 0.3);
+  background: rgba(255, 255, 255, 0.055);
+}
+
+.ghost-link svg,
+.primary-button svg,
+.secondary-button svg,
+.dark-button svg {
+  transition: transform 180ms var(--ease-swift);
+}
+
+.ghost-link:hover svg,
+.primary-button:hover svg,
+.secondary-button:hover svg,
+.dark-button:hover svg,
+.ghost-link:focus-visible svg,
+.primary-button:focus-visible svg,
+.secondary-button:focus-visible svg,
+.dark-button:focus-visible svg {
+  transform: translateX(3px);
+}
+
+@keyframes hero-drift {
+  0% {
+    transform: scale(1.035) translate3d(-8px, 0, 0);
+    filter: saturate(0.96) contrast(1.02);
+  }
+  100% {
+    transform: scale(1.08) translate3d(8px, -6px, 0);
+    filter: saturate(1.04) contrast(1.06);
+  }
+}
+
+@keyframes hero-copy-rise {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+    filter: blur(8px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+    filter: none;
+  }
+}
+
+@keyframes line-grow {
+  from {
+    transform: scaleX(0);
+    opacity: 0;
+  }
+  to {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
