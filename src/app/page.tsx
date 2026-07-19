@@ -49,23 +49,22 @@ export default function HomePage() {
         <div className="concept-hero-shade" aria-hidden="true" />
         <div className="shell concept-hero-stage">
           <div className="concept-hero-copy">
-            <span className="hero-kicker">Perfumes que inspiran, esencia que perdura.</span>
+            <span className="hero-kicker">Perfumeria inspirada</span>
             <h1>
               Tu esencia.
               <br />
-              Tu imperio en perfumes inspirados.
+              Tu imperio.
             </h1>
             <p>
-              Perfumes inspirados para mujer, hombre y unisex con 60% de concentracion, envio en Colombia y asesoria
-              por WhatsApp para elegir mejor.
+              Fragancias de alta concentracion para elegir rapido, comprar seguro y recibir en Colombia.
             </p>
             <div className="hero-actions">
               <Link href="/catalogo" className="primary-button">
-                Comprar ahora
+                Ver perfumes
                 <ArrowRight size={18} />
               </Link>
               <a href="#finder" className="secondary-button">
-                Encontrar mi fragancia
+                Elegir por estilo
                 <Sparkles size={18} />
               </a>
             </div>
@@ -99,10 +98,10 @@ export default function HomePage() {
         <div className="shell collection-story-grid">
           <div className="collection-copy">
             <span className="eyebrow">Explora nuestro mundo</span>
-            <h2>Colecciones que cuentan tu historia</h2>
-            <p>Descubre aromas creados para cada version de ti.</p>
+            <h2>Aromas para cada version de ti</h2>
+            <p>Elige por energia, ocasion o intensidad.</p>
             <Link href="/catalogo" className="dark-button">
-              Ver coleccion completa
+              Ver coleccion
               <ArrowRight size={16} />
             </Link>
           </div>
@@ -124,7 +123,7 @@ export default function HomePage() {
             <div>
               <span className="eyebrow">Oportunidad mayorista</span>
               <h2>Emprende con Empire Essence</h2>
-              <p>Unete a nuestra red de emprendedores y construye tu propio imperio.</p>
+              <p>Compra mixto desde 10 unidades y vende con margen claro.</p>
               <Link href="/mayoristas" className="primary-button">
                 Quiero ser mayorista
                 <ArrowRight size={16} />
@@ -138,16 +137,16 @@ export default function HomePage() {
         <div className="section-heading split">
           <div>
             <span className="eyebrow">Claridad para elegir</span>
-            <h2>La compra empieza con una pregunta simple: que quieres provocar.</h2>
+            <h2>Que quieres provocar?</h2>
           </div>
-          <p>Primero ordenamos deseo, ocasion e intensidad; despues abrimos el catalogo completo.</p>
+          <p>Compra por deseo, ocasion e intensidad antes de abrir todo el catalogo.</p>
         </div>
         <div className="intent-grid">
           {[
-            ["Poder femenino", "Dulces, florales intensas y memorables.", "/catalogo?mood=poder"],
-            ["Fresco diario", "Limpias, versatiles y faciles de repetir.", "/catalogo?family=fresca"],
-            ["Noche sensual", "Estela mas intensa para citas y eventos.", "/catalogo?occasion=noche"],
-            ["Regalo seguro", "Perfiles top venta con baja friccion.", "/catalogo?mood=elegancia"],
+            ["Poder femenino", "Dulce, floral, memorable.", "/catalogo?mood=poder"],
+            ["Fresco diario", "Limpio y facil de repetir.", "/catalogo?family=fresca"],
+            ["Noche sensual", "Mas estela para salir.", "/catalogo?occasion=noche"],
+            ["Regalo seguro", "Top ventas, baja friccion.", "/catalogo?mood=elegancia"],
           ].map(([title, copy, href]) => (
             <Link href={href} key={title} className="intent-card">
               <strong>{title}</strong>
@@ -162,28 +161,27 @@ export default function HomePage() {
         <div className="section-heading split">
           <div>
             <span className="eyebrow">Compra con mas criterio</span>
-            <h2>Menos adivinar, mas elegir con seguridad.</h2>
+            <h2>Elige sin adivinar.</h2>
           </div>
           <p>
-            Empire Essence no te deja solo frente al catalogo: cada eleccion aterriza referencia inspirada, duracion,
-            intensidad y una salida humana por WhatsApp si quieres confirmar antes de pagar.
+            Ves inspiracion, intensidad y salida por WhatsApp si quieres confirmar antes de pagar.
           </p>
         </div>
         <div className="decision-grid">
           <article className="decision-card">
             <BadgeCheck size={18} />
-            <strong>Referencia inspirada visible</strong>
-            <p>En cada producto ves en que perfume esta inspirado para comparar mejor el perfil que buscas.</p>
+            <strong>Inspiracion visible</strong>
+            <p>Compara el perfil antes de comprar.</p>
           </article>
           <article className="decision-card">
             <Clock3 size={18} />
-            <strong>Duracion e intensidad claras</strong>
-            <p>Antes de comprar sabes si es una salida fresca de diario o una fragancia con mas estela para la noche.</p>
+            <strong>Intensidad clara</strong>
+            <p>Diario fresco o noche con mas estela.</p>
           </article>
           <article className="decision-card">
             <MessageCircle size={18} />
-            <strong>WhatsApp antes o despues del checkout</strong>
-            <p>Puedes cerrar online o resolver dudas con Alex sin romper el proceso comercial.</p>
+            <strong>Alex te guia</strong>
+            <p>Resuelve dudas sin frenar la compra.</p>
           </article>
         </div>
       </section>
