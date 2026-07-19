@@ -70,7 +70,7 @@ Cada ejecucion debe escoger un foco segun lo que aprenda de la anterior. Temas a
 - Hallazgos: La V3 principal ya esta confirmada; hay dos cambios locales previos que no debo pisar.
 - Cambios: Creacion de esta bitacora.
 - Validacion: Pendiente despues de programar el cron recurrente.
-- Commit: Pendiente.
+- Commit: `style: tighten mobile catalog density`.
 - Siguiente hipotesis: El primer job debe auditar copy publico y caracteres rotos porque David ya detecto errores visibles.
 
 ### Job 01 - 2026-07-19 18:07
@@ -92,3 +92,13 @@ Cada ejecucion debe escoger un foco segun lo que aprenda de la anterior. Temas a
 - Validacion: `npm run lint` OK; `npm run typecheck` OK; `npm run build` OK.
 - Commit: `fix: polish catalog and header spanish accents`.
 - Siguiente hipotesis: Revisar contraste real y densidad del toolbar/filtros del catalogo en mobile para reducir fatiga visual y scroll antes de las cards.
+
+### Job 03 - 2026-07-19 18:46
+- Foco: Compactar el catalogo movil para mostrar mas producto util antes del primer scroll.
+- Por que tome este camino: La hipotesis previa apuntaba a densidad y scroll en mobile; un ajuste de espaciado y altura en cards compactas era pequeno, visible y de bajo riesgo.
+- Que estudie: `docs/autonomous-24h-cron-log.md`, `git status --short`, `package.json`, `src/app/catalogo/page.tsx`, `src/components/catalog/CatalogExplorer.tsx`, `src/components/catalog/ProductCard.tsx` y `src/app/globals.css`.
+- Hallazgos: El explorador ya colapsaba a una columna en mobile, pero toolbar, ayuda y cards compactas seguian dejando demasiada altura antes de mostrar suficiente catalogo; los cambios previos en `.learnings/ERRORS.md`, `tsconfig.json` y `next-env.d.ts` se mantuvieron intactos.
+- Cambios: Reduje gaps y padding del explorador en mobile y compacte solo las `compact-card` del catalogo con media, titulo, descripcion, pruebas y acciones mas densas para disminuir espacio muerto sin tocar la logica de compra.
+- Validacion: `npm run lint` OK; `npm run typecheck` OK; `npm run build` OK.
+- Commit: Pendiente.
+- Siguiente hipotesis: Revisar contraste de textos secundarios y chips sobre fotografia oscura en cards y hero para mejorar legibilidad sin perder tono premium.
