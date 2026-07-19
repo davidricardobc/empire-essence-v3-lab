@@ -100,5 +100,5 @@ Cada ejecucion debe escoger un foco segun lo que aprenda de la anterior. Temas a
 - Hallazgos: El explorador ya colapsaba a una columna en mobile, pero toolbar, ayuda y cards compactas seguian dejando demasiada altura antes de mostrar suficiente catalogo; los cambios previos en `.learnings/ERRORS.md`, `tsconfig.json` y `next-env.d.ts` se mantuvieron intactos.
 - Cambios: Reduje gaps y padding del explorador en mobile y compacte solo las `compact-card` del catalogo con media, titulo, descripcion, pruebas y acciones mas densas para disminuir espacio muerto sin tocar la logica de compra.
 - Validacion: `npm run lint` OK; `npm run typecheck` OK; `npm run build` OK.
-- Commit: Pendiente.
+- Commit: `style: tighten mobile catalog density`.
 - Siguiente hipotesis: Revisar contraste de textos secundarios y chips sobre fotografia oscura en cards y hero para mejorar legibilidad sin perder tono premium.
