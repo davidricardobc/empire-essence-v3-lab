@@ -56,18 +56,25 @@ export default function HomePage() {
               Tu imperio.
             </h1>
             <p>
-              Perfumes inspirados para diario, regalo o noche. Elige rapido, paga seguro y recibe en Colombia.
+              Perfumes inspirados que se sienten premium y se compran facil. Elige por estilo, recibe asesoria real y
+              compra en minutos desde Colombia.
             </p>
             <div className="hero-actions">
               <Link href="/catalogo" className="primary-button">
-                Ver perfumes
+                Comprar ahora
                 <ArrowRight size={18} />
               </Link>
               <a href="#finder" className="secondary-button">
-                Elegir por estilo
+                Encontrar mi aroma
                 <Sparkles size={18} />
               </a>
             </div>
+            <div className="hero-proof-pills" aria-label="Beneficios de compra">
+              <span>Entrega nacional 3 a 5 dias</span>
+              <span>Pago seguro</span>
+              <span>Ayuda por WhatsApp</span>
+            </div>
+            <small className="hero-support-copy">Si compras para regalo o primera vez, te guiamos por mood y presupuesto.</small>
           </div>
 
           <HomeQuickBuy products={heroProducts} />
@@ -99,7 +106,7 @@ export default function HomePage() {
           <div className="collection-copy">
             <span className="eyebrow">Explora nuestro mundo</span>
             <h2>Aromas para cada version de ti</h2>
-            <p>Compra por estilo, momento de uso o nivel de intensidad.</p>
+            <p>Compra por estilo, momento de uso o nivel de intensidad sin perder tiempo entre opciones.</p>
             <Link href="/catalogo" className="dark-button">
               Ver coleccion
               <ArrowRight size={16} />
@@ -123,7 +130,7 @@ export default function HomePage() {
             <div>
               <span className="eyebrow">Oportunidad mayorista</span>
               <h2>Emprende con Empire Essence</h2>
-              <p>Empieza con 10 unidades mixtas y un surtido facil de vender.</p>
+              <p>Empieza con 10 unidades mixtas, referencias top ventas y surtido facil de mover.</p>
               <Link href="/mayoristas" className="primary-button">
                 Quiero ser mayorista
                 <ArrowRight size={16} />
@@ -163,7 +170,7 @@ export default function HomePage() {
             <span className="eyebrow">Compra con mas criterio</span>
             <h2>Elige sin adivinar.</h2>
           </div>
-          <p>Ve inspiracion, intensidad, tamanos y apoyo por WhatsApp antes de pagar.</p>
+          <p>Ve inspiracion, intensidad, tamanos y apoyo por WhatsApp antes de pagar para cerrar tu compra con mas calma.</p>
         </div>
         <div className="decision-grid">
           <article className="decision-card">
