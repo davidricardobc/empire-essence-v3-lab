@@ -15,6 +15,9 @@
   --danger: #e9a6a6;
   --success: #b8d7af;
   --shadow: 0 22px 80px rgba(0, 0, 0, 0.28);
+  --shadow-lifted: 0 28px 90px rgba(0, 0, 0, 0.34);
+  --ease-luxury: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-swift: cubic-bezier(0.4, 0, 0.2, 1);
   --font-serif: "Cormorant Garamond", "Playfair Display", Georgia, serif;
   --font-sans: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
@@ -37,6 +40,7 @@ body {
   background: linear-gradient(180deg, #0b0a0a 0%, #141112 52%, #0b0a0a 100%);
   color: var(--ivory);
   font-family: var(--font-sans);
+  text-rendering: optimizeLegibility;
 }
 
 body,
@@ -50,6 +54,13 @@ textarea {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+:where(a, button, input, select, textarea, [role="button"]):focus-visible {
+  outline: none;
+  box-shadow:
+    0 0 0 1px rgba(11, 10, 10, 0.9),
+    0 0 0 4px rgba(227, 200, 145, 0.38);
 }
 
 button,
@@ -148,12 +159,17 @@ img {
   padding: 10px 12px;
   color: rgba(247, 240, 230, 0.68);
   font-size: 14px;
-  transition: color 180ms ease, background 180ms ease;
+  transition:
+    color 180ms var(--ease-swift),
+    background 180ms var(--ease-swift),
+    transform 180ms var(--ease-swift),
+    opacity 180ms var(--ease-swift);
 }
 
 .desktop-nav a:hover {
   color: var(--ivory);
   background: rgba(255, 255, 255, 0.05);
+  transform: translateY(-1px);
 }
 
 .menu-button {
@@ -163,6 +179,10 @@ img {
   place-items: center;
   border: 1px solid var(--line);
   background: transparent;
+  transition:
+    transform 180ms var(--ease-swift),
+    border-color 180ms var(--ease-swift),
+    background 180ms var(--ease-swift);
 }
 
 .mobile-nav {
@@ -181,7 +201,13 @@ img {
   border: 1px solid transparent;
   padding: 12px 18px;
   font-weight: 700;
-  transition: transform 180ms ease, background 180ms ease, border-color 180ms ease, color 180ms ease;
+  transition:
+    transform 180ms var(--ease-swift),
+    background 180ms var(--ease-swift),
+    border-color 180ms var(--ease-swift),
+    color 180ms var(--ease-swift),
+    box-shadow 220ms var(--ease-luxury),
+    filter 220ms var(--ease-luxury);
 }
 
 .primary-button {
@@ -194,6 +220,8 @@ img {
 .ghost-button:hover,
 .cart-button:hover {
   transform: translateY(-1px);
+  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.18);
+  filter: saturate(1.02);
 }
 
 .secondary-button {
@@ -232,6 +260,13 @@ img {
   background: var(--gold);
   color: var(--ink);
   font-size: 12px;
+  transition: transform 180ms var(--ease-swift), box-shadow 180ms var(--ease-swift);
+}
+
+.cart-button:hover strong,
+.cart-button:focus-visible strong {
+  transform: scale(1.06);
+  box-shadow: 0 0 0 4px rgba(227, 200, 145, 0.16);
 }
 
 .hero-section {
@@ -461,13 +496,18 @@ h3 {
   min-height: 184px;
   align-content: space-between;
   padding: 20px;
-  transition: border-color 180ms ease, transform 180ms ease;
+  transition:
+    border-color 180ms var(--ease-swift),
+    transform 220ms var(--ease-luxury),
+    box-shadow 220ms var(--ease-luxury),
+    background 220ms var(--ease-luxury);
 }
 
 .intent-card:hover,
 .product-card:hover {
   border-color: rgba(200, 168, 106, 0.42);
   transform: translateY(-2px);
+  box-shadow: var(--shadow-lifted);
 }
 
 .decision-card {
@@ -538,12 +578,17 @@ h3 {
   gap: 8px;
   min-height: 176px;
   padding: 22px;
-  transition: border-color 180ms ease, transform 180ms ease;
+  transition:
+    border-color 180ms var(--ease-swift),
+    transform 220ms var(--ease-luxury),
+    box-shadow 220ms var(--ease-luxury),
+    background 220ms var(--ease-luxury);
 }
 
 .brand-proof-card:hover {
   border-color: rgba(200, 168, 106, 0.42);
   transform: translateY(-2px);
+  box-shadow: var(--shadow-lifted);
 }
 
 .brand-proof-card svg {
@@ -1401,13 +1446,19 @@ h3 {
   padding: 22px;
   overflow: hidden;
   pointer-events: none;
-  transition: transform 220ms ease;
+  opacity: 0.01;
+  transition:
+    transform 280ms var(--ease-luxury),
+    opacity 220ms var(--ease-swift),
+    box-shadow 220ms var(--ease-swift);
 }
 
 .cart-drawer.is-open {
   transform: translateX(0);
   visibility: visible;
   pointer-events: auto;
+  opacity: 1;
+  box-shadow: -26px 0 60px rgba(0, 0, 0, 0.28);
 }
 
 .drawer-head {
@@ -1436,6 +1487,10 @@ h3 {
   place-items: center;
   border: 1px solid var(--line);
   background: transparent;
+  transition:
+    transform 180ms var(--ease-swift),
+    border-color 180ms var(--ease-swift),
+    background 180ms var(--ease-swift);
 }
 
 .drawer-item {
@@ -1453,6 +1508,7 @@ h3 {
   border: 0;
   background: transparent;
   color: var(--gold-2);
+  transition: color 180ms var(--ease-swift), transform 180ms var(--ease-swift);
 }
 
 .drawer-actions {
@@ -1516,6 +1572,10 @@ h3 {
   padding: 14px 16px;
   font-weight: 800;
   box-shadow: var(--shadow);
+  transition:
+    transform 180ms var(--ease-swift),
+    box-shadow 220ms var(--ease-luxury),
+    filter 180ms var(--ease-swift);
 }
 
 .alex-panel {
@@ -1994,6 +2054,21 @@ h3 {
   background: transparent;
 }
 
+.desktop-nav a:hover,
+.desktop-nav a:focus-visible,
+.nav-chip:hover,
+.nav-chip:focus-visible,
+.menu-button:hover,
+.menu-button:focus-visible,
+.icon-button:hover,
+.icon-button:focus-visible,
+.drawer-item-actions > button:hover,
+.drawer-item-actions > button:focus-visible,
+.alex-trigger:hover,
+.alex-trigger:focus-visible {
+  transform: translateY(-1px);
+}
+
 .primary-button,
 .secondary-button,
 .ghost-button,
@@ -2012,9 +2087,23 @@ h3 {
   color: #090706;
 }
 
+.primary-button:hover,
+.primary-button:focus-visible {
+  box-shadow: 0 18px 40px rgba(197, 159, 104, 0.24);
+}
+
 .secondary-button {
   border-color: rgba(215, 185, 132, 0.72);
   background: rgba(5, 4, 4, 0.34);
+}
+
+.secondary-button:hover,
+.secondary-button:focus-visible,
+.ghost-button:hover,
+.ghost-button:focus-visible,
+.dark-button:hover,
+.dark-button:focus-visible {
+  border-color: rgba(227, 200, 145, 0.72);
 }
 
 .dark-button {
@@ -2026,6 +2115,11 @@ h3 {
   background: #181412;
   color: var(--ivory);
   font-weight: 800;
+  transition:
+    transform 180ms var(--ease-swift),
+    border-color 180ms var(--ease-swift),
+    background 180ms var(--ease-swift),
+    box-shadow 220ms var(--ease-luxury);
 }
 
 .concept-hero {
@@ -2112,6 +2206,10 @@ h3 {
   box-shadow: 0 26px 78px rgba(0, 0, 0, 0.34);
   backdrop-filter: blur(10px);
   padding: 18px;
+  transition:
+    transform 260ms var(--ease-luxury),
+    border-color 220ms var(--ease-swift),
+    box-shadow 260ms var(--ease-luxury);
 }
 
 .quick-buy-head span,
@@ -2172,6 +2270,11 @@ h3 {
   border-radius: 5px;
   background: rgba(255, 255, 255, 0.035);
   padding: 10px;
+  transition:
+    transform 220ms var(--ease-luxury),
+    border-color 180ms var(--ease-swift),
+    background 180ms var(--ease-swift),
+    box-shadow 220ms var(--ease-luxury);
 }
 
 .quick-buy-media,
@@ -2193,6 +2296,7 @@ h3 {
 .collection-lineup img,
 .wholesale-teaser-card img {
   object-fit: cover;
+  transition: transform 560ms var(--ease-luxury), filter 280ms var(--ease-swift);
 }
 
 .quick-buy-copy {
@@ -2254,6 +2358,10 @@ h3 {
   font-weight: 900;
   letter-spacing: 0.12em;
   text-transform: uppercase;
+  transition:
+    transform 180ms var(--ease-swift),
+    box-shadow 220ms var(--ease-luxury),
+    filter 180ms var(--ease-swift);
 }
 
 .quick-buy-alex {
@@ -2266,6 +2374,10 @@ h3 {
   margin-top: 14px;
   padding: 12px;
   background: rgba(255, 255, 255, 0.04);
+  transition:
+    transform 220ms var(--ease-luxury),
+    border-color 180ms var(--ease-swift),
+    box-shadow 220ms var(--ease-luxury);
 }
 
 .quick-buy-alex img {
@@ -2390,6 +2502,9 @@ h3 {
   padding: 40px 34px;
   color: var(--ivory);
   isolation: isolate;
+  transition:
+    transform 260ms var(--ease-luxury),
+    box-shadow 260ms var(--ease-luxury);
 }
 
 .wholesale-teaser-card::after {
@@ -2414,6 +2529,10 @@ h3 {
   padding: 0;
   border-color: rgba(215, 185, 132, 0.14);
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.028));
+  transition:
+    transform 220ms var(--ease-luxury),
+    border-color 180ms var(--ease-swift),
+    box-shadow 220ms var(--ease-luxury);
 }
 
 .product-card > :not(.product-card-media) {
@@ -2436,6 +2555,55 @@ h3 {
   inset: 0;
   background: linear-gradient(180deg, transparent, rgba(8, 7, 7, 0.22));
   content: "";
+  transition: opacity 220ms var(--ease-swift);
+}
+
+.home-quick-buy:hover,
+.home-quick-buy:focus-within,
+.wholesale-teaser-card:hover,
+.wholesale-teaser-card:focus-within {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lifted);
+}
+
+.quick-buy-item:hover,
+.quick-buy-item:focus-within {
+  transform: translateY(-2px);
+  border-color: rgba(227, 200, 145, 0.26);
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.18);
+}
+
+.quick-buy-item:hover .quick-buy-media img,
+.quick-buy-item:focus-within .quick-buy-media img,
+.product-card:hover .product-card-media img,
+.product-card:focus-within .product-card-media img,
+.wholesale-teaser-card:hover img,
+.wholesale-teaser-card:focus-within img,
+.collection-lineup:hover img,
+.collection-lineup:focus-within img,
+.product-visual:hover img {
+  transform: scale(1.035);
+}
+
+.product-card:hover .product-card-media::after,
+.product-card:focus-within .product-card-media::after {
+  opacity: 0.72;
+}
+
+.quick-buy-action button:hover,
+.quick-buy-action button:focus-visible,
+.quick-buy-alex a:hover,
+.quick-buy-alex a:focus-visible {
+  transform: translateY(-1px);
+  box-shadow: 0 14px 26px rgba(197, 159, 104, 0.24);
+}
+
+.quick-buy-alex:hover,
+.quick-buy-alex:focus-within {
+  transform: translateY(-2px);
+  border-color: rgba(227, 200, 145, 0.2);
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.16);
 }
 
 .product-card-top {
@@ -2618,6 +2786,56 @@ h3 {
 .alex-panel {
   border-color: rgba(215, 185, 132, 0.2);
   background: rgba(8, 7, 7, 0.94);
+}
+
+body[data-motion="ready"] .concept-hero,
+body[data-motion="ready"] .collection-story,
+body[data-motion="ready"] .page-hero,
+body[data-motion="ready"] .section-heading,
+body[data-motion="ready"] .home-quick-buy,
+body[data-motion="ready"] .quick-buy-item,
+body[data-motion="ready"] .quick-buy-alex,
+body[data-motion="ready"] .intent-grid > *,
+body[data-motion="ready"] .decision-grid > *,
+body[data-motion="ready"] .brand-proof-copy,
+body[data-motion="ready"] .brand-proof-card,
+body[data-motion="ready"] .product-grid > *,
+body[data-motion="ready"] .catalog-intent-bar,
+body[data-motion="ready"] .catalog-guidance > *,
+body[data-motion="ready"] .checkout-grid > *,
+body[data-motion="ready"] .product-story,
+body[data-motion="ready"] .product-buy,
+body[data-motion="ready"] .builder-panel,
+body[data-motion="ready"] .quote-panel,
+body[data-motion="ready"] .b2b-steps > * {
+  opacity: 0;
+  transform: translateY(26px);
+  filter: blur(10px);
+  transition:
+    opacity 560ms var(--ease-luxury),
+    transform 560ms var(--ease-luxury),
+    filter 560ms var(--ease-luxury);
+  transition-delay: calc(var(--motion-index, 0) * 40ms);
+}
+
+body[data-motion="ready"] [data-motion-visible="true"] {
+  opacity: 1;
+  transform: none;
+  filter: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
 
 @media (max-width: 1180px) {

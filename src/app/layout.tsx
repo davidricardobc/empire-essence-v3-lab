@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { AlexAdvisor } from "@/components/advisor/AlexAdvisor";
 import { CartDrawer } from "@/components/cart/CartDrawer";
 import { CartProvider } from "@/components/cart/CartProvider";
+import { MotionProvider } from "@/components/layout/MotionProvider";
 import { SiteFooter } from "@/components/layout/SiteFooter";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { absoluteUrl, createOrganizationJsonLd, createWebsiteJsonLd, defaultOgImage } from "@/lib/seo";
@@ -69,6 +70,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }} />
         <CartProvider>
+          <MotionProvider />
           <SiteHeader />
           {children}
           <SiteFooter />
