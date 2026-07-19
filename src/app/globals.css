@@ -732,6 +732,57 @@ h3 {
   margin-top: 16px;
 }
 
+.buy-box-heading,
+.buy-box-recap {
+  display: grid;
+  gap: 6px;
+  border: 1px solid rgba(215, 185, 132, 0.18);
+  background: rgba(255, 255, 255, 0.035);
+  padding: 14px;
+}
+
+.buy-box-heading {
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: end;
+  gap: 12px;
+}
+
+.buy-box-label {
+  display: block;
+  margin-bottom: 4px;
+  color: rgba(247, 240, 230, 0.72);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.buy-box-heading strong,
+.buy-box-recap strong {
+  font-family: var(--font-serif);
+  font-size: 1.24rem;
+}
+
+.buy-box-price-from {
+  color: rgba(227, 200, 145, 0.96);
+  font-size: 0.88rem;
+  font-weight: 700;
+  text-align: right;
+}
+
+.buy-box-recap span {
+  color: rgba(247, 240, 230, 0.72);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.buy-box-recap small {
+  color: rgba(247, 240, 230, 0.78);
+  font-size: 0.92rem;
+}
+
 .buy-box-actions {
   display: grid;
   gap: 10px;
@@ -1176,6 +1227,36 @@ h3 {
   color: rgba(11, 10, 10, 0.76);
 }
 
+.confidence-points {
+  display: grid;
+  gap: 10px;
+  margin: 0 0 18px;
+}
+
+.confidence-points article {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 10px;
+  align-items: start;
+  border: 1px solid rgba(11, 10, 10, 0.12);
+  background: rgba(11, 10, 10, 0.03);
+  padding: 14px;
+}
+
+.confidence-points svg {
+  color: var(--gold-2);
+}
+
+.confidence-points strong {
+  display: block;
+  font-family: var(--font-serif);
+  font-size: 1.06rem;
+}
+
+.confidence-points p {
+  margin: 4px 0 0;
+}
+
 .decision-summary,
 .buyer-confidence {
   display: grid;
@@ -1285,6 +1366,24 @@ h3 {
 .checkout-flow-callout li {
   color: rgba(247, 240, 230, 0.82);
   line-height: 1.5;
+}
+
+.checkout-trust-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0 0 18px;
+}
+
+.checkout-trust-strip span {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid rgba(215, 185, 132, 0.16);
+  background: rgba(255, 255, 255, 0.025);
+  padding: 8px 10px;
+  color: rgba(247, 240, 230, 0.86);
+  font-size: 0.8rem;
+  font-weight: 700;
 }
 
 .checkout-steps ul {
@@ -2864,6 +2963,31 @@ h3 {
 .product-buy.panel .secondary-button:hover {
   border-color: rgba(227, 200, 145, 0.68);
   background: rgba(200, 168, 106, 0.1);
+}
+
+.product-buy.panel .buy-box-heading,
+.product-buy.panel .buy-box-recap,
+.product-buy.panel .confidence-points article {
+  border-color: rgba(227, 200, 145, 0.24);
+  background:
+    linear-gradient(180deg, rgba(247, 240, 230, 0.08), rgba(247, 240, 230, 0.04)),
+    rgba(0, 0, 0, 0.22);
+}
+
+.product-buy.panel .buy-box-label,
+.product-buy.panel .buy-box-recap span {
+  color: rgba(227, 200, 145, 0.84);
+}
+
+.product-buy.panel .buy-box-heading strong,
+.product-buy.panel .buy-box-recap strong,
+.product-buy.panel .confidence-points strong {
+  color: #fff7ea;
+}
+
+.product-buy.panel .buy-box-recap small,
+.product-buy.panel .confidence-points p {
+  color: rgba(247, 240, 230, 0.8);
 }
 
 .product-visual {

@@ -52,6 +52,16 @@ export function AddToCart({
 
   return (
     <div className={`buy-box ${compact ? "compact-buy-box" : ""}`}>
+      {!compact ? (
+        <div className="buy-box-heading">
+          <div>
+            <span className="buy-box-label">Elige tu tamano</span>
+            <strong>{selectedSizeGuide.title}</strong>
+          </div>
+          <span className="buy-box-price-from">Desde {formatCop(product.variants[0].retailPriceCop)}</span>
+        </div>
+      ) : null}
+
       <div className="variant-grid" role="radiogroup" aria-label="Seleccionar tamano">
         {product.variants.map((variant) => {
           const active = variant.sku === selected.sku;
@@ -82,6 +92,20 @@ export function AddToCart({
             <p>{selectedSizeGuide.description}</p>
           </div>
           <span>{selected.sizeMl} ml · aprox. {formatCop(pricePerMl)}/ml</span>
+        </div>
+      ) : null}
+
+      {!compact ? (
+        <div className="buy-box-recap" aria-live="polite">
+          <span>Seleccion actual</span>
+          <strong>
+            {selected.sizeMl} ml x {quantity}
+          </strong>
+          <small>
+            {channel === "wholesale"
+              ? `Valor por unidad desde ${formatCop(unitPrice)} segun volumen total.`
+              : `Total estimado ${formatCop(unitPrice * quantity)} antes de envio.`}
+          </small>
         </div>
       ) : null}
 

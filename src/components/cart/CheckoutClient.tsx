@@ -30,6 +30,11 @@ export function CheckoutClient({ channel, wompiEnabled }: { channel: SalesChanne
   const shipping = getShipping(form.city, subtotalCop);
   const totalCop = subtotalCop + shipping.shippingCop;
   const canSubmit = checkoutItems.length > 0 && !loading;
+  const shippingLabel = form.city.trim()
+    ? shipping.shippingZone === "bogota"
+      ? "Envio estimado para Bogota"
+      : "Envio estimado nacional"
+    : "Envio estimado";
   const assistedWhatsappUrl = buildWhatsappUrl(
     buildAssistedCheckoutMessage({
       customer: form,
@@ -83,6 +88,11 @@ export function CheckoutClient({ channel, wompiEnabled }: { channel: SalesChanne
             ? "Paga con seguridad o confirma tu pedido por WhatsApp si prefieres recibir ayuda antes de finalizar."
             : "Wompi no esta activo todavia. Completa tus datos y te enviamos directo a WhatsApp con tu pedido listo para cerrar."}
         </p>
+        <div className="checkout-trust-strip" aria-label="Respaldo durante el checkout">
+          <span>Resumen con total visible antes de cerrar</span>
+          <span>Envio estimado 3 a 5 dias habiles en Colombia</span>
+          <span>Soporte por WhatsApp si quieres validar tu compra</span>
+        </div>
         <div className="checkout-flow-callout">
           <strong>Como funciona</strong>
           <ol>
@@ -191,7 +201,7 @@ export function CheckoutClient({ channel, wompiEnabled }: { channel: SalesChanne
             <strong>{formatCop(subtotalCop)}</strong>
           </div>
           <div>
-            <span>Envio</span>
+            <span>{shippingLabel}</span>
             <strong>{shipping.freeShipping ? "Gratis" : formatCop(shipping.shippingCop)}</strong>
           </div>
           <div className="total-line">
@@ -204,6 +214,13 @@ export function CheckoutClient({ channel, wompiEnabled }: { channel: SalesChanne
           {shipping.freeShipping
             ? "Este pedido ya aplica a envio gratis."
             : `Te faltan ${formatCop(shipping.amountToFreeShippingCop)} para envio gratis.`}
+        </p>
+        <p className="microcopy">
+          {form.city.trim()
+            ? shipping.shippingZone === "bogota"
+              ? "Tu ciudad entra en la tarifa de Bogota."
+              : "Tu ciudad entra en la tarifa nacional."
+            : "Escribe tu ciudad para afinar el envio antes de cerrar."}
         </p>
         <p className="microcopy">Carrito total actual: {formatCop(totals.subtotalCop)}</p>
         {checkoutItems.length ? (

@@ -2,11 +2,12 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
-import { ArrowLeft, BadgeCheck, Sparkles } from "lucide-react";
+import { ArrowLeft, BadgeCheck, MapPin, ShieldCheck, Sparkles } from "lucide-react";
 import { AddToCart } from "@/components/cart/AddToCart";
 import { ProductCard } from "@/components/catalog/ProductCard";
 import { categoryLabels } from "@/data/products";
 import { formatCop } from "@/lib/currency";
+import { SHIPPING } from "@/lib/pricing";
 import { getAllProducts, getProductBySlug, getRelatedProducts } from "@/lib/products";
 import { getProductVisual } from "@/lib/product-visuals";
 import { createBreadcrumbJsonLd, createProductJsonLd, defaultOgImage } from "@/lib/seo";
@@ -134,10 +135,26 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
             <span>Entrega estimada 3 a 5 dias habiles en Colombia</span>
             <span>Checkout directo o cierre asistido por WhatsApp</span>
           </div>
-          <AddToCart product={product} showDirectWhatsapp />
-          <div className="price-hint">
-            Desde {formatCop(product.variants[0].retailPriceCop)} - envio gratis desde {formatCop(140000)}
+          <div className="confidence-points">
+            <article>
+              <ShieldCheck size={16} />
+              <div>
+                <strong>Compra con respaldo</strong>
+                <p>Confirma por checkout o por WhatsApp si quieres ayuda antes de pagar.</p>
+              </div>
+            </article>
+            <article>
+              <MapPin size={16} />
+              <div>
+                <strong>Envio claro</strong>
+                <p>
+                  Bogota desde {formatCop(SHIPPING.bogotaCop)} y resto del pais desde {formatCop(SHIPPING.nationalCop)}.
+                </p>
+              </div>
+            </article>
           </div>
+          <AddToCart product={product} showDirectWhatsapp />
+          <div className="price-hint">Desde {formatCop(product.variants[0].retailPriceCop)} - envio gratis desde {formatCop(SHIPPING.freeThresholdCop)}</div>
           <div className="buyer-confidence">
             <strong>Antes de pagar, revisa esto:</strong>
             <ul>
@@ -145,7 +162,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
               <li>Duracion estimada de {product.duration.toLowerCase()} e intensidad {product.intensity}.</li>
               <li>30 ml para probar, 50 ml para uso frecuente, 100 ml si ya sabes que es para ti.</li>
               <li>Entrega nacional estimada de 3 a 5 dias habiles.</li>
-              <li>Si dudas entre tamanos o perfiles, Alex te responde por WhatsApp.</li>
+              <li>Si dudas entre tamanos, perfil o total final, Alex te responde por WhatsApp antes de cerrar.</li>
             </ul>
           </div>
         </aside>
