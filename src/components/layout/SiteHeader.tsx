@@ -20,7 +20,7 @@ export function SiteHeader() {
   const isActive = (href: string) => (href === "/" ? pathname === href : pathname.startsWith(href));
 
   return (
-    <header className="site-header">
+    <header className={`site-header ${open ? "menu-open" : ""}`}>
       <div className="shell header-inner">
         <Link href="/" className="brand" onClick={() => setOpen(false)}>
           <span className="brand-wordmark">
@@ -46,7 +46,13 @@ export function SiteHeader() {
           <Link href="/catalogo" className="primary-button compact">
             Comprar
           </Link>
-          <button type="button" className="menu-button" onClick={() => setOpen((value) => !value)} aria-label="Menu">
+          <button
+            type="button"
+            className="menu-button"
+            onClick={() => setOpen((value) => !value)}
+            aria-label={open ? "Cerrar menu" : "Abrir menu"}
+            aria-expanded={open}
+          >
             {open ? <X size={20} /> : <Menu size={20} />}
           </button>
         </div>

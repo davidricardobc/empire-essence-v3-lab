@@ -2785,12 +2785,12 @@ h3 {
 
   .header-actions {
     position: absolute;
-    top: 50%;
+    top: 16px;
     right: 0;
     display: grid;
     grid-template-columns: 44px;
     gap: 0;
-    transform: translateY(-50%);
+    transform: none;
   }
 
   .header-actions .compact {
@@ -2800,8 +2800,8 @@ h3 {
   .cart-button {
     display: grid !important;
     position: fixed;
-    top: 15px;
     right: 12px;
+    bottom: 86px;
     z-index: 120;
     width: 44px;
     min-width: 44px;
@@ -2822,6 +2822,11 @@ h3 {
     min-width: 20px;
     height: 20px;
     font-size: 10px;
+  }
+
+  .site-header.menu-open .cart-button {
+    opacity: 0;
+    pointer-events: none;
   }
 
   .menu-button {
@@ -3640,6 +3645,8 @@ body {
     width: 100vw;
     max-width: 100vw;
     gap: 6px;
+    padding-top: 18px;
+    padding-right: 64px;
     overflow: hidden;
   }
 
@@ -3655,8 +3662,8 @@ body {
 
   .page-hero h1 {
     max-width: 100%;
-    font-size: clamp(2.85rem, 13vw, 3.55rem);
-    line-height: 0.98;
+    font-size: clamp(2.15rem, 10vw, 2.85rem);
+    line-height: 1;
     overflow-wrap: break-word;
   }
 
@@ -3736,5 +3743,14 @@ body {
 
   .concept-hero-copy p {
     max-width: 100%;
+  }
+}
+
+@media (max-width: 720px) {
+  .header-actions .cart-button {
+    position: fixed !important;
+    top: auto !important;
+    right: 12px !important;
+    bottom: 86px !important;
   }
 }

@@ -190,10 +190,9 @@ export default function HomePage() {
         <div className="brand-proof-band">
           <div className="brand-proof-copy">
             <span className="eyebrow">Marca con rostro real</span>
-            <h2>Natalia ya le pone voz y presencia a Empire Essence.</h2>
+            <h2>Contenido real para elegir con mas confianza.</h2>
             <p>
-              El contenido oficial de la marca ya vive en YouTube e Instagram. No es una tienda sin cara: hay una
-              socia visible explicando, mostrando y conectando con la audiencia desde adentro del proyecto.
+              Mira recomendaciones, ideas de uso y referencias destacadas en nuestros canales oficiales.
             </p>
           </div>
           <div className="brand-proof-links">

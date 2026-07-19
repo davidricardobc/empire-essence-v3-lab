@@ -42,10 +42,9 @@ export default async function CatalogPage({
     <main className="page-main">
       <section className="shell page-hero compact-hero">
         <span className="eyebrow">Catalogo curado + completo</span>
-        <h1>Encuentra perfumes inspirados para mujer, hombre y unisex sin perderte entre 150 opciones.</h1>
+        <h1>Encuentra tu perfume sin perderte.</h1>
         <p>
-          Esta primera coleccion muestra referencias top y perfiles comerciales fuertes. El catalogo completo se puede
-          expandir con las mas de 150 fragancias disponibles.
+          Filtra por estilo, ocasion e intensidad. Si tienes dudas, Alex te ayuda antes de comprar.
         </p>
         <div className="catalog-stats">
           <span>{products.length} referencias base</span>
