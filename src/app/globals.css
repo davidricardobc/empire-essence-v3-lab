@@ -1110,6 +1110,7 @@ h3 {
   display: grid;
   grid-template-columns: minmax(0, 1.1fr) minmax(320px, 0.55fr);
   gap: 20px;
+  align-items: start;
   padding-top: 48px;
 }
 
@@ -3991,32 +3992,42 @@ body[data-motion="ready"] .concept-hero[data-motion-visible="true"] .hero-kicker
   }
 
   .home-quick-buy {
-    padding: 14px;
+    padding: 12px;
   }
 
   .quick-buy-item {
-    grid-template-columns: 88px minmax(0, 1fr);
-    gap: 12px;
+    grid-template-columns: 78px minmax(0, 1fr);
+    gap: 10px;
+    padding: 8px;
   }
 
   .quick-buy-copy strong {
-    font-size: 1.08rem;
+    font-size: 1rem;
   }
 
   .quick-buy-copy span {
-    font-size: 0.78rem;
+    font-size: 0.74rem;
   }
 
   .quick-buy-copy small {
     font-size: 0.65rem;
   }
 
+  .quick-buy-copy p,
+  .quick-buy-head p {
+    display: none;
+  }
+
+  .quick-buy-media {
+    height: 78px;
+  }
+
   .quick-buy-action {
-    gap: 8px;
+    gap: 6px;
   }
 
   .quick-buy-action > strong {
-    font-size: 0.98rem;
+    font-size: 0.92rem;
   }
 
   .quick-buy-action button,
@@ -4025,6 +4036,16 @@ body[data-motion="ready"] .concept-hero[data-motion-visible="true"] .hero-kicker
     padding: 9px 12px;
     font-size: 0.68rem;
     letter-spacing: 0.08em;
+  }
+
+  .quick-buy-alex {
+    grid-template-columns: 38px minmax(0, 1fr);
+    gap: 10px;
+  }
+
+  .quick-buy-alex img {
+    width: 38px;
+    height: 38px;
   }
 }
 
