@@ -97,7 +97,7 @@ export function CatalogExplorer({ initialFilters }: CatalogExplorerProps) {
         <div className="catalog-intent-bar">
           <div>
             <strong>Vista guiada activa</strong>
-            <p>Estas viendo una seleccion filtrada segun tu intencion de compra. Puedes limpiar o afinar sin perder contexto.</p>
+            <p>Estas viendo una seleccion filtrada. Puedes limpiar o afinar estos filtros cuando quieras.</p>
           </div>
           <div className="active-filter-list">
             {activeFilters.map((filter) => (

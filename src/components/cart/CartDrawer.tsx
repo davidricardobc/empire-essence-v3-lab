@@ -103,7 +103,7 @@ export function CartDrawer() {
           </>
         ) : (
           <div className="empty-cart">
-            <p>Tu carrito esta listo para llenarse con una seleccion que si cierre venta.</p>
+            <p>Tu carrito esta listo para llenarse con fragancias elegidas para ti.</p>
             <Link href="/catalogo" className="secondary-button" onClick={closeDrawer}>
               Explorar catalogo
             </Link>

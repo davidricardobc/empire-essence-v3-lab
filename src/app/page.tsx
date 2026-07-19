@@ -146,7 +146,7 @@ export default function HomePage() {
             ["Poder femenino", "Dulce, floral, memorable.", "/catalogo?mood=poder"],
             ["Fresco diario", "Limpio y facil de repetir.", "/catalogo?family=fresca"],
             ["Noche sensual", "Mas estela para salir.", "/catalogo?occasion=noche"],
-            ["Regalo seguro", "Top ventas, baja friccion.", "/catalogo?mood=elegancia"],
+            ["Regalo seguro", "Top ventas faciles de regalar.", "/catalogo?mood=elegancia"],
           ].map(([title, copy, href]) => (
             <Link href={href} key={title} className="intent-card">
               <strong>{title}</strong>
@@ -247,7 +247,7 @@ export default function HomePage() {
         <div className="section-heading split">
           <div>
             <span className="eyebrow">Top ventas</span>
-            <h2>Referencias de salida rapida para comprar o revender.</h2>
+            <h2>Referencias favoritas para comprar o revender.</h2>
           </div>
           <Link href="/catalogo" className="ghost-link">
             Ver catalogo completo <ArrowRight size={16} />

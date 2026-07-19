@@ -303,7 +303,7 @@ export const blogPosts: BlogPost[] = [
     slug: "top-perfumes-para-emprender",
     title: "Top perfumes para empezar a vender con 10 unidades",
     subtitle: "Una seleccion pensada para rotacion, margen y menos inventario quieto.",
-    excerpt: "Si vas a emprender, arma un kit con perfiles de salida rapida y facil recomendacion.",
+    excerpt: "Si vas a empezar, arma un kit con perfiles faciles de recomendar y buena rotacion.",
     category: "venta",
     readingMinutes: 5,
     conversionIntent: "Guia de kit inicial",
@@ -315,13 +315,13 @@ export const blogPosts: BlogPost[] = [
       "Un primer pedido funciona mejor cuando mezcla referencias masculinas, femeninas, de diario y de noche.",
     wholesaleCtaLabel: "Armar primer pedido de 10 unidades",
     productSlugs: ["9pm", "conquista", "despertar", "ambicion"],
-    ctaLabel: "Kit emprendedor",
+    ctaLabel: "Kit mayorista recomendado",
     sections: [
       {
         heading: "Compra variedad con criterio",
         body: [
           "El pedido minimo mayorista es de 10 unidades mixtas. La clave es balancear masculino, femenino y diario.",
-          "Los top sellers reducen friccion porque el cliente final suele reconocer mejor el perfil.",
+          "Los top sellers facilitan la recomendacion porque el cliente final suele reconocer mejor el perfil.",
         ],
       },
       {

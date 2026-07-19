@@ -7,11 +7,10 @@ export function SiteFooter() {
     <footer className="site-footer">
       <div className="shell footer-grid">
         <div>
-          <span className="eyebrow">Empire Essence V3</span>
-          <h2>Una experiencia creada para vender todos los dias.</h2>
+          <span className="eyebrow">Empire Essence</span>
+          <h2>Fragancias inspiradas para elegir y comprar con confianza.</h2>
           <p>
-            Fragancias inspiradas con presencia premium, checkout directo, asesoria inteligente y ruta mayorista para
-            emprendedores.
+            Compra directa, asesoria por WhatsApp y opcion mayorista en una experiencia clara y profesional.
           </p>
         </div>
         <div className="footer-links">

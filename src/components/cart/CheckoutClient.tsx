@@ -144,7 +144,7 @@ export function CheckoutClient({ channel, wompiEnabled }: { channel: SalesChanne
 
       <aside className="checkout-summary panel">
         <span className="eyebrow">Resumen</span>
-        <h2>{channel === "wholesale" ? "Pedido emprendedor" : "Tu seleccion"}</h2>
+        <h2>{channel === "wholesale" ? "Pedido mayorista" : "Tu seleccion"}</h2>
         {checkoutItems.length ? (
           <div className="summary-list">
             {checkoutItems.map((item) => (

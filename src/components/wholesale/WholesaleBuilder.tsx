@@ -70,7 +70,7 @@ export function WholesaleBuilder() {
       }),
     });
     const data = (await response.json()) as { ok: boolean; nextAction?: string; whatsappUrl?: string; tier?: string };
-    setQuoteMessage(data.nextAction ?? "Kit calculado. Puedes revisar el margen y cerrar tu pedido.");
+    setQuoteMessage(data.nextAction ?? "Propuesta calculada. Puedes revisar el margen y continuar con tu pedido.");
     if (data.whatsappUrl) setQuoteUrl(data.whatsappUrl);
   }
 
@@ -122,7 +122,7 @@ export function WholesaleBuilder() {
   return (
     <div className="wholesale-builder">
       <div className="panel builder-panel">
-        <span className="eyebrow">Kit emprendedor</span>
+        <span className="eyebrow">Kit mayorista</span>
         <h2>Arma variedad desde 10 unidades mezcladas.</h2>
         <p>
           Precios fijos para fragancias listas para vender. Insumos por gramo, litro o volumen especial se cotizan
