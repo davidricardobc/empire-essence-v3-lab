@@ -2,28 +2,24 @@ import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import type { OrderRecord, OrderStatus, PaymentStatus } from "@/types/order";
 
-const DEFAULT_STORE_PATH = path.join(process.cwd(), "data", "orders.json");
+const STORE_DIR = path.join(process.cwd(), "data");
+const STORE_PATH = path.join(STORE_DIR, "orders.json");
 
 type OrderStore = Record<string, OrderRecord>;
 
-function getStorePath() {
-  return process.env.ORDER_STORE_PATH || DEFAULT_STORE_PATH;
-}
-
 async function ensureStoreFile() {
-  const storePath = getStorePath();
   try {
-    await mkdir(path.dirname(storePath), { recursive: true });
-    await readFile(storePath, "utf8");
+    await mkdir(STORE_DIR, { recursive: true });
+    await readFile(STORE_PATH, "utf8");
   } catch {
     try {
-      await writeFile(storePath, "{}\n", "utf8");
+      await writeFile(STORE_PATH, "{}\n", "utf8");
     } catch {
       // Some runtimes are read-only. Keep Wompi usable even if persistence is unavailable.
     }
   }
 
-  return storePath;
+  return STORE_PATH;
 }
 
 async function readStore(): Promise<OrderStore> {
