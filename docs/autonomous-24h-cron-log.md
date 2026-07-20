@@ -102,3 +102,13 @@ Cada ejecucion debe escoger un foco segun lo que aprenda de la anterior. Temas a
 - Validacion: `npm run lint` OK; `npm run typecheck` OK; `npm run build` OK.
 - Commit: `style: tighten mobile catalog density`.
 - Siguiente hipotesis: Revisar contraste de textos secundarios y chips sobre fotografia oscura en cards y hero para mejorar legibilidad sin perder tono premium.
+
+### Job 04 - 2026-07-19 20:21
+- Foco: Mejorar contraste de textos secundarios y hacer mas sutil el motion movil del catalogo.
+- Por que tome este camino: Job 03 dejo como siguiente hipotesis revisar chips/textos sobre fotografia oscura; ademas las corridas autonomas recientes reportaron bloqueo por falta de herramientas, asi que avance desde heartbeat para no dejar quieta la prueba.
+- Que estudie: `docs/autonomous-24h-cron-log.md`, `git status --short`, `src/components/catalog/ProductCard.tsx`, `src/app/catalogo/page.tsx` y `src/app/globals.css`.
+- Hallazgos: Los chips de prueba usaban fondo blanco translucido muy debil sobre fondos oscuros; en mobile el reveal de catalogo heredaba blur/desplazamiento largo de desktop, reforzando la sensacion de aparicion lenta.
+- Cambios: Reforce fondo y color de chips de prueba/confianza y reduje en mobile la distancia, blur, duracion y delay del reveal para cards, guia y barra de intencion del catalogo.
+- Validacion: `npm run lint` OK; `npm run typecheck` OK; `npm run build` OK, 215 paginas generadas.
+- Commit: Pendiente.
+- Siguiente hipotesis: Revisar espacios negros y proporcion imagen/texto en cards de catalogo mobile con foco en primer pantallazo util.
