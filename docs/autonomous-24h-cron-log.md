@@ -142,3 +142,13 @@ Cada ejecucion debe escoger un foco segun lo que aprenda de la anterior. Temas a
 - Validacion: `npm run lint` OK; `npm run typecheck` OK; `npm run build` OK, 215 paginas generadas.
 - Commit: `6e93c22 fix: pulir confianza y copy de checkout movil`.
 - Siguiente hipotesis: Revisar carrito drawer mobile para que el paso de agregar producto a checkout/WhatsApp sea mas directo y no duplique instrucciones.
+
+### Job 08 - 2026-07-20 00:06
+- Foco: Aclarar el drawer del carrito movil para cerrar retail y mayorista sin confusion.
+- Por que tome este camino: Job 07 dejo como siguiente hipotesis revisar el carrito drawer mobile; ahi seguia un punto de conversion sensible porque el usuario podia mezclar canales, pero el cierre por checkout/WhatsApp ya opera por canal.
+- Que estudie: `docs/autonomous-24h-cron-log.md`, `git status --short`, `src/components/cart/CartDrawer.tsx`, `src/components/cart/CartProvider.tsx`, `src/components/cart/CheckoutClient.tsx` y estilos del drawer en `src/app/globals.css`.
+- Hallazgos: El drawer mostraba todos los items en un solo bloque y dirigia el cierre a un unico canal, lo que podia ocultar el subtotal real de cada flujo; ademas seguian textos publicos sin tilde como `Explorar catalogo`.
+- Cambios: Separe el drawer por secciones retail/mayorista con subtotal propio, CTA y WhatsApp por canal, agregue una nota cuando hay mezcla de canales y ajuste microcopy de cierre rapido para que el siguiente paso se entienda mejor en mobile.
+- Validacion: `npm run lint` OK; `npm run typecheck` OK; `npm run build` OK, 215 paginas generadas.
+- Commit: `fix: separar cierres retail y mayorista en carrito`
+- Siguiente hipotesis: Revisar si el resumen del drawer necesita una senal visual mas fuerte de envio/tiempo de entrega para aumentar confianza sin volver a cargar el mobile.
