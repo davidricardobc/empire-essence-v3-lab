@@ -170,6 +170,10 @@ function CartChannelSection({
         <strong>Cierre rápido</strong>
         <p>Revisa cantidades y elige checkout o WhatsApp con el resumen ya listo para pago, disponibilidad y entrega.</p>
       </div>
+      <div className="drawer-trust-pills" aria-label="Confianza de cierre">
+        <span>Entrega 3 a 5 días hábiles</span>
+        <span>WhatsApp con resumen listo</span>
+      </div>
 
       <div className="drawer-actions drawer-channel-actions">
         <Link href={`/checkout?channel=${channel}`} className="primary-button full" onClick={onClose}>

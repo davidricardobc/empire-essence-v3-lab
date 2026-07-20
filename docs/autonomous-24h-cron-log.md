@@ -152,3 +152,13 @@ Cada ejecucion debe escoger un foco segun lo que aprenda de la anterior. Temas a
 - Validacion: `npm run lint` OK; `npm run typecheck` OK; `npm run build` OK, 215 paginas generadas.
 - Commit: `fix: separar cierres retail y mayorista en carrito`
 - Siguiente hipotesis: Revisar si el resumen del drawer necesita una senal visual mas fuerte de envio/tiempo de entrega para aumentar confianza sin volver a cargar el mobile.
+
+### Job 09 - 2026-07-19 22:16
+- Foco: Reforzar confianza de entrega y WhatsApp dentro del drawer del carrito.
+- Por que tome este camino: Job 08 dejo como siguiente hipotesis sumar una senal visual de envio/tiempo de entrega sin cargar mobile; el drawer es el puente directo entre agregar producto y cerrar.
+- Que estudie: `docs/autonomous-24h-cron-log.md`, corridas recientes del cron, `git status --short`, `src/components/cart/CartDrawer.tsx` y estilos del drawer en `src/app/globals.css`.
+- Hallazgos: El drawer ya separaba retail/mayorista, pero la confianza de entrega y WhatsApp quedaba dentro de un parrafo; podia hacerse mas escaneable con chips pequenos.
+- Cambios: Agregue sellos compactos por canal: `Entrega 3 a 5 días hábiles` y `WhatsApp con resumen listo`, con estilos livianos y version mas compacta en mobile.
+- Validacion: `npm run lint` OK; `npm run typecheck` OK; `npm run build` OK, 215 paginas generadas.
+- Commit: Pendiente.
+- Siguiente hipotesis: Revisar estados vacios y mensajes de error/ayuda para que todo el flujo mantenga tono publico claro y sin textos internos.
