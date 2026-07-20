@@ -140,5 +140,5 @@ Cada ejecucion debe escoger un foco segun lo que aprenda de la anterior. Temas a
 - Hallazgos: Checkout tenia varios textos publicos sin tildes y el bloque `Como funciona` podia sumar peso en mobile antes de confirmar datos; faltaba una senal clara para quien viene del catalogo con productos ya listos.
 - Cambios: Corregi acentos y preguntas visibles, agregue una franja compacta `¿Vienes del catálogo?`, ajuste confianza previa a pago, y oculte el bloque explicativo largo en mobile para priorizar datos, resumen y accion.
 - Validacion: `npm run lint` OK; `npm run typecheck` OK; `npm run build` OK, 215 paginas generadas.
-- Commit: Pendiente.
+- Commit: `6e93c22 fix: pulir confianza y copy de checkout movil`.
 - Siguiente hipotesis: Revisar carrito drawer mobile para que el paso de agregar producto a checkout/WhatsApp sea mas directo y no duplique instrucciones.
