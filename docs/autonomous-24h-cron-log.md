@@ -160,5 +160,5 @@ Cada ejecucion debe escoger un foco segun lo que aprenda de la anterior. Temas a
 - Hallazgos: El drawer ya separaba retail/mayorista, pero la confianza de entrega y WhatsApp quedaba dentro de un parrafo; podia hacerse mas escaneable con chips pequenos.
 - Cambios: Agregue sellos compactos por canal: `Entrega 3 a 5 días hábiles` y `WhatsApp con resumen listo`, con estilos livianos y version mas compacta en mobile.
 - Validacion: `npm run lint` OK; `npm run typecheck` OK; `npm run build` OK, 215 paginas generadas.
-- Commit: Pendiente.
+- Commit: `0676916 style: reforzar confianza en drawer del carrito`.
 - Siguiente hipotesis: Revisar estados vacios y mensajes de error/ayuda para que todo el flujo mantenga tono publico claro y sin textos internos.
