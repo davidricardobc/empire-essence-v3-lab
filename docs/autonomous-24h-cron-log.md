@@ -130,5 +130,5 @@ Cada ejecucion debe escoger un foco segun lo que aprenda de la anterior. Temas a
 - Hallazgos: En mobile la busqueda y filtros consumian demasiado scroll vertical; la guia de compra repetia informacion que ya estaba resuelta en las cards y empujaba productos hacia abajo.
 - Cambios: En mobile pase filtros a dos columnas, reduje altura/fuente de inputs/selects, deje intensidad a ancho completo y oculte la guia de catalogo para priorizar resultados reales.
 - Validacion: `npm run lint` OK; `npm run typecheck` OK; `npm run build` OK, 215 paginas generadas.
-- Commit: Pendiente.
+- Commit: `bcdf173 style: compactar filtros moviles de catalogo`.
 - Siguiente hipotesis: Revisar checkout mobile y senales de confianza inmediatas para que quien agrega desde catalogo sepa que puede cerrar rapido por carrito o WhatsApp.
