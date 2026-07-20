@@ -120,5 +120,5 @@ Cada ejecucion debe escoger un foco segun lo que aprenda de la anterior. Temas a
 - Hallazgos: La card compacta reservaba 184px de media en mobile, suficiente para sentirse como bloque oscuro antes de la informacion; descripcion y familias podian empujar acciones hacia abajo.
 - Cambios: Reduje altura mobile de imagen con `clamp`, ajuste posicion de imagen, limite descripcion a dos lineas y oculte familias extra desde el tercer chip para priorizar producto, precio y accion.
 - Validacion: `npm run lint` OK; `npm run typecheck` OK; `npm run build` OK, 215 paginas generadas.
-- Commit: Pendiente.
+- Commit: `556ab1c style: compactar cards moviles de catalogo`.
 - Siguiente hipotesis: Revisar barra de filtros/busqueda en mobile para que el usuario llegue antes a resultados sin sentir formulario pesado.
