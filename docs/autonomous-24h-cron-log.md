@@ -112,3 +112,13 @@ Cada ejecucion debe escoger un foco segun lo que aprenda de la anterior. Temas a
 - Validacion: `npm run lint` OK; `npm run typecheck` OK; `npm run build` OK, 215 paginas generadas.
 - Commit: `408b389 style: suavizar motion movil y contraste de catalogo`.
 - Siguiente hipotesis: Revisar espacios negros y proporcion imagen/texto en cards de catalogo mobile con foco en primer pantallazo util.
+
+### Job 05 - 2026-07-19 20:46
+- Foco: Reducir espacio negro y mejorar proporcion imagen/texto en cards compactas de catalogo movil.
+- Por que tome este camino: Job 04 dejo como siguiente hipotesis revisar espacios negros y primer pantallazo util; David habia marcado que en mobile se perdia espacio y no siempre era claro si era imagen o bloque vacio.
+- Que estudie: `docs/autonomous-24h-cron-log.md`, corridas recientes del cron, `git status --short`, `src/app/globals.css` y reglas de cards compactas/product media.
+- Hallazgos: La card compacta reservaba 184px de media en mobile, suficiente para sentirse como bloque oscuro antes de la informacion; descripcion y familias podian empujar acciones hacia abajo.
+- Cambios: Reduje altura mobile de imagen con `clamp`, ajuste posicion de imagen, limite descripcion a dos lineas y oculte familias extra desde el tercer chip para priorizar producto, precio y accion.
+- Validacion: `npm run lint` OK; `npm run typecheck` OK; `npm run build` OK, 215 paginas generadas.
+- Commit: Pendiente.
+- Siguiente hipotesis: Revisar barra de filtros/busqueda en mobile para que el usuario llegue antes a resultados sin sentir formulario pesado.

@@ -2449,6 +2449,7 @@ h3 {
 .collection-lineup img,
 .wholesale-teaser-card img {
   object-fit: cover;
+  object-position: center;
   transition: transform 560ms var(--ease-luxury), filter 280ms var(--ease-swift);
 }
 
@@ -3903,7 +3904,11 @@ body[data-motion="ready"] .concept-hero[data-motion-visible="true"] .hero-kicker
   }
 
   .compact-card .product-card-media {
-    height: 184px;
+    height: clamp(136px, 38vw, 158px);
+  }
+
+  .compact-card .product-card-media img {
+    object-position: center 42%;
   }
 
   .compact-card .product-card-top {
@@ -3919,6 +3924,10 @@ body[data-motion="ready"] .concept-hero[data-motion-visible="true"] .hero-kicker
   }
 
   .compact-card .product-description {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
     margin: 10px 0 12px;
     font-size: 0.96rem;
     line-height: 1.5;
@@ -3931,6 +3940,10 @@ body[data-motion="ready"] .concept-hero[data-motion-visible="true"] .hero-kicker
 
   .compact-card .tag-row {
     gap: 6px;
+  }
+
+  .compact-card .tag-row span:nth-child(n + 3) {
+    display: none;
   }
 
   .compact-card .product-meta {
