@@ -32,9 +32,9 @@ export function CheckoutClient({ channel, wompiEnabled }: { channel: SalesChanne
   const canSubmit = checkoutItems.length > 0 && !loading;
   const shippingLabel = form.city.trim()
     ? shipping.shippingZone === "bogota"
-      ? "Envio estimado para Bogota"
-      : "Envio estimado nacional"
-    : "Envio estimado";
+      ? "Envío estimado para Bogotá"
+      : "Envío estimado nacional"
+    : "Envío estimado";
   const assistedWhatsappUrl = buildWhatsappUrl(
     buildAssistedCheckoutMessage({
       customer: form,
@@ -86,18 +86,22 @@ export function CheckoutClient({ channel, wompiEnabled }: { channel: SalesChanne
         <p>
           {wompiEnabled
             ? "Paga con seguridad o confirma tu pedido por WhatsApp si prefieres recibir ayuda antes de finalizar."
-            : "Wompi no esta activo todavia. Completa tus datos y te enviamos directo a WhatsApp con tu pedido listo para cerrar."}
+            : "Wompi no está activo todavía. Completa tus datos y te enviamos directo a WhatsApp con tu pedido listo para cerrar."}
         </p>
         <div className="checkout-trust-strip" aria-label="Respaldo durante el checkout">
           <span>Resumen con total visible antes de cerrar</span>
-          <span>Envio estimado 3 a 5 dias habiles en Colombia</span>
-          <span>Soporte por WhatsApp si quieres validar tu compra</span>
+          <span>Envío estimado 3 a 5 días hábiles en Colombia</span>
+          <span>Soporte por WhatsApp antes de pagar</span>
+        </div>
+        <div className="checkout-fast-close">
+          <strong>¿Vienes del catálogo?</strong>
+          <span>Tu selección ya está lista. Solo confirma datos y elige pago seguro o WhatsApp.</span>
         </div>
         <div className="checkout-flow-callout">
-          <strong>Como funciona</strong>
+          <strong>Cómo funciona</strong>
           <ol>
             <li>Completa tus datos de entrega.</li>
-            <li>Revisa el resumen y el costo de envio.</li>
+            <li>Revisa el resumen y el costo de envío.</li>
             <li>{wompiEnabled ? "Elige pago seguro o cierre por WhatsApp." : "Te llevamos a WhatsApp con el pedido armado."}</li>
           </ol>
         </div>
@@ -105,7 +109,7 @@ export function CheckoutClient({ channel, wompiEnabled }: { channel: SalesChanne
         <div className="form-grid">
           <Input label="Nombre" value={form.name} onChange={(name) => setForm((current) => ({ ...current, name }))} />
           <Input
-            label="Telefono"
+            label="Teléfono"
             value={form.phone}
             onChange={(phone) => setForm((current) => ({ ...current, phone }))}
           />
@@ -117,7 +121,7 @@ export function CheckoutClient({ channel, wompiEnabled }: { channel: SalesChanne
           />
           <Input label="Ciudad" value={form.city} onChange={(city) => setForm((current) => ({ ...current, city }))} />
           <Input
-            label="Direccion"
+            label="Dirección"
             value={form.address}
             onChange={(address) => setForm((current) => ({ ...current, address }))}
           />
@@ -135,9 +139,9 @@ export function CheckoutClient({ channel, wompiEnabled }: { channel: SalesChanne
 
         {checkoutItems.length ? (
           <div className="checkout-assist">
-            <strong>Prefieres cerrar con ayuda humana?</strong>
+            <strong>¿Prefieres cerrar con ayuda humana?</strong>
             <p>
-              Envia tu pedido por WhatsApp con el resumen ya armado y confirma disponibilidad, pago y entrega sin
+              Envía tu pedido por WhatsApp con el resumen ya armado y confirma disponibilidad, pago y entrega sin
               volver a explicar todo.
             </p>
             <a href={assistedWhatsappUrl} className="secondary-button full" target="_blank" rel="noreferrer">
@@ -162,7 +166,7 @@ export function CheckoutClient({ channel, wompiEnabled }: { channel: SalesChanne
 
       <aside className="checkout-summary panel">
         <span className="eyebrow">Resumen</span>
-        <h2>{channel === "wholesale" ? "Pedido mayorista" : "Tu seleccion"}</h2>
+        <h2>{channel === "wholesale" ? "Pedido mayorista" : "Tu selección"}</h2>
         {checkoutItems.length ? (
           <div className="summary-list">
             {checkoutItems.map((item) => (
@@ -212,15 +216,15 @@ export function CheckoutClient({ channel, wompiEnabled }: { channel: SalesChanne
 
         <p className="microcopy">
           {shipping.freeShipping
-            ? "Este pedido ya aplica a envio gratis."
-            : `Te faltan ${formatCop(shipping.amountToFreeShippingCop)} para envio gratis.`}
+            ? "Este pedido ya aplica a envío gratis."
+            : `Te faltan ${formatCop(shipping.amountToFreeShippingCop)} para envío gratis.`}
         </p>
         <p className="microcopy">
           {form.city.trim()
             ? shipping.shippingZone === "bogota"
-              ? "Tu ciudad entra en la tarifa de Bogota."
+              ? "Tu ciudad entra en la tarifa de Bogotá."
               : "Tu ciudad entra en la tarifa nacional."
-            : "Escribe tu ciudad para afinar el envio antes de cerrar."}
+            : "Escribe tu ciudad para afinar el envío antes de cerrar."}
         </p>
         <p className="microcopy">Carrito total actual: {formatCop(totals.subtotalCop)}</p>
         {checkoutItems.length ? (
@@ -233,7 +237,7 @@ export function CheckoutClient({ channel, wompiEnabled }: { channel: SalesChanne
                   : "Te llevamos directo a WhatsApp con el pedido armado para cerrar contigo."}
               </li>
               <li>Si prefieres WhatsApp, el asesor recibe tu pedido listo para cerrar.</li>
-              <li>La entrega estimada sigue en 3 a 5 dias habiles en Colombia.</li>
+              <li>La entrega estimada sigue en 3 a 5 días hábiles en Colombia.</li>
             </ul>
           </div>
         ) : null}

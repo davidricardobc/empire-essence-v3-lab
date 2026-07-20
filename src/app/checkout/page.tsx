@@ -22,7 +22,7 @@ export default async function CheckoutPage({
         </h1>
         <p>
           {wompiEnabled
-            ? "Revisa tus datos, confirma tu seleccion y elige si quieres pagar en linea o cerrar por WhatsApp con un asesor."
+            ? "Revisa tus datos, confirma tu selección y elige si quieres pagar en línea o cerrar por WhatsApp con un asesor."
             : "Revisa tus datos y te llevamos directo a WhatsApp con el pedido armado para confirmar disponibilidad, total final, pago y entrega."}
         </p>
       </section>

@@ -1389,6 +1389,24 @@ h3 {
   line-height: 1.5;
 }
 
+.checkout-fast-close {
+  display: grid;
+  gap: 4px;
+  border: 1px solid rgba(184, 215, 175, 0.18);
+  background: rgba(184, 215, 175, 0.07);
+  margin: 0 0 14px;
+  padding: 12px 14px;
+}
+
+.checkout-fast-close strong {
+  color: var(--ivory);
+}
+
+.checkout-fast-close span {
+  color: rgba(247, 240, 230, 0.84);
+  font-size: 0.9rem;
+}
+
 .checkout-trust-strip {
   display: flex;
   flex-wrap: wrap;
@@ -4823,6 +4841,25 @@ body {
   .form-grid,
   .lead-mini-form {
     gap: 12px;
+  }
+
+  .checkout-trust-strip {
+    gap: 6px;
+    margin-bottom: 12px;
+  }
+
+  .checkout-trust-strip span {
+    padding: 7px 8px;
+    font-size: 0.7rem;
+  }
+
+  .checkout-flow-callout {
+    display: none;
+  }
+
+  .checkout-fast-close {
+    margin-bottom: 12px;
+    padding: 10px 12px;
   }
 
   .summary-item,

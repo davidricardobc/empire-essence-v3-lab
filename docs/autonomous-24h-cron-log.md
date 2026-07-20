@@ -132,3 +132,13 @@ Cada ejecucion debe escoger un foco segun lo que aprenda de la anterior. Temas a
 - Validacion: `npm run lint` OK; `npm run typecheck` OK; `npm run build` OK, 215 paginas generadas.
 - Commit: `bcdf173 style: compactar filtros moviles de catalogo`.
 - Siguiente hipotesis: Revisar checkout mobile y senales de confianza inmediatas para que quien agrega desde catalogo sepa que puede cerrar rapido por carrito o WhatsApp.
+
+### Job 07 - 2026-07-19 21:46
+- Foco: Mejorar checkout mobile y senales de confianza inmediatas.
+- Por que tome este camino: Job 06 dejo como siguiente hipotesis revisar checkout mobile para quien llega desde catalogo; el cron siguio bloqueado sin herramientas, asi que mantuve avance desde heartbeat.
+- Que estudie: `docs/autonomous-24h-cron-log.md`, corridas recientes del cron, `git status --short`, `src/app/checkout/page.tsx`, `src/components/cart/CheckoutClient.tsx` y estilos de checkout en `src/app/globals.css`.
+- Hallazgos: Checkout tenia varios textos publicos sin tildes y el bloque `Como funciona` podia sumar peso en mobile antes de confirmar datos; faltaba una senal clara para quien viene del catalogo con productos ya listos.
+- Cambios: Corregi acentos y preguntas visibles, agregue una franja compacta `¿Vienes del catálogo?`, ajuste confianza previa a pago, y oculte el bloque explicativo largo en mobile para priorizar datos, resumen y accion.
+- Validacion: `npm run lint` OK; `npm run typecheck` OK; `npm run build` OK, 215 paginas generadas.
+- Commit: Pendiente.
+- Siguiente hipotesis: Revisar carrito drawer mobile para que el paso de agregar producto a checkout/WhatsApp sea mas directo y no duplique instrucciones.
