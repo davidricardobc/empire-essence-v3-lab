@@ -122,3 +122,13 @@ Cada ejecucion debe escoger un foco segun lo que aprenda de la anterior. Temas a
 - Validacion: `npm run lint` OK; `npm run typecheck` OK; `npm run build` OK, 215 paginas generadas.
 - Commit: `556ab1c style: compactar cards moviles de catalogo`.
 - Siguiente hipotesis: Revisar barra de filtros/busqueda en mobile para que el usuario llegue antes a resultados sin sentir formulario pesado.
+
+### Job 06 - 2026-07-19 21:16
+- Foco: Aligerar barra de filtros y busqueda en catalogo movil.
+- Por que tome este camino: Job 05 dejo como siguiente hipotesis reducir peso del formulario movil para llegar antes a resultados; el catalogo aun tenia cinco filtros en una sola columna y bloques de guia antes de las cards.
+- Que estudie: `docs/autonomous-24h-cron-log.md`, corridas recientes del cron, `git status --short`, `src/components/catalog/CatalogExplorer.tsx` y reglas mobile de `src/app/globals.css`.
+- Hallazgos: En mobile la busqueda y filtros consumian demasiado scroll vertical; la guia de compra repetia informacion que ya estaba resuelta en las cards y empujaba productos hacia abajo.
+- Cambios: En mobile pase filtros a dos columnas, reduje altura/fuente de inputs/selects, deje intensidad a ancho completo y oculte la guia de catalogo para priorizar resultados reales.
+- Validacion: `npm run lint` OK; `npm run typecheck` OK; `npm run build` OK, 215 paginas generadas.
+- Commit: Pendiente.
+- Siguiente hipotesis: Revisar checkout mobile y senales de confianza inmediatas para que quien agrega desde catalogo sepa que puede cerrar rapido por carrito o WhatsApp.

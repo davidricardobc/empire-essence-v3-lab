@@ -3875,9 +3875,12 @@ body[data-motion="ready"] .concept-hero[data-motion-visible="true"] .hero-kicker
 
   .featured-grid,
   .product-grid,
-  .filter-grid,
   .catalog-toolbar {
     grid-template-columns: 1fr;
+  }
+
+  .filter-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .catalog-toolbar,
@@ -3892,11 +3895,25 @@ body[data-motion="ready"] .concept-hero[data-motion-visible="true"] .hero-kicker
   }
 
   .catalog-guidance {
-    margin-top: 8px;
+    display: none;
   }
 
   .result-count {
     white-space: normal;
+  }
+
+  .search-field input,
+  .filter-select select {
+    min-height: 42px;
+    font-size: 0.86rem;
+  }
+
+  .filter-select span {
+    font-size: 0.72rem;
+  }
+
+  .filter-select:last-child {
+    grid-column: 1 / -1;
   }
 
   .compact-card {
