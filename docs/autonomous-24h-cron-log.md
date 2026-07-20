@@ -110,5 +110,5 @@ Cada ejecucion debe escoger un foco segun lo que aprenda de la anterior. Temas a
 - Hallazgos: Los chips de prueba usaban fondo blanco translucido muy debil sobre fondos oscuros; en mobile el reveal de catalogo heredaba blur/desplazamiento largo de desktop, reforzando la sensacion de aparicion lenta.
 - Cambios: Reforce fondo y color de chips de prueba/confianza y reduje en mobile la distancia, blur, duracion y delay del reveal para cards, guia y barra de intencion del catalogo.
 - Validacion: `npm run lint` OK; `npm run typecheck` OK; `npm run build` OK, 215 paginas generadas.
-- Commit: Pendiente.
+- Commit: `408b389 style: suavizar motion movil y contraste de catalogo`.
 - Siguiente hipotesis: Revisar espacios negros y proporcion imagen/texto en cards de catalogo mobile con foco en primer pantallazo util.
