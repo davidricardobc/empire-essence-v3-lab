@@ -32,7 +32,7 @@ const starterMessages: ChatMessage[] = [
   {
     role: "assistant",
     content:
-      "Hola, soy Alex. Te ayudo a elegir una fragancia para ti, para regalar o para armar un pedido mayorista con buena rotacion.",
+      "Hola, soy Alex. Te ayudo a elegir una fragancia para ti, para regalar o para armar un pedido mayorista con buena rotación.",
   },
 ];
 
@@ -277,8 +277,8 @@ function buildLocalReply({
     const questionKey = getNextQuestion(profile, askedQuestions);
     return {
       content: [
-        `Para mayorista te moveria por ${picks} porque suelen rotar bien para primer pedido.`,
-        "El minimo mayorista sigue siendo de 10 unidades mixtas.",
+        `Para mayorista te movería por ${picks} porque suelen rotar bien para primer pedido.`,
+        "El mínimo mayorista sigue siendo de 10 unidades mixtas.",
         questionKey ? getQuestionCopy(questionKey, "wholesale") : "Si quieres, te dejo el siguiente paso por WhatsApp con el kit ya orientado.",
       ].join(" "),
       questionKey,
@@ -289,13 +289,13 @@ function buildLocalReply({
   const questionKey = getNextQuestion(profile, askedQuestions);
   const opening =
     profile.recipient === "gift"
-      ? `Para regalo te recomendaria ${picks}.`
-      : `Te recomendaria ${picks} para empezar sin perder tiempo.`;
+      ? `Para regalo te recomendaría ${picks}.`
+      : `Te recomendaría ${picks} para empezar sin perder tiempo.`;
 
   return {
     content: [
       opening,
-      "Puedo afinarte la opcion por estilo, ocasion o intensidad sin repetir lo que ya me dijiste.",
+      "Puedo afinarte la opción por estilo, ocasión o intensidad sin repetir lo que ya me dijiste.",
       questionKey ? getQuestionCopy(questionKey, "retail") : "Si una te gusta, abre la ficha o te armo el mensaje de WhatsApp.",
     ].join(" "),
     questionKey,
@@ -326,7 +326,7 @@ function getQuestionCopy(questionKey: AdvisorQuestionKey, channel: "retail" | "w
       return "La prefieres femenina, masculina o unisex?";
     case "wholesaleMix":
       return channel === "wholesale"
-        ? "En tu rotacion vendes mas femenino, masculino o mixto?"
+        ? "En tu rotación vendes más femenino, masculino o mixto?"
         : "La prefieres femenina, masculina o unisex?";
     default:
       return "Cuentame un poco mas y te afino la recomendacion.";

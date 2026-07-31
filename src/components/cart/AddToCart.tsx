@@ -55,14 +55,14 @@ export function AddToCart({
       {!compact ? (
         <div className="buy-box-heading">
           <div>
-            <span className="buy-box-label">Elige tu tamano</span>
+            <span className="buy-box-label">Elige tu tamaño</span>
             <strong>{selectedSizeGuide.title}</strong>
           </div>
           <span className="buy-box-price-from">Desde {formatCop(product.variants[0].retailPriceCop)}</span>
         </div>
       ) : null}
 
-      <div className="variant-grid" role="radiogroup" aria-label="Seleccionar tamano">
+      <div className="variant-grid" role="radiogroup" aria-label="Seleccionar tamaño">
         {product.variants.map((variant) => {
           const active = variant.sku === selected.sku;
           const price =
@@ -103,8 +103,8 @@ export function AddToCart({
           </strong>
           <small>
             {channel === "wholesale"
-              ? `Valor por unidad desde ${formatCop(unitPrice)} segun volumen total.`
-              : `Total estimado ${formatCop(unitPrice * quantity)} antes de envio.`}
+              ? `Valor por unidad desde ${formatCop(unitPrice)} según volumen total.`
+              : `Total estimado ${formatCop(unitPrice * quantity)} antes de envío.`}
           </small>
         </div>
       ) : null}
@@ -152,7 +152,7 @@ export function AddToCart({
               {channel === "wholesale" ? "Cerrar este pedido por WhatsApp" : "Quiero este por WhatsApp"}
             </a>
             <p className="buy-box-note">
-              WhatsApp sale con este tamano, cantidad y valor estimado ya listos para cerrar mas rapido.
+              WhatsApp sale con este tamaño, cantidad y valor estimado ya listos para cerrar más rápido.
             </p>
           </>
         ) : null}
@@ -171,12 +171,12 @@ function getSizeGuide(sizeMl: Product["variants"][number]["sizeMl"]) {
     case 50:
       return {
         title: "50 ml para uso frecuente",
-        description: "Suele ser el tamano mas facil de recomendar por equilibrio entre inversion, duracion y uso diario.",
+        description: "Suele ser el tamaño más fácil de recomendar por equilibrio entre inversión, duración y uso diario.",
       };
     case 100:
       return {
         title: "100 ml para repetir con confianza",
-        description: "Conviene si ya conoces este perfil o si quieres resolver por mas tiempo con una sola compra.",
+        description: "Conviene si ya conoces este perfil o si quieres resolver por más tiempo con una sola compra.",
       };
   }
 }

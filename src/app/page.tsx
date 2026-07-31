@@ -226,7 +226,7 @@ export default function HomePage() {
       <section className="section blog-home-band">
         <div className="shell section-heading split">
           <div>
-            <span className="eyebrow">Guias para elegir</span>
+            <span className="eyebrow">Guías para elegir</span>
             <h2>Compra y vende perfumes con más seguridad.</h2>
           </div>
           <p>Lee solo lo necesario para elegir mejor, regalar bien o armar tu primer pedido mayorista.</p>
@@ -265,9 +265,9 @@ export default function HomePage() {
         <div className="shell wholesale-home-grid">
           <div>
             <span className="eyebrow">Mayoristas y emprendedores</span>
-            <h2>Variedad, margen y rotacion para empezar con 10 unidades.</h2>
+            <h2>Variedad, margen y rotación para empezar con 10 unidades.</h2>
             <p>
-              Calcula inversion, ganancia estimada y arma un pedido mixto con referencias faciles de recomendar.
+              Calcula inversión, ganancia estimada y arma un pedido mixto con referencias fáciles de recomendar.
               Insumos por gramo o litro se cotizan con asistencia.
             </p>
             <div className="hero-actions">
@@ -289,7 +289,7 @@ export default function HomePage() {
             <span>Ejemplo 20 unidades 50ml</span>
             <strong>{formatCop(580000)}</strong>
             <p>Precio mayorista unitario {formatCop(29000)}. Precio sugerido retail {formatCop(46000)}.</p>
-            <small>Ganancia estimada antes de envio: {formatCop(340000)}</small>
+            <small>Ganancia estimada antes de envío: {formatCop(340000)}</small>
           </div>
         </div>
       </section>
@@ -304,8 +304,8 @@ export default function HomePage() {
         </div>
         <div className="proof-grid">
           <div>Checkout directo con Wompi o respaldo por WhatsApp.</div>
-          <div>Alex recomienda por ocasion, intensidad y presupuesto.</div>
-          <div>Catalogo curado para decidir rapido.</div>
+          <div>Alex recomienda por ocasión, intensidad y presupuesto.</div>
+          <div>Catálogo curado para decidir rápido.</div>
           <div>Mayoristas compran perfumes fijos y cotizan insumos por volumen.</div>
         </div>
       </section>

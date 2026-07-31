@@ -14,7 +14,7 @@ export async function POST(request: Request) {
       return NextResponse.json(
         {
           ok: false,
-          message: "Revisa tus datos: falta informacion para crear el pedido.",
+          message: "Revisa tus datos: falta información para crear el pedido.",
           issues: parsed.error.flatten(),
         },
         { status: 400 },
@@ -23,7 +23,7 @@ export async function POST(request: Request) {
 
     const items = normalizeCartItems(parsed.data.items, parsed.data.channel);
     if (!items.length) {
-      return NextResponse.json({ ok: false, message: "El carrito no contiene productos validos." }, { status: 400 });
+      return NextResponse.json({ ok: false, message: "El carrito no contiene productos válidos." }, { status: 400 });
     }
 
     if (parsed.data.channel === "wholesale") {
@@ -35,7 +35,7 @@ export async function POST(request: Request) {
         return NextResponse.json(
           {
             ok: false,
-            message: `El pedido mayorista minimo es de ${WHOLESALE_MIN_UNITS} unidades mezcladas.`,
+            message: `El pedido mayorista mínimo es de ${WHOLESALE_MIN_UNITS} unidades mezcladas.`,
           },
           { status: 400 },
         );
@@ -109,7 +109,7 @@ export async function POST(request: Request) {
     });
   } catch {
     return NextResponse.json(
-      { ok: false, message: "No fue posible crear el checkout en este momento." },
+      { ok: false, message: "No fue posible crear el checkout en este momento. Intenta por WhatsApp." },
       { status: 500 },
     );
   }

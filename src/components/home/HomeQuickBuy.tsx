@@ -18,7 +18,7 @@ export function HomeQuickBuy({ products }: { products: Product[] }) {
     <aside className="home-quick-buy" aria-label="Elige tu esencia">
       <div className="quick-buy-head">
         <span>Listos para comprar hoy</span>
-        <p>Top ventas con salida facil. Agrega al carrito o abre la ficha para revisar notas, tamanos y estilo.</p>
+        <p>Top ventas con salida fácil. Agrega al carrito o abre la ficha para revisar notas, tamaños y estilo.</p>
         <div className="quick-buy-trust">
           <span>
             <Flame size={13} />
@@ -26,7 +26,7 @@ export function HomeQuickBuy({ products }: { products: Product[] }) {
           </span>
           <span>
             <Truck size={13} />
-            Entrega 3 a 5 dias
+            Entrega 3 a 5 días
           </span>
           <span>
             <ShieldCheck size={13} />
@@ -90,8 +90,8 @@ export function HomeQuickBuy({ products }: { products: Product[] }) {
       <div className="quick-buy-alex">
         <Image src="/assets/alex-advisor.png" alt="" width={52} height={52} />
         <div>
-          <span>Necesitas ayuda para elegir?</span>
-          <small>Alex recomienda por ocasion, mood, presupuesto o regalo.</small>
+          <span>¿Necesitas ayuda para elegir?</span>
+          <small>Alex recomienda por ocasión, mood, presupuesto o regalo.</small>
         </div>
         <a
           href={buildWhatsappUrl("Hola Alex. Quiero ayuda para elegir mi fragancia Empire Essence.")}

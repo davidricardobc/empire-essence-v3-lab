@@ -2,9 +2,10 @@
 
 import { useMemo, useState } from "react";
 import type { ReactNode } from "react";
-import { Filter, Search } from "lucide-react";
+import { Filter, MessageCircle, Search } from "lucide-react";
 import { allFamilies, allMoods, allOccasions, categoryLabels, products } from "@/data/products";
 import { ProductCard } from "@/components/catalog/ProductCard";
+import { buildWhatsappUrl } from "@/lib/whatsapp";
 import type { Category, Intensity } from "@/types/product";
 
 const categories: Array<Category | "all"> = ["all", "femenina", "masculina", "unisex"];
@@ -76,6 +77,10 @@ export function CatalogExplorer({ initialFilters }: CatalogExplorerProps) {
     setIntensity("all");
   }
 
+  const catalogAssistUrl = buildWhatsappUrl(
+    "Hola Alex. Estoy viendo el catálogo de Empire Essence y quiero ayuda para encontrar una fragancia.",
+  );
+
   return (
     <section className="catalog-shell">
       <div className="catalog-toolbar">
@@ -101,7 +106,13 @@ export function CatalogExplorer({ initialFilters }: CatalogExplorerProps) {
           </div>
           <div className="active-filter-list">
             {activeFilters.map((filter) => (
-              <button key={filter.key} type="button" className="active-filter-chip" onClick={filter.clear}>
+              <button
+                key={filter.key}
+                type="button"
+                className="active-filter-chip"
+                onClick={filter.clear}
+                aria-label={`Quitar filtro ${filter.label}`}
+              >
                 {filter.label} ×
               </button>
             ))}
@@ -172,8 +183,21 @@ export function CatalogExplorer({ initialFilters }: CatalogExplorerProps) {
 
       {!filtered.length ? (
         <div className="empty-state">
+          <span className="empty-kicker">Sin coincidencias exactas</span>
           <h3>No encontramos esa combinación.</h3>
-          <p>Prueba una búsqueda más amplia o escribe por WhatsApp para que te digamos por dónde empezar.</p>
+          <p>
+            Quita un filtro o vuelve al catálogo completo. Si estás buscando algo específico, Alex puede orientarte por
+            ocasión, presupuesto o estilo.
+          </p>
+          <div className="empty-actions">
+            <button type="button" className="secondary-button" onClick={clearAllFilters}>
+              Ver todo el catálogo
+            </button>
+            <a href={catalogAssistUrl} className="ghost-button" target="_blank" rel="noreferrer">
+              <MessageCircle size={18} />
+              Pedir recomendación
+            </a>
+          </div>
         </div>
       ) : null}
     </section>

@@ -1116,10 +1116,32 @@ h3 {
 }
 
 .empty-state {
+  display: grid;
+  gap: 14px;
   border: 1px dashed var(--line);
   border-radius: 8px;
   padding: 34px;
   text-align: center;
+}
+
+.empty-state h3,
+.empty-state p {
+  margin: 0;
+}
+
+.empty-kicker {
+  color: var(--gold-2);
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.empty-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
 }
 
 .empty-state.compact {
@@ -1338,8 +1360,23 @@ h3 {
 }
 
 .form-message {
+  display: grid;
+  gap: 6px;
   border: 1px solid var(--line);
   padding: 12px;
+}
+
+.form-message strong {
+  color: var(--ivory);
+}
+
+.form-message p {
+  margin: 0;
+}
+
+.form-message a {
+  color: var(--gold-2);
+  font-weight: 800;
 }
 
 .form-message.success {
@@ -1756,8 +1793,36 @@ h3 {
 
 .empty-cart {
   display: grid;
-  gap: 18px;
-  padding-top: 80px;
+  gap: 14px;
+  margin-top: 28px;
+  border: 1px dashed rgba(215, 185, 132, 0.18);
+  padding: 18px;
+}
+
+.empty-cart h3,
+.empty-cart p {
+  margin: 0;
+}
+
+.empty-cart h3 {
+  color: var(--ivory);
+  font-size: 1.25rem;
+  line-height: 1.25;
+}
+
+.empty-trust-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.empty-trust-row span {
+  border: 1px solid rgba(215, 185, 132, 0.14);
+  background: rgba(255, 255, 255, 0.025);
+  padding: 7px 9px;
+  color: rgba(247, 240, 230, 0.82);
+  font-size: 0.78rem;
+  font-weight: 800;
 }
 
 .alex-root {

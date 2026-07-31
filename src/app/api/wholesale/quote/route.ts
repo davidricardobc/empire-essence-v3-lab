@@ -35,7 +35,7 @@ export async function POST(request: Request) {
       `Ciudad: ${parsed.data.lead.city}`,
       `Tipo de negocio: ${parsed.data.lead.businessType}`,
       `Unidades fragancias: ${kit.totalUnits}`,
-      `Inversion estimada: ${formatCop(kit.subtotalCop)}`,
+      `Inversión estimada: ${formatCop(kit.subtotalCop)}`,
       `Ganancia proyectada sugerida: ${formatCop(kit.projectedProfitCop)}`,
       needsQuote ? `Insumos por cotizar: ${parsed.data.supplyNeeds?.join(", ")}` : "",
     ]
@@ -50,10 +50,10 @@ export async function POST(request: Request) {
       needsQuote,
       whatsappUrl: buildWhatsappUrl(message),
       nextAction: needsQuote
-        ? "Cotizar insumos por WhatsApp porque los precios por gramo/litro varian por volumen."
+        ? "Cotizar insumos por WhatsApp porque los precios por gramo/litro varían por volumen."
         : kit.valid
           ? "Puede pasar a checkout mayorista con precios fijos por unidad."
-          : "Completa minimo 10 unidades mezcladas para activar precio mayorista.",
+          : "Completa mínimo 10 unidades mezcladas para activar precio mayorista.",
     });
   } catch {
     return NextResponse.json(

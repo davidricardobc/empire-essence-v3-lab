@@ -120,7 +120,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
           <p>{product.bestFor}</p>
           <div className="decision-summary">
             <div>
-              <span>Inspiracion</span>
+              <span>Inspiración</span>
               <strong>{product.inspirationReference}</strong>
             </div>
             <div>
@@ -133,7 +133,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
             </div>
           </div>
           <div className="buy-panel-trust">
-            <span>Entrega estimada 3 a 5 dias habiles en Colombia</span>
+            <span>Entrega estimada 3 a 5 días hábiles en Colombia</span>
             <span>Checkout directo o cierre asistido por WhatsApp</span>
           </div>
           <div className="confidence-points">
@@ -147,23 +147,23 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
             <article>
               <MapPin size={16} />
               <div>
-                <strong>Envio claro</strong>
+                <strong>Envío claro</strong>
                 <p>
-                  Bogota desde {formatCop(SHIPPING.bogotaCop)} y resto del pais desde {formatCop(SHIPPING.nationalCop)}.
+                  Bogotá desde {formatCop(SHIPPING.bogotaCop)} y resto del país desde {formatCop(SHIPPING.nationalCop)}.
                 </p>
               </div>
             </article>
           </div>
           <AddToCart product={product} showDirectWhatsapp />
-          <div className="price-hint">Desde {formatCop(product.variants[0].retailPriceCop)} - envio gratis desde {formatCop(SHIPPING.freeThresholdCop)}</div>
+          <div className="price-hint">Desde {formatCop(product.variants[0].retailPriceCop)} - envío gratis desde {formatCop(SHIPPING.freeThresholdCop)}</div>
           <div className="buyer-confidence">
             <strong>Antes de pagar, revisa esto:</strong>
             <ul>
-              <li>Huele en la linea de {product.inspirationReference} y tiene {product.concentration}.</li>
-              <li>Duracion estimada de {product.duration.toLowerCase()} e intensidad {product.intensity}.</li>
+              <li>Huele en la línea de {product.inspirationReference} y tiene {product.concentration}.</li>
+              <li>Duración estimada de {product.duration.toLowerCase()} e intensidad {product.intensity}.</li>
               <li>30 ml para probar, 50 ml para uso frecuente, 100 ml si ya sabes que es para ti.</li>
-              <li>Entrega nacional estimada de 3 a 5 dias habiles.</li>
-              <li>Si dudas entre tamanos, perfil o total final, Alex te responde por WhatsApp antes de cerrar.</li>
+              <li>Entrega nacional estimada de 3 a 5 días hábiles.</li>
+              <li>Si dudas entre tamaños, perfil o total final, Alex te responde por WhatsApp antes de cerrar.</li>
             </ul>
           </div>
         </aside>
@@ -172,7 +172,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
       <section className="section shell">
         <div className="section-heading split">
           <div>
-            <span className="eyebrow">Tambien puede gustarte</span>
+            <span className="eyebrow">También puede gustarte</span>
             <h2>Perfiles cercanos a esta eleccion.</h2>
           </div>
           <a href="#alex" className="ghost-link">

@@ -162,3 +162,13 @@ Cada ejecucion debe escoger un foco segun lo que aprenda de la anterior. Temas a
 - Validacion: `npm run lint` OK; `npm run typecheck` OK; `npm run build` OK, 215 paginas generadas.
 - Commit: `0676916 style: reforzar confianza en drawer del carrito`.
 - Siguiente hipotesis: Revisar estados vacios y mensajes de error/ayuda para que todo el flujo mantenga tono publico claro y sin textos internos.
+
+### Job 10 - 2026-07-31 11:42
+- Foco: Pulir estados vacios, errores recuperables y ayuda visible del flujo de compra.
+- Por que tome este camino: Job 09 dejo como siguiente hipotesis revisar estados vacios y mensajes de error/ayuda; David pidio continuar desde el experimento y pregunto por idiomas como siguiente direccion estrategica.
+- Que estudie: `src/components/catalog/CatalogExplorer.tsx`, `src/components/cart/CartDrawer.tsx`, `src/components/cart/CheckoutClient.tsx`, `src/components/cart/AddToCart.tsx`, `src/components/home/HomeQuickBuy.tsx`, `src/app/api/checkout/route.ts` y `src/app/globals.css`.
+- Hallazgos: El flujo ya estaba mas compacto, pero los estados sin productos/sin resultados eran secos, algunos errores no ofrecian recuperacion directa por WhatsApp y seguian textos publicos sin tildes en compra rapida, compra y API de checkout.
+- Cambios: Estados vacios mas guiados en catalogo, carrito y resumen de checkout; CTA de recomendacion por WhatsApp cuando no hay resultados; recuperacion por WhatsApp cuando falla checkout; correccion de tildes en copy publico y mensajes de API; nuevo documento de estrategia para internacionalizacion.
+- Validacion: `npm run lint` OK; `npm run typecheck` OK; `npm run build` OK, 215 paginas generadas.
+- Commit: Pendiente.
+- Siguiente hipotesis: Hacer QA visual/manual del flujo completo y luego preparar internacionalizacion por etapas sin traducir datos comerciales a mano dentro de componentes.

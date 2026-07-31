@@ -83,10 +83,32 @@ export function CartDrawer() {
           </>
         ) : (
           <div className="empty-cart">
-            <p>Agrega perfumes inspirados en 30, 50 o 100 ml y luego cierra tu pedido por checkout o WhatsApp.</p>
-            <Link href="/catalogo" className="secondary-button" onClick={closeDrawer}>
-              Explorar catálogo
-            </Link>
+            <span className="empty-kicker">Carrito listo para empezar</span>
+            <h3>Elige una fragancia y vuelve cuando tengas tu selección.</h3>
+            <p>
+              Puedes agregar perfumes en 30, 50 o 100 ml desde el catálogo. El resumen queda armado para checkout o
+              WhatsApp.
+            </p>
+            <div className="empty-trust-row">
+              <span>Precios visibles</span>
+              <span>Resumen automático</span>
+              <span>Ayuda por WhatsApp</span>
+            </div>
+            <div className="empty-actions">
+              <Link href="/catalogo" className="secondary-button" onClick={closeDrawer}>
+                Explorar catálogo
+              </Link>
+              <a
+                href={buildWhatsappUrl("Hola. Quiero ayuda para elegir una fragancia Empire Essence.")}
+                className="ghost-button"
+                target="_blank"
+                rel="noreferrer"
+                onClick={closeDrawer}
+              >
+                <MessageCircle size={18} />
+                Pedir ayuda
+              </a>
+            </div>
           </div>
         )}
       </aside>
@@ -168,7 +190,10 @@ function CartChannelSection({
 
       <div className="drawer-confidence">
         <strong>Cierre rápido</strong>
-        <p>Revisa cantidades y elige checkout o WhatsApp con el resumen ya listo para pago, disponibilidad y entrega.</p>
+        <p>
+          Revisa cantidades y elige checkout o WhatsApp. El asesor recibe el resumen listo para pago, disponibilidad y
+          entrega.
+        </p>
       </div>
       <div className="drawer-trust-pills" aria-label="Confianza de cierre">
         <span>Entrega 3 a 5 días hábiles</span>

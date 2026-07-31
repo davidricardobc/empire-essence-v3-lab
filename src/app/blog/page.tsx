@@ -9,7 +9,7 @@ import { buildWhatsappUrl } from "@/lib/whatsapp";
 export const metadata: Metadata = {
   title: "Blog de perfumes y ventas",
   description:
-    "Guias para elegir perfumes, comprar con mas seguridad y empezar a vender como mayorista con criterios claros y accionables.",
+    "Guías para elegir perfumes, comprar con más seguridad y empezar a vender como mayorista con criterios claros y accionables.",
   alternates: {
     canonical: "/blog",
   },
@@ -34,7 +34,7 @@ export default function BlogPage() {
     <main className="page-main blog-page">
       <section className="shell blog-hero">
         <div>
-          <span className="eyebrow">Guias Empire Essence</span>
+          <span className="eyebrow">Guías Empire Essence</span>
           <h1>Blog de perfumes: elige mejor y vende con mas seguridad.</h1>
           <p>
             Consejos cortos para comprar tu fragancia, elegir mejor un regalo o armar un primer pedido mayorista.
@@ -62,15 +62,15 @@ export default function BlogPage() {
           </span>
           <span>
             <BadgeCheck size={17} />
-            Recomendaciones por ocasion, estilo y presupuesto
+            Recomendaciones por ocasión, estilo y presupuesto
           </span>
           <span>
             <MessageCircle size={17} />
-            Asesoria por WhatsApp antes de cerrar tu pedido
+            Asesoría por WhatsApp antes de cerrar tu pedido
           </span>
           <span>
             <Store size={17} />
-            Guias para empezar como mayorista desde 10 unidades mixtas
+            Guías para empezar como mayorista desde 10 unidades mixtas
           </span>
         </aside>
       </section>
@@ -83,9 +83,9 @@ export default function BlogPage() {
         <div className="section-heading split">
           <div>
             <span className="eyebrow">Mayoristas</span>
-            <h2>Guias para comprar mejor al por mayor.</h2>
+            <h2>Guías para comprar mejor al por mayor.</h2>
           </div>
-          <p>Aprende a elegir proveedor, cuidar tu margen y armar un surtido facil de recomendar.</p>
+          <p>Aprende a elegir proveedor, cuidar tu margen y armar un surtido fácil de recomendar.</p>
         </div>
         <div className="blog-grid">
           {publishedPosts.map((post) => (

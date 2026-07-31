@@ -158,7 +158,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
             <div className="blog-panel-note">
               <Store size={16} />
               <span>
-                Pedido mayorista minimo de {WHOLESALE_MIN_UNITS} unidades mixtas. Envio nacional de 3 a 5 dias habiles.
+                Pedido mayorista mínimo de {WHOLESALE_MIN_UNITS} unidades mixtas. Envío nacional de 3 a 5 días hábiles.
               </span>
             </div>
           ) : null}

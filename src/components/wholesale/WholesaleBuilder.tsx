@@ -224,7 +224,7 @@ export function WholesaleBuilder() {
 
         <div className="proof-line">
           <PackageCheck size={18} />
-          Entrega 3-5 dias habiles, envio nacional y frascos con tapa incluidos.
+          Entrega 3-5 días hábiles, envío nacional y frascos con tapa incluidos.
         </div>
       </div>
     </div>

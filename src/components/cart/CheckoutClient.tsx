@@ -72,7 +72,10 @@ export function CheckoutClient({ channel, wompiEnabled }: { channel: SalesChanne
       }
       if (data.ok) clearCart();
     } catch {
-      setResponse({ ok: false, message: "No se pudo conectar con el checkout. Intenta por WhatsApp." });
+      setResponse({
+        ok: false,
+        message: "No pudimos conectar el checkout en este momento. Puedes cerrar por WhatsApp con el mismo resumen.",
+      });
     } finally {
       setLoading(false);
     }
@@ -135,7 +138,17 @@ export function CheckoutClient({ channel, wompiEnabled }: { channel: SalesChanne
           />
         </label>
 
-        {response?.message ? <p className={`form-message ${response.ok ? "success" : "error"}`}>{response.message}</p> : null}
+        {response?.message ? (
+          <div className={`form-message ${response.ok ? "success" : "error"}`}>
+            <strong>{response.ok ? "Pedido preparado" : "Necesitamos revisar algo"}</strong>
+            <p>{response.message}</p>
+            {!response.ok && checkoutItems.length ? (
+              <a href={assistedWhatsappUrl} target="_blank" rel="noreferrer">
+                Continuar por WhatsApp
+              </a>
+            ) : null}
+          </div>
+        ) : null}
 
         {checkoutItems.length ? (
           <div className="checkout-assist">
@@ -192,9 +205,14 @@ export function CheckoutClient({ channel, wompiEnabled }: { channel: SalesChanne
           </div>
         ) : (
           <div className="empty-state compact">
-            <p>No hay productos de este canal en el carrito.</p>
+            <span className="empty-kicker">Sin productos para este cierre</span>
+            <p>
+              {channel === "wholesale"
+                ? "Agrega kits mayoristas para ver subtotal, mínimo de unidades y cierre por WhatsApp."
+                : "Agrega una fragancia retail para ver subtotal, envío y opciones de cierre."}
+            </p>
             <Link href={channel === "wholesale" ? "/mayoristas" : "/catalogo"} className="secondary-button">
-              Elegir productos
+              {channel === "wholesale" ? "Armar pedido mayorista" : "Elegir fragancias"}
             </Link>
           </div>
         )}
@@ -229,7 +247,7 @@ export function CheckoutClient({ channel, wompiEnabled }: { channel: SalesChanne
         <p className="microcopy">Carrito total actual: {formatCop(totals.subtotalCop)}</p>
         {checkoutItems.length ? (
           <div className="checkout-steps">
-            <strong>Que pasa despues</strong>
+            <strong>Qué pasa después</strong>
             <ul>
               <li>
                 {wompiEnabled
