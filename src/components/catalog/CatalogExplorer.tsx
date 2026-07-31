@@ -29,6 +29,7 @@ export function CatalogExplorer({ initialFilters }: CatalogExplorerProps) {
   const [mood, setMood] = useState(initialFilters?.mood ?? "all");
   const [occasion, setOccasion] = useState(initialFilters?.occasion ?? "all");
   const [intensity, setIntensity] = useState<Intensity | "all">(initialFilters?.intensity ?? "all");
+  const [filtersOpen, setFiltersOpen] = useState(false);
 
   const filtered = useMemo(() => {
     const term = query.trim().toLowerCase();
@@ -92,9 +93,21 @@ export function CatalogExplorer({ initialFilters }: CatalogExplorerProps) {
             placeholder="Busca por aroma, ocasión, inspiración o mood"
           />
         </label>
-        <div className="result-count">
-          <Filter size={16} />
-          {filtered.length} de {products.length} referencias visibles
+        <div className="catalog-toolbar-actions">
+          <div className="result-count">
+            <Filter size={16} />
+            {filtered.length} de {products.length} referencias visibles
+          </div>
+          <button
+            type="button"
+            className="mobile-filter-toggle"
+            onClick={() => setFiltersOpen((value) => !value)}
+            aria-expanded={filtersOpen}
+            aria-controls="catalog-filters"
+          >
+            <Filter size={16} />
+            {filtersOpen ? "Ocultar filtros" : "Filtros"}
+          </button>
         </div>
       </div>
 
@@ -134,7 +147,7 @@ export function CatalogExplorer({ initialFilters }: CatalogExplorerProps) {
         </div>
       </div>
 
-      <div className="filter-grid">
+      <div id="catalog-filters" className={`filter-grid ${filtersOpen ? "is-open" : ""}`}>
         <FilterSelect label="Categoría" value={category} onChange={(value) => setCategory(value as Category | "all")}>
           {categories.map((item) => (
             <option key={item} value={item}>

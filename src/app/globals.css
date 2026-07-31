@@ -1061,6 +1061,28 @@ h3 {
   white-space: nowrap;
 }
 
+.catalog-toolbar-actions {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 10px;
+}
+
+.mobile-filter-toggle {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  border: 1px solid rgba(215, 185, 132, 0.22);
+  background: rgba(255, 255, 255, 0.035);
+  padding: 9px 11px;
+  color: var(--ivory);
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
 .catalog-intent-bar {
   display: grid;
   gap: 14px;
@@ -3853,10 +3875,7 @@ body[data-motion="ready"] .concept-hero[data-motion-visible="true"] .hero-kicker
 
   .cart-button {
     display: grid !important;
-    position: fixed;
-    right: 12px;
-    bottom: 86px;
-    z-index: 120;
+    position: relative;
     width: 44px;
     min-width: 44px;
     height: 44px;
@@ -5073,11 +5092,263 @@ body {
   }
 }
 
+/* Job 11: phone-first tightening after visual QA. */
+.primary-button.is-confirmed {
+  background: linear-gradient(135deg, #c7ddb7, #a9c69e);
+  color: #071006;
+}
+
 @media (max-width: 720px) {
+  .header-inner {
+    min-height: 62px;
+  }
+
+  .brand-wordmark {
+    justify-items: start;
+  }
+
+  .brand-wordmark strong {
+    font-size: clamp(1.42rem, 6.2vw, 1.72rem);
+    letter-spacing: 0.15em;
+  }
+
+  .mobile-nav {
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 5px;
+    padding: 6px 12px 8px;
+  }
+
+  .mobile-nav.is-open {
+    display: grid !important;
+  }
+
+  .mobile-nav a {
+    min-height: 30px;
+    padding: 6px 4px;
+    font-size: clamp(0.62rem, 2.55vw, 0.72rem);
+    line-height: 1;
+    white-space: nowrap;
+  }
+
+  .page-hero {
+    gap: 16px;
+    padding: 28px 0 20px;
+  }
+
+  .page-hero h1 {
+    font-size: clamp(2rem, 8vw, 2.32rem) !important;
+    line-height: 1.02;
+  }
+
+  .page-hero p {
+    font-size: 1rem;
+    line-height: 1.45;
+  }
+
+  .catalog-stats,
+  .wholesale-proof {
+    gap: 7px;
+    margin-top: 16px;
+  }
+
+  .catalog-stats span,
+  .wholesale-proof span {
+    padding: 7px 9px;
+    font-size: 0.76rem;
+  }
+
+  .catalog-toolbar {
+    position: sticky;
+    top: 102px;
+    z-index: 30;
+    margin-inline: -12px;
+    padding: 10px 12px;
+    border-block: 1px solid rgba(215, 185, 132, 0.12);
+    background: rgba(5, 4, 4, 0.94);
+    backdrop-filter: blur(14px);
+  }
+
+  .compact-card {
+    padding: 12px;
+  }
+
+  .compact-card .product-card-media {
+    height: clamp(112px, 32vw, 140px);
+  }
+
+  .compact-card .product-description,
+  .compact-card .tag-row {
+    display: none;
+  }
+
+  .compact-card .product-card-proof {
+    margin-top: 8px;
+  }
+
+  .compact-card .product-card-proof span {
+    padding: 5px 8px;
+    font-size: 0.66rem;
+  }
+
+  .compact-card .product-meta {
+    margin-top: 10px;
+    padding-top: 10px;
+  }
+
+  .compact-buy-box .variant-pill {
+    min-height: 46px;
+  }
+
+  .compact-buy-box .primary-button.full {
+    min-height: 44px;
+  }
+
+  .alex-root {
+    bottom: calc(10px + env(safe-area-inset-bottom));
+    right: 8px;
+  }
+
+  .alex-trigger {
+    min-width: 42px;
+    width: 42px;
+    height: 42px;
+  }
+}
+
+@media (max-width: 430px) {
+  .concept-hero-copy h1 {
+    font-size: 2.08rem;
+    line-height: 1.02;
+  }
+
+  .concept-hero-copy p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+}
+
+/* Job 11 final mobile overrides: keep first actions visible and prevent drawer/header overlaps. */
+@media (max-width: 720px) {
+  body[data-motion="ready"] .concept-hero,
+  body[data-motion="ready"] .collection-story,
+  body[data-motion="ready"] .page-hero,
+  body[data-motion="ready"] .section-heading,
+  body[data-motion="ready"] .home-quick-buy,
+  body[data-motion="ready"] .quick-buy-item,
+  body[data-motion="ready"] .quick-buy-alex,
+  body[data-motion="ready"] .intent-grid > *,
+  body[data-motion="ready"] .decision-grid > *,
+  body[data-motion="ready"] .brand-proof-copy,
+  body[data-motion="ready"] .brand-proof-card,
+  body[data-motion="ready"] .product-grid > *,
+  body[data-motion="ready"] .catalog-intent-bar,
+  body[data-motion="ready"] .catalog-guidance > *,
+  body[data-motion="ready"] .checkout-grid > *,
+  body[data-motion="ready"] .product-story,
+  body[data-motion="ready"] .product-buy,
+  body[data-motion="ready"] .builder-panel,
+  body[data-motion="ready"] .quote-panel,
+  body[data-motion="ready"] .b2b-steps > * {
+    filter: none;
+    transition-duration: 260ms;
+  }
+
+  body[data-motion="ready"] .concept-hero[data-motion-visible="true"] .concept-hero-copy > * {
+    animation: none;
+  }
+
+  .header-inner {
+    min-height: 64px !important;
+  }
+
+  .brand {
+    padding-right: 0 !important;
+  }
+
+  .header-actions {
+    position: static !important;
+    display: flex;
+    margin-left: auto;
+    transform: none !important;
+  }
+
   .header-actions .cart-button {
-    position: fixed !important;
-    top: auto !important;
-    right: 12px !important;
-    bottom: 86px !important;
+    position: static !important;
+    inset: auto !important;
+    width: 42px;
+    min-width: 42px;
+    height: 42px;
+    min-height: 42px;
+  }
+
+  .catalog-toolbar-actions {
+    justify-content: space-between;
+  }
+
+  .mobile-filter-toggle {
+    display: inline-flex;
+    min-height: 38px;
+  }
+
+  .filter-grid {
+    display: none;
+  }
+
+  .filter-grid.is-open {
+    display: grid;
+  }
+
+  .cart-drawer {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background: #070606;
+    padding: 14px 14px calc(14px + env(safe-area-inset-bottom));
+    opacity: 1;
+    transition:
+      transform 240ms var(--ease-luxury),
+      box-shadow 180ms var(--ease-swift);
+  }
+
+  .drawer-head {
+    flex: 0 0 auto;
+    margin-bottom: 0;
+  }
+
+  .drawer-head h2 {
+    font-size: clamp(2.25rem, 13vw, 2.9rem);
+    line-height: 0.96;
+  }
+
+  .drawer-total {
+    display: none;
+  }
+
+  .drawer-items {
+    flex: 1 1 auto;
+    min-height: 0;
+    overflow-y: auto;
+    padding-right: 0;
+  }
+
+  .drawer-channel-head {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+
+  .drawer-channel-head span {
+    font-size: 1.02rem;
+  }
+
+  .drawer-confidence {
+    padding: 12px;
+  }
+
+  .drawer-actions {
+    flex: 0 0 auto;
+    margin-top: 0;
+    padding-top: 10px;
   }
 }

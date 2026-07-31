@@ -27,6 +27,7 @@ export function AddToCart({
   const { addItem } = useCart();
   const [selectedSku, setSelectedSku] = useState(product.variants[0]?.sku ?? "");
   const [quantity, setQuantity] = useState(defaultQuantity);
+  const [added, setAdded] = useState(false);
 
   const selected = useMemo(
     () => product.variants.find((variant) => variant.sku === selectedSku) ?? product.variants[0],
@@ -49,6 +50,21 @@ export function AddToCart({
       channel,
     }),
   );
+
+  function handleAddToCart() {
+    addItem({
+      productId: product.id,
+      productSlug: product.slug,
+      productName: product.publicName,
+      sizeMl: selected.sizeMl,
+      sku: selected.sku,
+      quantity,
+      unitPriceCop: unitPrice,
+      channel,
+    });
+    setAdded(true);
+    window.setTimeout(() => setAdded(false), 1800);
+  }
 
   return (
     <div className={`buy-box ${compact ? "compact-buy-box" : ""}`}>
@@ -127,22 +143,12 @@ export function AddToCart({
       <div className="buy-box-actions">
         <button
           type="button"
-          className="primary-button full"
-          onClick={() =>
-            addItem({
-              productId: product.id,
-              productSlug: product.slug,
-              productName: product.publicName,
-              sizeMl: selected.sizeMl,
-              sku: selected.sku,
-              quantity,
-              unitPriceCop: unitPrice,
-              channel,
-            })
-          }
+          className={`primary-button full ${added ? "is-confirmed" : ""}`}
+          onClick={handleAddToCart}
+          aria-live="polite"
         >
           <ShoppingBag size={18} />
-          {compact ? "Agregar" : channel === "wholesale" ? "Agregar kit al carrito" : "Agregar al carrito"}
+          {added ? "Agregado" : compact ? "Agregar" : channel === "wholesale" ? "Agregar kit al carrito" : "Agregar al carrito"}
         </button>
 
         {showDirectWhatsapp ? (
