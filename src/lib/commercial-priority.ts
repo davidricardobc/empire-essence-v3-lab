@@ -34,8 +34,8 @@ export function getCommercialPriorityScore(product: Product) {
 
 export function getCommercialPriorityLabel(product: Product) {
   const tier = getCommercialPriority(product);
-  if (tier === "campaign") return "Prioridad para pauta";
-  if (tier === "support") return "Alta rotación";
+  if (tier === "campaign") return "Selección destacada";
+  if (tier === "support") return "Muy elegido";
   return null;
 }
 

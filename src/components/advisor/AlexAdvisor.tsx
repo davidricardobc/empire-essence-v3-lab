@@ -423,8 +423,8 @@ function wantsSecureCheckout(text: string) {
 
 function getAdvisorBadge(product: Product) {
   const priority = getCommercialPriority(product);
-  if (priority === "campaign") return "Prioridad para pauta";
-  if (priority === "support") return "Alta rotación";
+  if (priority === "campaign") return "Selección destacada";
+  if (priority === "support") return "Muy elegido";
   return "Recomendación";
 }
 

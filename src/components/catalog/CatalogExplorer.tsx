@@ -99,7 +99,7 @@ export function CatalogExplorer({ initialFilters }: CatalogExplorerProps) {
             <Filter size={16} />
             {filtered.length} de {products.length} referencias visibles
           </div>
-          <div className="campaign-count">Prioridad para pauta primero</div>
+          <div className="campaign-count">Selecciones destacadas primero</div>
           <button
             type="button"
             className="mobile-filter-toggle"
