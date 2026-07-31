@@ -180,5 +180,5 @@ Cada ejecucion debe escoger un foco segun lo que aprenda de la anterior. Temas a
 - Hallazgos: Header/nav ocupaban mucho en primera vista, el reveal con blur podia sentirse pesado, los filtros empujaban productos hacia abajo, agregar al carrito necesitaba feedback inmediato, el drawer duplicaba total en mobile y el carrito fijo se cortaba por el contenedor del header.
 - Cambios: Filtros mobile colapsados con boton `Filtros`, catalogo mas denso arriba del primer scroll, feedback `Agregado` al tocar compra, drawer mobile mas limpio y solido, total duplicado oculto en telefono, animacion del drawer sin fade transparente y carrito dentro del header sin clipping.
 - Validacion: `npm run lint` OK; `npm run typecheck` OK; `npm run build` OK, 215 paginas generadas; `curl -I` OK en `/`, `/catalogo` y `/checkout`; Playwright mobile confirmo filtros colapsados, drawer visible, fondo solido y acciones de cierre presentes.
-- Commit: Pendiente.
+- Commit: `ede86ff fix: mejorar experiencia movil de catalogo y carrito`.
 - Siguiente hipotesis: Probar compra mobile completa con datos reales de prueba y luego preparar i18n por etapas para ingles, sin mezclar traducciones a mano dentro de componentes.
