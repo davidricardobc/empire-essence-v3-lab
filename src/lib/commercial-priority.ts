@@ -6,15 +6,18 @@ const campaignPriorityIds = new Set([
   "p-conquista",
   "p-despertar",
   "p-ambicion",
+  "p-invictus",
   "p-celebracion",
   "p-black-opium",
   "p-misterio",
   "p-radiante",
   "p-arabian-tonka",
   "p-extasis",
+  "p-oleaje",
+  "p-provocacion",
 ]);
 
-const supportPriorityIds = new Set(["p-invictus", "p-vertigo", "p-plenitud", "p-gracia", "p-scandal"]);
+const supportPriorityIds = new Set(["p-vertigo", "p-plenitud", "p-gracia", "p-scandal"]);
 
 export function getCommercialPriority(product: Product): CommercialPriorityTier {
   if (campaignPriorityIds.has(product.id)) return "campaign";
@@ -31,7 +34,7 @@ export function getCommercialPriorityScore(product: Product) {
 
 export function getCommercialPriorityLabel(product: Product) {
   const tier = getCommercialPriority(product);
-  if (tier === "campaign") return "Prioridad campaña";
+  if (tier === "campaign") return "Prioridad para pauta";
   if (tier === "support") return "Alta rotación";
   return null;
 }

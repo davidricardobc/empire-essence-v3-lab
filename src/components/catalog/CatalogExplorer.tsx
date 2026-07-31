@@ -99,7 +99,7 @@ export function CatalogExplorer({ initialFilters }: CatalogExplorerProps) {
             <Filter size={16} />
             {filtered.length} de {products.length} referencias visibles
           </div>
-          <div className="campaign-count">Prioridad pauta primero</div>
+          <div className="campaign-count">Prioridad para pauta primero</div>
           <button
             type="button"
             className="mobile-filter-toggle"
@@ -202,7 +202,7 @@ export function CatalogExplorer({ initialFilters }: CatalogExplorerProps) {
           <h3>No encontramos esa combinación.</h3>
           <p>
             Quita un filtro o vuelve al catálogo completo. Si estás buscando algo específico, Alex puede orientarte por
-            ocasión, presupuesto o estilo.
+            ocasión, estilo o precio inteligente.
           </p>
           <div className="empty-actions">
             <button type="button" className="secondary-button" onClick={clearAllFilters}>

@@ -41,7 +41,7 @@ export const blogPosts: BlogPost[] = [
         heading: "Tu primer paso recomendado",
         body: [
           "Arma un kit con referencias masculinas, femeninas y versatiles. Si ya tienes clientes esperando, prioriza los perfiles que mas se piden: fresco diario, dulce elegante y noche intensa.",
-          "Si aun no sabes como mezclarlo, habla con un asesor y recibe una recomendacion segun tu ciudad, presupuesto y tipo de cliente.",
+          "Si aun no sabes como mezclarlo, habla con un asesor y recibe una recomendacion segun tu ciudad, capital inicial y tipo de cliente.",
         ],
       },
     ],
@@ -126,7 +126,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "Ya tienes presupuesto para probar",
+        heading: "Ya tienes capital para probar",
         body: [
           "No necesitas empezar enorme. Un pedido minimo de 10 unidades mixtas te permite probar demanda, medir rotacion y ajustar tu siguiente compra.",
           "La meta del primer kit es aprender rapido y vender con confianza.",
@@ -256,7 +256,7 @@ export const blogPosts: BlogPost[] = [
         heading: "Cuando tienes duda",
         body: [
           "Empieza por top sellers: ya tienen buena aceptacion y reducen el riesgo de equivocarte.",
-          "Tambien puedes pedir una recomendacion a Alex segun ocasion, estilo y presupuesto.",
+          "Tambien puedes pedir una recomendacion a Alex segun ocasion, estilo y precio inteligente.",
         ],
       },
     ],

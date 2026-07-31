@@ -35,7 +35,7 @@ const starterMessages: ChatMessage[] = [
   {
     role: "assistant",
     content:
-      "Hola, soy Alex. Te recomiendo una fragancia según ocasión, presupuesto y rotación. Si ya tienes una opción clara, te ayudo a llevarla al carrito y cerrar por pago seguro.",
+      "Hola, soy Alex. Te recomiendo una fragancia según ocasión, estilo y valor percibido. Si ya tienes una opción clara, te ayudo a llevarla al carrito y cerrar por pago seguro.",
   },
 ];
 

@@ -19,18 +19,20 @@ Estas son las referencias que conviene usar primero en anuncios, piezas orgánic
 - Conquista, inspirado en Creed Aventus.
 - Despertar, inspirado en Dior Sauvage.
 - Ambición, inspirado en Paco Rabanne One Million.
+- Impulso, inspirado en Paco Rabanne Invictus.
 - Celebración, inspirado en Carolina Herrera Good Girl.
 - Desvelo, inspirado en YSL Black Opium.
 - Misterio, inspirado en MFK Baccarat Rouge 540.
 - Radiante, inspirado en Xerjoff Erba Pura.
 - Éxtasis, inspirado en Montale Arabians Tonka.
 - Éxtasis, inspirado en Viktor & Rolf Flowerbomb.
+- Oleaje, inspirado en Paco Rabanne Invictus Legend.
+- Provocacion, inspirado en Paco Rabanne Black XS.
 
 ## Tier 2 - soporte de alta rotación
 
 Estas referencias ayudan a completar conversación, regalos, perfiles jóvenes y mix mayorista:
 
-- Impulso, inspirado en Paco Rabanne Invictus.
 - Vértigo, inspirado en Versace Eros.
 - Plenitud, inspirado en Carolina Herrera 212 VIP Rose.
 - Gracia, inspirado en Lancôme La Vie Est Belle.

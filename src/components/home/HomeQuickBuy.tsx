@@ -91,7 +91,7 @@ export function HomeQuickBuy({ products }: { products: Product[] }) {
         <Image src="/assets/alex-advisor.png" alt="" width={52} height={52} />
         <div>
           <span>¿Necesitas ayuda para elegir?</span>
-          <small>Alex recomienda por ocasión, mood, presupuesto o regalo.</small>
+          <small>Alex recomienda por ocasión, mood, estilo o regalo.</small>
         </div>
         <a
           href={buildWhatsappUrl("Hola Alex. Quiero ayuda para elegir mi fragancia Empire Essence.")}

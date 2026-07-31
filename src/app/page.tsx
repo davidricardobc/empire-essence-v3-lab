@@ -74,7 +74,7 @@ export default function HomePage() {
               <span>Pago seguro</span>
               <span>Ayuda por WhatsApp</span>
             </div>
-            <small className="hero-support-copy">Si compras para regalo o por primera vez, te guiamos por mood y presupuesto.</small>
+            <small className="hero-support-copy">Si compras para regalo o por primera vez, te guiamos por mood, estilo y precio inteligente.</small>
           </div>
 
           <HomeQuickBuy products={heroProducts} />
@@ -304,7 +304,7 @@ export default function HomePage() {
         </div>
         <div className="proof-grid">
           <div>Checkout directo con Wompi o respaldo por WhatsApp.</div>
-          <div>Alex recomienda por ocasión, intensidad y presupuesto.</div>
+          <div>Alex recomienda por ocasión, intensidad y estilo.</div>
           <div>Catálogo curado para decidir rápido.</div>
           <div>Mayoristas compran perfumes fijos y cotizan insumos por volumen.</div>
         </div>

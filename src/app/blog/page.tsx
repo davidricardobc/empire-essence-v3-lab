@@ -62,7 +62,7 @@ export default function BlogPage() {
           </span>
           <span>
             <BadgeCheck size={17} />
-            Recomendaciones por ocasión, estilo y presupuesto
+            Recomendaciones por ocasión, estilo y precio inteligente
           </span>
           <span>
             <MessageCircle size={17} />
