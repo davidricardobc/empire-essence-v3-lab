@@ -192,3 +192,13 @@ Cada ejecucion debe escoger un foco segun lo que aprenda de la anterior. Temas a
 - Validacion: `npm run lint` OK; `npm run typecheck` OK; `npm run build` OK, 215 paginas generadas. Playwright movil en 393x852 confirmo que Alex abre dentro de pantalla, recomienda prioridad de campaña, `Pagar` navega a `/checkout?channel=retail` y el resumen conserva el producto agregado.
 - Commit: `f3e3a7c feat: orientar Alex a compra y prioridad comercial`.
 - Siguiente hipotesis: Reemplazar la prioridad provisional por inventario real: referencia, tamaño, unidades, costo, precio y prioridad de rotacion.
+
+### Job 13 - 2026-07-31 18:02
+- Foco: Ajustar lenguaje de valor y ampliar la prioridad para pauta.
+- Por que tome este camino: David no quiere que la experiencia use lenguaje de compra limitada porque los precios de Empire Essence son buenos y no deben sentirse como una compra barata. Tambien pidio mantener la prioridad para pauta y sumar Invictus, Invictus Legend y Black XS.
+- Que estudie: `commercial-priority`, `AlexAdvisor`, `CatalogExplorer`, `ProductCard`, textos de home/blog y datos generados de productos.
+- Hallazgos: Invictus aparece en el catalogo como `Impulso`, Invictus Legend como `Oleaje` y Black XS como `Provocacion`. El lenguaje anterior estaba en textos publicos de home, Alex, catalogo y blog.
+- Cambios: Subi `Impulso`, `Oleaje` y `Provocacion` a Tier 1; unifique el badge publico como `Prioridad para pauta`; reemplace lenguaje de compra limitada por estilo, valor percibido, precio inteligente o capital inicial segun el contexto.
+- Validacion: `npm run lint` OK; `npm run typecheck` OK despues de respaldar la cache generada `.next/dev`; `npm run build` OK, 215 paginas generadas; Playwright mobile 393x852 confirmo `Prioridad para pauta`, ausencia del lenguaje anterior, e Invictus/Invictus Legend/Black XS en las primeras cards priorizadas.
+- Commit: `3cdfda2 fix: ajustar lenguaje y prioridad de pauta`.
+- Siguiente hipotesis: Afinar Alex para que cuando el cliente pregunte por una referencia priorizada cierre con una recomendacion corta, boton de pago y mensaje de confianza sin sonar insistente.
