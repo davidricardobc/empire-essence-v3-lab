@@ -182,3 +182,13 @@ Cada ejecucion debe escoger un foco segun lo que aprenda de la anterior. Temas a
 - Validacion: `npm run lint` OK; `npm run typecheck` OK; `npm run build` OK, 215 paginas generadas; `curl -I` OK en `/`, `/catalogo` y `/checkout`; Playwright mobile confirmo filtros colapsados, drawer visible, fondo solido y acciones de cierre presentes.
 - Commit: `ede86ff fix: mejorar experiencia movil de catalogo y carrito`.
 - Siguiente hipotesis: Probar compra mobile completa con datos reales de prueba y luego preparar i18n por etapas para ingles, sin mezclar traducciones a mano dentro de componentes.
+
+### Job 12 - 2026-07-31 17:32
+- Foco: Alex Advisor, cierre por Wompi/checkout y prioridad de perfumes para pauta.
+- Por que tome este camino: David pidio respuestas profesionales que ayuden a comprar, dirijan a Wompi y revisen que perfumes priorizar porque la publicidad debe empujar lo almacenado.
+- Que estudie: `AlexAdvisor`, `CatalogExplorer`, `ProductCard`, datos generados de productos, señales `featured`, `topSeller`, elegibilidad mayorista y flujo de checkout con Wompi/WhatsApp.
+- Hallazgos: El catalogo tiene 192 referencias, pero solo 9 estaban marcadas como destacadas y 12 como top venta; esa era la mejor base disponible antes de tener inventario real por unidades. Alex recomendaba, pero no cerraba con acciones directas de carrito/checkout y trataba mensajes de pago como si fueran estado de pago.
+- Cambios: Nueva capa `commercial-priority` con Tier 1 y Tier 2, catalogo ordenado con prioridad de pauta primero, badges publicos `Prioridad campaña`/`Alta rotación`, Alex con respuestas mas comerciales, opciones rapidas de compra, tarjetas con precio, acciones `Agregar` y `Pagar`, y documento `docs/perfume-priority-advertising.md`.
+- Validacion: `npm run lint` OK; `npm run typecheck` OK; `npm run build` OK, 215 paginas generadas. Playwright movil en 393x852 confirmo que Alex abre dentro de pantalla, recomienda prioridad de campaña, `Pagar` navega a `/checkout?channel=retail` y el resumen conserva el producto agregado.
+- Commit: `f3e3a7c feat: orientar Alex a compra y prioridad comercial`.
+- Siguiente hipotesis: Reemplazar la prioridad provisional por inventario real: referencia, tamaño, unidades, costo, precio y prioridad de rotacion.
