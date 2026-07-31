@@ -5,6 +5,7 @@ import type { ReactNode } from "react";
 import { Filter, MessageCircle, Search } from "lucide-react";
 import { allFamilies, allMoods, allOccasions, categoryLabels, products } from "@/data/products";
 import { ProductCard } from "@/components/catalog/ProductCard";
+import { sortByCommercialPriority } from "@/lib/commercial-priority";
 import { buildWhatsappUrl } from "@/lib/whatsapp";
 import type { Category, Intensity } from "@/types/product";
 
@@ -33,7 +34,7 @@ export function CatalogExplorer({ initialFilters }: CatalogExplorerProps) {
 
   const filtered = useMemo(() => {
     const term = query.trim().toLowerCase();
-    return products.filter((product) => {
+    return sortByCommercialPriority(products.filter((product) => {
       if (category !== "all" && product.category !== category) return false;
       if (family !== "all" && !product.families.includes(family)) return false;
       if (mood !== "all" && !product.moods.includes(mood)) return false;
@@ -57,7 +58,7 @@ export function CatalogExplorer({ initialFilters }: CatalogExplorerProps) {
         .join(" ")
         .toLowerCase();
       return haystack.includes(term);
-    });
+    }));
   }, [category, family, intensity, mood, occasion, query]);
 
   const activeFilters = [
@@ -98,6 +99,7 @@ export function CatalogExplorer({ initialFilters }: CatalogExplorerProps) {
             <Filter size={16} />
             {filtered.length} de {products.length} referencias visibles
           </div>
+          <div className="campaign-count">Prioridad pauta primero</div>
           <button
             type="button"
             className="mobile-filter-toggle"

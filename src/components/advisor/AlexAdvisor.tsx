@@ -3,10 +3,13 @@
 import { useMemo, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { MessageCircle, Send, Sparkles, X } from "lucide-react";
+import { CreditCard, MessageCircle, Send, ShoppingBag, Sparkles, X } from "lucide-react";
 import { useCart } from "@/components/cart/CartProvider";
 import { products } from "@/data/products";
+import { getCommercialPriority, getCommercialPriorityScore, sortByCommercialPriority } from "@/lib/commercial-priority";
+import { formatCop } from "@/lib/currency";
 import { buildWhatsappUrl } from "@/lib/whatsapp";
+import type { Product } from "@/types/product";
 
 type ChatMessage = {
   role: "assistant" | "user";
@@ -32,15 +35,15 @@ const starterMessages: ChatMessage[] = [
   {
     role: "assistant",
     content:
-      "Hola, soy Alex. Te ayudo a elegir una fragancia para ti, para regalar o para armar un pedido mayorista con buena rotación.",
+      "Hola, soy Alex. Te recomiendo una fragancia según ocasión, presupuesto y rotación. Si ya tienes una opción clara, te ayudo a llevarla al carrito y cerrar por pago seguro.",
   },
 ];
 
-const quickOptions = ["Femenina poderosa", "Fresco diario", "Noche sensual", "Mayorista top ventas", "Regalo seguro"];
+const quickOptions = ["Comprar hoy", "Top para pauta", "Femenina poderosa", "Fresco diario", "Noche sensual", "Regalo seguro"];
 
 export function AlexAdvisor() {
   const pathname = usePathname();
-  const { drawerOpen } = useCart();
+  const { addItem, drawerOpen } = useCart();
   const [open, setOpen] = useState(false);
   const [input, setInput] = useState("");
   const [messages, setMessages] = useState<ChatMessage[]>(starterMessages);
@@ -59,6 +62,29 @@ export function AlexAdvisor() {
     [profile.channel, userTranscript],
   );
   const panelId = "alex-panel";
+
+  function addRecommendation(product: Product) {
+    const variant = product.variants[0];
+    if (!variant) return;
+
+    addItem({
+      productId: product.id,
+      productSlug: product.slug,
+      productName: product.publicName,
+      sizeMl: variant.sizeMl,
+      sku: variant.sku,
+      quantity: 1,
+      unitPriceCop: variant.retailPriceCop,
+      channel: "retail",
+    });
+  }
+
+  function goToSecureCheckout(product: Product) {
+    addRecommendation(product);
+    window.setTimeout(() => {
+      window.location.href = "/checkout?channel=retail";
+    }, 150);
+  }
 
   async function send(text: string) {
     const clean = text.trim();
@@ -178,10 +204,24 @@ export function AlexAdvisor() {
 
         <div className="alex-recs">
           {recommended.slice(0, 2).map((product) => (
-            <Link key={product.id} href={`/producto/${product.slug}`} onClick={() => setOpen(false)}>
-              <strong>{product.publicName}</strong>
-              <span>{product.shortDescription}</span>
-            </Link>
+            <article key={product.id} className="alex-rec-card">
+              <Link href={`/producto/${product.slug}`} onClick={() => setOpen(false)}>
+                <small>{getAdvisorBadge(product)}</small>
+                <strong>{product.publicName}</strong>
+                <span>{product.shortDescription}</span>
+                <em>Desde {formatCop(product.variants[0]?.retailPriceCop ?? 0)}</em>
+              </Link>
+              <div className="alex-rec-actions">
+                <button type="button" onClick={() => addRecommendation(product)}>
+                  <ShoppingBag size={14} />
+                  Agregar
+                </button>
+                <button type="button" onClick={() => goToSecureCheckout(product)}>
+                  <CreditCard size={14} />
+                  Pagar
+                </button>
+              </div>
+            </article>
           ))}
         </div>
 
@@ -203,19 +243,23 @@ export function AlexAdvisor() {
 }
 
 function recommendFromText(text: string, wholesaleOnly = false) {
-  const term = text.toLowerCase();
+  const term = normalizeText(text);
   const wantsWholesale = wholesaleOnly || term.includes("mayor") || term.includes("emprend");
 
-  return products
+  return sortByCommercialPriority(products)
     .filter((product) => (wantsWholesale ? product.wholesaleEligible : true))
     .map((product) => {
-      let score = product.topSeller ? (wantsWholesale ? 7 : 3) : 0;
+      let score = getCommercialPriorityScore(product);
+      if (wantsWholesale && getCommercialPriority(product) === "campaign") score += 14;
+      if (term.includes("publicidad") || term.includes("pauta") || term.includes("almacen")) {
+        score += getCommercialPriority(product) === "campaign" ? 18 : 0;
+      }
       if (term.includes("mujer") || term.includes("femenina")) score += product.category === "femenina" ? 8 : 0;
       if (term.includes("hombre") || term.includes("masculina")) score += product.category === "masculina" ? 8 : 0;
       if (term.includes("unisex")) score += product.category === "unisex" ? 8 : 0;
       if (term.includes("mayor") || term.includes("emprendedor")) score += product.topSeller ? 8 : 0;
-      [...product.families, ...product.moods, ...product.occasions].forEach((tag) => {
-        if (term.includes(tag.toLowerCase())) score += 4;
+      [...product.families, ...product.moods, ...product.occasions, ...product.notes.top, ...product.notes.heart, ...product.notes.base].forEach((tag) => {
+        if (term.includes(normalizeText(tag))) score += 4;
       });
       if (term.includes("regalo")) score += product.intensity === "media" ? 5 : 0;
       if (term.includes("noche")) score += product.occasions.includes("noche") ? 5 : 0;
@@ -228,7 +272,7 @@ function recommendFromText(text: string, wholesaleOnly = false) {
 }
 
 function buildAdvisorProfile(userTranscript: string[]): AdvisorProfile {
-  const text = userTranscript.join(" ").toLowerCase();
+  const text = normalizeText(userTranscript.join(" "));
 
   return {
     channel: mentionsWholesale(text) ? "wholesale" : "retail",
@@ -264,8 +308,10 @@ function buildLocalReply({
   recommended: typeof products;
 }): LocalReply {
   const picks = recommended.slice(0, 3).map((product) => product.publicName).join(", ");
+  const secureCloseCopy =
+    "Puedes agregar una recomendación aquí mismo y cerrar en checkout con pago seguro por Wompi cuando esté disponible; si necesitas ayuda, WhatsApp sale con el pedido armado.";
 
-  if (mentionsPayment(text)) {
+  if (mentionsPaymentStatus(text)) {
     return {
       content:
         "No puedo confirmar pagos ni estados de Wompi desde este chat. El estado real solo cuenta cuando entra el webhook o el equipo valida la referencia por WhatsApp. Si ya pagaste, comparte tu referencia y te ayudamos a revisarlo.",
@@ -273,11 +319,22 @@ function buildLocalReply({
     };
   }
 
+  if (wantsSecureCheckout(text)) {
+    return {
+      content: [
+        "Perfecto. Te dejo opciones listas para comprar.",
+        `Mi primera selección sería ${picks}.`,
+        secureCloseCopy,
+      ].join(" "),
+      forceLocal: false,
+    };
+  }
+
   if (profile.channel === "wholesale") {
     const questionKey = getNextQuestion(profile, askedQuestions);
     return {
       content: [
-        `Para mayorista te movería por ${picks} porque suelen rotar bien para primer pedido.`,
+        `Para mayorista te movería por ${picks} porque son referencias de alta rotación y buena lectura comercial.`,
         "El mínimo mayorista sigue siendo de 10 unidades mixtas.",
         questionKey ? getQuestionCopy(questionKey, "wholesale") : "Si quieres, te dejo el siguiente paso por WhatsApp con el kit ya orientado.",
       ].join(" "),
@@ -295,8 +352,8 @@ function buildLocalReply({
   return {
     content: [
       opening,
-      "Puedo afinarte la opción por estilo, ocasión o intensidad sin repetir lo que ya me dijiste.",
-      questionKey ? getQuestionCopy(questionKey, "retail") : "Si una te gusta, abre la ficha o te armo el mensaje de WhatsApp.",
+      "Son opciones fuertes para convertir porque cubren deseo claro: fresco diario, noche intensa, regalo o lujo reconocible.",
+      questionKey ? getQuestionCopy(questionKey, "retail") : secureCloseCopy,
     ].join(" "),
     questionKey,
     forceLocal: false,
@@ -319,37 +376,58 @@ function getNextQuestion(profile: AdvisorProfile, askedQuestions: AdvisorQuestio
 function getQuestionCopy(questionKey: AdvisorQuestionKey, channel: "retail" | "wholesale") {
   switch (questionKey) {
     case "recipient":
-      return "Es para ti o para regalo?";
+      return "¿Es para ti o para regalo?";
     case "occasion":
-      return "La buscas para diario, oficina o noche?";
+      return "¿La buscas para diario, oficina o noche?";
     case "category":
-      return "La prefieres femenina, masculina o unisex?";
+      return "¿La prefieres femenina, masculina o unisex?";
     case "wholesaleMix":
       return channel === "wholesale"
-        ? "En tu rotación vendes más femenino, masculino o mixto?"
-        : "La prefieres femenina, masculina o unisex?";
+        ? "¿En tu rotación vendes más femenino, masculino o mixto?"
+        : "¿La prefieres femenina, masculina o unisex?";
     default:
-      return "Cuentame un poco mas y te afino la recomendacion.";
+      return "Cuéntame un poco más y te afino la recomendación.";
   }
 }
 
 function mentionsWholesale(text: string) {
-  const term = text.toLowerCase();
+  const term = normalizeText(text);
   return term.includes("mayorista") || term.includes("emprend") || term.includes("revender") || term.includes("negocio");
 }
 
-function mentionsPayment(text: string) {
-  const term = text.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+function mentionsPaymentStatus(text: string) {
+  const term = normalizeText(text);
   return (
-    term.includes("wompi") ||
-    term.includes("pago") ||
     term.includes("pague") ||
+    term.includes("ya pague") ||
     term.includes("transferencia") ||
-    term.includes("tarjeta") ||
-    term.includes("confirmar pedido") ||
     term.includes("confirmar pago") ||
     term.includes("estado de mi pedido") ||
     term.includes("estado del pago") ||
     term.includes("referencia")
   );
+}
+
+function wantsSecureCheckout(text: string) {
+  const term = normalizeText(text);
+  return (
+    term.includes("comprar") ||
+    term.includes("pagar") ||
+    term.includes("wompi") ||
+    term.includes("tarjeta") ||
+    term.includes("checkout") ||
+    term.includes("comprar hoy") ||
+    term.includes("cerrar pedido")
+  );
+}
+
+function getAdvisorBadge(product: Product) {
+  const priority = getCommercialPriority(product);
+  if (priority === "campaign") return "Prioridad para pauta";
+  if (priority === "support") return "Alta rotación";
+  return "Recomendación";
+}
+
+function normalizeText(text: string) {
+  return text.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
 }

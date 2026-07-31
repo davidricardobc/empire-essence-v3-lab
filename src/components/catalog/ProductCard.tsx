@@ -3,6 +3,7 @@ import Image from "next/image";
 import { ArrowRight, Flame } from "lucide-react";
 import { AddToCart } from "@/components/cart/AddToCart";
 import { categoryLabels } from "@/data/products";
+import { getCommercialPriorityLabel } from "@/lib/commercial-priority";
 import { formatCop } from "@/lib/currency";
 import { getProductVisual } from "@/lib/product-visuals";
 import type { Product } from "@/types/product";
@@ -10,6 +11,7 @@ import type { Product } from "@/types/product";
 export function ProductCard({ product, compact = false }: { product: Product; compact?: boolean }) {
   const price = product.variants[0]?.retailPriceCop ?? 0;
   const sizesLabel = product.variants.map((variant) => `${variant.sizeMl} ml`).join(" / ");
+  const priorityLabel = getCommercialPriorityLabel(product);
 
   return (
     <article className={`product-card ${compact ? "compact-card" : ""}`}>
@@ -18,10 +20,10 @@ export function ProductCard({ product, compact = false }: { product: Product; co
       </Link>
       <div className="product-card-top">
         <span>{categoryLabels[product.category]}</span>
-        {product.topSeller ? (
+        {priorityLabel ? (
           <strong>
             <Flame size={13} />
-            Top venta
+            {priorityLabel}
           </strong>
         ) : null}
       </div>

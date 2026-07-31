@@ -1061,6 +1061,16 @@ h3 {
   white-space: nowrap;
 }
 
+.campaign-count {
+  border: 1px solid rgba(184, 215, 175, 0.18);
+  background: rgba(184, 215, 175, 0.07);
+  padding: 7px 9px;
+  color: rgba(247, 240, 230, 0.82);
+  font-size: 0.72rem;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
 .catalog-toolbar-actions {
   display: flex;
   align-items: center;
@@ -1950,7 +1960,8 @@ h3 {
 }
 
 .quick-options button,
-.alex-recs a {
+.alex-recs a,
+.alex-rec-actions button {
   border: 1px solid var(--line);
   background: rgba(255, 255, 255, 0.04);
   padding: 8px 10px;
@@ -1961,13 +1972,62 @@ h3 {
   display: grid;
 }
 
+.alex-rec-card {
+  display: grid;
+  gap: 8px;
+  border: 1px solid rgba(215, 185, 132, 0.14);
+  background: rgba(255, 255, 255, 0.035);
+  padding: 9px;
+}
+
 .alex-recs a {
   display: grid;
+  gap: 3px;
+  border: 0;
+  background: transparent;
+  padding: 0;
+}
+
+.alex-recs small {
+  color: var(--gold-2);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .alex-recs span {
   color: rgba(247, 240, 230, 0.62);
   font-size: 12px;
+}
+
+.alex-recs em {
+  color: rgba(247, 240, 230, 0.78);
+  font-size: 0.72rem;
+  font-style: normal;
+  font-weight: 800;
+}
+
+.alex-rec-actions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 7px;
+}
+
+.alex-rec-actions button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 36px;
+  gap: 6px;
+  color: rgba(247, 240, 230, 0.9);
+  font-weight: 800;
+}
+
+.alex-rec-actions button:last-child {
+  border-color: rgba(200, 168, 106, 0.52);
+  background: var(--gold);
+  color: var(--ink);
 }
 
 .alex-input {
@@ -5054,6 +5114,16 @@ body {
     font-size: 0.76rem;
   }
 
+  .alex-panel {
+    bottom: 54px;
+    max-height: min(640px, calc(100dvh - 96px));
+    overflow: auto;
+  }
+
+  .alex-messages {
+    max-height: 190px;
+  }
+
   .alex-root.is-compact-route {
     opacity: 0;
     pointer-events: none;
@@ -5167,6 +5237,10 @@ body {
     border-block: 1px solid rgba(215, 185, 132, 0.12);
     background: rgba(5, 4, 4, 0.94);
     backdrop-filter: blur(14px);
+  }
+
+  .campaign-count {
+    display: none;
   }
 
   .compact-card {
@@ -5350,5 +5424,17 @@ body {
     flex: 0 0 auto;
     margin-top: 0;
     padding-top: 10px;
+  }
+}
+
+@media (max-width: 720px) {
+  .alex-panel {
+    bottom: 54px !important;
+    max-height: calc(100vh - 96px) !important;
+    overflow: auto !important;
+  }
+
+  .alex-messages {
+    max-height: 190px !important;
   }
 }
