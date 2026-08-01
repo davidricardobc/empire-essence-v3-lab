@@ -210,5 +210,5 @@ Cada ejecucion debe escoger un foco segun lo que aprenda de la anterior. Temas a
 - Hallazgos: El nombre Alex seguia visible en varios puntos publicos; las opciones rapidas eran funcionales, pero poco emocionales para un comprador hombre. Tambien habia frases antiguas como `Fresco diario`, `Noche sensual` y `Regalo seguro` fuera del panel.
 - Cambios: Nombre publico `Alexa`; opciones rapidas nuevas: `Quiero oler impecable`, `Las mas deseadas`, `Para una mujer inolvidable`, `Fresco que se nota`, `Noche con presencia` y `Regalo que no falla`; mejor deteccion local de intenciones para el, para ella, cita, regalo, noche y pago; textos publicos de home/blog/catalogo/PDP alineados a Alexa.
 - Validacion: `npm run lint` OK; `npm run typecheck` OK; `npm run build` OK, 215 paginas generadas; Playwright mobile 393x852 confirmo panel visible, titulo `Alexa`, seis opciones nuevas y ausencia de las frases antiguas.
-- Commit: pendiente.
+- Commit: `9f7edc8 fix: transformar Alex en Alexa vendedora`.
 - Siguiente hipotesis: Probar conversaciones reales de compradores hombres y ajustar las respuestas de Alexa por objeciones frecuentes: duracion, parecido, regalo para pareja, olor masculino de diario y cierre por Wompi.
