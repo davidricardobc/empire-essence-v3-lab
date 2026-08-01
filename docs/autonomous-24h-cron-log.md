@@ -258,3 +258,23 @@ Cada ejecucion debe escoger un foco segun lo que aprenda de la anterior. Temas a
 - Validacion: `npm run lint` OK; `npm run typecheck` OK despues de retirar cache generada `.next/dev`; `npm run build` OK, 215 paginas generadas. Prueba Chrome headless mobile 393x852: al abrir Alexa mide 282 px de alto, muestra chat + input sin scroll y cero tarjetas iniciales; tras regalo masculino muestra 2 recomendaciones, selector 30/50/100 e input visible.
 - Commit: `d0a98e7 fix: compactar chat movil de Alexa`.
 - Siguiente hipotesis: Probar en telefono real si la fila horizontal de opciones rapidas se entiende bien o si conviene mostrar solo 3 acciones iniciales y dejar el resto para segunda respuesta.
+
+### Job 20 - 2026-08-01 02:48
+- Foco: Alinear el CTA de Alexa en home y reencuadrar el hero mobile.
+- Por que tome este camino: David noto que bajo `Listos para comprar hoy` el CTA decia `Hablar con Alexa`, pero seguia usando la foto masculina de Alex. Tambien pidio que en mobile se viera mas la mujer de fondo, no solo el cabello.
+- Que estudie: `HomeQuickBuy`, estilos del hero en `globals.css`, la imagen de fondo mobile y el CTA de compra rapida.
+- Hallazgos: El texto publico ya estaba en Alexa, pero la imagen mantenia un rostro masculino. En mobile el fondo estaba demasiado hacia el cabello y la sombra ocultaba parte de la modelo.
+- Cambios: Reemplace el retrato por un badge circular con icono `Sparkles`, reencuadre el hero hacia la derecha y suavice la sombra mobile para que la modelo tenga mas presencia.
+- Validacion: `npm run lint` OK; `npm run typecheck` OK; `npm run build` OK; `localhost:3000` respondio 200; captura mobile confirmo mayor presencia de la modelo y ausencia de `alex-advisor.png` en `HomeQuickBuy`.
+- Commit: `b3fc551 fix: ajustar CTA Alexa y hero movil`.
+- Siguiente hipotesis: Hacer una pasada prepublicacion sobre header, catalogo, checkout, carrito y Alexa con viewport mobile real antes de preparar deploy.
+
+### Job 21 - 2026-08-01 12:34
+- Foco: Revision mobile prepublicacion y correcciones pequenas.
+- Por que tome este camino: David autorizo continuar con la pasada final antes de publicar. Los pendientes visibles eran el header mobile cortado y el checkout demasiado pesado en primera vista.
+- Que estudie: Capturas y mediciones Chrome/CDP en viewport mobile real 393x852 para home, menu, catalogo, checkout, filtros, carrito y Alexa.
+- Hallazgos: El screenshot simple de Chrome usaba viewport CSS 500px y recortaba el header, pero la emulacion real 393px confirmo el problema de reglas antiguas compitiendo. Checkout necesitaba una clase propia para compactar titulos sin afectar catalogo.
+- Cambios: Header mobile ahora oculta navegacion desktop, muestra carrito + menu dentro del ancho real y despliega links en grid. Checkout recibio `checkout-hero` y reglas mobile mas compactas para hero, paneles, sellos de confianza y resumen.
+- Validacion: `npm run lint` OK; `npm run typecheck` OK; `git diff --check` OK; `npm run build` OK, 215 paginas generadas. CDP mobile 393x852 confirmo header sin corte, menu desplegable, catalogo/filtros dentro del viewport, drawer del carrito a 393px y Alexa abierta con panel/input visibles.
+- Commit: `90c3bba fix: pulir mobile prepublicacion`.
+- Siguiente hipotesis: Antes de publicar, falta prueba Wompi real/sandbox de punta a punta y configurar variables de produccion/dominio final.
