@@ -78,6 +78,13 @@ export function AddToCart({
         </div>
       ) : null}
 
+      {compact ? (
+        <div className="compact-size-head" aria-live="polite">
+          <span>Elige tamaño</span>
+          <strong>{selected.sizeMl} ml</strong>
+        </div>
+      ) : null}
+
       <div className="variant-grid" role="radiogroup" aria-label="Seleccionar tamaño">
         {product.variants.map((variant) => {
           const active = variant.sku === selected.sku;
@@ -148,7 +155,13 @@ export function AddToCart({
           aria-live="polite"
         >
           <ShoppingBag size={18} />
-          {added ? "Agregado" : compact ? "Agregar" : channel === "wholesale" ? "Agregar kit al carrito" : "Agregar al carrito"}
+          {added
+            ? "Agregado"
+            : compact
+              ? `Agregar ${selected.sizeMl} ml`
+              : channel === "wholesale"
+                ? "Agregar kit al carrito"
+                : "Agregar al carrito"}
         </button>
 
         {showDirectWhatsapp ? (

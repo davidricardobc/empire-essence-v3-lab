@@ -844,6 +844,22 @@ h3 {
   font-size: 13px;
 }
 
+.compact-size-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  color: rgba(247, 240, 230, 0.72);
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.compact-size-head strong {
+  color: var(--gold-2);
+  font-size: 0.78rem;
+}
+
 .size-guide-card {
   display: flex;
   align-items: end;
@@ -2006,6 +2022,39 @@ h3 {
   font-size: 0.72rem;
   font-style: normal;
   font-weight: 800;
+}
+
+.alex-size-picker {
+  display: grid;
+  gap: 6px;
+}
+
+.alex-size-picker > span {
+  color: rgba(247, 240, 230, 0.58);
+  font-size: 0.68rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.alex-size-picker > div {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 6px;
+}
+
+.alex-size-picker button {
+  min-height: 34px;
+  border: 1px solid rgba(215, 185, 132, 0.14);
+  background: rgba(255, 255, 255, 0.04);
+  color: rgba(247, 240, 230, 0.86);
+  font-size: 0.75rem;
+  font-weight: 800;
+}
+
+.alex-size-picker button.is-active {
+  border-color: rgba(200, 168, 106, 0.72);
+  background: rgba(200, 168, 106, 0.16);
+  color: var(--gold-2);
 }
 
 .alex-rec-actions {

@@ -4,6 +4,7 @@ import { useMemo, useState } from "react";
 import Link from "next/link";
 import { MessageCircle, ShieldCheck } from "lucide-react";
 import { useCart } from "@/components/cart/CartProvider";
+import { saveCheckoutCartSnapshot } from "@/lib/cart-storage";
 import { formatCop } from "@/lib/currency";
 import { getShipping } from "@/lib/pricing";
 import { buildAssistedCheckoutMessage, buildWhatsappUrl } from "@/lib/whatsapp";
@@ -20,7 +21,7 @@ const initialForm = {
 };
 
 export function CheckoutClient({ channel, wompiEnabled }: { channel: SalesChannel; wompiEnabled: boolean }) {
-  const { items, totals, updateQuantity, removeItem, clearCart } = useCart();
+  const { items, totals, ready, updateQuantity, removeItem, clearCart } = useCart();
   const [form, setForm] = useState(initialForm);
   const [loading, setLoading] = useState(false);
   const [response, setResponse] = useState<CheckoutApiResponse | null>(null);
@@ -29,7 +30,7 @@ export function CheckoutClient({ channel, wompiEnabled }: { channel: SalesChanne
   const subtotalCop = checkoutItems.reduce((sum, item) => sum + item.unitPriceCop * item.quantity, 0);
   const shipping = getShipping(form.city, subtotalCop);
   const totalCop = subtotalCop + shipping.shippingCop;
-  const canSubmit = checkoutItems.length > 0 && !loading;
+  const canSubmit = ready && checkoutItems.length > 0 && !loading;
   const shippingLabel = form.city.trim()
     ? shipping.shippingZone === "bogota"
       ? "Envío estimado para Bogotá"
@@ -52,6 +53,7 @@ export function CheckoutClient({ channel, wompiEnabled }: { channel: SalesChanne
     if (!canSubmit) return;
     setLoading(true);
     setResponse(null);
+    saveCheckoutCartSnapshot(checkoutItems);
 
     try {
       const result = await fetch("/api/checkout", {
@@ -62,6 +64,7 @@ export function CheckoutClient({ channel, wompiEnabled }: { channel: SalesChanne
       const data = (await result.json()) as CheckoutApiResponse;
       setResponse(data);
       if (data.ok && data.checkoutUrl) {
+        saveCheckoutCartSnapshot(checkoutItems);
         window.location.href = data.checkoutUrl;
         return;
       }
@@ -98,7 +101,11 @@ export function CheckoutClient({ channel, wompiEnabled }: { channel: SalesChanne
         </div>
         <div className="checkout-fast-close">
           <strong>¿Vienes del catálogo?</strong>
-          <span>Tu selección ya está lista. Solo confirma datos y elige pago seguro o WhatsApp.</span>
+          <span>
+            {ready
+              ? "Tu selección ya está lista. Solo confirma datos y elige pago seguro o WhatsApp."
+              : "Estamos recuperando tu selección guardada."}
+          </span>
         </div>
         <div className="checkout-flow-callout">
           <strong>Cómo funciona</strong>
@@ -150,7 +157,7 @@ export function CheckoutClient({ channel, wompiEnabled }: { channel: SalesChanne
           </div>
         ) : null}
 
-        {checkoutItems.length ? (
+        {ready && checkoutItems.length ? (
           <div className="checkout-assist">
             <strong>¿Prefieres cerrar con ayuda humana?</strong>
             <p>
@@ -180,7 +187,12 @@ export function CheckoutClient({ channel, wompiEnabled }: { channel: SalesChanne
       <aside className="checkout-summary panel">
         <span className="eyebrow">Resumen</span>
         <h2>{channel === "wholesale" ? "Pedido mayorista" : "Tu selección"}</h2>
-        {checkoutItems.length ? (
+        {!ready ? (
+          <div className="empty-state compact">
+            <span className="empty-kicker">Recuperando carrito</span>
+            <p>Estamos cargando tu selección guardada antes de mostrar el resumen.</p>
+          </div>
+        ) : checkoutItems.length ? (
           <div className="summary-list">
             {checkoutItems.map((item) => (
               <article key={`${item.channel}-${item.sku}`} className="summary-item">
@@ -245,7 +257,7 @@ export function CheckoutClient({ channel, wompiEnabled }: { channel: SalesChanne
             : "Escribe tu ciudad para afinar el envío antes de cerrar."}
         </p>
         <p className="microcopy">Carrito total actual: {formatCop(totals.subtotalCop)}</p>
-        {checkoutItems.length ? (
+        {ready && checkoutItems.length ? (
           <div className="checkout-steps">
             <strong>Qué pasa después</strong>
             <ul>

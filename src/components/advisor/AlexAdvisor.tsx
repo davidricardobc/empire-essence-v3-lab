@@ -9,7 +9,7 @@ import { products } from "@/data/products";
 import { getCommercialPriority, getCommercialPriorityScore, sortByCommercialPriority } from "@/lib/commercial-priority";
 import { formatCop } from "@/lib/currency";
 import { buildWhatsappUrl } from "@/lib/whatsapp";
-import type { Product } from "@/types/product";
+import type { Product, ProductVariant } from "@/types/product";
 
 type ChatMessage = {
   role: "assistant" | "user";
@@ -54,6 +54,7 @@ export function AlexAdvisor() {
   const [input, setInput] = useState("");
   const [messages, setMessages] = useState<ChatMessage[]>(starterMessages);
   const [askedQuestions, setAskedQuestions] = useState<AdvisorQuestionKey[]>([]);
+  const [selectedRecommendationSkus, setSelectedRecommendationSkus] = useState<Record<string, string>>({});
   const [loading, setLoading] = useState(false);
   const compactRoute =
     pathname.startsWith("/checkout") || pathname.startsWith("/mayoristas") || pathname.startsWith("/blog");
@@ -73,8 +74,19 @@ export function AlexAdvisor() {
     !(profile.recipient === "self" && pendingQuestion === "category");
   const panelId = "alex-panel";
 
-  function addRecommendation(product: Product) {
-    const variant = product.variants[0];
+  function getSelectedRecommendationVariant(product: Product) {
+    return (
+      product.variants.find((variant) => variant.sku === selectedRecommendationSkus[product.id]) ??
+      getDefaultRetailVariant(product)
+    );
+  }
+
+  function selectRecommendationVariant(product: Product, sku: string) {
+    setSelectedRecommendationSkus((current) => ({ ...current, [product.id]: sku }));
+  }
+
+  function addRecommendation(product: Product, selectedVariant?: ProductVariant) {
+    const variant = selectedVariant ?? getSelectedRecommendationVariant(product);
     if (!variant) return;
 
     addItem({
@@ -89,8 +101,8 @@ export function AlexAdvisor() {
     });
   }
 
-  function goToSecureCheckout(product: Product) {
-    addRecommendation(product);
+  function goToSecureCheckout(product: Product, selectedVariant?: ProductVariant) {
+    addRecommendation(product, selectedVariant);
     window.setTimeout(() => {
       window.location.href = "/checkout?channel=retail";
     }, 150);
@@ -213,26 +225,56 @@ export function AlexAdvisor() {
         </div>
 
         <div className="alex-recs">
-          {showRecommendations ? recommended.slice(0, 2).map((product) => (
-            <article key={product.id} className="alex-rec-card">
-              <Link href={`/producto/${product.slug}`} onClick={() => setOpen(false)}>
-                <small>{getAdvisorBadge(product)}</small>
-                <strong>{product.publicName}</strong>
-                <span>{product.shortDescription}</span>
-                <em>Desde {formatCop(product.variants[0]?.retailPriceCop ?? 0)}</em>
-              </Link>
-              <div className="alex-rec-actions">
-                <button type="button" onClick={() => addRecommendation(product)}>
-                  <ShoppingBag size={14} />
-                  Agregar
-                </button>
-                <button type="button" onClick={() => goToSecureCheckout(product)}>
-                  <CreditCard size={14} />
-                  Ordenar
-                </button>
-              </div>
-            </article>
-          )) : null}
+          {showRecommendations
+            ? recommended.slice(0, 2).map((product) => {
+                const selectedVariant = getSelectedRecommendationVariant(product);
+
+                if (!selectedVariant) return null;
+
+                return (
+                  <article key={product.id} className="alex-rec-card">
+                    <Link href={`/producto/${product.slug}`} onClick={() => setOpen(false)}>
+                      <small>{getAdvisorBadge(product)}</small>
+                      <strong>{product.publicName}</strong>
+                      <span>{product.shortDescription}</span>
+                      <em>
+                        {selectedVariant.sizeMl} ml · {formatCop(selectedVariant.retailPriceCop)}
+                      </em>
+                    </Link>
+                    <div className="alex-size-picker" role="radiogroup" aria-label={`Tamaño para ${product.publicName}`}>
+                      <span>Elige tamaño</span>
+                      <div>
+                        {product.variants.map((variant) => {
+                          const active = variant.sku === selectedVariant.sku;
+
+                          return (
+                            <button
+                              key={variant.sku}
+                              type="button"
+                              className={active ? "is-active" : ""}
+                              onClick={() => selectRecommendationVariant(product, variant.sku)}
+                              aria-pressed={active}
+                            >
+                              {variant.sizeMl} ml
+                            </button>
+                          );
+                        })}
+                      </div>
+                    </div>
+                    <div className="alex-rec-actions">
+                      <button type="button" onClick={() => addRecommendation(product, selectedVariant)}>
+                        <ShoppingBag size={14} />
+                        Agregar
+                      </button>
+                      <button type="button" onClick={() => goToSecureCheckout(product, selectedVariant)}>
+                        <CreditCard size={14} />
+                        Ordenar
+                      </button>
+                    </div>
+                  </article>
+                );
+              })
+            : null}
         </div>
 
         <form
@@ -467,6 +509,10 @@ function getAllowedCategories(category: AdvisorProfile["category"]) {
   if (category === "femenina") return ["femenina", "unisex"];
   if (category === "unisex") return ["unisex"];
   return ["masculina", "femenina", "unisex"];
+}
+
+function getDefaultRetailVariant(product: Product) {
+  return product.variants.find((variant) => variant.sizeMl === 50) ?? product.variants[0];
 }
 
 function getCategoryCopy(category: AdvisorProfile["category"]) {

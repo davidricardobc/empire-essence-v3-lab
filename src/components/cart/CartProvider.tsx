@@ -1,9 +1,8 @@
 "use client";
 
 import { createContext, useContext, useEffect, useMemo, useState, type ReactNode } from "react";
+import { CART_STORAGE_KEY, clearStoredCart, readStoredCart, writeStoredCart } from "@/lib/cart-storage";
 import type { CartItem, CartTotals } from "@/types/cart";
-
-const STORAGE_KEY = "empire-essence-v3-cart";
 
 type CartContextValue = {
   items: CartItem[];
@@ -28,17 +27,9 @@ export function CartProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     let active = true;
     window.setTimeout(() => {
-      try {
-        const raw = window.localStorage.getItem(STORAGE_KEY);
-        if (raw) {
-          const parsed = JSON.parse(raw) as CartItem[];
-          if (Array.isArray(parsed) && active) setItems(parsed);
-        }
-      } catch {
-        window.localStorage.removeItem(STORAGE_KEY);
-      } finally {
-        if (active) setReady(true);
-      }
+      if (!active) return;
+      setItems(readStoredCart());
+      setReady(true);
     }, 0);
 
     return () => {
@@ -48,8 +39,28 @@ export function CartProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     if (!ready) return;
-    window.localStorage.setItem(STORAGE_KEY, JSON.stringify(items));
+    writeStoredCart(items);
   }, [items, ready]);
+
+  useEffect(() => {
+    function syncFromStorage(event: StorageEvent) {
+      if (event.key === CART_STORAGE_KEY) setItems(readStoredCart());
+    }
+
+    function syncWhenVisible() {
+      if (document.visibilityState === "visible") setItems(readStoredCart());
+    }
+
+    window.addEventListener("storage", syncFromStorage);
+    document.addEventListener("visibilitychange", syncWhenVisible);
+    window.addEventListener("pageshow", syncWhenVisible);
+
+    return () => {
+      window.removeEventListener("storage", syncFromStorage);
+      document.removeEventListener("visibilitychange", syncWhenVisible);
+      window.removeEventListener("pageshow", syncWhenVisible);
+    };
+  }, []);
 
   const totals = useMemo(
     () =>
@@ -72,27 +83,45 @@ export function CartProvider({ children }: { children: ReactNode }) {
       addItem: (incoming) => {
         setItems((current) => {
           const exists = current.find((item) => item.sku === incoming.sku && item.channel === incoming.channel);
-          if (!exists) return [...current, incoming];
-          return current.map((item) =>
-            item.sku === incoming.sku && item.channel === incoming.channel
-              ? { ...item, quantity: item.quantity + incoming.quantity }
-              : item,
-          );
+          const next = !exists
+            ? [...current, incoming]
+            : current.map((item) =>
+                item.sku === incoming.sku && item.channel === incoming.channel
+                  ? { ...item, quantity: item.quantity + incoming.quantity }
+                  : item,
+              );
+          writeStoredCart(next);
+          return next;
         });
         setDrawerOpen(true);
       },
       removeItem: (sku, channel) =>
-        setItems((current) => current.filter((item) => !(item.sku === sku && item.channel === channel))),
+        setItems((current) => {
+          const next = current.filter((item) => !(item.sku === sku && item.channel === channel));
+          writeStoredCart(next);
+          return next;
+        }),
       updateQuantity: (sku, channel, quantity) => {
         if (quantity <= 0) {
-          setItems((current) => current.filter((item) => !(item.sku === sku && item.channel === channel)));
+          setItems((current) => {
+            const next = current.filter((item) => !(item.sku === sku && item.channel === channel));
+            writeStoredCart(next);
+            return next;
+          });
           return;
         }
-        setItems((current) =>
-          current.map((item) => (item.sku === sku && item.channel === channel ? { ...item, quantity } : item)),
-        );
+        setItems((current) => {
+          const next = current.map((item) =>
+            item.sku === sku && item.channel === channel ? { ...item, quantity } : item,
+          );
+          writeStoredCart(next);
+          return next;
+        });
       },
-      clearCart: () => setItems([]),
+      clearCart: () => {
+        clearStoredCart();
+        setItems([]);
+      },
       openDrawer: () => setDrawerOpen(true),
       closeDrawer: () => setDrawerOpen(false),
     }),
