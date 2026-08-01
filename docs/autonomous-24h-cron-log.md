@@ -248,3 +248,13 @@ Cada ejecucion debe escoger un foco segun lo que aprenda de la anterior. Temas a
 - Cambios: Nuevo helper `cart-storage` con escritura inmediata, lectura robusta y snapshot de checkout por 24 horas; `CheckoutClient` guarda respaldo antes de salir a Wompi y muestra `Recuperando carrito` mientras hidrata; Alexa ahora muestra selector 30/50/100 ml por recomendacion y `Ordenar` usa la variante elegida; compra compacta del catalogo muestra `Elige tamano` y el boton confirma `Agregar 50 ml` o `Agregar 100 ml`.
 - Validacion: `npm run lint` OK; `npm run typecheck` OK; `npm run build` OK, 215 paginas generadas. Prueba Chrome headless mobile 393x852: Alexa mostro botones `30 ml`, `50 ml`, `100 ml`; al elegir `100 ml` y agregar, `localStorage` guardo `sizeMl: 100`; checkout mostro 100 ml; al simular salida y regreso como desde Wompi, el resumen siguio con 100 ml y no mostro carrito vacio.
 - Siguiente hipotesis: Probar con David en telefono real una salida a Wompi y regreso con boton atras, porque algunos navegadores moviles manejan cache y pestañas de pago distinto.
+
+### Job 19 - 2026-08-01 02:11
+- Foco: Compactar Alexa en mobile para que se entienda como chat sin bajar.
+- Por que tome este camino: David dijo que le agradaba Alexa, pero que el chat no salia claro y no era intuitivo tener que bajar o deslizar para leer/escribir.
+- Que estudie: `AlexAdvisor`, estilos `.alex-*` en `globals.css`, viewport mobile 393x852 y el comportamiento despues de abrir, tocar `Regalo que no falla` y responder `masculino`.
+- Hallazgos: Alexa mostraba recomendaciones apenas se abria, antes de que el cliente diera intencion, y el panel completo hacia scroll. Eso ocupaba altura, escondia la sensacion de chat y hacia menos obvio el campo de escritura.
+- Cambios: El panel ahora es una columna real de chat; mensajes y recomendaciones viven dentro de un area desplazable interna; opciones rapidas e input quedan siempre visibles; al abrir ya no muestra tarjetas de producto hasta que el cliente interactua; las tarjetas y selector de tamano se compactaron para mobile.
+- Validacion: `npm run lint` OK; `npm run typecheck` OK despues de retirar cache generada `.next/dev`; `npm run build` OK, 215 paginas generadas. Prueba Chrome headless mobile 393x852: al abrir Alexa mide 282 px de alto, muestra chat + input sin scroll y cero tarjetas iniciales; tras regalo masculino muestra 2 recomendaciones, selector 30/50/100 e input visible.
+- Commit: `d0a98e7 fix: compactar chat movil de Alexa`.
+- Siguiente hipotesis: Probar en telefono real si la fila horizontal de opciones rapidas se entiende bien o si conviene mostrar solo 3 acciones iniciales y dejar el resto para segunda respuesta.
