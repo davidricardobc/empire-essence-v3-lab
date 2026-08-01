@@ -1911,6 +1911,7 @@ h3 {
   bottom: 62px;
   display: none;
   width: min(390px, calc(100vw - 32px));
+  max-height: min(640px, calc(100dvh - 104px));
   overflow: hidden;
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -1919,10 +1920,12 @@ h3 {
 }
 
 .alex-panel.is-open {
-  display: block;
+  display: flex;
+  flex-direction: column;
 }
 
 .alex-head {
+  flex: 0 0 auto;
   display: flex;
   justify-content: space-between;
   gap: 14px;
@@ -1942,12 +1945,29 @@ h3 {
   border: 1px solid var(--line);
 }
 
-.alex-messages {
+.alex-conversation {
   display: grid;
-  max-height: 230px;
+  flex: 0 1 auto;
+  min-height: 0;
   gap: 10px;
   overflow: auto;
-  padding: 16px;
+  overscroll-behavior: contain;
+  padding: 14px 16px 12px;
+  scrollbar-gutter: stable;
+}
+
+.alex-conversation::-webkit-scrollbar {
+  width: 6px;
+}
+
+.alex-conversation::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: rgba(200, 168, 106, 0.42);
+}
+
+.alex-messages {
+  display: grid;
+  gap: 10px;
 }
 
 .alex-message {
@@ -1972,7 +1992,24 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  padding: 0 16px 12px;
+}
+
+.quick-options {
+  flex: 0 0 auto;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  border-top: 1px solid rgba(215, 185, 132, 0.1);
+  padding: 9px 12px;
+  scrollbar-width: none;
+}
+
+.quick-options::-webkit-scrollbar {
+  display: none;
+}
+
+.quick-options button {
+  flex: 0 0 auto;
+  white-space: nowrap;
 }
 
 .quick-options button,
@@ -1986,19 +2023,20 @@ h3 {
 
 .alex-recs {
   display: grid;
+  padding: 0;
 }
 
 .alex-rec-card {
   display: grid;
-  gap: 8px;
+  gap: 7px;
   border: 1px solid rgba(215, 185, 132, 0.14);
   background: rgba(255, 255, 255, 0.035);
-  padding: 9px;
+  padding: 8px;
 }
 
 .alex-recs a {
   display: grid;
-  gap: 3px;
+  gap: 2px;
   border: 0;
   background: transparent;
   padding: 0;
@@ -2015,6 +2053,7 @@ h3 {
 .alex-recs span {
   color: rgba(247, 240, 230, 0.62);
   font-size: 12px;
+  line-height: 1.35;
 }
 
 .alex-recs em {
@@ -2025,11 +2064,13 @@ h3 {
 }
 
 .alex-size-picker {
-  display: grid;
+  display: flex;
+  align-items: center;
   gap: 6px;
 }
 
 .alex-size-picker > span {
+  flex: 0 0 auto;
   color: rgba(247, 240, 230, 0.58);
   font-size: 0.68rem;
   font-weight: 800;
@@ -2039,11 +2080,12 @@ h3 {
 .alex-size-picker > div {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
+  flex: 1 1 auto;
   gap: 6px;
 }
 
 .alex-size-picker button {
-  min-height: 34px;
+  min-height: 30px;
   border: 1px solid rgba(215, 185, 132, 0.14);
   background: rgba(255, 255, 255, 0.04);
   color: rgba(247, 240, 230, 0.86);
@@ -2067,7 +2109,7 @@ h3 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 36px;
+  min-height: 34px;
   gap: 6px;
   color: rgba(247, 240, 230, 0.9);
   font-weight: 800;
@@ -2080,6 +2122,7 @@ h3 {
 }
 
 .alex-input {
+  flex: 0 0 auto;
   display: grid;
   grid-template-columns: 1fr 44px;
   gap: 8px;
@@ -5165,12 +5208,88 @@ body {
 
   .alex-panel {
     bottom: 54px;
-    max-height: min(640px, calc(100dvh - 96px));
-    overflow: auto;
+    width: min(360px, calc(100vw - 20px));
+    max-height: calc(100dvh - 86px);
   }
 
-  .alex-messages {
-    max-height: 190px;
+  .alex-head {
+    gap: 10px;
+    padding: 10px 12px;
+  }
+
+  .alex-head .eyebrow {
+    font-size: 0.62rem;
+  }
+
+  .alex-head h2 {
+    font-size: 1.65rem;
+    line-height: 1;
+  }
+
+  .alex-head a {
+    width: 34px;
+    height: 34px;
+  }
+
+  .alex-conversation {
+    gap: 8px;
+    max-height: min(390px, calc(100dvh - 220px));
+    padding: 10px 10px 8px;
+  }
+
+  .alex-message {
+    max-width: 90%;
+    padding: 9px 10px;
+    font-size: 0.82rem;
+    line-height: 1.38;
+  }
+
+  .alex-rec-card {
+    gap: 6px;
+    padding: 8px;
+  }
+
+  .alex-recs a strong {
+    font-size: 0.92rem;
+  }
+
+  .alex-recs a span {
+    display: none;
+  }
+
+  .alex-size-picker button {
+    min-height: 28px;
+    font-size: 0.7rem;
+  }
+
+  .alex-rec-actions button {
+    min-height: 32px;
+    font-size: 0.74rem;
+  }
+
+  .quick-options {
+    padding: 8px 10px;
+  }
+
+  .quick-options button {
+    min-height: 32px;
+    padding: 7px 9px;
+    font-size: 0.74rem;
+  }
+
+  .alex-input {
+    grid-template-columns: 1fr 40px;
+    gap: 7px;
+    padding: 9px;
+  }
+
+  .alex-input input {
+    min-height: 38px;
+    font-size: 0.82rem;
+  }
+
+  .alex-input button {
+    min-height: 38px;
   }
 
   .alex-root.is-compact-route {
@@ -5479,11 +5598,7 @@ body {
 @media (max-width: 720px) {
   .alex-panel {
     bottom: 54px !important;
-    max-height: calc(100vh - 96px) !important;
-    overflow: auto !important;
-  }
-
-  .alex-messages {
-    max-height: 190px !important;
+    max-height: calc(100dvh - 86px) !important;
+    overflow: hidden !important;
   }
 }

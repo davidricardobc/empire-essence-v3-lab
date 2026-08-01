@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { CreditCard, MessageCircle, Send, ShoppingBag, Sparkles, X } from "lucide-react";
@@ -56,6 +56,7 @@ export function AlexAdvisor() {
   const [askedQuestions, setAskedQuestions] = useState<AdvisorQuestionKey[]>([]);
   const [selectedRecommendationSkus, setSelectedRecommendationSkus] = useState<Record<string, string>>({});
   const [loading, setLoading] = useState(false);
+  const conversationRef = useRef<HTMLDivElement>(null);
   const compactRoute =
     pathname.startsWith("/checkout") || pathname.startsWith("/mayoristas") || pathname.startsWith("/blog");
 
@@ -70,9 +71,21 @@ export function AlexAdvisor() {
   );
   const pendingQuestion = useMemo(() => getNextQuestion(profile, askedQuestions), [askedQuestions, profile]);
   const showRecommendations =
+    userTranscript.length > 0 &&
     !(profile.recipient === "gift" && !profile.category) &&
     !(profile.recipient === "self" && pendingQuestion === "category");
   const panelId = "alex-panel";
+
+  useEffect(() => {
+    if (!open) return;
+    const conversation = conversationRef.current;
+    if (!conversation) return;
+    if (messages.length <= starterMessages.length && !loading) {
+      conversation.scrollTo({ top: 0 });
+      return;
+    }
+    conversation.scrollTo({ top: conversation.scrollHeight, behavior: "smooth" });
+  }, [loading, messages, open]);
 
   function getSelectedRecommendationVariant(product: Product) {
     return (
@@ -207,13 +220,68 @@ export function AlexAdvisor() {
           </a>
         </div>
 
-        <div className="alex-messages">
-          {messages.map((message, index) => (
-            <div key={`${message.role}-${index}`} className={`alex-message ${message.role}`}>
-              {message.content}
-            </div>
-          ))}
-          {loading ? <div className="alex-message assistant">Estoy revisando tu perfil...</div> : null}
+        <div className="alex-conversation" ref={conversationRef}>
+          <div className="alex-messages">
+            {messages.map((message, index) => (
+              <div key={`${message.role}-${index}`} className={`alex-message ${message.role}`}>
+                {message.content}
+              </div>
+            ))}
+            {loading ? <div className="alex-message assistant">Estoy revisando tu perfil...</div> : null}
+          </div>
+
+          <div className="alex-recs">
+            {showRecommendations
+              ? recommended.slice(0, 2).map((product) => {
+                  const selectedVariant = getSelectedRecommendationVariant(product);
+
+                  if (!selectedVariant) return null;
+
+                  return (
+                    <article key={product.id} className="alex-rec-card">
+                      <Link href={`/producto/${product.slug}`} onClick={() => setOpen(false)}>
+                        <small>{getAdvisorBadge(product)}</small>
+                        <strong>{product.publicName}</strong>
+                        <span>{product.shortDescription}</span>
+                        <em>
+                          {selectedVariant.sizeMl} ml · {formatCop(selectedVariant.retailPriceCop)}
+                        </em>
+                      </Link>
+                      <div className="alex-size-picker" role="radiogroup" aria-label={`Tamaño para ${product.publicName}`}>
+                        <span>Tamaño</span>
+                        <div>
+                          {product.variants.map((variant) => {
+                            const active = variant.sku === selectedVariant.sku;
+
+                            return (
+                              <button
+                                key={variant.sku}
+                                type="button"
+                                className={active ? "is-active" : ""}
+                                onClick={() => selectRecommendationVariant(product, variant.sku)}
+                                aria-pressed={active}
+                              >
+                                {variant.sizeMl}
+                              </button>
+                            );
+                          })}
+                        </div>
+                      </div>
+                      <div className="alex-rec-actions">
+                        <button type="button" onClick={() => addRecommendation(product, selectedVariant)}>
+                          <ShoppingBag size={14} />
+                          Agregar
+                        </button>
+                        <button type="button" onClick={() => goToSecureCheckout(product, selectedVariant)}>
+                          <CreditCard size={14} />
+                          Ordenar
+                        </button>
+                      </div>
+                    </article>
+                  );
+                })
+              : null}
+          </div>
         </div>
 
         <div className="quick-options">
@@ -222,59 +290,6 @@ export function AlexAdvisor() {
               {option}
             </button>
           ))}
-        </div>
-
-        <div className="alex-recs">
-          {showRecommendations
-            ? recommended.slice(0, 2).map((product) => {
-                const selectedVariant = getSelectedRecommendationVariant(product);
-
-                if (!selectedVariant) return null;
-
-                return (
-                  <article key={product.id} className="alex-rec-card">
-                    <Link href={`/producto/${product.slug}`} onClick={() => setOpen(false)}>
-                      <small>{getAdvisorBadge(product)}</small>
-                      <strong>{product.publicName}</strong>
-                      <span>{product.shortDescription}</span>
-                      <em>
-                        {selectedVariant.sizeMl} ml · {formatCop(selectedVariant.retailPriceCop)}
-                      </em>
-                    </Link>
-                    <div className="alex-size-picker" role="radiogroup" aria-label={`Tamaño para ${product.publicName}`}>
-                      <span>Elige tamaño</span>
-                      <div>
-                        {product.variants.map((variant) => {
-                          const active = variant.sku === selectedVariant.sku;
-
-                          return (
-                            <button
-                              key={variant.sku}
-                              type="button"
-                              className={active ? "is-active" : ""}
-                              onClick={() => selectRecommendationVariant(product, variant.sku)}
-                              aria-pressed={active}
-                            >
-                              {variant.sizeMl} ml
-                            </button>
-                          );
-                        })}
-                      </div>
-                    </div>
-                    <div className="alex-rec-actions">
-                      <button type="button" onClick={() => addRecommendation(product, selectedVariant)}>
-                        <ShoppingBag size={14} />
-                        Agregar
-                      </button>
-                      <button type="button" onClick={() => goToSecureCheckout(product, selectedVariant)}>
-                        <CreditCard size={14} />
-                        Ordenar
-                      </button>
-                    </div>
-                  </article>
-                );
-              })
-            : null}
         </div>
 
         <form
