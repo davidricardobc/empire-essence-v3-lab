@@ -222,3 +222,13 @@ Cada ejecucion debe escoger un foco segun lo que aprenda de la anterior. Temas a
 - Validacion: `npm run lint` OK; `npm run typecheck` OK; `npm run build` OK, 215 paginas generadas; Chrome headless mobile 393x852 confirmo que `Regalo que no falla` primero pregunta hombre/mujer/unisex sin tarjetas y que `masculino` recomienda Despertar e Impulso sin texto largo anterior.
 - Commit: `c8411e0 fix: afinar regalo masculino en Alexa`.
 - Siguiente hipotesis: Probar desde celular conversaciones reales de regalo para hombre, regalo para mujer y pago por Wompi para ajustar microcopy sin alargar el chat.
+
+### Job 16 - 2026-08-01 00:47
+- Foco: Evitar que Alexa asuma genero en `Quiero oler impecable`.
+- Por que tome este camino: David probo esa opcion y Alexa recomendo `Ambicion` y `Conquista` de inmediato; aunque la mayoria de ventas concretadas sean hombres, el sitio no debe parecer que adivina el genero del cliente.
+- Que estudie: `AlexAdvisor`, la deteccion local de perfil, el orden de preguntas y la ruta de cierre seguro hacia checkout/Wompi.
+- Hallazgos: `impecable`, `oler` y `para mi` estaban empujando categoria masculina; ademas `quiero oler` estaba marcado como intencion de checkout, por eso la respuesta saltaba directo a recomendacion.
+- Cambios: quite esas palabras de la inferencia masculina, saque `quiero oler` de intencion de checkout y cambie el orden para preguntar categoria antes de ocasion cuando la compra es para uso personal sin genero explicito. Mientras esa pregunta este pendiente, Alexa no muestra tarjetas de recomendacion.
+- Validacion: `npm run lint` OK; `npm run typecheck` OK; `npm run build` OK, 215 paginas generadas; `localhost:3000/catalogo?fresh=job16` responde 200; el bundle compilado contiene la pregunta corta `Claro. ¿La quieres masculina, femenina o unisex?` y ya no contiene `quiero oler` como disparador de checkout.
+- Commit: `2ff917f fix: evitar genero asumido en Alexa`.
+- Siguiente hipotesis: Revisar si las opciones rapidas deben llevar microetiquetas publicas como `para mi`, `para regalo` o `para ella` sin alargar el panel mobile.
