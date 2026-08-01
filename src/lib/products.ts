@@ -1,4 +1,5 @@
 import { products } from "@/data/products";
+import { getSearchTokenGroups, productMatchesAllSearchTerms, scoreProductSearch } from "@/lib/product-search";
 import type { Product } from "@/types/product";
 
 export function getAllProducts() {
@@ -43,28 +44,15 @@ export function getRelatedProducts(product: Product, count = 3) {
 }
 
 export function searchProducts(query: string) {
-  const term = query.trim().toLowerCase();
-  if (!term) return products;
+  const tokenGroups = getSearchTokenGroups(query);
+  if (!tokenGroups.length) return products;
 
-  return products.filter((product) => {
-    const haystack = [
-      product.publicName,
-      product.inspirationReference,
-      product.category,
-      product.collection,
-      product.shortDescription,
-      product.longDescription,
-      product.bestFor,
-      ...product.families,
-      ...product.moods,
-      ...product.occasions,
-      ...product.notes.top,
-      ...product.notes.heart,
-      ...product.notes.base,
-    ]
-      .join(" ")
-      .toLowerCase();
+  const exactMatches = products.filter((product) => productMatchesAllSearchTerms(product, tokenGroups));
+  if (exactMatches.length) return exactMatches;
 
-    return haystack.includes(term);
-  });
+  return products
+    .map((product) => ({ product, score: scoreProductSearch(product, tokenGroups) }))
+    .filter(({ score }) => score > 0)
+    .sort((a, b) => b.score - a.score)
+    .map(({ product }) => product);
 }

@@ -278,3 +278,12 @@ Cada ejecucion debe escoger un foco segun lo que aprenda de la anterior. Temas a
 - Validacion: `npm run lint` OK; `npm run typecheck` OK; `git diff --check` OK; `npm run build` OK, 215 paginas generadas. CDP mobile 393x852 confirmo header sin corte, menu desplegable, catalogo/filtros dentro del viewport, drawer del carrito a 393px y Alexa abierta con panel/input visibles.
 - Commit: `90c3bba fix: pulir mobile prepublicacion`.
 - Siguiente hipotesis: Antes de publicar, falta prueba Wompi real/sandbox de punta a punta y configurar variables de produccion/dominio final.
+
+### Job 22 - 2026-08-01 15:18
+- Foco: Corregir busqueda/filtros del catalogo y evitar cards negras o invisibles.
+- Por que tome este camino: David reporto que despues de aplicar filtros no salian resultados, que `citrico fiesta` deberia mostrar opciones dentro de las 192 fragancias, y que algunas fichas quedaban negras donde debia verse imagen/informacion.
+- Que estudie: `CatalogExplorer`, `ProductCard`, `MotionProvider`, `products.generated.json`, imagenes publicas de categorias y CSS de `product-grid`/`product-card`.
+- Hallazgos: La busqueda exigia coincidencia de frase completa; por eso mezclas naturales como `citrico fiesta` fallaban o quedaban demasiado rigidas. Ademas las cards del catalogo estaban dentro del sistema de reveal por scroll; al cambiar de cero resultados a una lista nueva podian quedar con `opacity: 0` hasta que el observer las revelara.
+- Cambios: Se agrego busqueda normalizada sin acentos, aliases para `citrico/citrus/citric` y `fiesta`, coincidencia por tokens y fallback de sugerencias cercanas. Las cards del catalogo dejaron de depender del reveal animado y ahora tienen fallback visual con nombre/categoria/familias detras de la imagen.
+- Validacion: `npm run lint` OK; `npm run typecheck` OK; `git diff --check` OK; `npm run build` OK, 215 paginas generadas. Chrome/CDP mobile 393x852 confirmo flujo dinamico desde `q=zzzzzz` a `citrico fiesta`: 0 -> 60 cards, primera card `Ambicion`, `opacity: 1`, `transform: none`, imagen completa y fallback presente.
+- Siguiente hipotesis: Probar en telefono real combinaciones de busqueda comunes (`dulce mujer`, `fresco diario`, `fiesta hombre`, `regalo esposa`) y decidir si conviene mostrar chips de busqueda sugerida bajo el input.

@@ -6,7 +6,9 @@ import { Filter, MessageCircle, Search } from "lucide-react";
 import { allFamilies, allMoods, allOccasions, categoryLabels, products } from "@/data/products";
 import { ProductCard } from "@/components/catalog/ProductCard";
 import { sortByCommercialPriority } from "@/lib/commercial-priority";
+import { getSearchTokenGroups, productMatchesAllSearchTerms, scoreProductSearch } from "@/lib/product-search";
 import { buildWhatsappUrl } from "@/lib/whatsapp";
+import type { Product } from "@/types/product";
 import type { Category, Intensity } from "@/types/product";
 
 const categories: Array<Category | "all"> = ["all", "femenina", "masculina", "unisex"];
@@ -32,34 +34,50 @@ export function CatalogExplorer({ initialFilters }: CatalogExplorerProps) {
   const [intensity, setIntensity] = useState<Intensity | "all">(initialFilters?.intensity ?? "all");
   const [filtersOpen, setFiltersOpen] = useState(false);
 
-  const filtered = useMemo(() => {
-    const term = query.trim().toLowerCase();
-    return sortByCommercialPriority(products.filter((product) => {
+  const catalogResult = useMemo(() => {
+    const tokenGroups = getSearchTokenGroups(query);
+    const activeFilterTerms = [family, mood, occasion, category, intensity].filter((value) => value !== "all");
+    const filterTokenGroups = getSearchTokenGroups(activeFilterTerms.join(" "));
+
+    const matchesActiveFilters = (product: Product) => {
       if (category !== "all" && product.category !== category) return false;
       if (family !== "all" && !product.families.includes(family)) return false;
       if (mood !== "all" && !product.moods.includes(mood)) return false;
       if (occasion !== "all" && !product.occasions.includes(occasion)) return false;
       if (intensity !== "all" && product.intensity !== intensity) return false;
-      if (!term) return true;
+      return true;
+    };
 
-      const haystack = [
-        product.publicName,
-        product.inspirationReference,
-        product.shortDescription,
-        product.bestFor,
-        product.collection,
-        ...product.families,
-        ...product.moods,
-        ...product.occasions,
-        ...product.notes.top,
-        ...product.notes.heart,
-        ...product.notes.base,
-      ]
-        .join(" ")
-        .toLowerCase();
-      return haystack.includes(term);
-    }));
+    const exactMatches = sortByCommercialPriority(
+      products.filter((product) => matchesActiveFilters(product) && productMatchesAllSearchTerms(product, tokenGroups)),
+    );
+
+    if (exactMatches.length) {
+      return {
+        isRelaxed: false,
+        items: exactMatches,
+        totalExact: exactMatches.length,
+      };
+    }
+
+    const relaxedTokenGroups = tokenGroups.length ? tokenGroups : filterTokenGroups;
+    const relaxedMatches = products
+      .map((product) => ({
+        product,
+        score: scoreProductSearch(product, relaxedTokenGroups),
+      }))
+      .filter(({ score }) => score > 0)
+      .sort((a, b) => b.score - a.score)
+      .map(({ product }) => product);
+
+    return {
+      isRelaxed: relaxedMatches.length > 0,
+      items: sortByCommercialPriority(relaxedMatches).slice(0, 24),
+      totalExact: 0,
+    };
   }, [category, family, intensity, mood, occasion, query]);
+
+  const visibleProducts = catalogResult.items;
 
   const activeFilters = [
     category !== "all" ? { key: "category", label: `Categoría: ${categoryLabels[category]}`, clear: () => setCategory("all") } : null,
@@ -97,7 +115,9 @@ export function CatalogExplorer({ initialFilters }: CatalogExplorerProps) {
         <div className="catalog-toolbar-actions">
           <div className="result-count">
             <Filter size={16} />
-            {filtered.length} de {products.length} referencias visibles
+            {catalogResult.isRelaxed
+              ? `${visibleProducts.length} sugerencias cercanas de ${products.length} referencias`
+              : `${visibleProducts.length} de ${products.length} referencias visibles`}
           </div>
           <div className="campaign-count">Selecciones destacadas primero</div>
           <button
@@ -116,8 +136,12 @@ export function CatalogExplorer({ initialFilters }: CatalogExplorerProps) {
       {activeFilters.length ? (
         <div className="catalog-intent-bar">
           <div>
-            <strong>Vista guiada activa</strong>
-            <p>Estás viendo una selección filtrada. Puedes limpiar o afinar estos filtros cuando quieras.</p>
+            <strong>{catalogResult.isRelaxed ? "Opciones cercanas disponibles" : "Vista guiada activa"}</strong>
+            <p>
+              {catalogResult.isRelaxed
+                ? "No hubo coincidencia exacta con esa mezcla. Te mostramos alternativas cercanas para no dejarte en blanco."
+                : "Estás viendo una selección filtrada. Puedes limpiar o afinar estos filtros cuando quieras."}
+            </p>
           </div>
           <div className="active-filter-list">
             {activeFilters.map((filter) => (
@@ -191,12 +215,12 @@ export function CatalogExplorer({ initialFilters }: CatalogExplorerProps) {
       </div>
 
       <div className="product-grid">
-        {filtered.map((product) => (
+        {visibleProducts.map((product) => (
           <ProductCard key={product.id} product={product} compact />
         ))}
       </div>
 
-      {!filtered.length ? (
+      {!visibleProducts.length ? (
         <div className="empty-state">
           <span className="empty-kicker">Sin coincidencias exactas</span>
           <h3>No encontramos esa combinación.</h3>

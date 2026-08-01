@@ -15,7 +15,6 @@ const REVEAL_SELECTOR = [
   ".decision-grid > *",
   ".brand-proof-copy",
   ".brand-proof-card",
-  ".product-grid > *",
   ".catalog-intent-bar",
   ".catalog-guidance > *",
   ".checkout-grid > *",
@@ -70,9 +69,12 @@ export function MotionProvider() {
       );
 
       const trackedElements = new WeakSet<HTMLElement>();
-      const observeElement = (element: HTMLElement, index: number) => {
+      let motionIndex = 0;
+      const observeElement = (element: HTMLElement) => {
         if (trackedElements.has(element)) return;
         trackedElements.add(element);
+        const index = motionIndex;
+        motionIndex += 1;
         element.style.setProperty("--motion-index", String(index % 6));
 
         if (index < 3) {
@@ -83,12 +85,31 @@ export function MotionProvider() {
         observer.observe(element);
       };
 
-      elements.forEach((element, index) => {
-        observeElement(element, index);
+      elements.forEach((element) => {
+        observeElement(element);
       });
+
+      const mutationObserver = new MutationObserver((mutations) => {
+        mutations.forEach((mutation) => {
+          mutation.addedNodes.forEach((node) => {
+            if (!(node instanceof HTMLElement)) return;
+
+            const addedElements = node.matches(REVEAL_SELECTOR)
+              ? [node]
+              : Array.from(node.querySelectorAll<HTMLElement>(REVEAL_SELECTOR));
+
+            addedElements.forEach((element) => {
+              observeElement(element);
+            });
+          });
+        });
+      });
+
+      mutationObserver.observe(document.body, { childList: true, subtree: true });
 
       return () => {
         observer.disconnect();
+        mutationObserver.disconnect();
       };
     };
 

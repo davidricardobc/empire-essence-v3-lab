@@ -3069,9 +3069,44 @@ h3 {
   margin: 0;
 }
 
+.product-card-media-fallback {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  display: grid;
+  align-content: end;
+  gap: 6px;
+  padding: 16px;
+  background:
+    radial-gradient(circle at 28% 18%, rgba(227, 200, 145, 0.18), transparent 34%),
+    linear-gradient(135deg, rgba(62, 22, 32, 0.92), rgba(8, 7, 7, 0.98));
+  color: var(--ivory);
+}
+
+.product-card-media-fallback span,
+.product-card-media-fallback small {
+  color: rgba(247, 240, 230, 0.76);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.product-card-media-fallback strong {
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.product-card-media img {
+  z-index: 1;
+}
+
 .product-card-media::after {
   position: absolute;
   inset: 0;
+  z-index: 2;
   background:
     linear-gradient(180deg, rgba(8, 7, 7, 0.08), rgba(8, 7, 7, 0.48)),
     linear-gradient(90deg, rgba(8, 7, 7, 0.42), transparent 58%);
@@ -3422,7 +3457,6 @@ body[data-motion="ready"] .intent-grid > *,
 body[data-motion="ready"] .decision-grid > *,
 body[data-motion="ready"] .brand-proof-copy,
 body[data-motion="ready"] .brand-proof-card,
-body[data-motion="ready"] .product-grid > *,
 body[data-motion="ready"] .catalog-intent-bar,
 body[data-motion="ready"] .catalog-guidance > *,
 body[data-motion="ready"] .checkout-grid > *,
@@ -4319,8 +4353,6 @@ body[data-motion="ready"] .concept-hero[data-motion-visible="true"] .hero-kicker
     margin-top: 12px;
   }
 
-  body[data-motion="ready"] .product-grid > *,
-  body[data-motion="ready"] .product-card,
   body[data-motion="ready"] .catalog-intent-bar,
   body[data-motion="ready"] .catalog-guidance > * {
     transform: translateY(12px);
@@ -5499,7 +5531,6 @@ body {
   body[data-motion="ready"] .decision-grid > *,
   body[data-motion="ready"] .brand-proof-copy,
   body[data-motion="ready"] .brand-proof-card,
-  body[data-motion="ready"] .product-grid > *,
   body[data-motion="ready"] .catalog-intent-bar,
   body[data-motion="ready"] .catalog-guidance > *,
   body[data-motion="ready"] .checkout-grid > *,

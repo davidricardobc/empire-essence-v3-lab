@@ -16,6 +16,11 @@ export function ProductCard({ product, compact = false }: { product: Product; co
   return (
     <article className={`product-card ${compact ? "compact-card" : ""}`}>
       <Link href={`/producto/${product.slug}`} className="product-card-media" aria-label={`Ver ${product.publicName}`}>
+        <div className="product-card-media-fallback" aria-hidden="true">
+          <span>{categoryLabels[product.category]}</span>
+          <strong>{product.publicName}</strong>
+          <small>{product.families.slice(0, 2).join(" · ")}</small>
+        </div>
         <Image src={getProductVisual(product.category)} alt="" fill sizes="(max-width: 720px) 100vw, 280px" />
       </Link>
       <div className="product-card-top">
