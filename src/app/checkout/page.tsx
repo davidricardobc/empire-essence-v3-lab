@@ -13,7 +13,7 @@ export default async function CheckoutPage({
 
   return (
     <main className="page-main">
-      <section className="shell page-hero compact-hero">
+      <section className="shell page-hero compact-hero checkout-hero">
         <span className="eyebrow">{channel === "wholesale" ? "Cierre mayorista" : "Cierre retail"}</span>
         <h1>
           {wompiEnabled

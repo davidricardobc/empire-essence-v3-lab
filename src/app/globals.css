@@ -5653,3 +5653,166 @@ body {
     height: 38px;
   }
 }
+
+/* Job 21: final pre-publish mobile polish for header and checkout density. */
+@media (max-width: 720px) {
+  .site-header .shell.header-inner {
+    width: calc(100vw - 24px) !important;
+    max-width: calc(100vw - 24px) !important;
+  }
+
+  .header-inner {
+    position: relative !important;
+    min-height: 62px !important;
+  }
+
+  .brand {
+    max-width: calc(100% - 104px);
+  }
+
+  .brand-wordmark strong {
+    font-size: clamp(1.12rem, 5.2vw, 1.42rem) !important;
+    letter-spacing: 0.12em !important;
+  }
+
+  .brand-wordmark small {
+    font-size: 0.5rem !important;
+    letter-spacing: 0.34em !important;
+  }
+
+  .header-actions {
+    position: absolute !important;
+    top: 10px !important;
+    right: 0 !important;
+    display: flex !important;
+    gap: 8px !important;
+    margin-left: 0 !important;
+    transform: none !important;
+  }
+
+  .desktop-nav {
+    display: none !important;
+  }
+
+  .menu-button {
+    display: grid !important;
+    width: 42px;
+    height: 42px;
+    place-items: center;
+    color: var(--ivory);
+  }
+
+  .mobile-nav {
+    display: none !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: 100% !important;
+    max-width: 100% !important;
+    gap: 8px;
+    overflow: hidden;
+    border-top: 1px solid rgba(215, 185, 132, 0.12);
+    padding: 10px 12px 12px !important;
+    background: rgba(5, 4, 4, 0.98);
+  }
+
+  .mobile-nav.is-open {
+    display: grid !important;
+  }
+
+  .mobile-nav a {
+    min-height: 38px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(215, 185, 132, 0.16);
+    padding: 8px 6px;
+    text-align: center;
+    white-space: normal;
+  }
+
+  .mobile-nav a[href="#alex"] {
+    display: inline-flex;
+  }
+
+  .site-header.menu-open .cart-button {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .checkout-hero {
+    gap: 10px;
+    padding: 22px 0 14px;
+  }
+
+  .checkout-hero h1 {
+    max-width: 100%;
+    font-size: clamp(1.76rem, 7.2vw, 2.05rem) !important;
+    line-height: 1.08;
+  }
+
+  .checkout-hero p {
+    max-width: 34ch;
+    font-size: 0.95rem;
+    line-height: 1.45;
+  }
+
+  .checkout-form,
+  .checkout-summary {
+    padding: 16px 14px;
+  }
+
+  .checkout-form h2,
+  .checkout-summary h2 {
+    max-width: 100%;
+    font-size: clamp(1.82rem, 7.6vw, 2.12rem) !important;
+    line-height: 1.08;
+  }
+
+  .checkout-form p,
+  .checkout-summary p {
+    font-size: 0.92rem;
+    line-height: 1.48;
+  }
+
+  .checkout-trust-strip {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 6px;
+    margin-bottom: 10px;
+  }
+
+  .checkout-trust-strip span {
+    width: 100%;
+    padding: 7px 9px;
+    font-size: 0.68rem;
+    line-height: 1.2;
+    overflow-wrap: anywhere;
+  }
+
+  .checkout-fast-close {
+    margin-bottom: 10px;
+    padding: 9px 10px;
+  }
+
+  .form-grid {
+    margin-top: 16px;
+  }
+
+  .summary-item {
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+
+  .summary-item .text-button {
+    grid-column: 1 / -1;
+    justify-self: start;
+  }
+}
+
+@media (max-width: 430px) {
+  .checkout-hero h1 {
+    max-width: 100%;
+  }
+
+  .checkout-form h2,
+  .checkout-summary h2 {
+    max-width: 100%;
+  }
+}
