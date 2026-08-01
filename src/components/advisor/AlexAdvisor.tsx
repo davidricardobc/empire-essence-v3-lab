@@ -34,8 +34,7 @@ type LocalReply = {
 const starterMessages: ChatMessage[] = [
   {
     role: "assistant",
-    content:
-      "Hola, soy Alexa. Si compras para ti, para ella o para un regalo, te ayudo a elegir una fragancia con presencia y cerrar por pago seguro.",
+    content: "Hola, soy Alexa. Te ayudo a elegir rápido: para ti, para regalo o para pagar seguro.",
   },
 ];
 
@@ -65,9 +64,10 @@ export function AlexAdvisor() {
   );
   const profile = useMemo(() => buildAdvisorProfile(userTranscript), [userTranscript]);
   const recommended = useMemo(
-    () => recommendFromText(userTranscript.join(" "), profile.channel === "wholesale"),
-    [profile.channel, userTranscript],
+    () => recommendFromText(userTranscript.join(" "), profile),
+    [profile, userTranscript],
   );
+  const showRecommendations = !(profile.recipient === "gift" && !profile.category);
   const panelId = "alex-panel";
 
   function addRecommendation(product: Product) {
@@ -105,7 +105,7 @@ export function AlexAdvisor() {
       text: clean,
       profile: nextProfile,
       askedQuestions,
-      recommended: recommendFromText(nextUserTranscript.join(" "), nextProfile.channel === "wholesale"),
+      recommended: recommendFromText(nextUserTranscript.join(" "), nextProfile),
     });
 
     setInput("");
@@ -210,7 +210,7 @@ export function AlexAdvisor() {
         </div>
 
         <div className="alex-recs">
-          {recommended.slice(0, 2).map((product) => (
+          {showRecommendations ? recommended.slice(0, 2).map((product) => (
             <article key={product.id} className="alex-rec-card">
               <Link href={`/producto/${product.slug}`} onClick={() => setOpen(false)}>
                 <small>{getAdvisorBadge(product)}</small>
@@ -229,7 +229,7 @@ export function AlexAdvisor() {
                 </button>
               </div>
             </article>
-          ))}
+          )) : null}
         </div>
 
         <form
@@ -249,12 +249,14 @@ export function AlexAdvisor() {
   );
 }
 
-function recommendFromText(text: string, wholesaleOnly = false) {
+function recommendFromText(text: string, profile: AdvisorProfile = buildAdvisorProfile([text])) {
   const term = normalizeText(text);
-  const wantsWholesale = wholesaleOnly || term.includes("mayor") || term.includes("emprend");
+  const wantsWholesale = profile.channel === "wholesale" || term.includes("mayor") || term.includes("emprend");
+  const allowedCategories = getAllowedCategories(profile.category);
 
   return sortByCommercialPriority(products)
     .filter((product) => (wantsWholesale ? product.wholesaleEligible : true))
+    .filter((product) => allowedCategories.includes(product.category))
     .map((product) => {
       let score = getCommercialPriorityScore(product);
       if (wantsWholesale && getCommercialPriority(product) === "campaign") score += 14;
@@ -276,20 +278,28 @@ function recommendFromText(text: string, wholesaleOnly = false) {
         term.includes("esposa") ||
         term.includes("inolvidable")
       ) {
-        score += product.category === "femenina" ? 8 : 0;
+        score += product.category === "femenina" ? 26 : product.category === "unisex" ? 10 : 0;
       }
       if (
         term.includes("hombre") ||
+        term.includes("masculino") ||
         term.includes("masculina") ||
         term.includes("para mi") ||
         term.includes("impecable") ||
         term.includes("oler")
       ) {
-        score += product.category === "masculina" ? 8 : 0;
+        score += product.category === "masculina" ? 26 : product.category === "unisex" ? 10 : 0;
       }
-      if (term.includes("unisex")) score += product.category === "unisex" ? 8 : 0;
+      if (term.includes("unisex")) score += product.category === "unisex" ? 26 : 0;
       if (term.includes("mayor") || term.includes("emprendedor")) score += product.topSeller ? 8 : 0;
-      [...product.families, ...product.moods, ...product.occasions, ...product.notes.top, ...product.notes.heart, ...product.notes.base].forEach((tag) => {
+      [
+        ...product.families,
+        ...product.moods,
+        ...product.occasions,
+        ...product.notes.top,
+        ...product.notes.heart,
+        ...product.notes.base,
+      ].forEach((tag) => {
         if (term.includes(normalizeText(tag))) score += 4;
       });
       if (term.includes("regalo") || term.includes("sorprender") || term.includes("no falla")) {
@@ -311,18 +321,34 @@ function buildAdvisorProfile(userTranscript: string[]): AdvisorProfile {
 
   return {
     channel: mentionsWholesale(text) ? "wholesale" : "retail",
-    recipient: text.includes("regalo") || text.includes("para ella") || text.includes("novia") || text.includes("esposa") || text.includes("sorprender")
-      ? "gift"
-      : text.includes("para mi") || text.includes("para uso personal") || text.includes("impecable") || text.includes("oler")
-        ? "self"
-        : null,
-    category: text.includes("femenina") || text.includes("mujer") || text.includes("ella") || text.includes("novia") || text.includes("esposa")
-      ? "femenina"
-      : text.includes("masculina") || text.includes("hombre") || text.includes("para mi") || text.includes("impecable")
-        ? "masculina"
-        : text.includes("unisex")
-          ? "unisex"
+    recipient:
+      text.includes("regalo") ||
+      text.includes("para ella") ||
+      text.includes("novia") ||
+      text.includes("esposa") ||
+      text.includes("sorprender")
+        ? "gift"
+        : text.includes("para mi") || text.includes("para uso personal") || text.includes("impecable") || text.includes("oler")
+          ? "self"
           : null,
+    category:
+      text.includes("unisex") || text.includes("mixto")
+        ? "unisex"
+        : text.includes("masculino") ||
+            text.includes("masculina") ||
+            text.includes("hombre") ||
+            text.includes("para el") ||
+            text.includes("para mi") ||
+            text.includes("impecable")
+          ? "masculina"
+          : text.includes("femenina") ||
+              text.includes("femenino") ||
+              text.includes("mujer") ||
+              text.includes("ella") ||
+              text.includes("novia") ||
+              text.includes("esposa")
+            ? "femenina"
+            : null,
     occasion: text.includes("oficina")
       ? "oficina"
       : text.includes("noche") || text.includes("cita") || text.includes("salir") || text.includes("presencia")
@@ -346,9 +372,8 @@ function buildLocalReply({
   askedQuestions: AdvisorQuestionKey[];
   recommended: typeof products;
 }): LocalReply {
-  const picks = recommended.slice(0, 3).map((product) => product.publicName).join(", ");
-  const secureCloseCopy =
-    "Puedes tocar Pagar y te llevo al checkout con pago seguro por Wompi cuando esté disponible; si necesitas ayuda, WhatsApp sale con el pedido armado.";
+  const picks = recommended.slice(0, 2).map((product) => product.publicName).join(" o ");
+  const secureCloseCopy = "Toca Pagar y te llevo al checkout seguro; WhatsApp queda listo si prefieres ayuda.";
 
   if (mentionsPaymentStatus(text)) {
     return {
@@ -360,11 +385,7 @@ function buildLocalReply({
 
   if (wantsSecureCheckout(text)) {
     return {
-      content: [
-        "Perfecto. Te dejo opciones listas para comprar.",
-        `Mi primera selección sería ${picks}.`,
-        secureCloseCopy,
-      ].join(" "),
+      content: [`Perfecto: iría por ${picks}.`, secureCloseCopy].join(" "),
       forceLocal: false,
     };
   }
@@ -373,9 +394,8 @@ function buildLocalReply({
     const questionKey = getNextQuestion(profile, askedQuestions);
     return {
       content: [
-        `Para mayorista te movería por ${picks} porque son referencias de alta rotación y buena lectura comercial.`,
-        "El mínimo mayorista sigue siendo de 10 unidades mixtas.",
-        questionKey ? getQuestionCopy(questionKey, "wholesale") : "Si quieres, te dejo el siguiente paso por WhatsApp con el kit ya orientado.",
+        `Para mayorista arrancaría con ${picks}: rotan fácil y se explican rápido.`,
+        questionKey ? getQuestionCopy(questionKey, profile) : "Te puedo llevar a WhatsApp con el kit orientado.",
       ].join(" "),
       questionKey,
       forceLocal: false,
@@ -383,17 +403,21 @@ function buildLocalReply({
   }
 
   const questionKey = getNextQuestion(profile, askedQuestions);
+  if (profile.recipient === "gift" && questionKey === "category") {
+    return {
+      content: "Perfecto. ¿El regalo es para hombre, mujer o prefieres unisex?",
+      questionKey,
+      forceLocal: false,
+    };
+  }
+
   const opening =
     profile.recipient === "gift"
-      ? `Para regalar sin fallar, me iría por ${picks}.`
-      : `Para ti, me iría por ${picks} si quieres oler bien sin darle tantas vueltas.`;
+      ? `Para regalo ${getCategoryCopy(profile.category)}, iría por ${picks}.`
+      : `Para ti, iría por ${picks}.`;
 
   return {
-    content: [
-      opening,
-      "Son opciones fáciles de entender al primer contacto: frescas para diario, intensas para noche o elegantes para quedar muy bien.",
-      questionKey ? getQuestionCopy(questionKey, "retail") : secureCloseCopy,
-    ].join(" "),
+    content: [opening, questionKey ? getQuestionCopy(questionKey, profile) : secureCloseCopy].join(" "),
     questionKey,
     forceLocal: false,
   };
@@ -412,21 +436,35 @@ function getNextQuestion(profile: AdvisorProfile, askedQuestions: AdvisorQuestio
   return null;
 }
 
-function getQuestionCopy(questionKey: AdvisorQuestionKey, channel: "retail" | "wholesale") {
+function getQuestionCopy(questionKey: AdvisorQuestionKey, profile: AdvisorProfile) {
   switch (questionKey) {
     case "recipient":
-      return "¿Es para ti o quieres sorprender a alguien?";
+      return "¿Es para ti o para regalo?";
     case "occasion":
-      return "¿La quieres para diario, oficina, cita o noche?";
+      return "¿Diario, oficina, cita o noche?";
     case "category":
-      return "¿Buscas algo masculino para ti, femenino para ella o unisex?";
+      return profile.recipient === "gift"
+        ? "¿El regalo es para hombre, mujer o prefieres unisex?"
+        : "¿Masculino, femenino o unisex?";
     case "wholesaleMix":
-      return channel === "wholesale"
-        ? "¿En tu rotación vendes más femenino, masculino o mixto?"
-        : "¿Buscas algo masculino para ti, femenino para ella o unisex?";
+      return "¿Vendes más masculino, femenino o mixto?";
     default:
       return "Cuéntame un poco más y te afino la recomendación.";
   }
+}
+
+function getAllowedCategories(category: AdvisorProfile["category"]) {
+  if (category === "masculina") return ["masculina", "unisex"];
+  if (category === "femenina") return ["femenina", "unisex"];
+  if (category === "unisex") return ["unisex"];
+  return ["masculina", "femenina", "unisex"];
+}
+
+function getCategoryCopy(category: AdvisorProfile["category"]) {
+  if (category === "masculina") return "para hombre";
+  if (category === "femenina") return "para mujer";
+  if (category === "unisex") return "unisex";
+  return "seguro";
 }
 
 function mentionsWholesale(text: string) {
