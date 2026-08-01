@@ -212,3 +212,13 @@ Cada ejecucion debe escoger un foco segun lo que aprenda de la anterior. Temas a
 - Validacion: `npm run lint` OK; `npm run typecheck` OK; `npm run build` OK, 215 paginas generadas; Playwright mobile 393x852 confirmo panel visible, titulo `Alexa`, seis opciones nuevas y ausencia de las frases antiguas.
 - Commit: `9f7edc8 fix: transformar Alex en Alexa vendedora`.
 - Siguiente hipotesis: Probar conversaciones reales de compradores hombres y ajustar las respuestas de Alexa por objeciones frecuentes: duracion, parecido, regalo para pareja, olor masculino de diario y cierre por Wompi.
+
+### Job 15 - 2026-08-01 00:00
+- Foco: Corregir regalo masculino en Alexa y reducir texto en mobile.
+- Por que tome este camino: David probo `Regalo que no falla`, eligio masculino y Alexa alcanzo a recomendar `Extasis` femenino; eso mostraba que la prioridad comercial estaba pesando mas que el genero solicitado.
+- Que estudie: `AlexAdvisor`, categorias reales de productos priorizados, relacion entre `Extasis` Flowerbomb femenino y `Extasis` Arabians Tonka unisex, y el flujo de preguntas cortas en telefono.
+- Hallazgos: La recomendacion sumaba prioridad de campana antes de respetar categoria; cuando el usuario decia `masculino`, los perfumes femeninos seguian compitiendo si eran Tier 1. Tambien la respuesta local tenia demasiado texto para una compra rapida.
+- Cambios: `recommendFromText` ahora filtra categorias permitidas segun perfil antes de ordenar; regalo masculino permite masculinos/unisex, regalo femenino permite femeninos/unisex y unisex queda solo unisex. Las respuestas bajaron a 1-2 frases y las preguntas quedaron mas directas.
+- Validacion: `npm run lint` OK; `npm run typecheck` OK; `npm run build` OK, 215 paginas generadas; Chrome headless mobile 393x852 confirmo que `Regalo que no falla` primero pregunta hombre/mujer/unisex sin tarjetas y que `masculino` recomienda Despertar e Impulso sin texto largo anterior.
+- Commit: `c8411e0 fix: afinar regalo masculino en Alexa`.
+- Siguiente hipotesis: Probar desde celular conversaciones reales de regalo para hombre, regalo para mujer y pago por Wompi para ajustar microcopy sin alargar el chat.
