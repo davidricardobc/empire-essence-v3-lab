@@ -45,13 +45,13 @@ export default function BlogPage() {
               <ArrowRight size={16} />
             </Link>
             <a
-              href={buildWhatsappUrl("Hola Alex. Lei el blog y quiero que me recomiendes una fragancia para comprar.")}
+              href={buildWhatsappUrl("Hola Alexa. Lei el blog y quiero que me recomiendes una fragancia para comprar.")}
               className="secondary-button"
               target="_blank"
               rel="noreferrer"
             >
               <MessageCircle size={16} />
-              Preguntar a Alex
+              Preguntar a Alexa
             </a>
           </div>
         </div>
@@ -109,7 +109,7 @@ export default function BlogPage() {
             <ArrowRight size={16} />
           </Link>
           <a
-            href={buildWhatsappUrl("Hola Alex. Vengo del blog y quiero armar un pedido mayorista de perfumes.")}
+            href={buildWhatsappUrl("Hola Alexa. Vengo del blog y quiero armar un pedido mayorista de perfumes.")}
             className="secondary-button"
             target="_blank"
             rel="noreferrer"

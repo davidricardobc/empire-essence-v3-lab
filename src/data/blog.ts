@@ -210,7 +210,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Cuatro perfiles que ayudan a vender",
         body: [
-          "Fresco diario para uso frecuente, elegante para oficina, dulce intenso para noche y amaderado para quienes quieren algo mas sobrio.",
+          "Fresco que se nota para uso frecuente, elegante para oficina, dulce intenso para noche y amaderado para quienes quieren algo mas sobrio.",
           "Con esa mezcla puedes recomendar sin depender de una sola tendencia.",
         ],
       },
@@ -256,7 +256,7 @@ export const blogPosts: BlogPost[] = [
         heading: "Cuando tienes duda",
         body: [
           "Empieza por top sellers: ya tienen buena aceptacion y reducen el riesgo de equivocarte.",
-          "Tambien puedes pedir una recomendacion a Alex segun ocasion, estilo y precio inteligente.",
+          "Tambien puedes pedir una recomendacion a Alexa segun ocasion, estilo y precio inteligente.",
         ],
       },
     ],
@@ -294,7 +294,7 @@ export const blogPosts: BlogPost[] = [
         heading: "Pide ayuda si estas entre dos opciones",
         body: [
           "Con edad, estilo y ocasion de uso se puede elegir con mucha mas seguridad.",
-          "Alex puede ayudarte a confirmar la mejor opcion antes de pagar.",
+          "Alexa puede ayudarte a confirmar la mejor opcion antes de pagar.",
         ],
       },
     ],

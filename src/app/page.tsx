@@ -150,10 +150,10 @@ export default function HomePage() {
         </div>
         <div className="intent-grid">
           {[
-            ["Poder femenino", "Dulce, floral, memorable.", "/catalogo?mood=poder"],
-            ["Fresco diario", "Limpio y fácil de repetir.", "/catalogo?family=fresca"],
-            ["Noche sensual", "Más estela para salir.", "/catalogo?occasion=noche"],
-            ["Regalo seguro", "Top ventas fáciles de regalar.", "/catalogo?mood=elegancia"],
+            ["Para ella, inolvidable", "Dulce, floral, memorable.", "/catalogo?mood=poder"],
+            ["Fresco que se nota", "Limpio y fácil de repetir.", "/catalogo?family=fresca"],
+            ["Noche con presencia", "Más estela para salir.", "/catalogo?occasion=noche"],
+            ["Regalo que no falla", "Top ventas fáciles de regalar.", "/catalogo?mood=elegancia"],
           ].map(([title, copy, href]) => (
             <Link href={href} key={title} className="intent-card">
               <strong>{title}</strong>
@@ -299,12 +299,12 @@ export default function HomePage() {
           <span className="eyebrow">Compra con confianza</span>
           <h2>Todo queda claro antes de pagar.</h2>
           <p>
-            Elige por estilo, revisa precios, habla con Alex si tienes dudas y cierra tu pedido por checkout o WhatsApp.
+            Elige por estilo, revisa precios, habla con Alexa si tienes dudas y cierra tu pedido por checkout o WhatsApp.
           </p>
         </div>
         <div className="proof-grid">
           <div>Checkout directo con Wompi o respaldo por WhatsApp.</div>
-          <div>Alex recomienda por ocasión, intensidad y estilo.</div>
+          <div>Alexa recomienda por ocasión, intensidad y estilo.</div>
           <div>Catálogo curado para decidir rápido.</div>
           <div>Mayoristas compran perfumes fijos y cotizan insumos por volumen.</div>
         </div>

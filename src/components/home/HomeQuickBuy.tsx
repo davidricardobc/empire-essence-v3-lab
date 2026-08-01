@@ -91,14 +91,14 @@ export function HomeQuickBuy({ products }: { products: Product[] }) {
         <Image src="/assets/alex-advisor.png" alt="" width={52} height={52} />
         <div>
           <span>¿Necesitas ayuda para elegir?</span>
-          <small>Alex recomienda por ocasión, mood, estilo o regalo.</small>
+          <small>Alexa recomienda por ocasión, mood, estilo o regalo.</small>
         </div>
         <a
-          href={buildWhatsappUrl("Hola Alex. Quiero ayuda para elegir mi fragancia Empire Essence.")}
+          href={buildWhatsappUrl("Hola Alexa. Quiero ayuda para elegir mi fragancia Empire Essence.")}
           target="_blank"
           rel="noreferrer"
         >
-          Hablar con Alex
+          Hablar con Alexa
           <MessageCircle size={15} />
         </a>
       </div>

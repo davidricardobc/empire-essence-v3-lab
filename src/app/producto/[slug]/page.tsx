@@ -163,7 +163,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
               <li>Duración estimada de {product.duration.toLowerCase()} e intensidad {product.intensity}.</li>
               <li>30 ml para probar, 50 ml para uso frecuente, 100 ml si ya sabes que es para ti.</li>
               <li>Entrega nacional estimada de 3 a 5 días hábiles.</li>
-              <li>Si dudas entre tamaños, perfil o total final, Alex te responde por WhatsApp antes de cerrar.</li>
+              <li>Si dudas entre tamaños, perfil o total final, Alexa te responde por WhatsApp antes de cerrar.</li>
             </ul>
           </div>
         </aside>
@@ -176,7 +176,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
             <h2>Perfiles cercanos a esta eleccion.</h2>
           </div>
           <a href="#alex" className="ghost-link">
-            Pedir guia a Alex <Sparkles size={16} />
+            Pedir guia a Alexa <Sparkles size={16} />
           </a>
         </div>
         <div className="product-grid">

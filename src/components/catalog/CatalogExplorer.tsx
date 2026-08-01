@@ -80,7 +80,7 @@ export function CatalogExplorer({ initialFilters }: CatalogExplorerProps) {
   }
 
   const catalogAssistUrl = buildWhatsappUrl(
-    "Hola Alex. Estoy viendo el catálogo de Empire Essence y quiero ayuda para encontrar una fragancia.",
+    "Hola Alexa. Estoy viendo el catálogo de Empire Essence y quiero ayuda para encontrar una fragancia.",
   );
 
   return (
@@ -201,7 +201,7 @@ export function CatalogExplorer({ initialFilters }: CatalogExplorerProps) {
           <span className="empty-kicker">Sin coincidencias exactas</span>
           <h3>No encontramos esa combinación.</h3>
           <p>
-            Quita un filtro o vuelve al catálogo completo. Si estás buscando algo específico, Alex puede orientarte por
+            Quita un filtro o vuelve al catálogo completo. Si estás buscando algo específico, Alexa puede orientarte por
             ocasión, estilo o precio inteligente.
           </p>
           <div className="empty-actions">

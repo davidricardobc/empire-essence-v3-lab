@@ -202,3 +202,13 @@ Cada ejecucion debe escoger un foco segun lo que aprenda de la anterior. Temas a
 - Validacion: `npm run lint` OK; `npm run typecheck` OK despues de respaldar la cache generada `.next/dev`; `npm run build` OK, 215 paginas generadas; Playwright mobile 393x852 confirmo `Prioridad para pauta`, ausencia del lenguaje anterior, e Invictus/Invictus Legend/Black XS en las primeras cards priorizadas.
 - Commit: `3cdfda2 fix: ajustar lenguaje y prioridad de pauta`.
 - Siguiente hipotesis: Afinar Alex para que cuando el cliente pregunte por una referencia priorizada cierre con una recomendacion corta, boton de pago y mensaje de confianza sin sonar insistente.
+
+### Job 14 - 2026-07-31 19:27
+- Foco: Cambiar Alex a Alexa y ajustar asesoria para compradores hombres.
+- Por que tome este camino: David confirmo que el 100% de ventas concretadas viene de hombres; la asesoria debe sonar mas llamativa, ayudar a decidir rapido y no mostrar lenguaje interno como pauta o prioridad comercial.
+- Que estudie: `AlexAdvisor`, textos visibles de home, catalogo, PDP, blog, header y flujos de WhatsApp.
+- Hallazgos: El nombre Alex seguia visible en varios puntos publicos; las opciones rapidas eran funcionales, pero poco emocionales para un comprador hombre. Tambien habia frases antiguas como `Fresco diario`, `Noche sensual` y `Regalo seguro` fuera del panel.
+- Cambios: Nombre publico `Alexa`; opciones rapidas nuevas: `Quiero oler impecable`, `Las mas deseadas`, `Para una mujer inolvidable`, `Fresco que se nota`, `Noche con presencia` y `Regalo que no falla`; mejor deteccion local de intenciones para el, para ella, cita, regalo, noche y pago; textos publicos de home/blog/catalogo/PDP alineados a Alexa.
+- Validacion: `npm run lint` OK; `npm run typecheck` OK; `npm run build` OK, 215 paginas generadas; Playwright mobile 393x852 confirmo panel visible, titulo `Alexa`, seis opciones nuevas y ausencia de las frases antiguas.
+- Commit: pendiente.
+- Siguiente hipotesis: Probar conversaciones reales de compradores hombres y ajustar las respuestas de Alexa por objeciones frecuentes: duracion, parecido, regalo para pareja, olor masculino de diario y cierre por Wompi.

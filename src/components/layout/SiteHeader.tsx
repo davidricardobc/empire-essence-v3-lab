@@ -43,7 +43,7 @@ export function SiteHeader() {
           ))}
           <a href="#alex" className="nav-chip">
             <Sparkles size={14} />
-            Asesor Alex
+            Asesora Alexa
           </a>
         </nav>
 
@@ -78,7 +78,7 @@ export function SiteHeader() {
           </Link>
         ))}
         <a href="#alex" onClick={() => setOpen(false)}>
-          Asesor Alex
+          Asesora Alexa
         </a>
       </div>
     </header>

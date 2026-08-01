@@ -114,7 +114,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                   <ArrowRight size={16} />
                 </Link>
                 <a
-                  href={buildWhatsappUrl(`Hola Alex. Lei "${post.title}" y quiero armar un pedido mayorista.`)}
+                  href={buildWhatsappUrl(`Hola Alexa. Lei "${post.title}" y quiero armar un pedido mayorista.`)}
                   className="secondary-button"
                   target="_blank"
                   rel="noreferrer"
@@ -131,7 +131,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
             <p>
               {isWholesale
                 ? "Puedes revisar precios mayoristas, armar un pedido mixto o pedir una recomendacion por WhatsApp."
-                : "Agrega una recomendacion al carrito o escribe por WhatsApp si quieres confirmarla con Alex."}
+                : "Agrega una recomendacion al carrito o escribe por WhatsApp si quieres confirmarla con Alexa."}
             </p>
             <div className="hero-actions">
               <Link href={isWholesale ? "/mayoristas" : "/catalogo"} className="primary-button">
@@ -139,7 +139,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                 <ArrowRight size={16} />
               </Link>
               <a
-                href={buildWhatsappUrl(`Hola Alex. Lei "${post.title}" y quiero comprar una fragancia.`)}
+                href={buildWhatsappUrl(`Hola Alexa. Lei "${post.title}" y quiero comprar una fragancia.`)}
                 className="secondary-button"
                 target="_blank"
                 rel="noreferrer"
@@ -184,7 +184,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
             })}
           </div>
           <a
-            href={buildWhatsappUrl(`Hola Alex. Quiero que me ayudes con las recomendaciones del articulo: ${post.title}.`)}
+            href={buildWhatsappUrl(`Hola Alexa. Quiero que me ayudes con las recomendaciones del articulo: ${post.title}.`)}
             className="ghost-button full"
             target="_blank"
             rel="noreferrer"
