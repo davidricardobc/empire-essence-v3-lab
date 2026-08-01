@@ -239,3 +239,12 @@ Cada ejecucion debe escoger un foco segun lo que aprenda de la anterior. Temas a
 - Cambios: El saludo ahora habla de `ordenar seguro`, el boton de tarjeta cambia de `Pagar` a `Ordenar`, y el cierre queda como `Elige Ordenar y seguimos al checkout seguro. WhatsApp queda listo si prefieres ayuda.`
 - Validacion: `grep` confirmo que `Toca Pagar`, `Toca pagar`, ` Pagar` y `pagar seguro` ya no aparecen en `src/components/advisor`, `src/components/catalog` ni `src/lib`; `npm run lint`, `npm run typecheck` y `npm run build` OK, 215 paginas generadas.
 - Siguiente hipotesis: Probar desde telefono si `Ordenar` se entiende mejor que `Finalizar pedido` o `Comprar` sin bajar la intencion de compra.
+
+### Job 18 - 2026-08-01 01:38
+- Foco: Persistencia del carrito al volver de Wompi y eleccion clara de 50/100 ml.
+- Por que tome este camino: David noto que al devolverse de Wompi el carrito no se mantenia y que no era facil elegir una presentacion de 50 ml o 100 ml, especialmente desde el flujo de Alexa.
+- Que estudie: `CartProvider`, `CheckoutClient`, `AddToCart`, `AlexAdvisor`, `ProductCard`, `wompi` y el flujo mobile de catalogo a checkout.
+- Hallazgos: El carrito dependia de un efecto para guardar en `localStorage`; en redirecciones rapidas podia no quedar escrito antes de salir. Alexa agregaba siempre la primera variante del producto, normalmente 30 ml, porque sus tarjetas no tenian selector de tamano propio.
+- Cambios: Nuevo helper `cart-storage` con escritura inmediata, lectura robusta y snapshot de checkout por 24 horas; `CheckoutClient` guarda respaldo antes de salir a Wompi y muestra `Recuperando carrito` mientras hidrata; Alexa ahora muestra selector 30/50/100 ml por recomendacion y `Ordenar` usa la variante elegida; compra compacta del catalogo muestra `Elige tamano` y el boton confirma `Agregar 50 ml` o `Agregar 100 ml`.
+- Validacion: `npm run lint` OK; `npm run typecheck` OK; `npm run build` OK, 215 paginas generadas. Prueba Chrome headless mobile 393x852: Alexa mostro botones `30 ml`, `50 ml`, `100 ml`; al elegir `100 ml` y agregar, `localStorage` guardo `sizeMl: 100`; checkout mostro 100 ml; al simular salida y regreso como desde Wompi, el resumen siguio con 100 ml y no mostro carrito vacio.
+- Siguiente hipotesis: Probar con David en telefono real una salida a Wompi y regreso con boton atras, porque algunos navegadores moviles manejan cache y pestañas de pago distinto.
