@@ -67,7 +67,10 @@ export function AlexAdvisor() {
     () => recommendFromText(userTranscript.join(" "), profile),
     [profile, userTranscript],
   );
-  const showRecommendations = !(profile.recipient === "gift" && !profile.category);
+  const pendingQuestion = useMemo(() => getNextQuestion(profile, askedQuestions), [askedQuestions, profile]);
+  const showRecommendations =
+    !(profile.recipient === "gift" && !profile.category) &&
+    !(profile.recipient === "self" && pendingQuestion === "category");
   const panelId = "alex-panel";
 
   function addRecommendation(product: Product) {
@@ -284,9 +287,8 @@ function recommendFromText(text: string, profile: AdvisorProfile = buildAdvisorP
         term.includes("hombre") ||
         term.includes("masculino") ||
         term.includes("masculina") ||
-        term.includes("para mi") ||
-        term.includes("impecable") ||
-        term.includes("oler")
+        term.includes("para hombre") ||
+        term.includes("para el")
       ) {
         score += product.category === "masculina" ? 26 : product.category === "unisex" ? 10 : 0;
       }
@@ -338,8 +340,7 @@ function buildAdvisorProfile(userTranscript: string[]): AdvisorProfile {
             text.includes("masculina") ||
             text.includes("hombre") ||
             text.includes("para el") ||
-            text.includes("para mi") ||
-            text.includes("impecable")
+            text.includes("para hombre")
           ? "masculina"
           : text.includes("femenina") ||
               text.includes("femenino") ||
@@ -411,6 +412,14 @@ function buildLocalReply({
     };
   }
 
+  if (profile.recipient === "self" && questionKey === "category") {
+    return {
+      content: "Claro. ¿La quieres masculina, femenina o unisex?",
+      questionKey,
+      forceLocal: false,
+    };
+  }
+
   const opening =
     profile.recipient === "gift"
       ? `Para regalo ${getCategoryCopy(profile.category)}, iría por ${picks}.`
@@ -431,8 +440,8 @@ function getNextQuestion(profile: AdvisorProfile, askedQuestions: AdvisorQuestio
   }
 
   if (!profile.recipient && !askedQuestions.includes("recipient")) return "recipient";
-  if (!profile.occasion && !askedQuestions.includes("occasion")) return "occasion";
   if (!profile.category && !askedQuestions.includes("category")) return "category";
+  if (!profile.occasion && !askedQuestions.includes("occasion")) return "occasion";
   return null;
 }
 
@@ -495,7 +504,6 @@ function wantsSecureCheckout(text: string) {
     term.includes("checkout") ||
     term.includes("comprar hoy") ||
     term.includes("comprar ya") ||
-    term.includes("quiero oler") ||
     term.includes("cerrar pedido")
   );
 }
