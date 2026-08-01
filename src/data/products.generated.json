@@ -85,14 +85,17 @@
     "sillage": "Fresco con presencia",
     "notes": {
       "top": [
-        "bergamota",
+        "bergamota de Calabria",
         "pimienta"
       ],
       "heart": [
+        "pimienta de Sichuan",
         "lavanda",
+        "pimienta rosa",
         "vetiver",
         "pachuli",
-        "geranio"
+        "geranio",
+        "elemi"
       ],
       "base": [
         "ambroxan",
@@ -700,19 +703,28 @@
       "top": [
         "almendra",
         "cafe",
-        "bergamota"
+        "bergamota",
+        "limon"
       ],
       "heart": [
         "tuberosa",
-        "jazmin",
-        "rosa",
-        "iris"
+        "jazmin sambac",
+        "flor de naranjo",
+        "iris",
+        "rosa bulgara"
       ],
       "base": [
         "haba tonka",
         "cacao",
         "vainilla",
-        "sandalo"
+        "praline",
+        "sandalo",
+        "ambar",
+        "almizcle",
+        "madera de cachemira",
+        "pachuli",
+        "canela",
+        "cedro"
       ]
     },
     "families": [
@@ -771,12 +783,12 @@
         "pimienta rosa"
       ],
       "heart": [
-        "durazno",
+        "flor de durazno",
         "rosa"
       ],
       "base": [
         "almizcle blanco",
-        "maderas suaves"
+        "notas amaderadas"
       ]
     },
     "families": [
@@ -791,7 +803,7 @@
     ],
     "occasions": [
       "brunch",
-      "diario",
+      "fiesta",
       "salidas"
     ],
     "variants": [
@@ -1045,11 +1057,13 @@
       "heart": [
         "cafe",
         "jazmin",
-        "almendra amarga"
+        "almendra amarga",
+        "regaliz"
       ],
       "base": [
         "vainilla",
         "pachuli",
+        "madera de cachemira",
         "cedro"
       ]
     },
@@ -1391,9 +1405,7 @@
       ],
       "base": [
         "resina de abeto",
-        "cedro",
-        "azucar",
-        "ambroxan"
+        "cedro"
       ]
     },
     "families": [
@@ -1516,15 +1528,15 @@
     "notes": {
       "top": [
         "naranja siciliana",
-        "bergamota",
-        "limon"
+        "bergamota de Calabria",
+        "limon siciliano"
       ],
       "heart": [
-        "frutas jugosas"
+        "frutas mediterraneas"
       ],
       "base": [
         "almizcle blanco",
-        "vainilla",
+        "vainilla de Madagascar",
         "ambar"
       ]
     },
@@ -1712,18 +1724,20 @@
     "sillage": "Potente y lujosa",
     "notes": {
       "top": [
-        "azafran",
-        "bergamota"
+        "bergamota",
+        "azafran"
       ],
       "heart": [
         "oud",
         "rosa bulgara"
       ],
       "base": [
-        "haba tonka",
-        "azucar",
         "ambar",
-        "almizcle"
+        "musgo de roble",
+        "haba tonka",
+        "cuero",
+        "azucar morena",
+        "almizcle blanco"
       ]
     },
     "families": [
@@ -3104,7 +3118,7 @@
     "inspirationReference": "Paco Rabanne Black XS",
     "category": "masculina",
     "collection": "firma",
-    "shortDescription": "citric, oriental, con presencia fuerte.",
+    "shortDescription": "Citrica, especiada y dulce con fondo oscuro.",
     "longDescription": "Provocador y nocturno con especias ardientes y almendra dulce. Inspirado en Paco Rabanne Black XS para clientes que quieren una referencia clara y facil de recomendar.",
     "bestFor": "Clientes que buscan una fragancia masculina ideal para noche, citas, eventos.",
     "concentration": "60% esencia",
@@ -3113,23 +3127,27 @@
     "sillage": "Profunda y envolvente",
     "notes": {
       "top": [
-        "limon verde",
-        "naranja de Tarocco"
+        "limon",
+        "salvia",
+        "calendula",
+        "citricos"
       ],
       "heart": [
+        "praline",
         "canela",
-        "notas especiadas",
-        "almendra"
+        "balsamo de Tolu",
+        "cardamomo negro"
       ],
       "base": [
-        "notas amaderadas",
-        "praline",
-        "ambar"
+        "pachuli",
+        "ambar negro",
+        "palisandro",
+        "ebano"
       ]
     },
     "families": [
       "citric",
-      "oriental",
+      "especiada",
       "amaderada"
     ],
     "moods": [
@@ -3237,9 +3255,9 @@
     "inspirationReference": "Paco Rabanne Invictus Legend",
     "category": "masculina",
     "collection": "firma",
-    "shortDescription": "amaderada, citric, con presencia fuerte.",
+    "shortDescription": "Acuatica, citrica y amaderada con energia de noche fresca.",
     "longDescription": "Poderoso como el oceano con maderas salinas y ambar marino. Inspirado en Paco Rabanne Invictus Legend para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia masculina ideal para noche, citas, eventos.",
+    "bestFor": "Clientes que buscan una fragancia masculina vibrante para fiesta, salidas y eventos.",
     "concentration": "60% esencia",
     "duration": "8 a 10 horas",
     "intensity": "alta",
@@ -3247,32 +3265,32 @@
     "notes": {
       "top": [
         "notas marinas",
-        "pomelo",
-        "madera de deriva"
+        "sal marina",
+        "pomelo"
       ],
       "heart": [
         "hoja de laurel",
-        "geranio"
+        "geranio",
+        "especias"
       ],
       "base": [
-        "ambar gris",
-        "musgo",
-        "sandalo"
+        "ambar rojo",
+        "guayaco"
       ]
     },
     "families": [
-      "amaderada",
+      "acuatica",
       "citric",
-      "oriental"
+      "amaderada"
     ],
     "moods": [
-      "seguridad",
-      "estilo",
+      "energia",
+      "fiesta",
       "presencia"
     ],
     "occasions": [
-      "noche",
-      "citas",
+      "fiesta",
+      "salidas",
       "eventos"
     ],
     "variants": [
@@ -8018,11 +8036,14 @@
       "heart": [
         "miel",
         "gardenia",
-        "jazmin"
+        "flor de naranjo",
+        "jazmin",
+        "durazno"
       ],
       "base": [
-        "pachuli",
+        "cera de abeja",
         "caramelo",
+        "pachuli",
         "regaliz"
       ]
     },
@@ -10680,44 +10701,43 @@
     "inspirationReference": "Paris Hilton Can Can",
     "category": "femenina",
     "collection": "firma",
-    "shortDescription": "oriental, almizclada, con presencia fuerte.",
-    "longDescription": "Vibrante y festivo como una celebracion que nunca termina. Inspirado en Paris Hilton Can Can para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia femenina ideal para noche, citas, eventos.",
+    "shortDescription": "Floral frutal, chispeante y coqueta para salir.",
+    "longDescription": "Fiesta abre con nectarina, grosella negra y clementina. Inspirado en Paris Hilton Can Can, mantiene una vibra floral frutal coqueta con fondo de ambar, almizcle y maderas suaves.",
+    "bestFor": "Clientes que buscan una fragancia femenina alegre para fiesta, salidas y citas.",
     "concentration": "60% esencia",
-    "duration": "8 a 10 horas",
-    "intensity": "alta",
-    "sillage": "Profunda y envolvente",
+    "duration": "6 a 8 horas",
+    "intensity": "media",
+    "sillage": "Dulce, alegre y cercana",
     "notes": {
       "top": [
+        "nectarina",
         "grosella negra",
-        "clementina",
-        "nectarina"
+        "clementina"
       ],
       "heart": [
-        "naranja silvestre",
-        "lirio",
-        "orquidea"
+        "orquidea silvestre",
+        "flor de naranjo"
       ],
       "base": [
         "ambar",
-        "vainilla",
-        "almizcle"
+        "almizcle",
+        "notas amaderadas"
       ]
     },
     "families": [
-      "oriental",
-      "almizclada",
-      "floral"
+      "floral",
+      "frutal",
+      "almizclada"
     ],
     "moods": [
-      "elegancia",
-      "encanto",
-      "femineidad"
+      "coqueteo",
+      "alegria",
+      "fiesta"
     ],
     "occasions": [
-      "noche",
-      "citas",
-      "eventos"
+      "fiesta",
+      "salidas",
+      "citas"
     ],
     "variants": [
       {

@@ -2,12 +2,48 @@ import type { Product } from "@/types/product";
 
 type TokenGroup = string[];
 
+const citrusAliases = [
+  "citric",
+  "citrico",
+  "citrica",
+  "citricos",
+  "citricas",
+  "citrus",
+  "limon",
+  "lima",
+  "bergamota",
+  "pomelo",
+  "toronja",
+  "mandarina",
+  "naranja",
+  "clementina",
+  "yuzu",
+  "citron",
+  "neroli",
+  "petit grain",
+];
+
+const partyAliases = [
+  "fiesta",
+  "rumba",
+  "discoteca",
+  "party",
+  "celebracion",
+  "vip",
+  "champan",
+  "ron",
+  "vodka",
+  "ginebra",
+  "noche",
+  "eventos",
+];
+
 const aliases: Record<string, string[]> = {
-  citrico: ["citric", "citrico", "citrica", "citricos", "citricas", "citrus", "limon", "bergamota", "pomelo"],
-  citrica: ["citric", "citrico", "citrica", "citricos", "citricas", "citrus", "limon", "bergamota", "pomelo"],
-  citricos: ["citric", "citrico", "citrica", "citricos", "citricas", "citrus", "limon", "bergamota", "pomelo"],
-  citrus: ["citric", "citrico", "citrica", "citricos", "citricas", "citrus", "limon", "bergamota", "pomelo"],
-  fiesta: ["fiesta", "rumba", "discoteca", "party", "noche", "eventos"],
+  citrico: citrusAliases,
+  citrica: citrusAliases,
+  citricos: citrusAliases,
+  citrus: citrusAliases,
+  fiesta: partyAliases,
 };
 
 export function normalizeSearchText(value: string) {
