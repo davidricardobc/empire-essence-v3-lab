@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { Flame, MessageCircle, Plus, ShieldCheck, Truck } from "lucide-react";
+import { Flame, MessageCircle, Plus, ShieldCheck, Sparkles, Truck } from "lucide-react";
 import { useCart } from "@/components/cart/CartProvider";
 import { formatCop } from "@/lib/currency";
 import { getProductVisual } from "@/lib/product-visuals";
@@ -88,7 +88,9 @@ export function HomeQuickBuy({ products }: { products: Product[] }) {
       </div>
 
       <div className="quick-buy-alex">
-        <Image src="/assets/alex-advisor.png" alt="" width={52} height={52} />
+        <div className="quick-buy-alex-badge" aria-hidden="true">
+          <Sparkles size={20} />
+        </div>
         <div>
           <span>¿Necesitas ayuda para elegir?</span>
           <small>Alexa recomienda por ocasión, mood, estilo o regalo.</small>
