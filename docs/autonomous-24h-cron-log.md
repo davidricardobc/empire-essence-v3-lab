@@ -232,3 +232,10 @@ Cada ejecucion debe escoger un foco segun lo que aprenda de la anterior. Temas a
 - Validacion: `npm run lint` OK; `npm run typecheck` OK; `npm run build` OK, 215 paginas generadas; `localhost:3000/catalogo?fresh=job16` responde 200; el bundle compilado contiene la pregunta corta `Claro. ¿La quieres masculina, femenina o unisex?` y ya no contiene `quiero oler` como disparador de checkout.
 - Commit: `2ff917f fix: evitar genero asumido en Alexa`.
 - Siguiente hipotesis: Revisar si las opciones rapidas deben llevar microetiquetas publicas como `para mi`, `para regalo` o `para ella` sin alargar el panel mobile.
+
+### Job 17 - 2026-08-01 01:42
+- Foco: Suavizar el cierre de Alexa hacia checkout.
+- Por que tome este camino: David noto que `Toca Pagar` sonaba mandon y poco elegante para la experiencia de marca.
+- Cambios: El saludo ahora habla de `ordenar seguro`, el boton de tarjeta cambia de `Pagar` a `Ordenar`, y el cierre queda como `Elige Ordenar y seguimos al checkout seguro. WhatsApp queda listo si prefieres ayuda.`
+- Validacion: `grep` confirmo que `Toca Pagar`, `Toca pagar`, ` Pagar` y `pagar seguro` ya no aparecen en `src/components/advisor`, `src/components/catalog` ni `src/lib`; `npm run lint`, `npm run typecheck` y `npm run build` OK, 215 paginas generadas.
+- Siguiente hipotesis: Probar desde telefono si `Ordenar` se entiende mejor que `Finalizar pedido` o `Comprar` sin bajar la intencion de compra.

@@ -34,7 +34,7 @@ type LocalReply = {
 const starterMessages: ChatMessage[] = [
   {
     role: "assistant",
-    content: "Hola, soy Alexa. Te ayudo a elegir rápido: para ti, para regalo o para pagar seguro.",
+    content: "Hola, soy Alexa. Te ayudo a elegir rápido: para ti, para regalo o para ordenar seguro.",
   },
 ];
 
@@ -228,7 +228,7 @@ export function AlexAdvisor() {
                 </button>
                 <button type="button" onClick={() => goToSecureCheckout(product)}>
                   <CreditCard size={14} />
-                  Pagar
+                  Ordenar
                 </button>
               </div>
             </article>
@@ -374,7 +374,7 @@ function buildLocalReply({
   recommended: typeof products;
 }): LocalReply {
   const picks = recommended.slice(0, 2).map((product) => product.publicName).join(" o ");
-  const secureCloseCopy = "Toca Pagar y te llevo al checkout seguro; WhatsApp queda listo si prefieres ayuda.";
+  const secureCloseCopy = "Elige Ordenar y seguimos al checkout seguro. WhatsApp queda listo si prefieres ayuda.";
 
   if (mentionsPaymentStatus(text)) {
     return {
