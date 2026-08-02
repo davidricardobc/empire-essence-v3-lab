@@ -2,6 +2,8 @@
 
 Objetivo: mejorar busqueda, filtros y autoridad comercial del catalogo sin inventar notas.
 
+Cobertura actual: 43 referencias revisadas/verificadas de 192 productos del catalogo.
+
 ## Metodo
 
 - Prioridad 1: pagina oficial de la marca o casa perfumera.
@@ -53,6 +55,29 @@ Ademas de las notas, se agregaron aliases de busqueda para que terminos naturale
 | Orilla | Giorgio Armani Acqua di Gio | Corregido | La familia ahora es acuatica/fresca/citric; se amplio con lima, limon, naranja, notas marinas, calone, romero, flores acuaticas, almizcle blanco, musgo de roble y pachuli. |
 | Medianoche | Armaf Club de Nuit Intense Man | Corregido menor | Se agrego manzana y se cambio la familia a citric/frutal/amaderada para reflejar mejor salida frutal y fondo ahumado-amaderado. |
 
+## Lote 3 - femeninas populares y flankers
+
+Este lote cubre femeninas de alta recordacion y varios flankers que estaban mezclando piramides o familias visibles.
+
+| Producto | Inspiracion | Estado | Ajuste |
+|---|---|---|---|
+| Presencia | Dior J'adore | Corregido | Se completo la salida frutal/floral con mandarina, bergamota y ylang ylang; el corazon ahora incluye lirio de los valles, fresia, rosa de Damas, orquidea, violeta y ciruela; la base suma mora. |
+| Presencia | Carolina Herrera CH | Corregido menor | Se preciso limon de Amalfi, notas acuaticas, flor de naranjo africana, tintura de rosa, madera de cachemira, cedro de Virginia y ambar; la familia pasa a oriental/floral/amaderada. |
+| Capricho | Chanel Chance | Verificado con ajuste menor | La pina se conserva porque corresponde a Chance EDT; se agrego pachuli en salida y se mantuvo limon/jazmin/rosa con base de pachuli, almizcle, vetiver y vainilla. |
+| Claridad | Versace Bright Crystal | Corregido | La familia deja de ser oriental y queda floral/frutal/fresca; se precisan flor de loto, ambar vegetal y uso diario/oficina/regalo. |
+| Pasion | Cacharel Amor Amor | Corregido menor | Se agregaron casia, lirio y cedro de Virginia; familia ahora frutal/floral/dulce. |
+| Delizia | Juicy Couture Viva La Juicy | Corregido menor | Se quito frambuesa como salida principal y se agrego praline en base; familia ahora gourmand/floral/frutal. |
+| Aurora | Versace Bright Crystal Absolu | Corregido | Loto paso al corazon; salida queda granada/yuzu/notas acuaticas y base sin pachuli. |
+| Frescor | Chanel Chance Eau Fraiche | Corregido | Se reemplazo pomelo/limon verbena por limon/cedro/citron, corazon de jacinto de agua/pimienta rosa/jazmin y fondo con vetiver/teca/iris/ambar. |
+| Impacto | Victoria's Secret Bombshell | Corregido | Se reemplazo ciruela por maracuya, pomelo, pina, mandarina y fresa; corazon incluye orquidea de vainilla y bayas rojas; fondo queda almizcle/maderas/musgo de roble. |
+| Serenidad | Carolina Herrera CH L'Eau | Corregido | Se reemplazo la piramide previa por limon/naranja/fresia, rosa/violeta/jazmin/lirio de los valles y heliotropo/canela/sandalo. |
+| Virtud | Carolina Herrera Good Girl Legere | Corregido | La referencia estaba como Good Girl White; se alineo a Good Girl Legere por coincidencia de piramide y se completo ylang ylang, rosa bulgara, dulce de leche, praline, cachemira y maderas. |
+| Soberana | Carolina Herrera Good Girl Supreme | Corregido | Se retiro bergamota/ylang/vainilla/pachuli; queda frutos del bosque y jazmin egipcio, haba tonka/tuberosa y vetiver. |
+| Bondad | Carolina Herrera Very Good Girl | Corregido | Se simplifico a lichi/grosella roja, rosa y fondo de vainilla bourbon/vetiver. |
+| Diosa | Rabanne Olympea | Corregido | Se retiro grosella negra/pera; salida ahora jazmin de agua, mandarina verde y flor de jengibre; corazon vainilla/sal; fondo cachemira/ambar gris/sandalo. |
+| Destino | Chanel Chance EDP | Corregido | Tenia notas de otro flanker; queda pimienta rosa, jazmin/iris y pachuli/almizcle/vainilla. |
+| Elegancia | Chanel Coco Mademoiselle | Corregido | Se retiro lichi/pomelo, se agregaron flor de naranjo, ylang ylang y opoponax; familia ahora citric/floral/oriental. |
+
 ## Fuentes usadas en el lote 1
 
 - Creed Aventus: https://www.creedfragrances.co.uk/products/aventus y https://www.fragrantica.com/perfume/Creed/Aventus-9828.html
@@ -86,8 +111,27 @@ Ademas de las notas, se agregaron aliases de busqueda para que terminos naturale
 - Giorgio Armani Acqua di Gio: https://www.sephora.com/product/acqua-di-gio-pour-homme-P12430 y https://www.fragrantica.com/perfume/Giorgio-Armani/Acqua-di-Gio-410.html
 - Armaf Club de Nuit Intense Man: https://armaf.com/products/club-de-nuit-intense-for-man y https://www.fragrantica.com/perfume/Armaf/Club-de-Nuit-Intense-Man-34696.html
 
+## Fuentes usadas en el lote 3
+
+- Dior J'adore: https://www.dior.com/en_us/beauty/products/j%E2%80%99adore-eau-de-parfum-Y0998031.html y https://www.fragrantica.com/perfume/Dior/J-adore-210.html
+- Carolina Herrera CH: https://www.fragrantica.com/perfume/Carolina-Herrera/CH-1734.html y https://basenotes.com/fragrances/ch-for-woman-by-carolina-herrera.26128593
+- Chanel Chance EDT: https://www.fragrantica.com/perfume/Chanel/Chance-Eau-de-Toilette-610.html
+- Chanel Chance EDP: https://www.chanel.com/us/fragrance/p/126520/chance-eau-de-parfum-spray/ y https://www.fragrantica.com/perfume/Chanel/Chance-Eau-de-Parfum-31351.html
+- Chanel Chance Eau Fraiche: https://www.chanel.com/us/fragrance/p/136420/chance-eau-fraiche-eau-de-toilette-spray/ y https://www.fragrantica.com/perfume/Chanel/Chance-Eau-Fraiche-1483.html
+- Versace Bright Crystal: https://www.versace.com/us/en/women/accessories/fragrances-body-care/bright-crystal/bright-crystal-edt-90-ml-pink/R510032-R090MLS_RNUL.html y https://www.fragrantica.com/perfume/Versace/Bright-Crystal-632.html
+- Versace Bright Crystal Absolu: https://www.fragrantica.com/perfume/Versace/Bright-Crystal-Absolu-21547.html y https://www.fragrantica.com/news/Versace-Bright-Crystal-Absolu-4773.html
+- Cacharel Amor Amor: https://www.fragrantica.com/perfume/Cacharel/Amor-Amor-238.html y https://niceonesa.com/en/cacharel-amor-amor-for-women-eau-de-toilette-n11601
+- Juicy Couture Viva La Juicy: https://www.fragrantica.com/perfume/Juicy-Couture/Viva-la-Juicy-4410.html y https://www.amazon.com/Juicy-Couture-Parfum-Spray-Perfume/dp/B0CT17J21G
+- Victoria's Secret Bombshell: https://www.victoriassecret.com/us/vs/beauty/fragrances-bombshell-shop y https://www.fragrantica.com/perfume/Victoria-s-Secret/Bombshell-10190.html
+- Carolina Herrera CH L'Eau: https://www.fragrantica.com/news/Carolina-Herrera-CH-L-Eau-2151.html
+- Carolina Herrera Good Girl Legere: https://www.fragrantica.com/perfume/Carolina-Herrera/Good-Girl-Legere-48103.html y https://www.carolinaherrera.com/ww/en/editorial/fragrances-good-girl
+- Carolina Herrera Good Girl Supreme: https://www.carolinaherrera.com/cl/en/p-fragrance/good-girl-supreme y https://www.fragrantica.com/perfume/Carolina-Herrera/Good-Girl-Supreme-61769.html
+- Carolina Herrera Very Good Girl: https://www.carolinaherrera.com/us/en/p-fragrance/very-good-girl y https://www.fragrantica.com/perfume/Carolina-Herrera/Very-Good-Girl-65560.html
+- Rabanne Olympea: https://www.rabanne.com/us/en_US/fragrance/p/olympea--000000000065187140 y https://www.fragrantica.com/perfume/Rabanne/Olympea-31666.html
+- Chanel Coco Mademoiselle: https://www.chanel.com/us/fragrance/p/116520/coco-mademoiselle-eau-de-parfum-spray/ y https://www.fragrantica.com/perfume/Chanel/Coco-Mademoiselle-611.html
+
 ## Siguientes lotes
 
-1. Femeninas populares restantes: J'adore, CH, Chance, Bright Crystal, Amor Amor, Viva La Juicy, Bombshell, Good Girl flankers, Olympea, Coco Mademoiselle.
-2. Nicho/unisex restantes: Oud Wood, Tobacco Vanille, Kirke, Al Haramain Amber Oud, Amber Oud Ruby.
+1. Nicho/unisex restantes: Oud Wood, Tobacco Vanille, Kirke, Al Haramain Amber Oud, Amber Oud Ruby.
+2. Masivas/frescas restantes: Chanel No. 5, Light Blue, CK One, Dolce & Gabbana Pour Femme, Hugo Boss Bottled, Lacoste Blanc.
 3. Limpieza final de familias visibles: separar familia dominante de notas buscables para que el filtro sea preciso sin esconder opciones buenas.

@@ -928,24 +928,32 @@
         "pera",
         "melon",
         "magnolia",
-        "durazno"
+        "durazno",
+        "mandarina",
+        "bergamota",
+        "ylang ylang"
       ],
       "heart": [
         "jazmin",
-        "lirio",
+        "lirio de los valles",
         "tuberosa",
-        "rosa"
+        "fresia",
+        "rosa de Damas",
+        "orquidea",
+        "violeta",
+        "ciruela"
       ],
       "base": [
         "almizcle",
         "vainilla",
-        "cedro"
+        "cedro",
+        "mora"
       ]
     },
     "families": [
       "floral",
-      "fresca",
-      "almizclada"
+      "frutal",
+      "fresca"
     ],
     "moods": [
       "elegancia",
@@ -997,24 +1005,28 @@
         "frutas tropicales",
         "bergamota",
         "pomelo",
-        "limon"
+        "limon de Amalfi",
+        "notas acuaticas"
       ],
       "heart": [
         "praline",
         "canela",
-        "flor de naranjo",
+        "flor de naranjo africana",
         "jazmin",
-        "rosa"
+        "tintura de rosa"
       ],
       "base": [
         "gamuza",
         "pachuli",
+        "madera de cachemira",
         "sandalo",
-        "almizcle"
+        "almizcle",
+        "cedro de Virginia",
+        "ambar"
       ]
     },
     "families": [
-      "citric",
+      "oriental",
       "floral",
       "amaderada"
     ],
@@ -1134,6 +1146,7 @@
     "sillage": "Equilibrada y agradable",
     "notes": {
       "top": [
+        "pachuli",
         "pimienta rosa",
         "pina",
         "jacinto",
@@ -1153,8 +1166,8 @@
     },
     "families": [
       "floral",
-      "citric",
-      "amaderada"
+      "amaderada",
+      "citric"
     ],
     "moods": [
       "elegancia",
@@ -1194,34 +1207,34 @@
     "inspirationReference": "Versace Bright Crystal",
     "category": "femenina",
     "collection": "firma",
-    "shortDescription": "oriental, almizclada, con presencia fuerte.",
+    "shortDescription": "Floral frutal, fresca, limpia y luminosa.",
     "longDescription": "Cristalina y luminosa con flores delicadas y granada fresca. Inspirado en Versace Bright Crystal para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia femenina ideal para noche, citas, eventos.",
+    "bestFor": "Clientes que buscan una fragancia femenina fresca para diario, oficina y regalos faciles.",
     "concentration": "60% esencia",
     "duration": "8 a 10 horas",
     "intensity": "alta",
     "sillage": "Profunda y envolvente",
     "notes": {
       "top": [
-        "granada",
         "yuzu",
-        "acorde helado"
+        "acorde helado",
+        "granada"
       ],
       "heart": [
         "peonia",
         "magnolia",
-        "loto"
+        "flor de loto"
       ],
       "base": [
-        "almizcle",
-        "ambar",
-        "caoba"
+        "caoba",
+        "ambar vegetal",
+        "almizcle"
       ]
     },
     "families": [
-      "oriental",
-      "almizclada",
-      "floral"
+      "floral",
+      "frutal",
+      "fresca"
     ],
     "moods": [
       "elegancia",
@@ -1229,9 +1242,9 @@
       "femineidad"
     ],
     "occasions": [
-      "noche",
-      "citas",
-      "eventos"
+      "diario",
+      "oficina",
+      "regalo"
     ],
     "variants": [
       {
@@ -1274,12 +1287,14 @@
         "naranja",
         "mandarina",
         "pomelo",
+        "casia",
         "bergamota"
       ],
       "heart": [
         "rosa",
         "albaricoque",
         "jazmin",
+        "lirio",
         "lirio de los valles"
       ],
       "base": [
@@ -1287,13 +1302,13 @@
         "haba tonka",
         "almizcle",
         "ambar",
-        "cedro"
+        "cedro de Virginia"
       ]
     },
     "families": [
-      "citric",
+      "frutal",
       "floral",
-      "amaderada"
+      "dulce"
     ],
     "moods": [
       "elegancia",
@@ -7877,9 +7892,8 @@
     "sillage": "Profunda y envolvente",
     "notes": {
       "top": [
-        "frambuesa",
-        "mandarina",
-        "bayas silvestres"
+        "bayas silvestres",
+        "mandarina"
       ],
       "heart": [
         "gardenia",
@@ -7888,15 +7902,16 @@
       ],
       "base": [
         "caramelo",
+        "praline",
         "vainilla",
-        "sandalo",
-        "ambar"
+        "ambar",
+        "sandalo"
       ]
     },
     "families": [
+      "gourmand",
       "floral",
-      "dulce",
-      "oriental"
+      "frutal"
     ],
     "moods": [
       "seduccion",
@@ -8152,24 +8167,24 @@
       "top": [
         "granada",
         "yuzu",
-        "loto"
+        "notas acuaticas"
       ],
       "heart": [
         "peonia",
-        "magnolia",
-        "frambuesa"
+        "frambuesa",
+        "flor de loto",
+        "magnolia"
       ],
       "base": [
         "almizcle",
-        "ambar",
         "caoba",
-        "pachuli"
+        "ambar"
       ]
     },
     "families": [
-      "oriental",
-      "almizclada",
-      "floral"
+      "floral",
+      "frutal",
+      "fresca"
     ],
     "moods": [
       "elegancia",
@@ -8209,35 +8224,37 @@
     "inspirationReference": "Chanel Chance Eau Fraiche",
     "category": "femenina",
     "collection": "firma",
-    "shortDescription": "amaderada, floral, con presencia fuerte.",
+    "shortDescription": "Floral fresca, citrica y amaderada.",
     "longDescription": "Ligero y cristalino como aire fresco de primavera. Inspirado en Chanel Chance Eau Fraiche para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia femenina ideal para noche, citas, eventos.",
+    "bestFor": "Clientes que buscan una femenina fresca, chispeante y elegante para diario o clima calido.",
     "concentration": "60% esencia",
     "duration": "8 a 10 horas",
     "intensity": "alta",
     "sillage": "Profunda y envolvente",
     "notes": {
       "top": [
-        "pomelo",
-        "limon verbena",
-        "cedro"
+        "limon",
+        "cedro",
+        "citron"
       ],
       "heart": [
-        "jacinto",
-        "jazmin",
-        "teca"
+        "jacinto de agua",
+        "pimienta rosa",
+        "jazmin"
       ],
       "base": [
         "almizcle blanco",
-        "ambar",
+        "pachuli",
+        "vetiver",
+        "teca",
         "iris",
-        "pachuli"
+        "ambar"
       ]
     },
     "families": [
-      "amaderada",
+      "fresca",
       "floral",
-      "oriental"
+      "amaderada"
     ],
     "moods": [
       "elegancia",
@@ -8245,9 +8262,9 @@
       "femineidad"
     ],
     "occasions": [
-      "noche",
-      "citas",
-      "eventos"
+      "diario",
+      "oficina",
+      "salidas"
     ],
     "variants": [
       {
@@ -8753,25 +8770,29 @@
     "sillage": "Equilibrada y agradable",
     "notes": {
       "top": [
-        "ciruela purpura",
         "maracuya",
-        "pomelo"
+        "pomelo",
+        "pina",
+        "mandarina",
+        "fresa"
       ],
       "heart": [
         "peonia",
-        "jazmin sambac",
-        "orquidea"
+        "orquidea de vainilla",
+        "bayas rojas",
+        "jazmin",
+        "lirio de los valles"
       ],
       "base": [
-        "vainilla de Madagascar",
+        "almizcle",
         "notas amaderadas",
-        "almizcle"
+        "musgo de roble"
       ]
     },
     "families": [
       "floral",
-      "dulce",
-      "almizclada"
+      "frutal",
+      "fresca"
     ],
     "moods": [
       "elegancia",
@@ -9089,25 +9110,26 @@
     "sillage": "Equilibrada y agradable",
     "notes": {
       "top": [
+        "limon",
         "naranja",
-        "neroli",
-        "bergamota"
+        "fresia"
       ],
       "heart": [
+        "rosa",
+        "violeta",
         "jazmin",
-        "ciruela",
-        "notas acuaticas"
+        "lirio de los valles"
       ],
       "base": [
-        "almizcle blanco",
-        "cedro",
+        "heliotropo",
+        "canela",
         "sandalo"
       ]
     },
     "families": [
-      "amaderada",
-      "citric",
-      "fresca"
+      "floral",
+      "fresca",
+      "citric"
     ],
     "moods": [
       "energia",
@@ -9211,11 +9233,11 @@
     "id": "p-virtud",
     "slug": "virtud",
     "publicName": "Virtud",
-    "inspirationReference": "Carolina Herrera Good Girl White",
+    "inspirationReference": "Carolina Herrera Good Girl Legere",
     "category": "femenina",
     "collection": "firma",
     "shortDescription": "floral, citric, con presencia fuerte.",
-    "longDescription": "Pura y luminosa como la version mas noble de la feminidad. Inspirado en Carolina Herrera Good Girl White para clientes que quieren una referencia clara y facil de recomendar.",
+    "longDescription": "Pura y luminosa como una version mas ligera de la feminidad Good Girl. Inspirado en Carolina Herrera Good Girl Legere para clientes que quieren una referencia clara y facil de recomendar.",
     "bestFor": "Clientes que buscan una fragancia femenina ideal para noche, citas, eventos.",
     "concentration": "60% esencia",
     "duration": "8 a 10 horas",
@@ -9223,25 +9245,34 @@
     "sillage": "Marcada y memorable",
     "notes": {
       "top": [
-        "almendra",
-        "limon siciliano",
-        "mandarina"
+        "ylang ylang",
+        "mandarina",
+        "bergamota",
+        "limon"
       ],
       "heart": [
-        "jazmin sambac",
         "tuberosa",
-        "flor de naranjo"
+        "jazmin",
+        "flor de naranjo",
+        "rosa bulgara"
       ],
       "base": [
+        "dulce de leche",
+        "praline",
         "haba tonka",
-        "vainilla blanca",
-        "sandalo"
+        "madera de cachemira",
+        "canela",
+        "sandalo",
+        "almizcle",
+        "ambar",
+        "pachuli",
+        "cedro"
       ]
     },
     "families": [
       "floral",
-      "citric",
-      "gourmand"
+      "gourmand",
+      "dulce"
     ],
     "moods": [
       "elegancia",
@@ -9557,24 +9588,21 @@
     "sillage": "Marcada y memorable",
     "notes": {
       "top": [
-        "frutos rojos",
-        "bergamota"
+        "frutos del bosque",
+        "jazmin egipcio"
       ],
       "heart": [
-        "tuberosa",
-        "jazmin egipcio",
-        "ylang ylang"
+        "haba tonka",
+        "tuberosa"
       ],
       "base": [
-        "haba tonka",
-        "vainilla",
-        "pachuli"
+        "vetiver"
       ]
     },
     "families": [
+      "gourmand",
       "floral",
-      "citric",
-      "dulce"
+      "oriental"
     ],
     "moods": [
       "seduccion",
@@ -9624,22 +9652,19 @@
     "notes": {
       "top": [
         "lichi",
-        "grosellas rojas"
+        "grosella roja"
       ],
       "heart": [
-        "rosa de mayo",
-        "jazmin",
-        "lirio"
+        "rosa"
       ],
       "base": [
-        "vainilla",
-        "haba tonka",
-        "notas amaderadas"
+        "vainilla bourbon",
+        "vetiver"
       ]
     },
     "families": [
+      "frutal",
       "floral",
-      "dulce",
       "amaderada"
     ],
     "moods": [
@@ -9757,25 +9782,23 @@
     "sillage": "Profunda y envolvente",
     "notes": {
       "top": [
+        "jazmin de agua",
         "mandarina verde",
-        "grosellas negras",
-        "pera"
+        "flor de jengibre"
       ],
       "heart": [
-        "jazmin de agua",
-        "jengibre",
-        "flor de sal"
+        "vainilla",
+        "sal"
       ],
       "base": [
-        "vainilla",
-        "cachemira",
-        "sandalo",
-        "ambar"
+        "madera de cachemira",
+        "ambar gris",
+        "sandalo"
       ]
     },
     "families": [
       "oriental",
-      "amaderada",
+      "floral",
       "dulce"
     ],
     "moods": [
@@ -11839,25 +11862,22 @@
     "sillage": "Equilibrada y agradable",
     "notes": {
       "top": [
-        "pomelo",
-        "membrillo"
+        "pimienta rosa"
       ],
       "heart": [
-        "jazmin absoluto",
-        "jacinto",
+        "jazmin",
         "iris"
       ],
       "base": [
-        "almizcle blanco",
         "pachuli",
-        "vainilla",
-        "vetiver"
+        "almizcle",
+        "vainilla"
       ]
     },
     "families": [
       "floral",
-      "amaderada",
-      "citric"
+      "almizclada",
+      "oriental"
     ],
     "moods": [
       "elegancia",
@@ -11979,28 +11999,29 @@
     "notes": {
       "top": [
         "naranja",
-        "bergamota",
         "mandarina",
-        "pomelo"
+        "bergamota",
+        "flor de naranjo"
       ],
       "heart": [
-        "lichi",
         "rosa turca",
         "jazmin",
-        "mimosa"
+        "mimosa",
+        "ylang ylang"
       ],
       "base": [
-        "haba tonka",
-        "vainilla",
+        "pachuli",
         "almizcle blanco",
+        "vainilla",
         "vetiver",
-        "pachuli"
+        "haba tonka",
+        "opoponax"
       ]
     },
     "families": [
       "citric",
       "floral",
-      "fresca"
+      "oriental"
     ],
     "moods": [
       "energia",
