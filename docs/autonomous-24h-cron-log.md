@@ -297,3 +297,13 @@ Cada ejecucion debe escoger un foco segun lo que aprenda de la anterior. Temas a
 - Validacion: `npm run lint` OK; `npm run typecheck` OK; `git diff --check` OK; `npm run build` OK, 215 paginas generadas. `localhost:3000/catalogo?q=citrico%20fiesta` y `/producto/fiesta` responden 200. Prueba local confirmo que `Fiesta` aparece en `citrico fiesta` y ya no conserva `naranja silvestre`.
 - Commit: `cddf3e1 content: Curar notas olfativas prioritarias`.
 - Siguiente hipotesis: Continuar con lote 2 de masculinas de alta rotacion: Bleu de Chanel, Le Male, 212 VIP Men, Bad Boy, Fahrenheit, 212 Men, Pure XS, CH Men, Acqua di Gio y Club de Nuit.
+
+### Job 24 - 2026-08-02 16:00
+- Foco: Continuar curaduria perfume por perfume con masculinas de alta rotacion.
+- Por que tome este camino: El Job 23 dejo como siguiente hipotesis el lote 2 masculino; es una mejora directa para busqueda, filtros y autoridad comercial sin tocar visuales ni deploy.
+- Que estudie: `products.generated.json`, `docs/perfume-notes-curation.md`, fichas actuales de Equilibrio, Nostalgia, Euforia, Rebeldia, Arraigo, Metropoli, Desenfreno, Linaje, Orilla y Medianoche; fuentes oficiales de Chanel, Jean Paul Gaultier, Carolina Herrera, Dior y Armaf, mas Fragrantica/retailers cuando hacia falta una piramide completa.
+- Hallazgos: Varias fichas ya estaban cerca, pero habia errores que afectaban busqueda y criterio olfativo: Bleu de Chanel incluia pina, 212 Men tenia notas acuaticas que no corresponden al original, CH Men mezclaba salvia/artemisa en vez del perfil hierba/cuero/azucar, Acqua di Gio no estaba marcado como acuatica/citric y Club de Nuit Intense no tenia manzana ni familia frutal/amaderada. Al validar, tambien aparecio que busquedas naturales como `cuero hombre` fallaban porque `hombre` no apuntaba a `masculina`.
+- Cambios: Se corrigio el lote 2 en `products.generated.json`, se agregaron aliases de busqueda para genero, frescura y perfil acuatico en `product-search.ts`, y se amplio `docs/perfume-notes-curation.md` con tabla de cambios, fuentes y siguientes lotes.
+- Validacion: `npm run lint` OK; `npm run typecheck` OK; `git diff --check` OK; `npm run build` OK, 215 paginas generadas. `curl` confirmo 200 en `/producto/equilibrio`, `/producto/metropoli`, `/producto/orilla`, `/producto/medianoche` y busquedas `acuatica hombre`, `cuero hombre`, `fresco diario`, `regalo esposa`. Playwright mobile 393x852 confirmo resultados no vacios y fichas esperadas: Orilla, Arraigo, Equilibrio y Plenitud.
+- Commit: `529fcb1 content: Curar notas masculinas de alta rotacion`.
+- Siguiente hipotesis: Continuar con femeninas populares restantes: J'adore, CH, Chance, Bright Crystal, Amor Amor, Viva La Juicy, Bombshell, Good Girl flankers, Olympea y Coco Mademoiselle.
