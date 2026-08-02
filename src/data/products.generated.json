@@ -2280,9 +2280,9 @@
     "inspirationReference": "Hugo Boss Bottled",
     "category": "masculina",
     "collection": "diario",
-    "shortDescription": "amaderada, citric, equilibrada y facil de llevar.",
-    "longDescription": "Clasico y atemporal que deja una huella imborrable de elegancia. Inspirado en Hugo Boss Bottled para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia masculina ideal para diario, salidas, citas.",
+    "shortDescription": "Amaderada, especiada y elegante con manzana y vainilla.",
+    "longDescription": "Legado abre con manzana, ciruela, bergamota y limon; el corazon especiado de canela y caoba descansa sobre vainilla, sandalo, cedro y vetiver. Inspirado en Hugo Boss Bottled para clientes que quieren una referencia clara y facil de recomendar.",
+    "bestFor": "Clientes que buscan una masculina clasica, pulida y versatil para oficina, diario y citas.",
     "concentration": "60% esencia",
     "duration": "6 a 8 horas",
     "intensity": "media",
@@ -2293,35 +2293,35 @@
         "ciruela",
         "bergamota",
         "limon",
-        "hojas de roble"
+        "musgo de roble",
+        "geranio"
       ],
       "heart": [
         "canela",
-        "clavo",
-        "geranio",
+        "caoba",
         "clavel"
       ],
       "base": [
+        "vainilla",
         "sandalo",
         "cedro",
         "vetiver",
-        "vainilla",
-        "musgo de roble"
+        "olivo"
       ]
     },
     "families": [
       "amaderada",
-      "citric",
+      "especiada",
       "dulce"
     ],
     "moods": [
+      "elegancia",
       "seguridad",
-      "estilo",
-      "presencia"
+      "versatil"
     ],
     "occasions": [
       "diario",
-      "salidas",
+      "oficina",
       "citas"
     ],
     "variants": [
@@ -2618,9 +2618,9 @@
     "inspirationReference": "Jean Paul Gaultier Ultra Male",
     "category": "masculina",
     "collection": "firma",
-    "shortDescription": "amaderada, oriental, con presencia fuerte.",
-    "longDescription": "Hipnotico y dulce con lavanda y vainilla que no dejan escapar. Inspirado en Jean Paul Gaultier Ultra Male para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia masculina ideal para noche, citas, eventos.",
+    "shortDescription": "Dulce, aromatica y potente con pera, lavanda y vainilla negra.",
+    "longDescription": "Tentacion sube la intensidad de pera, lavanda, menta y bergamota con especias y una base de vainilla negra, ambar, pachuli y cedro. Inspirado en Jean Paul Gaultier Ultra Male para clientes que quieren una referencia clara y facil de recomendar.",
+    "bestFor": "Clientes que quieren una masculina dulce, intensa y nocturna para fiesta, citas y salidas.",
     "concentration": "60% esencia",
     "duration": "8 a 10 horas",
     "intensity": "alta",
@@ -2628,35 +2628,37 @@
     "notes": {
       "top": [
         "pera",
-        "bergamota",
         "lavanda",
-        "menta"
+        "menta",
+        "bergamota",
+        "limon"
       ],
       "heart": [
         "canela",
         "salvia esclarea",
-        "flor de naranjo"
+        "alcaravea"
       ],
       "base": [
-        "vainilla",
+        "vainilla negra",
         "ambar",
+        "pachuli",
         "cedro"
       ]
     },
     "families": [
-      "amaderada",
+      "dulce",
       "oriental",
       "fresca"
     ],
     "moods": [
-      "energia",
-      "versatil",
-      "confianza"
+      "seduccion",
+      "fiesta",
+      "energia"
     ],
     "occasions": [
       "noche",
-      "citas",
-      "eventos"
+      "fiesta",
+      "citas"
     ],
     "variants": [
       {
@@ -5114,44 +5116,40 @@
     "inspirationReference": "Hugo Boss Man",
     "category": "masculina",
     "collection": "firma",
-    "shortDescription": "amaderada, oriental, con presencia fuerte.",
-    "longDescription": "Firme y decidido con maderas nobles y un caracter inquebrantable. Inspirado en Hugo Boss Man para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia masculina ideal para noche, citas, eventos.",
+    "shortDescription": "Verde, fresca y amaderada con manzana limpia.",
+    "longDescription": "Firmeza gira alrededor de manzana verde, lavanda y un fondo de pino, maderas y balsamo de abeto. Inspirado en Hugo Boss Man para clientes que quieren una referencia clara y facil de recomendar.",
+    "bestFor": "Clientes que quieren una masculina fresca, verde y facil para diario, oficina y planes casuales.",
     "concentration": "60% esencia",
-    "duration": "8 a 10 horas",
-    "intensity": "alta",
-    "sillage": "Profunda y envolvente",
+    "duration": "5 a 7 horas",
+    "intensity": "media",
+    "sillage": "Fresca y natural",
     "notes": {
       "top": [
-        "manzana verde",
-        "bergamota",
-        "hojas de cassis"
+        "manzana verde"
       ],
       "heart": [
-        "clavel",
-        "cedro",
-        "geranio"
+        "lavanda"
       ],
       "base": [
-        "sandalo",
-        "vetiver",
-        "ambar"
+        "pino",
+        "notas amaderadas",
+        "balsamo de abeto"
       ]
     },
     "families": [
+      "fresca",
       "amaderada",
-      "oriental",
       "citric"
     ],
     "moods": [
-      "seguridad",
-      "estilo",
-      "presencia"
+      "energia",
+      "libertad",
+      "limpieza"
     ],
     "occasions": [
-      "noche",
-      "citas",
-      "eventos"
+      "diario",
+      "oficina",
+      "salidas"
     ],
     "variants": [
       {
@@ -5248,44 +5246,45 @@
     "inspirationReference": "Hugo Boss Red",
     "category": "masculina",
     "collection": "firma",
-    "shortDescription": "citric, oriental, con presencia fuerte.",
-    "longDescription": "Energia de arranque con especias vivas y maderas dinamicas. Inspirado en Hugo Boss Red para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia masculina ideal para noche, citas, eventos.",
+    "shortDescription": "Especiada, citrica y metalica con energia moderna.",
+    "longDescription": "Arranque mezcla pomelo, pimienta rosa y galbano con un efecto metalico, luego ruibarbo, pina y cedro sobre ambar y tonka. Inspirado en Hugo Boss Red para clientes que quieren una referencia clara y facil de recomendar.",
+    "bestFor": "Clientes que buscan una masculina moderna, energetica y diferente para salidas y eventos casuales.",
     "concentration": "60% esencia",
-    "duration": "8 a 10 horas",
-    "intensity": "alta",
-    "sillage": "Profunda y envolvente",
+    "duration": "6 a 8 horas",
+    "intensity": "media",
+    "sillage": "Energetica y moderna",
     "notes": {
       "top": [
+        "notas metalicas",
         "pomelo",
-        "mandarina",
-        "notas especiadas"
+        "pimienta rosa",
+        "galbano"
       ],
       "heart": [
-        "canela",
         "ruibarbo",
-        "clavel"
+        "notas metalicas",
+        "pina",
+        "cedro"
       ],
       "base": [
-        "notas amaderadas",
         "ambar",
-        "vainilla"
+        "haba tonka"
       ]
     },
     "families": [
+      "especiada",
       "citric",
-      "oriental",
       "amaderada"
     ],
     "moods": [
-      "seguridad",
-      "estilo",
-      "presencia"
+      "energia",
+      "atrevimiento",
+      "moderno"
     ],
     "occasions": [
-      "noche",
-      "citas",
-      "eventos"
+      "salidas",
+      "eventos",
+      "diario"
     ],
     "variants": [
       {
@@ -6185,9 +6184,9 @@
     "inspirationReference": "Creed Silver Mountain",
     "category": "masculina",
     "collection": "diario",
-    "shortDescription": "amaderada, fresca, de lectura limpia.",
-    "longDescription": "Elevado y puro como el aire en la cima de la montana. Inspirado en Creed Silver Mountain para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia masculina ideal para diario, oficina, salidas.",
+    "shortDescription": "Fresca, citrica y almizclada con aire limpio de montana.",
+    "longDescription": "Cumbre abre con bergamota, grosella negra, galbano y naranja; despues aparece un perfil de te y aire ozonico sobre almizcle y sandalo. Inspirado en Creed Silver Mountain Water para clientes que quieren una referencia clara y facil de recomendar.",
+    "bestFor": "Clientes que buscan una masculina fresca, limpia y elegante para diario, oficina y clima templado.",
     "concentration": "60% esencia",
     "duration": "5 a 7 horas",
     "intensity": "suave",
@@ -6195,31 +6194,28 @@
     "notes": {
       "top": [
         "bergamota",
-        "mandarina",
-        "neroli",
-        "grosella negra"
+        "grosella negra",
+        "galbano",
+        "naranja"
       ],
       "heart": [
-        "hoja de violeta",
-        "flor de naranjo",
-        "sandalo",
-        "te verde"
+        "te verde",
+        "acorde ozonico"
       ],
       "base": [
         "almizcle",
-        "cedro",
-        "vetiver"
+        "sandalo"
       ]
     },
     "families": [
-      "amaderada",
       "fresca",
-      "citric"
+      "citric",
+      "almizclada"
     ],
     "moods": [
-      "energia",
-      "versatil",
-      "confianza"
+      "limpieza",
+      "elegancia",
+      "altura"
     ],
     "occasions": [
       "diario",
@@ -9512,44 +9508,49 @@
     "inspirationReference": "Carolina Herrera 212 NYC",
     "category": "femenina",
     "collection": "firma",
-    "shortDescription": "floral, oriental, con presencia fuerte.",
-    "longDescription": "Urbana y cosmopolita como una noche magica en Nueva York. Inspirado en Carolina Herrera 212 NYC para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia femenina ideal para noche, citas, eventos.",
+    "shortDescription": "Floral limpia, almizclada y urbana para uso diario.",
+    "longDescription": "Manhattan se siente limpia, luminosa y urbana: flores blancas, bergamota y almizcle suave con elegancia de Nueva York. Inspirado en Carolina Herrera 212 NYC para clientes que quieren una referencia clara y facil de recomendar.",
+    "bestFor": "Clientes que quieren una femenina fresca, pulida y facil de usar en oficina, diario y salidas casuales.",
     "concentration": "60% esencia",
-    "duration": "8 a 10 horas",
-    "intensity": "alta",
-    "sillage": "Profunda y envolvente",
+    "duration": "6 a 8 horas",
+    "intensity": "media",
+    "sillage": "Limpia y elegante",
     "notes": {
       "top": [
+        "flor de naranjo",
+        "flor de cactus",
         "bergamota",
-        "mandarina",
-        "gardenia"
+        "mandarina"
       ],
       "heart": [
-        "camelia",
+        "lirio",
+        "fresia",
+        "gardenia",
         "jazmin",
-        "sandalo"
+        "camelia blanca",
+        "lirio de los valles",
+        "rosa",
+        "peonia"
       ],
       "base": [
-        "almizcle blanco",
-        "notas amaderadas",
-        "ambar"
+        "almizcle",
+        "sandalo"
       ]
     },
     "families": [
       "floral",
-      "oriental",
-      "amaderada"
+      "almizclada",
+      "fresca"
     ],
     "moods": [
       "elegancia",
-      "encanto",
-      "femineidad"
+      "limpieza",
+      "ciudad"
     ],
     "occasions": [
-      "noche",
-      "citas",
-      "eventos"
+      "diario",
+      "oficina",
+      "salidas"
     ],
     "variants": [
       {
@@ -11449,44 +11450,45 @@
     "inspirationReference": "Dolce & Gabbana Light Blue",
     "category": "femenina",
     "collection": "firma",
-    "shortDescription": "amaderada, floral, con presencia fuerte.",
-    "longDescription": "Mediterranea y luminosa como un paseo por la costa siciliana. Inspirado en Dolce & Gabbana Light Blue para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia femenina ideal para noche, citas, eventos.",
+    "shortDescription": "Citrica, fresca y floral como verano mediterraneo.",
+    "longDescription": "Costa combina limon siciliano, manzana y cedro con un corazon limpio de bambu, jazmin y rosa blanca. Inspirado en Dolce & Gabbana Light Blue para clientes que quieren una referencia clara y facil de recomendar.",
+    "bestFor": "Clientes que quieren una femenina fresca para diario, clima calido, oficina y salidas de dia.",
     "concentration": "60% esencia",
-    "duration": "8 a 10 horas",
-    "intensity": "alta",
-    "sillage": "Profunda y envolvente",
+    "duration": "5 a 7 horas",
+    "intensity": "suave",
+    "sillage": "Fresca y cercana",
     "notes": {
       "top": [
+        "limon siciliano",
         "manzana Granny Smith",
-        "limon de Cefalu",
-        "cedro"
+        "cedro",
+        "campanilla"
       ],
       "heart": [
-        "jazmin",
         "bambu",
+        "jazmin",
         "rosa blanca"
       ],
       "base": [
         "cedro",
-        "ambar",
-        "almizcle blanco"
+        "almizcle",
+        "ambar"
       ]
     },
     "families": [
-      "amaderada",
-      "floral",
-      "oriental"
+      "fresca",
+      "citric",
+      "floral"
     ],
     "moods": [
-      "elegancia",
-      "encanto",
-      "femineidad"
+      "frescura",
+      "energia",
+      "verano"
     ],
     "occasions": [
-      "noche",
-      "citas",
-      "eventos"
+      "diario",
+      "oficina",
+      "clima calido"
     ],
     "variants": [
       {
@@ -12464,39 +12466,44 @@
     "inspirationReference": "Hugo Boss Deep Red",
     "category": "femenina",
     "collection": "firma",
-    "shortDescription": "amaderada, citric, con presencia fuerte.",
-    "longDescription": "Profunda e intensa con frutas oscuras y especias ardientes. Inspirado en Hugo Boss Deep Red para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia femenina ideal para noche, citas, eventos.",
+    "shortDescription": "Frutal oscura, floral y avainillada con presencia sensual.",
+    "longDescription": "Intensidad abre con citricos rojos y frutas oscuras, pasa por jengibre y flores, y baja a vainilla cremosa con maderas. Inspirado en Hugo Boss Deep Red para clientes que quieren una referencia clara y facil de recomendar.",
+    "bestFor": "Clientes que buscan una femenina nocturna, sensual y frutal sin sentirse demasiado dulce.",
     "concentration": "60% esencia",
     "duration": "8 a 10 horas",
     "intensity": "alta",
     "sillage": "Marcada y memorable",
     "notes": {
       "top": [
+        "naranja sanguina",
         "grosella negra",
         "clementina",
-        "naranja"
+        "mandarina",
+        "pera"
       ],
       "heart": [
         "jengibre",
-        "vainilla",
-        "fruta de la pasion"
+        "flor de jengibre",
+        "tuberosa",
+        "fresia",
+        "semilla de hibisco"
       ],
       "base": [
+        "vainilla",
         "sandalo",
         "almizcle",
-        "cedro"
+        "cedro de California"
       ]
     },
     "families": [
-      "amaderada",
-      "citric",
-      "almizclada"
+      "frutal",
+      "floral",
+      "oriental"
     ],
     "moods": [
+      "sensualidad",
       "seguridad",
-      "estilo",
-      "presencia"
+      "noche"
     ],
     "occasions": [
       "noche",
@@ -12985,6 +12992,277 @@
       {
         "sizeMl": 100,
         "sku": "EMPERATR-100",
+        "retailPriceCop": 70000
+      }
+    ],
+    "featured": false,
+    "topSeller": false,
+    "wholesaleEligible": true
+  },
+  {
+    "id": "p-nube",
+    "slug": "nube",
+    "publicName": "Nube",
+    "inspirationReference": "Ariana Grande Cloud",
+    "category": "femenina",
+    "collection": "top-ventas",
+    "shortDescription": "Gourmand cremosa, dulce y almizclada con coco suave.",
+    "longDescription": "Nube combina lavanda, pera y bergamota con crema batida, coco, praline y orquidea de vainilla sobre almizcle y maderas cremosas. Inspirado en Ariana Grande Cloud para clientes que quieren una referencia clara y facil de recomendar.",
+    "bestFor": "Clientes que buscan una femenina dulce, cremosa y moderna para diario, citas y regalo.",
+    "concentration": "60% esencia",
+    "duration": "7 a 9 horas",
+    "intensity": "media",
+    "sillage": "Dulce y envolvente",
+    "notes": {
+      "top": [
+        "lavanda",
+        "pera",
+        "bergamota"
+      ],
+      "heart": [
+        "crema batida",
+        "coco",
+        "praline",
+        "orquidea de vainilla"
+      ],
+      "base": [
+        "almizcle",
+        "notas amaderadas"
+      ]
+    },
+    "families": [
+      "gourmand",
+      "dulce",
+      "almizclada"
+    ],
+    "moods": [
+      "ternura",
+      "comodidad",
+      "moderna"
+    ],
+    "occasions": [
+      "diario",
+      "citas",
+      "regalo"
+    ],
+    "variants": [
+      {
+        "sizeMl": 30,
+        "sku": "NUBE-30",
+        "retailPriceCop": 30000
+      },
+      {
+        "sizeMl": 50,
+        "sku": "NUBE-50",
+        "retailPriceCop": 46000
+      },
+      {
+        "sizeMl": 100,
+        "sku": "NUBE-100",
+        "retailPriceCop": 70000
+      }
+    ],
+    "featured": false,
+    "topSeller": false,
+    "wholesaleEligible": true
+  },
+  {
+    "id": "p-burbuja",
+    "slug": "burbuja",
+    "publicName": "Burbuja",
+    "inspirationReference": "Moschino Toy 2 Bubble Gum",
+    "category": "femenina",
+    "collection": "top-ventas",
+    "shortDescription": "Frutal, floral y juguetona con acorde de chicle.",
+    "longDescription": "Burbuja abre con frutas confitadas, naranja amarga y limon; el corazon trae chicle, rosa bulgara, durazno, arandano, canela y jengibre. Inspirado en Moschino Toy 2 Bubble Gum para clientes que quieren una referencia clara y facil de recomendar.",
+    "bestFor": "Clientes que quieren una femenina alegre, juvenil y llamativa para regalo, salidas y uso casual.",
+    "concentration": "60% esencia",
+    "duration": "6 a 8 horas",
+    "intensity": "media",
+    "sillage": "Dulce y juguetona",
+    "notes": {
+      "top": [
+        "frutas confitadas",
+        "naranja amarga",
+        "limon"
+      ],
+      "heart": [
+        "chicle",
+        "rosa bulgara",
+        "durazno",
+        "arandano",
+        "flor de durazno",
+        "canela",
+        "jengibre"
+      ],
+      "base": [
+        "almizcle",
+        "ambroxan",
+        "cedro"
+      ]
+    },
+    "families": [
+      "frutal",
+      "floral",
+      "dulce"
+    ],
+    "moods": [
+      "alegria",
+      "juventud",
+      "diversion"
+    ],
+    "occasions": [
+      "regalo",
+      "salidas",
+      "diario"
+    ],
+    "variants": [
+      {
+        "sizeMl": 30,
+        "sku": "BURB-30",
+        "retailPriceCop": 30000
+      },
+      {
+        "sizeMl": 50,
+        "sku": "BURB-50",
+        "retailPriceCop": 46000
+      },
+      {
+        "sizeMl": 100,
+        "sku": "BURB-100",
+        "retailPriceCop": 70000
+      }
+    ],
+    "featured": false,
+    "topSeller": false,
+    "wholesaleEligible": true
+  },
+  {
+    "id": "p-pascal",
+    "slug": "pascal",
+    "publicName": "Pascal",
+    "inspirationReference": "Jean Pascal",
+    "category": "masculina",
+    "collection": "top-ventas",
+    "shortDescription": "Fougere aromatica, verde y especiada de corte clasico.",
+    "longDescription": "Pascal combina especias, pina, notas verdes y bergamota con lavanda, jazmin, musgo de roble, maderas, ambar y almizcle. Inspirado en Jean Pascal para clientes que quieren una referencia clara y facil de recomendar.",
+    "bestFor": "Clientes que buscan una masculina clasica, aromatica y limpia para diario, oficina y salidas.",
+    "concentration": "60% esencia",
+    "duration": "6 a 8 horas",
+    "intensity": "media",
+    "sillage": "Clasica y limpia",
+    "notes": {
+      "top": [
+        "especias",
+        "pina",
+        "notas verdes",
+        "bergamota"
+      ],
+      "heart": [
+        "jazmin",
+        "lavanda"
+      ],
+      "base": [
+        "musgo de roble",
+        "notas amaderadas",
+        "ambar",
+        "almizcle"
+      ]
+    },
+    "families": [
+      "fresca",
+      "especiada",
+      "amaderada"
+    ],
+    "moods": [
+      "tradicion",
+      "limpieza",
+      "seguridad"
+    ],
+    "occasions": [
+      "diario",
+      "oficina",
+      "salidas"
+    ],
+    "variants": [
+      {
+        "sizeMl": 30,
+        "sku": "PASC-30",
+        "retailPriceCop": 30000
+      },
+      {
+        "sizeMl": 50,
+        "sku": "PASC-50",
+        "retailPriceCop": 46000
+      },
+      {
+        "sizeMl": 100,
+        "sku": "PASC-100",
+        "retailPriceCop": 70000
+      }
+    ],
+    "featured": false,
+    "topSeller": false,
+    "wholesaleEligible": true
+  },
+  {
+    "id": "p-monarca",
+    "slug": "monarca",
+    "publicName": "Monarca",
+    "inspirationReference": "Bharara King",
+    "category": "masculina",
+    "collection": "top-ventas",
+    "shortDescription": "Citrica, frutal y dulce con vainilla limpia.",
+    "longDescription": "Monarca abre con naranja, bergamota y limon, se vuelve frutal en el corazon y termina en vainilla, almizcle blanco y ambar. Inspirado en Bharara King para clientes que quieren una referencia clara y facil de recomendar.",
+    "bestFor": "Clientes que buscan una masculina llamativa, dulce-citrica y facil de recomendar para diario, salidas y regalo.",
+    "concentration": "60% esencia",
+    "duration": "7 a 9 horas",
+    "intensity": "media",
+    "sillage": "Dulce y luminosa",
+    "notes": {
+      "top": [
+        "naranja",
+        "bergamota",
+        "limon"
+      ],
+      "heart": [
+        "notas frutales"
+      ],
+      "base": [
+        "vainilla",
+        "almizcle blanco",
+        "ambar"
+      ]
+    },
+    "families": [
+      "citric",
+      "frutal",
+      "dulce"
+    ],
+    "moods": [
+      "energia",
+      "alegria",
+      "presencia"
+    ],
+    "occasions": [
+      "diario",
+      "salidas",
+      "regalo"
+    ],
+    "variants": [
+      {
+        "sizeMl": 30,
+        "sku": "MONA-30",
+        "retailPriceCop": 30000
+      },
+      {
+        "sizeMl": 50,
+        "sku": "MONA-50",
+        "retailPriceCop": 46000
+      },
+      {
+        "sizeMl": 100,
+        "sku": "MONA-100",
         "retailPriceCop": 70000
       }
     ],
