@@ -59,6 +59,8 @@ Ademas de las notas, se agregaron aliases de busqueda para que terminos naturale
 
 Este lote cubre femeninas de alta recordacion y varios flankers que estaban mezclando piramides o familias visibles.
 
+Tambien se ajusto el buscador para que tokens cortos como `sal` no coincidan por accidente con palabras como `salidas`, y se agregaron aliases salinos: `salado`, `salada`, `salino` y `salina`.
+
 | Producto | Inspiracion | Estado | Ajuste |
 |---|---|---|---|
 | Presencia | Dior J'adore | Corregido | Se completo la salida frutal/floral con mandarina, bergamota y ylang ylang; el corazon ahora incluye lirio de los valles, fresia, rosa de Damas, orquidea, violeta y ciruela; la base suma mora. |

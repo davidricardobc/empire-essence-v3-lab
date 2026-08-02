@@ -81,6 +81,8 @@ const aquaticAliases = [
   "oceanica",
 ];
 
+const saltyAliases = ["sal", "salado", "salada", "salados", "saladas", "salino", "salina", "salinos", "salinas"];
+
 const aliases: Record<string, string[]> = {
   citrico: citrusAliases,
   citrica: citrusAliases,
@@ -126,6 +128,15 @@ const aliases: Record<string, string[]> = {
   marinas: aquaticAliases,
   oceanico: aquaticAliases,
   oceanica: aquaticAliases,
+  sal: saltyAliases,
+  salado: saltyAliases,
+  salada: saltyAliases,
+  salados: saltyAliases,
+  saladas: saltyAliases,
+  salino: saltyAliases,
+  salina: saltyAliases,
+  salinos: saltyAliases,
+  salinas: saltyAliases,
 };
 
 export function normalizeSearchText(value: string) {
@@ -161,6 +172,20 @@ export function buildProductSearchText(product: Product) {
   return `${normalized}${citrusAlias}`;
 }
 
+function buildProductSearchTokens(product: Product) {
+  return new Set(buildProductSearchText(product).split(/[^a-z0-9]+/).filter(Boolean));
+}
+
+function productContainsSearchToken(product: Product, token: string) {
+  const normalizedToken = normalizeSearchText(token);
+
+  if (normalizedToken.length <= 3) {
+    return buildProductSearchTokens(product).has(normalizedToken);
+  }
+
+  return buildProductSearchText(product).includes(normalizedToken);
+}
+
 export function getSearchTokenGroups(query: string): TokenGroup[] {
   return normalizeSearchText(query)
     .split(/[^a-z0-9]+/)
@@ -171,9 +196,8 @@ export function getSearchTokenGroups(query: string): TokenGroup[] {
 export function scoreProductSearch(product: Product, tokenGroups: TokenGroup[]) {
   if (!tokenGroups.length) return 1;
 
-  const haystack = buildProductSearchText(product);
   return tokenGroups.reduce((score, group) => {
-    const matchedAlias = group.find((token) => haystack.includes(token));
+    const matchedAlias = group.find((token) => productContainsSearchToken(product, token));
     return matchedAlias ? score + (matchedAlias === group[0] ? 2 : 1) : score;
   }, 0);
 }
@@ -181,6 +205,5 @@ export function scoreProductSearch(product: Product, tokenGroups: TokenGroup[]) 
 export function productMatchesAllSearchTerms(product: Product, tokenGroups: TokenGroup[]) {
   if (!tokenGroups.length) return true;
 
-  const haystack = buildProductSearchText(product);
-  return tokenGroups.every((group) => group.some((token) => haystack.includes(token)));
+  return tokenGroups.every((group) => group.some((token) => productContainsSearchToken(product, token)));
 }
