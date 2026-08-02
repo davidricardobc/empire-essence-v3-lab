@@ -48,7 +48,9 @@ export function searchProducts(query: string) {
   if (!tokenGroups.length) return products;
 
   const exactMatches = products.filter((product) => productMatchesAllSearchTerms(product, tokenGroups));
-  if (exactMatches.length) return exactMatches;
+  if (exactMatches.length) {
+    return exactMatches.sort((a, b) => scoreProductSearch(b, tokenGroups) - scoreProductSearch(a, tokenGroups));
+  }
 
   return products
     .map((product) => ({ product, score: scoreProductSearch(product, tokenGroups) }))

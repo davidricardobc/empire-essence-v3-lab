@@ -5,7 +5,7 @@ import type { ReactNode } from "react";
 import { Filter, MessageCircle, Search } from "lucide-react";
 import { allFamilies, allMoods, allOccasions, categoryLabels, products } from "@/data/products";
 import { ProductCard } from "@/components/catalog/ProductCard";
-import { sortByCommercialPriority } from "@/lib/commercial-priority";
+import { getCommercialPriorityScore, sortByCommercialPriority } from "@/lib/commercial-priority";
 import { getSearchTokenGroups, productMatchesAllSearchTerms, scoreProductSearch } from "@/lib/product-search";
 import { buildWhatsappUrl } from "@/lib/whatsapp";
 import type { Product } from "@/types/product";
@@ -48,9 +48,14 @@ export function CatalogExplorer({ initialFilters }: CatalogExplorerProps) {
       return true;
     };
 
-    const exactMatches = sortByCommercialPriority(
-      products.filter((product) => matchesActiveFilters(product) && productMatchesAllSearchTerms(product, tokenGroups)),
-    );
+    const exactMatches = products
+      .filter((product) => matchesActiveFilters(product) && productMatchesAllSearchTerms(product, tokenGroups))
+      .sort((a, b) => {
+        const searchDelta = scoreProductSearch(b, tokenGroups) - scoreProductSearch(a, tokenGroups);
+        if (searchDelta !== 0) return searchDelta;
+
+        return getCommercialPriorityScore(b) - getCommercialPriorityScore(a);
+      });
 
     if (exactMatches.length) {
       return {

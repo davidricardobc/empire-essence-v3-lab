@@ -139,6 +139,24 @@ const aliases: Record<string, string[]> = {
   salinas: saltyAliases,
 };
 
+const productSpecificAliases: Record<string, string[]> = {
+  "p-virtud": ["carolina herrera good girl blanca", "good girl blanca", "good girl white", "blanca"],
+  "p-manhattan": [
+    "caro herrera new york",
+    "carolina herrera new york",
+    "carolina herrera nueva york",
+    "212 new york",
+    "212 nyc",
+  ],
+  "p-intensidad": ["hugo bosss deep red", "hugo boss deep red", "boss deep red"],
+  "p-costa": ["light blue fem", "light blue femenina", "light blue mujer", "dolce gabbana light blue mujer"],
+  "p-cumbre": ["creed silver", "silver mountain water", "silver mountain"],
+  "p-nube": ["cloud", "ariana cloud", "ariana grande cloud"],
+  "p-burbuja": ["toy bubblegum", "toy bubble gum", "moschino toy bubblegum", "moschino toy 2"],
+  "p-pascal": ["jean pascal"],
+  "p-monarca": ["bharara king", "king bharara"],
+};
+
 export function normalizeSearchText(value: string) {
   return value
     .normalize("NFD")
@@ -165,6 +183,7 @@ export function buildProductSearchText(product: Product) {
     ...product.notes.top,
     ...product.notes.heart,
     ...product.notes.base,
+    ...(productSpecificAliases[product.id] ?? []),
   ].join(" ");
 
   const normalized = normalizeSearchText(rawText);
@@ -186,6 +205,22 @@ function productContainsSearchToken(product: Product, token: string) {
   return buildProductSearchText(product).includes(normalizedToken);
 }
 
+function scoreProductSpecificAlias(product: Product, tokenGroups: TokenGroup[]) {
+  const aliases = productSpecificAliases[product.id];
+  if (!aliases?.length || !tokenGroups.length) return 0;
+
+  const queryTokens = new Set(tokenGroups.map((group) => group[0]));
+  const matchesAlias = aliases.some((alias) => {
+    const aliasTokens = normalizeSearchText(alias)
+      .split(/[^a-z0-9]+/)
+      .filter(Boolean);
+
+    return aliasTokens.every((token) => queryTokens.has(token));
+  });
+
+  return matchesAlias ? 10 : 0;
+}
+
 export function getSearchTokenGroups(query: string): TokenGroup[] {
   return normalizeSearchText(query)
     .split(/[^a-z0-9]+/)
@@ -199,7 +234,7 @@ export function scoreProductSearch(product: Product, tokenGroups: TokenGroup[]) 
   return tokenGroups.reduce((score, group) => {
     const matchedAlias = group.find((token) => productContainsSearchToken(product, token));
     return matchedAlias ? score + (matchedAlias === group[0] ? 2 : 1) : score;
-  }, 0);
+  }, scoreProductSpecificAlias(product, tokenGroups));
 }
 
 export function productMatchesAllSearchTerms(product: Product, tokenGroups: TokenGroup[]) {
