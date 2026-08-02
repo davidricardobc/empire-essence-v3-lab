@@ -34,6 +34,25 @@ Este lote cubre fragancias destacadas para pauta/top ventas y el caso reportado 
 | Atrevimiento | Jean Paul Gaultier Scandal | Corregido | Se agregaron flor de naranjo, durazno y cera de abeja. |
 | Fiesta | Paris Hilton Can Can | Corregido | Se corrigio el error fuerte: corazon ahora es orquidea silvestre y flor de naranjo, no naranja silvestre/lirio. Familia queda floral/frutal/almizclada. |
 
+## Lote 2 - masculinas de alta rotacion
+
+Este lote cubre referencias masculinas conocidas que ayudan a que busqueda, filtros y fichas de producto respondan mejor a clientes que compran por estilo olfativo.
+
+Ademas de las notas, se agregaron aliases de busqueda para que terminos naturales como `hombre`, `mujer`, `esposa`, `fresco`, `marino` y `acuatico` apunten a las categorias/familias correctas.
+
+| Producto | Inspiracion | Estado | Ajuste |
+|---|---|---|---|
+| Equilibrio | Bleu de Chanel | Corregido | Se retiro pina y se alineo hacia citricos, menta, pimienta rosa, jengibre, nuez moscada, jazmin, incienso, cedro, sandalo, pachuli, ladano y vetiver. |
+| Nostalgia | Jean Paul Gaultier Le Male | Corregido menor | Se agrego artemisia en salida; se mantuvo la estructura lavanda/menta/cardamomo, canela/flor de naranjo y vainilla/tonka/ambar. |
+| Euforia | Carolina Herrera 212 VIP Men | Corregido menor | Se preciso lima caviar y kingwood; la estructura maracuya/lima/pimienta/jengibre, vodka/ginebra/menta y ambar/cuero ya estaba bien orientada. |
+| Rebeldia | Carolina Herrera Bad Boy | Corregido menor | La piramide ya estaba alineada; se cambio familia visible de citrica a oriental para no sobreprometer una fragancia citrica. |
+| Arraigo | Dior Fahrenheit | Corregido | Se amplio la piramide clasica: mandarina, lavanda, cedro, manzanilla, espino blanco, hoja de violeta, clavel, madreselva, cuero, vetiver, almizcle y tonka. |
+| Metropoli | Carolina Herrera 212 Men | Corregido | Se reemplazaron notas acuaticas por la estructura verde/floral/almizclada: notas verdes, pomelo, especias, lavanda, petit grain, jengibre, violeta, gardenia, salvia, incienso, guayaco y ladano. |
+| Desenfreno | Rabanne Pure XS Men | Corregido | Se agregaron tomillo, pomelo, bergamota, acorde verde, licor, manzana, azucar, cedro y notas amaderadas. |
+| Linaje | Carolina Herrera CH Men | Corregido | Se reemplazo salvia/artemisa por hierba, violeta, azafran, jazmin, azucar, vainilla, gamuza, cachemira, musgo de roble y vetiver. |
+| Orilla | Giorgio Armani Acqua di Gio | Corregido | La familia ahora es acuatica/fresca/citric; se amplio con lima, limon, naranja, notas marinas, calone, romero, flores acuaticas, almizcle blanco, musgo de roble y pachuli. |
+| Medianoche | Armaf Club de Nuit Intense Man | Corregido menor | Se agrego manzana y se cambio la familia a citric/frutal/amaderada para reflejar mejor salida frutal y fondo ahumado-amaderado. |
+
 ## Fuentes usadas en el lote 1
 
 - Creed Aventus: https://www.creedfragrances.co.uk/products/aventus y https://www.fragrantica.com/perfume/Creed/Aventus-9828.html
@@ -54,9 +73,21 @@ Este lote cubre fragancias destacadas para pauta/top ventas y el caso reportado 
 - Jean Paul Gaultier Scandal: https://www.fragrantica.com/perfume/Jean-Paul-Gaultier/Scandal-45651.html
 - Paris Hilton Can Can: https://www.fragrantica.com/perfume/Paris-Hilton/Can-Can-1202.html y https://www.firstcry.ae/paris-hilton/paris-hilton-can-can-eau-de-parfum-for-women---floral-fruity-scent-with-notes-of-clementine--orange-blossom--amber--100ml/6cf25ae31a814/product-detail
 
+## Fuentes usadas en el lote 2
+
+- Bleu de Chanel: https://www.chanel.com/us/fragrance/p/107460/bleu-de-chanel-eau-de-toilette-spray/ y https://www.fragrantica.com/perfume/Chanel/Bleu-de-Chanel-9099.html
+- Jean Paul Gaultier Le Male: https://www.jeanpaulgaultier.com/us/en_US/p/range-le-male/le-male-eau-de-toilette-000000000065120122 y https://www.fragrantica.com/perfume/Jean-Paul-Gaultier/Le-Male-430.html
+- Carolina Herrera 212 VIP Men: https://www.carolinaherrera.com/us/en/editorial/fragrances-212 y https://www.fragrantica.com/perfume/Carolina-Herrera/212-VIP-Men-12865.html
+- Carolina Herrera Bad Boy: https://www.carolinaherrera.com/ww/en/editorial/fragrances-bad-boy y https://www.fragrantica.com/perfume/Carolina-Herrera/Bad-Boy-55449.html
+- Dior Fahrenheit EDT: https://www.dior.com/en_us/beauty/products/fahrenheit-Y0066001.html y https://www.fragrantica.com/perfume/Dior/Fahrenheit-228.html
+- Carolina Herrera 212 Men: https://www.fragrantica.com/perfume/Carolina-Herrera/212-Men-297.html y https://niceonesa.com/en/carolina-herrera-212-men-for-men-eau-de-toilette-n11570
+- Rabanne Pure XS Men: https://www.fragrantica.com/perfume/Rabanne/Pure-XS-46038.html y https://www.caretobeauty.com/ae/paco-rabanne-pure-xs-for-men-eau-de-toilette-100ml
+- Carolina Herrera CH Men: https://www.fragrantica.com/perfume/Carolina-Herrera/CH-Men-6759.html y https://niceonesa.com/en/carolina-herrera-ch-for-men-100ml-eau-de-toilette-n2108
+- Giorgio Armani Acqua di Gio: https://www.sephora.com/product/acqua-di-gio-pour-homme-P12430 y https://www.fragrantica.com/perfume/Giorgio-Armani/Acqua-di-Gio-410.html
+- Armaf Club de Nuit Intense Man: https://armaf.com/products/club-de-nuit-intense-for-man y https://www.fragrantica.com/perfume/Armaf/Club-de-Nuit-Intense-Man-34696.html
+
 ## Siguientes lotes
 
-1. Masculinas de alta rotacion restantes: Bleu de Chanel, Le Male, 212 VIP Men, Bad Boy, Fahrenheit, 212 Men, Pure XS, CH Men, Acqua di Gio, Club de Nuit.
-2. Femeninas populares restantes: J'adore, CH, Chance, Bright Crystal, Amor Amor, Viva La Juicy, Bombshell, Good Girl flankers, Olympea, Coco Mademoiselle.
-3. Nicho/unisex restantes: Oud Wood, Tobacco Vanille, Kirke, Al Haramain Amber Oud, Amber Oud Ruby.
-4. Limpieza final de familias visibles: separar familia dominante de notas buscables para que el filtro sea preciso sin esconder opciones buenas.
+1. Femeninas populares restantes: J'adore, CH, Chance, Bright Crystal, Amor Amor, Viva La Juicy, Bombshell, Good Girl flankers, Olympea, Coco Mademoiselle.
+2. Nicho/unisex restantes: Oud Wood, Tobacco Vanille, Kirke, Al Haramain Amber Oud, Amber Oud Ruby.
+3. Limpieza final de familias visibles: separar familia dominante de notas buscables para que el filtro sea preciso sin esconder opciones buenas.
