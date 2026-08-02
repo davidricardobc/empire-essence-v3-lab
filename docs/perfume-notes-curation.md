@@ -2,7 +2,7 @@
 
 Objetivo: mejorar busqueda, filtros y autoridad comercial del catalogo sin inventar notas.
 
-Cobertura actual: 43 referencias revisadas/verificadas de 192 productos del catalogo.
+Cobertura actual: 55 referencias revisadas/verificadas de 196 productos del catalogo.
 
 ## Metodo
 
@@ -80,6 +80,32 @@ Tambien se ajusto el buscador para que tokens cortos como `sal` no coincidan por
 | Destino | Chanel Chance EDP | Corregido | Tenia notas de otro flanker; queda pimienta rosa, jazmin/iris y pachuli/almizcle/vainilla. |
 | Elegancia | Chanel Coco Mademoiselle | Corregido | Se retiro lichi/pomelo, se agregaron flor de naranjo, ylang ylang y opoponax; familia ahora citric/floral/oriental. |
 
+## Lote 4 - inventario alto reportado por David, 2026-08-02
+
+David compartio la lista de referencias con mas inventario el 2026-08-02. Este lote prioriza que el catalogo responda bien a esos nombres de bodega y a busquedas naturales como `good girl blanca`, `caro herrera new york`, `light blue fem`, `creed silver`, `toy bubblegum` y `bharara king`.
+
+| Producto | Inspiracion | Estado | Ajuste |
+|---|---|---|---|
+| Virtud | Carolina Herrera Good Girl Legere / Good Girl blanca | Ya curado | Se agrego alias de busqueda para `Good Girl blanca` y `Good Girl White`; la piramide ya estaba alineada en el lote 3. |
+| Manhattan | Carolina Herrera 212 NYC | Corregido | Se cambio de oriental/nocturna a floral/almizclada/fresca; se completo con flor de naranjo, flor de cactus, bergamota, mandarina, flores blancas, almizcle y sandalo. |
+| Nube | Ariana Grande Cloud | Agregado | No estaba en el catalogo; se agrego con lavanda, pera, bergamota, crema de coco/crema batida, praline, orquidea de vainilla, almizcle y maderas. |
+| Intensidad | Hugo Boss Deep Red | Corregido | Se agregaron naranja sanguina, mandarina, pera, flor de jengibre, tuberosa, fresia, semilla de hibisco, vainilla y cedro de California. |
+| Costa | Dolce & Gabbana Light Blue | Corregido | Se cambio de oriental/nocturna a fresca/citric/floral; queda limon siciliano, manzana, cedro, campanilla, bambu, jazmin, rosa blanca, almizcle y ambar. |
+| Burbuja | Moschino Toy 2 Bubble Gum | Agregado | No estaba en el catalogo; se agrego con frutas confitadas, naranja amarga/italiana, limon, chicle, rosa bulgara, durazno, arandano, canela, jengibre, ambroxan, almizcle y cedro. |
+| Capricho / Destino | Chanel Chance EDT / EDP | Ya curado | La referencia `Chance Chanel` ya tenia EDT y EDP revisadas en el lote 3; se mantienen Capricho y Destino. |
+| Pascal | Jean Pascal | Agregado | No estaba en el catalogo; se agrego como fougere aromatica con especias, pina, notas verdes, bergamota, jazmin, lavanda, musgo de roble, maderas, ambar y almizcle. |
+| Linaje | Carolina Herrera CH Men | Ya curado | Ya estaba corregido en el lote 2 con hierba, cuero, azucar, vainilla, gamuza, cachemira, musgo de roble y vetiver. |
+| Cumbre | Creed Silver Mountain Water | Corregido | Se retiro violeta/flor de naranjo/neroli y se alineo a bergamota, grosella negra, galbano, naranja, te, acorde ozonico, almizcle y sandalo. |
+| Rebeldia | Carolina Herrera Bad Boy | Ya curado | Ya estaba corregido en el lote 2: especiada/amaderada/oriental con pimientas, cedro, salvia, tonka y cacao. |
+| Arranque | Hugo Boss Red | Corregido | Se reemplazo mandarina/canela/clavel/vainilla por notas metalicas, pomelo, pimienta rosa, galbano, ruibarbo, pina, cedro, ambar y tonka. |
+| Firmeza | Hugo Boss Man | Corregido | Se cambio la piramide hacia el perfil actual de manzana verde, lavanda, pino, maderas y balsamo de abeto. |
+| Legado | Hugo Boss Bottled | Corregido | Se agregaron geranio en salida, caoba en corazon y olivo en fondo; se retiro clavo/musgo mal ubicados. |
+| Nostalgia | Jean Paul Gaultier Le Male | Ya curado | Ya estaba corregido en el lote 2 con lavanda, menta, cardamomo, artemisia, canela, flor de naranjo, alcaravea, vainilla, tonka, ambar, sandalo y cedro. |
+| Tentacion | Jean Paul Gaultier Ultra Male | Corregido | Se reviso por la busqueda generica `Jean Paul`: se agregaron limon, alcaravea, vainilla negra y pachuli. |
+| Euforia | Carolina Herrera 212 VIP Men | Ya curado | Ya estaba corregido en el lote 2 con lima caviar, vodka, ginebra, menta, ambar, cuero y kingwood. |
+| Oleaje | Rabanne Invictus Legend | Ya curado | Ya estaba corregido en el lote 1 con notas marinas, sal marina, pomelo, laurel, geranio, especias, ambar rojo y guayaco. |
+| Monarca | Bharara King | Agregado | No estaba en el catalogo; se agrego con naranja, bergamota, limon, notas frutales/tuttifrutti, vainilla, almizcle blanco y ambar. |
+
 ## Fuentes usadas en el lote 1
 
 - Creed Aventus: https://www.creedfragrances.co.uk/products/aventus y https://www.fragrantica.com/perfume/Creed/Aventus-9828.html
@@ -132,8 +158,23 @@ Tambien se ajusto el buscador para que tokens cortos como `sal` no coincidan por
 - Rabanne Olympea: https://www.rabanne.com/us/en_US/fragrance/p/olympea--000000000065187140 y https://www.fragrantica.com/perfume/Rabanne/Olympea-31666.html
 - Chanel Coco Mademoiselle: https://www.chanel.com/us/fragrance/p/116520/coco-mademoiselle-eau-de-parfum-spray/ y https://www.fragrantica.com/perfume/Chanel/Coco-Mademoiselle-611.html
 
+## Fuentes usadas en el lote 4
+
+- Carolina Herrera 212 NYC: https://www.carolinaherrera.com/us/en/p-fragrance/212-nyc y https://www.fragrantica.com/perfume/Carolina-Herrera/212-296.html
+- Ariana Grande Cloud: https://arianagrandefragrances.com/products/cloud y https://www.fragrantica.com/perfume/Ariana-Grande/Cloud-50384.html
+- Hugo Boss Deep Red: https://www.fragrantica.com/perfume/Hugo-Boss/Deep-Red-565.html
+- Dolce & Gabbana Light Blue: https://www.dolcegabbana.com/en-us/beauty/perfumes-for-her/light-blue/light-blue-eau-de-toilette---VT01JMVT0009V000.html y https://www.fragrantica.com/perfume/Dolce-Gabbana/Light-Blue-485.html
+- Moschino Toy 2 Bubble Gum: https://us.moschino.com/products/toy-2-bubble-gum-100-ml-eau-de-toilette-fuchsia-eur6x326xtoy2bubblegum1000 y https://www.fragrantica.com/perfume/Moschino/Toy-2-Bubble-Gum-66098.html
+- Jean Pascal: https://www.fragrantica.com/perfume/Jean-Pascal/Jean-Pascal-12599.html y https://basenotes.com/fragrances/jean-pascal-by-jean-pascal.26125578
+- Creed Silver Mountain Water: https://creedboutique.com/products/silver-mountain-water y https://www.fragrantica.com/perfume/Creed/Silver-Mountain-Water-472.html
+- Hugo Boss Red: https://www.fragrantica.com/perfume/Hugo-Boss/Hugo-Red-17157.html
+- Hugo Boss Man: https://www.hugoboss.com/au/fragrances-men-hugo-man/ y https://www.fragrantica.com/perfume/Hugo-Boss/Hugo-Man-64606.html
+- Hugo Boss Bottled: https://www.fragrantica.com/perfume/Hugo-Boss/Boss-Bottled-383.html
+- Jean Paul Gaultier Ultra Male: https://www.fragrantica.com/perfume/Jean-Paul-Gaultier/Ultra-Male-30947.html
+- Bharara King: https://www.bhararabeauty.com/products/bharara-king y https://www.fragrantica.com/perfume/Bharara/King-74184.html
+
 ## Siguientes lotes
 
 1. Nicho/unisex restantes: Oud Wood, Tobacco Vanille, Kirke, Al Haramain Amber Oud, Amber Oud Ruby.
-2. Masivas/frescas restantes: Chanel No. 5, Light Blue, CK One, Dolce & Gabbana Pour Femme, Hugo Boss Bottled, Lacoste Blanc.
+2. Masivas/frescas restantes: Chanel No. 5, CK One, Dolce & Gabbana Pour Femme, Lacoste Blanc.
 3. Limpieza final de familias visibles: separar familia dominante de notas buscables para que el filtro sea preciso sin esconder opciones buenas.
