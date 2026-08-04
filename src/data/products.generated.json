@@ -1490,9 +1490,9 @@
     "sillage": "Sobria y cercana",
     "notes": {
       "top": [
-        "palo de rosa",
+        "palo de rosa brasileno",
         "cardamomo",
-        "pimienta"
+        "pimienta de Sichuan"
       ],
       "heart": [
         "oud",
@@ -1623,16 +1623,19 @@
     "notes": {
       "top": [
         "hoja de tabaco",
+        "jengibre",
         "especias"
       ],
       "heart": [
         "vainilla",
         "cacao",
-        "haba tonka"
+        "haba tonka",
+        "flor de tabaco"
       ],
       "base": [
         "frutas secas",
-        "maderas"
+        "maderas",
+        "savia dulce"
       ]
     },
     "families": [
@@ -1690,7 +1693,9 @@
         "maracuya",
         "durazno",
         "pera",
-        "frambuesa"
+        "frambuesa",
+        "cassis",
+        "arena"
       ],
       "heart": [
         "lirio de los valles"
@@ -1699,7 +1704,8 @@
         "almizcle",
         "sandalo",
         "vainilla",
-        "pachuli"
+        "pachuli",
+        "heliotropo"
       ]
     },
     "families": [
@@ -12804,34 +12810,35 @@
     "inspirationReference": "Al Haramain Amber Oud",
     "category": "unisex",
     "collection": "nicho",
-    "shortDescription": "oriental, almizclada, con presencia fuerte.",
-    "longDescription": "Sagrado y profundo como un santuario de oud y ambar milenario. Inspirado en Al Haramain Amber Oud para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia unisex ideal para noche, citas, eventos.",
+    "shortDescription": "Citrico aromatico, maderas y resinas ambaradas.",
+    "longDescription": "Santuario combina romero, cedro, citricos, especias y resinas ambaradas. Inspirado en Al Haramain Amber Oud para clientes que quieren una referencia clara y facil de recomendar.",
+    "bestFor": "Clientes que buscan una fragancia unisex amaderada, seria y con presencia.",
     "concentration": "60% esencia",
     "duration": "8 a 10 horas",
     "intensity": "alta",
     "sillage": "Profunda y envolvente",
     "notes": {
       "top": [
-        "oud",
-        "ambar",
-        "azafran"
+        "romero",
+        "cedro",
+        "bergamota",
+        "limon"
       ],
       "heart": [
-        "rosa damascena",
-        "notas especiadas"
+        "especias",
+        "cedro",
+        "guayaco"
       ],
       "base": [
-        "sandalo",
-        "almizcle",
-        "vainilla",
-        "pachuli"
+        "ambar",
+        "resinas",
+        "almizcle"
       ]
     },
     "families": [
+      "amaderada",
       "oriental",
-      "almizclada",
-      "amaderada"
+      "citric"
     ],
     "moods": [
       "lujo",
@@ -12871,9 +12878,9 @@
     "inspirationReference": "Al Haramain Amber Oud Ruby",
     "category": "unisex",
     "collection": "nicho",
-    "shortDescription": "floral, oriental, con presencia fuerte.",
-    "longDescription": "Precioso y ardiente como un rubi tallado entre especias orientales. Inspirado en Al Haramain Amber Oud Ruby para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia unisex ideal para noche, citas, eventos.",
+    "shortDescription": "Azafran, almendra amarga y maderas ambaradas.",
+    "longDescription": "Rubi abre especiado y almendrado, con un corazon de cedro y jazmin sobre fondo ambarado y almizclado. Inspirado en Al Haramain Amber Oud Ruby para clientes que quieren una referencia clara y facil de recomendar.",
+    "bestFor": "Clientes que buscan una fragancia unisex intensa, moderna y de alto impacto.",
     "concentration": "60% esencia",
     "duration": "8 a 10 horas",
     "intensity": "alta",
@@ -12881,23 +12888,20 @@
     "notes": {
       "top": [
         "azafran",
-        "canela",
-        "ambar"
+        "almendra amarga"
       ],
       "heart": [
-        "rosa bulgara",
-        "oud",
-        "jazmin"
+        "cedro",
+        "jazmin egipcio"
       ],
       "base": [
-        "vainilla",
-        "sandalo",
-        "almizcle",
-        "pachuli"
+        "ambar gris",
+        "notas amaderadas",
+        "almizcle"
       ]
     },
     "families": [
-      "floral",
+      "amaderada",
       "oriental",
       "almizclada"
     ],

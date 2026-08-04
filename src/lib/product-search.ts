@@ -151,9 +151,20 @@ const productSpecificAliases: Record<string, string[]> = {
   "p-intensidad": ["hugo bosss deep red", "hugo boss deep red", "boss deep red"],
   "p-costa": ["light blue fem", "light blue femenina", "light blue mujer", "dolce gabbana light blue mujer"],
   "p-cumbre": ["creed silver", "silver mountain water", "silver mountain"],
+  "p-oud-wood": ["oud wood", "tom ford oud", "tom ford oud wood"],
+  "p-tobacco-vanille": [
+    "tobacco vanille",
+    "tobacco vanilla",
+    "tabacco vanille",
+    "tabaco vainilla",
+    "tom ford tobacco",
+  ],
+  "p-kirke": ["kirke", "tiziana kirke", "tiziana terenzi kirke"],
   "p-nube": ["cloud", "ariana cloud", "ariana grande cloud"],
   "p-burbuja": ["toy bubblegum", "toy bubble gum", "moschino toy bubblegum", "moschino toy 2"],
   "p-pascal": ["jean pascal"],
+  "p-santuario": ["al haramain amber oud", "amber oud original", "amber oud"],
+  "p-rubi": ["al haramain amber oud ruby", "amber oud ruby edition", "amber oud ruby", "ruby edition"],
   "p-monarca": ["bharara king", "king bharara"],
 };
 
