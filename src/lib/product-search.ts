@@ -229,6 +229,16 @@ const productSpecificAliases: Record<string, string[]> = {
   "p-permanencia": ["ck eternity men", "calvin klein eternity men", "eternity for men"],
   "p-existir": ["ck be", "calvin klein ck be", "calvin klein be"],
   "p-solsticio": ["ck one summer", "calvin klein ck one summer", "ck one summer 2013"],
+  "p-solaz": ["tommy hilfiger", "tommy hilfiger tommy", "tommy men"],
+  "p-abismo": ["acqua di gio profumo", "acqua profumo", "armani profumo"],
+  "p-insignia": ["montblanc emblem", "mont blanc emblem", "emblem montblanc"],
+  "p-leyenda": ["montblanc legend", "mont blanc legend", "legend montblanc"],
+  "p-estela": ["versace man eau fraiche", "versace eau fraiche", "eau fraiche versace"],
+  "p-gallardia": ["versace pour homme", "versace hombre"],
+  "p-reinado": ["dolce gabbana k", "k dolce gabbana", "k by dolce gabbana", "dolce gabbana king"],
+  "p-mediterraneo": ["dolce gabbana light blue homme", "light blue pour homme", "light blue hombre"],
+  "p-costanera": ["light blue italian zest hombre", "light blue italian zest pour homme", "italian zest hombre"],
+  "p-onix": ["212 vip black", "carolina herrera 212 vip black", "vip black"],
 };
 
 export function normalizeSearchText(value: string) {

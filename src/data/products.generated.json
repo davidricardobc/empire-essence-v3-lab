@@ -6752,47 +6752,48 @@
     "id": "p-solaz",
     "slug": "solaz",
     "publicName": "Solaz",
-    "inspirationReference": "Tommy Hilfiger",
+    "inspirationReference": "Tommy Hilfiger Tommy",
     "category": "masculina",
     "collection": "firma",
-    "shortDescription": "amaderada, oriental, con presencia fuerte.",
-    "longDescription": "Reconfortante y americano con algodon limpio y lavanda fresca. Inspirado en Tommy Hilfiger para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia masculina ideal para noche, citas, eventos.",
+    "shortDescription": "citrica, frutal, fresca y juvenil.",
+    "longDescription": "Clasica y energica con menta, bergamota, pomelo, lavanda, manzana Granny Smith, arandano, rosa, flor de algodon, cactus y ambar. Inspirado en Tommy Hilfiger Tommy para clientes que buscan frescura noventera facil de usar.",
+    "bestFor": "Clientes que buscan una fragancia masculina ideal para diario, universidad y clima calido.",
     "concentration": "60% esencia",
     "duration": "8 a 10 horas",
     "intensity": "alta",
     "sillage": "Profunda y envolvente",
     "notes": {
       "top": [
-        "lavanda",
-        "manzana verde",
-        "menta"
+        "menta",
+        "bergamota",
+        "pomelo",
+        "lavanda"
       ],
       "heart": [
+        "manzana Granny Smith",
         "arandano",
-        "algodon",
-        "notas acuaticas"
+        "rosa"
       ],
       "base": [
-        "cedro",
-        "almizcle",
+        "flor de algodon",
+        "cactus",
         "ambar"
       ]
     },
     "families": [
-      "amaderada",
-      "oriental",
-      "almizclada"
+      "citric",
+      "frutal",
+      "fresca"
     ],
     "moods": [
-      "seguridad",
-      "estilo",
-      "presencia"
+      "energia",
+      "juventud",
+      "limpieza"
     ],
     "occasions": [
-      "noche",
-      "citas",
-      "eventos"
+      "diario",
+      "oficina",
+      "clima calido"
     ],
     "variants": [
       {
@@ -6904,9 +6905,9 @@
     "inspirationReference": "Giorgio Armani Acqua di Gio Profumo",
     "category": "masculina",
     "collection": "firma",
-    "shortDescription": "fresca, acuatica, con presencia fuerte.",
-    "longDescription": "Profundo y abismal con incienso oscuro y pachuli oceanico. Inspirado en Giorgio Armani Acqua di Gio Profumo para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia masculina ideal para noche, citas, eventos.",
+    "shortDescription": "acuatica, fresca, aromatica y profunda.",
+    "longDescription": "Azul y elegante con bergamota, notas acuaticas, salvia, romero, geranio, incienso y pachuli. Inspirado en Giorgio Armani Acqua di Gio Profumo para clientes que quieren frescura marina con fondo oscuro.",
+    "bestFor": "Clientes que buscan una fragancia masculina ideal para noche, oficina y eventos.",
     "concentration": "60% esencia",
     "duration": "8 a 10 horas",
     "intensity": "alta",
@@ -6914,33 +6915,31 @@
     "notes": {
       "top": [
         "bergamota",
-        "notas acuaticas",
-        "notas marinas"
+        "notas acuaticas"
       ],
       "heart": [
-        "geranio",
+        "salvia",
         "romero",
-        "salvia"
+        "geranio"
       ],
       "base": [
-        "pachuli",
         "incienso",
-        "ambar"
+        "pachuli"
       ]
     },
     "families": [
-      "fresca",
       "acuatica",
-      "oriental"
+      "fresca",
+      "amaderada"
     ],
     "moods": [
-      "energia",
-      "versatil",
-      "confianza"
+      "elegancia",
+      "profundidad",
+      "seguridad"
     ],
     "occasions": [
       "noche",
-      "citas",
+      "oficina",
       "eventos"
     ],
     "variants": [
@@ -6971,43 +6970,42 @@
     "inspirationReference": "Montblanc Emblem",
     "category": "masculina",
     "collection": "diario",
-    "shortDescription": "amaderada, citric, equilibrada y facil de llevar.",
-    "longDescription": "Distinguido como un emblema de honor grabado en madera noble. Inspirado en Montblanc Emblem para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia masculina ideal para diario, salidas, citas.",
+    "shortDescription": "especiada, citrica, amaderada y elegante.",
+    "longDescription": "Aromatica y especiada con salvia esclarea, pomelo, cardamomo, hoja de violeta, canela, tonka y maderas. Inspirado en Montblanc Emblem para clientes que buscan una fragancia masculina sobria.",
+    "bestFor": "Clientes que buscan una fragancia masculina ideal para oficina, reuniones y salidas.",
     "concentration": "60% esencia",
     "duration": "6 a 8 horas",
     "intensity": "media",
     "sillage": "Equilibrada y agradable",
     "notes": {
       "top": [
+        "salvia esclarea",
         "pomelo",
-        "salvia",
-        "clavo"
+        "cardamomo"
       ],
       "heart": [
-        "hojas de violeta",
+        "hoja de violeta",
         "canela"
       ],
       "base": [
         "haba tonka",
-        "notas amaderadas",
-        "gamuza"
+        "notas amaderadas"
       ]
     },
     "families": [
-      "amaderada",
+      "especiada",
       "citric",
-      "especiada"
+      "amaderada"
     ],
     "moods": [
+      "elegancia",
       "seguridad",
-      "estilo",
       "presencia"
     ],
     "occasions": [
-      "diario",
-      "salidas",
-      "citas"
+      "oficina",
+      "reuniones",
+      "salidas"
     ],
     "variants": [
       {
@@ -7037,44 +7035,47 @@
     "inspirationReference": "Montblanc Legend",
     "category": "masculina",
     "collection": "diario",
-    "shortDescription": "fresca, amaderada, equilibrada y facil de llevar.",
-    "longDescription": "Legendario y memorable con lavanda y sandalo cremoso. Inspirado en Montblanc Legend para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia masculina ideal para diario, oficina, salidas.",
+    "shortDescription": "fresca, frutal, amaderada y masculina.",
+    "longDescription": "Versatil y limpia con lavanda, pina, bergamota, verbena de limon, manzana roja, frutas secas, musgo de roble, geranio, cumarina, rosa, tonka y sandalo. Inspirado en Montblanc Legend.",
+    "bestFor": "Clientes que buscan una fragancia masculina ideal para diario, oficina y regalo.",
     "concentration": "60% esencia",
     "duration": "6 a 8 horas",
     "intensity": "media",
     "sillage": "Equilibrada y agradable",
     "notes": {
       "top": [
-        "bergamota",
         "lavanda",
-        "pina"
+        "pina",
+        "bergamota",
+        "verbena de limon"
       ],
       "heart": [
-        "agua de rosa",
-        "notas acuaticas",
-        "geranio"
+        "manzana roja",
+        "frutas secas",
+        "musgo de roble",
+        "geranio",
+        "cumarina",
+        "rosa"
       ],
       "base": [
-        "sandalo",
         "haba tonka",
-        "musgo de roble"
+        "sandalo"
       ]
     },
     "families": [
       "fresca",
-      "amaderada",
-      "citric"
+      "frutal",
+      "amaderada"
     ],
     "moods": [
-      "energia",
-      "versatil",
-      "confianza"
+      "confianza",
+      "limpieza",
+      "estilo"
     ],
     "occasions": [
       "diario",
       "oficina",
-      "salidas"
+      "regalo"
     ],
     "variants": [
       {
@@ -7104,9 +7105,9 @@
     "inspirationReference": "Versace Man Eau Fraiche",
     "category": "masculina",
     "collection": "firma",
-    "shortDescription": "amaderada, citric, con presencia fuerte.",
-    "longDescription": "Fresco y limpio que deja una estela inconfundible a su paso. Inspirado en Versace Man Eau Fraiche para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia masculina ideal para noche, citas, eventos.",
+    "shortDescription": "citrica, amaderada, fresca y mediterranea.",
+    "longDescription": "Ligera y elegante con limon, bergamota, carambola, cardamomo, palo de rosa brasileno, cedro, estragon, salvia, pimienta, almizcle, ambar, sicomoro, azafran y maderas. Inspirado en Versace Man Eau Fraiche.",
+    "bestFor": "Clientes que buscan una fragancia masculina ideal para diario, oficina y clima calido.",
     "concentration": "60% esencia",
     "duration": "8 a 10 horas",
     "intensity": "alta",
@@ -7115,35 +7116,38 @@
       "top": [
         "limon",
         "bergamota",
-        "palo de rosa",
-        "romero"
+        "carambola",
+        "cardamomo",
+        "palo de rosa brasileno"
       ],
       "heart": [
-        "estragon",
-        "salvia esclarea",
         "cedro",
-        "artemisa"
+        "estragon",
+        "salvia",
+        "pimienta"
       ],
       "base": [
         "almizcle",
         "ambar",
-        "sandalo"
+        "sicomoro",
+        "azafran",
+        "notas amaderadas"
       ]
     },
     "families": [
-      "amaderada",
       "citric",
-      "oriental"
+      "amaderada",
+      "fresca"
     ],
     "moods": [
-      "seguridad",
-      "estilo",
-      "presencia"
+      "limpieza",
+      "elegancia",
+      "energia"
     ],
     "occasions": [
-      "noche",
-      "citas",
-      "eventos"
+      "diario",
+      "oficina",
+      "clima calido"
     ],
     "variants": [
       {
@@ -7173,44 +7177,46 @@
     "inspirationReference": "Versace Pour Homme",
     "category": "masculina",
     "collection": "firma",
-    "shortDescription": "oriental, almizclada, con presencia fuerte.",
-    "longDescription": "Galante y clasico con la elegancia del Mediterraneo italiano. Inspirado en Versace Pour Homme para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia masculina ideal para noche, citas, eventos.",
+    "shortDescription": "citrica, floral, almizclada y pulida.",
+    "longDescription": "Limpia y elegante con limon, bergamota, neroli, rosa de mayo, jacinto, cedro, salvia esclarea, geranio, almizcle, tonka y ambar. Inspirado en Versace Pour Homme para clientes que quieren frescura masculina refinada.",
+    "bestFor": "Clientes que buscan una fragancia masculina ideal para diario, oficina y reuniones.",
     "concentration": "60% esencia",
     "duration": "8 a 10 horas",
     "intensity": "alta",
     "sillage": "Profunda y envolvente",
     "notes": {
       "top": [
+        "limon",
+        "bergamota",
         "neroli",
-        "citron",
-        "bergamota"
+        "rosa de mayo"
       ],
       "heart": [
-        "cedro de Virginia",
-        "salvia",
-        "ambar"
+        "jacinto",
+        "cedro",
+        "salvia esclarea",
+        "geranio"
       ],
       "base": [
         "almizcle",
-        "minerales",
-        "sandalo"
+        "haba tonka",
+        "ambar"
       ]
     },
     "families": [
-      "oriental",
-      "almizclada",
-      "amaderada"
+      "citric",
+      "floral",
+      "almizclada"
     ],
     "moods": [
-      "seguridad",
-      "estilo",
-      "presencia"
+      "elegancia",
+      "limpieza",
+      "seguridad"
     ],
     "occasions": [
-      "noche",
-      "citas",
-      "eventos"
+      "diario",
+      "oficina",
+      "reuniones"
     ],
     "variants": [
       {
@@ -7237,47 +7243,49 @@
     "id": "p-reinado",
     "slug": "reinado",
     "publicName": "Reinado",
-    "inspirationReference": "Dolce & Gabbana King",
+    "inspirationReference": "Dolce & Gabbana K by Dolce & Gabbana",
     "category": "masculina",
     "collection": "diario",
-    "shortDescription": "especiada, amaderada, equilibrada y facil de llevar.",
-    "longDescription": "Regio y poderoso con sangre de dragon y maderas nobles. Inspirado en Dolce & Gabbana King para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia masculina ideal para diario, oficina, salidas.",
+    "shortDescription": "citrica, especiada, amaderada y moderna.",
+    "longDescription": "Masculina y luminosa con bayas de enebro, citricos, naranja sanguina, limon siciliano, pimiento, lavanda, salvia esclarea, geranio, vetiver, cedro y pachuli. Inspirado en K by Dolce & Gabbana.",
+    "bestFor": "Clientes que buscan una fragancia masculina ideal para diario, salidas y eventos.",
     "concentration": "60% esencia",
     "duration": "6 a 8 horas",
     "intensity": "media",
     "sillage": "Equilibrada y agradable",
     "notes": {
       "top": [
-        "sangre de dragon",
-        "enebro",
-        "citricos"
+        "bayas de enebro",
+        "citricos",
+        "naranja sanguina",
+        "limon siciliano"
       ],
       "heart": [
+        "pimiento",
         "lavanda",
-        "pimienta",
+        "salvia esclarea",
         "geranio"
       ],
       "base": [
-        "cedro",
         "vetiver",
+        "cedro",
         "pachuli"
       ]
     },
     "families": [
+      "citric",
       "especiada",
-      "amaderada",
-      "fresca"
+      "amaderada"
     ],
     "moods": [
+      "presencia",
       "energia",
-      "versatil",
-      "confianza"
+      "estilo"
     ],
     "occasions": [
       "diario",
-      "oficina",
-      "salidas"
+      "salidas",
+      "eventos"
     ],
     "variants": [
       {
@@ -7304,47 +7312,48 @@
     "id": "p-mediterraneo",
     "slug": "mediterraneo",
     "publicName": "Mediterraneo",
-    "inspirationReference": "Dolce & Gabbana Light Blue",
+    "inspirationReference": "Dolce & Gabbana Light Blue Pour Homme",
     "category": "masculina",
     "collection": "diario",
-    "shortDescription": "fresca, citric, equilibrada y facil de llevar.",
-    "longDescription": "Soleado y costero como un verano eterno junto al Mediterraneo. Inspirado en Dolce & Gabbana Light Blue para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia masculina ideal para diario, oficina, salidas.",
+    "shortDescription": "citrica, fresca, especiada y mediterranea.",
+    "longDescription": "Brillante y fresca con pomelo, bergamota, mandarina siciliana, enebro, pimienta, romero, palisandro brasileno, almizcle, incienso y musgo de roble. Inspirado en Dolce & Gabbana Light Blue Pour Homme.",
+    "bestFor": "Clientes que buscan una fragancia masculina ideal para diario, vacaciones y clima calido.",
     "concentration": "60% esencia",
     "duration": "6 a 8 horas",
     "intensity": "media",
     "sillage": "Equilibrada y agradable",
     "notes": {
       "top": [
-        "siciliano bergamota",
-        "mandarina",
-        "pomelo"
+        "pomelo",
+        "bergamota",
+        "mandarina siciliana",
+        "enebro"
       ],
       "heart": [
+        "pimienta",
         "romero",
-        "pimienta rosa",
-        "notas acuaticas"
+        "palisandro brasileno"
       ],
       "base": [
-        "incienso",
         "almizcle",
+        "incienso",
         "musgo de roble"
       ]
     },
     "families": [
-      "fresca",
       "citric",
+      "fresca",
       "especiada"
     ],
     "moods": [
+      "frescura",
       "energia",
-      "versatil",
-      "confianza"
+      "limpieza"
     ],
     "occasions": [
       "diario",
-      "oficina",
-      "salidas"
+      "vacaciones",
+      "clima calido"
     ],
     "variants": [
       {
@@ -7371,47 +7380,51 @@
     "id": "p-costanera",
     "slug": "costanera",
     "publicName": "Costanera",
-    "inspirationReference": "Dolce & Gabbana Light Blue Italian Zest",
+    "inspirationReference": "Dolce & Gabbana Light Blue Italian Zest Pour Homme",
     "category": "masculina",
     "collection": "firma",
-    "shortDescription": "amaderada, oriental, con presencia fuerte.",
-    "longDescription": "Vibrante y costero con la chispa de los citricos italianos. Inspirado en Dolce & Gabbana Light Blue Italian Zest para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia masculina ideal para noche, citas, eventos.",
+    "shortDescription": "citrica, fresca, amaderada y vibrante.",
+    "longDescription": "Zestosa y mediterranea con pomelo, bergamota, limon, mandarina, pimienta de Sichuan, romero, hedione, palisandro, fresia, almizcle, incienso, musgo de roble y amberwood. Inspirado en Light Blue Italian Zest Pour Homme.",
+    "bestFor": "Clientes que buscan una fragancia masculina ideal para diario, vacaciones y clima calido.",
     "concentration": "60% esencia",
     "duration": "8 a 10 horas",
     "intensity": "alta",
     "sillage": "Profunda y envolvente",
     "notes": {
       "top": [
-        "limon siciliano",
-        "manzana Granny Smith",
+        "pomelo",
+        "bergamota",
+        "limon",
         "mandarina"
       ],
       "heart": [
-        "jengibre",
+        "pimienta de Sichuan",
         "romero",
-        "notas acuaticas"
+        "hedione",
+        "palisandro",
+        "fresia"
       ],
       "base": [
-        "almizcle blanco",
-        "cedro",
-        "ambar"
+        "almizcle",
+        "incienso",
+        "musgo de roble",
+        "amberwood"
       ]
     },
     "families": [
-      "amaderada",
-      "oriental",
-      "fresca"
+      "citric",
+      "fresca",
+      "amaderada"
     ],
     "moods": [
       "energia",
-      "versatil",
-      "confianza"
+      "frescura",
+      "alegria"
     ],
     "occasions": [
-      "noche",
-      "citas",
-      "eventos"
+      "diario",
+      "vacaciones",
+      "clima calido"
     ],
     "variants": [
       {
@@ -7441,42 +7454,41 @@
     "inspirationReference": "Carolina Herrera 212 VIP Black",
     "category": "masculina",
     "collection": "firma",
-    "shortDescription": "dulce, especiada, con presencia fuerte.",
-    "longDescription": "Negro y lujoso con anis oscuro y vainilla abismal. Inspirado en Carolina Herrera 212 VIP Black para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia masculina ideal para noche, citas, eventos.",
+    "shortDescription": "aromatica, dulce, especiada y nocturna.",
+    "longDescription": "Nocturna y seductora con absenta, anis, hinojo, lavanda, vainilla negra y almizcle. Inspirado en Carolina Herrera 212 VIP Black para clientes que quieren una fragancia de salida con caracter.",
+    "bestFor": "Clientes que buscan una fragancia masculina ideal para noche, fiesta y salidas.",
     "concentration": "60% esencia",
     "duration": "8 a 10 horas",
     "intensity": "alta",
     "sillage": "Profunda y envolvente",
     "notes": {
       "top": [
-        "anis estrellado",
-        "lavanda"
+        "absenta",
+        "anis",
+        "hinojo"
       ],
       "heart": [
-        "notas especiadas",
-        "salvia esclarea"
+        "lavanda"
       ],
       "base": [
         "vainilla negra",
-        "haba tonka",
-        "ladano"
+        "almizcle"
       ]
     },
     "families": [
-      "dulce",
       "especiada",
-      "oriental"
+      "dulce",
+      "almizclada"
     ],
     "moods": [
       "seduccion",
-      "impacto",
-      "noche"
+      "misterio",
+      "fiesta"
     ],
     "occasions": [
       "noche",
-      "citas",
-      "eventos"
+      "fiesta",
+      "salidas"
     ],
     "variants": [
       {

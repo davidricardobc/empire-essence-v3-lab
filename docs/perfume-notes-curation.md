@@ -2,7 +2,7 @@
 
 Objetivo: mejorar busqueda, filtros y autoridad comercial del catalogo sin inventar notas.
 
-Cobertura actual: 123 referencias revisadas/verificadas de 196 productos del catalogo.
+Cobertura actual: 133 referencias revisadas/verificadas de 196 productos del catalogo.
 
 ## Metodo
 
@@ -230,6 +230,23 @@ Este lote revisa Creed, Polo Black y Calvin Klein. Varias referencias pasan a un
 | Existir | Calvin Klein CK Be | Corregido | La categoria pasa a unisex y se amplia con lavanda, notas verdes, menta, enebro, hierba verde, jazmin, durazno, fresia, magnolia, orquidea, cedro, vainilla y opoponax. |
 | Solsticio | Calvin Klein CK One Summer 2013 | Corregido | Se fija como CK One Summer 2013 por coincidencia acuatico-citrica y queda notas acuaticas/citricos, pepino/sandia/nenufar y almizcle/musgo. |
 
+## Lote 13 - masculinas no revisadas, bloque 7
+
+Este lote corrige el cierre del bloque masculino comercial antes de pasar a las ultimas masculinas sueltas y al bloque femenino pendiente.
+
+| Producto | Inspiracion | Estado | Ajuste |
+|---|---|---|---|
+| Solaz | Tommy Hilfiger Tommy | Corregido | Se reemplazo el perfil oriental/almizclado por menta, bergamota, pomelo, lavanda, manzana Granny Smith, arandano, rosa, flor de algodon, cactus y ambar. |
+| Abismo | Giorgio Armani Acqua di Gio Profumo | Corregido menor | Se retiro ambar y se simplifico a bergamota, notas acuaticas, salvia, romero, geranio, incienso y pachuli. |
+| Insignia | Montblanc Emblem | Corregido | Clavo pasa a cardamomo; se precisa salvia esclarea y se retira gamuza. |
+| Leyenda | Montblanc Legend | Corregido | Se retiro notas acuaticas y se completo con verbena de limon, manzana roja, frutas secas, musgo de roble, cumarina, rosa, tonka y sandalo. |
+| Estela | Versace Man Eau Fraiche | Corregido | Se agregaron carambola, cardamomo, pimienta, sicomoro, azafran y maderas; se retiro romero/artemisa/sandalo. |
+| Gallardia | Versace Pour Homme | Corregido | Se reemplazo citron/minerales/sandalo por limon, rosa de mayo, jacinto, salvia esclarea, geranio, tonka y ambar. |
+| Reinado | Dolce & Gabbana K by Dolce & Gabbana | Corregido | Se retiro sangre de dragon y se alineo a bayas de enebro, citricos, naranja sanguina, limon siciliano, pimiento, lavanda, salvia esclarea, geranio, vetiver, cedro y pachuli. |
+| Mediterraneo | Dolce & Gabbana Light Blue Pour Homme | Corregido menor | Se corrigio `siciliano bergamota`, se agrego mandarina siciliana, enebro, palisandro brasileno y se retiro notas acuaticas. |
+| Costanera | Dolce & Gabbana Light Blue Italian Zest Pour Homme | Corregido | Se reemplazo la piramide femenina por pomelo, bergamota, limon, mandarina, pimienta de Sichuan, romero, hedione, palisandro, fresia, almizcle, incienso, musgo de roble y amberwood. |
+| Onix | Carolina Herrera 212 VIP Black | Corregido | Se reemplazo tonka/labdano y salvia por absenta, anis, hinojo, lavanda, vainilla negra y almizcle. |
+
 ## Fuentes usadas en el lote 1
 
 - Creed Aventus: https://www.creedfragrances.co.uk/products/aventus y https://www.fragrantica.com/perfume/Creed/Aventus-9828.html
@@ -389,7 +406,20 @@ Este lote revisa Creed, Polo Black y Calvin Klein. Varias referencias pasan a un
 - Calvin Klein CK Be: https://www.fragrantica.com/perfume/Calvin-Klein/CK-be-275.html
 - Calvin Klein CK One Summer 2013: https://www.fragrantica.com/perfume/Calvin-Klein/CK-One-Summer-2013-17561.html
 
+## Fuentes usadas en el lote 13
+
+- Tommy Hilfiger Tommy: https://www.fragrantica.com/perfume/Tommy-Hilfiger/Tommy-6314.html
+- Giorgio Armani Acqua di Gio Profumo: https://www.fragrantica.com/perfume/Giorgio-Armani/Acqua-di-Gio-Profumo-29727.html
+- Montblanc Emblem: https://www.fragrantica.com/perfume/Montblanc/Emblem-23711.html
+- Montblanc Legend: https://www.fragrantica.com/perfume/Montblanc/Legend-11784.html
+- Versace Man Eau Fraiche: https://www.fragrantica.com/perfume/Versace/Versace-Man-Eau-Fraiche-644.html
+- Versace Pour Homme: https://www.fragrantica.com/perfume/Versace/Versace-Pour-Homme-2318.html
+- Dolce & Gabbana K by Dolce & Gabbana: https://www.fragrantica.com/perfume/Dolce-Gabbana/K-by-Dolce-Gabbana-56358.html
+- Dolce & Gabbana Light Blue Pour Homme: https://www.fragrantica.com/perfume/Dolce-Gabbana/Light-Blue-pour-Homme-1068.html
+- Dolce & Gabbana Light Blue Italian Zest Pour Homme: https://www.fragrantica.com/perfume/Dolce-Gabbana/Light-Blue-Italian-Zest-Pour-Homme-49202.html
+- Carolina Herrera 212 VIP Black: https://www.fragrantica.com/perfume/Carolina-Herrera/212-VIP-Black-46093.html
+
 ## Siguientes lotes
 
-1. Masculinas no revisadas, bloque 7: Tommy, Acqua di Gio Profumo, Montblanc Emblem, Montblanc Legend, Versace Man Eau Fraiche, Versace Pour Homme, Dolce & Gabbana K, Light Blue Pour Homme, Light Blue Italian Zest Pour Homme y 212 VIP Black.
+1. Bloque mixto 8: Azzaro Wanted, Clinique Happy, Perry Ellis 360 Red, Perry Ellis 360, Tommy Girl Now, Ralph Lauren Big Pony 2, Light Blue Italian Zest femenina, Dolce & Gabbana The One femenina, Bvlgari Omnia Amethyste y Bvlgari Omnia Crystalline.
 2. Limpieza final de familias visibles: separar familia dominante de notas buscables para que el filtro sea preciso sin esconder opciones buenas.
