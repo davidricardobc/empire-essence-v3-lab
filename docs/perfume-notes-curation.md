@@ -2,7 +2,7 @@
 
 Objetivo: mejorar busqueda, filtros y autoridad comercial del catalogo sin inventar notas.
 
-Cobertura actual: 133 referencias revisadas/verificadas de 196 productos del catalogo.
+Cobertura actual: 143 referencias revisadas/verificadas de 196 productos del catalogo.
 
 ## Metodo
 
@@ -247,6 +247,23 @@ Este lote corrige el cierre del bloque masculino comercial antes de pasar a las 
 | Costanera | Dolce & Gabbana Light Blue Italian Zest Pour Homme | Corregido | Se reemplazo la piramide femenina por pomelo, bergamota, limon, mandarina, pimienta de Sichuan, romero, hedione, palisandro, fresia, almizcle, incienso, musgo de roble y amberwood. |
 | Onix | Carolina Herrera 212 VIP Black | Corregido | Se reemplazo tonka/labdano y salvia por absenta, anis, hinojo, lavanda, vainilla negra y almizcle. |
 
+## Lote 14 - bloque mixto 8
+
+Este lote cierra las cuatro masculinas sueltas que quedaban del bloque comercial y abre femeninas pendientes con varias correcciones de version.
+
+| Producto | Inspiracion | Estado | Ajuste |
+|---|---|---|---|
+| Cazador | Azzaro Wanted | Corregido menor | Se agregaron lavanda, geranio y amberwood; cedro pasa a vetiver haitiano en base. |
+| Jubilo | Clinique Happy for Men | Corregido | Se completo con notas marinas, limon, jazmin, lirio de los valles y guayaco; familia queda citrica/fresca/floral. |
+| Giro | Perry Ellis 360 Red for Men | Corregido | Se reemplazo pimienta roja/jengibre/tabaco/vainilla por lima, bergamota, canela, naranja, mandarina, clavo, nuez moscada, lavanda, cilantro, almizcle, pachuli, cedro rojo, vetiver, sandalo y musgo de roble. |
+| Panorama | Perry Ellis 360 for Men | Corregido | Se reemplazo mandarina/notas verdes/ambar por bayas de enebro, limon, bergamota, lavanda, salvia, cardamomo, fresia, maderas, vetiver y almizcle. |
+| Chispazo | Tommy Hilfiger Tommy Girl Now | Corregido | Se reemplazo manzana/grosella/flor de naranjo/jazmin/sandalo/vainilla por bergamota, mandarina, magnolia, mahonia, menta, almizcle y cashmeran. |
+| Antojo | Ralph Lauren Big Pony 2 for Women | Corregido | Se simplifico a arandano, acorde floral frutal y tonka, evitando inventar una piramide completa que la fuente principal no publica. |
+| Riviera | Dolce & Gabbana Light Blue Italian Zest | Corregido | Se retiro jengibre/notas acuaticas y queda limon Primofiore, manzana Granny Smith, campanilla, bambu, jazmin, rosa blanca, cedro, ambar y almizcle. |
+| Encanto | Dolce & Gabbana The One | Corregido menor | Se agrego lirio de los valles y se mantuvo la estructura durazno/lichi/citricos, lirio/ciruela/jazmin y fondo vainilla/ambar/almizcle/vetiver. |
+| Amatista | Bvlgari Omnia Amethyste | Corregido | Grosellas verdes pasan a notas verdes, se retira nenufar/almizcle y queda pomelo rosa, iris, rosa bulgara, heliotropo y maderas. |
+| Cristal | Bvlgari Omnia Crystalline | Corregido | La familia deja de ser oriental y queda floral/acuatica/almizclada; se agrega casia y musgo de roble, se retira ambar. |
+
 ## Fuentes usadas en el lote 1
 
 - Creed Aventus: https://www.creedfragrances.co.uk/products/aventus y https://www.fragrantica.com/perfume/Creed/Aventus-9828.html
@@ -419,7 +436,20 @@ Este lote corrige el cierre del bloque masculino comercial antes de pasar a las 
 - Dolce & Gabbana Light Blue Italian Zest Pour Homme: https://www.fragrantica.com/perfume/Dolce-Gabbana/Light-Blue-Italian-Zest-Pour-Homme-49202.html
 - Carolina Herrera 212 VIP Black: https://www.fragrantica.com/perfume/Carolina-Herrera/212-VIP-Black-46093.html
 
+## Fuentes usadas en el lote 14
+
+- Azzaro Wanted: https://www.fragrantica.com/perfume/Azzaro/Wanted-38686.html
+- Clinique Happy for Men: https://www.fragrantica.com/perfume/Clinique/Clinique-Happy-373.html
+- Perry Ellis 360 Red for Men: https://www.fragrantica.com/perfume/Perry-Ellis/3600-Red-for-Men-1906.html
+- Perry Ellis 360 for Men: https://www.fragrantica.com/perfume/Perry-Ellis/3600-for-Men-1904.html
+- Tommy Hilfiger Tommy Girl Now: https://www.fragrantica.com/perfume/Tommy-Hilfiger/Tommy-Girl-Now-51927.html y https://usa.tommy.com/en/women/shoes-accessories/fragrance/tommy-now-girl-3.4-oz./7640496670276.html
+- Ralph Lauren Big Pony 2 for Women: https://www.fragrantica.com/perfume/Ralph-Lauren/Big-Pony-2-for-Women-14446.html
+- Dolce & Gabbana Light Blue Italian Zest: https://advicesisters.com/dolce-gabbana-light-blue-italian-zest/
+- Dolce & Gabbana The One: https://www.fragrantica.com/perfume/Dolce-Gabbana/The-One-698.html
+- Bvlgari Omnia Amethyste: https://www.fragrantica.com/perfume/Bvlgari/Omnia-Amethyste-780.html
+- Bvlgari Omnia Crystalline: https://www.fragrantica.com/perfume/Bvlgari/Omnia-Crystalline-152.html y https://www.bulgari.com/en-us/product/OMNIA-CRYSTALLINE-EDT
+
 ## Siguientes lotes
 
-1. Bloque mixto 8: Azzaro Wanted, Clinique Happy, Perry Ellis 360 Red, Perry Ellis 360, Tommy Girl Now, Ralph Lauren Big Pony 2, Light Blue Italian Zest femenina, Dolce & Gabbana The One femenina, Bvlgari Omnia Amethyste y Bvlgari Omnia Crystalline.
+1. Femeninas no revisadas, bloque 9: Perry Ellis 360 mujer, Ralph Lauren Ralph, Lady Million Lucky, Lady Million Empire, Victoria's Secret Tease, Katy Perry Meow, Katy Perry Purr, DKNY Be Delicious Fresh Blossom, Britney Spears Midnight Fantasy y Ariana Grande Sweet Like Candy.
 2. Limpieza final de familias visibles: separar familia dominante de notas buscables para que el filtro sea preciso sin esconder opciones buenas.

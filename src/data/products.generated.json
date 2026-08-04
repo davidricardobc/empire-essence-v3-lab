@@ -7518,9 +7518,9 @@
     "inspirationReference": "Azzaro Wanted",
     "category": "masculina",
     "collection": "firma",
-    "shortDescription": "amaderada, citric, con presencia fuerte.",
-    "longDescription": "Certero y magnetico como un cazador que siempre alcanza su meta. Inspirado en Azzaro Wanted para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia masculina ideal para noche, citas, eventos.",
+    "shortDescription": "citrica, especiada, amaderada y energica.",
+    "longDescription": "Dinamica y masculina con limon, jengibre, lavanda, menta, manzana, cardamomo guatemalteco, enebro, geranio, tonka, amberwood y vetiver haitiano. Inspirado en Azzaro Wanted para clientes que buscan salida fresca con fondo calido.",
+    "bestFor": "Clientes que buscan una fragancia masculina ideal para diario, salidas y citas.",
     "concentration": "60% esencia",
     "duration": "8 a 10 horas",
     "intensity": "alta",
@@ -7529,33 +7529,35 @@
       "top": [
         "limon",
         "jengibre",
+        "lavanda",
         "menta"
       ],
       "heart": [
-        "cardamomo",
+        "manzana",
+        "cardamomo guatemalteco",
         "enebro",
-        "manzana"
+        "geranio"
       ],
       "base": [
         "haba tonka",
-        "vetiver",
-        "cedro"
+        "amberwood",
+        "vetiver haitiano"
       ]
     },
     "families": [
-      "amaderada",
       "citric",
-      "dulce"
+      "especiada",
+      "amaderada"
     ],
     "moods": [
-      "seduccion",
-      "impacto",
-      "noche"
+      "energia",
+      "confianza",
+      "presencia"
     ],
     "occasions": [
-      "noche",
-      "citas",
-      "eventos"
+      "diario",
+      "salidas",
+      "citas"
     ],
     "variants": [
       {
@@ -7582,47 +7584,51 @@
     "id": "p-jubilo",
     "slug": "jubilo",
     "publicName": "Jubilo",
-    "inspirationReference": "Clinique Happy",
+    "inspirationReference": "Clinique Happy for Men",
     "category": "masculina",
     "collection": "diario",
-    "shortDescription": "floral, amaderada, equilibrada y facil de llevar.",
-    "longDescription": "Alegre y optimista como una manana de sol tras la lluvia. Inspirado en Clinique Happy para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia masculina ideal para diario, salidas, citas.",
+    "shortDescription": "citrica, fresca, floral y luminosa.",
+    "longDescription": "Alegre y limpia con mandarina, lima, notas marinas, limon, notas verdes, fresia, jazmin, lirio de los valles, rosa, cipres, almizcle, cedro y guayaco. Inspirado en Clinique Happy for Men.",
+    "bestFor": "Clientes que buscan una fragancia masculina ideal para diario, oficina y clima calido.",
     "concentration": "60% esencia",
     "duration": "6 a 8 horas",
     "intensity": "media",
     "sillage": "Equilibrada y agradable",
     "notes": {
       "top": [
+        "mandarina",
         "lima",
-        "notas verdes",
-        "mandarina"
+        "notas marinas",
+        "limon",
+        "notas verdes"
       ],
       "heart": [
-        "lirio de los valles",
         "fresia",
+        "jazmin",
+        "lirio de los valles",
         "rosa"
       ],
       "base": [
-        "cedro",
         "cipres",
-        "almizcle"
+        "almizcle",
+        "cedro",
+        "guayaco"
       ]
     },
     "families": [
-      "floral",
-      "amaderada",
-      "citric"
+      "citric",
+      "fresca",
+      "floral"
     ],
     "moods": [
-      "seguridad",
-      "estilo",
-      "presencia"
+      "alegria",
+      "limpieza",
+      "energia"
     ],
     "occasions": [
       "diario",
-      "salidas",
-      "citas"
+      "oficina",
+      "clima calido"
     ],
     "variants": [
       {
@@ -7649,46 +7655,52 @@
     "id": "p-giro",
     "slug": "giro",
     "publicName": "Giro",
-    "inspirationReference": "Perry Ellis 360 Red",
+    "inspirationReference": "Perry Ellis 360 Red for Men",
     "category": "masculina",
     "collection": "diario",
-    "shortDescription": "especiada, almizclada, equilibrada y facil de llevar.",
-    "longDescription": "Un giro inesperado de especias rojas y tabaco envolvente. Inspirado en Perry Ellis 360 Red para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia masculina ideal para diario, salidas, citas.",
+    "shortDescription": "citrica, especiada, amaderada y calida.",
+    "longDescription": "Especiada y vibrante con lima, bergamota, canela, naranja, mandarina, clavo, nuez moscada, lavanda, cilantro, almizcle, pachuli, cedro rojo, vetiver, sandalo y musgo de roble. Inspirado en Perry Ellis 360 Red for Men.",
+    "bestFor": "Clientes que buscan una fragancia masculina ideal para salidas, noche y citas.",
     "concentration": "60% esencia",
     "duration": "6 a 8 horas",
     "intensity": "media",
     "sillage": "Equilibrada y agradable",
     "notes": {
       "top": [
-        "pimienta roja",
+        "lima",
+        "bergamota",
+        "canela",
+        "naranja",
         "mandarina",
-        "jengibre"
+        "clavo",
+        "nuez moscada"
       ],
       "heart": [
-        "tabaco",
-        "canela",
-        "clavo"
+        "lavanda",
+        "cilantro"
       ],
       "base": [
-        "notas amaderadas",
-        "vainilla",
-        "almizcle"
+        "almizcle",
+        "pachuli",
+        "cedro rojo",
+        "vetiver",
+        "sandalo",
+        "musgo de roble"
       ]
     },
     "families": [
+      "citric",
       "especiada",
-      "almizclada",
       "amaderada"
     ],
     "moods": [
-      "seguridad",
-      "estilo",
+      "energia",
+      "calidez",
       "presencia"
     ],
     "occasions": [
-      "diario",
       "salidas",
+      "noche",
       "citas"
     ],
     "variants": [
@@ -7716,47 +7728,48 @@
     "id": "p-panorama",
     "slug": "panorama",
     "publicName": "Panorama",
-    "inspirationReference": "Perry Ellis 360",
+    "inspirationReference": "Perry Ellis 360 for Men",
     "category": "masculina",
     "collection": "firma",
-    "shortDescription": "oriental, almizclada, con presencia fuerte.",
-    "longDescription": "Amplio y panoramico con frescura herbal y maderas suaves. Inspirado en Perry Ellis 360 para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia masculina ideal para noche, citas, eventos.",
+    "shortDescription": "fresca, citrica, aromatica y limpia.",
+    "longDescription": "Clasica y limpia con bayas de enebro, limon, bergamota, lavanda, salvia, cardamomo, fresia, maderas, vetiver y almizcle. Inspirado en Perry Ellis 360 for Men para clientes que buscan frescura masculina facil.",
+    "bestFor": "Clientes que buscan una fragancia masculina ideal para diario, oficina y clima calido.",
     "concentration": "60% esencia",
     "duration": "8 a 10 horas",
     "intensity": "alta",
     "sillage": "Profunda y envolvente",
     "notes": {
       "top": [
-        "mandarina",
-        "bergamota",
-        "notas verdes"
+        "bayas de enebro",
+        "limon",
+        "bergamota"
       ],
       "heart": [
+        "lavanda",
         "salvia",
         "cardamomo",
-        "junipero"
+        "fresia"
       ],
       "base": [
-        "ambar",
-        "almizcle",
-        "notas amaderadas"
+        "notas amaderadas",
+        "vetiver",
+        "almizcle"
       ]
     },
     "families": [
-      "oriental",
-      "almizclada",
-      "citric"
+      "fresca",
+      "citric",
+      "amaderada"
     ],
     "moods": [
-      "seguridad",
-      "estilo",
-      "presencia"
+      "limpieza",
+      "calma",
+      "confianza"
     ],
     "occasions": [
-      "noche",
-      "citas",
-      "eventos"
+      "diario",
+      "oficina",
+      "clima calido"
     ],
     "variants": [
       {
@@ -7783,47 +7796,45 @@
     "id": "p-chispazo",
     "slug": "chispazo",
     "publicName": "Chispazo",
-    "inspirationReference": "Tommy Girl Now",
+    "inspirationReference": "Tommy Hilfiger Tommy Girl Now",
     "category": "femenina",
     "collection": "diario",
-    "shortDescription": "floral, dulce, equilibrada y facil de llevar.",
-    "longDescription": "Espontaneo y juvenil como un destello de alegria inesperada. Inspirado en Tommy Girl Now para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia femenina ideal para diario, salidas, citas.",
+    "shortDescription": "citrica, floral, almizclada y moderna.",
+    "longDescription": "Brillante y juvenil con bergamota, mandarina, magnolia, mahonia, menta, almizcle y cashmeran. Inspirado en Tommy Hilfiger Tommy Girl Now para clientas que quieren una fragancia fresca y actual.",
+    "bestFor": "Clientes que buscan una fragancia femenina ideal para diario, salidas y clima calido.",
     "concentration": "60% esencia",
     "duration": "6 a 8 horas",
     "intensity": "media",
     "sillage": "Equilibrada y agradable",
     "notes": {
       "top": [
-        "manzana",
-        "mandarina",
-        "grosella negra"
+        "bergamota",
+        "mandarina"
       ],
       "heart": [
         "magnolia",
-        "flor de naranjo",
-        "jazmin"
+        "mahonia",
+        "menta"
       ],
       "base": [
-        "sandalo",
         "almizcle",
-        "vainilla"
+        "cashmeran"
       ]
     },
     "families": [
+      "citric",
       "floral",
-      "dulce",
-      "frutal"
+      "almizclada"
     ],
     "moods": [
-      "elegancia",
-      "encanto",
-      "femineidad"
+      "alegria",
+      "frescura",
+      "juventud"
     ],
     "occasions": [
       "diario",
       "salidas",
-      "citas"
+      "clima calido"
     ],
     "variants": [
       {
@@ -7850,45 +7861,41 @@
     "id": "p-antojo",
     "slug": "antojo",
     "publicName": "Antojo",
-    "inspirationReference": "Ralph Lauren Big Pony 2",
+    "inspirationReference": "Ralph Lauren Big Pony 2 for Women",
     "category": "femenina",
     "collection": "diario",
-    "shortDescription": "amaderada, almizclada, equilibrada y facil de llevar.",
-    "longDescription": "Dulce y frutal como un antojo irresistible de frutas tropicales. Inspirado en Ralph Lauren Big Pony 2 para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia femenina ideal para diario, salidas, citas.",
+    "shortDescription": "frutal, dulce, oriental y juguetona.",
+    "longDescription": "Sencilla y coqueta con arandano, acorde floral frutal y tonka. Inspirado en Ralph Lauren Big Pony 2 for Women para clientas que buscan una referencia frutal dulce facil de recomendar.",
+    "bestFor": "Clientes que buscan una fragancia femenina ideal para diario, salidas y regalo.",
     "concentration": "60% esencia",
     "duration": "6 a 8 horas",
     "intensity": "media",
     "sillage": "Equilibrada y agradable",
     "notes": {
       "top": [
-        "mandarina",
-        "mango"
+        "arandano"
       ],
       "heart": [
-        "rosa mosqueta",
-        "mimosa"
+        "acorde floral frutal"
       ],
       "base": [
-        "vainilla",
-        "almizcle",
-        "cedro"
+        "haba tonka"
       ]
     },
     "families": [
-      "amaderada",
-      "almizclada",
-      "floral"
+      "frutal",
+      "dulce",
+      "oriental"
     ],
     "moods": [
-      "elegancia",
-      "encanto",
-      "femineidad"
+      "alegria",
+      "coqueteo",
+      "dulzura"
     ],
     "occasions": [
       "diario",
       "salidas",
-      "citas"
+      "regalo"
     ],
     "variants": [
       {
@@ -7986,44 +7993,44 @@
     "inspirationReference": "Dolce & Gabbana Light Blue Italian Zest",
     "category": "femenina",
     "collection": "firma",
-    "shortDescription": "amaderada, oriental, con presencia fuerte.",
-    "longDescription": "Luminosa y costera como un paseo por la Riviera al atardecer. Inspirado en Dolce & Gabbana Light Blue Italian Zest para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia femenina ideal para noche, citas, eventos.",
+    "shortDescription": "citrica, floral, fresca y veraniega.",
+    "longDescription": "Soleada y limpia con limon Primofiore, manzana Granny Smith, campanilla, bambu, jazmin, rosa blanca, cedro, ambar y almizcle. Inspirado en Dolce & Gabbana Light Blue Italian Zest para mujer.",
+    "bestFor": "Clientes que buscan una fragancia femenina ideal para diario, vacaciones y clima calido.",
     "concentration": "60% esencia",
     "duration": "8 a 10 horas",
     "intensity": "alta",
     "sillage": "Profunda y envolvente",
     "notes": {
       "top": [
-        "limon de Amalfi",
+        "limon Primofiore",
         "manzana Granny Smith",
-        "cedro"
+        "campanilla"
       ],
       "heart": [
+        "bambu",
         "jazmin",
-        "jengibre",
-        "notas acuaticas"
+        "rosa blanca"
       ],
       "base": [
-        "almizcle blanco",
+        "cedro",
         "ambar",
-        "cedro"
+        "almizcle"
       ]
     },
     "families": [
-      "amaderada",
-      "oriental",
-      "floral"
+      "citric",
+      "floral",
+      "fresca"
     ],
     "moods": [
-      "elegancia",
-      "encanto",
-      "femineidad"
+      "frescura",
+      "alegria",
+      "ligereza"
     ],
     "occasions": [
-      "noche",
-      "citas",
-      "eventos"
+      "diario",
+      "vacaciones",
+      "clima calido"
     ],
     "variants": [
       {
@@ -8053,30 +8060,31 @@
     "inspirationReference": "Dolce & Gabbana The One",
     "category": "femenina",
     "collection": "firma",
-    "shortDescription": "floral, dulce, con presencia fuerte.",
-    "longDescription": "Encantadora y sofisticada con lichi sensual y vainilla cremosa. Inspirado en Dolce & Gabbana The One para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia femenina ideal para noche, citas, eventos.",
+    "shortDescription": "floral, dulce, oriental y elegante.",
+    "longDescription": "Sensual y dorada con durazno, lichi, mandarina, bergamota, lirio, ciruela, jazmin, lirio de los valles, vainilla, ambar, almizcle y vetiver. Inspirado en Dolce & Gabbana The One para mujer.",
+    "bestFor": "Clientes que buscan una fragancia femenina ideal para citas, noche y eventos.",
     "concentration": "60% esencia",
     "duration": "8 a 10 horas",
     "intensity": "alta",
     "sillage": "Profunda y envolvente",
     "notes": {
       "top": [
-        "bergamota",
-        "mandarina",
         "durazno",
-        "lichi"
+        "lichi",
+        "mandarina",
+        "bergamota"
       ],
       "heart": [
         "lirio",
+        "ciruela",
         "jazmin",
-        "ciruela"
+        "lirio de los valles"
       ],
       "base": [
         "vainilla",
-        "vetiver",
         "ambar",
-        "almizcle"
+        "almizcle",
+        "vetiver"
       ]
     },
     "families": [
@@ -8085,13 +8093,13 @@
       "oriental"
     ],
     "moods": [
+      "elegancia",
       "seduccion",
-      "impacto",
-      "noche"
+      "calidez"
     ],
     "occasions": [
-      "noche",
       "citas",
+      "noche",
       "eventos"
     ],
     "variants": [
@@ -8329,27 +8337,25 @@
     "inspirationReference": "Bvlgari Omnia Amethyste",
     "category": "femenina",
     "collection": "diario",
-    "shortDescription": "floral, almizclada, equilibrada y facil de llevar.",
-    "longDescription": "Delicada y misteriosa como los reflejos violetas de una gema. Inspirado en Bvlgari Omnia Amethyste para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia femenina ideal para diario, salidas, citas.",
+    "shortDescription": "floral, almizclada, amaderada y delicada.",
+    "longDescription": "Suave y luminosa con notas verdes, pomelo rosa, iris, rosa bulgara, heliotropo y maderas. Inspirado en Bvlgari Omnia Amethyste para clientas que buscan un floral limpio y delicado.",
+    "bestFor": "Clientes que buscan una fragancia femenina ideal para diario, oficina y regalo.",
     "concentration": "60% esencia",
     "duration": "6 a 8 horas",
     "intensity": "media",
     "sillage": "Equilibrada y agradable",
     "notes": {
       "top": [
-        "pomelo rosa",
-        "grosellas verdes"
+        "notas verdes",
+        "pomelo rosa"
       ],
       "heart": [
         "iris",
-        "rosa bulgara",
-        "nenufar"
+        "rosa bulgara"
       ],
       "base": [
         "heliotropo",
-        "notas amaderadas",
-        "almizcle"
+        "notas amaderadas"
       ]
     },
     "families": [
@@ -8358,14 +8364,14 @@
       "amaderada"
     ],
     "moods": [
-      "elegancia",
-      "encanto",
-      "femineidad"
+      "delicadeza",
+      "limpieza",
+      "calma"
     ],
     "occasions": [
       "diario",
-      "salidas",
-      "citas"
+      "oficina",
+      "regalo"
     ],
     "variants": [
       {
@@ -8395,9 +8401,9 @@
     "inspirationReference": "Bvlgari Omnia Crystalline",
     "category": "femenina",
     "collection": "firma",
-    "shortDescription": "oriental, almizclada, con presencia fuerte.",
-    "longDescription": "Transparente y eterea como agua cristalina en un templo zen. Inspirado en Bvlgari Omnia Crystalline para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia femenina ideal para noche, citas, eventos.",
+    "shortDescription": "floral, acuatica, almizclada y transparente.",
+    "longDescription": "Cristalina y ligera con bambu, pera, loto, te, casia, almizcle, guayaco y musgo de roble. Inspirado en Bvlgari Omnia Crystalline para clientas que buscan una fragancia fresca y discreta.",
+    "bestFor": "Clientes que buscan una fragancia femenina ideal para diario, oficina y clima calido.",
     "concentration": "60% esencia",
     "duration": "8 a 10 horas",
     "intensity": "alta",
@@ -8405,34 +8411,33 @@
     "notes": {
       "top": [
         "bambu",
-        "nashi",
-        "pera asiatica"
+        "pera"
       ],
       "heart": [
         "loto",
         "te",
-        "notas acuaticas"
+        "casia"
       ],
       "base": [
-        "guayaco",
         "almizcle",
-        "ambar"
+        "guayaco",
+        "musgo de roble"
       ]
     },
     "families": [
-      "oriental",
-      "almizclada",
-      "amaderada"
+      "floral",
+      "acuatica",
+      "almizclada"
     ],
     "moods": [
-      "seguridad",
-      "estilo",
-      "presencia"
+      "limpieza",
+      "calma",
+      "delicadeza"
     ],
     "occasions": [
-      "noche",
-      "citas",
-      "eventos"
+      "diario",
+      "oficina",
+      "clima calido"
     ],
     "variants": [
       {

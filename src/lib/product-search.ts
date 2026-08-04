@@ -239,6 +239,16 @@ const productSpecificAliases: Record<string, string[]> = {
   "p-mediterraneo": ["dolce gabbana light blue homme", "light blue pour homme", "light blue hombre"],
   "p-costanera": ["light blue italian zest hombre", "light blue italian zest pour homme", "italian zest hombre"],
   "p-onix": ["212 vip black", "carolina herrera 212 vip black", "vip black"],
+  "p-cazador": ["azzaro wanted", "wanted azzaro"],
+  "p-jubilo": ["clinique happy men", "clinique happy for men", "happy hombre"],
+  "p-giro": ["perry ellis 360 red", "360 red men", "360 red hombre"],
+  "p-panorama": ["perry ellis 360", "360 men", "360 hombre"],
+  "p-chispazo": ["tommy girl now", "tommy now girl", "tommy hilfiger girl now"],
+  "p-antojo": ["ralph lauren big pony 2", "big pony 2", "big pony purple"],
+  "p-riviera": ["light blue italian zest mujer", "light blue italian zest feminina", "dolce gabbana italian zest mujer"],
+  "p-encanto": ["dolce gabbana the one mujer", "the one mujer", "the one feminine"],
+  "p-amatista": ["bvlgari omnia amethyste", "bulgari omnia amethyste", "omnia amethyste"],
+  "p-cristal": ["bvlgari omnia crystalline", "bulgari omnia crystalline", "omnia crystalline"],
 };
 
 export function normalizeSearchText(value: string) {
