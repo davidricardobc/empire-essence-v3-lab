@@ -2,7 +2,7 @@
 
 Objetivo: mejorar busqueda, filtros y autoridad comercial del catalogo sin inventar notas.
 
-Cobertura actual: 93 referencias revisadas/verificadas de 196 productos del catalogo.
+Cobertura actual: 103 referencias revisadas/verificadas de 196 productos del catalogo.
 
 ## Metodo
 
@@ -179,6 +179,23 @@ Este lote corrige referencias masculinas frescas, azules y deportivas donde el c
 | Llama | Versace Eros Flame | Corregido | Se agrega chinotto, romero, pepperwood, cedro de Texas, pachuli y musgo de roble; se cambia pimienta negra por pimienta de Madagascar. |
 | Raices | Valentino Uomo Born in Roma | Corregido | Se reemplazo cuero/notas verdes por notas minerales, sal, hoja de violeta, salvia, jengibre, vetiver ahumado y maderas. |
 
+## Lote 10 - masculinas no revisadas, bloque 4
+
+Este lote sigue con referencias masculinas comerciales y corrige varios casos donde el catalogo usaba piramides genericas o mezclaba flankers cercanos.
+
+| Producto | Inspiracion | Estado | Ajuste |
+|---|---|---|---|
+| Rebote | Carolina Herrera 212 Heroes | Corregido | Se reemplazo bergamota/lavanda/cedro por pera, cannabis, jengibre, geranio, salvia, cuero, almizcle y notas amaderadas. |
+| Supremo | Rabanne Invictus Victory Elixir | Corregido | Se aclaro el flanker Elixir y se alinea a lavanda, cardamomo, pimienta negra, incienso, pachuli, vaina de vainilla y haba tonka. |
+| Triunfo | Rabanne Invictus Victory | Corregido | Se reemplazo el perfil marino de Invictus por pimienta rosa, limon, olibanum, lavanda, vainilla, tonka y ambar. |
+| Espectro | Rabanne Phantom | Corregido | Se completo con ralladura de limon, limon de Amalfi, notas terrosas, manzana, humo, pachuli, vainilla y vetiver. |
+| Herencia | Roger & Gallet Jean Marie Farina Extra Vieille | Corregido | La categoria pasa a unisex y se alinea a una colonia citrica-aromatica con limon de Amalfi, bergamota, naranja, mandarina, petit grain, romero, neroli, clavel, rosa, clavo, mirto, cedro, vetiver, almizcle, ambar blanco y sandalo. |
+| Esencia | Dolce & Gabbana The One for Men EDP | Corregido | Se aclaro que es The One for Men EDP y queda pomelo, cilantro, albahaca, cardamomo, jengibre, flor de naranjo, ambar, tabaco y cedro. |
+| Divergencia | Hugo Boss Just Different | Corregido | Se reemplazo el perfil marino por menta, manzana Granny Smith, albahaca, fresia, cilantro, cashmeran, pachuli, labdano y olibanum. |
+| Chispa | Hugo Boss Bottled Tonic | Corregido menor | Se agregaron naranja amarga, limon, geranio, clavo y notas amaderadas; familia queda citrica/especiada/amaderada. |
+| Rocio | Lacoste L.12.12 Blanc Eau Fraiche | Corregido | Se aclaro el flanker Eau Fraiche y se reemplazo el perfil blanco clasico por pomelo, jengibre, limon, manzana, enebro, lavanda, ambroxan, cedro y vetiver. |
+| Brio | Lacoste L.12.12 Bleu Powerful | Corregido | Se alinea a la piramide minimalista de menta, pomelo, salvia esclarea, cedro y pachuli. |
+
 ## Fuentes usadas en el lote 1
 
 - Creed Aventus: https://www.creedfragrances.co.uk/products/aventus y https://www.fragrantica.com/perfume/Creed/Aventus-9828.html
@@ -299,7 +316,20 @@ Este lote corrige referencias masculinas frescas, azules y deportivas donde el c
 - Versace Eros Flame: https://www.fragrantica.com/perfume/Versace/Eros-Flame-52180.html
 - Valentino Uomo Born in Roma: https://www.fragrantica.com/perfume/Valentino/Valentino-Uomo-Born-in-Roma-55963.html
 
+## Fuentes usadas en el lote 10
+
+- Carolina Herrera 212 Heroes: https://www.fragrantica.com/perfume/Carolina-Herrera/212-Heroes-67936.html
+- Rabanne Invictus Victory Elixir: https://www.fragrantica.com/perfume/Rabanne/Invictus-Victory-Elixir-78575.html
+- Rabanne Invictus Victory: https://www.fragrantica.com/perfume/Rabanne/Invictus-Victory-62916.html
+- Rabanne Phantom: https://www.fragrantica.com/perfume/Rabanne/Phantom-68395.html
+- Roger & Gallet Jean Marie Farina Extra Vieille: https://www.fragrantica.com/perfume/Roger-Gallet/Jean-Marie-Farina-Extra-Vieille-5704.html
+- Dolce & Gabbana The One for Men EDP: https://www.fragrantica.com/perfume/Dolce-Gabbana/The-One-for-Men-Eau-de-Parfum-31909.html
+- Hugo Boss Just Different: https://www.fragrantica.com/perfume/Hugo-Boss/Hugo-Just-Different-13006.html
+- Hugo Boss Bottled Tonic: https://www.fragrantica.com/perfume/Hugo-Boss/Boss-Bottled-Tonic-43366.html
+- Lacoste L.12.12 Blanc Eau Fraiche: https://www.fragrantica.com/perfume/Lacoste-Fragrances/Eau-de-Lacoste-L-12-12-Blanc-Eau-Fraiche-79753.html
+- Lacoste L.12.12 Bleu Powerful: https://www.fragrantica.com/perfume/Lacoste-Fragrances/Eau-de-Lacoste-L-12-12-Bleu-Powerful-11041.html
+
 ## Siguientes lotes
 
-1. Masculinas no revisadas, bloque 4: 212 Heroes, Invictus Victory Elixir, Invictus Victory, Phantom, Jean Marie Farina, Dolce & Gabbana The One, Hugo Boss Just Different, Hugo Boss Tonic, Lacoste Eau Fraiche y Lacoste Blue.
+1. Masculinas no revisadas, bloque 5: Lacoste Rouge, Hugo Boss Journey, Boss The Scent, Boss Iced, Lacoste Red, Lacoste Noir, Lacoste Energized, Lacoste Essential, Issey Miyake y L'Eau Majeure d'Issey.
 2. Limpieza final de familias visibles: separar familia dominante de notas buscables para que el filtro sea preciso sin esconder opciones buenas.

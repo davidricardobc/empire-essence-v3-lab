@@ -4313,33 +4313,33 @@
     "inspirationReference": "Carolina Herrera 212 Heroes",
     "category": "masculina",
     "collection": "firma",
-    "shortDescription": "citric, especiada, con presencia fuerte.",
-    "longDescription": "Dinamico y resiliente como un heroe que siempre se levanta. Inspirado en Carolina Herrera 212 Heroes para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia masculina ideal para noche, citas, eventos.",
+    "shortDescription": "Aromatica y frutal con pera, jengibre, cannabis, salvia y cuero.",
+    "longDescription": "Rebote abre con pera, cannabis y jengibre; el corazon combina geranio y salvia sobre cuero, almizcle y notas amaderadas. Inspirado en Carolina Herrera 212 Heroes para clientes que quieren una masculina joven, urbana y diferente.",
+    "bestFor": "Clientes que buscan una masculina moderna para diario, salidas casuales y regalo joven.",
     "concentration": "60% esencia",
     "duration": "8 a 10 horas",
     "intensity": "alta",
     "sillage": "Profunda y envolvente",
     "notes": {
       "top": [
-        "limon",
-        "pomelo",
+        "pera",
+        "cannabis",
         "jengibre"
       ],
       "heart": [
-        "salvia",
-        "pimienta negra"
+        "geranio",
+        "salvia"
       ],
       "base": [
-        "musgo",
-        "ambar",
-        "sandalo"
+        "cuero",
+        "almizcle",
+        "notas amaderadas"
       ]
     },
     "families": [
-      "citric",
+      "frutal",
       "especiada",
-      "oriental"
+      "amaderada"
     ],
     "moods": [
       "seguridad",
@@ -4347,9 +4347,9 @@
       "presencia"
     ],
     "occasions": [
-      "noche",
-      "citas",
-      "eventos"
+      "diario",
+      "salidas",
+      "regalo"
     ],
     "variants": [
       {
@@ -4379,32 +4379,32 @@
     "inspirationReference": "Paco Rabanne Invictus Victory Elixir",
     "category": "masculina",
     "collection": "firma",
-    "shortDescription": "oriental, especiada, con presencia fuerte.",
-    "longDescription": "Absoluto y triunfante con incienso sagrado y oud imperial. Inspirado en Paco Rabanne Invictus Victory Elixir para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia masculina ideal para noche, citas, eventos.",
+    "shortDescription": "Oriental, amaderada y dulce con lavanda, cardamomo, incienso y vainilla.",
+    "longDescription": "Supremo abre con lavanda, cardamomo y pimienta negra; el corazon une incienso y pachuli sobre vaina de vainilla y haba tonka. Inspirado en Rabanne Invictus Victory Elixir para clientes que quieren una masculina intensa, dulce y poderosa.",
+    "bestFor": "Clientes que buscan una masculina nocturna, dulce y densa para citas, eventos y clima fresco.",
     "concentration": "60% esencia",
     "duration": "8 a 10 horas",
     "intensity": "alta",
     "sillage": "Profunda y envolvente",
     "notes": {
       "top": [
-        "incienso",
+        "lavanda",
+        "cardamomo",
         "pimienta negra"
       ],
       "heart": [
-        "ambar",
-        "resina"
+        "incienso",
+        "pachuli"
       ],
       "base": [
-        "oud",
-        "pachuli",
-        "vainilla"
+        "vaina de vainilla",
+        "haba tonka"
       ]
     },
     "families": [
       "oriental",
-      "especiada",
-      "amaderada"
+      "amaderada",
+      "dulce"
     ],
     "moods": [
       "seguridad",
@@ -4444,32 +4444,32 @@
     "inspirationReference": "Paco Rabanne Invictus Victory",
     "category": "masculina",
     "collection": "firma",
-    "shortDescription": "oriental, amaderada, con presencia fuerte.",
-    "longDescription": "Victorioso y majestuoso con incienso ardiente y ambar noble. Inspirado en Paco Rabanne Invictus Victory para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia masculina ideal para noche, citas, eventos.",
+    "shortDescription": "Oriental y dulce con pimienta rosa, limon, incienso, lavanda y vainilla.",
+    "longDescription": "Triunfo abre con pimienta rosa y limon; el corazon mezcla olibanum y lavanda sobre vainilla, haba tonka y ambar. Inspirado en Rabanne Invictus Victory para clientes que buscan una masculina dulce, especiada y de alto impacto.",
+    "bestFor": "Clientes que buscan una masculina de noche, citas y salidas con dulzor elegante.",
     "concentration": "60% esencia",
     "duration": "8 a 10 horas",
     "intensity": "alta",
     "sillage": "Profunda y envolvente",
     "notes": {
       "top": [
-        "mandarina verde",
-        "laurel aromatico"
+        "pimienta rosa",
+        "limon"
       ],
       "heart": [
-        "incienso",
-        "ambar gris"
+        "olibanum",
+        "lavanda"
       ],
       "base": [
-        "guayaco",
+        "vainilla",
         "haba tonka",
-        "musgo"
+        "ambar"
       ]
     },
     "families": [
       "oriental",
-      "amaderada",
-      "citric"
+      "dulce",
+      "especiada"
     ],
     "moods": [
       "seguridad",
@@ -4479,7 +4479,7 @@
     "occasions": [
       "noche",
       "citas",
-      "eventos"
+      "salidas"
     ],
     "variants": [
       {
@@ -4509,27 +4509,30 @@
     "inspirationReference": "Paco Rabanne Phantom",
     "category": "masculina",
     "collection": "diario",
-    "shortDescription": "citric, fresca, equilibrada y facil de llevar.",
-    "longDescription": "Futurista y enigmatico como una presencia que trasciende lo visible. Inspirado en Paco Rabanne Phantom para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia masculina ideal para diario, oficina, salidas.",
+    "shortDescription": "Citrica, aromatica y amaderada con lavanda, limon, manzana, humo y vainilla.",
+    "longDescription": "Espectro abre con lavanda, ralladura de limon y limon de Amalfi; el corazon mezcla lavanda, notas terrosas, manzana, humo y pachuli sobre vainilla, lavanda y vetiver. Inspirado en Rabanne Phantom para clientes que buscan una masculina moderna, limpia y dulce-amaderada.",
+    "bestFor": "Clientes que buscan una masculina joven y versatil para diario, salidas y noche ligera.",
     "concentration": "60% esencia",
     "duration": "6 a 8 horas",
     "intensity": "media",
     "sillage": "Equilibrada y agradable",
     "notes": {
       "top": [
-        "limon",
         "lavanda",
-        "bergamota"
+        "ralladura de limon",
+        "limon de Amalfi"
       ],
       "heart": [
-        "notas acuaticas",
-        "manzana"
+        "lavanda",
+        "notas terrosas",
+        "manzana",
+        "humo",
+        "pachuli"
       ],
       "base": [
         "vainilla",
-        "notas amaderadas",
-        "ladano"
+        "lavanda",
+        "vetiver"
       ]
     },
     "families": [
@@ -4544,8 +4547,8 @@
     ],
     "occasions": [
       "diario",
-      "oficina",
-      "salidas"
+      "salidas",
+      "noche"
     ],
     "variants": [
       {
@@ -4572,37 +4575,44 @@
     "id": "p-herencia",
     "slug": "herencia",
     "publicName": "Herencia",
-    "inspirationReference": "Jean Marie Farina Roger & Gallet",
-    "category": "masculina",
+    "inspirationReference": "Roger & Gallet Jean Marie Farina Extra Vieille",
+    "category": "unisex",
     "collection": "diario",
-    "shortDescription": "citric, amaderada, de lectura limpia.",
-    "longDescription": "Clasico y patrimonial con la primera eau de cologne de la historia. Inspirado en Jean Marie Farina Roger & Gallet para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia masculina ideal para diario, oficina, salidas.",
+    "shortDescription": "Colonia citrica aromatica con limon de Amalfi, neroli, romero y maderas suaves.",
+    "longDescription": "Herencia abre con limon de Amalfi, bergamota, naranja y mandarina; el corazon trae petit grain, romero, neroli, clavel y rosa sobre clavo, mirto, cedro, vetiver, almizcle, ambar blanco y sandalo. Inspirado en Roger & Gallet Jean Marie Farina Extra Vieille para clientes que buscan una colonia clasica y limpia.",
+    "bestFor": "Clientes que buscan una unisex citrica, historica y fresca para diario, oficina y clima calido.",
     "concentration": "60% esencia",
     "duration": "5 a 7 horas",
     "intensity": "suave",
     "sillage": "Limpia y cercana",
     "notes": {
       "top": [
+        "limon de Amalfi",
         "bergamota",
-        "limon",
-        "naranja"
+        "naranja",
+        "mandarina"
       ],
       "heart": [
+        "petit grain",
         "romero",
-        "lavanda",
-        "neroli"
+        "neroli",
+        "clavel",
+        "rosa"
       ],
       "base": [
+        "clavo",
+        "mirto",
         "cedro",
+        "vetiver",
         "almizcle",
+        "ambar blanco",
         "sandalo"
       ]
     },
     "families": [
       "citric",
-      "amaderada",
-      "fresca"
+      "fresca",
+      "amaderada"
     ],
     "moods": [
       "energia",
@@ -4612,7 +4622,7 @@
     "occasions": [
       "diario",
       "oficina",
-      "salidas"
+      "clima calido"
     ],
     "variants": [
       {
@@ -4709,12 +4719,12 @@
     "id": "p-esencia",
     "slug": "esencia",
     "publicName": "Esencia",
-    "inspirationReference": "Dolce & Gabbana The One",
+    "inspirationReference": "Dolce & Gabbana The One for Men EDP",
     "category": "masculina",
     "collection": "firma",
-    "shortDescription": "amaderada, oriental, con presencia fuerte.",
-    "longDescription": "Pura esencia masculina con jengibre calido y cedro noble. Inspirado en Dolce & Gabbana The One para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia masculina ideal para noche, citas, eventos.",
+    "shortDescription": "Amaderada y especiada con pomelo, cilantro, cardamomo, tabaco y ambar.",
+    "longDescription": "Esencia abre con pomelo, cilantro y albahaca; el corazon mezcla cardamomo, jengibre y flor de naranjo sobre ambar, tabaco y cedro. Inspirado en Dolce & Gabbana The One for Men EDP para clientes que buscan una masculina elegante, calida y seductora.",
+    "bestFor": "Clientes que buscan una masculina para citas, noche, eventos y regalo elegante.",
     "concentration": "60% esencia",
     "duration": "8 a 10 horas",
     "intensity": "alta",
@@ -4722,24 +4732,24 @@
     "notes": {
       "top": [
         "pomelo",
-        "semilla de cilantro",
+        "cilantro",
         "albahaca"
       ],
       "heart": [
+        "cardamomo",
         "jengibre",
-        "flor de naranjo",
-        "cardamomo"
+        "flor de naranjo"
       ],
       "base": [
-        "cedro",
-        "ladano",
-        "ambar"
+        "ambar",
+        "tabaco",
+        "cedro"
       ]
     },
     "families": [
       "amaderada",
-      "oriental",
-      "citric"
+      "especiada",
+      "oriental"
     ],
     "moods": [
       "seguridad",
@@ -4747,8 +4757,8 @@
       "presencia"
     ],
     "occasions": [
-      "noche",
       "citas",
+      "noche",
       "eventos"
     ],
     "variants": [
@@ -4779,34 +4789,34 @@
     "inspirationReference": "Hugo Boss Just Different",
     "category": "masculina",
     "collection": "firma",
-    "shortDescription": "oriental, almizclada, con presencia fuerte.",
-    "longDescription": "Diferente y refrescante con menta helada y senderos inesperados. Inspirado en Hugo Boss Just Different para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia masculina ideal para noche, citas, eventos.",
+    "shortDescription": "Fresca, verde y amaderada con menta, manzana Granny Smith y cashmeran.",
+    "longDescription": "Divergencia abre con menta y manzana Granny Smith; el corazon combina albahaca, fresia y cilantro sobre cashmeran, pachuli, labdano y olibanum. Inspirado en Hugo Just Different para clientes que buscan una masculina verde, moderna y casual.",
+    "bestFor": "Clientes que buscan una masculina fresca para diario, oficina creativa y salidas casuales.",
     "concentration": "60% esencia",
     "duration": "8 a 10 horas",
     "intensity": "alta",
     "sillage": "Profunda y envolvente",
     "notes": {
       "top": [
-        "menta helada",
-        "manzana Granny Smith",
-        "bergamota"
+        "menta",
+        "manzana Granny Smith"
       ],
       "heart": [
-        "fresia",
         "albahaca",
-        "notas acuaticas"
+        "fresia",
+        "cilantro"
       ],
       "base": [
-        "cedro de Virginia",
-        "almizcle",
-        "ambar"
+        "cashmeran",
+        "pachuli",
+        "labdano",
+        "olibanum"
       ]
     },
     "families": [
-      "oriental",
-      "almizclada",
-      "fresca"
+      "fresca",
+      "especiada",
+      "amaderada"
     ],
     "moods": [
       "energia",
@@ -4814,9 +4824,9 @@
       "confianza"
     ],
     "occasions": [
-      "noche",
-      "citas",
-      "eventos"
+      "diario",
+      "oficina",
+      "salidas"
     ],
     "variants": [
       {
@@ -4846,34 +4856,35 @@
     "inspirationReference": "Hugo Boss Tonic",
     "category": "masculina",
     "collection": "diario",
-    "shortDescription": "amaderada, citric, equilibrada y facil de llevar.",
-    "longDescription": "Energizante y luminoso como una chispa de vitalidad matutina. Inspirado en Hugo Boss Tonic para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia masculina ideal para diario, salidas, citas.",
+    "shortDescription": "Citrica y especiada con manzana, naranja amarga, pomelo, jengibre y vetiver.",
+    "longDescription": "Chispa abre con manzana, naranja amarga, pomelo y limon; el corazon mezcla jengibre, canela, geranio y clavo sobre vetiver y notas amaderadas. Inspirado en Hugo Boss Bottled Tonic para clientes que quieren una masculina de oficina fresca y clara.",
+    "bestFor": "Clientes que buscan una masculina limpia para oficina, diario y clima calido.",
     "concentration": "60% esencia",
     "duration": "6 a 8 horas",
     "intensity": "media",
     "sillage": "Equilibrada y agradable",
     "notes": {
       "top": [
-        "pomelo",
         "manzana",
-        "citricos"
+        "naranja amarga",
+        "pomelo",
+        "limon"
       ],
       "heart": [
         "jengibre",
-        "notas acuaticas",
-        "geranio"
+        "canela",
+        "geranio",
+        "clavo"
       ],
       "base": [
         "vetiver",
-        "almizcle blanco",
-        "cedro"
+        "notas amaderadas"
       ]
     },
     "families": [
-      "amaderada",
       "citric",
-      "almizclada"
+      "especiada",
+      "amaderada"
     ],
     "moods": [
       "seguridad",
@@ -4881,9 +4892,9 @@
       "presencia"
     ],
     "occasions": [
+      "oficina",
       "diario",
-      "salidas",
-      "citas"
+      "clima calido"
     ],
     "variants": [
       {
@@ -4910,12 +4921,12 @@
     "id": "p-rocio",
     "slug": "rocio",
     "publicName": "Rocio",
-    "inspirationReference": "Lacoste Eau Fraiche",
+    "inspirationReference": "Lacoste L.12.12 Blanc Eau Fraiche",
     "category": "masculina",
     "collection": "diario",
-    "shortDescription": "amaderada, almizclada, equilibrada y facil de llevar.",
-    "longDescription": "Fresco como las primeras gotas de rocio sobre hierba verde. Inspirado en Lacoste Eau Fraiche para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia masculina ideal para diario, salidas, citas.",
+    "shortDescription": "Citrica y fresca con pomelo, jengibre, limon, manzana, enebro y ambroxan.",
+    "longDescription": "Rocio abre con pomelo, jengibre y limon; el corazon combina manzana, enebro y lavanda sobre ambroxan, cedro y vetiver. Inspirado en Lacoste L.12.12 Blanc Eau Fraiche para clientes que buscan una masculina muy limpia, fresca y facil de usar.",
+    "bestFor": "Clientes que buscan una fresca masculina para diario, gimnasio suave, oficina y clima calido.",
     "concentration": "60% esencia",
     "duration": "6 a 8 horas",
     "intensity": "media",
@@ -4923,24 +4934,24 @@
     "notes": {
       "top": [
         "pomelo",
-        "manzana verde",
-        "notas acuaticas"
+        "jengibre",
+        "limon"
       ],
       "heart": [
-        "citricos",
-        "pimienta negra",
-        "violeta"
+        "manzana",
+        "enebro",
+        "lavanda"
       ],
       "base": [
-        "vetiver",
+        "ambroxan",
         "cedro",
-        "almizcle"
+        "vetiver"
       ]
     },
     "families": [
-      "amaderada",
-      "almizclada",
-      "citric"
+      "citric",
+      "fresca",
+      "amaderada"
     ],
     "moods": [
       "seguridad",
@@ -4949,8 +4960,8 @@
     ],
     "occasions": [
       "diario",
-      "salidas",
-      "citas"
+      "oficina",
+      "clima calido"
     ],
     "variants": [
       {
@@ -4977,36 +4988,32 @@
     "id": "p-brio",
     "slug": "brio",
     "publicName": "Brio",
-    "inspirationReference": "Lacoste Blue",
+    "inspirationReference": "Lacoste L.12.12 Bleu Powerful",
     "category": "masculina",
     "collection": "diario",
-    "shortDescription": "amaderada, floral, equilibrada y facil de llevar.",
-    "longDescription": "Vigoroso y natural con romero aromatico y maderas limpias. Inspirado en Lacoste Blue para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia masculina ideal para diario, salidas, citas.",
+    "shortDescription": "Aromatica y verde con menta, pomelo, salvia, cedro y pachuli.",
+    "longDescription": "Brio abre con menta y pomelo; el corazon de salvia esclarea descansa sobre cedro y pachuli. Inspirado en Lacoste L.12.12 Bleu Powerful para clientes que buscan una masculina fresca, verde y de cuerpo aromatico.",
+    "bestFor": "Clientes que buscan una masculina fresca para diario, oficina, gimnasio suave y clima templado.",
     "concentration": "60% esencia",
     "duration": "6 a 8 horas",
     "intensity": "media",
     "sillage": "Equilibrada y agradable",
     "notes": {
       "top": [
-        "manzana verde",
-        "romero",
-        "bergamota"
+        "menta",
+        "pomelo"
       ],
       "heart": [
-        "cedro",
-        "jengibre",
-        "jazmin"
+        "salvia esclarea"
       ],
       "base": [
-        "sandalo",
-        "vetiver",
-        "haba tonka"
+        "cedro",
+        "pachuli"
       ]
     },
     "families": [
+      "fresca",
       "amaderada",
-      "floral",
       "citric"
     ],
     "moods": [
@@ -5016,8 +5023,8 @@
     ],
     "occasions": [
       "diario",
-      "salidas",
-      "citas"
+      "oficina",
+      "salidas"
     ],
     "variants": [
       {

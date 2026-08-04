@@ -199,6 +199,16 @@ const productSpecificAliases: Record<string, string[]> = {
   "p-profundo": ["versace dylan blue", "dylan blue pour homme", "dylan blue hombre"],
   "p-llama": ["versace eros flame", "eros flame"],
   "p-raices": ["valentino born in roma", "valentino uomo born in roma", "born in roma uomo"],
+  "p-rebote": ["212 heroes", "carolina herrera 212 heroes", "heroes 212"],
+  "p-supremo": ["invictus victory elixir", "paco rabanne victory elixir", "rabanne victory elixir"],
+  "p-triunfo": ["invictus victory", "paco rabanne invictus victory", "rabanne invictus victory"],
+  "p-espectro": ["paco rabanne phantom", "rabanne phantom", "phantom perfume"],
+  "p-herencia": ["jean marie farina", "roger gallet farina", "roger gallet jean marie farina"],
+  "p-esencia": ["dolce gabbana the one men", "the one for men edp", "the one hombre"],
+  "p-divergencia": ["hugo boss just different", "boss just different", "just different"],
+  "p-chispa": ["hugo boss tonic", "boss bottled tonic", "boss tonic"],
+  "p-rocio": ["lacoste eau fraiche", "lacoste blanc eau fraiche", "l1212 blanc eau fraiche"],
+  "p-brio": ["lacoste blue", "lacoste bleu", "lacoste bleu powerful", "l1212 bleu"],
 };
 
 export function normalizeSearchText(value: string) {
