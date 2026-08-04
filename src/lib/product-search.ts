@@ -279,6 +279,16 @@ const productSpecificAliases: Record<string, string[]> = {
   "p-resplandor": ["paris hilton dazzle", "dazzle paris hilton"],
   "p-transparencia": ["paris hilton sheer", "sheer paris hilton"],
   "p-herencia-dorada": ["paris hilton heiress", "heiress paris hilton"],
+  "p-mistica": ["creed love in black", "love in black", "love black creed"],
+  "p-hipnosis": ["dior hypnotic poison", "hypnotic poison", "poison hypnotic"],
+  "p-dicha": ["dior joy", "joy by dior", "joy dior"],
+  "p-infinita": ["ck eternity women", "calvin klein eternity women", "eternity mujer"],
+  "p-embeleso": ["ck euphoria", "calvin klein euphoria", "euphoria mujer"],
+  "p-magnetismo": ["ck in2u her", "ck in2u mujer", "calvin klein ck in2u her"],
+  "p-profundidad": ["versace dylan blue mujer", "versace pour femme dylan blue", "dylan blue mujer"],
+  "p-pureza": ["creed love in white", "love in white", "love white creed"],
+  "p-victoria": ["creed aventus for her", "aventus for her", "aventus mujer"],
+  "p-florecimiento": ["armani si fiori", "giorgio armani si fiori", "si fiori"],
 };
 
 export function normalizeSearchText(value: string) {

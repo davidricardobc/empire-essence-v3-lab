@@ -2,7 +2,7 @@
 
 Objetivo: mejorar busqueda, filtros y autoridad comercial del catalogo sin inventar notas.
 
-Cobertura actual: 173 referencias revisadas/verificadas de 196 productos del catalogo.
+Cobertura actual: 183 referencias revisadas/verificadas de 196 productos del catalogo.
 
 ## Metodo
 
@@ -315,6 +315,23 @@ Este lote trabaja Lacoste, Britney, Issey Miyake y Paris Hilton, aclarando vario
 | Transparencia | Paris Hilton Sheer | Corregido | Se reemplazo mandarina/pera/rosa/cedro por manzana roja, notas acuaticas, fresia, jazmin, lirio de los valles, mimosa, almizcle, ylang ylang y sandalo. |
 | Herencia Dorada | Paris Hilton Heiress | Corregido | Se reemplazo mandarina/champan/gardenia/rubia blanca por maracuya, naranja, granizado de durazno, mimosa champan, jazmin estrella, tiare, ylang ylang, madreselva, flor de mora, granadina, hoja de violeta, vetiver, tonka y maderas rubias. |
 
+## Lote 18 - femeninas no revisadas, bloque 12
+
+Este lote revisa Creed, Dior, Calvin Klein, Versace y Armani, corrigiendo varias piramides de alta recordacion que estaban mezcladas o incompletas.
+
+| Producto | Inspiracion | Estado | Ajuste |
+|---|---|---|---|
+| Mistica | Creed Love in Black | Corregido | Se reemplazo ciruela/notas verdes/vainilla/sandalo/vetiver por violeta italiana, cedro de Virginia, flores silvestres, iris, almizcle, clavo, grosella negra y rosa bulgara. |
+| Hipnosis | Dior Hypnotic Poison | Corregido menor | Se agregaron palisandro brasileno y alcaravea; jazmin sambac pasa a jazmin. |
+| Dicha | Joy by Dior | Corregido | Se retiro flores blancas/peonia/notas amaderadas genericas y queda bergamota, mandarina, jazmin, rosa de Grasse, durazno, cassis, almizcle blanco, sandalo, cedro, pachuli y benjui. |
+| Infinita | Calvin Klein Eternity for Women | Corregido | Se completo con notas verdes, citricos, lirio, calendula, violeta, jazmin y heliotropo. |
+| Embeleso | Calvin Klein Euphoria | Corregido | Se retiro vainilla negra/almizcle y queda granada, caqui, acorde verde, orquidea negra, loto, champaca, caoba, ambar, violeta negra y crema batida. |
+| Magnetismo | Calvin Klein CK IN2U Her | Corregido | Se reemplazo notas afrutadas/cactus rojo por bergamota siciliana, hoja de grosella roja, orquidea de azucar y cactus blanco. |
+| Profundidad | Versace Pour Femme Dylan Blue | Corregido | Se agregaron trebol, nomeolvides, shiso, petalia, escaramujo y maderas blancas; se retiro clementina y peonia. |
+| Pureza | Creed Love in White | Corregido | Se reemplazo naranja/mandarina/cedro/almizcle por cascara de naranja, magnolia, narciso, arroz, jazmin italiano, iris, rosa bulgara, ambar gris, sandalo y vainilla. |
+| Victoria | Creed Aventus for Her | Corregido | Se reemplazo grosella negra/limon/lila/ambar gris/pachuli por hoja de violeta, pimienta rosa, bergamota de Calabria, estoraque, sandalo Mysore, cassis, ambar y ylang ylang. |
+| Florecimiento | Giorgio Armani Si Fiori | Corregido | Se retiro jazmin grandiflorum y se agregan pachuli y musgo de roble en corazon; base queda vainilla y almizcle blanco. |
+
 ## Fuentes usadas en el lote 1
 
 - Creed Aventus: https://www.creedfragrances.co.uk/products/aventus y https://www.fragrantica.com/perfume/Creed/Aventus-9828.html
@@ -539,7 +556,20 @@ Este lote trabaja Lacoste, Britney, Issey Miyake y Paris Hilton, aclarando vario
 - Paris Hilton Sheer: https://www.fragrantica.com/perfume/Paris-Hilton/Paris-Hilton-Sheer-14562.html
 - Paris Hilton Heiress: https://nstperfume.com/2006/12/11/paris-hilton-heiress-perfume-review/
 
+## Fuentes usadas en el lote 18
+
+- Creed Love in Black: https://www.fragrantica.com/perfume/Creed/Love-in-Black-4261.html
+- Dior Hypnotic Poison: https://www.fragrantica.com/perfume/Dior/Hypnotic-Poison-219.html
+- Joy by Dior: https://www.fragrantica.com/perfume/Dior/Joy-by-Dior-51285.html
+- Calvin Klein Eternity for Women: https://www.fragrantica.com/perfume/Calvin-Klein/Eternity-257.html
+- Calvin Klein Euphoria: https://www.fragrantica.com/perfume/Calvin-Klein/Euphoria-253.html
+- Calvin Klein CK IN2U Her: https://www.fragrantica.com/perfume/Calvin-Klein/CK-IN2U-for-Her-934.html
+- Versace Pour Femme Dylan Blue: https://www.fragrantica.com/perfume/Versace/Versace-Pour-Femme-Dylan-Blue-47459.html
+- Creed Love in White: https://www.fragrantica.com/perfume/Creed/Love-in-White-4262.html
+- Creed Aventus for Her: https://basenotes.com/fragrances/aventus-for-her-by-creed.26149458 y https://creedboutique.com/products/aventus-for-her
+- Giorgio Armani Si Fiori: https://www.fragrantica.com/perfume/Giorgio-Armani/Si-Fiori-52678.html
+
 ## Siguientes lotes
 
-1. Femeninas no revisadas, bloque 12: Creed Love in Black, Dior Hypnotic Poison, Dior Joy, Calvin Klein Eternity Women, Calvin Klein Euphoria, CK IN2U Her, Versace Dylan Blue Pour Femme, Creed Love in White, Creed Aventus for Her y Giorgio Armani Si Fiori.
-2. Limpieza final de familias visibles: separar familia dominante de notas buscables para que el filtro sea preciso sin esconder opciones buenas.
+1. Femeninas no revisadas, bloque final: Kenzo Flower, Dior Poison Girl, Bvlgari Omnia Coral, Bvlgari Amarena, Kenzo World Intense, Nina Ricci Delices, Versace Crystal Noir, Burberry Women, Montale Paris, Carolina Herrera 212 Sexy, Rabanne Fame, Bvlgari Zahira y Dolce & Gabbana L'Imperatrice 3.
+2. Validacion final de las 196 referencias, busqueda y build.

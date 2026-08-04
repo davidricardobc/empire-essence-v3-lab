@@ -11032,44 +11032,42 @@
     "inspirationReference": "Creed Love in Black",
     "category": "femenina",
     "collection": "diario",
-    "shortDescription": "floral, dulce, equilibrada y facil de llevar.",
-    "longDescription": "Oscura y fascinante como un ritual antiguo de amor eterno. Inspirado en Creed Love in Black para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia femenina ideal para diario, salidas, citas.",
+    "shortDescription": "floral, especiada, almizclada y misteriosa.",
+    "longDescription": "Oscura y floral con violeta italiana, cedro de Virginia, flores silvestres, iris, almizcle, clavo, grosella negra y rosa bulgara. Inspirado en Creed Love in Black.",
+    "bestFor": "Clientes que buscan una fragancia femenina ideal para noche, eventos y citas.",
     "concentration": "60% esencia",
     "duration": "6 a 8 horas",
     "intensity": "media",
     "sillage": "Equilibrada y agradable",
     "notes": {
       "top": [
-        "grosella negra",
-        "ciruela",
-        "notas verdes"
+        "violeta italiana",
+        "cedro de Virginia",
+        "flores silvestres"
       ],
       "heart": [
-        "rosa turca",
         "iris",
-        "violeta"
+        "almizcle",
+        "clavo"
       ],
       "base": [
-        "almizcle",
-        "vainilla",
-        "sandalo",
-        "vetiver"
+        "grosella negra",
+        "rosa bulgara"
       ]
     },
     "families": [
       "floral",
-      "dulce",
+      "especiada",
       "almizclada"
     ],
     "moods": [
+      "misterio",
       "elegancia",
-      "encanto",
-      "femineidad"
+      "presencia"
     ],
     "occasions": [
-      "diario",
-      "salidas",
+      "noche",
+      "eventos",
       "citas"
     ],
     "variants": [
@@ -11100,9 +11098,9 @@
     "inspirationReference": "Dior Hypnotic Poison",
     "category": "femenina",
     "collection": "diario",
-    "shortDescription": "floral, almizclada, equilibrada y facil de llevar.",
-    "longDescription": "Hipnotizante y prohibido con vainilla narcotica y jazmin nocturno. Inspirado en Dior Hypnotic Poison para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia femenina ideal para diario, salidas, citas.",
+    "shortDescription": "oriental, gourmand, dulce y envolvente.",
+    "longDescription": "Hipnotica y cremosa con coco, ciruela, albaricoque, jazmin, palisandro brasileno, tuberosa, alcaravea, rosa, lirio de los valles, vainilla, almendra, sandalo y almizcle. Inspirado en Dior Hypnotic Poison.",
+    "bestFor": "Clientes que buscan una fragancia femenina ideal para noche, citas y clima fresco.",
     "concentration": "60% esencia",
     "duration": "6 a 8 horas",
     "intensity": "media",
@@ -11110,36 +11108,38 @@
     "notes": {
       "top": [
         "coco",
-        "albaricoque",
-        "ciruela"
+        "ciruela",
+        "albaricoque"
       ],
       "heart": [
+        "jazmin",
+        "palisandro brasileno",
         "tuberosa",
-        "jazmin sambac",
+        "alcaravea",
         "rosa",
         "lirio de los valles"
       ],
       "base": [
         "vainilla",
-        "almizcle",
+        "almendra",
         "sandalo",
-        "almendra"
+        "almizcle"
       ]
     },
     "families": [
-      "floral",
-      "almizclada",
-      "amaderada"
+      "oriental",
+      "gourmand",
+      "dulce"
     ],
     "moods": [
-      "elegancia",
-      "encanto",
-      "femineidad"
+      "seduccion",
+      "misterio",
+      "calidez"
     ],
     "occasions": [
-      "diario",
-      "salidas",
-      "citas"
+      "noche",
+      "citas",
+      "salidas"
     ],
     "variants": [
       {
@@ -11166,12 +11166,12 @@
     "id": "p-dicha",
     "slug": "dicha",
     "publicName": "Dicha",
-    "inspirationReference": "Dior Joy",
+    "inspirationReference": "Joy by Dior",
     "category": "femenina",
     "collection": "diario",
-    "shortDescription": "amaderada, citric, equilibrada y facil de llevar.",
-    "longDescription": "Felicidad pura destilada en rosa centifolia y jazmin absoluto. Inspirado en Dior Joy para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia femenina ideal para diario, salidas, citas.",
+    "shortDescription": "floral, frutal, almizclada y luminosa.",
+    "longDescription": "Radiante y suave con bergamota, mandarina, jazmin, rosa de Grasse, durazno, cassis, almizcle blanco, sandalo, cedro, pachuli y benjui. Inspirado en Joy by Dior.",
+    "bestFor": "Clientes que buscan una fragancia femenina ideal para diario, eventos y regalo.",
     "concentration": "60% esencia",
     "duration": "6 a 8 horas",
     "intensity": "media",
@@ -11179,34 +11179,36 @@
     "notes": {
       "top": [
         "bergamota",
-        "mandarina",
-        "flores blancas"
+        "mandarina"
       ],
       "heart": [
-        "rosa centifolia",
-        "jazmin grandiflorum",
-        "peony"
+        "jazmin",
+        "rosa de Grasse",
+        "durazno",
+        "cassis"
       ],
       "base": [
-        "sandalo cremoso",
-        "almizcle",
-        "notas amaderadas"
+        "almizcle blanco",
+        "sandalo",
+        "cedro",
+        "pachuli",
+        "benjui"
       ]
     },
     "families": [
-      "amaderada",
-      "citric",
+      "floral",
+      "frutal",
       "almizclada"
     ],
     "moods": [
-      "seguridad",
-      "estilo",
-      "presencia"
+      "alegria",
+      "elegancia",
+      "luminosidad"
     ],
     "occasions": [
       "diario",
-      "salidas",
-      "citas"
+      "eventos",
+      "regalo"
     ],
     "variants": [
       {
@@ -11233,49 +11235,56 @@
     "id": "p-infinita",
     "slug": "infinita",
     "publicName": "Infinita",
-    "inspirationReference": "Calvin Klein Eternity",
+    "inspirationReference": "Calvin Klein Eternity for Women",
     "category": "femenina",
     "collection": "firma",
-    "shortDescription": "floral, oriental, con presencia fuerte.",
-    "longDescription": "Eterna y romantica como una promesa que trasciende el tiempo. Inspirado en Calvin Klein Eternity para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia femenina ideal para noche, citas, eventos.",
+    "shortDescription": "floral, fresca, almizclada y romantica.",
+    "longDescription": "Clasica y limpia con notas verdes, fresia, salvia, citricos, mandarina, clavel, lirio, lirio de los valles, narciso, calendula, violeta, rosa, jazmin, almizcle, heliotropo, sandalo, ambar y pachuli. Inspirado en Calvin Klein Eternity for Women.",
+    "bestFor": "Clientes que buscan una fragancia femenina ideal para diario, oficina y regalo.",
     "concentration": "60% esencia",
     "duration": "8 a 10 horas",
     "intensity": "alta",
     "sillage": "Profunda y envolvente",
     "notes": {
       "top": [
+        "notas verdes",
         "fresia",
-        "mandarina",
-        "salvia"
+        "salvia",
+        "citricos",
+        "mandarina"
       ],
       "heart": [
+        "clavel",
+        "lirio",
         "lirio de los valles",
-        "rosa",
         "narciso",
-        "clavel"
+        "calendula",
+        "violeta",
+        "rosa",
+        "jazmin"
       ],
       "base": [
+        "almizcle",
+        "heliotropo",
         "sandalo",
         "ambar",
-        "almizcle",
         "pachuli"
       ]
     },
     "families": [
       "floral",
-      "oriental",
+      "fresca",
       "almizclada"
     ],
     "moods": [
-      "elegancia",
-      "encanto",
-      "femineidad"
+      "romance",
+      "limpieza",
+      "calma"
     ],
     "occasions": [
-      "noche",
-      "citas",
-      "eventos"
+      "diario",
+      "oficina",
+      "regalo"
     ],
     "variants": [
       {
@@ -11305,9 +11314,9 @@
     "inspirationReference": "Calvin Klein Euphoria",
     "category": "femenina",
     "collection": "firma",
-    "shortDescription": "oriental, almizclada, con presencia fuerte.",
-    "longDescription": "Embriagadora y oscura con orquidea negra y vainilla profunda. Inspirado en Calvin Klein Euphoria para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia femenina ideal para noche, citas, eventos.",
+    "shortDescription": "oriental, floral, amaderada y sensual.",
+    "longDescription": "Exotica y sensual con granada, caqui, acorde verde, orquidea negra, loto, champaca, caoba, ambar, violeta negra y crema batida. Inspirado en Calvin Klein Euphoria.",
+    "bestFor": "Clientes que buscan una fragancia femenina ideal para noche, citas y eventos.",
     "concentration": "60% esencia",
     "duration": "8 a 10 horas",
     "intensity": "alta",
@@ -11316,29 +11325,29 @@
       "top": [
         "granada",
         "caqui",
-        "notas verdes"
+        "acorde verde"
       ],
       "heart": [
-        "loto",
         "orquidea negra",
+        "loto",
         "champaca"
       ],
       "base": [
         "caoba",
-        "vainilla negra",
-        "almizcle",
-        "ambar"
+        "ambar",
+        "violeta negra",
+        "crema batida"
       ]
     },
     "families": [
       "oriental",
-      "almizclada",
-      "floral"
+      "floral",
+      "amaderada"
     ],
     "moods": [
-      "elegancia",
-      "encanto",
-      "femineidad"
+      "seduccion",
+      "misterio",
+      "presencia"
     ],
     "occasions": [
       "noche",
@@ -11370,12 +11379,12 @@
     "id": "p-magnetismo",
     "slug": "magnetismo",
     "publicName": "Magnetismo",
-    "inspirationReference": "Calvin Klein CK In2U Her",
+    "inspirationReference": "Calvin Klein CK IN2U Her",
     "category": "femenina",
     "collection": "firma",
-    "shortDescription": "amaderada, oriental, con presencia fuerte.",
-    "longDescription": "Irresistible atraccion con notas vibrantes y vainilla magnetica. Inspirado en Calvin Klein CK In2U Her para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia femenina ideal para noche, citas, eventos.",
+    "shortDescription": "citrica, floral, oriental y moderna.",
+    "longDescription": "Joven y luminosa con pomelo rosa, bergamota siciliana, hoja de grosella roja, orquidea de azucar, cactus blanco, vainilla, cedro rojo y ambar. Inspirado en Calvin Klein CK IN2U Her.",
+    "bestFor": "Clientes que buscan una fragancia femenina ideal para diario, salidas y clima calido.",
     "concentration": "60% esencia",
     "duration": "8 a 10 horas",
     "intensity": "alta",
@@ -11383,32 +11392,33 @@
     "notes": {
       "top": [
         "pomelo rosa",
-        "notas afrutadas"
+        "bergamota siciliana",
+        "hoja de grosella roja"
       ],
       "heart": [
-        "orquidea",
-        "cactus rojo"
+        "orquidea de azucar",
+        "cactus blanco"
       ],
       "base": [
-        "vainilla blanca",
-        "cedro",
+        "vainilla",
+        "cedro rojo",
         "ambar"
       ]
     },
     "families": [
-      "amaderada",
-      "oriental",
-      "citric"
+      "citric",
+      "floral",
+      "oriental"
     ],
     "moods": [
-      "seguridad",
-      "estilo",
-      "presencia"
+      "juventud",
+      "energia",
+      "coqueteo"
     ],
     "occasions": [
-      "noche",
-      "citas",
-      "eventos"
+      "diario",
+      "salidas",
+      "clima calido"
     ],
     "variants": [
       {
@@ -11435,47 +11445,51 @@
     "id": "p-profundidad",
     "slug": "profundidad",
     "publicName": "Profundidad",
-    "inspirationReference": "Versace Dylan Blue",
+    "inspirationReference": "Versace Pour Femme Dylan Blue",
     "category": "femenina",
     "collection": "firma",
-    "shortDescription": "floral, amaderada, con presencia fuerte.",
-    "longDescription": "Profunda y femenina con un bouquet floral intenso y maderas suaves. Inspirado en Versace Dylan Blue para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia femenina ideal para noche, citas, eventos.",
+    "shortDescription": "floral, frutal, amaderada y moderna.",
+    "longDescription": "Intensa y femenina con manzana Granny Smith, grosella negra, trebol, nomeolvides, shiso, durazno, petalia, rosa, escaramujo, jazmin, almizcle, maderas blancas, pachuli y estoraque. Inspirado en Versace Pour Femme Dylan Blue.",
+    "bestFor": "Clientes que buscan una fragancia femenina ideal para diario, salidas y eventos.",
     "concentration": "60% esencia",
     "duration": "8 a 10 horas",
     "intensity": "alta",
     "sillage": "Marcada y memorable",
     "notes": {
       "top": [
-        "grosella negra",
         "manzana Granny Smith",
-        "clementina"
+        "grosella negra",
+        "trebol",
+        "nomeolvides",
+        "shiso"
       ],
       "heart": [
-        "rosa Centifolia",
-        "jazmin Sambac",
-        "peonia"
+        "durazno",
+        "petalia",
+        "rosa",
+        "escaramujo",
+        "jazmin"
       ],
       "base": [
-        "notas amaderadas",
         "almizcle",
-        "styrax",
-        "pachuli"
+        "maderas blancas",
+        "pachuli",
+        "estoraque"
       ]
     },
     "families": [
       "floral",
-      "amaderada",
-      "almizclada"
+      "frutal",
+      "amaderada"
     ],
     "moods": [
+      "presencia",
       "elegancia",
-      "encanto",
-      "femineidad"
+      "energia"
     ],
     "occasions": [
-      "noche",
-      "citas",
+      "diario",
+      "salidas",
       "eventos"
     ],
     "variants": [
@@ -11574,45 +11588,45 @@
     "inspirationReference": "Creed Love in White",
     "category": "femenina",
     "collection": "diario",
-    "shortDescription": "amaderada, citric, equilibrada y facil de llevar.",
-    "longDescription": "Inmaculada y sublime con magnolia blanca y narciso celestial. Inspirado en Creed Love in White para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia femenina ideal para diario, salidas, citas.",
+    "shortDescription": "floral, oriental, citrica y pura.",
+    "longDescription": "Elegante y limpia con cascara de naranja, magnolia, narciso, arroz, jazmin italiano, iris, rosa bulgara, ambar gris, sandalo y vainilla. Inspirado en Creed Love in White.",
+    "bestFor": "Clientes que buscan una fragancia femenina ideal para oficina, eventos y regalo.",
     "concentration": "60% esencia",
     "duration": "6 a 8 horas",
     "intensity": "media",
     "sillage": "Equilibrada y agradable",
     "notes": {
       "top": [
-        "naranja",
-        "magnolia",
-        "mandarina"
+        "cascara de naranja"
       ],
       "heart": [
+        "magnolia",
+        "narciso",
+        "arroz",
+        "jazmin italiano",
         "iris",
-        "narciso de Narcisse",
-        "rosa centifolia"
+        "rosa bulgara"
       ],
       "base": [
+        "ambar gris",
         "sandalo",
-        "cedro",
-        "almizcle",
         "vainilla"
       ]
     },
     "families": [
-      "amaderada",
-      "citric",
-      "floral"
+      "floral",
+      "oriental",
+      "citric"
     ],
     "moods": [
+      "pureza",
       "elegancia",
-      "encanto",
-      "femineidad"
+      "calma"
     ],
     "occasions": [
-      "diario",
-      "salidas",
-      "citas"
+      "oficina",
+      "eventos",
+      "regalo"
     ],
     "variants": [
       {
@@ -11642,9 +11656,9 @@
     "inspirationReference": "Creed Aventus for Her",
     "category": "femenina",
     "collection": "diario",
-    "shortDescription": "citric, almizclada, equilibrada y facil de llevar.",
-    "longDescription": "Triunfante y elegante como una victoria femenina conquistada. Inspirado en Creed Aventus for Her para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia femenina ideal para diario, salidas, citas.",
+    "shortDescription": "frutal, floral, amaderada y poderosa.",
+    "longDescription": "Femenina y segura con manzana verde, hoja de violeta, pimienta rosa, bergamota de Calabria, rosa, estoraque, sandalo Mysore, durazno, cassis, ambar y ylang ylang. Inspirado en Creed Aventus for Her.",
+    "bestFor": "Clientes que buscan una fragancia femenina ideal para eventos, salidas y regalo.",
     "concentration": "60% esencia",
     "duration": "6 a 8 horas",
     "intensity": "media",
@@ -11652,36 +11666,36 @@
     "notes": {
       "top": [
         "manzana verde",
-        "grosella negra",
-        "bergamota",
-        "limon"
+        "hoja de violeta",
+        "pimienta rosa",
+        "bergamota de Calabria"
       ],
       "heart": [
-        "rosa de mayo",
-        "lila",
-        "melocoton"
+        "rosa",
+        "estoraque",
+        "sandalo Mysore"
       ],
       "base": [
-        "sandalo",
-        "almizcle",
-        "ambar gris",
-        "pachuli"
+        "durazno",
+        "cassis",
+        "ambar",
+        "ylang ylang"
       ]
     },
     "families": [
-      "citric",
-      "almizclada",
-      "dulce"
+      "frutal",
+      "floral",
+      "amaderada"
     ],
     "moods": [
-      "seguridad",
-      "estilo",
+      "poder",
+      "elegancia",
       "presencia"
     ],
     "occasions": [
-      "diario",
+      "eventos",
       "salidas",
-      "citas"
+      "regalo"
     ],
     "variants": [
       {
@@ -11711,9 +11725,9 @@
     "inspirationReference": "Giorgio Armani Si Fiori",
     "category": "femenina",
     "collection": "diario",
-    "shortDescription": "floral, almizclada, equilibrada y facil de llevar.",
-    "longDescription": "En plena floracion con neroli italiano y rosa de Grasse. Inspirado en Giorgio Armani Si Fiori para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia femenina ideal para diario, salidas, citas.",
+    "shortDescription": "floral, dulce, almizclada y cremosa.",
+    "longDescription": "Suave y luminosa con grosella negra, mandarina verde, neroli, rosa, pachuli, musgo de roble, vainilla y almizcle blanco. Inspirado en Giorgio Armani Si Fiori.",
+    "bestFor": "Clientes que buscan una fragancia femenina ideal para diario, citas y regalo.",
     "concentration": "60% esencia",
     "duration": "6 a 8 horas",
     "intensity": "media",
@@ -11725,29 +11739,29 @@
       ],
       "heart": [
         "neroli",
-        "rosa de mayo",
-        "jazmin grandiflorum"
+        "rosa",
+        "pachuli",
+        "musgo de roble"
       ],
       "base": [
-        "vainilla blanca",
-        "almizcle",
-        "pachuli"
+        "vainilla",
+        "almizcle blanco"
       ]
     },
     "families": [
       "floral",
-      "almizclada",
-      "dulce"
+      "dulce",
+      "almizclada"
     ],
     "moods": [
-      "elegancia",
-      "encanto",
-      "femineidad"
+      "romance",
+      "delicadeza",
+      "calidez"
     ],
     "occasions": [
       "diario",
-      "salidas",
-      "citas"
+      "citas",
+      "regalo"
     ],
     "variants": [
       {
