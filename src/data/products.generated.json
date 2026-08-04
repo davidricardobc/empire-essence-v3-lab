@@ -5651,9 +5651,9 @@
     "inspirationReference": "Lacoste Blanco",
     "category": "masculina",
     "collection": "diario",
-    "shortDescription": "especiada, amaderada, equilibrada y facil de llevar.",
-    "longDescription": "Limpio e inmaculado como un lienzo esperando ser pintado. Inspirado en Lacoste Blanco para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia masculina ideal para diario, salidas, citas.",
+    "shortDescription": "Limpia, deportiva y amaderada con pomelo, especias y gamuza.",
+    "longDescription": "Lienzo abre con pomelo, cardamomo, romero y hoja de cedro; el corazon floral limpio de tuberosa y ylang ylang descansa sobre cuero, gamuza, cedro y vetiver. Inspirado en Lacoste Blanco para clientes que quieren frescura pulida y facil de vender.",
+    "bestFor": "Clientes que buscan una masculina limpia, fresca y elegante para diario, oficina y clima calido.",
     "concentration": "60% esencia",
     "duration": "6 a 8 horas",
     "intensity": "media",
@@ -5662,23 +5662,24 @@
       "top": [
         "pomelo",
         "romero",
-        "tomillo"
+        "cardamomo",
+        "hoja de cedro"
       ],
       "heart": [
         "tuberosa",
-        "notas acuaticas",
-        "pimienta"
+        "ylang ylang"
       ],
       "base": [
+        "cuero",
         "cedro",
         "gamuza",
-        "almizcle"
+        "vetiver"
       ]
     },
     "families": [
-      "especiada",
+      "fresca",
       "amaderada",
-      "almizclada"
+      "especiada"
     ],
     "moods": [
       "seguridad",
@@ -6457,41 +6458,48 @@
     "slug": "unidad",
     "publicName": "Unidad",
     "inspirationReference": "Calvin Klein CK One",
-    "category": "masculina",
+    "category": "unisex",
     "collection": "diario",
-    "shortDescription": "citric, floral, equilibrada y facil de llevar.",
-    "longDescription": "Unificador y fresco que trasciende generos y barreras. Inspirado en Calvin Klein CK One para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia masculina ideal para diario, salidas, citas.",
+    "shortDescription": "Citrica, verde y limpia con flores suaves y fondo almizclado.",
+    "longDescription": "Unidad abre con limon, notas verdes, bergamota, mandarina, pina, cardamomo y papaya; el corazon mezcla lirio de los valles, jazmin, violeta, rosa, nuez moscada, fresia e iris. Inspirado en Calvin Klein CK One para clientes que quieren una fragancia limpia y realmente unisex.",
+    "bestFor": "Clientes que buscan una fragancia unisex fresca, casual y facil de usar todos los dias.",
     "concentration": "60% esencia",
     "duration": "6 a 8 horas",
     "intensity": "media",
     "sillage": "Equilibrada y agradable",
     "notes": {
       "top": [
-        "bergamota",
-        "cardamomo",
         "limon",
-        "papaya",
+        "notas verdes",
+        "bergamota",
+        "mandarina",
         "pina",
-        "mandarina"
+        "cardamomo",
+        "papaya"
       ],
       "heart": [
-        "rosa",
+        "lirio de los valles",
         "jazmin",
         "violeta",
-        "nuez moscada"
+        "rosa",
+        "nuez moscada",
+        "fresia",
+        "iris"
       ],
       "base": [
+        "acorde verde",
         "almizcle",
-        "ambar",
         "cedro",
-        "sandalo"
+        "te verde",
+        "sandalo",
+        "musgo de roble",
+        "ambar"
       ]
     },
     "families": [
       "citric",
-      "floral",
-      "amaderada"
+      "fresca",
+      "almizclada"
     ],
     "moods": [
       "seguridad",
@@ -11925,9 +11933,9 @@
     "inspirationReference": "Chanel No. 5",
     "category": "femenina",
     "collection": "diario",
-    "shortDescription": "floral, amaderada, equilibrada y facil de llevar.",
-    "longDescription": "Eterno e inmortal como el perfume mas iconico de la historia. Inspirado en Chanel No. 5 para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia femenina ideal para diario, salidas, citas.",
+    "shortDescription": "Floral aldehidica clasica con rosa, jazmin y vainilla suave.",
+    "longDescription": "Eternidad abre con aldehidos, neroli y citricos; el bouquet central gira alrededor de rosa de mayo, jazmin de Grasse, ylang ylang, lirio de los valles e iris. Inspirado en Chanel No. 5 para clientes que buscan elegancia clasica, limpia y femenina.",
+    "bestFor": "Clientes que buscan una femenina iconica, elegante y sofisticada para oficina, eventos y regalo.",
     "concentration": "60% esencia",
     "duration": "6 a 8 horas",
     "intensity": "media",
@@ -11941,15 +11949,16 @@
         "limon"
       ],
       "heart": [
-        "jazmin",
         "rosa de mayo",
+        "jazmin de Grasse",
+        "ylang ylang",
         "lirio de los valles",
         "iris"
       ],
       "base": [
         "sandalo",
         "cedro",
-        "vainilla",
+        "vainilla bourbon",
         "almizcle",
         "vetiver"
       ]

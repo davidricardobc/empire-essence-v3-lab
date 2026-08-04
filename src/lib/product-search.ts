@@ -165,6 +165,9 @@ const productSpecificAliases: Record<string, string[]> = {
   "p-pascal": ["jean pascal"],
   "p-santuario": ["al haramain amber oud", "amber oud original", "amber oud"],
   "p-rubi": ["al haramain amber oud ruby", "amber oud ruby edition", "amber oud ruby", "ruby edition"],
+  "p-unidad": ["ck one", "calvin klein one", "calvin klein ck one", "unisex limpio", "unisex fresco"],
+  "p-lienzo": ["lacoste blanc", "lacoste blanco", "lacoste white", "l1212 blanc", "l 12 12 blanc"],
+  "p-eternidad": ["chanel no 5", "chanel n5", "chanel numero 5", "no 5", "n5"],
   "p-monarca": ["bharara king", "king bharara"],
 };
 

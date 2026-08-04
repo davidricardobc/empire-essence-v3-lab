@@ -2,7 +2,7 @@
 
 Objetivo: mejorar busqueda, filtros y autoridad comercial del catalogo sin inventar notas.
 
-Cobertura actual: 60 referencias revisadas/verificadas de 196 productos del catalogo.
+Cobertura actual: 63 referencias revisadas/verificadas de 196 productos del catalogo.
 
 ## Metodo
 
@@ -118,6 +118,16 @@ Este lote cierra las referencias nicho/unisex priorizadas en la bitacora anterio
 | Santuario | Al Haramain Amber Oud | Corregido | Se reemplazo una piramide de oud/rosa/vainilla por romero, cedro, bergamota, limon, especias, guayaco, ambar, resinas y almizcle. |
 | Rubi | Al Haramain Amber Oud Ruby | Corregido | Se reemplazo rosa/oud/vainilla/pachuli por azafran, almendra amarga, cedro, jazmin egipcio, ambar gris, notas amaderadas y almizcle. |
 
+## Lote 6 - masivas/frescas restantes
+
+Este lote inicia el cierre de referencias masivas/frescas pendientes. `Dolce & Gabbana Pour Femme` estaba en la lista sugerida, pero no existe como producto dentro de los 196 registros actuales del catalogo; no se agrego para no cambiar el tamano del inventario sin aprobacion.
+
+| Producto | Inspiracion | Estado | Ajuste |
+|---|---|---|---|
+| Eternidad | Chanel No. 5 | Corregido menor | Se mantuvo la estructura floral aldehidica y se preciso el bouquet con jazmin de Grasse, rosa de mayo, ylang ylang, iris y vainilla bourbon; uso pasa a oficina/eventos/regalo. |
+| Unidad | Calvin Klein CK One | Corregido | La categoria pasa a unisex; se completo con notas verdes, lirio de los valles, fresia, iris, acorde verde, te verde y musgo de roble. Familia visible queda citric/fresca/almizclada. |
+| Lienzo | Lacoste Blanco / L.12.12 White | Corregido | Se retiro tomillo/notas acuaticas/pimienta/almizcle y se alineo a pomelo, romero, cardamomo, hoja de cedro, tuberosa, ylang ylang, cuero, cedro, gamuza y vetiver. |
+
 ## Fuentes usadas en el lote 1
 
 - Creed Aventus: https://www.creedfragrances.co.uk/products/aventus y https://www.fragrantica.com/perfume/Creed/Aventus-9828.html
@@ -193,7 +203,13 @@ Este lote cierra las referencias nicho/unisex priorizadas en la bitacora anterio
 - Al Haramain Amber Oud: https://www.fragrantica.com/perfume/Al-Haramain-Perfumes/Amber-Oud-51817.html y https://www.jomashop.com/blog/articles/designer-dupes-the-al-haramain-amber-oud-collection
 - Al Haramain Amber Oud Ruby: https://www.fragrantica.com/perfume/Al-Haramain-Perfumes/Amber-Oud-Ruby-Edition-73208.html y https://www.amazon.com/Al-Haramain-Amber-Parfum-Unisex/dp/B0B8X91J6M
 
+## Fuentes usadas en el lote 6
+
+- Chanel No. 5: https://www.chanel.com/us/fragrance/p/125530/n5-eau-de-parfum-spray/
+- Calvin Klein CK One: https://www.fragrantica.com/perfume/Calvin-Klein/CK-One-276.html
+- Lacoste L.12.12 White: https://www.fragrantica.com/perfume/Lacoste-Fragrances/Eau-de-Lacoste-L-12-12-White-11043.html
+
 ## Siguientes lotes
 
-1. Masivas/frescas restantes: Chanel No. 5, CK One, Dolce & Gabbana Pour Femme, Lacoste Blanc.
+1. Masculinas no revisadas, bloque 1: Diesel Only, Bvlgari Aqva Pour Homme, Aqva Marine, Nautica Voyage, Armani Code, Paris Hilton For Men, Hugo Boss Sport, Hugo Boss Unlimited, Hugo Boss Night y Eau de Cartier.
 2. Limpieza final de familias visibles: separar familia dominante de notas buscables para que el filtro sea preciso sin esconder opciones buenas.
