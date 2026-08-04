@@ -209,6 +209,16 @@ const productSpecificAliases: Record<string, string[]> = {
   "p-chispa": ["hugo boss tonic", "boss bottled tonic", "boss tonic"],
   "p-rocio": ["lacoste eau fraiche", "lacoste blanc eau fraiche", "l1212 blanc eau fraiche"],
   "p-brio": ["lacoste blue", "lacoste bleu", "lacoste bleu powerful", "l1212 bleu"],
+  "p-calidez": ["lacoste rouge", "lacoste l1212 rouge", "lacoste red rouge"],
+  "p-sendero": ["hugo boss journey", "hugo urban journey", "boss urban journey"],
+  "p-huella": ["hugo boss the scent", "boss the scent", "the scent hombre"],
+  "p-escarcha": ["hugo boss iced", "hugo iced", "boss iced"],
+  "p-vigor": ["lacoste red", "lacoste style in play", "style in play"],
+  "p-sigilo": ["lacoste noir", "lacoste black", "lacoste l1212 noir"],
+  "p-vitalidad": ["lacoste energized", "lacoste l1212 energized", "l1212 energized"],
+  "p-pilar": ["lacoste essential", "essential lacoste"],
+  "p-fluir": ["issey miyake", "l'eau d'issey pour homme", "leau dissey hombre"],
+  "p-corriente": ["issey miyake majeure", "l'eau majeure d'issey", "leau majeure dissey"],
 };
 
 export function normalizeSearchText(value: string) {

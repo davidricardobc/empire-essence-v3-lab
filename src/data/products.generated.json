@@ -5051,46 +5051,47 @@
     "id": "p-calidez",
     "slug": "calidez",
     "publicName": "Calidez",
-    "inspirationReference": "Lacoste Rouge",
+    "inspirationReference": "Lacoste L.12.12 Rouge",
     "category": "masculina",
     "collection": "diario",
-    "shortDescription": "especiada, amaderada, equilibrada y facil de llevar.",
-    "longDescription": "Acogedor y reconfortante con canela especiada y vainilla suave. Inspirado en Lacoste Rouge para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia masculina ideal para diario, salidas, citas.",
+    "shortDescription": "frutal, especiada, dinamica y facil de llevar.",
+    "longDescription": "Energetica y especiada con mango jugoso, te rooibos y fondo balsamico-amaderado. Inspirado en Lacoste L.12.12 Rouge para clientes que quieren una referencia clara y facil de recomendar.",
+    "bestFor": "Clientes que buscan una fragancia masculina ideal para diario, salidas y clima calido.",
     "concentration": "60% esencia",
     "duration": "6 a 8 horas",
     "intensity": "media",
     "sillage": "Equilibrada y agradable",
     "notes": {
       "top": [
-        "hojas de eucalipto",
-        "pimienta"
+        "mango",
+        "te rooibos",
+        "mandarina"
       ],
       "heart": [
-        "canela",
         "cardamomo",
-        "almizcle"
+        "pimienta",
+        "jengibre"
       ],
       "base": [
-        "cedro",
-        "notas balsamicas",
-        "vainilla"
+        "acacia",
+        "notas amaderadas",
+        "benjui"
       ]
     },
     "families": [
+      "frutal",
       "especiada",
-      "amaderada",
-      "almizclada"
+      "amaderada"
     ],
     "moods": [
-      "seguridad",
+      "energia",
       "estilo",
-      "presencia"
+      "confianza"
     ],
     "occasions": [
       "diario",
       "salidas",
-      "citas"
+      "clima calido"
     ],
     "variants": [
       {
@@ -5180,47 +5181,43 @@
     "id": "p-sendero",
     "slug": "sendero",
     "publicName": "Sendero",
-    "inspirationReference": "Hugo Boss Journey",
+    "inspirationReference": "Hugo Boss Urban Journey",
     "category": "masculina",
     "collection": "diario",
-    "shortDescription": "amaderada, almizclada, equilibrada y facil de llevar.",
-    "longDescription": "Para quien camina su propio sendero con determinacion. Inspirado en Hugo Boss Journey para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia masculina ideal para diario, salidas, citas.",
+    "shortDescription": "fresca, amaderada, verde y facil de llevar.",
+    "longDescription": "Verde y urbana con acorde vegetal, notas florales, te negro y fondo de guayaco con sandalo. Inspirado en Hugo Boss Urban Journey para clientes que quieren una fragancia limpia y moderna.",
+    "bestFor": "Clientes que buscan una fragancia masculina ideal para diario, oficina y clima calido.",
     "concentration": "60% esencia",
     "duration": "6 a 8 horas",
     "intensity": "media",
     "sillage": "Equilibrada y agradable",
     "notes": {
       "top": [
-        "manzana verde",
-        "bergamota",
-        "musgo"
+        "acorde verde",
+        "notas florales"
       ],
       "heart": [
-        "te verde",
-        "pimienta negra",
-        "geranio"
+        "te negro"
       ],
       "base": [
-        "cedro",
-        "almizcle",
-        "notas amaderadas"
+        "guayaco",
+        "sandalo"
       ]
     },
     "families": [
+      "fresca",
       "amaderada",
-      "almizclada",
-      "citric"
+      "floral"
     ],
     "moods": [
-      "seguridad",
+      "calma",
       "estilo",
-      "presencia"
+      "energia"
     ],
     "occasions": [
       "diario",
-      "salidas",
-      "citas"
+      "oficina",
+      "clima calido"
     ],
     "variants": [
       {
@@ -5318,9 +5315,9 @@
     "inspirationReference": "Hugo Boss The Scent",
     "category": "masculina",
     "collection": "firma",
-    "shortDescription": "amaderada, oriental, con presencia fuerte.",
-    "longDescription": "Deja una huella imborrable con fruta exotica maninka y cuero. Inspirado en Hugo Boss The Scent para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia masculina ideal para noche, citas, eventos.",
+    "shortDescription": "especiada, frutal, amaderada y seductora.",
+    "longDescription": "Calida y seductora con jengibre, citricos, maninka, lavanda y fondo de cuero con maderas. Inspirado en Hugo Boss The Scent para clientes que buscan presencia masculina sin exceso.",
+    "bestFor": "Clientes que buscan una fragancia masculina ideal para citas, noche y salidas.",
     "concentration": "60% esencia",
     "duration": "8 a 10 horas",
     "intensity": "alta",
@@ -5329,31 +5326,31 @@
       "top": [
         "jengibre",
         "mandarina",
-        "lavanda"
+        "bergamota"
       ],
       "heart": [
         "maninka",
-        "cuero"
+        "lavanda"
       ],
       "base": [
-        "haba tonka",
-        "madera de agar"
+        "cuero",
+        "notas amaderadas"
       ]
     },
     "families": [
+      "especiada",
       "amaderada",
-      "oriental",
-      "fresca"
+      "frutal"
     ],
     "moods": [
-      "energia",
-      "versatil",
-      "confianza"
+      "seduccion",
+      "presencia",
+      "seguridad"
     ],
     "occasions": [
-      "noche",
       "citas",
-      "eventos"
+      "noche",
+      "salidas"
     ],
     "variants": [
       {
@@ -5383,9 +5380,9 @@
     "inspirationReference": "Hugo Boss Iced",
     "category": "masculina",
     "collection": "diario",
-    "shortDescription": "amaderada, fresca, de lectura limpia.",
-    "longDescription": "Gelido y revitalizante como un soplo de aire polar cristalino. Inspirado en Hugo Boss Iced para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia masculina ideal para diario, oficina, salidas.",
+    "shortDescription": "fresca, citrica, verde y de lectura limpia.",
+    "longDescription": "Helada y energica con menta fria, te silvestre, naranja amarga, enebro y vetiver. Inspirado en Hugo Boss Iced para clientes que quieren frescura directa y masculina.",
+    "bestFor": "Clientes que buscan una fragancia masculina ideal para diario, oficina y clima calido.",
     "concentration": "60% esencia",
     "duration": "5 a 7 horas",
     "intensity": "suave",
@@ -5393,33 +5390,30 @@
     "notes": {
       "top": [
         "menta helada",
-        "bergamota",
-        "manzana"
+        "naranja amarga",
+        "enebro"
       ],
       "heart": [
-        "notas acuaticas",
-        "geranio"
+        "te silvestre"
       ],
       "base": [
-        "vetiver",
-        "musgo de roble",
-        "sandalo"
+        "vetiver"
       ]
     },
     "families": [
-      "amaderada",
       "fresca",
-      "citric"
+      "citric",
+      "amaderada"
     ],
     "moods": [
       "energia",
-      "versatil",
-      "confianza"
+      "limpieza",
+      "calma"
     ],
     "occasions": [
       "diario",
       "oficina",
-      "salidas"
+      "clima calido"
     ],
     "variants": [
       {
@@ -5446,47 +5440,46 @@
     "id": "p-vigor",
     "slug": "vigor",
     "publicName": "Vigor",
-    "inspirationReference": "Lacoste Red",
+    "inspirationReference": "Lacoste Style in Play (Red)",
     "category": "masculina",
     "collection": "firma",
-    "shortDescription": "especiada, oriental, con presencia fuerte.",
-    "longDescription": "Energico y vibrante con especias que despiertan cada fibra. Inspirado en Lacoste Red para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia masculina ideal para noche, citas, eventos.",
+    "shortDescription": "frutal, amaderada, fresca y deportiva.",
+    "longDescription": "Juvenil y verde con manzana, tuya, pino, jazmin, cedro y fondo de almizcle blanco con vetiver. Inspirado en Lacoste Style in Play, tambien conocido como Lacoste Red.",
+    "bestFor": "Clientes que buscan una fragancia masculina ideal para diario, deporte y clima calido.",
     "concentration": "60% esencia",
     "duration": "8 a 10 horas",
     "intensity": "alta",
     "sillage": "Profunda y envolvente",
     "notes": {
       "top": [
-        "pimienta negra",
-        "mandarina",
-        "tomillo"
+        "manzana verde",
+        "tuya"
       ],
       "heart": [
-        "canela",
-        "clavel",
-        "cardamomo"
+        "pino",
+        "jazmin",
+        "cedro"
       ],
       "base": [
-        "sandalo",
-        "ambar",
-        "musgo de roble"
+        "almizcle blanco",
+        "vetiver",
+        "pachuli"
       ]
     },
     "families": [
-      "especiada",
-      "oriental",
-      "amaderada"
+      "frutal",
+      "amaderada",
+      "fresca"
     ],
     "moods": [
-      "seguridad",
-      "estilo",
-      "presencia"
+      "energia",
+      "juventud",
+      "confianza"
     ],
     "occasions": [
-      "noche",
-      "citas",
-      "eventos"
+      "diario",
+      "deporte",
+      "clima calido"
     ],
     "variants": [
       {
@@ -5513,44 +5506,44 @@
     "id": "p-sigilo",
     "slug": "sigilo",
     "publicName": "Sigilo",
-    "inspirationReference": "Lacoste Noir",
+    "inspirationReference": "Lacoste L.12.12 Noir",
     "category": "masculina",
     "collection": "diario",
-    "shortDescription": "amaderada, citric, equilibrada y facil de llevar.",
-    "longDescription": "Discreto y elegante como una sombra que se mueve con gracia. Inspirado en Lacoste Noir para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia masculina ideal para diario, salidas, citas.",
+    "shortDescription": "amaderada, fresca, dulce y nocturna.",
+    "longDescription": "Moderna y nocturna con sandia, hierbas aromaticas, chocolate oscuro y fondo de cashmeran con pachuli. Inspirado en Lacoste L.12.12 Noir para clientes que quieren frescura con un giro dulce.",
+    "bestFor": "Clientes que buscan una fragancia masculina ideal para noche, salidas y citas.",
     "concentration": "60% esencia",
     "duration": "6 a 8 horas",
     "intensity": "media",
     "sillage": "Equilibrada y agradable",
     "notes": {
       "top": [
-        "bergamota",
-        "lavanda",
-        "jengibre"
+        "sandia"
       ],
       "heart": [
-        "notas especiadas",
-        "chocolate oscuro"
+        "albahaca",
+        "lavanda",
+        "verbena"
       ],
       "base": [
-        "vetiver",
-        "cedro",
-        "haba tonka"
+        "chocolate oscuro",
+        "cashmeran",
+        "pachuli",
+        "cumarina"
       ]
     },
     "families": [
       "amaderada",
-      "citric",
+      "fresca",
       "dulce"
     ],
     "moods": [
-      "seguridad",
+      "misterio",
       "estilo",
-      "presencia"
+      "seduccion"
     ],
     "occasions": [
-      "diario",
+      "noche",
       "salidas",
       "citas"
     ],
@@ -5579,47 +5572,42 @@
     "id": "p-vitalidad",
     "slug": "vitalidad",
     "publicName": "Vitalidad",
-    "inspirationReference": "Lacoste Energized",
+    "inspirationReference": "Lacoste L.12.12 Energized",
     "category": "masculina",
     "collection": "diario",
-    "shortDescription": "citric, amaderada, de lectura limpia.",
-    "longDescription": "Pura energia renovada con menta electrica y citricos vivos. Inspirado en Lacoste Energized para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia masculina ideal para diario, oficina, salidas.",
+    "shortDescription": "fresca, floral, amaderada y deportiva.",
+    "longDescription": "Minimalista y energica con jengibre, menta, tuberosa y vetiver. Inspirado en Lacoste L.12.12 Energized para clientes que buscan una fragancia fresca y ligera.",
+    "bestFor": "Clientes que buscan una fragancia masculina ideal para diario, gimnasio y clima calido.",
     "concentration": "60% esencia",
     "duration": "5 a 7 horas",
     "intensity": "suave",
     "sillage": "Limpia y cercana",
     "notes": {
       "top": [
-        "pomelo",
-        "menta",
-        "limon"
+        "jengibre",
+        "menta"
       ],
       "heart": [
-        "geranio",
-        "cardamomo",
-        "notas acuaticas"
+        "tuberosa"
       ],
       "base": [
-        "cedro",
-        "almizcle",
         "vetiver"
       ]
     },
     "families": [
-      "citric",
-      "amaderada",
-      "fresca"
+      "fresca",
+      "floral",
+      "amaderada"
     ],
     "moods": [
       "energia",
-      "versatil",
-      "confianza"
+      "limpieza",
+      "ligereza"
     ],
     "occasions": [
       "diario",
-      "oficina",
-      "salidas"
+      "gimnasio",
+      "clima calido"
     ],
     "variants": [
       {
@@ -5717,44 +5705,43 @@
     "inspirationReference": "Lacoste Essential",
     "category": "masculina",
     "collection": "diario",
-    "shortDescription": "floral, citric, equilibrada y facil de llevar.",
-    "longDescription": "Esencial y solido como los pilares de un caracter autentico. Inspirado en Lacoste Essential para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia masculina ideal para diario, oficina, salidas.",
+    "shortDescription": "citrica, fresca, verde y facil de llevar.",
+    "longDescription": "Limpia y versatil con bergamota, casia, hoja de tomate, mandarina, rosa, pimienta, sandalo y pachuli. Inspirado en Lacoste Essential para clientes que buscan frescura de uso diario.",
+    "bestFor": "Clientes que buscan una fragancia masculina ideal para diario, oficina y clima calido.",
     "concentration": "60% esencia",
     "duration": "6 a 8 horas",
     "intensity": "media",
     "sillage": "Equilibrada y agradable",
     "notes": {
       "top": [
-        "mandarina",
         "bergamota",
-        "tomate verde"
+        "casia",
+        "hoja de tomate",
+        "mandarina"
       ],
       "heart": [
-        "pimienta negra",
         "rosa",
-        "notas acuaticas"
+        "pimienta"
       ],
       "base": [
         "sandalo",
-        "pachuli",
-        "almizcle"
+        "pachuli"
       ]
     },
     "families": [
-      "floral",
       "citric",
-      "fresca"
+      "fresca",
+      "amaderada"
     ],
     "moods": [
-      "energia",
-      "versatil",
+      "limpieza",
+      "calma",
       "confianza"
     ],
     "occasions": [
       "diario",
       "oficina",
-      "salidas"
+      "clima calido"
     ],
     "variants": [
       {
@@ -5781,12 +5768,12 @@
     "id": "p-fluir",
     "slug": "fluir",
     "publicName": "Fluir",
-    "inspirationReference": "Issey Miyake",
+    "inspirationReference": "Issey Miyake L'Eau d'Issey Pour Homme",
     "category": "masculina",
     "collection": "diario",
-    "shortDescription": "citric, amaderada, de lectura limpia.",
-    "longDescription": "Acuatico y zen que fluye como agua cristalina sobre piedras. Inspirado en Issey Miyake para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia masculina ideal para diario, oficina, salidas.",
+    "shortDescription": "citrica, acuatica, amaderada y sofisticada.",
+    "longDescription": "Citrica y acuatica con yuzu, limon, bergamota, especias aromaticas, florales limpios y fondo de vetiver, cedro, sandalo, ambar y tabaco. Inspirado en Issey Miyake L'Eau d'Issey Pour Homme.",
+    "bestFor": "Clientes que buscan una fragancia masculina ideal para diario, oficina y clima calido.",
     "concentration": "60% esencia",
     "duration": "5 a 7 horas",
     "intensity": "suave",
@@ -5794,38 +5781,48 @@
     "notes": {
       "top": [
         "yuzu",
-        "bergamota",
         "limon",
+        "bergamota",
+        "verbena de limon",
         "mandarina",
-        "notas acuaticas"
+        "cipres",
+        "calone",
+        "cilantro",
+        "salvia",
+        "estragon"
       ],
       "heart": [
+        "loto azul",
+        "lirio de los valles",
         "nuez moscada",
-        "geranio",
-        "canela",
-        "salvia"
+        "geranio bourbon",
+        "azafran",
+        "canela de Ceilan",
+        "reseda"
       ],
       "base": [
-        "sandalo",
-        "vetiver",
+        "vetiver de Tahiti",
+        "almizcle",
         "cedro",
-        "almizcle"
+        "sandalo",
+        "ambar",
+        "tabaco"
       ]
     },
     "families": [
       "citric",
-      "amaderada",
-      "fresca"
+      "acuatica",
+      "amaderada"
     ],
     "moods": [
-      "energia",
-      "versatil",
-      "confianza"
+      "limpieza",
+      "elegancia",
+      "energia"
     ],
     "occasions": [
       "diario",
       "oficina",
-      "salidas"
+      "clima calido"
     ],
     "variants": [
       {
@@ -5852,46 +5849,49 @@
     "id": "p-corriente",
     "slug": "corriente",
     "publicName": "Corriente",
-    "inspirationReference": "Issey Miyake Majeure",
+    "inspirationReference": "Issey Miyake L'Eau Majeure d'Issey",
     "category": "masculina",
     "collection": "firma",
-    "shortDescription": "citric, oriental, con presencia fuerte.",
-    "longDescription": "Poderoso como una corriente subterranea de fuerza serena. Inspirado en Issey Miyake Majeure para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia masculina ideal para noche, citas, eventos.",
+    "shortDescription": "acuatica, citrica, amaderada y moderna.",
+    "longDescription": "Marina y moderna con pomelo, bergamota, menta, notas de mar, hedione, te y fondo de cashmeran con maderas. Inspirado en Issey Miyake L'Eau Majeure d'Issey para clientes que quieren frescura azul con presencia.",
+    "bestFor": "Clientes que buscan una fragancia masculina ideal para diario, salidas y clima calido.",
     "concentration": "60% esencia",
     "duration": "8 a 10 horas",
     "intensity": "alta",
     "sillage": "Profunda y envolvente",
     "notes": {
       "top": [
-        "mandarina",
+        "pomelo",
         "bergamota",
-        "notas acuaticas"
+        "menta"
       ],
       "heart": [
-        "notas especiadas",
-        "nuez moscada"
+        "notas marinas",
+        "hedione",
+        "te"
       ],
       "base": [
-        "sandalo",
-        "vetiver",
-        "ambar"
+        "cashmeran",
+        "notas amaderadas",
+        "amberwood",
+        "cedro",
+        "cumarina"
       ]
     },
     "families": [
+      "acuatica",
       "citric",
-      "oriental",
-      "fresca"
+      "amaderada"
     ],
     "moods": [
       "energia",
-      "versatil",
-      "confianza"
+      "presencia",
+      "limpieza"
     ],
     "occasions": [
-      "noche",
-      "citas",
-      "eventos"
+      "diario",
+      "salidas",
+      "clima calido"
     ],
     "variants": [
       {

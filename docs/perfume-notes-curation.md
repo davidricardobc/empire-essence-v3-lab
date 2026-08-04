@@ -2,7 +2,7 @@
 
 Objetivo: mejorar busqueda, filtros y autoridad comercial del catalogo sin inventar notas.
 
-Cobertura actual: 103 referencias revisadas/verificadas de 196 productos del catalogo.
+Cobertura actual: 113 referencias revisadas/verificadas de 196 productos del catalogo.
 
 ## Metodo
 
@@ -196,6 +196,23 @@ Este lote sigue con referencias masculinas comerciales y corrige varios casos do
 | Rocio | Lacoste L.12.12 Blanc Eau Fraiche | Corregido | Se aclaro el flanker Eau Fraiche y se reemplazo el perfil blanco clasico por pomelo, jengibre, limon, manzana, enebro, lavanda, ambroxan, cedro y vetiver. |
 | Brio | Lacoste L.12.12 Bleu Powerful | Corregido | Se alinea a la piramide minimalista de menta, pomelo, salvia esclarea, cedro y pachuli. |
 
+## Lote 11 - masculinas no revisadas, bloque 5
+
+Este lote cierra otro bloque comercial masculino, con enfasis en flankers Lacoste, Hugo Boss e Issey Miyake que necesitaban separar bien versiones cercanas.
+
+| Producto | Inspiracion | Estado | Ajuste |
+|---|---|---|---|
+| Calidez | Lacoste L.12.12 Rouge | Corregido | Se reemplazo eucalipto/canela/vainilla por mango, te rooibos, mandarina, cardamomo, pimienta, jengibre, acacia, maderas y benjui. |
+| Sendero | Hugo Boss Urban Journey | Corregido | Se aclaro la referencia como Urban Journey y se cambio la piramide de Hugo Man por acorde verde, notas florales, te negro, guayaco y sandalo. |
+| Huella | Hugo Boss The Scent | Corregido menor | Se retiro tonka/agar y queda jengibre, mandarina, bergamota, maninka, lavanda, cuero y maderas. |
+| Escarcha | Hugo Boss Iced | Corregido | Se reemplazo manzana/notas acuaticas/musgo/sandalo por menta helada, naranja amarga, enebro, te silvestre y vetiver. |
+| Vigor | Lacoste Style in Play / Red | Corregido | Se aclaro que Lacoste Red corresponde a Style in Play y se alinea a manzana verde, tuya, pino, jazmin, cedro, almizcle blanco, vetiver y pachuli. |
+| Sigilo | Lacoste L.12.12 Noir | Corregido | Se reemplazo bergamota/jengibre/especias/vetiver/tonka por sandia, albahaca, lavanda, verbena, chocolate oscuro, cashmeran, pachuli y cumarina. |
+| Vitalidad | Lacoste L.12.12 Energized | Corregido | Se simplifico a la piramide real: jengibre, menta, tuberosa y vetiver. |
+| Pilar | Lacoste Essential | Corregido menor | Tomate verde pasa a hoja de tomate; se agregan casia y mandarina, y la base queda sandalo/pachuli. |
+| Fluir | Issey Miyake L'Eau d'Issey Pour Homme | Corregido menor | Se completo la piramide citrica-acuatica con verbena de limon, cipres, calone, cilantro, estragon, loto azul, lirio de los valles, azafran, reseda, ambar y tabaco. |
+| Corriente | Issey Miyake L'Eau Majeure d'Issey | Corregido | Se reemplazo mandarina/especias/sandalo/vetiver por pomelo, bergamota, menta, notas marinas, hedione, te, cashmeran, maderas, amberwood, cedro y cumarina. |
+
 ## Fuentes usadas en el lote 1
 
 - Creed Aventus: https://www.creedfragrances.co.uk/products/aventus y https://www.fragrantica.com/perfume/Creed/Aventus-9828.html
@@ -329,7 +346,20 @@ Este lote sigue con referencias masculinas comerciales y corrige varios casos do
 - Lacoste L.12.12 Blanc Eau Fraiche: https://www.fragrantica.com/perfume/Lacoste-Fragrances/Eau-de-Lacoste-L-12-12-Blanc-Eau-Fraiche-79753.html
 - Lacoste L.12.12 Bleu Powerful: https://www.fragrantica.com/perfume/Lacoste-Fragrances/Eau-de-Lacoste-L-12-12-Bleu-Powerful-11041.html
 
+## Fuentes usadas en el lote 11
+
+- Lacoste L.12.12 Rouge: https://www.fragrantica.com/perfume/Lacoste-Fragrances/Eau-de-Lacoste-L-12-12-Rouge-14183.html
+- Hugo Boss Urban Journey: https://www.fragrantica.com/perfume/Hugo-Boss/Hugo-Urban-Journey-48091.html
+- Hugo Boss The Scent: https://www.fragrantica.com/perfume/Hugo-Boss/Boss-The-Scent-31445.html
+- Hugo Boss Iced: https://www.fragrantica.com/perfume/Hugo-Boss/Hugo-Iced-42484.html y https://www.fragrantica.com/news/Hugo-Boss-Hugo-Iced-8941.html
+- Lacoste Style in Play / Red: https://www.fragrantica.com/perfume/Lacoste-Fragrances/Style-in-Play-4192.html
+- Lacoste L.12.12 Noir: https://www.fragrantica.com/perfume/Lacoste-Fragrances/Eau-de-Lacoste-L-12-12-Noir-18274.html
+- Lacoste L.12.12 Energized: https://www.fragrantica.com/perfume/Lacoste-Fragrances/Eau-de-Lacoste-L-12-12-Energized-38163.html
+- Lacoste Essential: https://www.fragrantica.com/perfume/Lacoste-Fragrances/Essential-787.html
+- Issey Miyake L'Eau d'Issey Pour Homme: https://www.fragrantica.com/perfume/Issey-Miyake/L-Eau-d-Issey-Pour-Homme-721.html
+- Issey Miyake L'Eau Majeure d'Issey: https://www.fragrantica.com/perfume/Issey-Miyake/L-Eau-Majeure-d-Issey-45877.html
+
 ## Siguientes lotes
 
-1. Masculinas no revisadas, bloque 5: Lacoste Rouge, Hugo Boss Journey, Boss The Scent, Boss Iced, Lacoste Red, Lacoste Noir, Lacoste Energized, Lacoste Essential, Issey Miyake y L'Eau Majeure d'Issey.
+1. Masculinas no revisadas, bloque 6: Creed Original Santal, Creed Bois du Portugal, Creed Original Vetiver, Creed Millesime Imperial, Creed Green Irish Tweed, Creed Viking, Polo Black, CK Eternity Men, CK Be y CK One Summer.
 2. Limpieza final de familias visibles: separar familia dominante de notas buscables para que el filtro sea preciso sin esconder opciones buenas.
