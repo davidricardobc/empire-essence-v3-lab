@@ -219,6 +219,16 @@ const productSpecificAliases: Record<string, string[]> = {
   "p-pilar": ["lacoste essential", "essential lacoste"],
   "p-fluir": ["issey miyake", "l'eau d'issey pour homme", "leau dissey hombre"],
   "p-corriente": ["issey miyake majeure", "l'eau majeure d'issey", "leau majeure dissey"],
+  "p-ceremonial": ["creed santal", "creed original santal", "original santal"],
+  "p-lusitania": ["creed portugal", "creed bois du portugal", "bois du portugal"],
+  "p-tierra": ["creed vetiver", "creed original vetiver", "original vetiver"],
+  "p-soberano": ["creed millesime imperial", "millesime imperial", "creed imperial"],
+  "p-pradera": ["creed green irish tweed", "green irish tweed", "irish tweed"],
+  "p-tempestad": ["creed viking", "viking creed"],
+  "p-ocaso": ["polo black", "ralph lauren polo black"],
+  "p-permanencia": ["ck eternity men", "calvin klein eternity men", "eternity for men"],
+  "p-existir": ["ck be", "calvin klein ck be", "calvin klein be"],
+  "p-solsticio": ["ck one summer", "calvin klein ck one summer", "ck one summer 2013"],
 };
 
 export function normalizeSearchText(value: string) {

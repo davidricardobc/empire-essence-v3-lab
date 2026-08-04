@@ -5918,47 +5918,52 @@
     "id": "p-ceremonial",
     "slug": "ceremonial",
     "publicName": "Ceremonial",
-    "inspirationReference": "Creed Santal",
-    "category": "masculina",
+    "inspirationReference": "Creed Original Santal",
+    "category": "unisex",
     "collection": "firma",
-    "shortDescription": "amaderada, floral, con presencia fuerte.",
-    "longDescription": "Solemne y sagrado con sandalo cremoso y rosa ceremonial. Inspirado en Creed Santal para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia masculina ideal para noche, citas, eventos.",
+    "shortDescription": "amaderada, especiada, oriental y elegante.",
+    "longDescription": "Calida y especiada con enebro, jengibre, romero, citricos, sandalo, lavanda, flor de naranjo, tonka, cedro y musgo de roble. Inspirado en Creed Original Santal para clientes que quieren una madera cremosa de perfil premium.",
+    "bestFor": "Clientes que buscan una fragancia unisex ideal para salidas, eventos y citas.",
     "concentration": "60% esencia",
     "duration": "8 a 10 horas",
     "intensity": "alta",
     "sillage": "Marcada y memorable",
     "notes": {
       "top": [
-        "sandalo",
+        "bayas de enebro",
+        "cilantro",
+        "jengibre",
+        "romero",
         "bergamota",
-        "canela"
+        "mandarina"
       ],
       "heart": [
-        "rosa de mayo",
-        "jazmin",
-        "pachuli"
+        "sandalo",
+        "lavanda",
+        "geranio",
+        "flor de naranjo"
       ],
       "base": [
-        "ambar gris",
-        "vainilla",
-        "cedro"
+        "haba tonka",
+        "almizcle",
+        "cedro",
+        "musgo de roble"
       ]
     },
     "families": [
       "amaderada",
-      "floral",
-      "citric"
+      "especiada",
+      "oriental"
     ],
     "moods": [
-      "seguridad",
-      "estilo",
-      "presencia"
+      "elegancia",
+      "presencia",
+      "calidez"
     ],
     "occasions": [
-      "noche",
-      "citas",
-      "eventos"
+      "salidas",
+      "eventos",
+      "citas"
     ],
     "variants": [
       {
@@ -5985,47 +5990,44 @@
     "id": "p-lusitania",
     "slug": "lusitania",
     "publicName": "Lusitania",
-    "inspirationReference": "Creed Portugal",
+    "inspirationReference": "Creed Bois du Portugal",
     "category": "masculina",
     "collection": "diario",
-    "shortDescription": "citric, fresca, equilibrada y facil de llevar.",
-    "longDescription": "Aventurero y noble como los navegantes de tierras lejanas. Inspirado en Creed Portugal para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia masculina ideal para diario, oficina, salidas.",
+    "shortDescription": "amaderada, fresca, aromatica y clasica.",
+    "longDescription": "Clasica y sobria con bergamota, lavanda y una base de sandalo, cedro, vetiver y ambar gris. Inspirado en Creed Bois du Portugal para clientes que buscan elegancia masculina tradicional.",
+    "bestFor": "Clientes que buscan una fragancia masculina ideal para oficina, reuniones y eventos.",
     "concentration": "60% esencia",
     "duration": "6 a 8 horas",
     "intensity": "media",
     "sillage": "Equilibrada y agradable",
     "notes": {
       "top": [
-        "mandarina",
-        "limon",
         "bergamota"
       ],
       "heart": [
-        "romero",
-        "lavanda",
-        "menta"
+        "lavanda"
       ],
       "base": [
-        "ambar gris",
         "sandalo",
-        "almizcle"
+        "cedro",
+        "vetiver",
+        "ambar gris"
       ]
     },
     "families": [
-      "citric",
+      "amaderada",
       "fresca",
       "almizclada"
     ],
     "moods": [
-      "energia",
-      "versatil",
-      "confianza"
+      "elegancia",
+      "seguridad",
+      "sobriedad"
     ],
     "occasions": [
-      "diario",
       "oficina",
-      "salidas"
+      "reuniones",
+      "eventos"
     ],
     "variants": [
       {
@@ -6052,12 +6054,12 @@
     "id": "p-tierra",
     "slug": "tierra",
     "publicName": "Tierra",
-    "inspirationReference": "Creed Vetiver",
-    "category": "masculina",
+    "inspirationReference": "Creed Original Vetiver",
+    "category": "unisex",
     "collection": "diario",
-    "shortDescription": "amaderada, citric, equilibrada y facil de llevar.",
-    "longDescription": "Terrenal y arraigado con vetiver puro y frescura vegetal. Inspirado en Creed Vetiver para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia masculina ideal para diario, salidas, citas.",
+    "shortDescription": "amaderada, citrica, limpia y refinada.",
+    "longDescription": "Verde y pulida con bergamota, jengibre, mandarina, vetiver haitiano, sandalo, iris, almizcle y ambar gris. Inspirado en Creed Original Vetiver para clientes que quieren frescura limpia con fondo elegante.",
+    "bestFor": "Clientes que buscan una fragancia unisex ideal para diario, oficina y clima calido.",
     "concentration": "60% esencia",
     "duration": "6 a 8 horas",
     "intensity": "media",
@@ -6065,18 +6067,17 @@
     "notes": {
       "top": [
         "bergamota",
-        "mandarina",
-        "iris"
+        "jengibre",
+        "mandarina"
       ],
       "heart": [
-        "vetiver",
-        "hoja de violeta",
-        "neroli"
+        "vetiver haitiano",
+        "sandalo",
+        "iris"
       ],
       "base": [
-        "sandalo",
         "almizcle",
-        "cedro"
+        "ambar gris"
       ]
     },
     "families": [
@@ -6085,14 +6086,14 @@
       "almizclada"
     ],
     "moods": [
-      "seguridad",
-      "estilo",
-      "presencia"
+      "limpieza",
+      "elegancia",
+      "calma"
     ],
     "occasions": [
       "diario",
-      "salidas",
-      "citas"
+      "oficina",
+      "clima calido"
     ],
     "variants": [
       {
@@ -6120,46 +6121,46 @@
     "slug": "soberano",
     "publicName": "Soberano",
     "inspirationReference": "Creed Millesime Imperial",
-    "category": "masculina",
+    "category": "unisex",
     "collection": "firma",
-    "shortDescription": "citric, amaderada, con presencia fuerte.",
-    "longDescription": "Majestuoso y oceanico con iris marino y almizcle imperial. Inspirado en Creed Millesime Imperial para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia masculina ideal para noche, citas, eventos.",
+    "shortDescription": "acuatica, citrica, almizclada y luminosa.",
+    "longDescription": "Costera y elegante con sal marina, frutas, limon siciliano, bergamota, iris, mandarina, notas marinas, almizcle y maderas. Inspirado en Creed Millesime Imperial para clientes que quieren una referencia fresca y premium.",
+    "bestFor": "Clientes que buscan una fragancia unisex ideal para diario, vacaciones y clima calido.",
     "concentration": "60% esencia",
     "duration": "8 a 10 horas",
     "intensity": "alta",
     "sillage": "Profunda y envolvente",
     "notes": {
       "top": [
-        "notas marinas",
-        "bergamota",
-        "limon"
+        "sal marina",
+        "notas frutales"
       ],
       "heart": [
+        "limon siciliano",
+        "bergamota",
         "iris",
-        "fruta de la pasion",
-        "notas salinas"
+        "mandarina"
       ],
       "base": [
+        "notas marinas",
         "almizcle",
-        "cedro",
-        "ambar"
+        "notas amaderadas"
       ]
     },
     "families": [
+      "acuatica",
       "citric",
-      "amaderada",
-      "oriental"
+      "almizclada"
     ],
     "moods": [
-      "seguridad",
-      "estilo",
+      "elegancia",
+      "frescura",
       "presencia"
     ],
     "occasions": [
-      "noche",
-      "citas",
-      "eventos"
+      "diario",
+      "vacaciones",
+      "clima calido"
     ],
     "variants": [
       {
@@ -6255,45 +6256,40 @@
     "inspirationReference": "Creed Green Irish Tweed",
     "category": "masculina",
     "collection": "diario",
-    "shortDescription": "citric, almizclada, equilibrada y facil de llevar.",
-    "longDescription": "Verde y elegante como las praderas irlandesas cubiertas de rocio. Inspirado en Creed Green Irish Tweed para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia masculina ideal para diario, salidas, citas.",
+    "shortDescription": "fresca, floral, amaderada y clasica.",
+    "longDescription": "Verde y elegante con iris, verbena de limon, hoja de violeta, ambar gris y sandalo Mysore. Inspirado en Creed Green Irish Tweed para clientes que buscan una frescura masculina sobria.",
+    "bestFor": "Clientes que buscan una fragancia masculina ideal para diario, oficina y reuniones.",
     "concentration": "60% esencia",
     "duration": "6 a 8 horas",
     "intensity": "media",
     "sillage": "Equilibrada y agradable",
     "notes": {
       "top": [
-        "limon",
-        "verbena",
-        "menta",
-        "notas verdes"
+        "iris",
+        "verbena de limon"
       ],
       "heart": [
-        "iris",
-        "hoja de violeta",
-        "te"
+        "hoja de violeta"
       ],
       "base": [
-        "sandalo",
-        "almizcle",
-        "ambar gris"
+        "ambar gris",
+        "sandalo Mysore"
       ]
     },
     "families": [
-      "citric",
-      "almizclada",
+      "fresca",
+      "floral",
       "amaderada"
     ],
     "moods": [
-      "seguridad",
-      "estilo",
-      "presencia"
+      "elegancia",
+      "calma",
+      "seguridad"
     ],
     "occasions": [
       "diario",
-      "salidas",
-      "citas"
+      "oficina",
+      "reuniones"
     ],
     "variants": [
       {
@@ -6323,45 +6319,51 @@
     "inspirationReference": "Creed Viking",
     "category": "masculina",
     "collection": "firma",
-    "shortDescription": "citric, floral, con presencia fuerte.",
-    "longDescription": "Salvaje y majestuoso como un guerrero del norte en la tormenta. Inspirado en Creed Viking para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia masculina ideal para noche, citas, eventos.",
+    "shortDescription": "citrica, especiada, amaderada y potente.",
+    "longDescription": "Vibrante y especiada con pimienta rosa, menta, bergamota, limon, ajenjo, naranja, lavanda, clavo, rosa bulgara, pimienta de Jamaica, iris, jazmin, vetiver, cedro, almizcle blanco y tonka. Inspirado en Creed Viking.",
+    "bestFor": "Clientes que buscan una fragancia masculina ideal para salidas, eventos y clima fresco.",
     "concentration": "60% esencia",
     "duration": "8 a 10 horas",
     "intensity": "alta",
     "sillage": "Profunda y envolvente",
     "notes": {
       "top": [
+        "pimienta rosa",
+        "menta",
         "bergamota",
         "limon",
-        "pimienta rosa"
+        "ajenjo",
+        "naranja"
       ],
       "heart": [
         "lavanda",
-        "menta",
-        "rosa"
+        "clavo",
+        "rosa bulgara",
+        "pimienta de Jamaica",
+        "iris",
+        "jazmin"
       ],
       "base": [
-        "sandalo",
         "vetiver",
-        "ambar",
-        "almizcle"
+        "cedro",
+        "almizcle blanco",
+        "haba tonka"
       ]
     },
     "families": [
       "citric",
-      "floral",
-      "oriental"
+      "especiada",
+      "amaderada"
     ],
     "moods": [
-      "seguridad",
-      "estilo",
+      "fuerza",
+      "energia",
       "presencia"
     ],
     "occasions": [
-      "noche",
-      "citas",
-      "eventos"
+      "salidas",
+      "eventos",
+      "noche"
     ],
     "variants": [
       {
@@ -6391,44 +6393,43 @@
     "inspirationReference": "Ralph Lauren Polo Black",
     "category": "masculina",
     "collection": "firma",
-    "shortDescription": "amaderada, acuatica, con presencia fuerte.",
-    "longDescription": "Elegante y crepuscular como los ultimos rayos del sol poniente. Inspirado en Ralph Lauren Polo Black para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia masculina ideal para noche, citas, eventos.",
+    "shortDescription": "frutal, amaderada, especiada y moderna.",
+    "longDescription": "Oscura y moderna con mango, mandarina, limon, salvia, ajenjo, sandalo, pachuli y tonka. Inspirado en Ralph Lauren Polo Black para clientes que quieren una fragancia masculina de salida nocturna.",
+    "bestFor": "Clientes que buscan una fragancia masculina ideal para noche, salidas y citas.",
     "concentration": "60% esencia",
     "duration": "8 a 10 horas",
     "intensity": "alta",
     "sillage": "Profunda y envolvente",
     "notes": {
       "top": [
-        "mango plateado",
-        "artemisa",
-        "mandarina"
+        "mango",
+        "mandarina",
+        "limon"
       ],
       "heart": [
-        "salvia esclarea",
-        "notas acuaticas",
-        "davana"
+        "salvia",
+        "ajenjo"
       ],
       "base": [
+        "sandalo",
         "pachuli",
-        "notas amaderadas",
-        "gamuza"
+        "haba tonka"
       ]
     },
     "families": [
+      "frutal",
       "amaderada",
-      "acuatica",
-      "oriental"
+      "especiada"
     ],
     "moods": [
-      "energia",
-      "versatil",
-      "confianza"
+      "misterio",
+      "estilo",
+      "seduccion"
     ],
     "occasions": [
       "noche",
-      "citas",
-      "eventos"
+      "salidas",
+      "citas"
     ],
     "variants": [
       {
@@ -6534,12 +6535,12 @@
     "id": "p-permanencia",
     "slug": "permanencia",
     "publicName": "Permanencia",
-    "inspirationReference": "Calvin Klein Eternity",
+    "inspirationReference": "Calvin Klein Eternity for Men",
     "category": "masculina",
     "collection": "diario",
-    "shortDescription": "amaderada, fresca, equilibrada y facil de llevar.",
-    "longDescription": "Eterno y confiable como una promesa que se mantiene siempre. Inspirado en Calvin Klein Eternity para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia masculina ideal para diario, oficina, salidas.",
+    "shortDescription": "fresca, floral, amaderada y clasica.",
+    "longDescription": "Aromatica y limpia con lavanda, limon, bergamota, mandarina, salvia, enebro, albahaca, geranio, jazmin, cilantro, flor de naranjo, lirio de los valles, sandalo, almizcle, vetiver, palisandro brasileno y ambar. Inspirado en Calvin Klein Eternity for Men.",
+    "bestFor": "Clientes que buscan una fragancia masculina ideal para diario, oficina y regalo.",
     "concentration": "60% esencia",
     "duration": "6 a 8 horas",
     "intensity": "media",
@@ -6547,37 +6548,43 @@
     "notes": {
       "top": [
         "lavanda",
-        "mandarina",
+        "limon",
         "bergamota",
-        "romero"
+        "mandarina"
       ],
       "heart": [
         "salvia",
+        "bayas de enebro",
+        "albahaca",
         "geranio",
         "jazmin",
-        "albahaca"
+        "cilantro",
+        "flor de naranjo",
+        "lirio de los valles",
+        "lirio"
       ],
       "base": [
         "sandalo",
-        "cedro",
-        "ambar",
-        "vetiver"
+        "almizcle",
+        "vetiver",
+        "palisandro brasileno",
+        "ambar"
       ]
     },
     "families": [
-      "amaderada",
       "fresca",
-      "citric"
+      "floral",
+      "amaderada"
     ],
     "moods": [
-      "energia",
-      "versatil",
-      "confianza"
+      "limpieza",
+      "confianza",
+      "calma"
     ],
     "occasions": [
       "diario",
       "oficina",
-      "salidas"
+      "regalo"
     ],
     "variants": [
       {
@@ -6605,46 +6612,55 @@
     "slug": "existir",
     "publicName": "Existir",
     "inspirationReference": "Calvin Klein CK Be",
-    "category": "masculina",
+    "category": "unisex",
     "collection": "firma",
-    "shortDescription": "oriental, almizclada, con presencia fuerte.",
-    "longDescription": "Autentico y filosofico para quien simplemente es. Inspirado en Calvin Klein CK Be para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia masculina ideal para noche, citas, eventos.",
+    "shortDescription": "almizclada, fresca, floral y limpia.",
+    "longDescription": "Suave y transparente con lavanda, notas verdes, bergamota, menta, enebro, mandarina, hierba verde, jazmin, durazno, fresia, magnolia, orquidea, almizcle, sandalo, cedro, vainilla, ambar y opoponax. Inspirado en Calvin Klein CK Be.",
+    "bestFor": "Clientes que buscan una fragancia unisex ideal para diario, oficina y regalo.",
     "concentration": "60% esencia",
     "duration": "8 a 10 horas",
     "intensity": "alta",
     "sillage": "Profunda y envolvente",
     "notes": {
       "top": [
+        "lavanda",
+        "notas verdes",
         "bergamota",
-        "mandarina",
-        "menta"
+        "menta",
+        "enebro",
+        "mandarina"
       ],
       "heart": [
+        "hierba verde",
+        "jazmin",
+        "durazno",
+        "fresia",
         "magnolia",
-        "melocoton",
-        "junipero"
+        "orquidea"
       ],
       "base": [
-        "sandalo",
         "almizcle",
-        "ambar"
+        "sandalo",
+        "cedro",
+        "vainilla",
+        "ambar",
+        "opoponax"
       ]
     },
     "families": [
-      "oriental",
       "almizclada",
-      "citric"
+      "fresca",
+      "floral"
     ],
     "moods": [
-      "seguridad",
-      "estilo",
-      "presencia"
+      "limpieza",
+      "calma",
+      "cercania"
     ],
     "occasions": [
-      "noche",
-      "citas",
-      "eventos"
+      "diario",
+      "oficina",
+      "regalo"
     ],
     "variants": [
       {
@@ -6671,46 +6687,45 @@
     "id": "p-solsticio",
     "slug": "solsticio",
     "publicName": "Solsticio",
-    "inspirationReference": "Calvin Klein CK One Summer",
-    "category": "masculina",
+    "inspirationReference": "Calvin Klein CK One Summer 2013",
+    "category": "unisex",
     "collection": "diario",
-    "shortDescription": "amaderada, almizclada, equilibrada y facil de llevar.",
-    "longDescription": "Luminoso y veraniego como el dia mas largo del ano. Inspirado en Calvin Klein CK One Summer para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia masculina ideal para diario, salidas, citas.",
+    "shortDescription": "acuatica, citrica, almizclada y veraniega.",
+    "longDescription": "Ligera y veraniega con notas acuaticas, citricos, pepino, sandia, nenufar, almizcle y musgo. Inspirado en Calvin Klein CK One Summer 2013, elegido por la coincidencia con el perfil acuatico-citrico de la ficha.",
+    "bestFor": "Clientes que buscan una fragancia unisex ideal para diario, vacaciones y clima calido.",
     "concentration": "60% esencia",
     "duration": "6 a 8 horas",
     "intensity": "media",
     "sillage": "Equilibrada y agradable",
     "notes": {
       "top": [
-        "lima",
-        "citricos",
-        "notas acuaticas"
+        "notas acuaticas",
+        "citricos"
       ],
       "heart": [
-        "jengibre",
-        "notas verdes"
+        "pepino",
+        "sandia",
+        "nenufar"
       ],
       "base": [
-        "almizcle blanco",
-        "cedro",
-        "vetiver"
+        "almizcle",
+        "musgo"
       ]
     },
     "families": [
-      "amaderada",
-      "almizclada",
-      "citric"
+      "acuatica",
+      "citric",
+      "almizclada"
     ],
     "moods": [
-      "seguridad",
-      "estilo",
-      "presencia"
+      "frescura",
+      "ligereza",
+      "energia"
     ],
     "occasions": [
       "diario",
-      "salidas",
-      "citas"
+      "vacaciones",
+      "clima calido"
     ],
     "variants": [
       {

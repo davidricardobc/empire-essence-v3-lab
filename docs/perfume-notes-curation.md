@@ -2,7 +2,7 @@
 
 Objetivo: mejorar busqueda, filtros y autoridad comercial del catalogo sin inventar notas.
 
-Cobertura actual: 113 referencias revisadas/verificadas de 196 productos del catalogo.
+Cobertura actual: 123 referencias revisadas/verificadas de 196 productos del catalogo.
 
 ## Metodo
 
@@ -213,6 +213,23 @@ Este lote cierra otro bloque comercial masculino, con enfasis en flankers Lacost
 | Fluir | Issey Miyake L'Eau d'Issey Pour Homme | Corregido menor | Se completo la piramide citrica-acuatica con verbena de limon, cipres, calone, cilantro, estragon, loto azul, lirio de los valles, azafran, reseda, ambar y tabaco. |
 | Corriente | Issey Miyake L'Eau Majeure d'Issey | Corregido | Se reemplazo mandarina/especias/sandalo/vetiver por pomelo, bergamota, menta, notas marinas, hedione, te, cashmeran, maderas, amberwood, cedro y cumarina. |
 
+## Lote 12 - masculinas no revisadas, bloque 6
+
+Este lote revisa Creed, Polo Black y Calvin Klein. Varias referencias pasan a unisex cuando la fuente las lista como `women and men`, y `Solsticio` se fija como CK One Summer 2013 por coincidencia olfativa.
+
+| Producto | Inspiracion | Estado | Ajuste |
+|---|---|---|---|
+| Ceremonial | Creed Original Santal | Corregido | La categoria pasa a unisex y se reemplaza una piramide floral de Santal generica por enebro, cilantro, jengibre, romero, bergamota, mandarina, sandalo, lavanda, geranio, flor de naranjo, tonka, almizcle, cedro y musgo de roble. |
+| Lusitania | Creed Bois du Portugal | Corregido | Se aclaro el nombre real y se simplifico a bergamota, lavanda, sandalo, cedro, vetiver y ambar gris. |
+| Tierra | Creed Original Vetiver | Corregido | La categoria pasa a unisex y se reemplazo hoja de violeta/neroli/cedro por jengibre, mandarina, vetiver haitiano, sandalo, iris, almizcle y ambar gris. |
+| Soberano | Creed Millesime Imperial | Corregido | La categoria pasa a unisex y se reemplazo fruta de la pasion/cedro/ambar por sal marina, notas frutales, limon siciliano, bergamota, iris, mandarina, notas marinas, almizcle y maderas. |
+| Pradera | Creed Green Irish Tweed | Corregido menor | Se simplifico al perfil clasico: iris, verbena de limon, hoja de violeta, ambar gris y sandalo Mysore. |
+| Tempestad | Creed Viking | Corregido | Se completo con menta, ajenjo, naranja, clavo, pimienta de Jamaica, iris, jazmin, cedro, almizcle blanco y tonka; familia pasa a citrica/especiada/amaderada. |
+| Ocaso | Ralph Lauren Polo Black | Corregido | Se retiro el perfil acuatico/gamuza y queda mango, mandarina, limon, salvia, ajenjo, sandalo, pachuli y tonka. |
+| Permanencia | Calvin Klein Eternity for Men | Corregido | Se completo el corazon fougere con enebro, cilantro, flor de naranjo, lirio de los valles y lirio; base suma almizcle y palisandro brasileno. |
+| Existir | Calvin Klein CK Be | Corregido | La categoria pasa a unisex y se amplia con lavanda, notas verdes, menta, enebro, hierba verde, jazmin, durazno, fresia, magnolia, orquidea, cedro, vainilla y opoponax. |
+| Solsticio | Calvin Klein CK One Summer 2013 | Corregido | Se fija como CK One Summer 2013 por coincidencia acuatico-citrica y queda notas acuaticas/citricos, pepino/sandia/nenufar y almizcle/musgo. |
+
 ## Fuentes usadas en el lote 1
 
 - Creed Aventus: https://www.creedfragrances.co.uk/products/aventus y https://www.fragrantica.com/perfume/Creed/Aventus-9828.html
@@ -359,7 +376,20 @@ Este lote cierra otro bloque comercial masculino, con enfasis en flankers Lacost
 - Issey Miyake L'Eau d'Issey Pour Homme: https://www.fragrantica.com/perfume/Issey-Miyake/L-Eau-d-Issey-Pour-Homme-721.html
 - Issey Miyake L'Eau Majeure d'Issey: https://www.fragrantica.com/perfume/Issey-Miyake/L-Eau-Majeure-d-Issey-45877.html
 
+## Fuentes usadas en el lote 12
+
+- Creed Original Santal: https://www.fragrantica.com/perfume/Creed/Original-Santal-473.html
+- Creed Bois du Portugal: https://www.fragrantica.com/perfume/Creed/Bois-du-Portugal-3805.html
+- Creed Original Vetiver: https://www.fragrantica.com/perfume/Creed/Original-Vetiver-468.html
+- Creed Millesime Imperial: https://www.fragrantica.com/perfume/Creed/Millesime-Imperial-466.html
+- Creed Green Irish Tweed: https://www.fragrantica.com/perfume/Creed/Green-Irish-Tweed-474.html
+- Creed Viking: https://www.fragrantica.com/perfume/Creed/Viking-41698.html
+- Ralph Lauren Polo Black: https://www.fragrantica.com/perfume/Ralph-Lauren/Polo-Black-1197.html
+- Calvin Klein Eternity for Men: https://www.fragrantica.com/perfume/Calvin-Klein/Eternity-For-Men-258.html
+- Calvin Klein CK Be: https://www.fragrantica.com/perfume/Calvin-Klein/CK-be-275.html
+- Calvin Klein CK One Summer 2013: https://www.fragrantica.com/perfume/Calvin-Klein/CK-One-Summer-2013-17561.html
+
 ## Siguientes lotes
 
-1. Masculinas no revisadas, bloque 6: Creed Original Santal, Creed Bois du Portugal, Creed Original Vetiver, Creed Millesime Imperial, Creed Green Irish Tweed, Creed Viking, Polo Black, CK Eternity Men, CK Be y CK One Summer.
+1. Masculinas no revisadas, bloque 7: Tommy, Acqua di Gio Profumo, Montblanc Emblem, Montblanc Legend, Versace Man Eau Fraiche, Versace Pour Homme, Dolce & Gabbana K, Light Blue Pour Homme, Light Blue Italian Zest Pour Homme y 212 VIP Black.
 2. Limpieza final de familias visibles: separar familia dominante de notas buscables para que el filtro sea preciso sin esconder opciones buenas.
