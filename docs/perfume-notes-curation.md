@@ -2,7 +2,7 @@
 
 Objetivo: mejorar busqueda, filtros y autoridad comercial del catalogo sin inventar notas.
 
-Cobertura actual: 143 referencias revisadas/verificadas de 196 productos del catalogo.
+Cobertura actual: 153 referencias revisadas/verificadas de 196 productos del catalogo.
 
 ## Metodo
 
@@ -264,6 +264,23 @@ Este lote cierra las cuatro masculinas sueltas que quedaban del bloque comercial
 | Amatista | Bvlgari Omnia Amethyste | Corregido | Grosellas verdes pasan a notas verdes, se retira nenufar/almizcle y queda pomelo rosa, iris, rosa bulgara, heliotropo y maderas. |
 | Cristal | Bvlgari Omnia Crystalline | Corregido | La familia deja de ser oriental y queda floral/acuatica/almizclada; se agrega casia y musgo de roble, se retira ambar. |
 
+## Lote 15 - femeninas no revisadas, bloque 9
+
+Este lote trabaja femeninas comerciales de alta recordacion y corrige varias piramides que venian mezcladas con notas genericas.
+
+| Producto | Inspiracion | Estado | Ajuste |
+|---|---|---|---|
+| Oleada | Perry Ellis 360 for Women | Corregido | Se agregaron rosa azul, loto, salvia, vainilla y vetiver; la familia pasa de oriental a floral/frutal/almizclada. |
+| Ligereza | Ralph Lauren Ralph | Corregido | Se reemplazo hojas de mango/manzana amarilla/glicina/cedro/musgo por hoja de manzana, mandarina italiana, osmanto japones, fresia amarilla, magnolia, boronia, almizcle e iris blanco. |
+| Destello | Rabanne Lady Million Lucky | Corregido | Se retiro grosella/ciruela/gardenia/almizcle y queda frambuesa, avellana, rosa, jazmin, miel, cachemira, sandalo y cedro. |
+| Corona | Rabanne Lady Million Empire | Corregido | Se reemplazo una piramide especiada por grosella roja, naranja, neroli, mirabel, magnolia, osmanto, flor de naranjo, cognac, pachuli y almizcle blanco. |
+| Coqueteo | Victoria's Secret Tease | Corregido | Se simplifico a la formula oficial: pera Anjou, gardenia blanca y vainilla negra. |
+| Mimo | Katy Perry Meow | Corregido menor | Se agregaron flor de naranjo y se reubico jazmin/gardenia en salida segun la estructura publicada. |
+| Caricia | Katy Perry Purr | Corregido menor | Se agregaron gardenia, rosa, orquidea y ambar; manzana pasa a manzana roja. |
+| Floracion | DKNY Be Delicious Fresh Blossom | Corregido | Se agregaron albaricoque, cassis y manzana roja; se retiro almizcle/sandalo para dejar base de manzana roja y maderas. |
+| Hechizo | Britney Spears Midnight Fantasy | Corregido menor | Cereza pasa a cereza acida y la base queda vainilla, almizcle y ambar. |
+| Dulzura | Ariana Grande Sweet Like Candy | Corregido | Se reemplazo bayas de azucar/flor de cerezo/lavanda/maderas por mora, pera, bergamota, crema batida, malvavisco, grosella negra, jazmin, frangipani, madreselva, vainilla y cachemira. |
+
 ## Fuentes usadas en el lote 1
 
 - Creed Aventus: https://www.creedfragrances.co.uk/products/aventus y https://www.fragrantica.com/perfume/Creed/Aventus-9828.html
@@ -449,7 +466,20 @@ Este lote cierra las cuatro masculinas sueltas que quedaban del bloque comercial
 - Bvlgari Omnia Amethyste: https://www.fragrantica.com/perfume/Bvlgari/Omnia-Amethyste-780.html
 - Bvlgari Omnia Crystalline: https://www.fragrantica.com/perfume/Bvlgari/Omnia-Crystalline-152.html y https://www.bulgari.com/en-us/product/OMNIA-CRYSTALLINE-EDT
 
+## Fuentes usadas en el lote 15
+
+- Perry Ellis 360 for Women: https://www.fragrantica.com/perfume/Perry-Ellis/3600-1901.html
+- Ralph Lauren Ralph: https://www.fragrantica.com/perfume/Ralph-Lauren/Ralph-826.html
+- Rabanne Lady Million Lucky: https://www.fragrantica.com/perfume/Rabanne/Lady-Million-Lucky-48904.html
+- Rabanne Lady Million Empire: https://www.fragrantica.com/perfume/Rabanne/Lady-Million-Empire-55787.html y https://www.fragrantica.com/news/Paco-Rabanne-Lady-Million-Empire-12457.html
+- Victoria's Secret Tease: https://www.victoriassecret.com/us/vs/beauty-catalog/5000006609 y https://www.fragrantica.com/perfume/Victoria-s-Secret/Tease-Eau-de-Parfum-2020-64012.html
+- Katy Perry Meow: https://www.fragrantica.com/news/Katy-Perry-Meow-2644.html
+- Katy Perry Purr: https://www.fragrantica.com/perfume/Katy-Perry/Purr-10543.html
+- DKNY Be Delicious Fresh Blossom: https://www.fragrantica.com/perfume/Donna-Karan/DKNY-Be-Delicious-Fresh-Blossom-5609.html
+- Britney Spears Midnight Fantasy: https://www.fragrantica.com/perfume/Britney-Spears/Midnight-Fantasy-802.html
+- Ariana Grande Sweet Like Candy: https://www.fragrantica.com/perfume/Ariana-Grande/Sweet-Like-Candy-39970.html
+
 ## Siguientes lotes
 
-1. Femeninas no revisadas, bloque 9: Perry Ellis 360 mujer, Ralph Lauren Ralph, Lady Million Lucky, Lady Million Empire, Victoria's Secret Tease, Katy Perry Meow, Katy Perry Purr, DKNY Be Delicious Fresh Blossom, Britney Spears Midnight Fantasy y Ariana Grande Sweet Like Candy.
+1. Femeninas no revisadas, bloque 10: 212 VIP Wild Party, 212 VIP Rose Red, 212 VIP, Lady Million, Black XS L'Exces for Her, Pure XS for Her, DKNY Be Delicious, Gucci Bamboo, Hugo Boss Woman y Boss The Scent for Her.
 2. Limpieza final de familias visibles: separar familia dominante de notas buscables para que el filtro sea preciso sin esconder opciones buenas.

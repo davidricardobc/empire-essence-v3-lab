@@ -249,6 +249,16 @@ const productSpecificAliases: Record<string, string[]> = {
   "p-encanto": ["dolce gabbana the one mujer", "the one mujer", "the one feminine"],
   "p-amatista": ["bvlgari omnia amethyste", "bulgari omnia amethyste", "omnia amethyste"],
   "p-cristal": ["bvlgari omnia crystalline", "bulgari omnia crystalline", "omnia crystalline"],
+  "p-oleada": ["perry ellis 360 mujer", "360 mujer", "360 femenina"],
+  "p-ligereza": ["ralph lauren ralph", "ralph mujer", "ralph by ralph lauren"],
+  "p-destello": ["lady million lucky", "paco rabanne lady million lucky", "rabanne lady million lucky"],
+  "p-corona": ["lady million empire", "paco rabanne lady million empire", "rabanne lady million empire"],
+  "p-coqueteo": ["victoria secret tease", "victoria's secret tease", "tease victoria secret"],
+  "p-mimo": ["katy perry meow", "meow katy perry"],
+  "p-caricia": ["katy perry purr", "purr katy perry"],
+  "p-floracion": ["dkny fresh blossom", "be delicious fresh blossom", "dkny be delicious fresh blossom"],
+  "p-hechizo": ["britney midnight fantasy", "britney spears midnight fantasy", "midnight fantasy"],
+  "p-dulzura": ["ariana sweet like candy", "ariana grande sweet like candy", "sweet like candy"],
 };
 
 export function normalizeSearchText(value: string) {

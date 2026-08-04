@@ -8464,47 +8464,50 @@
     "id": "p-oleada",
     "slug": "oleada",
     "publicName": "Oleada",
-    "inspirationReference": "Perry Ellis 360",
+    "inspirationReference": "Perry Ellis 360 for Women",
     "category": "femenina",
     "collection": "firma",
-    "shortDescription": "floral, oriental, con presencia fuerte.",
-    "longDescription": "Suave y envolvente como una oleada de flores al anochecer. Inspirado en Perry Ellis 360 para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia femenina ideal para noche, citas, eventos.",
+    "shortDescription": "floral, frutal, almizclada y clasica.",
+    "longDescription": "Femenina y luminosa con melon, mandarina, osmanto, rosa azul, lirio de los valles, loto, salvia, sandalo, vainilla, vetiver, ambar y almizcle. Inspirado en Perry Ellis 360 for Women.",
+    "bestFor": "Clientes que buscan una fragancia femenina ideal para diario, oficina y regalo.",
     "concentration": "60% esencia",
     "duration": "8 a 10 horas",
     "intensity": "alta",
     "sillage": "Profunda y envolvente",
     "notes": {
       "top": [
+        "melon",
         "mandarina",
         "osmanto",
-        "melon"
+        "rosa azul"
       ],
       "heart": [
-        "rosa de mayo",
         "lirio de los valles",
-        "jazmin"
+        "loto",
+        "salvia"
       ],
       "base": [
         "sandalo",
-        "almizcle blanco",
-        "ambar"
+        "vainilla",
+        "vetiver",
+        "ambar",
+        "almizcle"
       ]
     },
     "families": [
       "floral",
-      "oriental",
+      "frutal",
       "almizclada"
     ],
     "moods": [
       "elegancia",
-      "encanto",
-      "femineidad"
+      "limpieza",
+      "calma"
     ],
     "occasions": [
-      "noche",
-      "citas",
-      "eventos"
+      "diario",
+      "oficina",
+      "regalo"
     ],
     "variants": [
       {
@@ -8534,44 +8537,43 @@
     "inspirationReference": "Ralph Lauren Ralph",
     "category": "femenina",
     "collection": "diario",
-    "shortDescription": "amaderada, floral, equilibrada y facil de llevar.",
-    "longDescription": "Fresca y despreocupada como una tarde de verano sin reloj. Inspirado en Ralph Lauren Ralph para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia femenina ideal para diario, salidas, citas.",
+    "shortDescription": "floral, frutal, citrica y juvenil.",
+    "longDescription": "Fresca y colorida con hoja de manzana, mandarina italiana, osmanto japones, fresia amarilla, magnolia, boronia, almizcle e iris blanco. Inspirado en Ralph Lauren Ralph para clientas que buscan una fragancia alegre de diario.",
+    "bestFor": "Clientes que buscan una fragancia femenina ideal para diario, salidas y clima calido.",
     "concentration": "60% esencia",
     "duration": "6 a 8 horas",
     "intensity": "media",
     "sillage": "Equilibrada y agradable",
     "notes": {
       "top": [
-        "hojas de mango",
-        "mandarina",
-        "manzana amarilla"
+        "hoja de manzana",
+        "mandarina italiana",
+        "osmanto japones"
       ],
       "heart": [
+        "fresia amarilla",
         "magnolia",
-        "glicina",
-        "iris"
+        "boronia"
       ],
       "base": [
-        "almizcle blanco",
-        "cedro",
-        "musgo"
+        "almizcle",
+        "iris blanco"
       ]
     },
     "families": [
-      "amaderada",
       "floral",
-      "frutal"
+      "frutal",
+      "citric"
     ],
     "moods": [
-      "elegancia",
-      "encanto",
-      "femineidad"
+      "alegria",
+      "juventud",
+      "frescura"
     ],
     "occasions": [
       "diario",
       "salidas",
-      "citas"
+      "clima calido"
     ],
     "variants": [
       {
@@ -8598,47 +8600,46 @@
     "id": "p-destello",
     "slug": "destello",
     "publicName": "Destello",
-    "inspirationReference": "Paco Rabanne Lady Million Lucky",
+    "inspirationReference": "Rabanne Lady Million Lucky",
     "category": "femenina",
     "collection": "firma",
-    "shortDescription": "floral, dulce, con presencia fuerte.",
-    "longDescription": "Brillante y afortunado como un destello de luz en la noche. Inspirado en Paco Rabanne Lady Million Lucky para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia femenina ideal para noche, citas, eventos.",
+    "shortDescription": "frutal, dulce, floral y amaderada.",
+    "longDescription": "Jugosa y dulce con frambuesa, avellana, rosa, jazmin, miel, cachemira, sandalo y cedro. Inspirado en Rabanne Lady Million Lucky para clientas que quieren una salida frutal con fondo meloso.",
+    "bestFor": "Clientes que buscan una fragancia femenina ideal para salidas, citas y regalo.",
     "concentration": "60% esencia",
     "duration": "8 a 10 horas",
     "intensity": "alta",
     "sillage": "Marcada y memorable",
     "notes": {
       "top": [
-        "frambuesa",
-        "grosella negra",
-        "ciruela"
+        "frambuesa"
       ],
       "heart": [
-        "gardenia",
+        "avellana",
         "rosa",
-        "jazmin de media noche"
+        "jazmin"
       ],
       "base": [
         "miel",
-        "notas amaderadas",
-        "almizcle blanco"
+        "cachemira",
+        "sandalo",
+        "cedro"
       ]
     },
     "families": [
-      "floral",
+      "frutal",
       "dulce",
-      "amaderada"
+      "floral"
     ],
     "moods": [
-      "seduccion",
-      "impacto",
-      "noche"
+      "alegria",
+      "coqueteo",
+      "dulzura"
     ],
     "occasions": [
-      "noche",
+      "salidas",
       "citas",
-      "eventos"
+      "regalo"
     ],
     "variants": [
       {
@@ -8665,47 +8666,48 @@
     "id": "p-corona",
     "slug": "corona",
     "publicName": "Corona",
-    "inspirationReference": "Paco Rabanne Lady Million Empire",
+    "inspirationReference": "Rabanne Lady Million Empire",
     "category": "femenina",
     "collection": "diario",
-    "shortDescription": "floral, especiada, equilibrada y facil de llevar.",
-    "longDescription": "Poderosa y regia como una emperatriz con corona de flores. Inspirado en Paco Rabanne Lady Million Empire para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia femenina ideal para diario, salidas, citas.",
+    "shortDescription": "frutal, floral, amaderada y nocturna.",
+    "longDescription": "Brillante y atrevida con grosella roja, naranja, neroli, mirabel, magnolia, osmanto, flor de naranjo, cognac, pachuli y almizcle blanco. Inspirado en Rabanne Lady Million Empire.",
+    "bestFor": "Clientes que buscan una fragancia femenina ideal para noche, eventos y fiesta.",
     "concentration": "60% esencia",
     "duration": "6 a 8 horas",
     "intensity": "media",
     "sillage": "Equilibrada y agradable",
     "notes": {
       "top": [
-        "jengibre",
-        "bergamota",
-        "pimienta rosa"
+        "grosella roja",
+        "naranja",
+        "neroli"
       ],
       "heart": [
-        "flor de naranjo",
-        "jazmin sambac",
-        "gardenia"
+        "mirabel",
+        "magnolia",
+        "osmanto",
+        "flor de naranjo"
       ],
       "base": [
-        "miel de azahar",
-        "sandalo",
-        "cachemira"
+        "cognac",
+        "pachuli",
+        "almizcle blanco"
       ]
     },
     "families": [
+      "frutal",
       "floral",
-      "especiada",
       "amaderada"
     ],
     "moods": [
-      "elegancia",
-      "encanto",
-      "femineidad"
+      "poder",
+      "fiesta",
+      "presencia"
     ],
     "occasions": [
-      "diario",
-      "salidas",
-      "citas"
+      "noche",
+      "eventos",
+      "fiesta"
     ],
     "variants": [
       {
@@ -8735,43 +8737,38 @@
     "inspirationReference": "Victoria's Secret Tease",
     "category": "femenina",
     "collection": "firma",
-    "shortDescription": "floral, dulce, con presencia fuerte.",
-    "longDescription": "Jugueton y seductor como un coqueteo sutil de miradas. Inspirado en Victoria's Secret Tease para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia femenina ideal para noche, citas, eventos.",
+    "shortDescription": "floral, dulce, gourmand y coqueta.",
+    "longDescription": "Coqueta y cremosa con pera Anjou, gardenia blanca y vainilla negra. Inspirado en Victoria's Secret Tease para clientas que buscan un gourmand floral sencillo y reconocible.",
+    "bestFor": "Clientes que buscan una fragancia femenina ideal para diario, salidas y citas.",
     "concentration": "60% esencia",
     "duration": "8 a 10 horas",
     "intensity": "alta",
     "sillage": "Marcada y memorable",
     "notes": {
       "top": [
-        "pera",
-        "gardenia",
-        "manzana"
+        "pera Anjou"
       ],
       "heart": [
-        "jazmin negro",
         "gardenia blanca"
       ],
       "base": [
-        "vainilla",
-        "almizcle",
-        "sandalo"
+        "vainilla negra"
       ]
     },
     "families": [
       "floral",
       "dulce",
-      "almizclada"
+      "gourmand"
     ],
     "moods": [
-      "seduccion",
-      "impacto",
-      "noche"
+      "coqueteo",
+      "dulzura",
+      "seduccion"
     ],
     "occasions": [
-      "noche",
-      "citas",
-      "eventos"
+      "diario",
+      "salidas",
+      "citas"
     ],
     "variants": [
       {
@@ -8872,45 +8869,46 @@
     "inspirationReference": "Katy Perry Meow",
     "category": "femenina",
     "collection": "firma",
-    "shortDescription": "floral, oriental, con presencia fuerte.",
-    "longDescription": "Tierno y jugueton como un abrazo suave y reconfortante. Inspirado en Katy Perry Meow para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia femenina ideal para noche, citas, eventos.",
+    "shortDescription": "floral, frutal, dulce y cremosa.",
+    "longDescription": "Dulce y femenina con mandarina, pera, jazmin, gardenia, madreselva, lirio de los valles, flor de naranjo, ambar, vainilla, sandalo y almizcle. Inspirado en Katy Perry Meow.",
+    "bestFor": "Clientes que buscan una fragancia femenina ideal para diario, regalo y salidas.",
     "concentration": "60% esencia",
     "duration": "8 a 10 horas",
     "intensity": "alta",
     "sillage": "Profunda y envolvente",
     "notes": {
       "top": [
-        "naranja mandarina",
+        "mandarina",
         "pera",
+        "jazmin",
         "gardenia"
       ],
       "heart": [
         "madreselva",
-        "jazmin",
-        "lirio de los valles"
+        "lirio de los valles",
+        "flor de naranjo"
       ],
       "base": [
-        "sandalo",
+        "ambar",
         "vainilla",
-        "almizcle",
-        "ambar"
+        "sandalo",
+        "almizcle"
       ]
     },
     "families": [
       "floral",
-      "oriental",
-      "almizclada"
+      "frutal",
+      "dulce"
     ],
     "moods": [
-      "elegancia",
-      "encanto",
-      "femineidad"
+      "dulzura",
+      "ternura",
+      "alegria"
     ],
     "occasions": [
-      "noche",
-      "citas",
-      "eventos"
+      "diario",
+      "regalo",
+      "salidas"
     ],
     "variants": [
       {
@@ -8940,9 +8938,9 @@
     "inspirationReference": "Katy Perry Purr",
     "category": "femenina",
     "collection": "diario",
-    "shortDescription": "floral, dulce, equilibrada y facil de llevar.",
-    "longDescription": "Suave y envolvente como una caricia de seda sobre la piel. Inspirado en Katy Perry Purr para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia femenina ideal para diario, salidas, citas.",
+    "shortDescription": "floral, frutal, dulce y juguetona.",
+    "longDescription": "Coqueta y tropical con durazno, manzana roja, gardenia, bambu, jazmin, fresia, rosa, vainilla, coco, orquidea, almizcle, ambar y sandalo. Inspirado en Katy Perry Purr.",
+    "bestFor": "Clientes que buscan una fragancia femenina ideal para diario, salidas y regalo.",
     "concentration": "60% esencia",
     "duration": "6 a 8 horas",
     "intensity": "media",
@@ -8950,35 +8948,38 @@
     "notes": {
       "top": [
         "durazno",
-        "manzana",
+        "manzana roja",
+        "gardenia",
         "bambu"
       ],
       "heart": [
-        "fresia",
         "jazmin",
-        "rosa bulgara"
+        "fresia",
+        "rosa"
       ],
       "base": [
-        "sandalo",
         "vainilla",
-        "almizcle blanco",
-        "coco"
+        "coco",
+        "orquidea",
+        "almizcle",
+        "ambar",
+        "sandalo"
       ]
     },
     "families": [
       "floral",
-      "dulce",
-      "frutal"
+      "frutal",
+      "dulce"
     ],
     "moods": [
-      "elegancia",
-      "encanto",
-      "femineidad"
+      "coqueteo",
+      "dulzura",
+      "alegria"
     ],
     "occasions": [
       "diario",
       "salidas",
-      "citas"
+      "regalo"
     ],
     "variants": [
       {
@@ -9008,9 +9009,9 @@
     "inspirationReference": "DKNY Be Delicious Fresh Blossom",
     "category": "femenina",
     "collection": "diario",
-    "shortDescription": "floral, amaderada, equilibrada y facil de llevar.",
-    "longDescription": "Primaveral y radiante como un jardin en plena floracion. Inspirado en DKNY Be Delicious Fresh Blossom para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia femenina ideal para diario, salidas, citas.",
+    "shortDescription": "floral, frutal, citrica y fresca.",
+    "longDescription": "Fresca y delicada con pomelo, albaricoque, cassis, rosa, lirio de los valles, jazmin, manzana roja y maderas. Inspirado en DKNY Be Delicious Fresh Blossom.",
+    "bestFor": "Clientes que buscan una fragancia femenina ideal para diario, oficina y clima calido.",
     "concentration": "60% esencia",
     "duration": "6 a 8 horas",
     "intensity": "media",
@@ -9018,33 +9019,33 @@
     "notes": {
       "top": [
         "pomelo",
-        "grosella"
+        "albaricoque",
+        "cassis"
       ],
       "heart": [
         "rosa",
-        "jazmin",
-        "lirio de los valles"
+        "lirio de los valles",
+        "jazmin"
       ],
       "base": [
-        "almizcle",
-        "sandalo",
+        "manzana roja",
         "notas amaderadas"
       ]
     },
     "families": [
       "floral",
-      "amaderada",
+      "frutal",
       "citric"
     ],
     "moods": [
-      "elegancia",
-      "encanto",
-      "femineidad"
+      "frescura",
+      "delicadeza",
+      "alegria"
     ],
     "occasions": [
       "diario",
-      "salidas",
-      "citas"
+      "oficina",
+      "clima calido"
     ],
     "variants": [
       {
@@ -9074,9 +9075,9 @@
     "inspirationReference": "Britney Spears Midnight Fantasy",
     "category": "femenina",
     "collection": "firma",
-    "shortDescription": "dulce, oriental, con presencia fuerte.",
-    "longDescription": "Misterioso y nocturno como un hechizo bajo la luna llena. Inspirado en Britney Spears Midnight Fantasy para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia femenina ideal para noche, citas, eventos.",
+    "shortDescription": "frutal, floral, dulce y nocturna.",
+    "longDescription": "Jugosa y nocturna con ciruela, cereza acida, frambuesa, orquidea, iris, fresia, vainilla, almizcle y ambar. Inspirado en Britney Spears Midnight Fantasy para clientas que quieren dulzura frutal de noche.",
+    "bestFor": "Clientes que buscan una fragancia femenina ideal para noche, salidas y fiesta.",
     "concentration": "60% esencia",
     "duration": "8 a 10 horas",
     "intensity": "alta",
@@ -9084,34 +9085,34 @@
     "notes": {
       "top": [
         "ciruela",
-        "frambuesa",
-        "cereza"
+        "cereza acida",
+        "frambuesa"
       ],
       "heart": [
         "orquidea",
-        "fresia",
-        "iris"
+        "iris",
+        "fresia"
       ],
       "base": [
-        "ambar",
         "vainilla",
-        "almizcle oscuro"
+        "almizcle",
+        "ambar"
       ]
     },
     "families": [
-      "dulce",
-      "oriental",
-      "floral"
+      "frutal",
+      "floral",
+      "dulce"
     ],
     "moods": [
-      "seduccion",
-      "impacto",
-      "noche"
+      "misterio",
+      "dulzura",
+      "fiesta"
     ],
     "occasions": [
       "noche",
-      "citas",
-      "eventos"
+      "salidas",
+      "fiesta"
     ],
     "variants": [
       {
@@ -9209,44 +9210,46 @@
     "inspirationReference": "Ariana Grande Sweet Like Candy",
     "category": "femenina",
     "collection": "diario",
-    "shortDescription": "dulce, amaderada, equilibrada y facil de llevar.",
-    "longDescription": "Irresistiblemente dulce como un caramelo envuelto en flores. Inspirado en Ariana Grande Sweet Like Candy para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia femenina ideal para diario, salidas, citas.",
+    "shortDescription": "gourmand, dulce, frutal y cremosa.",
+    "longDescription": "Dulce y cremosa con mora, pera, bergamota, crema batida, malvavisco, grosella negra, jazmin, frangipani, madreselva, vainilla y cachemira. Inspirado en Ariana Grande Sweet Like Candy.",
+    "bestFor": "Clientes que buscan una fragancia femenina ideal para diario, salidas y regalo.",
     "concentration": "60% esencia",
     "duration": "6 a 8 horas",
     "intensity": "media",
     "sillage": "Equilibrada y agradable",
     "notes": {
       "top": [
-        "bayas de azucar",
-        "pera italiana",
+        "mora",
+        "pera",
         "bergamota"
       ],
       "heart": [
-        "vainilla",
-        "flor de cerezo",
-        "lavanda"
+        "crema batida",
+        "malvavisco",
+        "grosella negra",
+        "jazmin",
+        "frangipani",
+        "madreselva"
       ],
       "base": [
-        "almizcle cremoso",
-        "cashmere",
-        "notas amaderadas"
+        "vainilla",
+        "cachemira"
       ]
     },
     "families": [
+      "gourmand",
       "dulce",
-      "amaderada",
-      "citric"
+      "frutal"
     ],
     "moods": [
-      "seguridad",
-      "estilo",
-      "presencia"
+      "dulzura",
+      "alegria",
+      "ternura"
     ],
     "occasions": [
       "diario",
       "salidas",
-      "citas"
+      "regalo"
     ],
     "variants": [
       {
