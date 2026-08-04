@@ -2,7 +2,7 @@
 
 Objetivo: mejorar busqueda, filtros y autoridad comercial del catalogo sin inventar notas.
 
-Cobertura actual: 153 referencias revisadas/verificadas de 196 productos del catalogo.
+Cobertura actual: 163 referencias revisadas/verificadas de 196 productos del catalogo.
 
 ## Metodo
 
@@ -281,6 +281,23 @@ Este lote trabaja femeninas comerciales de alta recordacion y corrige varias pir
 | Hechizo | Britney Spears Midnight Fantasy | Corregido menor | Cereza pasa a cereza acida y la base queda vainilla, almizcle y ambar. |
 | Dulzura | Ariana Grande Sweet Like Candy | Corregido | Se reemplazo bayas de azucar/flor de cerezo/lavanda/maderas por mora, pera, bergamota, crema batida, malvavisco, grosella negra, jazmin, frangipani, madreselva, vainilla y cachemira. |
 
+## Lote 16 - femeninas no revisadas, bloque 10
+
+Este lote corrige un bloque femenino de Carolina Herrera, Rabanne, DKNY, Gucci y Boss donde varias referencias venian con piramides genericas o mezcladas.
+
+| Producto | Inspiracion | Estado | Ajuste |
+|---|---|---|---|
+| Desborde | Carolina Herrera 212 VIP Wild Party for Women | Corregido | Se reemplazo pimienta/frutas tropicales/jazmin/gardenia/vainilla por pomelo, pina, flor de naranjo, rosa solar, orquidea, almizcle y maderas. |
+| Rubor | Carolina Herrera 212 VIP Rose Red | Corregido | Se reemplazo champan/pimienta/peonia/magnolia/ambar por licor, tomate, frambuesa, tiramisu, especias, rosa bulgara, pachuli, almizcle y maderas. |
+| Glamour | Carolina Herrera 212 VIP | Corregido | Se retiro pimienta rosa/rosa/ambar/maderas y queda ron, maracuya, gardenia, almizcle, vainilla y tonka. |
+| Opulencia | Rabanne Lady Million | Corregido menor | Naranja amarga pasa a neroli; se retiran maderas y se precisa miel blanca. |
+| Atrevida | Rabanne Black XS L'Exces for Her | Corregido | Se reemplazo arandano/cacao/praline/pachuli por pimienta negra, neroli, jazmin, rosa, reina de la noche, vainilla y cachemira. |
+| Indulgencia | Rabanne Pure XS for Her | Corregido | Se reemplazo lima/tuberosa/cachemira/pachuli por ylang ylang, palomitas de maiz, vainilla, coco, durazno, flor de naranjo, almizcle blanco, sandalo, amberwood y ambreta. |
+| Mordida | DKNY Be Delicious | Corregido | Se agrego pepino y se movio manzana verde al corazon; base queda maderas, sandalo y ambar. |
+| Raiz | Gucci Bamboo | Corregido | Se retiro grosella/jazmin/gardenia/pachuli/ambar gris y queda bergamota, ylang ylang, lirio Casablanca, flor de naranjo, sandalo, vainilla de Tahiti y ambar. |
+| Determinacion | Hugo Boss Woman | Corregido | Se reemplazo pomelo/manzana/rosa/jazmin/almizcle por mango, mandarina, fresia, raiz de iris, extracto de cedro blanco y sandalo. |
+| Seduccion | Hugo Boss The Scent for Her | Corregido | Se simplifico a durazno, fresia, osmanto y cacao, retirando tostado/vainilla/almizcle. |
+
 ## Fuentes usadas en el lote 1
 
 - Creed Aventus: https://www.creedfragrances.co.uk/products/aventus y https://www.fragrantica.com/perfume/Creed/Aventus-9828.html
@@ -479,7 +496,20 @@ Este lote trabaja femeninas comerciales de alta recordacion y corrige varias pir
 - Britney Spears Midnight Fantasy: https://www.fragrantica.com/perfume/Britney-Spears/Midnight-Fantasy-802.html
 - Ariana Grande Sweet Like Candy: https://www.fragrantica.com/perfume/Ariana-Grande/Sweet-Like-Candy-39970.html
 
+## Fuentes usadas en el lote 16
+
+- Carolina Herrera 212 VIP Wild Party for Women: https://www.fragrantica.com/perfume/Carolina-Herrera/212-VIP-Wild-Party-35780.html
+- Carolina Herrera 212 VIP Rose Red: https://www.fragrantica.com/perfume/Carolina-Herrera/212-VIP-Rose-Red-56694.html
+- Carolina Herrera 212 VIP: https://www.fragrantica.com/perfume/Carolina-Herrera/212-VIP-7790.html
+- Rabanne Lady Million: https://www.fragrantica.com/perfume/Rabanne/Lady-Million-9045.html
+- Rabanne Black XS L'Exces for Her: https://www.fragrantica.com/perfume/Rabanne/Black-XS-L-Exces-for-Her-13806.html
+- Rabanne Pure XS for Her: https://www.fragrantica.com/perfume/Rabanne/Pure-XS-For-Her-48902.html
+- DKNY Be Delicious: https://www.fragrantica.com/perfume/Donna-Karan/DKNY-Be-Delicious-497.html
+- Gucci Bamboo: https://www.fragrantica.com/perfume/Gucci/Gucci-Bamboo-30403.html
+- Hugo Boss Woman: https://www.fragrantica.com/perfume/Hugo-Boss/Hugo-Woman-1997-1110.html
+- Hugo Boss The Scent for Her: https://www.fragrantica.com/perfume/Hugo-Boss/Boss-The-Scent-for-Her-38763.html
+
 ## Siguientes lotes
 
-1. Femeninas no revisadas, bloque 10: 212 VIP Wild Party, 212 VIP Rose Red, 212 VIP, Lady Million, Black XS L'Exces for Her, Pure XS for Her, DKNY Be Delicious, Gucci Bamboo, Hugo Boss Woman y Boss The Scent for Her.
+1. Femeninas no revisadas, bloque 11: Lacoste Touch of Pink, Lacoste Sparkling, Lacoste Panache, Lacoste Natural, Lacoste Elegant, Britney Spears Fantasy, Issey Miyake L'Eau d'Issey, Paris Hilton Dazzle, Paris Hilton Sheer y Paris Hilton Heiress.
 2. Limpieza final de familias visibles: separar familia dominante de notas buscables para que el filtro sea preciso sin esconder opciones buenas.

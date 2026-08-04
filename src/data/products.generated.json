@@ -9352,46 +9352,45 @@
     "id": "p-desborde",
     "slug": "desborde",
     "publicName": "Desborde",
-    "inspirationReference": "Carolina Herrera 212 VIP Wild Party",
+    "inspirationReference": "Carolina Herrera 212 VIP Wild Party for Women",
     "category": "femenina",
     "collection": "firma",
-    "shortDescription": "floral, amaderada, con presencia fuerte.",
-    "longDescription": "Incontrolable y festivo como una noche de celebracion sin fin. Inspirado en Carolina Herrera 212 VIP Wild Party para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia femenina ideal para noche, citas, eventos.",
+    "shortDescription": "floral, frutal, almizclada y festiva.",
+    "longDescription": "Tropical y festiva con pomelo, pina, flor de naranjo, rosa solar, orquidea, almizcle y maderas. Inspirado en Carolina Herrera 212 VIP Wild Party for Women.",
+    "bestFor": "Clientes que buscan una fragancia femenina ideal para fiesta, salidas y clima calido.",
     "concentration": "60% esencia",
     "duration": "8 a 10 horas",
     "intensity": "alta",
     "sillage": "Marcada y memorable",
     "notes": {
       "top": [
-        "pimienta rosa",
-        "frutas tropicales"
+        "pomelo",
+        "pina"
       ],
       "heart": [
-        "jazmin",
-        "gardenia",
-        "rosa"
+        "flor de naranjo",
+        "rosa solar",
+        "orquidea"
       ],
       "base": [
         "almizcle",
-        "vainilla",
         "notas amaderadas"
       ]
     },
     "families": [
       "floral",
-      "amaderada",
-      "especiada"
+      "frutal",
+      "almizclada"
     ],
     "moods": [
-      "elegancia",
-      "encanto",
-      "femineidad"
+      "fiesta",
+      "alegria",
+      "energia"
     ],
     "occasions": [
-      "noche",
-      "citas",
-      "eventos"
+      "fiesta",
+      "salidas",
+      "clima calido"
     ],
     "variants": [
       {
@@ -9421,44 +9420,44 @@
     "inspirationReference": "Carolina Herrera 212 VIP Rose Red",
     "category": "femenina",
     "collection": "firma",
-    "shortDescription": "floral, oriental, con presencia fuerte.",
-    "longDescription": "Sonrojante y seductor con rosa intensa y champan efervescente. Inspirado en Carolina Herrera 212 VIP Rose Red para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia femenina ideal para noche, citas, eventos.",
+    "shortDescription": "frutal, gourmand, floral y atrevida.",
+    "longDescription": "Dulce y llamativa con licor, tomate, frambuesa, tiramisu, especias, rosa bulgara, pachuli, almizcle y maderas. Inspirado en Carolina Herrera 212 VIP Rose Red.",
+    "bestFor": "Clientes que buscan una fragancia femenina ideal para noche, fiesta y salidas.",
     "concentration": "60% esencia",
     "duration": "8 a 10 horas",
     "intensity": "alta",
     "sillage": "Profunda y envolvente",
     "notes": {
       "top": [
-        "champan rosado",
-        "pimienta rosa",
+        "licor",
+        "tomate",
         "frambuesa"
       ],
       "heart": [
-        "rosa roja",
-        "peonia",
-        "magnolia"
+        "tiramisu",
+        "especias",
+        "rosa bulgara"
       ],
       "base": [
+        "pachuli",
         "almizcle",
-        "ambar",
         "notas amaderadas"
       ]
     },
     "families": [
-      "floral",
-      "oriental",
-      "almizclada"
+      "frutal",
+      "gourmand",
+      "floral"
     ],
     "moods": [
-      "elegancia",
-      "encanto",
-      "femineidad"
+      "fiesta",
+      "coqueteo",
+      "presencia"
     ],
     "occasions": [
       "noche",
-      "citas",
-      "eventos"
+      "fiesta",
+      "salidas"
     ],
     "variants": [
       {
@@ -9488,44 +9487,41 @@
     "inspirationReference": "Carolina Herrera 212 VIP",
     "category": "femenina",
     "collection": "firma",
-    "shortDescription": "floral, oriental, con presencia fuerte.",
-    "longDescription": "Reluciente y sofisticado como la alfombra roja en noche de gala. Inspirado en Carolina Herrera 212 VIP para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia femenina ideal para noche, citas, eventos.",
+    "shortDescription": "oriental, dulce, floral y nocturna.",
+    "longDescription": "Festiva y cremosa con ron, maracuya, gardenia, almizcle, vainilla y tonka. Inspirado en Carolina Herrera 212 VIP para clientas que buscan una fragancia de salida con caracter.",
+    "bestFor": "Clientes que buscan una fragancia femenina ideal para noche, fiesta y salidas.",
     "concentration": "60% esencia",
     "duration": "8 a 10 horas",
     "intensity": "alta",
     "sillage": "Profunda y envolvente",
     "notes": {
       "top": [
-        "flor de la pasion",
-        "gardenia",
-        "pimienta rosa"
+        "ron",
+        "maracuya"
       ],
       "heart": [
-        "rosa",
         "gardenia",
-        "notas florales"
+        "almizcle"
       ],
       "base": [
-        "almizcle blanco",
-        "ambar",
-        "notas amaderadas"
+        "vainilla",
+        "haba tonka"
       ]
     },
     "families": [
-      "floral",
       "oriental",
-      "amaderada"
+      "dulce",
+      "floral"
     ],
     "moods": [
-      "elegancia",
-      "encanto",
-      "femineidad"
+      "fiesta",
+      "seduccion",
+      "glamour"
     ],
     "occasions": [
       "noche",
-      "citas",
-      "eventos"
+      "fiesta",
+      "salidas"
     ],
     "variants": [
       {
@@ -9750,48 +9746,47 @@
     "id": "p-opulencia",
     "slug": "opulencia",
     "publicName": "Opulencia",
-    "inspirationReference": "Paco Rabanne Lady Million",
+    "inspirationReference": "Rabanne Lady Million",
     "category": "femenina",
     "collection": "firma",
-    "shortDescription": "citric, floral, con presencia fuerte.",
-    "longDescription": "Lujosa y decadente como banarse en oro liquido y flores. Inspirado en Paco Rabanne Lady Million para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia femenina ideal para noche, citas, eventos.",
+    "shortDescription": "citrica, floral, dulce y luminosa.",
+    "longDescription": "Radiante y femenina con frambuesa, neroli, limon de Amalfi, jazmin, flor de naranjo africana, gardenia, miel blanca, pachuli y ambar. Inspirado en Rabanne Lady Million.",
+    "bestFor": "Clientes que buscan una fragancia femenina ideal para eventos, citas y regalo.",
     "concentration": "60% esencia",
     "duration": "8 a 10 horas",
     "intensity": "alta",
     "sillage": "Marcada y memorable",
     "notes": {
       "top": [
-        "limon de Amalfi",
         "frambuesa",
-        "naranja amarga"
+        "neroli",
+        "limon de Amalfi"
       ],
       "heart": [
-        "jazmin sambac",
-        "flor de naranjo",
+        "jazmin",
+        "flor de naranjo africana",
         "gardenia"
       ],
       "base": [
-        "miel",
-        "ambar",
+        "miel blanca",
         "pachuli",
-        "notas amaderadas"
+        "ambar"
       ]
     },
     "families": [
       "citric",
       "floral",
-      "amaderada"
+      "dulce"
     ],
     "moods": [
+      "brillo",
       "elegancia",
-      "encanto",
-      "femineidad"
+      "presencia"
     ],
     "occasions": [
-      "noche",
+      "eventos",
       "citas",
-      "eventos"
+      "regalo"
     ],
     "variants": [
       {
@@ -9884,46 +9879,45 @@
     "id": "p-atrevida",
     "slug": "atrevida",
     "publicName": "Atrevida",
-    "inspirationReference": "Paco Rabanne Black XS Excess",
+    "inspirationReference": "Rabanne Black XS L'Exces for Her",
     "category": "femenina",
     "collection": "firma",
-    "shortDescription": "dulce, floral, con presencia fuerte.",
-    "longDescription": "Provocativa y excesiva con cacao oscuro y rosa rebelde. Inspirado en Paco Rabanne Black XS Excess para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia femenina ideal para noche, citas, eventos.",
+    "shortDescription": "oriental, floral, dulce y nocturna.",
+    "longDescription": "Oscura y sensual con pimienta negra, neroli, jazmin, rosa, reina de la noche, vainilla y cachemira. Inspirado en Rabanne Black XS L'Exces for Her.",
+    "bestFor": "Clientes que buscan una fragancia femenina ideal para noche, salidas y citas.",
     "concentration": "60% esencia",
     "duration": "8 a 10 horas",
     "intensity": "alta",
     "sillage": "Marcada y memorable",
     "notes": {
       "top": [
-        "arandano rojo",
-        "pimienta rosa"
+        "pimienta negra",
+        "neroli"
       ],
       "heart": [
-        "rosa negra",
-        "violeta",
-        "cacao"
+        "jazmin",
+        "rosa",
+        "reina de la noche"
       ],
       "base": [
         "vainilla",
-        "praline",
-        "pachuli"
+        "cachemira"
       ]
     },
     "families": [
-      "dulce",
+      "oriental",
       "floral",
-      "gourmand"
+      "dulce"
     ],
     "moods": [
+      "misterio",
       "seduccion",
-      "impacto",
-      "noche"
+      "presencia"
     ],
     "occasions": [
       "noche",
-      "citas",
-      "eventos"
+      "salidas",
+      "citas"
     ],
     "variants": [
       {
@@ -9950,47 +9944,48 @@
     "id": "p-indulgencia",
     "slug": "indulgencia",
     "publicName": "Indulgencia",
-    "inspirationReference": "Paco Rabanne Pure XS",
+    "inspirationReference": "Rabanne Pure XS for Her",
     "category": "femenina",
     "collection": "firma",
-    "shortDescription": "oriental, amaderada, con presencia fuerte.",
-    "longDescription": "Pecaminosa e irresistible como una indulgencia dulce y prohibida. Inspirado en Paco Rabanne Pure XS para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia femenina ideal para noche, citas, eventos.",
+    "shortDescription": "gourmand, floral, oriental y cremosa.",
+    "longDescription": "Provocadora y cremosa con ylang ylang, palomitas de maiz, vainilla, coco, durazno, flor de naranjo, almizcle blanco, sandalo, amberwood y ambreta. Inspirado en Rabanne Pure XS for Her.",
+    "bestFor": "Clientes que buscan una fragancia femenina ideal para noche, citas y salidas.",
     "concentration": "60% esencia",
     "duration": "8 a 10 horas",
     "intensity": "alta",
     "sillage": "Profunda y envolvente",
     "notes": {
       "top": [
-        "flor de azahar",
-        "lima"
+        "ylang ylang",
+        "palomitas de maiz",
+        "vainilla"
       ],
       "heart": [
-        "tuberosa",
-        "ylang ylang",
-        "coco"
+        "coco",
+        "durazno",
+        "flor de naranjo"
       ],
       "base": [
-        "cachemira",
-        "vainilla",
-        "pachuli",
-        "ambar"
+        "almizcle blanco",
+        "sandalo",
+        "amberwood",
+        "ambreta"
       ]
     },
     "families": [
-      "oriental",
-      "amaderada",
-      "floral"
+      "gourmand",
+      "floral",
+      "oriental"
     ],
     "moods": [
-      "elegancia",
-      "encanto",
-      "femineidad"
+      "seduccion",
+      "dulzura",
+      "presencia"
     ],
     "occasions": [
       "noche",
       "citas",
-      "eventos"
+      "salidas"
     ],
     "variants": [
       {
@@ -10020,45 +10015,46 @@
     "inspirationReference": "DKNY Be Delicious",
     "category": "femenina",
     "collection": "firma",
-    "shortDescription": "floral, oriental, con presencia fuerte.",
-    "longDescription": "Tentadora como una manzana prohibida en la ciudad que nunca duerme. Inspirado en DKNY Be Delicious para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia femenina ideal para noche, citas, eventos.",
+    "shortDescription": "floral, frutal, citrica y jugosa.",
+    "longDescription": "Verde y jugosa con pepino, pomelo, magnolia, manzana verde, lirio de los valles, tuberosa, violeta, rosa, maderas, sandalo y ambar. Inspirado en DKNY Be Delicious.",
+    "bestFor": "Clientes que buscan una fragancia femenina ideal para diario, oficina y clima calido.",
     "concentration": "60% esencia",
     "duration": "8 a 10 horas",
     "intensity": "alta",
     "sillage": "Profunda y envolvente",
     "notes": {
       "top": [
-        "manzana verde neoyorquina",
+        "pepino",
         "pomelo",
         "magnolia"
       ],
       "heart": [
-        "tuberosa",
-        "rosa",
+        "manzana verde",
         "lirio de los valles",
-        "violeta"
+        "tuberosa",
+        "violeta",
+        "rosa"
       ],
       "base": [
+        "notas amaderadas",
         "sandalo",
-        "almizcle blanco",
         "ambar"
       ]
     },
     "families": [
       "floral",
-      "oriental",
+      "frutal",
       "citric"
     ],
     "moods": [
-      "elegancia",
-      "encanto",
-      "femineidad"
+      "frescura",
+      "alegria",
+      "limpieza"
     ],
     "occasions": [
-      "noche",
-      "citas",
-      "eventos"
+      "diario",
+      "oficina",
+      "clima calido"
     ],
     "variants": [
       {
@@ -10088,29 +10084,26 @@
     "inspirationReference": "Gucci Bamboo",
     "category": "femenina",
     "collection": "firma",
-    "shortDescription": "floral, amaderada, con presencia fuerte.",
-    "longDescription": "Firme y femenina con bambu y sandalo que conectan con la tierra. Inspirado en Gucci Bamboo para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia femenina ideal para noche, citas, eventos.",
+    "shortDescription": "floral, amaderada, citrica y elegante.",
+    "longDescription": "Pulida y femenina con bergamota, ylang ylang, lirio Casablanca, flor de naranjo, sandalo, vainilla de Tahiti y ambar. Inspirado en Gucci Bamboo.",
+    "bestFor": "Clientes que buscan una fragancia femenina ideal para oficina, eventos y regalo.",
     "concentration": "60% esencia",
     "duration": "8 a 10 horas",
     "intensity": "alta",
     "sillage": "Marcada y memorable",
     "notes": {
       "top": [
-        "bergamota",
-        "ylang ylang",
-        "grosella"
+        "bergamota"
       ],
       "heart": [
-        "jazmin sambac",
-        "flor de naranjo",
-        "gardenia"
+        "ylang ylang",
+        "lirio Casablanca",
+        "flor de naranjo"
       ],
       "base": [
         "sandalo",
         "vainilla de Tahiti",
-        "pachuli",
-        "ambar gris"
+        "ambar"
       ]
     },
     "families": [
@@ -10120,13 +10113,13 @@
     ],
     "moods": [
       "elegancia",
-      "encanto",
-      "femineidad"
+      "seguridad",
+      "calma"
     ],
     "occasions": [
-      "noche",
-      "citas",
-      "eventos"
+      "oficina",
+      "eventos",
+      "regalo"
     ],
     "variants": [
       {
@@ -10156,44 +10149,41 @@
     "inspirationReference": "Hugo Boss Woman",
     "category": "femenina",
     "collection": "diario",
-    "shortDescription": "amaderada, floral, equilibrada y facil de llevar.",
-    "longDescription": "Decidida y moderna con citricos vivos y rosa determinada. Inspirado en Hugo Boss Woman para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia femenina ideal para diario, salidas, citas.",
+    "shortDescription": "floral, frutal, amaderada y moderna.",
+    "longDescription": "Limpia y femenina con mango, mandarina, fresia, raiz de iris, extracto de cedro blanco y sandalo. Inspirado en Hugo Boss Woman para clientas que buscan frescura pulida de diario.",
+    "bestFor": "Clientes que buscan una fragancia femenina ideal para diario, oficina y reuniones.",
     "concentration": "60% esencia",
     "duration": "6 a 8 horas",
     "intensity": "media",
     "sillage": "Equilibrada y agradable",
     "notes": {
       "top": [
-        "mandarina verde",
-        "pomelo",
-        "manzana verde"
+        "mango",
+        "mandarina"
       ],
       "heart": [
-        "rosa damascena",
-        "jazmin",
-        "fresia"
+        "fresia",
+        "raiz de iris"
       ],
       "base": [
-        "almizcle blanco",
-        "sandalo",
-        "cedro"
+        "extracto de cedro blanco",
+        "sandalo"
       ]
     },
     "families": [
-      "amaderada",
       "floral",
-      "citric"
+      "frutal",
+      "amaderada"
     ],
     "moods": [
-      "elegancia",
-      "encanto",
-      "femineidad"
+      "determinacion",
+      "limpieza",
+      "confianza"
     ],
     "occasions": [
       "diario",
-      "salidas",
-      "citas"
+      "oficina",
+      "reuniones"
     ],
     "variants": [
       {
@@ -10223,9 +10213,9 @@
     "inspirationReference": "Hugo Boss The Scent for Her",
     "category": "femenina",
     "collection": "firma",
-    "shortDescription": "dulce, almizclada, con presencia fuerte.",
-    "longDescription": "Magnetica y envolvente con durazno aterciopelado y cacao seductor. Inspirado en Hugo Boss The Scent for Her para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia femenina ideal para noche, citas, eventos.",
+    "shortDescription": "frutal, floral, gourmand y seductora.",
+    "longDescription": "Suave y envolvente con durazno, fresia, osmanto y cacao. Inspirado en Hugo Boss The Scent for Her para clientas que buscan una fragancia femenina sensual y limpia.",
+    "bestFor": "Clientes que buscan una fragancia femenina ideal para citas, salidas y noche.",
     "concentration": "60% esencia",
     "duration": "8 a 10 horas",
     "intensity": "alta",
@@ -10236,29 +10226,26 @@
         "fresia"
       ],
       "heart": [
-        "osmanto",
-        "tostado"
+        "osmanto"
       ],
       "base": [
-        "cacao",
-        "vainilla",
-        "almizcle"
+        "cacao"
       ]
     },
     "families": [
-      "dulce",
-      "almizclada",
-      "floral"
+      "frutal",
+      "floral",
+      "gourmand"
     ],
     "moods": [
       "seduccion",
-      "impacto",
-      "noche"
+      "calidez",
+      "elegancia"
     ],
     "occasions": [
-      "noche",
       "citas",
-      "eventos"
+      "salidas",
+      "noche"
     ],
     "variants": [
       {

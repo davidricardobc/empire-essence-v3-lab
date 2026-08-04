@@ -259,6 +259,16 @@ const productSpecificAliases: Record<string, string[]> = {
   "p-floracion": ["dkny fresh blossom", "be delicious fresh blossom", "dkny be delicious fresh blossom"],
   "p-hechizo": ["britney midnight fantasy", "britney spears midnight fantasy", "midnight fantasy"],
   "p-dulzura": ["ariana sweet like candy", "ariana grande sweet like candy", "sweet like candy"],
+  "p-desborde": ["212 vip wild party mujer", "carolina herrera 212 vip wild party woman", "212 wild party mujer"],
+  "p-rubor": ["212 vip rose red", "carolina herrera 212 vip rose red", "vip rose red"],
+  "p-glamour": ["212 vip mujer", "carolina herrera 212 vip mujer", "212 vip women"],
+  "p-opulencia": ["lady million", "paco rabanne lady million", "rabanne lady million"],
+  "p-atrevida": ["black xs exces mujer", "black xs l'exces for her", "black xs excess mujer"],
+  "p-indulgencia": ["pure xs mujer", "paco rabanne pure xs for her", "rabanne pure xs mujer"],
+  "p-mordida": ["dkny be delicious", "be delicious dkny", "dkny manzana"],
+  "p-raiz": ["gucci bamboo", "bamboo gucci"],
+  "p-determinacion": ["hugo boss woman", "boss woman", "boss mujer"],
+  "p-seduccion": ["hugo boss the scent her", "boss the scent mujer", "the scent for her"],
 };
 
 export function normalizeSearchText(value: string) {
