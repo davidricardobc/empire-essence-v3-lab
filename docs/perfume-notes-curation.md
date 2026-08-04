@@ -2,7 +2,7 @@
 
 Objetivo: mejorar busqueda, filtros y autoridad comercial del catalogo sin inventar notas.
 
-Cobertura actual: 163 referencias revisadas/verificadas de 196 productos del catalogo.
+Cobertura actual: 173 referencias revisadas/verificadas de 196 productos del catalogo.
 
 ## Metodo
 
@@ -298,6 +298,23 @@ Este lote corrige un bloque femenino de Carolina Herrera, Rabanne, DKNY, Gucci y
 | Determinacion | Hugo Boss Woman | Corregido | Se reemplazo pomelo/manzana/rosa/jazmin/almizcle por mango, mandarina, fresia, raiz de iris, extracto de cedro blanco y sandalo. |
 | Seduccion | Hugo Boss The Scent for Her | Corregido | Se simplifico a durazno, fresia, osmanto y cacao, retirando tostado/vainilla/almizcle. |
 
+## Lote 17 - femeninas no revisadas, bloque 11
+
+Este lote trabaja Lacoste, Britney, Issey Miyake y Paris Hilton, aclarando varios flankers y retirando notas de piramides cercanas.
+
+| Producto | Inspiracion | Estado | Ajuste |
+|---|---|---|---|
+| Sonrojo | Lacoste Touch of Pink | Corregido | Se agregaron naranja, durazno, cilantro, hoja de violeta y semillas de zanahoria; manzana se retira. |
+| Centelleo | Lacoste L.12.12 Pour Elle Sparkling | Corregido | Se reemplazo pina/pomelo/pimienta/jazmin/magnolia/sandalo/vainilla por manzana roja, especias, mora, mandarina, algodon de azucar, macaron, lirio de los valles, pachuli, vetiver, cachemira y almizcle. |
+| Garbo | Lacoste L.12.12 Pour Elle French Panache | Corregido | Se aclaro el flanker French Panache y queda grosella negra, bergamota, pimienta rosa, champan, rosa, jazmin sambac, pachuli, almizcle y madera blanca. |
+| Tropico | Lacoste L.12.12 Pour Elle Natural | Corregido | Se reemplazo cassis/notas acuaticas/cedro/almizcle por pina, hoja de frambuesa, mandarina, jazmin, iris, rosa, coco, sandalo y ambar. |
+| Delicadeza | Lacoste L.12.12 Pour Elle Elegant | Corregido | Se reemplazo bambu/jazmin/magnolia/rosa/sandalo/ambar por citricos, casia, pimienta rosa, lirio de los valles, mimosa, violeta, heliotropo, vetiver y vainilla. |
+| Ensueno | Britney Spears Fantasy | Corregido | Se agregaron chocolate blanco, cupcake, raiz de iris y se retiro violeta. |
+| Cascada | Issey Miyake L'Eau d'Issey | Corregido menor | Se completo con fresia, agua de rosas, calone, ciclamen, lirio de los valles, clavel, tuberosa, maderas, cedro, sandalo y ambar. |
+| Resplandor | Paris Hilton Dazzle | Corregido | Se reemplazo pera/frambuesa/gardenia/jazmin/iris/sandalo por manzana Pink Lady, cereza maraschino, nectar de durazno, violeta, orquidea calypso rosa, flor de naranjo, vainilla, champan rosa, pachuli blanco y almizcle. |
+| Transparencia | Paris Hilton Sheer | Corregido | Se reemplazo mandarina/pera/rosa/cedro por manzana roja, notas acuaticas, fresia, jazmin, lirio de los valles, mimosa, almizcle, ylang ylang y sandalo. |
+| Herencia Dorada | Paris Hilton Heiress | Corregido | Se reemplazo mandarina/champan/gardenia/rubia blanca por maracuya, naranja, granizado de durazno, mimosa champan, jazmin estrella, tiare, ylang ylang, madreselva, flor de mora, granadina, hoja de violeta, vetiver, tonka y maderas rubias. |
+
 ## Fuentes usadas en el lote 1
 
 - Creed Aventus: https://www.creedfragrances.co.uk/products/aventus y https://www.fragrantica.com/perfume/Creed/Aventus-9828.html
@@ -509,7 +526,20 @@ Este lote corrige un bloque femenino de Carolina Herrera, Rabanne, DKNY, Gucci y
 - Hugo Boss Woman: https://www.fragrantica.com/perfume/Hugo-Boss/Hugo-Woman-1997-1110.html
 - Hugo Boss The Scent for Her: https://www.fragrantica.com/perfume/Hugo-Boss/Boss-The-Scent-for-Her-38763.html
 
+## Fuentes usadas en el lote 17
+
+- Lacoste Touch of Pink: https://www.fragrantica.com/perfume/Lacoste-Fragrances/Touch-of-Pink-673.html
+- Lacoste L.12.12 Pour Elle Sparkling: https://www.fragrantica.com/perfume/Lacoste-Fragrances/Eau-de-Lacoste-L-12-12-Pour-Elle-Sparkling-32686.html
+- Lacoste L.12.12 Pour Elle French Panache: https://www.fragrancex.com/products/lacoste/eau-de-lacoste-l-12-12-pour-elle-french-panache-perfume
+- Lacoste L.12.12 Pour Elle Natural: https://www.fragrantica.com/perfume/Lacoste-Fragrances/Eau-de-Lacoste-L-12-12-Pour-Elle-Natural-32687.html
+- Lacoste L.12.12 Pour Elle Elegant: https://www.fragrantica.com/perfume/Lacoste-Fragrances/Eau-de-Lacoste-L-12-12-Pour-Elle-Elegant-32685.html
+- Britney Spears Fantasy: https://www.fragrantica.com/perfume/Britney-Spears/Fantasy-600.html
+- Issey Miyake L'Eau d'Issey: https://www.fragrantica.com/perfume/Issey-Miyake/L-eau-d-Issey-720.html
+- Paris Hilton Dazzle: https://www.fragrantica.com/news/Paris-Hilton-Dazzle-3209.html
+- Paris Hilton Sheer: https://www.fragrantica.com/perfume/Paris-Hilton/Paris-Hilton-Sheer-14562.html
+- Paris Hilton Heiress: https://nstperfume.com/2006/12/11/paris-hilton-heiress-perfume-review/
+
 ## Siguientes lotes
 
-1. Femeninas no revisadas, bloque 11: Lacoste Touch of Pink, Lacoste Sparkling, Lacoste Panache, Lacoste Natural, Lacoste Elegant, Britney Spears Fantasy, Issey Miyake L'Eau d'Issey, Paris Hilton Dazzle, Paris Hilton Sheer y Paris Hilton Heiress.
+1. Femeninas no revisadas, bloque 12: Creed Love in Black, Dior Hypnotic Poison, Dior Joy, Calvin Klein Eternity Women, Calvin Klein Euphoria, CK IN2U Her, Versace Dylan Blue Pour Femme, Creed Love in White, Creed Aventus for Her y Giorgio Armani Si Fiori.
 2. Limpieza final de familias visibles: separar familia dominante de notas buscables para que el filtro sea preciso sin esconder opciones buenas.

@@ -10275,43 +10275,48 @@
     "inspirationReference": "Lacoste Touch of Pink",
     "category": "femenina",
     "collection": "diario",
-    "shortDescription": "floral, almizclada, equilibrada y facil de llevar.",
-    "longDescription": "Rosado y fresco como el rubor natural de una sonrisa genuina. Inspirado en Lacoste Touch of Pink para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia femenina ideal para diario, salidas, citas.",
+    "shortDescription": "floral, frutal, citrica y juvenil.",
+    "longDescription": "Brillante y alegre con naranja, durazno, naranja sanguina, cilantro, cardamomo, jazmin, hoja de violeta, semillas de zanahoria, vainilla, almizcle y sandalo. Inspirado en Lacoste Touch of Pink.",
+    "bestFor": "Clientes que buscan una fragancia femenina ideal para diario, salidas y clima calido.",
     "concentration": "60% esencia",
     "duration": "6 a 8 horas",
     "intensity": "media",
     "sillage": "Equilibrada y agradable",
     "notes": {
       "top": [
+        "naranja",
+        "durazno",
         "naranja sanguina",
-        "cardamomo",
-        "manzana"
+        "cilantro",
+        "cardamomo"
       ],
       "heart": [
-        "violeta",
-        "jazmin"
+        "jazmin",
+        "cilantro",
+        "cardamomo",
+        "hoja de violeta",
+        "semillas de zanahoria"
       ],
       "base": [
-        "sandalo",
         "vainilla",
-        "almizcle"
+        "almizcle",
+        "sandalo"
       ]
     },
     "families": [
       "floral",
-      "almizclada",
+      "frutal",
       "citric"
     ],
     "moods": [
-      "elegancia",
-      "encanto",
-      "femineidad"
+      "alegria",
+      "juventud",
+      "frescura"
     ],
     "occasions": [
       "diario",
       "salidas",
-      "citas"
+      "clima calido"
     ],
     "variants": [
       {
@@ -10338,47 +10343,49 @@
     "id": "p-centelleo",
     "slug": "centelleo",
     "publicName": "Centelleo",
-    "inspirationReference": "Lacoste Sparkling",
+    "inspirationReference": "Lacoste L.12.12 Pour Elle Sparkling",
     "category": "femenina",
     "collection": "diario",
-    "shortDescription": "floral, almizclada, equilibrada y facil de llevar.",
-    "longDescription": "Chispeante y luminoso como burbujas de champan al sol. Inspirado en Lacoste Sparkling para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia femenina ideal para diario, salidas, citas.",
+    "shortDescription": "gourmand, frutal, floral y divertida.",
+    "longDescription": "Dulce y chispeante con manzana roja, especias, mora, mandarina, algodon de azucar, macaron, lirio de los valles, pachuli, vetiver, cachemira y almizcle. Inspirado en Lacoste L.12.12 Pour Elle Sparkling.",
+    "bestFor": "Clientes que buscan una fragancia femenina ideal para diario, salidas y regalo.",
     "concentration": "60% esencia",
     "duration": "6 a 8 horas",
     "intensity": "media",
     "sillage": "Equilibrada y agradable",
     "notes": {
       "top": [
-        "pina",
-        "pomelo",
-        "pimienta rosa"
+        "manzana roja",
+        "especias",
+        "mora",
+        "mandarina"
       ],
       "heart": [
-        "jazmin",
-        "magnolia",
-        "lirio"
+        "algodon de azucar",
+        "macaron",
+        "lirio de los valles"
       ],
       "base": [
-        "sandalo",
-        "almizcle",
-        "vainilla"
+        "pachuli",
+        "vetiver",
+        "cachemira",
+        "almizcle"
       ]
     },
     "families": [
-      "floral",
-      "almizclada",
-      "citric"
+      "gourmand",
+      "frutal",
+      "floral"
     ],
     "moods": [
-      "elegancia",
-      "encanto",
-      "femineidad"
+      "alegria",
+      "coqueteo",
+      "dulzura"
     ],
     "occasions": [
       "diario",
       "salidas",
-      "citas"
+      "regalo"
     ],
     "variants": [
       {
@@ -10405,47 +10412,47 @@
     "id": "p-garbo",
     "slug": "garbo",
     "publicName": "Garbo",
-    "inspirationReference": "Lacoste Panache",
+    "inspirationReference": "Lacoste L.12.12 Pour Elle French Panache",
     "category": "femenina",
     "collection": "diario",
-    "shortDescription": "amaderada, floral, equilibrada y facil de llevar.",
-    "longDescription": "Elegante y distinguido con porte natural y flores refinadas. Inspirado en Lacoste Panache para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia femenina ideal para diario, salidas, citas.",
+    "shortDescription": "floral, frutal, amaderada y chispeante.",
+    "longDescription": "Elegante y festiva con grosella negra, bergamota, pimienta rosa, champan, rosa, jazmin sambac, pachuli, almizcle y madera blanca. Inspirado en Lacoste L.12.12 Pour Elle French Panache.",
+    "bestFor": "Clientes que buscan una fragancia femenina ideal para eventos, salidas y regalo.",
     "concentration": "60% esencia",
     "duration": "6 a 8 horas",
     "intensity": "media",
     "sillage": "Equilibrada y agradable",
     "notes": {
       "top": [
+        "grosella negra",
         "bergamota",
-        "mandarina",
         "pimienta rosa"
       ],
       "heart": [
-        "rosa turca",
-        "iris",
-        "jazmin"
+        "champan",
+        "rosa",
+        "jazmin sambac"
       ],
       "base": [
-        "sandalo",
+        "pachuli",
         "almizcle",
-        "cedro"
+        "madera blanca"
       ]
     },
     "families": [
-      "amaderada",
       "floral",
-      "citric"
+      "frutal",
+      "amaderada"
     ],
     "moods": [
       "elegancia",
-      "encanto",
-      "femineidad"
+      "alegria",
+      "presencia"
     ],
     "occasions": [
-      "diario",
+      "eventos",
       "salidas",
-      "citas"
+      "regalo"
     ],
     "variants": [
       {
@@ -10472,46 +10479,47 @@
     "id": "p-tropico",
     "slug": "tropico",
     "publicName": "Tropico",
-    "inspirationReference": "Lacoste Natural",
+    "inspirationReference": "Lacoste L.12.12 Pour Elle Natural",
     "category": "femenina",
     "collection": "diario",
-    "shortDescription": "floral, amaderada, equilibrada y facil de llevar.",
-    "longDescription": "Tropical y natural como una brisa entre palmeras al amanecer. Inspirado en Lacoste Natural para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia femenina ideal para diario, salidas, citas.",
+    "shortDescription": "floral, frutal, amaderada y tropical.",
+    "longDescription": "Natural y soleada con pina, hoja de frambuesa, mandarina, jazmin, iris, rosa, coco, sandalo y ambar. Inspirado en Lacoste L.12.12 Pour Elle Natural.",
+    "bestFor": "Clientes que buscan una fragancia femenina ideal para diario, vacaciones y clima calido.",
     "concentration": "60% esencia",
     "duration": "6 a 8 horas",
     "intensity": "media",
     "sillage": "Equilibrada y agradable",
     "notes": {
       "top": [
-        "mandarina verde",
-        "hojas de cassis"
+        "pina",
+        "hoja de frambuesa",
+        "mandarina"
       ],
       "heart": [
         "jazmin",
-        "rosa",
-        "notas acuaticas"
+        "iris",
+        "rosa"
       ],
       "base": [
+        "coco",
         "sandalo",
-        "cedro",
-        "almizcle blanco"
+        "ambar"
       ]
     },
     "families": [
       "floral",
-      "amaderada",
-      "citric"
+      "frutal",
+      "amaderada"
     ],
     "moods": [
-      "elegancia",
-      "encanto",
-      "femineidad"
+      "frescura",
+      "alegria",
+      "ligereza"
     ],
     "occasions": [
       "diario",
-      "salidas",
-      "citas"
+      "vacaciones",
+      "clima calido"
     ],
     "variants": [
       {
@@ -10538,47 +10546,47 @@
     "id": "p-delicadeza",
     "slug": "delicadeza",
     "publicName": "Delicadeza",
-    "inspirationReference": "Lacoste Elegant",
+    "inspirationReference": "Lacoste L.12.12 Pour Elle Elegant",
     "category": "femenina",
     "collection": "firma",
-    "shortDescription": "floral, citric, con presencia fuerte.",
-    "longDescription": "Sutil y refinada como un gesto de delicadeza inesperado. Inspirado en Lacoste Elegant para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia femenina ideal para noche, citas, eventos.",
+    "shortDescription": "floral, citrica, amaderada y limpia.",
+    "longDescription": "Pulida y delicada con citricos, casia, pimienta rosa, lirio de los valles, mimosa, violeta, heliotropo, vetiver y vainilla. Inspirado en Lacoste L.12.12 Pour Elle Elegant.",
+    "bestFor": "Clientes que buscan una fragancia femenina ideal para oficina, diario y regalo.",
     "concentration": "60% esencia",
     "duration": "8 a 10 horas",
     "intensity": "alta",
     "sillage": "Profunda y envolvente",
     "notes": {
       "top": [
-        "bergamota",
-        "pomelo",
-        "bambu"
+        "citricos",
+        "casia",
+        "pimienta rosa"
       ],
       "heart": [
-        "jazmin",
-        "magnolia",
-        "rosa"
+        "lirio de los valles",
+        "mimosa",
+        "violeta"
       ],
       "base": [
-        "sandalo",
-        "almizcle blanco",
-        "ambar"
+        "heliotropo",
+        "vetiver",
+        "vainilla"
       ]
     },
     "families": [
       "floral",
       "citric",
-      "oriental"
+      "amaderada"
     ],
     "moods": [
-      "elegancia",
-      "encanto",
-      "femineidad"
+      "delicadeza",
+      "limpieza",
+      "elegancia"
     ],
     "occasions": [
-      "noche",
-      "citas",
-      "eventos"
+      "oficina",
+      "diario",
+      "regalo"
     ],
     "variants": [
       {
@@ -10608,44 +10616,45 @@
     "inspirationReference": "Britney Spears Fantasy",
     "category": "femenina",
     "collection": "diario",
-    "shortDescription": "floral, almizclada, equilibrada y facil de llevar.",
-    "longDescription": "Onirico y fantastico con frutas encantadas y chocolate blanco. Inspirado en Britney Spears Fantasy para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia femenina ideal para diario, salidas, citas.",
+    "shortDescription": "gourmand, frutal, floral y dulce.",
+    "longDescription": "Iconica y dulce con kiwi, lichi rojo, membrillo, chocolate blanco, cupcake, orquidea, jazmin, almizcle, raiz de iris y maderas. Inspirado en Britney Spears Fantasy.",
+    "bestFor": "Clientes que buscan una fragancia femenina ideal para diario, salidas y regalo.",
     "concentration": "60% esencia",
     "duration": "6 a 8 horas",
     "intensity": "media",
     "sillage": "Equilibrada y agradable",
     "notes": {
       "top": [
-        "lichi",
         "kiwi",
+        "lichi rojo",
         "membrillo"
       ],
       "heart": [
-        "jazmin",
+        "chocolate blanco",
+        "cupcake",
         "orquidea",
-        "violeta"
+        "jazmin"
       ],
       "base": [
-        "chocolate blanco",
         "almizcle",
+        "raiz de iris",
         "notas amaderadas"
       ]
     },
     "families": [
-      "floral",
-      "almizclada",
-      "amaderada"
+      "gourmand",
+      "frutal",
+      "floral"
     ],
     "moods": [
-      "elegancia",
-      "encanto",
-      "femineidad"
+      "dulzura",
+      "fantasia",
+      "alegria"
     ],
     "occasions": [
       "diario",
       "salidas",
-      "citas"
+      "regalo"
     ],
     "variants": [
       {
@@ -10675,45 +10684,52 @@
     "inspirationReference": "Issey Miyake L'Eau d'Issey",
     "category": "femenina",
     "collection": "diario",
-    "shortDescription": "amaderada, floral, equilibrada y facil de llevar.",
-    "longDescription": "Cristalina y serena como una cascada en un jardin japones. Inspirado en Issey Miyake L'Eau d'Issey para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia femenina ideal para diario, salidas, citas.",
+    "shortDescription": "acuatica, floral, almizclada y transparente.",
+    "longDescription": "Cristalina y floral con loto, melon, fresia, agua de rosas, rosa, calone, ciclamen, lirio de los valles, peonia, clavel, almizcle, tuberosa, maderas, osmanto, cedro, sandalo y ambar. Inspirado en Issey Miyake L'Eau d'Issey para mujer.",
+    "bestFor": "Clientes que buscan una fragancia femenina ideal para diario, oficina y clima calido.",
     "concentration": "60% esencia",
     "duration": "6 a 8 horas",
     "intensity": "media",
     "sillage": "Equilibrada y agradable",
     "notes": {
       "top": [
-        "rosa de agua",
+        "loto",
         "melon",
-        "loto"
+        "fresia",
+        "agua de rosas",
+        "rosa",
+        "calone",
+        "ciclamen"
       ],
       "heart": [
-        "lirio",
+        "lirio de los valles",
         "peonia",
-        "notas acuaticas"
+        "clavel"
       ],
       "base": [
-        "cedro",
         "almizcle",
+        "tuberosa",
+        "notas amaderadas",
+        "osmanto",
+        "cedro",
         "sandalo",
-        "osmanto"
+        "ambar"
       ]
     },
     "families": [
-      "amaderada",
+      "acuatica",
       "floral",
       "almizclada"
     ],
     "moods": [
-      "elegancia",
-      "encanto",
-      "femineidad"
+      "limpieza",
+      "calma",
+      "elegancia"
     ],
     "occasions": [
       "diario",
-      "salidas",
-      "citas"
+      "oficina",
+      "clima calido"
     ],
     "variants": [
       {
@@ -10743,44 +10759,45 @@
     "inspirationReference": "Paris Hilton Dazzle",
     "category": "femenina",
     "collection": "diario",
-    "shortDescription": "floral, dulce, equilibrada y facil de llevar.",
-    "longDescription": "Deslumbrante y radiante como mil destellos de luz dorada. Inspirado en Paris Hilton Dazzle para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia femenina ideal para diario, salidas, citas.",
+    "shortDescription": "frutal, floral, dulce y brillante.",
+    "longDescription": "Dulce y luminosa con manzana Pink Lady, cereza maraschino, nectar de durazno, violeta, orquidea calypso rosa, flor de naranjo, vainilla, champan rosa, pachuli blanco y almizcle. Inspirado en Paris Hilton Dazzle.",
+    "bestFor": "Clientes que buscan una fragancia femenina ideal para salidas, regalo y fiesta.",
     "concentration": "60% esencia",
     "duration": "6 a 8 horas",
     "intensity": "media",
     "sillage": "Equilibrada y agradable",
     "notes": {
       "top": [
-        "naranja mandarina",
-        "pera",
-        "frambuesa"
+        "manzana Pink Lady",
+        "cereza maraschino",
+        "nectar de durazno"
       ],
       "heart": [
-        "gardenia",
-        "jazmin",
-        "iris"
+        "violeta",
+        "orquidea calypso rosa",
+        "flor de naranjo"
       ],
       "base": [
-        "sandalo",
         "vainilla",
+        "champan rosa",
+        "pachuli blanco",
         "almizcle"
       ]
     },
     "families": [
+      "frutal",
       "floral",
-      "dulce",
-      "almizclada"
+      "dulce"
     ],
     "moods": [
-      "elegancia",
-      "encanto",
-      "femineidad"
+      "brillo",
+      "alegria",
+      "coqueteo"
     ],
     "occasions": [
-      "diario",
       "salidas",
-      "citas"
+      "regalo",
+      "fiesta"
     ],
     "variants": [
       {
@@ -10876,44 +10893,44 @@
     "inspirationReference": "Paris Hilton Sheer",
     "category": "femenina",
     "collection": "diario",
-    "shortDescription": "amaderada, floral, equilibrada y facil de llevar.",
-    "longDescription": "Diafana y pura como una gota de rocio en un petalo de rosa. Inspirado en Paris Hilton Sheer para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia femenina ideal para diario, salidas, citas.",
+    "shortDescription": "floral, acuatica, frutal y transparente.",
+    "longDescription": "Ligera y limpia con manzana roja, notas acuaticas, fresia, jazmin, lirio de los valles, mimosa, almizcle, ylang ylang y sandalo. Inspirado en Paris Hilton Sheer.",
+    "bestFor": "Clientes que buscan una fragancia femenina ideal para diario, oficina y clima calido.",
     "concentration": "60% esencia",
     "duration": "6 a 8 horas",
     "intensity": "media",
     "sillage": "Equilibrada y agradable",
     "notes": {
       "top": [
-        "mandarina",
-        "pera",
+        "manzana roja",
         "notas acuaticas"
       ],
       "heart": [
-        "jazmin",
         "fresia",
-        "rosa de mayo"
+        "jazmin",
+        "lirio de los valles",
+        "mimosa"
       ],
       "base": [
-        "almizcle blanco",
-        "sandalo",
-        "cedro"
+        "almizcle",
+        "ylang ylang",
+        "sandalo"
       ]
     },
     "families": [
-      "amaderada",
       "floral",
+      "acuatica",
       "frutal"
     ],
     "moods": [
-      "elegancia",
-      "encanto",
-      "femineidad"
+      "limpieza",
+      "ligereza",
+      "calma"
     ],
     "occasions": [
       "diario",
-      "salidas",
-      "citas"
+      "oficina",
+      "clima calido"
     ],
     "variants": [
       {
@@ -10943,44 +10960,49 @@
     "inspirationReference": "Paris Hilton Heiress",
     "category": "femenina",
     "collection": "diario",
-    "shortDescription": "floral, almizclada, equilibrada y facil de llevar.",
-    "longDescription": "Heredada y glamurosa con champan dorado y flores blancas. Inspirado en Paris Hilton Heiress para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia femenina ideal para diario, salidas, citas.",
+    "shortDescription": "frutal, floral, dulce y luminosa.",
+    "longDescription": "Fruity floral brillante con maracuya, naranja, granizado de durazno, mimosa champan, jazmin estrella, flor de tiare, ylang ylang, madreselva, flor de mora, granadina, hoja de violeta, vetiver, tonka y maderas rubias. Inspirado en Paris Hilton Heiress.",
+    "bestFor": "Clientes que buscan una fragancia femenina ideal para diario, salidas y regalo.",
     "concentration": "60% esencia",
     "duration": "6 a 8 horas",
     "intensity": "media",
     "sillage": "Equilibrada y agradable",
     "notes": {
       "top": [
-        "mandarina",
-        "champan",
-        "durazno"
+        "maracuya",
+        "naranja",
+        "granizado de durazno",
+        "mimosa champan"
       ],
       "heart": [
-        "jazmin sambac",
-        "gardenia",
-        "madreselva"
+        "jazmin estrella",
+        "flor de tiare",
+        "ylang ylang",
+        "madreselva",
+        "flor de mora",
+        "granadina"
       ],
       "base": [
+        "hoja de violeta",
         "vetiver",
-        "rubia blanca",
-        "almizcle"
+        "haba tonka",
+        "maderas rubias"
       ]
     },
     "families": [
+      "frutal",
       "floral",
-      "almizclada",
-      "frutal"
+      "dulce"
     ],
     "moods": [
-      "elegancia",
-      "encanto",
-      "femineidad"
+      "alegria",
+      "brillo",
+      "coqueteo"
     ],
     "occasions": [
       "diario",
       "salidas",
-      "citas"
+      "regalo"
     ],
     "variants": [
       {

@@ -269,6 +269,16 @@ const productSpecificAliases: Record<string, string[]> = {
   "p-raiz": ["gucci bamboo", "bamboo gucci"],
   "p-determinacion": ["hugo boss woman", "boss woman", "boss mujer"],
   "p-seduccion": ["hugo boss the scent her", "boss the scent mujer", "the scent for her"],
+  "p-sonrojo": ["lacoste touch of pink", "touch of pink", "lacoste pink"],
+  "p-centelleo": ["lacoste sparkling", "lacoste pour elle sparkling", "l1212 sparkling"],
+  "p-garbo": ["lacoste panache", "lacoste french panache", "l1212 french panache"],
+  "p-tropico": ["lacoste natural", "lacoste pour elle natural", "l1212 natural"],
+  "p-delicadeza": ["lacoste elegant", "lacoste pour elle elegant", "l1212 elegant"],
+  "p-ensueno": ["britney fantasy", "britney spears fantasy", "fantasy britney"],
+  "p-cascada": ["issey miyake mujer", "l'eau d'issey mujer", "leau dissey mujer"],
+  "p-resplandor": ["paris hilton dazzle", "dazzle paris hilton"],
+  "p-transparencia": ["paris hilton sheer", "sheer paris hilton"],
+  "p-herencia-dorada": ["paris hilton heiress", "heiress paris hilton"],
 };
 
 export function normalizeSearchText(value: string) {
