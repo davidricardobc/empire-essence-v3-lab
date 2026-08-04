@@ -2,7 +2,7 @@
 
 Objetivo: mejorar busqueda, filtros y autoridad comercial del catalogo sin inventar notas.
 
-Cobertura actual: 55 referencias revisadas/verificadas de 196 productos del catalogo.
+Cobertura actual: 60 referencias revisadas/verificadas de 196 productos del catalogo.
 
 ## Metodo
 
@@ -106,6 +106,18 @@ David compartio la lista de referencias con mas inventario el 2026-08-02. Este l
 | Oleaje | Rabanne Invictus Legend | Ya curado | Ya estaba corregido en el lote 1 con notas marinas, sal marina, pomelo, laurel, geranio, especias, ambar rojo y guayaco. |
 | Monarca | Bharara King | Agregado | No estaba en el catalogo; se agrego con naranja, bergamota, limon, notas frutales/tuttifrutti, vainilla, almizcle blanco y ambar. |
 
+## Lote 5 - nicho/unisex restantes
+
+Este lote cierra las referencias nicho/unisex priorizadas en la bitacora anterior y mejora busquedas por nombre real como `oud wood`, `tobacco vanille`, `kirke`, `amber oud` y `amber oud ruby`.
+
+| Producto | Inspiracion | Estado | Ajuste |
+|---|---|---|---|
+| Refugio | Tom Ford Oud Wood | Corregido menor | Se preciso palo de rosa brasileno y pimienta de Sichuan; se mantuvo cardamomo, oud, sandalo, vetiver, tonka, vainilla y ambar. |
+| Nostalgia | Tom Ford Tobacco Vanille | Corregido menor | Se agregaron jengibre, flor de tabaco y savia dulce; se mantuvo hoja de tabaco, especias, vainilla, cacao, tonka, frutas secas y maderas. |
+| Alegria | Tiziana Terenzi Kirke | Corregido | Se agregaron cassis, arena y heliotropo para completar la salida frutal y el fondo cremoso/almizclado de Kirke. |
+| Santuario | Al Haramain Amber Oud | Corregido | Se reemplazo una piramide de oud/rosa/vainilla por romero, cedro, bergamota, limon, especias, guayaco, ambar, resinas y almizcle. |
+| Rubi | Al Haramain Amber Oud Ruby | Corregido | Se reemplazo rosa/oud/vainilla/pachuli por azafran, almendra amarga, cedro, jazmin egipcio, ambar gris, notas amaderadas y almizcle. |
+
 ## Fuentes usadas en el lote 1
 
 - Creed Aventus: https://www.creedfragrances.co.uk/products/aventus y https://www.fragrantica.com/perfume/Creed/Aventus-9828.html
@@ -173,8 +185,15 @@ David compartio la lista de referencias con mas inventario el 2026-08-02. Este l
 - Jean Paul Gaultier Ultra Male: https://www.fragrantica.com/perfume/Jean-Paul-Gaultier/Ultra-Male-30947.html
 - Bharara King: https://www.bhararabeauty.com/products/bharara-king y https://www.fragrantica.com/perfume/Bharara/King-74184.html
 
+## Fuentes usadas en el lote 5
+
+- Tom Ford Oud Wood: https://www.tomfordbeauty.com/products/oud-wood-eau-de-parfum y https://www.fragrantica.com/perfume/Tom-Ford/Oud-Wood-1826.html
+- Tom Ford Tobacco Vanille: https://www.tomfordbeauty.com/products/tobacco-vanille-eau-de-parfum y https://www.fragrantica.com/perfume/Tom-Ford/Tobacco-Vanille-1825.html
+- Tiziana Terenzi Kirke: https://www.fragrantica.com/perfume/Tiziana-Terenzi/Kirke-32172.html y https://en.parfumaria.com/kirke-extrait-de-parfum-100-ml
+- Al Haramain Amber Oud: https://www.fragrantica.com/perfume/Al-Haramain-Perfumes/Amber-Oud-51817.html y https://www.jomashop.com/blog/articles/designer-dupes-the-al-haramain-amber-oud-collection
+- Al Haramain Amber Oud Ruby: https://www.fragrantica.com/perfume/Al-Haramain-Perfumes/Amber-Oud-Ruby-Edition-73208.html y https://www.amazon.com/Al-Haramain-Amber-Parfum-Unisex/dp/B0B8X91J6M
+
 ## Siguientes lotes
 
-1. Nicho/unisex restantes: Oud Wood, Tobacco Vanille, Kirke, Al Haramain Amber Oud, Amber Oud Ruby.
-2. Masivas/frescas restantes: Chanel No. 5, CK One, Dolce & Gabbana Pour Femme, Lacoste Blanc.
-3. Limpieza final de familias visibles: separar familia dominante de notas buscables para que el filtro sea preciso sin esconder opciones buenas.
+1. Masivas/frescas restantes: Chanel No. 5, CK One, Dolce & Gabbana Pour Femme, Lacoste Blanc.
+2. Limpieza final de familias visibles: separar familia dominante de notas buscables para que el filtro sea preciso sin esconder opciones buenas.
