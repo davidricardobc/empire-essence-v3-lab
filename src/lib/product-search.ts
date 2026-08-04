@@ -179,6 +179,16 @@ const productSpecificAliases: Record<string, string[]> = {
   "p-horizonte": ["hugo boss unlimited", "boss bottled unlimited", "boss unlimited"],
   "p-penumbra": ["hugo boss night", "boss bottled night", "boss night"],
   "p-distincion": ["eau de cartier", "cartier eau", "cartier unisex"],
+  "p-audacia": ["montblanc legend red", "legend red", "mont blanc red"],
+  "p-sombra": ["bvlgari man in black", "bulgari man in black", "man in black"],
+  "p-fortuna": ["one million lucky", "1 million lucky", "paco rabanne lucky", "rabanne lucky"],
+  "p-brujula": ["montblanc legend spirit", "legend spirit", "mont blanc spirit"],
+  "p-cadencia": ["chanel allure homme sport", "allure homme sport", "allure sport"],
+  "p-coraje": ["diesel spirit of the brave", "spirit of the brave"],
+  "p-fervor": ["invictus intense", "paco rabanne invictus intense", "rabanne invictus intense"],
+  "p-contraste": ["black xs angeles", "black xs los angeles", "black xs la"],
+  "p-exceso": ["black xs exces", "black xs l exces", "black xs l'exces", "black xs excess"],
+  "p-susurro": ["212 sexy men", "carolina herrera 212 sexy men", "212 sexy hombre"],
 };
 
 export function normalizeSearchText(value: string) {

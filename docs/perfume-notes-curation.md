@@ -2,7 +2,7 @@
 
 Objetivo: mejorar busqueda, filtros y autoridad comercial del catalogo sin inventar notas.
 
-Cobertura actual: 73 referencias revisadas/verificadas de 196 productos del catalogo.
+Cobertura actual: 83 referencias revisadas/verificadas de 196 productos del catalogo.
 
 ## Metodo
 
@@ -145,6 +145,23 @@ Este lote corrige un bloque masculino donde varias fichas venian con familias no
 | Penumbra | Hugo Boss Bottled Night | Corregido | Se retiro cardamomo/ladano y queda lavanda, abedul, violeta africana, madera louro amarelo, notas amaderadas y almizcle. |
 | Distincion | Eau de Cartier | Corregido | La categoria pasa a unisex y la piramide se alinea a yuzu, bergamota, cilantro, hoja de violeta, violeta, lavanda, cedro, almizcle, ambar blanco y pachuli. |
 
+## Lote 8 - masculinas no revisadas, bloque 2
+
+Este lote corrige flankers masculinos con piramides incompletas o mezcladas, especialmente varias referencias Rabanne y Diesel.
+
+| Producto | Inspiracion | Estado | Ajuste |
+|---|---|---|---|
+| Audacia | Montblanc Legend Red | Corregido | Se reemplazo manzana/lavanda/geranio/ambar por naranja sanguina, pomelo, cardamomo, cedro, salvia esclarea, bayas de enebro, cedro del Atlas, caoba y tonka. |
+| Sombra | Bvlgari Man in Black | Corregido menor | Se mantuvo ron/tabaco/cuero/iris/tuberosa/tonka/guayaco y se cambio ambar por benjui; familia pasa a oriental/especiada/amaderada. |
+| Fortuna | Rabanne 1 Million Lucky | Corregido | Se agregaron ciruela, bergamota, avellana, cachemira, flor de naranjo, jazmin, ambarwood, vetiver y musgo de roble. |
+| Brujula | Montblanc Legend Spirit | Corregido menor | Se preciso acorde acuatico, almizcle blanco y maderas blancas; familia visible queda fresca/acuatica/amaderada. |
+| Cadencia | Chanel Allure Homme Sport | Corregido | Se agregaron notas marinas, mandarina roja, ambar, vetiver y elemi; `aldehydes` pasa a `aldehidos`. |
+| Coraje | Diesel Spirit Of The Brave | Corregido | Se reemplazo bergamota/pimienta/lavanda/salvia/cedro/canela por bergamota, galbano, cipres, abeto, tonka y labdano. |
+| Fervor | Rabanne Invictus Intense | Corregido | Se reemplazo el perfil marino-pomelo por flor de naranjo, pimienta negra, whisky, laurel, ambar, ambar gris y sal. |
+| Contraste | Rabanne Black XS Los Angeles for Him | Corregido | Se reemplazo limon verde/jengibre/cafe/davana/vainilla por naranja de Florida, salvia esclarea, canela, acorde mineral cristalino y maderas limpias. |
+| Exceso | Rabanne Black XS L'Exces for Him | Corregido | Se retiro mandarina/bergamota/especias/canela/tonka/vainilla y queda limon de Amalfi, lavanda, nagarmota, notas marinas, ambar y pachuli. |
+| Susurro | Carolina Herrera 212 Sexy Men | Corregido | Se reemplazo pimienta verde/flor de naranjo/gardenia por notas verdes, pimienta, flores, almizcle y ambar; familia pasa a oriental/especiada/amaderada. |
+
 ## Fuentes usadas en el lote 1
 
 - Creed Aventus: https://www.creedfragrances.co.uk/products/aventus y https://www.fragrantica.com/perfume/Creed/Aventus-9828.html
@@ -239,7 +256,20 @@ Este lote corrige un bloque masculino donde varias fichas venian con familias no
 - Hugo Boss Bottled Night: https://www.fragrantica.com/perfume/Hugo-Boss/Boss-Bottled-Night-8825.html
 - Eau de Cartier: https://www.fragrantica.com/perfume/Cartier/Eau-de-Cartier-309.html
 
+## Fuentes usadas en el lote 8
+
+- Montblanc Legend Red: https://www.fragrantica.com/perfume/Montblanc/Legend-Red-71652.html
+- Bvlgari Man in Black: https://www.fragrantica.com/perfume/Bvlgari/Bvlgari-Man-In-Black-26358.html
+- Rabanne 1 Million Lucky: https://www.fragrantica.com/perfume/Rabanne/1-Million-Lucky-48903.html
+- Montblanc Legend Spirit: https://www.fragrantica.com/perfume/Montblanc/Legend-Spirit-33443.html
+- Chanel Allure Homme Sport: https://www.fragrantica.com/perfume/Chanel/Allure-Homme-Sport-607.html
+- Diesel Spirit Of The Brave: https://www.fragrantica.com/perfume/Diesel/Spirit-Of-The-Brave-55037.html
+- Rabanne Invictus Intense: https://www.fragrantica.com/perfume/Rabanne/Invictus-Intense-42891.html
+- Rabanne Black XS Los Angeles for Him: https://www.fragrantica.com/perfume/Rabanne/Black-XS-Los-Angeles-for-Him-35254.html
+- Rabanne Black XS L'Exces for Him: https://www.fragrantica.com/perfume/Rabanne/Black-XS-L-Exces-for-Him-13805.html
+- Carolina Herrera 212 Sexy Men: https://www.fragrantica.com/perfume/Carolina-Herrera/212-Sexy-Men-1054.html
+
 ## Siguientes lotes
 
-1. Masculinas no revisadas, bloque 2: Montblanc Legend Red, Bvlgari Man in Black, One Million Lucky, Legend Spirit, Allure Homme Sport, Diesel Spirit of the Brave, Invictus Intense, Black XS Angeles, Black XS L'Exces y 212 Sexy Men.
+1. Masculinas no revisadas, bloque 3: 212 VIP Wild Party, Invictus Onyx, CH Men Africa, Swiss Army, Polo Blue, Polo Red, CK In2U, Dylan Blue, Eros Flame y Valentino Born in Roma.
 2. Limpieza final de familias visibles: separar familia dominante de notas buscables para que el filtro sea preciso sin esconder opciones buenas.

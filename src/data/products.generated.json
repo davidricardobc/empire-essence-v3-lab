@@ -2555,34 +2555,34 @@
     "inspirationReference": "Montblanc Legend Red",
     "category": "masculina",
     "collection": "firma",
-    "shortDescription": "citric, oriental, con presencia fuerte.",
-    "longDescription": "Atrevido y moderno con citricos intensos y un fondo calido. Inspirado en Montblanc Legend Red para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia masculina ideal para noche, citas, eventos.",
+    "shortDescription": "Citrica y amaderada con naranja sanguina, cardamomo y cedro.",
+    "longDescription": "Audacia abre con naranja sanguina, pomelo y cardamomo; el corazon combina cedro, salvia esclarea y bayas de enebro sobre cedro del Atlas, caoba y haba tonka. Inspirado en Montblanc Legend Red para clientes que quieren una masculina energica, moderna y pulida.",
+    "bestFor": "Clientes que buscan una masculina citrica y amaderada para diario, salidas y citas casuales.",
     "concentration": "60% esencia",
     "duration": "8 a 10 horas",
     "intensity": "alta",
     "sillage": "Profunda y envolvente",
     "notes": {
       "top": [
-        "bergamota",
-        "pomelo rosa",
-        "manzana"
+        "naranja sanguina",
+        "pomelo",
+        "cardamomo"
       ],
       "heart": [
-        "salvia",
-        "lavanda",
-        "geranio"
+        "cedro",
+        "salvia esclarea",
+        "bayas de enebro"
       ],
       "base": [
-        "sandalo",
-        "ambar",
+        "cedro del Atlas",
+        "caoba",
         "haba tonka"
       ]
     },
     "families": [
       "citric",
-      "oriental",
-      "fresca"
+      "amaderada",
+      "especiada"
     ],
     "moods": [
       "energia",
@@ -2590,9 +2590,9 @@
       "confianza"
     ],
     "occasions": [
-      "noche",
-      "citas",
-      "eventos"
+      "diario",
+      "salidas",
+      "citas"
     ],
     "variants": [
       {
@@ -2692,33 +2692,33 @@
     "inspirationReference": "Bvlgari Man in Black",
     "category": "masculina",
     "collection": "firma",
-    "shortDescription": "oriental, floral, con presencia fuerte.",
-    "longDescription": "Oscuro y magnetico con ron, cuero e iris. Un caballero nocturno. Inspirado en Bvlgari Man in Black para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia masculina ideal para noche, citas, eventos.",
+    "shortDescription": "Oriental, especiada y de cuero con ron, tabaco e iris.",
+    "longDescription": "Sombra abre con especias, ron y tabaco; el corazon mezcla cuero, iris y tuberosa sobre haba tonka, guayaco y benjui. Inspirado en Bvlgari Man in Black para clientes que quieren una masculina oscura, elegante y magnetica.",
+    "bestFor": "Clientes que buscan una masculina intensa para noche, citas, eventos y clima fresco.",
     "concentration": "60% esencia",
     "duration": "8 a 10 horas",
     "intensity": "alta",
     "sillage": "Profunda y envolvente",
     "notes": {
       "top": [
+        "especias",
         "ron",
-        "notas especiadas",
         "tabaco"
       ],
       "heart": [
+        "cuero",
         "iris",
-        "tuberosa",
-        "cuero"
+        "tuberosa"
       ],
       "base": [
         "haba tonka",
         "guayaco",
-        "ambar"
+        "benjui"
       ]
     },
     "families": [
       "oriental",
-      "floral",
+      "especiada",
       "amaderada"
     ],
     "moods": [
@@ -2759,33 +2759,39 @@
     "inspirationReference": "Paco Rabanne One Million Lucky",
     "category": "masculina",
     "collection": "firma",
-    "shortDescription": "amaderada, oriental, con presencia fuerte.",
-    "longDescription": "Fresco y luminoso con miel dorada y maderas suaves. Suerte audaz. Inspirado en Paco Rabanne One Million Lucky para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia masculina ideal para noche, citas, eventos.",
+    "shortDescription": "Amaderada, dulce y frutal con ciruela, avellana, miel y ambarwood.",
+    "longDescription": "Fortuna abre con ciruela, notas ozonicas, pomelo y bergamota; el corazon mezcla avellana, miel, cedro, cachemira, flor de naranjo y jazmin sobre ambarwood, pachuli, vetiver y musgo de roble. Inspirado en Rabanne 1 Million Lucky para clientes que quieren un dulce masculino moderno.",
+    "bestFor": "Clientes que buscan una masculina dulce-amaderada para salidas, citas y noche sin sentirse pesada.",
     "concentration": "60% esencia",
     "duration": "8 a 10 horas",
     "intensity": "alta",
     "sillage": "Profunda y envolvente",
     "notes": {
       "top": [
+        "ciruela",
+        "notas ozonicas",
         "pomelo",
-        "ozono",
-        "ciruela verde"
+        "bergamota"
       ],
       "heart": [
+        "avellana",
         "miel",
-        "madera de cedro"
+        "cedro",
+        "cachemira",
+        "flor de naranjo",
+        "jazmin"
       ],
       "base": [
-        "notas amaderadas",
+        "ambarwood",
         "pachuli",
-        "ambar"
+        "vetiver",
+        "musgo de roble"
       ]
     },
     "families": [
       "amaderada",
-      "oriental",
-      "citric"
+      "dulce",
+      "frutal"
     ],
     "moods": [
       "seguridad",
@@ -2793,9 +2799,9 @@
       "presencia"
     ],
     "occasions": [
-      "noche",
+      "salidas",
       "citas",
-      "eventos"
+      "noche"
     ],
     "variants": [
       {
@@ -2825,9 +2831,9 @@
     "inspirationReference": "Montblanc Legend Spirit",
     "category": "masculina",
     "collection": "diario",
-    "shortDescription": "citric, amaderada, equilibrada y facil de llevar.",
-    "longDescription": "Fresco y orientador con lavanda y maderas claras. Tu norte. Inspirado en Montblanc Legend Spirit para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia masculina ideal para diario, salidas, citas.",
+    "shortDescription": "Fresca, acuatica y amaderada con pomelo, lavanda y almizcle blanco.",
+    "longDescription": "Brujula abre con pomelo, bergamota y pimienta rosa; el corazon une notas acuaticas, lavanda y cardamomo sobre almizcle blanco, maderas blancas, cachemira y musgo de roble. Inspirado en Montblanc Legend Spirit para clientes que buscan frescura limpia y masculina.",
+    "bestFor": "Clientes que buscan una masculina fresca para diario, oficina, gimnasio suave y clima calido.",
     "concentration": "60% esencia",
     "duration": "6 a 8 horas",
     "intensity": "media",
@@ -2839,20 +2845,21 @@
         "pimienta rosa"
       ],
       "heart": [
+        "notas acuaticas",
         "lavanda",
-        "acuatico",
         "cardamomo"
       ],
       "base": [
-        "musgo de roble",
+        "almizcle blanco",
+        "maderas blancas",
         "cachemira",
-        "sandalo"
+        "musgo de roble"
       ]
     },
     "families": [
-      "citric",
-      "amaderada",
-      "especiada"
+      "fresca",
+      "acuatica",
+      "amaderada"
     ],
     "moods": [
       "seguridad",
@@ -2861,8 +2868,8 @@
     ],
     "occasions": [
       "diario",
-      "salidas",
-      "citas"
+      "oficina",
+      "clima calido"
     ],
     "variants": [
       {
@@ -2892,9 +2899,9 @@
     "inspirationReference": "Chanel Allure Homme Sport",
     "category": "masculina",
     "collection": "diario",
-    "shortDescription": "amaderada, citric, equilibrada y facil de llevar.",
-    "longDescription": "Ritmico y deportivo con citricos vivaces y un fondo sofisticado. Inspirado en Chanel Allure Homme Sport para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia masculina ideal para diario, salidas, citas.",
+    "shortDescription": "Fresca, citrica y amaderada con notas marinas, neroli y tonka.",
+    "longDescription": "Cadencia abre con naranja, notas marinas, aldehidos y mandarina roja; el corazon trae pimienta, neroli y cedro, con fondo de vainilla, haba tonka, almizcle blanco, ambar, vetiver y elemi. Inspirado en Chanel Allure Homme Sport para clientes que quieren frescura deportiva con elegancia.",
+    "bestFor": "Clientes que buscan una masculina limpia, deportiva y sofisticada para diario, oficina y salidas.",
     "concentration": "60% esencia",
     "duration": "6 a 8 horas",
     "intensity": "media",
@@ -2902,23 +2909,28 @@
     "notes": {
       "top": [
         "naranja",
-        "aldehydes",
-        "neroli"
+        "notas marinas",
+        "aldehidos",
+        "mandarina roja"
       ],
       "heart": [
-        "pimienta negra",
+        "pimienta",
+        "neroli",
         "cedro"
       ],
       "base": [
-        "haba tonka",
         "vainilla",
-        "almizcle blanco"
+        "haba tonka",
+        "almizcle blanco",
+        "ambar",
+        "vetiver",
+        "elemi"
       ]
     },
     "families": [
-      "amaderada",
+      "fresca",
       "citric",
-      "dulce"
+      "amaderada"
     ],
     "moods": [
       "seguridad",
@@ -2927,8 +2939,8 @@
     ],
     "occasions": [
       "diario",
-      "salidas",
-      "citas"
+      "oficina",
+      "salidas"
     ],
     "variants": [
       {
@@ -2958,9 +2970,9 @@
     "inspirationReference": "Diesel Spirit of the Brave",
     "category": "masculina",
     "collection": "diario",
-    "shortDescription": "amaderada, especiada, equilibrada y facil de llevar.",
-    "longDescription": "Valiente y autentico con lavanda silvestre y maderas nobles. Inspirado en Diesel Spirit of the Brave para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia masculina ideal para diario, salidas, citas.",
+    "shortDescription": "Amaderada, verde y ambarada con bergamota, galbano, cipres y abeto.",
+    "longDescription": "Coraje abre con bergamota y galbano; el corazon de cipres y abeto descansa sobre haba tonka y labdano. Inspirado en Diesel Spirit Of The Brave para clientes que quieren una masculina verde, balsamica y moderna.",
+    "bestFor": "Clientes que buscan una masculina amaderada y aromatica para diario, salidas y clima templado.",
     "concentration": "60% esencia",
     "duration": "6 a 8 horas",
     "intensity": "media",
@@ -2968,22 +2980,21 @@
     "notes": {
       "top": [
         "bergamota",
-        "pimienta rosa"
+        "galbano"
       ],
       "heart": [
-        "lavanda",
-        "salvia esclarea"
+        "cipres",
+        "abeto"
       ],
       "base": [
         "haba tonka",
-        "cedro",
-        "canela"
+        "labdano"
       ]
     },
     "families": [
       "amaderada",
-      "especiada",
-      "citric"
+      "oriental",
+      "fresca"
     ],
     "moods": [
       "seguridad",
@@ -2993,7 +3004,7 @@
     "occasions": [
       "diario",
       "salidas",
-      "citas"
+      "oficina"
     ],
     "variants": [
       {
@@ -3023,31 +3034,31 @@
     "inspirationReference": "Paco Rabanne Invictus Intense",
     "category": "masculina",
     "collection": "firma",
-    "shortDescription": "oriental, amaderada, con presencia fuerte.",
-    "longDescription": "Intenso y apasionado como una victoria conquistada con fuego. Inspirado en Paco Rabanne Invictus Intense para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia masculina ideal para noche, citas, eventos.",
+    "shortDescription": "Oriental, especiada y salina con flor de naranjo, whisky y ambar gris.",
+    "longDescription": "Fervor abre con flor de naranjo y pimienta negra; el corazon mezcla whisky y laurel sobre ambar, ambar gris y sal. Inspirado en Rabanne Invictus Intense para clientes que quieren una masculina nocturna con contraste salino y sensual.",
+    "bestFor": "Clientes que buscan una masculina intensa para noche, citas y salidas con presencia.",
     "concentration": "60% esencia",
     "duration": "8 a 10 horas",
     "intensity": "alta",
     "sillage": "Profunda y envolvente",
     "notes": {
       "top": [
-        "notas marinas",
-        "pomelo salado"
+        "flor de naranjo",
+        "pimienta negra"
       ],
       "heart": [
-        "hoja de laurel",
-        "ambar"
+        "whisky",
+        "laurel"
       ],
       "base": [
+        "ambar",
         "ambar gris",
-        "guayaco",
-        "musgo de roble"
+        "sal"
       ]
     },
     "families": [
       "oriental",
-      "amaderada",
+      "especiada",
       "acuatica"
     ],
     "moods": [
@@ -3058,7 +3069,7 @@
     "occasions": [
       "noche",
       "citas",
-      "eventos"
+      "salidas"
     ],
     "variants": [
       {
@@ -3088,33 +3099,30 @@
     "inspirationReference": "Paco Rabanne Black XS Angeles",
     "category": "masculina",
     "collection": "diario",
-    "shortDescription": "amaderada, almizclada, equilibrada y facil de llevar.",
-    "longDescription": "Contrastes vibrantes entre especias calientes y frescura urbana. Inspirado en Paco Rabanne Black XS Angeles para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia masculina ideal para diario, salidas, citas.",
+    "shortDescription": "Citrica, especiada y mineral con naranja de Florida, salvia y canela.",
+    "longDescription": "Contraste abre con naranja de Florida y salvia esclarea; el corazon de canela descansa sobre un acorde mineral cristalino y maderas limpias. Inspirado en Rabanne Black XS Los Angeles for Him para clientes que quieren una masculina rockera, fresca y especiada.",
+    "bestFor": "Clientes que buscan una masculina casual para salidas, citas y clima templado.",
     "concentration": "60% esencia",
     "duration": "6 a 8 horas",
     "intensity": "media",
     "sillage": "Equilibrada y agradable",
     "notes": {
       "top": [
-        "limon verde",
-        "jengibre"
+        "naranja de Florida",
+        "salvia esclarea"
       ],
       "heart": [
-        "canela",
-        "cafe",
-        "davana"
+        "canela"
       ],
       "base": [
-        "notas amaderadas",
-        "vainilla",
-        "almizcle"
+        "acorde mineral cristalino",
+        "notas amaderadas"
       ]
     },
     "families": [
-      "amaderada",
-      "almizclada",
-      "citric"
+      "citric",
+      "especiada",
+      "fresca"
     ],
     "moods": [
       "seguridad",
@@ -3122,9 +3130,9 @@
       "presencia"
     ],
     "occasions": [
-      "diario",
       "salidas",
-      "citas"
+      "citas",
+      "diario"
     ],
     "variants": [
       {
@@ -3224,34 +3232,31 @@
     "inspirationReference": "Paco Rabanne Black XS L'Exces",
     "category": "masculina",
     "collection": "firma",
-    "shortDescription": "oriental, citric, con presencia fuerte.",
-    "longDescription": "Desbordante e intenso con especias que encienden los sentidos. Inspirado en Paco Rabanne Black XS L'Exces para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia masculina ideal para noche, citas, eventos.",
+    "shortDescription": "Amaderada y aromatica con limon de Amalfi, lavanda, notas marinas y pachuli.",
+    "longDescription": "Exceso abre con limon de Amalfi y lavanda; el corazon mezcla nagarmota y notas marinas sobre ambar y pachuli. Inspirado en Rabanne Black XS L'Exces for Him para clientes que quieren una version mas luminosa, aromatica y rara de Black XS.",
+    "bestFor": "Clientes que buscan una masculina diferente para salidas, noche y coleccionistas de flankers.",
     "concentration": "60% esencia",
     "duration": "8 a 10 horas",
     "intensity": "alta",
     "sillage": "Profunda y envolvente",
     "notes": {
       "top": [
-        "jengibre",
-        "mandarina",
-        "bergamota"
+        "limon de Amalfi",
+        "lavanda"
       ],
       "heart": [
-        "lavanda",
-        "notas especiadas",
-        "canela"
+        "nagarmota",
+        "notas marinas"
       ],
       "base": [
-        "haba tonka",
         "ambar",
-        "vainilla"
+        "pachuli"
       ]
     },
     "families": [
-      "oriental",
-      "citric",
-      "especiada"
+      "amaderada",
+      "fresca",
+      "oriental"
     ],
     "moods": [
       "seguridad",
@@ -3259,9 +3264,9 @@
       "presencia"
     ],
     "occasions": [
+      "salidas",
       "noche",
-      "citas",
-      "eventos"
+      "citas"
     ],
     "variants": [
       {
@@ -3357,9 +3362,9 @@
     "inspirationReference": "Carolina Herrera 212 Sexy Men",
     "category": "masculina",
     "collection": "diario",
-    "shortDescription": "citric, especiada, equilibrada y facil de llevar.",
-    "longDescription": "Sensual y discreto como un susurro al oido en la penumbra. Inspirado en Carolina Herrera 212 Sexy Men para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia masculina ideal para diario, salidas, citas.",
+    "shortDescription": "Oriental fougere con mandarina, cardamomo, vainilla y guayaco.",
+    "longDescription": "Susurro abre con mandarina, bergamota y notas verdes; el corazon mezcla pimienta, cardamomo y flores sobre vainilla, guayaco, sandalo, almizcle y ambar. Inspirado en Carolina Herrera 212 Sexy Men para clientes que buscan una masculina sensual, calida y facil de recomendar.",
+    "bestFor": "Clientes que buscan una masculina dulce-especiada para citas, noche y clima fresco.",
     "concentration": "60% esencia",
     "duration": "6 a 8 horas",
     "intensity": "media",
@@ -3368,21 +3373,23 @@
       "top": [
         "mandarina",
         "bergamota",
-        "pimienta verde"
+        "notas verdes"
       ],
       "heart": [
+        "pimienta",
         "cardamomo",
-        "flor de naranjo",
-        "gardenia"
+        "flores"
       ],
       "base": [
         "vainilla",
         "guayaco",
-        "sandalo"
+        "sandalo",
+        "almizcle",
+        "ambar"
       ]
     },
     "families": [
-      "citric",
+      "oriental",
       "especiada",
       "amaderada"
     ],
@@ -3392,9 +3399,9 @@
       "presencia"
     ],
     "occasions": [
-      "diario",
-      "salidas",
-      "citas"
+      "citas",
+      "noche",
+      "salidas"
     ],
     "variants": [
       {
