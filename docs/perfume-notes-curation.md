@@ -2,7 +2,7 @@
 
 Objetivo: mejorar busqueda, filtros y autoridad comercial del catalogo sin inventar notas.
 
-Cobertura actual: 63 referencias revisadas/verificadas de 196 productos del catalogo.
+Cobertura actual: 73 referencias revisadas/verificadas de 196 productos del catalogo.
 
 ## Metodo
 
@@ -128,6 +128,23 @@ Este lote inicia el cierre de referencias masivas/frescas pendientes. `Dolce & G
 | Unidad | Calvin Klein CK One | Corregido | La categoria pasa a unisex; se completo con notas verdes, lirio de los valles, fresia, iris, acorde verde, te verde y musgo de roble. Familia visible queda citric/fresca/almizclada. |
 | Lienzo | Lacoste Blanco / L.12.12 White | Corregido | Se retiro tomillo/notas acuaticas/pimienta/almizcle y se alineo a pomelo, romero, cardamomo, hoja de cedro, tuberosa, ylang ylang, cuero, cedro, gamuza y vetiver. |
 
+## Lote 7 - masculinas no revisadas, bloque 1
+
+Este lote corrige un bloque masculino donde varias fichas venian con familias nocturnas/orientales genericas aunque la referencia real era fresca, acuatica o aromatica.
+
+| Producto | Inspiracion | Estado | Ajuste |
+|---|---|---|---|
+| Coraza | Diesel Only The Brave | Corregido | Se aclaro la referencia y se reemplazo manzana/anis/tabaco por limon de Amalfi, mandarina, violeta, cedro de Virginia, cilantro, ambar, cuero, benjui, labdano frances y estoraque. |
+| Deriva | Bvlgari Aqva Pour Homme | Corregido menor | Se preciso alga posidonia, lavanda santolina, flor de algodon, ambar mineral y salvia esclarea; familia visible pasa a acuatica/citric/amaderada. |
+| Marea | Bvlgari Aqva Marine | Corregido menor | Se agrego petit grain y se corrigio base hacia cedro de Virginia y ambar; queda acuatica/fresca/citric. |
+| Travesia | Nautica Voyage | Corregido menor | Se simplifico la piramide a hojas verdes/manzana, loto/mimosa y almizcle/cedro/musgo de roble/ambar; familia ahora fresca/acuatica/amaderada. |
+| Enigma | Armani Code | Corregido | Se cambio aceituna/haba tonka en corazon por anis estrellado, flor de olivo y guayaco; base queda cuero, tonka y tabaco. |
+| Brisa | Paris Hilton For Men | Corregido | Se reemplazo la lectura acuatica/especiada por mango verde, hoja de higo, pepino, aire de montana, salvia, enebro, albahaca, cedro, almizcle y ambar. |
+| Adrenalina | Hugo Boss Bottled Sport | Corregido | Se retiro limon/notas acuaticas/cedro/almizcle y queda pomelo, aldehidos, lavanda, cardamomo y vetiver. |
+| Horizonte | Hugo Boss Bottled Unlimited | Corregido menor | Se mantuvo la estructura, pero la familia pasa de floral/oriental/amaderada a fresca/frutal/almizclada. |
+| Penumbra | Hugo Boss Bottled Night | Corregido | Se retiro cardamomo/ladano y queda lavanda, abedul, violeta africana, madera louro amarelo, notas amaderadas y almizcle. |
+| Distincion | Eau de Cartier | Corregido | La categoria pasa a unisex y la piramide se alinea a yuzu, bergamota, cilantro, hoja de violeta, violeta, lavanda, cedro, almizcle, ambar blanco y pachuli. |
+
 ## Fuentes usadas en el lote 1
 
 - Creed Aventus: https://www.creedfragrances.co.uk/products/aventus y https://www.fragrantica.com/perfume/Creed/Aventus-9828.html
@@ -209,7 +226,20 @@ Este lote inicia el cierre de referencias masivas/frescas pendientes. `Dolce & G
 - Calvin Klein CK One: https://www.fragrantica.com/perfume/Calvin-Klein/CK-One-276.html
 - Lacoste L.12.12 White: https://www.fragrantica.com/perfume/Lacoste-Fragrances/Eau-de-Lacoste-L-12-12-White-11043.html
 
+## Fuentes usadas en el lote 7
+
+- Diesel Only The Brave: https://www.fragrantica.com/perfume/Diesel/Only-The-Brave-5532.html
+- Bvlgari Aqva Pour Homme: https://www.fragrantica.com/perfume/Bvlgari/Aqva-Pour-Homme-153.html
+- Bvlgari Aqva Marine: https://www.fragrantica.com/perfume/Bvlgari/Aqva-Pour-Homme-Marine-1742.html
+- Nautica Voyage: https://www.fragrantica.com/perfume/Nautica/Nautica-Voyage-913.html
+- Armani Code: https://www.fragrantica.com/perfume/Giorgio-Armani/Armani-Code-412.html
+- Paris Hilton For Men: https://www.fragrantica.com/perfume/Paris-Hilton/Paris-Hilton-for-Men-1435.html y https://parishiltonfragrances.com/products/paris-hilton-for-men
+- Hugo Boss Bottled Sport: https://www.fragrantica.com/perfume/Hugo-Boss/Boss-Bottled-Sport-14597.html
+- Hugo Boss Bottled Unlimited: https://www.fragrantica.com/perfume/Hugo-Boss/Boss-Bottled-Unlimited-22528.html
+- Hugo Boss Bottled Night: https://www.fragrantica.com/perfume/Hugo-Boss/Boss-Bottled-Night-8825.html
+- Eau de Cartier: https://www.fragrantica.com/perfume/Cartier/Eau-de-Cartier-309.html
+
 ## Siguientes lotes
 
-1. Masculinas no revisadas, bloque 1: Diesel Only, Bvlgari Aqva Pour Homme, Aqva Marine, Nautica Voyage, Armani Code, Paris Hilton For Men, Hugo Boss Sport, Hugo Boss Unlimited, Hugo Boss Night y Eau de Cartier.
+1. Masculinas no revisadas, bloque 2: Montblanc Legend Red, Bvlgari Man in Black, One Million Lucky, Legend Spirit, Allure Homme Sport, Diesel Spirit of the Brave, Invictus Intense, Black XS Angeles, Black XS L'Exces y 212 Sexy Men.
 2. Limpieza final de familias visibles: separar familia dominante de notas buscables para que el filtro sea preciso sin esconder opciones buenas.

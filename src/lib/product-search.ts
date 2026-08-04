@@ -169,6 +169,16 @@ const productSpecificAliases: Record<string, string[]> = {
   "p-lienzo": ["lacoste blanc", "lacoste blanco", "lacoste white", "l1212 blanc", "l 12 12 blanc"],
   "p-eternidad": ["chanel no 5", "chanel n5", "chanel numero 5", "no 5", "n5"],
   "p-monarca": ["bharara king", "king bharara"],
+  "p-coraza": ["diesel only", "diesel only the brave", "only the brave", "only brave"],
+  "p-deriva": ["bvlgari aqva", "bulgari aqva", "aqva pour homme", "aqua pour homme"],
+  "p-marea": ["bvlgari aqva marine", "bulgari aqva marine", "aqva marine", "aqua marine"],
+  "p-travesia": ["nautica voyage", "voyage nautica"],
+  "p-enigma": ["armani code", "giorgio armani code", "code armani"],
+  "p-brisa": ["paris hilton for men", "paris hilton hombre", "paris hilton men"],
+  "p-adrenalina": ["hugo boss sport", "boss bottled sport", "boss sport"],
+  "p-horizonte": ["hugo boss unlimited", "boss bottled unlimited", "boss unlimited"],
+  "p-penumbra": ["hugo boss night", "boss bottled night", "boss night"],
+  "p-distincion": ["eau de cartier", "cartier eau", "cartier unisex"],
 };
 
 export function normalizeSearchText(value: string) {

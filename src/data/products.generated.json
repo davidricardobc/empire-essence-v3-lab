@@ -1816,37 +1816,38 @@
     "id": "p-coraza",
     "slug": "coraza",
     "publicName": "Coraza",
-    "inspirationReference": "Diesel Only",
+    "inspirationReference": "Diesel Only The Brave",
     "category": "masculina",
     "collection": "firma",
-    "shortDescription": "amaderada, oriental, con presencia fuerte.",
-    "longDescription": "Fuerte y protector como una armadura invisible de tabaco y cuero. Inspirado en Diesel Only para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia masculina ideal para noche, citas, eventos.",
+    "shortDescription": "Citrica, ambarada y de cuero con violeta y cedro.",
+    "longDescription": "Coraza abre con limon de Amalfi y mandarina; el corazon mezcla violeta, cedro de Virginia y cilantro sobre una base de ambar, cuero, benjui, labdano frances y estoraque. Inspirado en Diesel Only The Brave para clientes que quieren una masculina fuerte sin perder frescura inicial.",
+    "bestFor": "Clientes que buscan una masculina ambarada, joven y segura para citas, noche y salidas.",
     "concentration": "60% esencia",
     "duration": "8 a 10 horas",
     "intensity": "alta",
     "sillage": "Profunda y envolvente",
     "notes": {
       "top": [
-        "manzana",
-        "anis",
-        "tabaco"
+        "limon de Amalfi",
+        "mandarina"
       ],
       "heart": [
-        "romero",
         "violeta",
-        "salvia"
+        "cedro de Virginia",
+        "cilantro"
       ],
       "base": [
-        "cedro",
         "ambar",
-        "cuero"
+        "cuero",
+        "benjui",
+        "labdano frances",
+        "estoraque"
       ]
     },
     "families": [
       "amaderada",
       "oriental",
-      "floral"
+      "citric"
     ],
     "moods": [
       "seguridad",
@@ -1856,7 +1857,7 @@
     "occasions": [
       "noche",
       "citas",
-      "eventos"
+      "salidas"
     ],
     "variants": [
       {
@@ -1886,9 +1887,9 @@
     "inspirationReference": "Bvlgari Aqva Pour Homme",
     "category": "masculina",
     "collection": "firma",
-    "shortDescription": "oriental, citric, con presencia fuerte.",
-    "longDescription": "Acuatico y mediterraneo, evoca la brisa del mar al atardecer. Inspirado en Bvlgari Aqva Pour Homme para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia masculina ideal para noche, citas, eventos.",
+    "shortDescription": "Acuatica y citrica con alga posidonia, lavanda y ambar mineral.",
+    "longDescription": "Deriva abre con mandarina, naranja y petit grain; el corazon combina alga posidonia, lavanda santolina y flor de algodon sobre ambar mineral, notas amaderadas y salvia esclarea. Inspirado en Bvlgari Aqva Pour Homme para clientes que quieren una acuatica masculina con fondo mineral.",
+    "bestFor": "Clientes que buscan frescura marina elegante para diario, oficina y clima calido.",
     "concentration": "60% esencia",
     "duration": "8 a 10 horas",
     "intensity": "alta",
@@ -1896,24 +1897,24 @@
     "notes": {
       "top": [
         "mandarina",
-        "naranja amarga",
+        "naranja",
         "petit grain"
       ],
       "heart": [
-        "algae marina",
-        "lavanda",
-        "algodon"
+        "alga posidonia",
+        "lavanda santolina",
+        "flor de algodon"
       ],
       "base": [
-        "ambar",
-        "madera flotante",
-        "almizcle blanco"
+        "ambar mineral",
+        "notas amaderadas",
+        "salvia esclarea"
       ]
     },
     "families": [
-      "oriental",
+      "acuatica",
       "citric",
-      "acuatica"
+      "amaderada"
     ],
     "moods": [
       "energia",
@@ -1921,9 +1922,9 @@
       "confianza"
     ],
     "occasions": [
-      "noche",
-      "citas",
-      "eventos"
+      "diario",
+      "oficina",
+      "clima calido"
     ],
     "variants": [
       {
@@ -1953,9 +1954,9 @@
     "inspirationReference": "Bvlgari Aqva Marine",
     "category": "masculina",
     "collection": "firma",
-    "shortDescription": "fresca, oriental, con presencia fuerte.",
-    "longDescription": "Fresco oceanico que captura la fuerza de las olas y la sal marina. Inspirado en Bvlgari Aqva Marine para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia masculina ideal para noche, citas, eventos.",
+    "shortDescription": "Acuatica, fresca y citrica con pomelo, neroli y romero marino.",
+    "longDescription": "Marea abre con pomelo, neroli, mandarina y petit grain; el corazon trae notas acuaticas, algas marinas y romero sobre cedro de Virginia y ambar. Inspirado en Bvlgari Aqva Marine para clientes que quieren una frescura oceanica directa y facil de recomendar.",
+    "bestFor": "Clientes que buscan una masculina marina, limpia y luminosa para diario, vacaciones y clima calido.",
     "concentration": "60% esencia",
     "duration": "8 a 10 horas",
     "intensity": "alta",
@@ -1964,23 +1965,23 @@
       "top": [
         "pomelo",
         "neroli",
-        "mandarina"
+        "mandarina",
+        "petit grain"
       ],
       "heart": [
-        "notas marinas",
-        "romero",
-        "algae"
+        "notas acuaticas",
+        "algas marinas",
+        "romero"
       ],
       "base": [
-        "ambar",
-        "madera de cedro",
-        "almizcle"
+        "cedro de Virginia",
+        "ambar"
       ]
     },
     "families": [
+      "acuatica",
       "fresca",
-      "oriental",
-      "almizclada"
+      "citric"
     ],
     "moods": [
       "energia",
@@ -1988,9 +1989,9 @@
       "confianza"
     ],
     "occasions": [
-      "noche",
-      "citas",
-      "eventos"
+      "diario",
+      "vacaciones",
+      "clima calido"
     ],
     "variants": [
       {
@@ -2020,33 +2021,32 @@
     "inspirationReference": "Nautica Voyage",
     "category": "masculina",
     "collection": "firma",
-    "shortDescription": "oriental, almizclada, con presencia fuerte.",
-    "longDescription": "Fresco y aventurero como una travesia por aguas cristalinas. Inspirado en Nautica Voyage para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia masculina ideal para noche, citas, eventos.",
+    "shortDescription": "Verde, acuatica y fresca con manzana, loto y fondo almizclado.",
+    "longDescription": "Travesia abre con hojas verdes y manzana; el corazon mezcla loto y mimosa sobre almizcle, cedro, musgo de roble y ambar. Inspirado en Nautica Voyage para clientes que quieren una fragancia limpia, fresca y de alto uso diario.",
+    "bestFor": "Clientes que buscan una masculina fresca, economica de uso diario y facil de regalar.",
     "concentration": "60% esencia",
     "duration": "8 a 10 horas",
     "intensity": "alta",
     "sillage": "Profunda y envolvente",
     "notes": {
       "top": [
-        "manzana verde",
         "hojas verdes",
-        "mimosa"
+        "manzana"
       ],
       "heart": [
         "loto",
-        "cedro de Virginia",
-        "nenufar"
+        "mimosa"
       ],
       "base": [
         "almizcle",
-        "ambar",
-        "musgo de roble"
+        "cedro",
+        "musgo de roble",
+        "ambar"
       ]
     },
     "families": [
-      "oriental",
-      "almizclada",
+      "fresca",
+      "acuatica",
       "amaderada"
     ],
     "moods": [
@@ -2055,9 +2055,9 @@
       "presencia"
     ],
     "occasions": [
-      "noche",
-      "citas",
-      "eventos"
+      "diario",
+      "oficina",
+      "clima calido"
     ],
     "variants": [
       {
@@ -2087,33 +2087,33 @@
     "inspirationReference": "Armani Code",
     "category": "masculina",
     "collection": "firma",
-    "shortDescription": "citric, oriental, con presencia fuerte.",
-    "longDescription": "Misterioso y sofisticado con un fondo oscuro de tabaco y cuero. Inspirado en Armani Code para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia masculina ideal para noche, citas, eventos.",
+    "shortDescription": "Citrica, especiada y sensual con anis, flor de olivo y cuero.",
+    "longDescription": "Enigma abre con limon y bergamota; el corazon combina anis estrellado, flor de olivo y guayaco, y termina en cuero, haba tonka y tabaco. Inspirado en Armani Code para clientes que buscan una masculina elegante, nocturna y seductora.",
+    "bestFor": "Clientes que buscan una masculina de noche, citas y eventos con fondo de cuero y tabaco.",
     "concentration": "60% esencia",
     "duration": "8 a 10 horas",
     "intensity": "alta",
     "sillage": "Profunda y envolvente",
     "notes": {
       "top": [
-        "bergamota",
-        "limon"
+        "limon",
+        "bergamota"
       ],
       "heart": [
-        "flor de naranjo",
-        "aceituna",
-        "haba tonka"
+        "anis estrellado",
+        "flor de olivo",
+        "guayaco"
       ],
       "base": [
-        "tabaco",
         "cuero",
-        "guayacol"
+        "haba tonka",
+        "tabaco"
       ]
     },
     "families": [
-      "citric",
       "oriental",
-      "floral"
+      "especiada",
+      "citric"
     ],
     "moods": [
       "seguridad",
@@ -2153,33 +2153,35 @@
     "inspirationReference": "Paris Hilton For Men",
     "category": "masculina",
     "collection": "firma",
-    "shortDescription": "oriental, especiada, con presencia fuerte.",
-    "longDescription": "Ligero y despreocupado como una brisa calida de verano. Inspirado en Paris Hilton For Men para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia masculina ideal para noche, citas, eventos.",
+    "shortDescription": "Fresca, frutal y aromatica con mango verde, higo y pepino.",
+    "longDescription": "Brisa combina mango verde, hoja de higo, pepino y aire de montana con salvia, enebro y albahaca; el fondo une cedro, almizcle y ambar. Inspirado en Paris Hilton For Men para clientes que quieren una masculina juvenil, limpia y facil de llevar.",
+    "bestFor": "Clientes que buscan una fresca casual para diario, universidad, salidas y clima calido.",
     "concentration": "60% esencia",
     "duration": "8 a 10 horas",
     "intensity": "alta",
     "sillage": "Profunda y envolvente",
     "notes": {
       "top": [
-        "higo verde",
-        "salvia",
-        "mandarina"
+        "mango verde",
+        "hoja de higo",
+        "pepino",
+        "aire de montana"
       ],
       "heart": [
-        "notas acuaticas",
-        "pimienta negra"
+        "salvia",
+        "enebro",
+        "albahaca"
       ],
       "base": [
-        "musgo de roble",
-        "gamuza",
+        "cedro",
+        "almizcle",
         "ambar"
       ]
     },
     "families": [
-      "oriental",
-      "especiada",
-      "acuatica"
+      "fresca",
+      "frutal",
+      "amaderada"
     ],
     "moods": [
       "energia",
@@ -2187,9 +2189,9 @@
       "confianza"
     ],
     "occasions": [
-      "noche",
-      "citas",
-      "eventos"
+      "diario",
+      "salidas",
+      "clima calido"
     ],
     "variants": [
       {
@@ -2219,9 +2221,9 @@
     "inspirationReference": "Hugo Boss Sport",
     "category": "masculina",
     "collection": "diario",
-    "shortDescription": "citric, amaderada, de lectura limpia.",
-    "longDescription": "Energetico y dinamico, hecho para quien vive en movimiento. Inspirado en Hugo Boss Sport para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia masculina ideal para diario, oficina, salidas.",
+    "shortDescription": "Aromatica y citrica con pomelo, aldehidos, lavanda y vetiver.",
+    "longDescription": "Adrenalina abre con pomelo y aldehidos; el corazon aromatico mezcla lavanda y cardamomo sobre una base seca de vetiver. Inspirado en Hugo Boss Bottled Sport para clientes que quieren una masculina limpia, deportiva y directa.",
+    "bestFor": "Clientes que buscan una fragancia fresca para oficina, entrenamiento ligero y uso diario.",
     "concentration": "60% esencia",
     "duration": "5 a 7 horas",
     "intensity": "suave",
@@ -2229,24 +2231,20 @@
     "notes": {
       "top": [
         "pomelo",
-        "aldehidos",
-        "limon"
+        "aldehidos"
       ],
       "heart": [
-        "geranio",
-        "notas acuaticas",
-        "lavanda"
+        "lavanda",
+        "cardamomo"
       ],
       "base": [
-        "vetiver",
-        "cedro",
-        "almizcle"
+        "vetiver"
       ]
     },
     "families": [
+      "fresca",
       "citric",
-      "amaderada",
-      "fresca"
+      "especiada"
     ],
     "moods": [
       "energia",
@@ -2256,7 +2254,7 @@
     "occasions": [
       "diario",
       "oficina",
-      "salidas"
+      "deporte"
     ],
     "variants": [
       {
@@ -2358,9 +2356,9 @@
     "inspirationReference": "Hugo Boss Unlimited",
     "category": "masculina",
     "collection": "firma",
-    "shortDescription": "floral, oriental, con presencia fuerte.",
-    "longDescription": "Amplio y sin limites como el horizonte al amanecer. Inspirado en Hugo Boss Unlimited para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia masculina ideal para noche, citas, eventos.",
+    "shortDescription": "Fresca, verde y frutal con menta, pomelo, pina y almizcle blanco.",
+    "longDescription": "Horizonte abre con menta, pomelo y hoja de violeta; el corazon mezcla pina, canela y rosa sobre almizcle blanco, labdano y sandalo. Inspirado en Hugo Boss Bottled Unlimited para clientes que quieren frescura energetica con cuerpo frutal.",
+    "bestFor": "Clientes que buscan una masculina fresca y versatil para diario, oficina y salidas casuales.",
     "concentration": "60% esencia",
     "duration": "8 a 10 horas",
     "intensity": "alta",
@@ -2368,24 +2366,24 @@
     "notes": {
       "top": [
         "menta",
-        "violeta",
-        "pina"
+        "pomelo",
+        "hoja de violeta"
       ],
       "heart": [
-        "rosa",
-        "hoja de violeta",
-        "notas especiadas"
+        "pina",
+        "canela",
+        "rosa"
       ],
       "base": [
-        "notas amaderadas",
-        "gamuza",
-        "ambar"
+        "almizcle blanco",
+        "labdano",
+        "sandalo"
       ]
     },
     "families": [
-      "floral",
-      "oriental",
-      "amaderada"
+      "fresca",
+      "frutal",
+      "almizclada"
     ],
     "moods": [
       "seguridad",
@@ -2393,9 +2391,9 @@
       "presencia"
     ],
     "occasions": [
-      "noche",
-      "citas",
-      "eventos"
+      "diario",
+      "oficina",
+      "salidas"
     ],
     "variants": [
       {
@@ -2425,9 +2423,9 @@
     "inspirationReference": "Hugo Boss Night",
     "category": "masculina",
     "collection": "firma",
-    "shortDescription": "amaderada, almizclada, con presencia fuerte.",
-    "longDescription": "Oscuro y envolvente con lavanda nocturna y madera profunda. Inspirado en Hugo Boss Night para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia masculina ideal para noche, citas, eventos.",
+    "shortDescription": "Amaderada y aromatica con lavanda, abedul, violeta y almizcle.",
+    "longDescription": "Penumbra abre con lavanda y abedul; el corazon de violeta africana descansa sobre madera louro amarelo, notas amaderadas y almizcle. Inspirado en Hugo Boss Bottled Night para clientes que quieren una masculina sobria, nocturna y limpia.",
+    "bestFor": "Clientes que buscan una masculina de noche, citas y oficina con perfil amaderado discreto.",
     "concentration": "60% esencia",
     "duration": "8 a 10 horas",
     "intensity": "alta",
@@ -2438,19 +2436,18 @@
         "abedul"
       ],
       "heart": [
-        "notas amaderadas",
-        "cardamomo"
+        "violeta africana"
       ],
       "base": [
-        "almizcle",
+        "madera louro amarelo",
         "notas amaderadas",
-        "ladano"
+        "almizcle"
       ]
     },
     "families": [
       "amaderada",
       "almizclada",
-      "oriental"
+      "floral"
     ],
     "moods": [
       "seguridad",
@@ -2460,7 +2457,7 @@
     "occasions": [
       "noche",
       "citas",
-      "eventos"
+      "oficina"
     ],
     "variants": [
       {
@@ -2488,36 +2485,37 @@
     "slug": "distincion",
     "publicName": "Distincion",
     "inspirationReference": "Eau de Cartier",
-    "category": "masculina",
+    "category": "unisex",
     "collection": "firma",
-    "shortDescription": "oriental, almizclada, con presencia fuerte.",
-    "longDescription": "Refinado y distinguido con iris noble y maderas preciosas. Inspirado en Eau de Cartier para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia masculina ideal para noche, citas, eventos.",
+    "shortDescription": "Citrica, violeta y almizclada con yuzu, lavanda y ambar blanco.",
+    "longDescription": "Distincion abre con yuzu, bergamota y cilantro; el corazon une hoja de violeta, violeta y lavanda sobre cedro, almizcle, ambar blanco y pachuli. Inspirado en Eau de Cartier para clientes que buscan una fragancia unisex limpia, refinada y ligera.",
+    "bestFor": "Clientes que buscan una unisex elegante, fresca y discreta para oficina, diario y clima calido.",
     "concentration": "60% esencia",
     "duration": "8 a 10 horas",
     "intensity": "alta",
     "sillage": "Profunda y envolvente",
     "notes": {
       "top": [
-        "lavanda",
+        "yuzu",
         "bergamota",
-        "artemisa"
+        "cilantro"
       ],
       "heart": [
+        "hoja de violeta",
         "violeta",
-        "iris",
-        "pimienta negra"
+        "lavanda"
       ],
       "base": [
+        "cedro",
         "almizcle",
-        "ambar",
-        "sandalo"
+        "ambar blanco",
+        "pachuli"
       ]
     },
     "families": [
-      "oriental",
-      "almizclada",
-      "citric"
+      "citric",
+      "fresca",
+      "almizclada"
     ],
     "moods": [
       "seguridad",
@@ -2525,9 +2523,9 @@
       "presencia"
     ],
     "occasions": [
-      "noche",
-      "citas",
-      "eventos"
+      "diario",
+      "oficina",
+      "clima calido"
     ],
     "variants": [
       {
