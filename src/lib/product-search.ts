@@ -289,6 +289,19 @@ const productSpecificAliases: Record<string, string[]> = {
   "p-pureza": ["creed love in white", "love in white", "love white creed"],
   "p-victoria": ["creed aventus for her", "aventus for her", "aventus mujer"],
   "p-florecimiento": ["armani si fiori", "giorgio armani si fiori", "si fiori"],
+  "p-petalos": ["kenzo flower", "flower by kenzo", "kenzo flower mujer"],
+  "p-elixir": ["dior poison girl", "poison girl", "poison girl dior"],
+  "p-coral": ["bvlgari omnia coral", "bulgari omnia coral", "omnia coral"],
+  "p-cereza": ["bvlgari amarena", "bulgari amarena", "amarena bvlgari"],
+  "p-universo": ["kenzo world intense", "world intense kenzo"],
+  "p-golosina": ["nina ricci delices", "les delices de nina", "delices de nina"],
+  "p-noche-de-cristal": ["versace crystal noir", "crystal noir", "crystal noir mujer"],
+  "p-abrigo": ["burberry women", "burberry mujer", "burberry for women"],
+  "p-bohemia": ["montale roses musk", "roses musk", "montale paris roses musk"],
+  "p-insinuacion": ["carolina herrera 212 sexy mujer", "212 sexy mujer", "212 sexy women"],
+  "p-fama": ["rabanne fame", "paco rabanne fame", "fame rabanne"],
+  "p-especia": ["bvlgari zahira", "bulgari zahira", "zahira bvlgari"],
+  "p-emperatriz": ["dolce gabbana imperatrice", "l'imperatrice 3", "dolce gabbana l'imperatrice"],
 };
 
 export function normalizeSearchText(value: string) {

@@ -2,7 +2,7 @@
 
 Objetivo: mejorar busqueda, filtros y autoridad comercial del catalogo sin inventar notas.
 
-Cobertura actual: 183 referencias revisadas/verificadas de 196 productos del catalogo.
+Cobertura actual: 196 referencias revisadas/verificadas de 196 productos del catalogo.
 
 ## Metodo
 
@@ -332,6 +332,26 @@ Este lote revisa Creed, Dior, Calvin Klein, Versace y Armani, corrigiendo varias
 | Victoria | Creed Aventus for Her | Corregido | Se reemplazo grosella negra/limon/lila/ambar gris/pachuli por hoja de violeta, pimienta rosa, bergamota de Calabria, estoraque, sandalo Mysore, cassis, ambar y ylang ylang. |
 | Florecimiento | Giorgio Armani Si Fiori | Corregido | Se retiro jazmin grandiflorum y se agregan pachuli y musgo de roble en corazon; base queda vainilla y almizcle blanco. |
 
+## Lote 19 - femeninas no revisadas, bloque final
+
+Este lote cierra las 13 referencias pendientes y deja la curaduria completa del catalogo actual en 196 de 196 productos revisados.
+
+| Producto | Inspiracion | Estado | Ajuste |
+|---|---|---|---|
+| Petalos | Kenzo Flower by Kenzo | Corregido menor | Se completo el perfil floral empolvado con rosa bulgara, espino blanco, cassis, violeta de Parma, rosa, jazmin, opoponax, vainilla, almizcle blanco y notas amaderadas. |
+| Elixir | Dior Poison Girl | Corregido | Se reemplazo el perfil generico dulce/floral por naranja amarga, limon, rosas, flor de naranjo, vainilla, almendra, tonka, balsamo de Tolu, sandalo, heliotropo y cashmeran. |
+| Coral | Bvlgari Omnia Coral | Corregido | Se alineo a bergamota, bayas de goji, granada, hibisco, nenufar, almizcle y cedro de Virginia; familia queda frutal/floral/almizclada. |
+| Cereza | Bvlgari Amarena | Corregido | Se aclaro la referencia y queda cereza, granada, tuberosa, rosa y notas empolvadas. |
+| Universo | Kenzo World Intense | Corregido | Se reemplazo una piramide amplia por la estructura breve del flanker: ciruela negra, peonia, jazmin y vainilla. |
+| Golosina | Nina Ricci Les Delices de Nina | Corregido | Se alinea al gourmand frutal de limon, mandarina, fresa, caramelo blanco, praline, frambuesa y almizcle blanco. |
+| Noche de Cristal | Versace Crystal Noir | Corregido | Se reemplazo flor blanca generica por pimienta, jengibre, cardamomo, coco, gardenia, flor de naranjo, peonia, sandalo, almizcle y ambar. |
+| Abrigo | Burberry Women | Corregido | Se completo el perfil frutal suave con durazno, albaricoque, pera, grosella negra, manzana verde, sandalo, jazmin, musgo, vainilla, cedro y almizcle. |
+| Bohemia | Montale Roses Musk | Corregido | La referencia pasa de Montale Paris generico a Roses Musk por el perfil rosa/jazmin/almizcle; familia queda floral/almizclada/amaderada. |
+| Insinuacion | Carolina Herrera 212 Sexy | Corregido | Se agregan pimienta rosa, mandarina, bergamota, algodon de azucar, gardenia, flores, pelargonio, rosa, vainilla, almizcle, sandalo, caramelo, violeta y pachuli. |
+| Fama | Rabanne Fame | Corregido | Se alinea a mango, bergamota, jazmin, incienso, vainilla y sandalo; familia queda frutal/floral/gourmand. |
+| Especia | Bvlgari Zahira | Corregido | Se aclara la piramide breve con canela, ylang ylang y benjui; familia queda oriental/especiada/floral. |
+| Emperatriz | Dolce & Gabbana L'Imperatrice 3 | Corregido | Se reemplazo el perfil floral generico por kiwi, ruibarbo, pimienta rosa, sandia, ciclamen, jazmin, limonero, almizcle y sandalo. |
+
 ## Fuentes usadas en el lote 1
 
 - Creed Aventus: https://www.creedfragrances.co.uk/products/aventus y https://www.fragrantica.com/perfume/Creed/Aventus-9828.html
@@ -569,7 +589,23 @@ Este lote revisa Creed, Dior, Calvin Klein, Versace y Armani, corrigiendo varias
 - Creed Aventus for Her: https://basenotes.com/fragrances/aventus-for-her-by-creed.26149458 y https://creedboutique.com/products/aventus-for-her
 - Giorgio Armani Si Fiori: https://www.fragrantica.com/perfume/Giorgio-Armani/Si-Fiori-52678.html
 
-## Siguientes lotes
+## Fuentes usadas en el lote 19
 
-1. Femeninas no revisadas, bloque final: Kenzo Flower, Dior Poison Girl, Bvlgari Omnia Coral, Bvlgari Amarena, Kenzo World Intense, Nina Ricci Delices, Versace Crystal Noir, Burberry Women, Montale Paris, Carolina Herrera 212 Sexy, Rabanne Fame, Bvlgari Zahira y Dolce & Gabbana L'Imperatrice 3.
-2. Validacion final de las 196 referencias, busqueda y build.
+- Kenzo Flower by Kenzo: https://www.fragrantica.com/perfume/Kenzo/Flower-by-Kenzo-72.html
+- Dior Poison Girl: https://www.fragrantica.com/perfume/Dior/Poison-Girl-35561.html
+- Bvlgari Omnia Coral: https://www.fragrantica.com/perfume/Bvlgari/Omnia-Coral-11773.html y https://www.allure.com/story/bulgari-omnia-coral-fragrance-review
+- Bvlgari Amarena: https://www.fragrantica.com/perfume/Bvlgari/Amarena-13028.html
+- Kenzo World Intense: https://www.fragrantica.com/perfume/Kenzo/Kenzo-World-Intense-45585.html
+- Nina Ricci Les Delices de Nina: https://www.fragrantica.com/perfume/Nina-Ricci/Les-Delices-de-Nina-31010.html
+- Versace Crystal Noir: https://www.fragrantica.com/perfume/Versace/Crystal-Noir-631.html
+- Burberry Women: https://www.fragrantica.com/perfume/Burberry/Burberry-Women-818.html
+- Montale Roses Musk: https://www.fragrantica.com/perfume/Montale/Roses-Musk-1148.html
+- Carolina Herrera 212 Sexy: https://www.fragrantica.com/perfume/Carolina-Herrera/212-Sexy-2965.html
+- Rabanne Fame: https://www.fragrantica.com/perfume/Rabanne/Fame-75010.html
+- Bvlgari Zahira: https://www.fragrantica.com/perfume/Bvlgari/Zahira-16406.html
+- Dolce & Gabbana L'Imperatrice 3: https://www.fragrantica.com/perfume/Dolce-Gabbana/D-G-Anthology-L-Imperatrice-3-5186.html
+
+## Estado final
+
+- Curaduria de notas olfativas completada: 196 referencias revisadas/verificadas de 196.
+- Pendiente fuera de esta curaduria: aprobacion visual/comercial de David para cualquier ajuste de UI o despliegue.

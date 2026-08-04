@@ -11788,30 +11788,32 @@
     "id": "p-petalos",
     "slug": "petalos",
     "publicName": "Petalos",
-    "inspirationReference": "Kenzo Flower",
+    "inspirationReference": "Kenzo Flower by Kenzo",
     "category": "femenina",
     "collection": "diario",
-    "shortDescription": "floral, almizclada, equilibrada y facil de llevar.",
-    "longDescription": "Poetico y delicado como petalos cayendo lentamente al viento. Inspirado en Kenzo Flower para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia femenina ideal para diario, salidas, citas.",
+    "shortDescription": "floral, empolvada, almizclada y dulce.",
+    "longDescription": "Iconica y empolvada con rosa bulgara, espino blanco, cassis, violeta de Parma, rosa, jazmin, opoponax, vainilla, almizcle blanco y maderas suaves. Inspirado en Flower by Kenzo.",
+    "bestFor": "Clientes que buscan una fragancia femenina ideal para diario, oficina y regalo.",
     "concentration": "60% esencia",
     "duration": "6 a 8 horas",
     "intensity": "media",
     "sillage": "Equilibrada y agradable",
     "notes": {
       "top": [
-        "grosellas",
-        "rosa bulgara"
+        "rosa bulgara",
+        "espino blanco",
+        "cassis"
       ],
       "heart": [
-        "violeta",
-        "rosa centifolia",
+        "violeta de Parma",
+        "rosa",
         "jazmin"
       ],
       "base": [
+        "opoponax",
         "vainilla",
         "almizcle blanco",
-        "viburnum"
+        "notas amaderadas"
       ]
     },
     "families": [
@@ -11820,14 +11822,14 @@
       "dulce"
     ],
     "moods": [
+      "delicadeza",
       "elegancia",
-      "encanto",
-      "femineidad"
+      "calma"
     ],
     "occasions": [
       "diario",
-      "salidas",
-      "citas"
+      "oficina",
+      "regalo"
     ],
     "variants": [
       {
@@ -11857,9 +11859,9 @@
     "inspirationReference": "Dior Poison Girl",
     "category": "femenina",
     "collection": "diario",
-    "shortDescription": "citric, floral, equilibrada y facil de llevar.",
-    "longDescription": "Magico y tentador como un elixir dulce de rosa y vainilla. Inspirado en Dior Poison Girl para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia femenina ideal para diario, salidas, citas.",
+    "shortDescription": "oriental, vainilla, floral y seductora.",
+    "longDescription": "Dulce y adictiva con naranja amarga, limon, rosa damascena, rosa de Grasse, flor de naranjo, vainilla, almendra, tonka, balsamo de Tolu, sandalo, heliotropo y cashmeran. Inspirado en Dior Poison Girl.",
+    "bestFor": "Clientes que buscan una fragancia femenina ideal para noche, citas y salidas.",
     "concentration": "60% esencia",
     "duration": "6 a 8 horas",
     "intensity": "media",
@@ -11867,35 +11869,37 @@
     "notes": {
       "top": [
         "naranja amarga",
-        "limon",
-        "mandarina"
+        "limon"
       ],
       "heart": [
-        "rosa de mayo",
-        "rosa Centifolia",
-        "datura"
+        "rosa damascena",
+        "rosa de Grasse",
+        "flor de naranjo"
       ],
       "base": [
-        "haba tonka",
         "vainilla",
+        "almendra",
+        "haba tonka",
+        "balsamo de Tolu",
         "sandalo",
-        "almizcle"
+        "heliotropo",
+        "cashmeran"
       ]
     },
     "families": [
-      "citric",
-      "floral",
-      "almizclada"
+      "oriental",
+      "dulce",
+      "floral"
     ],
     "moods": [
-      "elegancia",
-      "encanto",
-      "femineidad"
+      "seduccion",
+      "calidez",
+      "presencia"
     ],
     "occasions": [
-      "diario",
-      "salidas",
-      "citas"
+      "noche",
+      "citas",
+      "salidas"
     ],
     "variants": [
       {
@@ -12134,43 +12138,42 @@
     "inspirationReference": "Bvlgari Omnia Coral",
     "category": "femenina",
     "collection": "diario",
-    "shortDescription": "citric, floral, equilibrada y facil de llevar.",
-    "longDescription": "Vibrante y tropical como un coral vivo en aguas cristalinas. Inspirado en Bvlgari Omnia Coral para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia femenina ideal para diario, salidas, citas.",
+    "shortDescription": "frutal, floral, almizclada y luminosa.",
+    "longDescription": "Radiante y tropical con bergamota, bayas de goji, granada, hibisco, nenufar, almizcle y cedro de Virginia. Inspirado en Bvlgari Omnia Coral.",
+    "bestFor": "Clientes que buscan una fragancia femenina ideal para diario, vacaciones y clima calido.",
     "concentration": "60% esencia",
     "duration": "6 a 8 horas",
     "intensity": "media",
     "sillage": "Equilibrada y agradable",
     "notes": {
       "top": [
-        "pomelo rosa",
-        "bergamota"
+        "bergamota",
+        "bayas de goji"
       ],
       "heart": [
-        "hibisco de agua",
-        "gardenia",
-        "jazmin petale"
+        "granada",
+        "hibisco",
+        "nenufar"
       ],
       "base": [
-        "cedro blanco",
         "almizcle",
-        "granado"
+        "cedro de Virginia"
       ]
     },
     "families": [
-      "citric",
+      "frutal",
       "floral",
       "almizclada"
     ],
     "moods": [
-      "elegancia",
-      "encanto",
-      "femineidad"
+      "frescura",
+      "alegria",
+      "luminosidad"
     ],
     "occasions": [
       "diario",
-      "salidas",
-      "citas"
+      "vacaciones",
+      "clima calido"
     ],
     "variants": [
       {
@@ -12200,42 +12203,40 @@
     "inspirationReference": "Bvlgari Amarena",
     "category": "femenina",
     "collection": "diario",
-    "shortDescription": "floral, almizclada, equilibrada y facil de llevar.",
-    "longDescription": "Golosa y tentadora con cereza oscura y rosa aterciopelada. Inspirado en Bvlgari Amarena para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia femenina ideal para diario, salidas, citas.",
+    "shortDescription": "floral, frutal, dulce y empolvada.",
+    "longDescription": "Elegante y frutal con cereza, granada, tuberosa, rosa y notas empolvadas. Inspirado en Bvlgari Amarena.",
+    "bestFor": "Clientes que buscan una fragancia femenina ideal para eventos, noche y regalo.",
     "concentration": "60% esencia",
     "duration": "6 a 8 horas",
     "intensity": "media",
     "sillage": "Equilibrada y agradable",
     "notes": {
       "top": [
-        "cereza amarena",
-        "mandarina"
+        "cereza",
+        "granada",
+        "tuberosa"
       ],
       "heart": [
-        "rosa turca",
-        "jazmin sambac"
+        "rosa"
       ],
       "base": [
-        "vainilla",
-        "sandalo",
-        "almizcle"
+        "notas empolvadas"
       ]
     },
     "families": [
       "floral",
-      "almizclada",
+      "frutal",
       "dulce"
     ],
     "moods": [
       "elegancia",
-      "encanto",
-      "femineidad"
+      "misterio",
+      "dulzura"
     ],
     "occasions": [
-      "diario",
-      "salidas",
-      "citas"
+      "eventos",
+      "noche",
+      "regalo"
     ],
     "variants": [
       {
@@ -12265,39 +12266,34 @@
     "inspirationReference": "Kenzo World Intense",
     "category": "femenina",
     "collection": "firma",
-    "shortDescription": "floral, amaderada, con presencia fuerte.",
-    "longDescription": "Expansivo e intenso como un universo de flores y ambar. Inspirado en Kenzo World Intense para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia femenina ideal para noche, citas, eventos.",
+    "shortDescription": "gourmand, frutal, floral y cremosa.",
+    "longDescription": "Intensa y femenina con ciruela negra, peonia, jazmin y vainilla. Inspirado en Kenzo World Intense para clientas que buscan un floral frutal con fondo gourmand.",
+    "bestFor": "Clientes que buscan una fragancia femenina ideal para noche, citas y eventos.",
     "concentration": "60% esencia",
     "duration": "8 a 10 horas",
     "intensity": "alta",
     "sillage": "Marcada y memorable",
     "notes": {
       "top": [
-        "peonia",
-        "jazmin",
-        "rosa"
+        "ciruela negra"
       ],
       "heart": [
-        "amapola",
-        "violeta"
+        "peonia",
+        "jazmin"
       ],
       "base": [
-        "ambar gris",
-        "almizcle",
-        "sandalo",
-        "cedro"
+        "vainilla"
       ]
     },
     "families": [
-      "floral",
-      "amaderada",
-      "almizclada"
+      "gourmand",
+      "frutal",
+      "floral"
     ],
     "moods": [
-      "elegancia",
-      "encanto",
-      "femineidad"
+      "presencia",
+      "seduccion",
+      "calidez"
     ],
     "occasions": [
       "noche",
@@ -12329,47 +12325,45 @@
     "id": "p-golosina",
     "slug": "golosina",
     "publicName": "Golosina",
-    "inspirationReference": "Nina Ricci Delices",
+    "inspirationReference": "Nina Ricci Les Delices de Nina",
     "category": "femenina",
     "collection": "diario",
-    "shortDescription": "amaderada, citric, equilibrada y facil de llevar.",
-    "longDescription": "Dulce y juguetona como una golosina envuelta en papel brillante. Inspirado en Nina Ricci Delices para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia femenina ideal para diario, salidas, citas.",
+    "shortDescription": "gourmand, frutal, dulce y juvenil.",
+    "longDescription": "Dulce y chispeante con limon, mandarina, fresa, caramelo blanco, praline, frambuesa y almizcle blanco. Inspirado en Nina Ricci Les Delices de Nina.",
+    "bestFor": "Clientes que buscan una fragancia femenina ideal para diario, regalo y salidas.",
     "concentration": "60% esencia",
     "duration": "6 a 8 horas",
     "intensity": "media",
     "sillage": "Equilibrada y agradable",
     "notes": {
       "top": [
-        "manzana caramelizada",
         "limon",
         "mandarina"
       ],
       "heart": [
-        "rosa de Bulgaria",
-        "magnolia",
-        "jazmin"
+        "fresa",
+        "caramelo blanco"
       ],
       "base": [
-        "cedro",
-        "almizcle",
-        "notas amaderadas"
+        "praline",
+        "frambuesa",
+        "almizcle blanco"
       ]
     },
     "families": [
-      "amaderada",
-      "citric",
-      "floral"
+      "gourmand",
+      "frutal",
+      "dulce"
     ],
     "moods": [
-      "elegancia",
-      "encanto",
-      "femineidad"
+      "dulzura",
+      "alegria",
+      "juventud"
     ],
     "occasions": [
       "diario",
-      "salidas",
-      "citas"
+      "regalo",
+      "salidas"
     ],
     "variants": [
       {
@@ -12399,41 +12393,40 @@
     "inspirationReference": "Versace Crystal Noir",
     "category": "femenina",
     "collection": "firma",
-    "shortDescription": "especiada, oriental, con presencia fuerte.",
-    "longDescription": "Nocturna y brillante como cristales oscuros bajo la luz de la luna. Inspirado en Versace Crystal Noir para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia femenina ideal para noche, citas, eventos.",
+    "shortDescription": "oriental, especiada, floral y nocturna.",
+    "longDescription": "Sensual y oscura con pimienta, jengibre, cardamomo, coco, gardenia, flor de naranjo, peonia, sandalo, almizcle y ambar. Inspirado en Versace Crystal Noir.",
+    "bestFor": "Clientes que buscan una fragancia femenina ideal para noche, citas y eventos.",
     "concentration": "60% esencia",
     "duration": "8 a 10 horas",
     "intensity": "alta",
     "sillage": "Profunda y envolvente",
     "notes": {
       "top": [
-        "jengibre",
         "pimienta",
-        "gardenia"
+        "jengibre",
+        "cardamomo"
       ],
       "heart": [
         "coco",
-        "peonia",
+        "gardenia",
         "flor de naranjo",
-        "acordes afrutados"
+        "peonia"
       ],
       "base": [
         "sandalo",
         "almizcle",
-        "cachemira",
         "ambar"
       ]
     },
     "families": [
-      "especiada",
       "oriental",
-      "almizclada"
+      "especiada",
+      "floral"
     ],
     "moods": [
-      "seguridad",
-      "estilo",
-      "presencia"
+      "misterio",
+      "seduccion",
+      "elegancia"
     ],
     "occasions": [
       "noche",
@@ -12468,46 +12461,46 @@
     "inspirationReference": "Burberry Women",
     "category": "femenina",
     "collection": "diario",
-    "shortDescription": "floral, amaderada, equilibrada y facil de llevar.",
-    "longDescription": "Calido y acogedor como un abrigo de cachemir en otono. Inspirado en Burberry Women para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia femenina ideal para diario, salidas, citas.",
+    "shortDescription": "frutal, floral, dulce y acogedora.",
+    "longDescription": "Calida y confortable con durazno, albaricoque, pera, grosella negra, manzana verde, sandalo, jazmin, musgo, vainilla, cedro y almizcle. Inspirado en Burberry Women.",
+    "bestFor": "Clientes que buscan una fragancia femenina ideal para diario, oficina y clima fresco.",
     "concentration": "60% esencia",
     "duration": "6 a 8 horas",
     "intensity": "media",
     "sillage": "Equilibrada y agradable",
     "notes": {
       "top": [
+        "durazno",
+        "albaricoque",
+        "pera",
         "grosella negra",
-        "manzana verde",
-        "pera"
+        "manzana verde"
       ],
       "heart": [
+        "sandalo",
         "jazmin",
-        "rosa",
-        "musgo",
-        "durazno"
+        "musgo"
       ],
       "base": [
-        "sandalo",
-        "almizcle",
+        "vainilla",
         "cedro",
-        "vainilla"
+        "almizcle"
       ]
     },
     "families": [
+      "frutal",
       "floral",
-      "amaderada",
       "dulce"
     ],
     "moods": [
-      "elegancia",
-      "encanto",
-      "femineidad"
+      "calidez",
+      "cercania",
+      "elegancia"
     ],
     "occasions": [
       "diario",
-      "salidas",
-      "citas"
+      "oficina",
+      "regalo"
     ],
     "variants": [
       {
@@ -12606,47 +12599,41 @@
     "id": "p-bohemia",
     "slug": "bohemia",
     "publicName": "Bohemia",
-    "inspirationReference": "Montale Paris",
+    "inspirationReference": "Montale Roses Musk",
     "category": "femenina",
     "collection": "firma",
-    "shortDescription": "floral, oriental, con presencia fuerte.",
-    "longDescription": "Libre y artistica como las calles bohemias de Paris. Inspirado en Montale Paris para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia femenina ideal para noche, citas, eventos.",
+    "shortDescription": "floral, almizclada, amaderada y elegante.",
+    "longDescription": "Directa y elegante con rosa, jazmin y almizcle. Inspirado en Montale Roses Musk para clientas que buscan una rosa limpia y potente.",
+    "bestFor": "Clientes que buscan una fragancia femenina ideal para eventos, oficina y regalo.",
     "concentration": "60% esencia",
     "duration": "8 a 10 horas",
     "intensity": "alta",
     "sillage": "Profunda y envolvente",
     "notes": {
       "top": [
-        "mandarina",
-        "bergamota",
-        "citricos"
+        "rosa"
       ],
       "heart": [
-        "rosa de mayo",
-        "jazmin",
-        "notas florales"
+        "jazmin"
       ],
       "base": [
-        "almizcle",
-        "sandalo",
-        "ambar"
+        "almizcle"
       ]
     },
     "families": [
       "floral",
-      "oriental",
-      "almizclada"
+      "almizclada",
+      "amaderada"
     ],
     "moods": [
       "elegancia",
-      "encanto",
-      "femineidad"
+      "presencia",
+      "limpieza"
     ],
     "occasions": [
-      "noche",
-      "citas",
-      "eventos"
+      "eventos",
+      "oficina",
+      "regalo"
     ],
     "variants": [
       {
@@ -12676,44 +12663,49 @@
     "inspirationReference": "Carolina Herrera 212 Sexy",
     "category": "femenina",
     "collection": "diario",
-    "shortDescription": "citric, almizclada, equilibrada y facil de llevar.",
-    "longDescription": "Sutil y provocadora como una insinuacion que deja todo a la imaginacion. Inspirado en Carolina Herrera 212 Sexy para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia femenina ideal para diario, salidas, citas.",
+    "shortDescription": "oriental, floral, dulce y sensual.",
+    "longDescription": "Coqueta y envolvente con pimienta rosa, mandarina, bergamota, algodon de azucar, gardenia, flores, pelargonio, rosa, vainilla, almizcle, sandalo, caramelo, violeta y pachuli. Inspirado en Carolina Herrera 212 Sexy.",
+    "bestFor": "Clientes que buscan una fragancia femenina ideal para citas, noche y salidas.",
     "concentration": "60% esencia",
     "duration": "6 a 8 horas",
     "intensity": "media",
     "sillage": "Equilibrada y agradable",
     "notes": {
       "top": [
-        "bergamota",
         "pimienta rosa",
-        "mandarina"
+        "mandarina",
+        "bergamota"
       ],
       "heart": [
+        "algodon de azucar",
         "gardenia",
-        "geranio",
-        "algodon"
+        "flores",
+        "pelargonio",
+        "rosa"
       ],
       "base": [
-        "sandalo",
+        "vainilla",
         "almizcle",
-        "cachemira"
+        "sandalo",
+        "caramelo",
+        "violeta",
+        "pachuli"
       ]
     },
     "families": [
-      "citric",
-      "almizclada",
-      "amaderada"
+      "oriental",
+      "floral",
+      "dulce"
     ],
     "moods": [
-      "seguridad",
-      "estilo",
-      "presencia"
+      "seduccion",
+      "coqueteo",
+      "calidez"
     ],
     "occasions": [
-      "diario",
-      "salidas",
-      "citas"
+      "citas",
+      "noche",
+      "salidas"
     ],
     "variants": [
       {
@@ -12740,12 +12732,12 @@
     "id": "p-fama",
     "slug": "fama",
     "publicName": "Fama",
-    "inspirationReference": "Paco Rabanne Fame",
+    "inspirationReference": "Rabanne Fame",
     "category": "femenina",
     "collection": "diario",
-    "shortDescription": "amaderada, dulce, equilibrada y facil de llevar.",
-    "longDescription": "Deslumbrante y memorable como una estrella que brilla con luz propia. Inspirado en Paco Rabanne Fame para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia femenina ideal para diario, salidas, citas.",
+    "shortDescription": "frutal, floral, gourmand y moderna.",
+    "longDescription": "Radiante y moderna con mango, bergamota, jazmin, incienso, vainilla y sandalo. Inspirado en Rabanne Fame.",
+    "bestFor": "Clientes que buscan una fragancia femenina ideal para diario, salidas y eventos.",
     "concentration": "60% esencia",
     "duration": "6 a 8 horas",
     "intensity": "media",
@@ -12753,32 +12745,31 @@
     "notes": {
       "top": [
         "mango",
-        "mandarina italiana"
+        "bergamota"
       ],
       "heart": [
-        "jazmin grandiflorum",
+        "jazmin",
         "incienso"
       ],
       "base": [
-        "sandalo",
         "vainilla",
-        "cedro"
+        "sandalo"
       ]
     },
     "families": [
-      "amaderada",
-      "dulce",
-      "citric"
+      "frutal",
+      "floral",
+      "gourmand"
     ],
     "moods": [
-      "seguridad",
-      "estilo",
+      "energia",
+      "brillo",
       "presencia"
     ],
     "occasions": [
       "diario",
       "salidas",
-      "citas"
+      "eventos"
     ],
     "variants": [
       {
@@ -12808,44 +12799,38 @@
     "inspirationReference": "Bvlgari Zahira",
     "category": "femenina",
     "collection": "firma",
-    "shortDescription": "oriental, citric, con presencia fuerte.",
-    "longDescription": "Exotica y especiada como un bazar de aromas en Oriente. Inspirado en Bvlgari Zahira para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia femenina ideal para noche, citas, eventos.",
+    "shortDescription": "oriental, especiada, floral y resinosa.",
+    "longDescription": "Minimalista y oriental con canela, ylang ylang y benjui. Inspirado en Bvlgari Zahira, una referencia donde la fuente publica una piramide corta y precisa.",
+    "bestFor": "Clientes que buscan una fragancia femenina ideal para noche, eventos y citas.",
     "concentration": "60% esencia",
     "duration": "8 a 10 horas",
     "intensity": "alta",
     "sillage": "Profunda y envolvente",
     "notes": {
       "top": [
-        "naranja amarga",
-        "pimienta rosa",
-        "bergamota"
+        "canela"
       ],
       "heart": [
-        "rosa turca",
-        "azafran",
-        "oud"
+        "ylang ylang"
       ],
       "base": [
-        "sandalo",
-        "almizcle",
-        "ambar"
+        "benjui"
       ]
     },
     "families": [
       "oriental",
-      "citric",
-      "almizclada"
+      "especiada",
+      "floral"
     ],
     "moods": [
-      "seguridad",
-      "estilo",
-      "presencia"
+      "misterio",
+      "calidez",
+      "elegancia"
     ],
     "occasions": [
       "noche",
-      "citas",
-      "eventos"
+      "eventos",
+      "citas"
     ],
     "variants": [
       {
@@ -13008,44 +12993,44 @@
     "inspirationReference": "Dolce & Gabbana L'Imperatrice 3",
     "category": "femenina",
     "collection": "diario",
-    "shortDescription": "floral, amaderada, equilibrada y facil de llevar.",
-    "longDescription": "Regia y fresca como una emperatriz entre frutas y flores silvestres. Inspirado en Dolce & Gabbana L'Imperatrice 3 para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia femenina ideal para diario, salidas, citas.",
+    "shortDescription": "frutal, acuatica, floral y vibrante.",
+    "longDescription": "Jugosa y luminosa con kiwi, ruibarbo, pimienta rosa, sandia, ciclamen, jazmin, limonero, almizcle y sandalo. Inspirado en Dolce & Gabbana L'Imperatrice 3.",
+    "bestFor": "Clientes que buscan una fragancia femenina ideal para diario, vacaciones y clima calido.",
     "concentration": "60% esencia",
     "duration": "6 a 8 horas",
     "intensity": "media",
     "sillage": "Equilibrada y agradable",
     "notes": {
       "top": [
-        "sandia",
         "kiwi",
-        "pomelo rosa"
+        "ruibarbo",
+        "pimienta rosa"
       ],
       "heart": [
-        "jazmin",
-        "notas acuaticas",
-        "rosa"
+        "sandia",
+        "ciclamen",
+        "jazmin"
       ],
       "base": [
+        "limonero",
         "almizcle",
-        "sandalo",
-        "notas amaderadas"
+        "sandalo"
       ]
     },
     "families": [
-      "floral",
-      "amaderada",
-      "citric"
+      "frutal",
+      "acuatica",
+      "floral"
     ],
     "moods": [
-      "elegancia",
-      "encanto",
-      "femineidad"
+      "energia",
+      "frescura",
+      "alegria"
     ],
     "occasions": [
       "diario",
-      "salidas",
-      "citas"
+      "vacaciones",
+      "clima calido"
     ],
     "variants": [
       {
