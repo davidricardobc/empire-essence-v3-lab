@@ -2,7 +2,7 @@
 
 Objetivo: mejorar busqueda, filtros y autoridad comercial del catalogo sin inventar notas.
 
-Cobertura actual: 83 referencias revisadas/verificadas de 196 productos del catalogo.
+Cobertura actual: 93 referencias revisadas/verificadas de 196 productos del catalogo.
 
 ## Metodo
 
@@ -162,6 +162,23 @@ Este lote corrige flankers masculinos con piramides incompletas o mezcladas, esp
 | Exceso | Rabanne Black XS L'Exces for Him | Corregido | Se retiro mandarina/bergamota/especias/canela/tonka/vainilla y queda limon de Amalfi, lavanda, nagarmota, notas marinas, ambar y pachuli. |
 | Susurro | Carolina Herrera 212 Sexy Men | Corregido | Se reemplazo pimienta verde/flor de naranjo/gardenia por notas verdes, pimienta, flores, almizcle y ambar; familia pasa a oriental/especiada/amaderada. |
 
+## Lote 9 - masculinas no revisadas, bloque 3
+
+Este lote corrige referencias masculinas frescas, azules y deportivas donde el catalogo mezclaba notas de flankers o dejaba familias demasiado nocturnas.
+
+| Producto | Inspiracion | Estado | Ajuste |
+|---|---|---|---|
+| Frenesi | Carolina Herrera 212 VIP Men Wild Party | Corregido | Se reemplazo la piramide de 212 VIP Men por pimienta negra, caviar, lima, hoja de violeta y notas amaderadas. |
+| Obsidiana | Rabanne Invictus Onyx Collector Edition | Corregido menor | Se simplifico hacia el perfil fresco-amaderado de Onyx: notas marinas, pomelo, laurel, guayaco y ambar gris. |
+| Sahara | Carolina Herrera CH Men Africa | Corregido | Se reemplazo bergamota/pomelo/cardamomo/lavanda/gamuza por mandarina, pimienta rosa, salvia azul, pimiento verde, cachemira, cedro del Atlas y cafe negro. |
+| Expedicion | Victorinox Swiss Army Classic | Corregido | Se aclaro la referencia y se alinea a menta, naranja, cipres, lavanda y ambar. |
+| Calma | Ralph Lauren Polo Blue | Corregido menor | Se retiro agar y se ajusto familia a fresca/acuatica/amaderada con melon, pepino, mandarina, albahaca, salvia, geranio, gamuza, almizcle y maderas. |
+| Ignicion | Ralph Lauren Polo Red | Corregido menor | Se retiro jengibre y cedro rojo; queda arandano rojo, pomelo, limon italiano, azafran, salvia, ambar, cafe y maderas. |
+| Conexion | Calvin Klein CK IN2U for Him | Corregido | Se reemplazo toronja/notas verdes/pimienta/cardamomo por limon, hoja de tomate, vaina de cacao, cedro, almizcle blanco y vetiver. |
+| Profundo | Versace Dylan Blue | Corregido menor | `agua` pasa a notas acuaticas y se agregan hoja de higo, hoja de violeta, incienso y almizcle; familia queda fresca/amaderada/especiada. |
+| Llama | Versace Eros Flame | Corregido | Se agrega chinotto, romero, pepperwood, cedro de Texas, pachuli y musgo de roble; se cambia pimienta negra por pimienta de Madagascar. |
+| Raices | Valentino Uomo Born in Roma | Corregido | Se reemplazo cuero/notas verdes por notas minerales, sal, hoja de violeta, salvia, jengibre, vetiver ahumado y maderas. |
+
 ## Fuentes usadas en el lote 1
 
 - Creed Aventus: https://www.creedfragrances.co.uk/products/aventus y https://www.fragrantica.com/perfume/Creed/Aventus-9828.html
@@ -269,7 +286,20 @@ Este lote corrige flankers masculinos con piramides incompletas o mezcladas, esp
 - Rabanne Black XS L'Exces for Him: https://www.fragrantica.com/perfume/Rabanne/Black-XS-L-Exces-for-Him-13805.html
 - Carolina Herrera 212 Sexy Men: https://www.fragrantica.com/perfume/Carolina-Herrera/212-Sexy-Men-1054.html
 
+## Fuentes usadas en el lote 9
+
+- Carolina Herrera 212 VIP Men Wild Party: https://www.fragrantica.com/perfume/Carolina-Herrera/212-VIP-Men-Wild-Party-35781.html
+- Rabanne Invictus Onyx Collector Edition: https://www.fragrantica.com/perfume/Rabanne/Invictus-Onyx-Collector-Edition-58872.html y https://www.fragrantica.com/news/Paco-Rabanne-Invictus-Olympea-Onyx-13172.html
+- Carolina Herrera CH Men Africa: https://www.fragrantica.com/news/Carolina-Herrera-CH-Africa-6512.html
+- Victorinox Swiss Army Classic: https://www.victorinox.com/en-PL/Products/Fragrances/For-Him/Swiss-Army-Classic/p/V0000889/
+- Ralph Lauren Polo Blue: https://www.fragrantica.com/perfume/Ralph-Lauren/Polo-Blue-1198.html
+- Ralph Lauren Polo Red: https://www.fragrantica.com/perfume/Ralph-Lauren/Polo-Red-18598.html
+- Calvin Klein CK IN2U for Him: https://www.fragrantica.com/perfume/Calvin-Klein/CK-IN2U-for-Him-933.html
+- Versace Dylan Blue: https://www.fragrantica.com/perfume/Versace/Versace-Pour-Homme-Dylan-Blue-40031.html
+- Versace Eros Flame: https://www.fragrantica.com/perfume/Versace/Eros-Flame-52180.html
+- Valentino Uomo Born in Roma: https://www.fragrantica.com/perfume/Valentino/Valentino-Uomo-Born-in-Roma-55963.html
+
 ## Siguientes lotes
 
-1. Masculinas no revisadas, bloque 3: 212 VIP Wild Party, Invictus Onyx, CH Men Africa, Swiss Army, Polo Blue, Polo Red, CK In2U, Dylan Blue, Eros Flame y Valentino Born in Roma.
+1. Masculinas no revisadas, bloque 4: 212 Heroes, Invictus Victory Elixir, Invictus Victory, Phantom, Jean Marie Farina, Dolce & Gabbana The One, Hugo Boss Just Different, Hugo Boss Tonic, Lacoste Eau Fraiche y Lacoste Blue.
 2. Limpieza final de familias visibles: separar familia dominante de notas buscables para que el filtro sea preciso sin esconder opciones buenas.

@@ -3505,34 +3505,30 @@
     "inspirationReference": "Carolina Herrera 212 VIP Wild Party",
     "category": "masculina",
     "collection": "firma",
-    "shortDescription": "oriental, especiada, con presencia fuerte.",
-    "longDescription": "Festivo y electrico con frutas tropicales y especias de fiesta. Inspirado en Carolina Herrera 212 VIP Wild Party para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia masculina ideal para noche, citas, eventos.",
+    "shortDescription": "Especiada, citrica y amaderada con pimienta negra, caviar y lima.",
+    "longDescription": "Frenesi abre con pimienta negra, caviar y lima; el corazon de hoja de violeta descansa sobre notas amaderadas. Inspirado en Carolina Herrera 212 VIP Men Wild Party para clientes que buscan una masculina de fiesta con filo especiado y salino.",
+    "bestFor": "Clientes que buscan una masculina de salidas, noche y fiesta con perfil especiado moderno.",
     "concentration": "60% esencia",
     "duration": "8 a 10 horas",
     "intensity": "alta",
     "sillage": "Profunda y envolvente",
     "notes": {
       "top": [
-        "pimienta rosa",
-        "menta",
-        "maracuya"
+        "pimienta negra",
+        "caviar",
+        "lima"
       ],
       "heart": [
-        "ron",
-        "canela",
-        "clavo"
+        "hoja de violeta"
       ],
       "base": [
-        "ambar",
-        "vainilla",
-        "haba tonka"
+        "notas amaderadas"
       ]
     },
     "families": [
-      "oriental",
       "especiada",
-      "dulce"
+      "citric",
+      "amaderada"
     ],
     "moods": [
       "seduccion",
@@ -3541,8 +3537,8 @@
     ],
     "occasions": [
       "noche",
-      "citas",
-      "eventos"
+      "fiesta",
+      "salidas"
     ],
     "variants": [
       {
@@ -3572,9 +3568,9 @@
     "inspirationReference": "Paco Rabanne Invictus Onyx",
     "category": "masculina",
     "collection": "firma",
-    "shortDescription": "especiada, oriental, con presencia fuerte.",
-    "longDescription": "Oscuro y mineral como piedra volcanica pulida por el tiempo. Inspirado en Paco Rabanne Invictus Onyx para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia masculina ideal para noche, citas, eventos.",
+    "shortDescription": "Acuatica y amaderada con notas marinas, guayaco y ambar gris.",
+    "longDescription": "Obsidiana conserva el caracter fresco-amaderado de Invictus Onyx: notas marinas en salida, un pulso limpio de laurel y fondo de guayaco con ambar gris. Inspirado en Rabanne Invictus Onyx Collector Edition para clientes que quieren una lectura mas oscura y coleccionable de Invictus.",
+    "bestFor": "Clientes que buscan una masculina fresca, marina y amaderada para diario, salidas y clima calido.",
     "concentration": "60% esencia",
     "duration": "8 a 10 horas",
     "intensity": "alta",
@@ -3582,21 +3578,19 @@
     "notes": {
       "top": [
         "notas marinas",
-        "pomelo negro"
+        "pomelo"
       ],
       "heart": [
-        "hoja de laurel",
-        "pimienta negra"
+        "laurel"
       ],
       "base": [
-        "ambar oscuro",
         "guayaco",
-        "musgo"
+        "ambar gris"
       ]
     },
     "families": [
-      "especiada",
-      "oriental",
+      "acuatica",
+      "amaderada",
       "fresca"
     ],
     "moods": [
@@ -3605,9 +3599,9 @@
       "confianza"
     ],
     "occasions": [
-      "noche",
-      "citas",
-      "eventos"
+      "diario",
+      "salidas",
+      "clima calido"
     ],
     "variants": [
       {
@@ -3711,33 +3705,31 @@
     "inspirationReference": "Carolina Herrera CH Men Africa",
     "category": "masculina",
     "collection": "firma",
-    "shortDescription": "amaderada, citric, con presencia fuerte.",
-    "longDescription": "Calido y terroso como las dunas del desierto al atardecer. Inspirado en Carolina Herrera CH Men Africa para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia masculina ideal para noche, citas, eventos.",
+    "shortDescription": "Amaderada y especiada con mandarina, pimienta rosa, salvia azul y cafe negro.",
+    "longDescription": "Sahara abre con mandarina y pimienta rosa; el corazon combina salvia azul y pimiento verde sobre cachemira, cedro del Atlas y cafe negro. Inspirado en Carolina Herrera CH Men Africa para clientes que quieren una masculina calida, exotica y urbana.",
+    "bestFor": "Clientes que buscan una masculina especiada-amaderada para salidas, citas y clima templado.",
     "concentration": "60% esencia",
     "duration": "8 a 10 horas",
     "intensity": "alta",
     "sillage": "Profunda y envolvente",
     "notes": {
       "top": [
-        "bergamota",
-        "pomelo",
-        "cardamomo"
+        "mandarina",
+        "pimienta rosa"
       ],
       "heart": [
-        "artemisa",
-        "oregano",
-        "lavanda"
+        "salvia azul",
+        "pimiento verde"
       ],
       "base": [
-        "gamuza",
-        "cedro",
-        "ambar"
+        "cachemira",
+        "cedro del Atlas",
+        "cafe negro"
       ]
     },
     "families": [
       "amaderada",
-      "citric",
+      "especiada",
       "oriental"
     ],
     "moods": [
@@ -3746,9 +3738,9 @@
       "presencia"
     ],
     "occasions": [
-      "noche",
+      "salidas",
       "citas",
-      "eventos"
+      "noche"
     ],
     "variants": [
       {
@@ -3850,37 +3842,33 @@
     "id": "p-expedicion",
     "slug": "expedicion",
     "publicName": "Expedicion",
-    "inspirationReference": "Swiss Army",
+    "inspirationReference": "Victorinox Swiss Army Classic",
     "category": "masculina",
     "collection": "diario",
-    "shortDescription": "amaderada, citric, de lectura limpia.",
-    "longDescription": "Aventurero y confiable como un companero de expedicion. Inspirado en Swiss Army para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia masculina ideal para diario, oficina, salidas.",
+    "shortDescription": "Fresca y aromatica con menta, naranja, cipres, lavanda y ambar.",
+    "longDescription": "Expedicion abre con menta y naranja; el corazon mezcla cipres y lavanda sobre una base de ambar suave. Inspirado en Victorinox Swiss Army Classic para clientes que quieren una masculina limpia, natural y facil de usar.",
+    "bestFor": "Clientes que buscan una masculina fresca y confiable para diario, oficina y regalo.",
     "concentration": "60% esencia",
     "duration": "5 a 7 horas",
     "intensity": "suave",
     "sillage": "Limpia y cercana",
     "notes": {
       "top": [
-        "bergamota",
-        "mandarina",
-        "pomelo"
+        "menta",
+        "naranja"
       ],
       "heart": [
-        "lavanda",
-        "salvia",
-        "notas acuaticas"
+        "cipres",
+        "lavanda"
       ],
       "base": [
-        "cedro",
-        "sandalo",
-        "almizcle"
+        "ambar"
       ]
     },
     "families": [
-      "amaderada",
+      "fresca",
       "citric",
-      "fresca"
+      "amaderada"
     ],
     "moods": [
       "energia",
@@ -3890,7 +3878,7 @@
     "occasions": [
       "diario",
       "oficina",
-      "salidas"
+      "regalo"
     ],
     "variants": [
       {
@@ -3920,9 +3908,9 @@
     "inspirationReference": "Ralph Lauren Polo Blue",
     "category": "masculina",
     "collection": "firma",
-    "shortDescription": "almizclada, amaderada, con presencia fuerte.",
-    "longDescription": "Sereno y equilibrado como un cielo azul despejado. Inspirado en Ralph Lauren Polo Blue para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia masculina ideal para noche, citas, eventos.",
+    "shortDescription": "Fresca y acuatica con melon, pepino, mandarina y gamuza.",
+    "longDescription": "Calma abre con melon, pepino y mandarina; el corazon combina albahaca, salvia y geranio sobre gamuza, almizcle y notas amaderadas. Inspirado en Ralph Lauren Polo Blue para clientes que buscan una masculina limpia, fresca y reconocible.",
+    "bestFor": "Clientes que buscan una masculina fresca para diario, oficina, clima calido y regalo seguro.",
     "concentration": "60% esencia",
     "duration": "8 a 10 horas",
     "intensity": "alta",
@@ -3934,20 +3922,20 @@
         "mandarina"
       ],
       "heart": [
-        "salvia esclarea",
         "albahaca",
+        "salvia",
         "geranio"
       ],
       "base": [
         "gamuza",
         "almizcle",
-        "madera de agar"
+        "notas amaderadas"
       ]
     },
     "families": [
-      "almizclada",
-      "amaderada",
-      "oriental"
+      "fresca",
+      "acuatica",
+      "amaderada"
     ],
     "moods": [
       "seguridad",
@@ -3955,9 +3943,9 @@
       "presencia"
     ],
     "occasions": [
-      "noche",
-      "citas",
-      "eventos"
+      "diario",
+      "oficina",
+      "clima calido"
     ],
     "variants": [
       {
@@ -3987,34 +3975,33 @@
     "inspirationReference": "Ralph Lauren Polo Red",
     "category": "masculina",
     "collection": "firma",
-    "shortDescription": "amaderada, citric, con presencia fuerte.",
-    "longDescription": "Ardiente y dinamico con arandano rojo y cafe ahumado. Inspirado en Ralph Lauren Polo Red para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia masculina ideal para noche, citas, eventos.",
+    "shortDescription": "Citrica, especiada y amaderada con arandano rojo, azafran, cafe y ambar.",
+    "longDescription": "Ignicion abre con arandano rojo, pomelo y limon italiano; el corazon une azafran y salvia sobre ambar, cafe y notas amaderadas. Inspirado en Ralph Lauren Polo Red para clientes que quieren energia roja, calida y masculina.",
+    "bestFor": "Clientes que buscan una masculina citrica-especiada para salidas, citas y diario con presencia.",
     "concentration": "60% esencia",
     "duration": "8 a 10 horas",
     "intensity": "alta",
     "sillage": "Profunda y envolvente",
     "notes": {
       "top": [
-        "pomelo",
         "arandano rojo",
+        "pomelo",
         "limon italiano"
       ],
       "heart": [
-        "jengibre",
-        "salvia",
-        "azafran"
+        "azafran",
+        "salvia"
       ],
       "base": [
         "ambar",
-        "madera de cafe",
-        "cedro rojo"
+        "cafe",
+        "notas amaderadas"
       ]
     },
     "families": [
-      "amaderada",
       "citric",
-      "oriental"
+      "especiada",
+      "amaderada"
     ],
     "moods": [
       "seguridad",
@@ -4022,9 +4009,9 @@
       "presencia"
     ],
     "occasions": [
-      "noche",
+      "salidas",
       "citas",
-      "eventos"
+      "diario"
     ],
     "variants": [
       {
@@ -4054,9 +4041,9 @@
     "inspirationReference": "Calvin Klein CK In2U",
     "category": "masculina",
     "collection": "firma",
-    "shortDescription": "amaderada, citric, con presencia fuerte.",
-    "longDescription": "Magnetico y moderno que crea puentes entre almas afines. Inspirado en Calvin Klein CK In2U para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia masculina ideal para noche, citas, eventos.",
+    "shortDescription": "Citrica, verde y amaderada con limon, hoja de tomate, cacao y vetiver.",
+    "longDescription": "Conexion abre con limon y hoja de tomate; el corazon de vaina de cacao descansa sobre cedro, almizcle blanco y vetiver. Inspirado en Calvin Klein CK IN2U for Him para clientes que buscan una masculina fresca, joven y directa.",
+    "bestFor": "Clientes que buscan una fragancia fresca casual para diario, universidad, oficina y clima calido.",
     "concentration": "60% esencia",
     "duration": "8 a 10 horas",
     "intensity": "alta",
@@ -4064,24 +4051,21 @@
     "notes": {
       "top": [
         "limon",
-        "toronja",
-        "notas verdes"
+        "hoja de tomate"
       ],
       "heart": [
-        "cacao",
-        "pimienta negra",
-        "cardamomo"
+        "vaina de cacao"
       ],
       "base": [
         "cedro",
-        "vetiver",
-        "almizcle"
+        "almizcle blanco",
+        "vetiver"
       ]
     },
     "families": [
-      "amaderada",
       "citric",
-      "especiada"
+      "fresca",
+      "amaderada"
     ],
     "moods": [
       "seguridad",
@@ -4089,9 +4073,9 @@
       "presencia"
     ],
     "occasions": [
-      "noche",
-      "citas",
-      "eventos"
+      "diario",
+      "oficina",
+      "clima calido"
     ],
     "variants": [
       {
@@ -4121,38 +4105,38 @@
     "inspirationReference": "Versace Dylan Blue",
     "category": "masculina",
     "collection": "firma",
-    "shortDescription": "citric, especiada, con presencia fuerte.",
-    "longDescription": "Profundo y envolvente como el mar Mediterraneo al anochecer. Inspirado en Versace Dylan Blue para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia masculina ideal para noche, citas, eventos.",
+    "shortDescription": "Aromatica y azul con bergamota, notas acuaticas, higo, ambroxan e incienso.",
+    "longDescription": "Profundo abre con bergamota de Calabria, notas acuaticas, pomelo y hoja de higo; el corazon mezcla ambroxan, pimienta negra, pachuli, hoja de violeta y papiro sobre incienso, almizcle, tonka y azafran. Inspirado en Versace Dylan Blue para clientes que quieren una masculina azul moderna y versatil.",
+    "bestFor": "Clientes que buscan una masculina azul para diario, noche ligera, oficina y salidas.",
     "concentration": "60% esencia",
     "duration": "8 a 10 horas",
     "intensity": "alta",
     "sillage": "Marcada y memorable",
     "notes": {
       "top": [
-        "bergamota calabresa",
+        "bergamota de Calabria",
+        "notas acuaticas",
         "pomelo",
-        "agua",
-        "higo"
+        "hoja de higo"
       ],
       "heart": [
-        "violeta",
-        "papiro",
-        "pachuli",
+        "ambroxan",
         "pimienta negra",
-        "ambroxan"
+        "pachuli",
+        "hoja de violeta",
+        "papiro"
       ],
       "base": [
+        "incienso",
         "almizcle",
         "haba tonka",
-        "azafran",
-        "incienso"
+        "azafran"
       ]
     },
     "families": [
-      "citric",
-      "especiada",
-      "almizclada"
+      "fresca",
+      "amaderada",
+      "especiada"
     ],
     "moods": [
       "seguridad",
@@ -4160,9 +4144,9 @@
       "presencia"
     ],
     "occasions": [
-      "noche",
-      "citas",
-      "eventos"
+      "diario",
+      "oficina",
+      "salidas"
     ],
     "variants": [
       {
@@ -4192,9 +4176,9 @@
     "inspirationReference": "Versace Eros Flame",
     "category": "masculina",
     "collection": "diario",
-    "shortDescription": "citric, floral, equilibrada y facil de llevar.",
-    "longDescription": "Ardiente y apasionado con citricos que encienden y maderas que abrasan. Inspirado en Versace Eros Flame para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia masculina ideal para diario, salidas, citas.",
+    "shortDescription": "Citrica y especiada con mandarina, chinotto, romero, geranio y vainilla.",
+    "longDescription": "Llama abre con mandarina, pimienta de Madagascar, limon, chinotto y romero; el corazon combina geranio, rosa y pepperwood sobre vainilla, tonka, sandalo, cedro de Texas, pachuli y musgo de roble. Inspirado en Versace Eros Flame para clientes que quieren energia citrica con fondo calido.",
+    "bestFor": "Clientes que buscan una masculina citrica-especiada para salidas, citas y diario con caracter.",
     "concentration": "60% esencia",
     "duration": "6 a 8 horas",
     "intensity": "media",
@@ -4202,27 +4186,29 @@
     "notes": {
       "top": [
         "mandarina",
+        "pimienta de Madagascar",
         "limon",
-        "pimienta negra",
-        "naranja amarga",
-        "pomelo"
+        "chinotto",
+        "romero"
       ],
       "heart": [
         "geranio",
         "rosa",
-        "pimienta rosa"
+        "pepperwood"
       ],
       "base": [
-        "sandalo",
         "vainilla",
         "haba tonka",
-        "cedro del Atlas"
+        "sandalo",
+        "cedro de Texas",
+        "pachuli",
+        "musgo de roble"
       ]
     },
     "families": [
       "citric",
-      "floral",
-      "especiada"
+      "especiada",
+      "amaderada"
     ],
     "moods": [
       "seguridad",
@@ -4230,9 +4216,9 @@
       "presencia"
     ],
     "occasions": [
-      "diario",
       "salidas",
-      "citas"
+      "citas",
+      "diario"
     ],
     "variants": [
       {
@@ -4262,32 +4248,32 @@
     "inspirationReference": "Valentino Born in Roma",
     "category": "masculina",
     "collection": "firma",
-    "shortDescription": "amaderada, acuatica, con presencia fuerte.",
-    "longDescription": "Arraigado y cosmopolita con salvia silvestre y vetiver profundo. Inspirado en Valentino Born in Roma para clientes que quieren una referencia clara y facil de recomendar.",
-    "bestFor": "Clientes que buscan una fragancia masculina ideal para noche, citas, eventos.",
+    "shortDescription": "Amaderada y mineral con sal, hoja de violeta, salvia, jengibre y vetiver.",
+    "longDescription": "Raices abre con notas minerales, hoja de violeta y sal; el corazon mezcla salvia y jengibre sobre vetiver ahumado y notas amaderadas. Inspirado en Valentino Uomo Born in Roma para clientes que quieren una masculina moderna, mineral y elegante.",
+    "bestFor": "Clientes que buscan una masculina amaderada-mineral para citas, oficina y salidas de noche.",
     "concentration": "60% esencia",
     "duration": "8 a 10 horas",
     "intensity": "alta",
     "sillage": "Marcada y memorable",
     "notes": {
       "top": [
-        "salvia esclarea",
-        "bayas de enebro"
+        "notas minerales",
+        "hoja de violeta",
+        "sal"
       ],
       "heart": [
-        "minerales",
-        "notas verdes"
+        "salvia",
+        "jengibre"
       ],
       "base": [
-        "vetiver",
-        "notas amaderadas",
-        "cuero"
+        "vetiver ahumado",
+        "notas amaderadas"
       ]
     },
     "families": [
       "amaderada",
-      "acuatica",
-      "dulce"
+      "especiada",
+      "fresca"
     ],
     "moods": [
       "seduccion",
@@ -4295,9 +4281,9 @@
       "noche"
     ],
     "occasions": [
-      "noche",
       "citas",
-      "eventos"
+      "oficina",
+      "noche"
     ],
     "variants": [
       {

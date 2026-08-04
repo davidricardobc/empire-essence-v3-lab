@@ -189,6 +189,16 @@ const productSpecificAliases: Record<string, string[]> = {
   "p-contraste": ["black xs angeles", "black xs los angeles", "black xs la"],
   "p-exceso": ["black xs exces", "black xs l exces", "black xs l'exces", "black xs excess"],
   "p-susurro": ["212 sexy men", "carolina herrera 212 sexy men", "212 sexy hombre"],
+  "p-frenesi": ["212 vip men wild party", "212 vip wild party hombre", "wild party men"],
+  "p-obsidiana": ["invictus onyx", "invictus onyx collector", "onyx invictus"],
+  "p-sahara": ["ch men africa", "carolina herrera ch africa", "ch africa hombre"],
+  "p-expedicion": ["swiss army", "victorinox swiss army", "swiss army classic"],
+  "p-calma": ["polo blue", "ralph lauren polo blue"],
+  "p-ignicion": ["polo red", "ralph lauren polo red"],
+  "p-conexion": ["ck in2u him", "ck in2u hombre", "calvin klein in2u him", "calvin klein ck in2u"],
+  "p-profundo": ["versace dylan blue", "dylan blue pour homme", "dylan blue hombre"],
+  "p-llama": ["versace eros flame", "eros flame"],
+  "p-raices": ["valentino born in roma", "valentino uomo born in roma", "born in roma uomo"],
 };
 
 export function normalizeSearchText(value: string) {
