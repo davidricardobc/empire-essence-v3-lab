@@ -23,7 +23,7 @@ Este lote cubre fragancias destacadas para pauta/top ventas y el caso reportado 
 | Ambicion | Rabanne 1 Million | Verificado | Sin cambio material; mandarina roja, pomelo, menta, canela, rosa, ambar, cuero, madera y pachuli estaban alineados. |
 | Impulso | Rabanne Invictus | Verificado | Sin cambio material en este lote; la piramide ya conserva notas marinas, pomelo, mandarina, laurel, jazmin, ambar gris, guayaco y musgo. |
 | Celebracion | Carolina Herrera Good Girl | Corregido | Se amplio la base gourmand/floral: limon, jazmin sambac, flor de naranjo, praline, ambar, almizcle, cachemira, pachuli, canela y cedro. |
-| Plenitud | Carolina Herrera 212 VIP Rose | Corregido | Durazno paso a flor de durazno y el uso se acerco a brunch/fiesta/salidas. |
+| Plenitud | Carolina Herrera 212 VIP Rose | Corregido | Durazno paso a flor de durazno y el uso se acerco a brunch/fiesta/salidas. Ajuste posterior: se retiro `fresca` de la familia visible y queda floral/dulce/frutal. |
 | Desvelo | YSL Black Opium | Corregido | Se agregaron regaliz y madera de cachemira. |
 | Extasis | Viktor & Rolf Flowerbomb | Verificado | Sin cambio material; la piramide actual mantiene te, bergamota, osmanto, orquidea, jazmin, rosa, fresia, flor de naranjo, pachuli, almizcle y vainilla. |
 | Misterio | MFK Baccarat Rouge 540 | Corregido | Se simplifico hacia EDP: azafran, jazmin, madera de ambar, ambar gris, resina de abeto y cedro. |

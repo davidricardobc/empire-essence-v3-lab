@@ -67,6 +67,7 @@ const feminineAliases = [
 ];
 
 const freshAliases = ["fresco", "fresca", "frescos", "frescas", "fresh", "limpio", "limpia"];
+const freshAliasSet = new Set(freshAliases);
 
 const aquaticAliases = [
   "acuatico",
@@ -260,6 +261,7 @@ const productSpecificAliases: Record<string, string[]> = {
   "p-hechizo": ["britney midnight fantasy", "britney spears midnight fantasy", "midnight fantasy"],
   "p-dulzura": ["ariana sweet like candy", "ariana grande sweet like candy", "sweet like candy"],
   "p-desborde": ["212 vip wild party mujer", "carolina herrera 212 vip wild party woman", "212 wild party mujer"],
+  "p-plenitud": ["212 vip rose", "carolina herrera 212 vip rose", "vip rose"],
   "p-rubor": ["212 vip rose red", "carolina herrera 212 vip rose red", "vip rose red"],
   "p-glamour": ["212 vip mujer", "carolina herrera 212 vip mujer", "212 vip women"],
   "p-opulencia": ["lady million", "paco rabanne lady million", "rabanne lady million"],
@@ -344,6 +346,10 @@ function buildProductSearchTokens(product: Product) {
 
 function productContainsSearchToken(product: Product, token: string) {
   const normalizedToken = normalizeSearchText(token);
+
+  if (freshAliasSet.has(normalizedToken)) {
+    return product.families.includes("fresca");
+  }
 
   if (normalizedToken.length <= 3) {
     return buildProductSearchTokens(product).has(normalizedToken);

@@ -786,8 +786,8 @@
     "category": "femenina",
     "collection": "diario",
     "shortDescription": "Brillante, social y femenina sin perder clase.",
-    "longDescription": "Plenitud es fresca, burbujeante y coqueta. Funciona muy bien para planes casuales, clima calido y regalo juvenil.",
-    "bestFor": "Clientes que quieren algo femenino, fresco y social.",
+    "longDescription": "Plenitud es dulce, floral y burbujeante, con una salida chispeante de champan rosado y un corazon romantico de flor de durazno y rosa. Funciona muy bien para brunch, fiesta, salidas y regalo juvenil.",
+    "bestFor": "Clientes que quieren algo femenino, dulce, floral y social.",
     "concentration": "60% esencia",
     "duration": "6 a 8 horas",
     "intensity": "media",
@@ -808,7 +808,7 @@
     },
     "families": [
       "floral",
-      "fresca",
+      "dulce",
       "frutal"
     ],
     "moods": [
