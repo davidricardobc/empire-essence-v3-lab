@@ -114,6 +114,8 @@ Objetivo: validar pagos solo cuando el flujo WhatsApp ya este firme.
 Pendiente:
 
 - Confirmar credenciales sandbox.
+- Configurar `DATABASE_URL` con Postgres persistente antes de activar Wompi fuera de local.
+- Crear tabla base con `docs/wompi-orders-postgres.sql`.
 - Probar firma de integridad.
 - Probar redireccion a `/gracias`.
 - Probar evento en `/api/wompi/events`.

@@ -26,6 +26,7 @@ Este documento define como Empire Essence V3 evita confirmar pagos que no corres
    - Rechaza firmas invalidas con `401`.
 
 5. La referencia debe existir.
+   - En produccion, las referencias deben vivir en Postgres mediante `DATABASE_URL`.
    - Un evento firmado para una referencia no guardada se rechaza con `404`.
 
 6. El monto debe coincidir.
@@ -40,6 +41,7 @@ Produccion:
 - `WOMPI_INTEGRITY_SECRET` debe tener prefijo `prod_integrity_`.
 - `WOMPI_EVENTS_SECRET` debe tener prefijo `prod_events_`.
 - `WOMPI_PRIVATE_KEY` debe tener prefijo `prv_prod_` si se usa para consultas backend.
+- `DATABASE_URL` debe apuntar a una base Postgres persistente (Supabase, Neon o equivalente).
 
 Pruebas:
 
@@ -49,6 +51,7 @@ Pruebas:
 ## Antes de publicar
 
 - Confirmar en el dashboard de Wompi que las llaves pertenecen a la cuenta correcta de Empire Essence.
+- Crear la tabla con `docs/wompi-orders-postgres.sql` o permitir que la app la cree con un usuario Postgres con permisos suficientes.
 - Configurar URL de eventos HTTPS:
 
 ```text
@@ -56,6 +59,7 @@ https://TU-DOMINIO/api/wompi/events
 ```
 
 - Confirmar que las variables reales esten solo en Vercel Environment Variables.
+- No activar Wompi en Vercel sin `DATABASE_URL`.
 - No commitear `.env.local`, `.vercel/` ni `data/orders.json`.
 
 ## Verificacion local realizada
