@@ -26,6 +26,36 @@ Use existing validation commands for now. Add a dedicated visual smoke dependenc
 
 ---
 
+## [ERR-20260818-001] git_push_https_auth
+
+**Logged**: 2026-08-18T14:52:43-05:00
+**Priority**: medium
+**Status**: pending
+**Area**: infra
+
+### Summary
+`git push origin main` failed because the HTTPS remote could not request GitHub credentials in the non-interactive OpenClaw shell.
+
+### Error
+```text
+fatal: could not read Username for 'https://github.com': No such device or address
+```
+
+### Context
+- Command attempted: `git push origin main`
+- Project: Empire Essence V3 lab
+- Remote: `https://github.com/davidricardobc/empire-essence-v3-lab.git`
+- Environment: non-interactive shell without a configured Git credential helper for GitHub HTTPS.
+
+### Suggested Fix
+Use the locally stored GitHub token through a temporary credential path or configure `gh auth setup-git` without printing or storing secrets in the repo.
+
+### Metadata
+- Reproducible: yes
+- Related Files: none
+
+---
+
 ## [ERR-20260731-002] playwright_available_outside_project
 
 **Logged**: 2026-07-31T17:49:00Z
