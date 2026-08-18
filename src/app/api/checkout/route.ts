@@ -44,10 +44,12 @@ export async function POST(request: Request) {
 
     const totals = getCheckoutTotals(items, parsed.data.city);
     const reference = createOrderReference(parsed.data.channel === "wholesale" ? "EE-MAY" : "EE");
+    const siteUrl = new URL(request.url).origin;
     const checkoutUrl = buildWompiCheckoutUrl({
       reference,
       amountCop: totals.totalCop,
       customerEmail: parsed.data.email,
+      siteUrl,
     });
     const whatsappUrl = buildWhatsappUrl(
       buildOrderMessage({

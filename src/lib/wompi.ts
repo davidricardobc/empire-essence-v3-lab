@@ -27,10 +27,12 @@ export function buildWompiCheckoutUrl({
   reference,
   amountCop,
   customerEmail,
+  siteUrl,
 }: {
   reference: string;
   amountCop: number;
   customerEmail: string;
+  siteUrl?: string;
 }) {
   const publicKey = wompiConfig.publicKey;
   const integritySecret = wompiConfig.integritySecret;
@@ -38,8 +40,8 @@ export function buildWompiCheckoutUrl({
 
   const amountInCents = amountCop * 100;
   const currency = wompiConfig.currency;
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL;
-  const redirectUrl = siteUrl?.startsWith("https://") ? `${siteUrl}/gracias?ref=${reference}` : null;
+  const checkoutSiteUrl = siteUrl ?? process.env.NEXT_PUBLIC_SITE_URL;
+  const redirectUrl = checkoutSiteUrl?.startsWith("https://") ? `${checkoutSiteUrl}/gracias?ref=${reference}` : null;
   const signature = crypto
     .createHash("sha256")
     .update(`${reference}${amountInCents}${currency}${integritySecret}`)
