@@ -1,8 +1,3 @@
 {
-  "crons": [
-    {
-      "path": "/api/orders/sync-pending",
-      "schedule": "*/10 * * * *"
-    }
-  ]
+  "framework": "nextjs"
 }
