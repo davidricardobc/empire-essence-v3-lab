@@ -120,3 +120,44 @@ export function mapWompiTransactionStatus(status: string) {
       return { paymentStatus: "pending" as const, orderStatus: "pending" as const };
   }
 }
+
+type WompiTransaction = {
+  id?: string;
+  reference?: string;
+  status?: string;
+  amount_in_cents?: number;
+  finalized_at?: string | null;
+  created_at?: string;
+};
+
+type WompiTransactionsResponse = {
+  data?: WompiTransaction[];
+};
+
+export async function getLatestWompiTransaction(reference: string) {
+  const privateKey = wompiConfig.privateKey;
+  if (!privateKey) return null;
+
+  const url = new URL("https://production.wompi.co/v1/transactions");
+  url.searchParams.set("reference", reference);
+
+  const response = await fetch(url, {
+    headers: {
+      Authorization: `Bearer ${privateKey}`,
+    },
+    cache: "no-store",
+  });
+
+  if (!response.ok) return null;
+
+  const payload = (await response.json()) as WompiTransactionsResponse;
+  const transactions = payload.data ?? [];
+
+  return transactions
+    .filter((transaction) => transaction.reference === reference)
+    .sort((a, b) => {
+      const aTime = Date.parse(a.finalized_at ?? a.created_at ?? "");
+      const bTime = Date.parse(b.finalized_at ?? b.created_at ?? "");
+      return (Number.isNaN(bTime) ? 0 : bTime) - (Number.isNaN(aTime) ? 0 : aTime);
+    })[0] ?? null;
+}

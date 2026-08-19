@@ -1,10 +1,27 @@
 import Link from "next/link";
 import { CheckCircle2 } from "lucide-react";
-import { getOrder } from "@/lib/order-store";
+import { getOrder, updateOrderPayment } from "@/lib/order-store";
+import { getLatestWompiTransaction, mapWompiTransactionStatus } from "@/lib/wompi";
 
 export default async function ThanksPage({ searchParams }: { searchParams?: Promise<{ ref?: string }> }) {
   const params = (await searchParams) ?? {};
-  const order = params.ref ? await getOrder(params.ref) : null;
+  let order = params.ref ? await getOrder(params.ref) : null;
+
+  if (params.ref && order && order.paymentProvider === "wompi" && order.paymentStatus !== "paid") {
+    const transaction = await getLatestWompiTransaction(params.ref);
+
+    if (transaction?.amount_in_cents === order.totalCop * 100) {
+      const mapped = mapWompiTransactionStatus(transaction.status ?? "PENDING");
+      const updatedOrder = await updateOrderPayment(params.ref, {
+        ...mapped,
+        wompiTransactionId: transaction.id ?? null,
+        wompiStatus: transaction.status ?? "PENDING",
+      });
+
+      order = updatedOrder ?? order;
+    }
+  }
+
   const statusLabel =
     order?.paymentStatus === "paid"
       ? "Pago confirmado"
