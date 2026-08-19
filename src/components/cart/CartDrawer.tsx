@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { MessageCircle, X } from "lucide-react";
+import { CreditCard, MessageCircle, Trash2, X } from "lucide-react";
 import { useCart } from "@/components/cart/CartProvider";
 import { formatCop } from "@/lib/currency";
 import { buildCartAssistMessage, buildWhatsappUrl } from "@/lib/whatsapp";
@@ -12,6 +12,15 @@ export function CartDrawer() {
   const retailItems = items.filter((item) => item.channel === "retail");
   const wholesaleItems = items.filter((item) => item.channel === "wholesale");
   const hasMixedChannels = retailItems.length > 0 && wholesaleItems.length > 0;
+  const checkoutChannels: { channel: SalesChannel; label: string }[] = [];
+
+  if (retailItems.length) {
+    checkoutChannels.push({ channel: "retail", label: hasMixedChannels ? "Pagar retail" : "Pagar pedido" });
+  }
+
+  if (wholesaleItems.length) {
+    checkoutChannels.push({ channel: "wholesale", label: hasMixedChannels ? "Pagar mayorista" : "Pagar pedido" });
+  }
 
   return (
     <>
@@ -51,7 +60,7 @@ export function CartDrawer() {
                 <CartChannelSection
                   title="Pedido retail"
                   description="Ideal si vas a pagar online o cerrar por WhatsApp con entrega para cliente final."
-                  actionLabel="Ir al checkout retail"
+                  actionLabel="Pagar pedido retail"
                   whatsappLabel="Cerrar retail por WhatsApp"
                   items={retailItems}
                   channel="retail"
@@ -64,7 +73,7 @@ export function CartDrawer() {
                 <CartChannelSection
                   title="Pedido mayorista"
                   description="Úsalo para kits por volumen y seguimiento comercial por WhatsApp o checkout."
-                  actionLabel="Ir al checkout mayorista"
+                  actionLabel="Pagar pedido mayorista"
                   whatsappLabel="Cerrar mayorista por WhatsApp"
                   items={wholesaleItems}
                   channel="wholesale"
@@ -76,7 +85,19 @@ export function CartDrawer() {
             </div>
 
             <div className="drawer-actions">
-              <button type="button" className="ghost-button full" onClick={clearCart}>
+              {checkoutChannels.map((item) => (
+                <Link
+                  key={item.channel}
+                  href={`/checkout?channel=${item.channel}`}
+                  className="primary-button full"
+                  onClick={closeDrawer}
+                >
+                  <CreditCard size={18} />
+                  {item.label}
+                </Link>
+              ))}
+              <button type="button" className="drawer-clear-button" onClick={clearCart}>
+                <Trash2 size={15} />
                 Vaciar carrito
               </button>
             </div>

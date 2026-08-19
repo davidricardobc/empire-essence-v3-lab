@@ -1799,6 +1799,24 @@ h3 {
   margin-top: 0;
 }
 
+.drawer-clear-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  min-height: 38px;
+  border: 0;
+  background: transparent;
+  color: rgba(247, 240, 230, 0.6);
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.drawer-clear-button:hover,
+.drawer-clear-button:focus-visible {
+  color: #f1b7aa;
+}
+
 .drawer-confidence {
   display: grid;
   gap: 8px;
