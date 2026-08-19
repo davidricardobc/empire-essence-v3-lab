@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { getOrder, updateOrderPayment } from "@/lib/order-store";
+import { notifyOrder } from "@/lib/order-notifications";
 import { mapWompiTransactionStatus, verifyWompiEventChecksum } from "@/lib/wompi";
 
 type WompiTransaction = {
@@ -66,6 +67,10 @@ export async function POST(request: Request) {
     wompiTransactionId: transaction?.id ?? null,
     wompiStatus: transaction?.status ?? "PENDING",
   });
+
+  if (order && currentOrder.paymentStatus !== order.paymentStatus) {
+    await notifyOrder("order.payment_updated", order);
+  }
 
   return NextResponse.json({
     ok: true,

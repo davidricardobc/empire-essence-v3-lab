@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { CheckCircle2 } from "lucide-react";
 import { getOrder, updateOrderPayment } from "@/lib/order-store";
+import { notifyOrder } from "@/lib/order-notifications";
 import { getLatestWompiTransaction, mapWompiTransactionStatus } from "@/lib/wompi";
 
 export default async function ThanksPage({ searchParams }: { searchParams?: Promise<{ ref?: string }> }) {
@@ -17,6 +18,10 @@ export default async function ThanksPage({ searchParams }: { searchParams?: Prom
         wompiTransactionId: transaction.id ?? null,
         wompiStatus: transaction.status ?? "PENDING",
       });
+
+      if (updatedOrder && order.paymentStatus !== updatedOrder.paymentStatus) {
+        await notifyOrder("order.payment_updated", updatedOrder);
+      }
 
       order = updatedOrder ?? order;
     }

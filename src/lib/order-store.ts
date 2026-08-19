@@ -209,6 +209,21 @@ async function getOrderFromPostgres(sql: SqlClient, reference: string) {
   return row ? rowToOrder(row) : null;
 }
 
+async function listPendingWompiOrdersFromPostgres(sql: SqlClient, limit: number) {
+  await ensurePostgresSchema(sql);
+
+  const rows = await sql<OrderRow[]>`
+    SELECT *
+    FROM order_records
+    WHERE payment_provider = 'wompi'
+      AND payment_status IN ('initiated', 'pending')
+    ORDER BY created_at DESC
+    LIMIT ${limit}
+  `;
+
+  return rows.map(rowToOrder);
+}
+
 async function updateOrderPaymentInPostgres(
   sql: SqlClient,
   reference: string,
@@ -256,6 +271,17 @@ export async function getOrder(reference: string) {
 
   const store = await readJsonStore();
   return store[reference] ?? null;
+}
+
+export async function listPendingWompiOrders(limit = 25) {
+  const sql = getSqlClient();
+  if (sql) return listPendingWompiOrdersFromPostgres(sql, limit);
+
+  const store = await readJsonStore();
+  return Object.values(store)
+    .filter((order) => order.paymentProvider === "wompi" && ["initiated", "pending"].includes(order.paymentStatus))
+    .sort((left, right) => right.createdAt.localeCompare(left.createdAt))
+    .slice(0, limit);
 }
 
 export async function updateOrderPayment(

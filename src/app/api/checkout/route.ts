@@ -3,6 +3,7 @@ import { buildWhatsappUrl, buildOrderMessage } from "@/lib/whatsapp";
 import { buildWompiCheckoutUrl } from "@/lib/wompi";
 import { checkoutSchema, createOrderReference, getCheckoutTotals, normalizeCartItems } from "@/lib/checkout";
 import { saveOrder } from "@/lib/order-store";
+import { notifyOrder } from "@/lib/order-notifications";
 import { WHOLESALE_MIN_UNITS } from "@/lib/pricing";
 
 export async function POST(request: Request) {
@@ -64,7 +65,7 @@ export async function POST(request: Request) {
     const paymentStatus = checkoutUrl ? "initiated" : "pending";
     const orderStatus = "pending";
 
-    await saveOrder({
+    const order = await saveOrder({
       reference,
       channel: parsed.data.channel,
       customer: {
@@ -88,6 +89,8 @@ export async function POST(request: Request) {
       createdAt: new Date().toISOString(),
       updatedAt: new Date().toISOString(),
     });
+
+    await notifyOrder("order.created", order);
 
     return NextResponse.json({
       ok: true,
