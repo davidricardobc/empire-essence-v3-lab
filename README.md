@@ -38,6 +38,9 @@ Copiar `.env.example` a `.env.local` y configurar:
 - `WOMPI_INTEGRITY_SECRET` opcional para firma de integridad del checkout
 - `WOMPI_EVENTS_SECRET` requerido para validar eventos/webhooks de pago
 - `WOMPI_PRIVATE_KEY` opcional si luego se consulta estado de transacciones desde backend
+- `ORDER_NOTIFICATION_WEBHOOK` opcional para enviar pedidos a n8n, Telegram, email u otro receptor interno
+- `ORDER_NOTIFICATION_SECRET` opcional; se envia como header `X-Empire-Notification-Secret`
+- `ORDER_SYNC_SECRET` opcional para proteger `/api/orders/sync-pending`
 
 Sin Wompi configurado, el checkout opera en modo fallback y genera una URL de WhatsApp con el pedido completo.
 
@@ -48,6 +51,24 @@ https://TU-DOMINIO/api/wompi/events
 ```
 
 La redireccion a `/gracias` no confirma pago por si sola; la confirmacion confiable llega por el evento validado.
+
+## Notificaciones de Pedido
+
+Si `ORDER_NOTIFICATION_WEBHOOK` esta configurado, el sitio envia una peticion `POST` cuando:
+
+- Se crea un pedido desde `/api/checkout`.
+- Wompi confirma o cambia el estado de pago desde `/api/wompi/events`, `/gracias` o `/api/orders/sync-pending`.
+
+El payload incluye:
+
+- `event`: `order.created` u `order.payment_updated`.
+- `action`: siguiente paso operativo sugerido.
+- `text`: resumen listo para reenviar por Telegram, WhatsApp o email.
+- `links.order`: enlace a `/gracias?ref=...`.
+- `links.customerWhatsapp`: enlace directo para escribirle al cliente.
+- `order`: datos estructurados del cliente, productos, totales y estado de pago.
+
+Recomendacion operativa: conectar `ORDER_NOTIFICATION_WEBHOOK` a un webhook de n8n y desde ahi reenviar `text` a Telegram/email o abrir una tarea interna. Si se configura `ORDER_NOTIFICATION_SECRET`, validar el header antes de procesar la notificacion.
 
 ## Rutas Principales
 
