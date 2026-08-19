@@ -248,6 +248,7 @@ Use `printf '%s\n' 'text starting with dash'` when appending bullet lines.
 - Command attempted: project source search in Empire Essence V3 lab.
 - Fallback used: `grep` and `find`.
 - Recurrence: happened again on 2026-08-12 while searching Wompi env variables; `find` + `grep` fallback worked.
+- Recurrence: happened again on 2026-08-18 while verifying the production deployment; `find` + `grep` fallback worked.
 
 ### Suggested Fix
 Repair executable permissions for the bundled `rg` or route searches to the system `grep/find` fallback when this environment issue appears.
