@@ -102,8 +102,8 @@ export async function POST(request: Request) {
       checkoutUrl,
       whatsappUrl,
       message: checkoutUrl
-        ? "Pedido listo. Redirige a Wompi para pago seguro."
-        : "Pedido listo. Te llevamos a WhatsApp para confirmar disponibilidad y forma de pago.",
+        ? "Tus datos están completos. Elige cómo quieres finalizar tu compra."
+        : "Tus datos están completos. Te llevamos a WhatsApp para confirmar disponibilidad y forma de pago.",
       pricing: {
         subtotalCop: totals.subtotalCop,
         shippingCop: totals.shippingCop,

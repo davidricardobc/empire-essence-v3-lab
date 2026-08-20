@@ -14,15 +14,11 @@ export default async function CheckoutPage({
   return (
     <main className="page-main">
       <section className="shell page-hero compact-hero checkout-hero">
-        <span className="eyebrow">{channel === "wholesale" ? "Cierre mayorista" : "Cierre retail"}</span>
-        <h1>
-          {wompiEnabled
-            ? "Finaliza tu pedido con pago seguro o asistencia personalizada."
-            : "Finaliza tu pedido por WhatsApp con asistencia personalizada."}
-        </h1>
+        <span className="eyebrow">Compra segura</span>
+        <h1>Finaliza tu compra</h1>
         <p>
           {wompiEnabled
-            ? "Revisa tus datos, confirma tu selección y elige si quieres pagar en línea o cerrar por WhatsApp con un asesor."
+            ? "Revisa tus datos, confirma tu pedido y elige cómo quieres continuar."
             : "Revisa tus datos y te llevamos directo a WhatsApp con el pedido armado para confirmar disponibilidad, total final, pago y entrega."}
         </p>
       </section>

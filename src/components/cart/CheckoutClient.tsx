@@ -87,34 +87,8 @@ export function CheckoutClient({ channel, wompiEnabled }: { channel: SalesChanne
   return (
     <div className="checkout-grid">
       <form className="checkout-form panel" onSubmit={submit}>
-        <span className="eyebrow">{channel === "wholesale" ? "Checkout mayorista" : "Checkout retail"}</span>
-        <h2>Datos para cerrar tu pedido</h2>
-        <p>
-          {wompiEnabled
-            ? "Paga con seguridad o confirma tu pedido por WhatsApp si prefieres recibir ayuda antes de finalizar."
-            : "Wompi no está activo todavía. Completa tus datos y te enviamos directo a WhatsApp con tu pedido listo para cerrar."}
-        </p>
-        <div className="checkout-trust-strip" aria-label="Respaldo durante el checkout">
-          <span>Resumen con total visible antes de cerrar</span>
-          <span>Envío estimado 3 a 5 días hábiles en Colombia</span>
-          <span>Soporte por WhatsApp antes de pagar</span>
-        </div>
-        <div className="checkout-fast-close">
-          <strong>¿Vienes del catálogo?</strong>
-          <span>
-            {ready
-              ? "Tu selección ya está lista. Solo confirma datos y elige pago seguro o WhatsApp."
-              : "Estamos recuperando tu selección guardada."}
-          </span>
-        </div>
-        <div className="checkout-flow-callout">
-          <strong>Cómo funciona</strong>
-          <ol>
-            <li>Completa tus datos de entrega.</li>
-            <li>Revisa el resumen y el costo de envío.</li>
-            <li>{wompiEnabled ? "Elige pago seguro o cierre por WhatsApp." : "Te llevamos a WhatsApp con el pedido armado."}</li>
-          </ol>
-        </div>
+        <h2>Datos de entrega</h2>
+        <p>Completa tus datos para continuar con tu compra.</p>
 
         <div className="form-grid">
           <Input label="Nombre" value={form.name} onChange={(name) => setForm((current) => ({ ...current, name }))} />
@@ -147,27 +121,13 @@ export function CheckoutClient({ channel, wompiEnabled }: { channel: SalesChanne
 
         {response?.message ? (
           <div className={`form-message ${response.ok ? "success" : "error"}`}>
-            <strong>{response.ok ? "Pedido preparado" : "Necesitamos revisar algo"}</strong>
+            <strong>{response.ok ? "Todo listo" : "Necesitamos revisar algo"}</strong>
             <p>{response.message}</p>
             {!response.ok && checkoutItems.length ? (
               <a href={assistedWhatsappUrl} target="_blank" rel="noreferrer">
                 Continuar por WhatsApp
               </a>
             ) : null}
-          </div>
-        ) : null}
-
-        {ready && checkoutItems.length ? (
-          <div className="checkout-assist">
-            <strong>¿Prefieres cerrar con ayuda humana?</strong>
-            <p>
-              Envía tu pedido por WhatsApp con el resumen ya armado y confirma disponibilidad, pago y entrega sin
-              volver a explicar todo.
-            </p>
-            <a href={assistedWhatsappUrl} className="secondary-button full" target="_blank" rel="noreferrer">
-              <MessageCircle size={18} />
-              Cerrar por WhatsApp
-            </a>
           </div>
         ) : null}
 
@@ -180,8 +140,20 @@ export function CheckoutClient({ channel, wompiEnabled }: { channel: SalesChanne
 
         <button type="submit" className="primary-button full" disabled={!canSubmit}>
           <ShieldCheck size={18} />
-          {loading ? "Creando pedido..." : wompiEnabled ? "Ir a pago seguro" : "Enviar pedido a WhatsApp"}
+          {loading ? "Creando pedido..." : wompiEnabled ? "Continuar al pago seguro" : "Enviar pedido a WhatsApp"}
         </button>
+        {wompiEnabled ? <p className="payment-note">Pago protegido por Wompi 🔒</p> : null}
+
+        {ready && checkoutItems.length ? (
+          <div className="checkout-assist">
+            <strong>¿Prefieres atención personalizada?</strong>
+            <p>Tu pedido y tus datos se enviarán automáticamente a WhatsApp para que un asesor pueda ayudarte.</p>
+            <a href={assistedWhatsappUrl} className="secondary-button full" target="_blank" rel="noreferrer">
+              <MessageCircle size={18} />
+              Continuar por WhatsApp
+            </a>
+          </div>
+        ) : null}
       </form>
 
       <aside className="checkout-summary panel">
@@ -259,15 +231,13 @@ export function CheckoutClient({ channel, wompiEnabled }: { channel: SalesChanne
         <p className="microcopy">Carrito total actual: {formatCop(totals.subtotalCop)}</p>
         {ready && checkoutItems.length ? (
           <div className="checkout-steps">
-            <strong>Qué pasa después</strong>
+            <strong>Después de confirmar</strong>
             <ul>
-              <li>
-                {wompiEnabled
-                  ? "Si pagas online, te redirigimos a Wompi para pago seguro."
-                  : "Te llevamos directo a WhatsApp con el pedido armado para cerrar contigo."}
-              </li>
-              <li>Si prefieres WhatsApp, el asesor recibe tu pedido listo para cerrar.</li>
-              <li>La entrega estimada sigue en 3 a 5 días hábiles en Colombia.</li>
+              {wompiEnabled ? (
+                <li>🔒 Pago online: continuarás a Wompi para realizar el pago de forma segura.</li>
+              ) : null}
+              <li>💬 WhatsApp: un asesor recibirá automáticamente tu pedido.</li>
+              <li>🚚 Entrega: estimada entre 3 y 5 días hábiles.</li>
             </ul>
           </div>
         ) : null}
