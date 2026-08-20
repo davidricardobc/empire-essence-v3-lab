@@ -15,11 +15,11 @@ export function CartDrawer() {
   const checkoutChannels: { channel: SalesChannel; label: string }[] = [];
 
   if (retailItems.length) {
-    checkoutChannels.push({ channel: "retail", label: hasMixedChannels ? "Pagar retail" : "Pagar pedido" });
+    checkoutChannels.push({ channel: "retail", label: hasMixedChannels ? "Finalizar retail" : "Finalizar mi compra" });
   }
 
   if (wholesaleItems.length) {
-    checkoutChannels.push({ channel: "wholesale", label: hasMixedChannels ? "Pagar mayorista" : "Pagar pedido" });
+    checkoutChannels.push({ channel: "wholesale", label: hasMixedChannels ? "Finalizar mayorista" : "Finalizar mi compra" });
   }
 
   return (
@@ -34,7 +34,6 @@ export function CartDrawer() {
       >
         <div className="drawer-head">
           <div>
-            <span className="eyebrow">Seleccion actual</span>
             <h2>Tu pedido</h2>
           </div>
           <button type="button" className="icon-button" onClick={closeDrawer} aria-label="Cerrar carrito">
@@ -60,8 +59,8 @@ export function CartDrawer() {
                 <CartChannelSection
                   title="Pedido retail"
                   description="Ideal si vas a pagar online o cerrar por WhatsApp con entrega para cliente final."
-                  actionLabel="Pagar pedido retail"
-                  whatsappLabel="Cerrar retail por WhatsApp"
+                  actionLabel="Finalizar compra"
+                  whatsappLabel="Continuar por WhatsApp"
                   items={retailItems}
                   channel="retail"
                   onClose={closeDrawer}
@@ -72,9 +71,9 @@ export function CartDrawer() {
               {wholesaleItems.length ? (
                 <CartChannelSection
                   title="Pedido mayorista"
-                  description="Úsalo para kits por volumen y seguimiento comercial por WhatsApp o checkout."
-                  actionLabel="Pagar pedido mayorista"
-                  whatsappLabel="Cerrar mayorista por WhatsApp"
+                  description="Úsalo para kits por volumen y seguimiento comercial por WhatsApp o compra directa."
+                  actionLabel="Finalizar compra"
+                  whatsappLabel="Continuar por WhatsApp"
                   items={wholesaleItems}
                   channel="wholesale"
                   onClose={closeDrawer}
@@ -107,8 +106,8 @@ export function CartDrawer() {
             <span className="empty-kicker">Carrito listo para empezar</span>
             <h3>Elige una fragancia y vuelve cuando tengas tu selección.</h3>
             <p>
-              Puedes agregar perfumes en 30, 50 o 100 ml desde el catálogo. El resumen queda armado para checkout o
-              WhatsApp.
+              Puedes agregar perfumes en 30, 50 o 100 ml desde el catálogo. El resumen queda listo para pagar o
+              continuar por WhatsApp.
             </p>
             <div className="empty-trust-row">
               <span>Precios visibles</span>
@@ -210,15 +209,14 @@ function CartChannelSection({
       ))}
 
       <div className="drawer-confidence">
-        <strong>Cierre rápido</strong>
+        <strong>¿Cómo quieres finalizar tu compra?</strong>
         <p>
-          Revisa cantidades y elige checkout o WhatsApp. El asesor recibe el resumen listo para pago, disponibilidad y
-          entrega.
+          Compra directamente o continúa por WhatsApp si prefieres atención personalizada.
         </p>
       </div>
       <div className="drawer-trust-pills" aria-label="Confianza de cierre">
-        <span>Entrega 3 a 5 días hábiles</span>
-        <span>WhatsApp con resumen listo</span>
+        <span>Entrega estimada: 3–5 días hábiles</span>
+        <span>Compra segura</span>
       </div>
 
       <div className="drawer-actions drawer-channel-actions">
