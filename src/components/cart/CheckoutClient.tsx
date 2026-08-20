@@ -131,13 +131,6 @@ export function CheckoutClient({ channel, wompiEnabled }: { channel: SalesChanne
           </div>
         ) : null}
 
-        {response?.ok && response.whatsappUrl ? (
-          <a href={response.whatsappUrl} className="secondary-button full" target="_blank" rel="noreferrer">
-            <MessageCircle size={18} />
-            Confirmar por WhatsApp
-          </a>
-        ) : null}
-
         <button type="submit" className="primary-button full" disabled={!canSubmit}>
           <ShieldCheck size={18} />
           {loading ? "Creando pedido..." : wompiEnabled ? "Continuar al pago seguro" : "Enviar pedido a WhatsApp"}
