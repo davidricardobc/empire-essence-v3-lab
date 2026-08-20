@@ -38,13 +38,15 @@ const starterMessages: ChatMessage[] = [
   },
 ];
 
-const quickOptions = [
-  "Quiero oler impecable",
-  "Las más deseadas",
-  "Para una mujer inolvidable",
-  "Fresco que se nota",
-  "Noche con presencia",
-  "Regalo que no falla",
+type QuickOption = {
+  label: string;
+  value: string;
+};
+
+const starterQuickOptions: QuickOption[] = [
+  { label: "Para mí", value: "Quiero una fragancia para mí" },
+  { label: "Para regalo", value: "Quiero una fragancia para regalo" },
+  { label: "Mayorista", value: "Quiero armar un pedido mayorista" },
 ];
 
 export function AlexAdvisor() {
@@ -69,11 +71,12 @@ export function AlexAdvisor() {
     () => recommendFromText(userTranscript.join(" "), profile),
     [profile, userTranscript],
   );
-  const pendingQuestion = useMemo(() => getNextQuestion(profile, askedQuestions), [askedQuestions, profile]);
-  const showRecommendations =
-    userTranscript.length > 0 &&
-    !(profile.recipient === "gift" && !profile.category) &&
-    !(profile.recipient === "self" && pendingQuestion === "category");
+  const pendingQuestion = useMemo(() => getNextQuestion(profile), [profile]);
+  const activeQuickOptions = useMemo(
+    () => getQuickOptions(profile, pendingQuestion, userTranscript.length),
+    [pendingQuestion, profile, userTranscript.length],
+  );
+  const showRecommendations = userTranscript.length > 0 && Boolean(profile.category);
   const panelId = "alex-panel";
 
   useEffect(() => {
@@ -132,7 +135,6 @@ export function AlexAdvisor() {
     const localReply = buildLocalReply({
       text: clean,
       profile: nextProfile,
-      askedQuestions,
       recommended: recommendFromText(nextUserTranscript.join(" "), nextProfile),
     });
 
@@ -285,9 +287,9 @@ export function AlexAdvisor() {
         </div>
 
         <div className="quick-options">
-          {quickOptions.map((option) => (
-            <button key={option} type="button" onClick={() => send(option)}>
-              {option}
+          {activeQuickOptions.map((option) => (
+            <button key={option.label} type="button" onClick={() => send(option.value)}>
+              {option.label}
             </button>
           ))}
         </div>
@@ -422,12 +424,10 @@ function buildAdvisorProfile(userTranscript: string[]): AdvisorProfile {
 function buildLocalReply({
   text,
   profile,
-  askedQuestions,
   recommended,
 }: {
   text: string;
   profile: AdvisorProfile;
-  askedQuestions: AdvisorQuestionKey[];
   recommended: typeof products;
 }): LocalReply {
   const picks = recommended.slice(0, 2).map((product) => product.publicName).join(" o ");
@@ -449,7 +449,15 @@ function buildLocalReply({
   }
 
   if (profile.channel === "wholesale") {
-    const questionKey = getNextQuestion(profile, askedQuestions);
+    const questionKey = getNextQuestion(profile);
+    if (questionKey === "wholesaleMix") {
+      return {
+        content: getQuestionCopy(questionKey, profile),
+        questionKey,
+        forceLocal: false,
+      };
+    }
+
     return {
       content: [
         `Para mayorista arrancaría con ${picks}: rotan fácil y se explican rápido.`,
@@ -460,10 +468,10 @@ function buildLocalReply({
     };
   }
 
-  const questionKey = getNextQuestion(profile, askedQuestions);
+  const questionKey = getNextQuestion(profile);
   if (profile.recipient === "gift" && questionKey === "category") {
     return {
-      content: "Perfecto. ¿El regalo es para hombre, mujer o prefieres unisex?",
+      content: `Perfecto. ${getQuestionCopy(questionKey, profile)}`,
       questionKey,
       forceLocal: false,
     };
@@ -471,7 +479,7 @@ function buildLocalReply({
 
   if (profile.recipient === "self" && questionKey === "category") {
     return {
-      content: "Claro. ¿La quieres masculina, femenina o unisex?",
+      content: `Claro. ${getQuestionCopy(questionKey, profile)}`,
       questionKey,
       forceLocal: false,
     };
@@ -489,16 +497,16 @@ function buildLocalReply({
   };
 }
 
-function getNextQuestion(profile: AdvisorProfile, askedQuestions: AdvisorQuestionKey[]): AdvisorQuestionKey | null {
+function getNextQuestion(profile: AdvisorProfile): AdvisorQuestionKey | null {
   if (profile.channel === "wholesale") {
-    if (!profile.category && !askedQuestions.includes("wholesaleMix")) return "wholesaleMix";
-    if (!profile.occasion && !askedQuestions.includes("occasion")) return "occasion";
+    if (!profile.category) return "wholesaleMix";
+    if (!profile.occasion) return "occasion";
     return null;
   }
 
-  if (!profile.recipient && !askedQuestions.includes("recipient")) return "recipient";
-  if (!profile.category && !askedQuestions.includes("category")) return "category";
-  if (!profile.occasion && !askedQuestions.includes("occasion")) return "occasion";
+  if (!profile.recipient) return "recipient";
+  if (!profile.category) return "category";
+  if (!profile.occasion) return "occasion";
   return null;
 }
 
@@ -510,13 +518,51 @@ function getQuestionCopy(questionKey: AdvisorQuestionKey, profile: AdvisorProfil
       return "¿Diario, oficina, cita o noche?";
     case "category":
       return profile.recipient === "gift"
-        ? "¿El regalo es para hombre, mujer o prefieres unisex?"
-        : "¿Masculino, femenino o unisex?";
+        ? "¿El regalo es para mujer, hombre o prefieres unisex?"
+        : "¿Qué género quieres ver: mujer, hombre o unisex?";
     case "wholesaleMix":
-      return "¿Vendes más masculino, femenino o mixto?";
+      return "¿Tu mix venderá más mujer, hombre o unisex?";
     default:
       return "Cuéntame un poco más y te afino la recomendación.";
   }
+}
+
+function getQuickOptions(
+  profile: AdvisorProfile,
+  pendingQuestion: AdvisorQuestionKey | null,
+  userMessageCount: number,
+): QuickOption[] {
+  if (userMessageCount === 0 || pendingQuestion === "recipient") return starterQuickOptions;
+
+  if (pendingQuestion === "category" || pendingQuestion === "wholesaleMix") {
+    return [
+      { label: "Mujer", value: "Femenina" },
+      { label: "Hombre", value: "Masculina" },
+      { label: "Unisex", value: "Unisex" },
+    ];
+  }
+
+  if (pendingQuestion === "occasion") {
+    return [
+      { label: "Diario", value: "Para uso diario" },
+      { label: "Oficina", value: "Para oficina" },
+      { label: "Noche", value: "Para una cita o noche con presencia" },
+    ];
+  }
+
+  if (profile.channel === "wholesale") {
+    return [
+      { label: "Top ventas", value: "Muéstrame las más vendidas para mayorista" },
+      { label: "Mix seguro", value: "Quiero un mix mayorista seguro para empezar" },
+      { label: "Comprar", value: "Quiero cerrar pedido mayorista" },
+    ];
+  }
+
+  return [
+    { label: "Agregar", value: "Quiero agregar una recomendación al carrito" },
+    { label: "Comprar", value: "Quiero comprar y pagar seguro" },
+    { label: "WhatsApp", value: "Quiero ayuda por WhatsApp" },
+  ];
 }
 
 function getAllowedCategories(category: AdvisorProfile["category"]) {

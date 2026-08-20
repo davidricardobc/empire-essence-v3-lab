@@ -2022,10 +2022,10 @@ h3 {
 
 .quick-options {
   flex: 0 0 auto;
-  flex-wrap: nowrap;
-  overflow-x: auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   border-top: 1px solid rgba(215, 185, 132, 0.1);
-  padding: 9px 12px;
+  padding: 10px 12px;
   scrollbar-width: none;
 }
 
@@ -2034,8 +2034,8 @@ h3 {
 }
 
 .quick-options button {
-  flex: 0 0 auto;
-  white-space: nowrap;
+  min-width: 0;
+  white-space: normal;
 }
 
 .quick-options button,
@@ -2045,6 +2045,12 @@ h3 {
   background: rgba(255, 255, 255, 0.04);
   padding: 8px 10px;
   font-size: 13px;
+}
+
+.quick-options button {
+  min-height: 40px;
+  text-align: center;
+  line-height: 1.15;
 }
 
 .alex-recs {
