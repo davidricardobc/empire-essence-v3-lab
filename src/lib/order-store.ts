@@ -158,8 +158,8 @@ async function saveOrderInPostgres(sql: SqlClient, order: OrderRecord) {
     VALUES (
       ${order.reference},
       ${order.channel},
-      ${JSON.stringify(order.customer)}::jsonb,
-      ${JSON.stringify(order.items)}::jsonb,
+      ${sql.json(order.customer)},
+      ${sql.json(order.items)},
       ${order.subtotalCop},
       ${order.shippingCop},
       ${order.totalCop},
