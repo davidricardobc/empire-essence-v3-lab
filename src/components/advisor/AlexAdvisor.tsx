@@ -379,6 +379,7 @@ function recommendFromText(text: string, profile: AdvisorProfile = buildAdvisorP
 
 function buildAdvisorProfile(userTranscript: string[]): AdvisorProfile {
   const text = normalizeText(userTranscript.join(" "));
+  const category = getLatestCategoryMention(text);
 
   return {
     channel: mentionsWholesale(text) ? "wholesale" : "retail",
@@ -392,23 +393,7 @@ function buildAdvisorProfile(userTranscript: string[]): AdvisorProfile {
         : text.includes("para mi") || text.includes("para uso personal") || text.includes("impecable") || text.includes("oler")
           ? "self"
           : null,
-    category:
-      text.includes("unisex") || text.includes("mixto")
-        ? "unisex"
-        : text.includes("masculino") ||
-            text.includes("masculina") ||
-            text.includes("hombre") ||
-            text.includes("para el") ||
-            text.includes("para hombre")
-          ? "masculina"
-          : text.includes("femenina") ||
-              text.includes("femenino") ||
-              text.includes("mujer") ||
-              text.includes("ella") ||
-              text.includes("novia") ||
-              text.includes("esposa")
-            ? "femenina"
-            : null,
+    category,
     occasion: text.includes("oficina")
       ? "oficina"
       : text.includes("noche") || text.includes("cita") || text.includes("salir") || text.includes("presencia")
@@ -419,6 +404,41 @@ function buildAdvisorProfile(userTranscript: string[]): AdvisorProfile {
             ? "diario"
             : null,
   };
+}
+
+function getLatestCategoryMention(text: string): AdvisorProfile["category"] {
+  const signals: Array<{
+    category: NonNullable<AdvisorProfile["category"]>;
+    patterns: RegExp[];
+  }> = [
+    {
+      category: "unisex",
+      patterns: [/\bunisex\w*\b/g, /\bmixt[oa]s?\b/g],
+    },
+    {
+      category: "masculina",
+      patterns: [/\bmasculin[oa]s?\b/g, /\bhombres?\b/g, /\bpara el\b/g],
+    },
+    {
+      category: "femenina",
+      patterns: [/\bfemenin[oa]s?\b/g, /\bmujeres?\b/g, /\bella\b/g, /\bnovia\b/g, /\besposa\b/g],
+    },
+  ];
+  let latest: { index: number; category: AdvisorProfile["category"] } = { index: -1, category: null };
+
+  signals.forEach(({ category, patterns }) => {
+    patterns.forEach((pattern) => {
+      pattern.lastIndex = 0;
+      let match: RegExpExecArray | null;
+      while ((match = pattern.exec(text)) !== null) {
+        if (match.index >= latest.index) {
+          latest = { index: match.index, category };
+        }
+      }
+    });
+  });
+
+  return latest.category;
 }
 
 function buildLocalReply({
@@ -488,7 +508,7 @@ function buildLocalReply({
   const opening =
     profile.recipient === "gift"
       ? `Para regalo ${getCategoryCopy(profile.category)}, iría por ${picks}.`
-      : `Para ti, iría por ${picks}.`;
+      : `Para ti${getPersonalCategoryCopy(profile.category)}, iría por ${picks}.`;
 
   return {
     content: [opening, questionKey ? getQuestionCopy(questionKey, profile) : secureCloseCopy].join(" "),
@@ -581,6 +601,13 @@ function getCategoryCopy(category: AdvisorProfile["category"]) {
   if (category === "femenina") return "para mujer";
   if (category === "unisex") return "unisex";
   return "seguro";
+}
+
+function getPersonalCategoryCopy(category: AdvisorProfile["category"]) {
+  if (category === "masculina") return " en masculino";
+  if (category === "femenina") return " en femenino";
+  if (category === "unisex") return " en unisex";
+  return "";
 }
 
 function mentionsWholesale(text: string) {
