@@ -4168,10 +4168,6 @@ body[data-motion="ready"] .concept-hero[data-motion-visible="true"] .hero-kicker
     white-space: nowrap;
   }
 
-  .mobile-nav a[href="#alex"] {
-    display: none;
-  }
-
   .mobile-nav a.is-active {
     border-color: rgba(215, 185, 132, 0.45);
     background: rgba(215, 185, 132, 0.12);
@@ -5789,10 +5785,6 @@ body {
     padding: 8px 6px;
     text-align: center;
     white-space: normal;
-  }
-
-  .mobile-nav a[href="#alex"] {
-    display: inline-flex;
   }
 
   .site-header.menu-open .cart-button {

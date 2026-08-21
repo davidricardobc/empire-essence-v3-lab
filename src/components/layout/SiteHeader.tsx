@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import { Menu, Sparkles, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { CartButton } from "@/components/cart/CartButton";
 
 const links = [
@@ -41,10 +41,6 @@ export function SiteHeader() {
               {link.label}
             </Link>
           ))}
-          <a href="#alex" className="nav-chip">
-            <Sparkles size={14} />
-            Asesora Alexa
-          </a>
         </nav>
 
         <div className="header-actions">
@@ -77,9 +73,6 @@ export function SiteHeader() {
             {link.label}
           </Link>
         ))}
-        <a href="#alex" onClick={() => setOpen(false)}>
-          Asesora Alexa
-        </a>
       </div>
     </header>
   );
