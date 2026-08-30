@@ -258,3 +258,31 @@ Repair executable permissions for the bundled `rg` or route searches to the syst
 - Related Files: none
 
 ---
+## [ERR-20260830-001] github_https_auth
+
+**Logged**: 2026-08-30T05:59:16Z
+**Priority**: low
+**Status**: pending
+**Area**: infra
+
+### Summary
+Plain `git push origin main` and unauthenticated `git fetch origin main` can fail in this environment because GitHub HTTPS prompts cannot read credentials interactively.
+
+### Error
+```text
+fatal: could not read Username for 'https://github.com': No such device or address
+```
+
+### Context
+- Command attempted: push and fetch for Empire Essence V3 production deploy.
+- Project: Empire Essence V3 lab.
+- Existing remote: `https://github.com/davidricardobc/empire-essence-v3-lab.git`.
+
+### Suggested Fix
+For non-interactive GitHub operations, source `/home/ricardo/.openclaw/workspace/.secrets/github.env` and use a temporary authenticated HTTPS URL without printing the token.
+
+### Metadata
+- Reproducible: yes
+- Related Files: none
+
+---
