@@ -2,6 +2,52 @@ import type { BlogPost } from "@/types/blog";
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "que-perfume-comprar-primera-vez",
+    title: "Que perfume comprar si es tu primera vez",
+    subtitle: "Una guia simple para elegir una fragancia segura sin perderte entre tantas opciones.",
+    excerpt:
+      "Si quieres comprar un perfume para ti o para regalar, empieza por ocasion, intensidad y estilo. Asi eliges mejor y reduces el miedo a equivocarte.",
+    category: "guia",
+    readingMinutes: 4,
+    conversionIntent: "Guia retail para primera compra",
+    publishedAt: "2026-08-30",
+    heroImage: "/revision-images/empire-blog-lasting-scent-v1.png",
+    featured: true,
+    audience: "retail",
+    productSlugs: ["conquista", "despertar", "yara", "equilibrio"],
+    ctaLabel: "Perfumes seguros para empezar",
+    sections: [
+      {
+        heading: "Empieza por la ocasion",
+        body: [
+          "Antes de pensar en marcas o nombres, piensa cuando lo vas a usar. Para diario conviene algo fresco, limpio o elegante. Para noche puedes elegir algo mas dulce, intenso o seductor.",
+          "Si es para regalar, busca una fragancia versatil: agradable desde la primera impresion y facil de usar varias veces por semana.",
+        ],
+      },
+      {
+        heading: "Elige intensidad sin exagerar",
+        body: [
+          "Un buen perfume no tiene que invadir para sentirse especial. La mejor compra es la que se nota, dura y sigue siendo agradable para ti y para quienes estan cerca.",
+          "Si es tu primera compra, evita irte de una por el perfil mas fuerte. Empieza con algo balanceado y luego explora aromas mas atrevidos.",
+        ],
+      },
+      {
+        heading: "Usa tu estilo como filtro",
+        body: [
+          "Si eres de estilo serio o elegante, busca perfiles amaderados, frescos o limpios. Si quieres algo mas romantico o memorable, los dulces suaves y florales suelen funcionar muy bien.",
+          "La pregunta clave es simple: quieres oler limpio, elegante, dulce, fresco o intenso. Con esa respuesta ya puedes reducir mucho el catalogo.",
+        ],
+      },
+      {
+        heading: "Cuando no sabes cual escoger",
+        body: [
+          "Escoge una opcion segura y facil de recomendar. Los perfumes de alta aceptacion ayudan cuando estas comprando por primera vez o cuando el regalo tiene que gustar sin conocer todos los detalles.",
+          "Tambien puedes escribir por WhatsApp y contar para quien es, edad aproximada, ocasion y estilo. Con eso Alexa puede ayudarte a elegir mas rapido.",
+        ],
+      },
+    ],
+  },
+  {
     slug: "comprar-perfumeria-mayor-sin-equivocarse",
     title: "Como comprar perfumeria al por mayor sin equivocarse",
     subtitle:
