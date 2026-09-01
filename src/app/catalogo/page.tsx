@@ -8,6 +8,14 @@ export const metadata: Metadata = {
   title: "Catálogo de perfumes inspirados",
   description:
     "Explora el catálogo de Empire Essence: perfumes inspirados para mujer, hombre y unisex, top ventas, búsqueda por mood, ocasión y notas, y compra directa con apoyo por WhatsApp.",
+  keywords: [
+    "catalogo de perfumes inspirados",
+    "perfumes inspirados para mujer",
+    "perfumes inspirados para hombre",
+    "perfumes unisex Colombia",
+    "fragancias de alta concentracion",
+    "comprar perfumes Empire Essence",
+  ],
   alternates: {
     canonical: "/catalogo",
   },

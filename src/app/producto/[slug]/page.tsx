@@ -27,9 +27,17 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   }
 
   return {
-    title: product.publicName,
+    title: `${product.publicName} - perfume inspirado ${categoryLabels[product.category].toLowerCase()} en Colombia`,
     description:
       `${product.shortDescription} Perfume inspirado en ${product.inspirationReference} con ${product.concentration}, ${product.duration} y compra directa o por WhatsApp en Colombia.`,
+    keywords: [
+      product.publicName,
+      `perfume ${product.publicName}`,
+      `perfume inspirado ${categoryLabels[product.category].toLowerCase()}`,
+      `perfume inspirado en ${product.inspirationReference}`,
+      ...product.families.map((family) => `perfume ${family}`),
+      ...product.occasions.map((occasion) => `perfume para ${occasion}`),
+    ],
     alternates: {
       canonical: `/producto/${product.slug}`,
     },

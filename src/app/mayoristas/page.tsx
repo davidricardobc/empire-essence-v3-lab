@@ -7,6 +7,14 @@ export const metadata: Metadata = {
   title: "Perfumes al por mayor en Colombia",
   description:
     "Compra perfumes al por mayor en Colombia desde 10 unidades mixtas. Calcula inversión, margen estimado y arma tu pedido mayorista con Empire Essence.",
+  keywords: [
+    "perfumes al por mayor en Colombia",
+    "mayorista de perfumes Colombia",
+    "revender perfumes",
+    "proveedor de perfumes",
+    "negocio de fragancias",
+    "kits mayoristas de perfumes",
+  ],
   alternates: {
     canonical: "/mayoristas",
   },

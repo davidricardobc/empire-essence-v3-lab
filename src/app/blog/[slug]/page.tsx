@@ -25,6 +25,12 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: post.title,
     description: post.excerpt,
+    keywords: [
+      post.title,
+      post.category,
+      post.conversionIntent,
+      ...post.productSlugs.map((slug) => `perfume ${slug}`),
+    ],
     alternates: {
       canonical: `/blog/${post.slug}`,
     },
@@ -172,7 +178,9 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
               return (
                 <div key={product.id} className="blog-buy-item">
                   <div>
-                    <strong>{product.publicName}</strong>
+                    <Link href={`/producto/${product.slug}`}>
+                      <strong>{product.publicName}</strong>
+                    </Link>
                     <span>
                       {isWholesale ? "Mayorista desde " : "Desde "}
                       {formatCop(displayPrice)}

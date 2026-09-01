@@ -25,6 +25,14 @@ export const metadata: Metadata = {
   title: "Perfumes inspirados en Colombia",
   description:
     "Compra perfumes inspirados para mujer, hombre y unisex con alta concentración, top ventas, asesoría por WhatsApp y opción mayorista desde Colombia.",
+  keywords: [
+    "perfumes inspirados en Colombia",
+    "perfumes para mujer en Colombia",
+    "perfumes para hombre en Colombia",
+    "fragancias premium",
+    "perfumes al por mayor en Colombia",
+    "comprar perfumes online Colombia",
+  ],
   alternates: {
     canonical: "/",
   },
@@ -150,10 +158,10 @@ export default function HomePage() {
         </div>
         <div className="intent-grid">
           {[
-            ["Para ella, inolvidable", "Dulce, floral, memorable.", "/catalogo?mood=poder"],
-            ["Fresco que se nota", "Limpio y fácil de repetir.", "/catalogo?family=fresca"],
-            ["Noche con presencia", "Más estela para salir.", "/catalogo?occasion=noche"],
-            ["Regalo que no falla", "Top ventas fáciles de regalar.", "/catalogo?mood=elegancia"],
+            ["Para ella, inolvidable", "Dulce, floral, memorable.", "/catalogo"],
+            ["Fresco que se nota", "Limpio y fácil de repetir.", "/catalogo"],
+            ["Noche con presencia", "Más estela para salir.", "/catalogo"],
+            ["Regalo que no falla", "Top ventas fáciles de regalar.", "/catalogo"],
           ].map(([title, copy, href]) => (
             <Link href={href} key={title} className="intent-card">
               <strong>{title}</strong>
